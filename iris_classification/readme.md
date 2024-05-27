@@ -2,6 +2,8 @@
 
 This project involves the prediction of iris flower species using machine learning models. It includes data preprocessing, model training, evaluation, and prediction based on user input.
 
+https://github.com/vidurAgg22/machine-learning-repos/assets/165144144/ac7057d6-a1cf-40d2-8371-1515ef6e7a7d
+
 ## Dataset
 
 The Iris dataset is used, which contains features such as sepal length, sepal width, petal length, petal width, and the target variable, which is the class of iris species.
