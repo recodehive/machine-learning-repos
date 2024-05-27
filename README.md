@@ -2,7 +2,7 @@
 A curated list of awesome machine learning frameworks, libraries and software (by language). 
 
 
-This is complete beginner friendly repo for gssoc beginners. 
+This is complete beginner-friendly repo for gssoc beginners. 
 
 **Irony and Sarcasm detection on social media:**
 
@@ -18,3 +18,9 @@ The above picture shows the number of values for each of the 4 classes in the tr
 
 
 The above picture shows the number of values for each of the 4 classes in the testing dataset.
+
+
+![image](https://github.com/rishig2003/machine-learning-repos/assets/92781956/2b065291-9fb8-44be-b154-e5ffb3f75349)
+
+
+The above code cells contain code to remove all the rows that are classified either as figurative or regular.
