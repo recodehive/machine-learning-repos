@@ -1,4 +1,6 @@
 # Classification on Cmapps Dataset
+
+We have performed classification only for the first set of training and testing data provided by the website.
 - Column 1: Corresponds to engine number (This column is indexed 0 above because of Python's numbering convention)
 - Column 2: Corresponds to cycle number. If engine 1 fails after 192 cycles, the entries of second column for engine 1 will go from 1 to 192. Similarly for other engines.
 - Columns 3,4,5: 3 operational settings
