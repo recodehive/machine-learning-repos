@@ -1,0 +1,33 @@
+<annotation>
+  <folder></folder>
+  <filename>Cars/29.png</filename>
+  <source>
+    <database>Unknown</database>
+    <annotation>Unknown</annotation>
+    <image>Unknown</image>
+  </source>
+  <size>
+    <width>512</width>
+    <height>512</height>
+    <depth></depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Car</name>
+    <truncated>0</truncated>
+    <occluded>0</occluded>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>83.72</xmin>
+      <ymin>264.49</ymin>
+      <xmax>342.55000000000007</xmax>
+      <ymax>490.16</ymax>
+    </bndbox>
+    <attributes>
+      <attribute>
+        <name>rotation</name>
+        <value>0.0</value>
+      </attribute>
+    </attributes>
+  </object>
+</annotation>
