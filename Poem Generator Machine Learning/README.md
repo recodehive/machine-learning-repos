@@ -6,7 +6,7 @@ It employs advanced machine learning algorithms to analyze data from Shakespeare
 The aim of this project is to utilize the power of machine learning to curate original poems using shakespeare as the base learning model.
 ## Methodology
 
-We have imported necessary modules and functions from the TensorFlow library, specifically from the Keras API, which is a high-level neural networks API. We have utilized Sequential class which is a way to build deep learning models where the layers are connected in a sequential manner, i.e., the output from one layer is used as the input to the next layer. 
+We have imported the shakespeare.txt available on Google. We have imported necessary modules and functions from the TensorFlow library, specifically from the Keras API, which is a high-level neural networks API. We have utilized Sequential class which is a way to build deep learning models where the layers are connected in a sequential manner, i.e., the output from one layer is used as the input to the next layer. 
 ## Models Utilized
 
 1. Sequential Model from Keras API
