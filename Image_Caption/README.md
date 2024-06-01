@@ -12,7 +12,7 @@ Implementation of the tutorial project provided by [Tensorflow](https://www.tens
     - Make sure the name of the folder is `weights`.
 
 # Model
-It uses `Mobile-Net V3 Large` feature extractor to extract the features from the image and Transformer-Decoder to generate the caption.
+It uses `Mobile-Net V3 Large` feature extractor to extract the features from the image and Transformer-Decoder to generate the caption. The dataset used is of [Flickr 8K](https://www.kaggle.com/datasets/adityajn105/flickr8k) Dataset.
 
 [Data_Preprocess](Model/Data_Preprocess.ipynb) file contains the code for the preprocessing of the dataset. **(The dataset and its caching space may go over 8GB)**
 
