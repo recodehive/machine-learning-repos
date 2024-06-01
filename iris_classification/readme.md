@@ -37,6 +37,7 @@ Six machine learning models are trained and evaluated for iris flower species pr
 4. K-Nearest Neighbors (KNN)
 5. Decision Tree
 6. Naive Bayes
+7. Neural Network
 
 For each model, the following steps are performed:
 
