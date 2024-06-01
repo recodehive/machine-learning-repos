@@ -14,6 +14,7 @@ Utilizing a combination of EDA techniques and machine learning algorithms, we ha
 2. K-Nearest Neighbors (KNN)
 3. Random Forest Regressor
 4. Decision Tree Regressor
+5. Gradient Boosting Machine (XGBoost)
 ## Libraries Used
 
 1. numpy: For efficient numerical operations
@@ -27,6 +28,7 @@ Utilizing a combination of EDA techniques and machine learning algorithms, we ha
 2. K-Nearest Neighbors: Demonstrated superior performance with a test set accuracy of 94.0%
 3. Random Forest Regressor: Equally impressive accuracy of 94.0%
 4. Decision Tree Regressor: Achieved a commendable accuracy of 91.0%
+5. Gradient Boosting Machine: Achieved a test set accuracy of 94.0%
 ## Conclusion
 
-Through rigorous analysis and experimentation, it has been determined that K-Nearest Neighbors and Random Forest Regressor models exhibit the highest predictive accuracy for Parkinson's disease. 
+Through rigorous analysis and experimentation, it has been determined that K-Nearest Neighbors , Random Forest Regressor and  Gradient Boosting Machine models exhibit the highest predictive accuracy for Parkinson's disease. 
