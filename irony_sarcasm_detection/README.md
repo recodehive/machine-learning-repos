@@ -29,7 +29,7 @@ Data preprocessing steps include:
 ## Results
 1. Logistic Regression : 98%
 2. Random Forest Regressor : 98%
-3. Multinomial Naive Bayes : 95%
+3. Multinomial Naive Bayes : 95.4%
 
 ## Conclusion
 Through rigorous analysis and experimentation, it has been determined that Logistic Regressioin and  Random Forest Regressor  models exhibit the highest predictive accuracy for irony/sarcasm detection. 
