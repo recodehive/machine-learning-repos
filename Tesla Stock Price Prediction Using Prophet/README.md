@@ -47,29 +47,3 @@ These results demonstrate the model's ability to effectively forecast stock pric
 ## 📌Conclusion
 
 The Facebook Prophet-based stock price prediction model proved to be effective in forecasting Tesla's stock price for the next 30 days. The combination of Prophet's robust time series forecasting capabilities and the comprehensive historical data from Yahoo Finance makes this model a valuable tool for financial analysis and decision-making.
-
-
-## How to Use 📜
-
-1. **Clone the Repository**: 
-    ```sh
-    git clone https://github.com/yourusername/car-detection-using-mobilenetssd.git
-    ```
-
-2. **Install Dependencies**: 
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. **Run the Model**: 
-    ```python
-    python detect_cars.py --image_dir path/to/your/images
-    ```
-
-4. **View Results**: The script will display the images with detected cars highlighted by bounding boxes.
-
-## Future Work ⭐
-
--   Enhance the model by incorporating additional features such as market sentiment analysis.
--   Implement real-time stock price prediction capabilities.
--   Explore other time series forecasting models for improved accuracy.
