@@ -10,7 +10,7 @@ pip install Required Libraries and Package.txt
 
 **Model loading in Python** 
 
-The following loads pretrained colorizers. See [demo_release.py](demo_release.py) for some details on how to run the model. There are some pre and post-processing steps: convert to Lab space, resize to 256x256, colorize, and concatenate to the original full resolution, and convert to RGB.
+The following loads pretrained colorizers. See [demo_release.py] for some details on how to run the model. There are some pre and post-processing steps: convert to Lab space, resize to 256x256, colorize, and concatenate to the original full resolution, and convert to RGB.
 
 ```python
 import code
