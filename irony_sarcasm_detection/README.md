@@ -27,8 +27,8 @@ Data preprocessing steps include:
 4. matplotlib: For comprehensive data visualization
 5. Sklearn: For implementing machine learning algorithms
 ## Results
-1. Logistic Regression : 97%
-2. Random Forest Regressor : 97%
+1. Logistic Regression : 98%
+2. Random Forest Regressor : 98%
 3. Multinomial Naive Bayes : 95%
 
 ## Conclusion
