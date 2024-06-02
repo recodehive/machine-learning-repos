@@ -1,0 +1,8 @@
+Libraries required :
+
+1. torch
+2. skimage
+3. numpy
+4. matplotlib
+5. argparse
+6. PIL
