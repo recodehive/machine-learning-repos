@@ -1,6 +1,7 @@
 # Placement Predictos
 
  This folder provides the code for placement analysis and an interactive interface for analyzing and visualizing data using Python libraries such as Pandas, Seaborn, Matplotlib, and Scikit-learn.
+You can access the app at [https://placementanalysis-zgmvrc67ajweogwmgep3ta.streamlit.app/](https://placementanalysis-zgmvrc67ajweogwmgep3ta.streamlit.app/).
 
 ## Introduction
 
