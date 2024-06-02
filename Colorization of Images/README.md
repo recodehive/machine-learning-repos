@@ -1,60 +1,122 @@
 <!--<h3><b>Colorful Image Colorization</b></h3>-->
-## <b>Colorful Image Colorization</b> [[Project Page]](http://richzhang.github.io/colorization/) <br>
-[Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/). In [ECCV, 2016](http://arxiv.org/pdf/1603.08511.pdf).
+## <b>Colorful Image Colorization</b><br>
+This repo supports minimal test-time usage in PyTorch. The addition of SIGGRAPH 2017 (it's an interactive method but can also do automatic).
 
-**+ automatic colorization functionality for Real-Time User-Guided Image Colorization with Learned Deep Priors, SIGGRAPH 2017!**
-
-**[Sept20 Update]** Since it has been 3-4 years, I converted this repo to support minimal test-time usage in PyTorch. I also added our SIGGRAPH 2017 (it's an interactive method but can also do automatic). See the [Caffe branch](https://github.com/richzhang/colorization/tree/caffe) for the original release.
-
-![Teaser Image](http://richzhang.github.io/colorization/resources/images/teaser4.jpg)
-
-**Clone the repository; install dependencies**
+**Install dependencies**
 
 ```
-git clone https://github.com/richzhang/colorization.git
-pip install requirements.txt
+pip install Required Libraries and Package.txt
 ```
 
-**Colorize!** This script will colorize an image. The results should match the images in the `imgs_out` folder.
+**Model loading in Python** 
 
-```
-python demo_release.py -i imgs/ansel_adams3.jpg
-```
-
-**Model loading in Python** The following loads pretrained colorizers. See [demo_release.py](demo_release.py) for some details on how to run the model. There are some pre and post-processing steps: convert to Lab space, resize to 256x256, colorize, and concatenate to the original full resolution, and convert to RGB.
+The following loads pretrained colorizers. See [demo_release.py](demo_release.py) for some details on how to run the model. There are some pre and post-processing steps: convert to Lab space, resize to 256x256, colorize, and concatenate to the original full resolution, and convert to RGB.
 
 ```python
-import colorizers
-colorizer_eccv16 = colorizers.eccv16().eval()
-colorizer_siggraph17 = colorizers.siggraph17().eval()
+import code
+code_eccv16 = code.eccv16().eval()
+code_siggraph17 = code.siggraph17().eval()
 ```
 
-### Original implementation (Caffe branch)
+**1. Problem Statement**
 
-The original implementation contained train and testing, our network and AlexNet (for representation learning tests), as well as representation learning tests. It is in Caffe and is no longer supported. Please see the [caffe](https://github.com/richzhang/colorization/tree/caffe) branch for it.
+Image colorization involves adding color to grayscale images. Given a grayscale image, the goal is to predict its corresponding color version.
 
-### Citation ###
+**2. Techniques and Models**
 
-If you find these models useful for your resesarch, please cite with these bibtexs.
+a. Convolutional Neural Network (CNN) model
 
-```
-@inproceedings{zhang2016colorful,
-  title={Colorful Image Colorization},
-  author={Zhang, Richard and Isola, Phillip and Efros, Alexei A},
-  booktitle={ECCV},
-  year={2016}
-}
+Overview: 
 
-@article{zhang2017real,
-  title={Real-Time User-Guided Image Colorization with Learned Deep Priors},
-  author={Zhang, Richard and Zhu, Jun-Yan and Isola, Phillip and Geng, Xinyang and Lin, Angela S and Yu, Tianhe and Efros, Alexei A},
-  journal={ACM Transactions on Graphics (TOG)},
-  volume={9},
-  number={4},
-  year={2017},
-  publisher={ACM}
-}
-```
+Convolutional Neural Network (CNN) model are a type of generative model that can learn to generate data conditioned on specific input information.
 
-### Misc ###
-Contact Richard Zhang at rich.zhang at eecs.berkeley.edu for any questions or comments.
+Architecture:
+
+CNNs consist of two neural networks: a generator (G) and a discriminator (D).
+The generator takes a grayscale image as input and generates a colorized version.
+The discriminator evaluates the quality of the generated colorized image.
+
+Training:
+
+During training, the generator aims to produce colorized images that fool the discriminator.
+The discriminator learns to distinguish between real color images and generated ones.
+The generator and discriminator play a min-max game, improving each other iteratively.
+
+Transfer Learning:
+
+You can use a pre-trained generator as the base for colorization.
+Fine-tune the pre-trained model on your grayscale images.
+Transfer learning leverages pre-existing knowledge from a large dataset to improve colorization performance.
+
+**3. Implementation Steps**
+   
+Data Preparation:
+
+Collect a dataset of grayscale images paired with their corresponding color images.
+Preprocess the data (resize, normalize, etc.).
+
+Model Architecture:
+
+Choose the proper architecture.
+Define the neural network layers, loss functions, and optimizers.
+
+Training:
+
+Train the model using the grayscale images as input and color images as targets.
+Monitor loss metrics (e.g., Mean Squared Error) during training.
+
+Inference:
+
+Use the trained model to colorize new grayscale images.
+Adjust color temperature if needed.
+
+## Libraries and Packages Referred : 
+
+**PyTorch (torch):**
+
+Role: PyTorch is a popular deep learning framework that provides tools for building and training neural networks.
+Usage:
+Define your neural network architecture using PyTorch modules.
+Implement forward and backward passes for training.
+Utilize pre-trained models or train your own from scratch.
+Perform inference on grayscale images to generate colorized versions.
+
+**scikit-image (skimage):**
+
+Role: scikit-image is a Python library for image processing. It provides various functions for working with images.
+Usage:
+Read and load grayscale images using skimage.io.imread.
+Convert between color spaces (e.g., RGB to LAB) using skimage.color functions.
+Apply filters (e.g., Gaussian, bilateral) to preprocess images.
+Resize, crop, or manipulate image dimensions using skimage.transform.
+
+**NumPy:**
+
+Role: NumPy is a fundamental library for numerical computing in Python.
+Usage:
+Convert images to NumPy arrays for efficient manipulation.
+Perform element-wise operations (e.g., addition, multiplication) on pixel values.
+Extract image channels (e.g., L channel in LAB color space).
+
+**Matplotlib:**
+
+Role: Matplotlib is a plotting library for creating visualizations.
+Usage:
+Display grayscale and colorized images using matplotlib.pyplot.imshow.
+Plot loss curves during training.
+Create side-by-side comparisons of input grayscale and output color images.
+
+**argparse:**
+
+Role: argparse is a Python library for parsing command-line arguments.
+Usage:
+Use argparse to handle command-line arguments when running your colorization script.
+Define arguments such as input image path, output directory, model type, etc.
+
+**PIL (Python Imaging Library):**
+
+Role: PIL provides image processing capabilities, including reading, writing, and basic manipulation.
+Usage:
+Open and load images using PIL.Image.open.
+Convert between PIL images and NumPy arrays.
+Save colorized images using PIL.Image.save.
