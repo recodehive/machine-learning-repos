@@ -2,6 +2,18 @@
 
 This repository contains a CNN model trained on Fashion MNIST achieving 84.26% accuracy using Cross Entropy Loss and Optim optimizer.
 
+**Installation**
+
+1. Clone this repository:
+   ```
+   git clone <repository-url>
+   ```
+
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
 **Model Structure**
 
 1. **Convolutional Layer (conv1)**: Extracts initial image features.
@@ -14,4 +26,3 @@ This repository contains a CNN model trained on Fashion MNIST achieving 84.26% a
 **Usage**
 
 Load trained weights, pass images through the network for predictions. Customize or fine-tune the model as needed.
-
