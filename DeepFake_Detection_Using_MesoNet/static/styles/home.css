@@ -1,0 +1,50 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    flex-direction: column;
+    margin-top:7rem;
+    margin-right:10rem;
+  }
+  .wrapper .title h1{
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing:0.01rem;
+    font-size:50px;
+    font-weight: 800;
+  }
+  
+  .container {
+    width: 450px; 
+    height: auto;
+    overflow: auto;
+    text-align: left; 
+    direction: ltr;
+}
+
+.typing{
+    display: inline-block;
+    font-size: 25px; 
+    line-height: 1.5; 
+    color: whitesmoke;
+} 
+  
+  form {
+    text-align: center;
+  }
+  
+  button{
+    margin-top: 10px;
+    padding: 15px 30px;
+    color:rgb(28, 37, 42);
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 8px #dddddd;
+  }
