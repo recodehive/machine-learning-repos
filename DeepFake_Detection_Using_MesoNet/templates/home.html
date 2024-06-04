@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Detection App</title>
+    <link href="static/styles/home.css" rel="stylesheet"/>
+    <style>
+      body{ 
+        background-image:url("{{url_for('static',filename='images/background.jpg')}}");
+    background-attachment:fixed;
+    background-size: cover;
+      }
+     
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+          <h1>DeepFake Detection</h1>
+        </div>
+        <div class="content">
+          <div class="container">
+            <span class="typing">
+            </span>
+          </div>
+          <form action="/predict">
+            <button type="submit"> Get Started</button>
+          </form>
+        </div>
+      </div>
+       
+      <script src="static/js/script.js">
+      </script>
+</body>
+</html>
