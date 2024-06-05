@@ -8,7 +8,7 @@ Principal Component Analysis is an unsupervised learning algorithm that is used 
 4. Eigenvectors: If there is a square matrix M, and a non-zero vector v is given. Then v will be eigenvector if Av is the scalar multiple of v.
 5. Covariance Matrix: A matrix containing the covariance between the pair of variables is called the Covariance Matrix.
 
-### Explaination of the code
+### Explaination of the code:
 1. Standardize the Data:
 
 Extract feature values from the dataset.
@@ -53,5 +53,5 @@ Add a legend to the plot to indicate which color represents which class.
 
 Show the final visualization to understand the distribution of samples along the principal components.
 
-### Output
+### Output:
 ![image](https://github.com/Vrisha213/machine-learning-repos/assets/74671946/a2cb0104-0753-405b-a6f0-1aaa0767c37a)
