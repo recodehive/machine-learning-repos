@@ -12,6 +12,7 @@ Principal Component Analysis is an unsupervised learning algorithm that is used 
 1. Standardize the Data:
 
 Extract feature values from the dataset.
+
 Normalize the features to ensure they have a mean of zero and a standard deviation of one.
 
 2. Verify Normalization:
@@ -21,11 +22,13 @@ Check that the normalized data has a mean of approximately zero and a standard d
 3. Convert Data to Tabular Format:
 
 Create descriptive column names for each feature.
+
 Store the normalized data in a DataFrame.
 
 4. Perform Principal Component Analysis (PCA):
 
 Import the PCA module and specify the number of principal components (e.g., 2).
+
 Fit the PCA model to the normalized data and transform it to get the principal components.
 
 5. Create DataFrame for Principal Components:
@@ -39,10 +42,13 @@ Calculate the explained variance ratio for each principal component to understan
 7. Visualize the Principal Components:
 
 Set up the plotting parameters (e.g., figure size, axis labels, title).
+
 Assign colors and labels to different classes (e.g., 'Benign' and 'Malignant').
+
 Plot the samples on a scatter plot using the principal component values, differentiating the classes by color.
 
 8. Display the Plot:
 
 Add a legend to the plot to indicate which color represents which class.
+
 Show the final visualization to understand the distribution of samples along the principal components.
