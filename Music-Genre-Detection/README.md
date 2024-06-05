@@ -83,9 +83,8 @@ The best performing model is the **CatBoost Classifier** with an accuracy of 83.
     jupyter notebook main.ipynb
     ```
 
-## Dependencies
+## Libraries used
 
-- Python 3.x
 - Pandas
 - NumPy
 - Scikit-learn
@@ -93,8 +92,8 @@ The best performing model is the **CatBoost Classifier** with an accuracy of 83.
 - Seaborn
 - CatBoost
 - XGBoost
-- TensorFlow / Keras (for neural networks)
-- Jupyter Notebook
+- TensorFlow 
+- librosa
 
 ## Conclusion
 
