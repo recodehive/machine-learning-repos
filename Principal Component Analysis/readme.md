@@ -52,3 +52,6 @@ Plot the samples on a scatter plot using the principal component values, differe
 Add a legend to the plot to indicate which color represents which class.
 
 Show the final visualization to understand the distribution of samples along the principal components.
+
+### Output
+![image](https://github.com/Vrisha213/machine-learning-repos/assets/74671946/a2cb0104-0753-405b-a6f0-1aaa0767c37a)
