@@ -1,4 +1,3 @@
-
 from sklearn.datasets import load_breast_cancer
 
 breast = load_breast_cancer()
