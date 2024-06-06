@@ -1,14 +1,28 @@
-# machine-learning-repos
-A curated list of awesome machine learning frameworks, libraries and software (by language). 
+<h1>machine-learning-repos<picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif" alt="🌟" width="32" height="32">
+</picture></h1>
 
+<h3>A curated list of awesome machine learning frameworks, libraries and software (by language). </h3>
 
 This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
 Repeated issue creation for more scores will be considered has flag.
 If later found out the points will be deducted. you cant be earning more than 60 points from this repo. any techincal feature addition is excluded
 
-# Machine Learning 🤖
+<h1>Machine Learning <picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="32" height="32">
+</picture></h1>
+ <h3>What is machine Learning?</h3>
+ <img src="https://atriainnovation.com/uploads/2023/11/portada-9.jpg" align="right">
+  <p>    ------------------------------------------------------------------------------ </p>
+  <p>Machine Learning (ML) is a subfield of Artificial Intelligence (AI) that empowers systems to learn from data without explicit programming. ML algorithms analyze vast datasets to identify patterns, extract insights, and make predictions or decisions based on the derived knowledge.
+  Unlike traditional programming, which relies on predefined rules, ML leverages statistical techniques and algorithms to enable systems to adapt and improve their performance over time. This adaptability allows ML to tackle complex problems in various domains, including image recognition, natural language processing, and predictive analytics.</p>
 
-## Table of Contents
+<h1>Table of Contents<picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.gif" alt="🎓" width="32" height="32">
+</picture></h1>
 
 - [Roadmap](roadmaps)
   - [Machine Learning Roadmap](#machine-learning)
@@ -39,8 +53,13 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [Conclusion](#conclusion)
 
 
-### Roadmap
+<h1>Roadmap<picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6eb/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6eb/512.gif" alt="🛫" width="32" height="32">
+</picture></h1>
+
 > This is a roadmap, we can refer to for starting with machine learning.
+
 #### Machine Learning
 
 <table width="100%">
@@ -685,9 +704,28 @@ If later found out the points will be deducted. you cant be earning more than 60
       </tr>    
 </table>
 
-### Conclusion
+<h2><font size="6">
+<picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥" width="32" height="32">
+</picture>Contribution</font></h2>
+<h3>This project thanks all the contributors for having your valuable contribution to our project</h3>
+<br>
+
+<center>
+<a href="https://github.com/Recode-Hive/machine-learning-repos/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Recode-Hive/machine-learning-repos" />
+</a>
+</center>
+<br>
+
+<h1>Conclusion<picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c1/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c1/512.gif" alt="🏁" width="32" height="32">
+</picture></h1>
 
 Machine learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and discovery. Its ability to analyze vast amounts of data and uncover patterns makes it indispensable for various applications, from predictive analytics and natural language processing to computer vision and autonomous systems. The wealth of libraries and frameworks available, such as TensorFlow, PyTorch, and scikit-learn, empowers developers and data scientists to build sophisticated models with relative ease. A strong community provides extensive resources, including tutorials, forums, and documentation, to support learners and professionals alike. To truly excel in machine learning, consistent practice is essential—engage in coding challenges, contribute to open-source projects, and apply your knowledge to real-world problems. This hands-on experience not only hones your skills but also opens doors to numerous career opportunities in tech, research, and beyond.
 
 Never stop learning !
 
+<p align="right"><a href="#top">Back to top</a></p>
