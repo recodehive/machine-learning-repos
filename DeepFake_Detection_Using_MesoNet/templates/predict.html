@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Detection App</title>
+    <link href="static/styles/predict.css" rel="stylesheet"/>
+</head>
+<body>
+      
+    <h1>Upload Image for Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="upload-container">
+         <div class="upload-wrapper">
+           <p class="upload-message">Upload Image</p>
+           <input type="file" name="file"  filename="uploaded-image"/>
+       </div>
+       
+     </div>
+       <button type="submit">Predict</button> 
+     </form>
+    {% if graph %}
+        <div class="graph-container">
+        <h2>Prediction Result</h2>
+        <div class="image-container">
+          <img src="static/images/{{ filename }}" alt="Uploaded Image" width="256px" height="256px">
+        <img src="data:image/png;base64,{{ graph }}" alt="Prediction Graph">
+      </div>
+      <h1 style="color:whitesmoke; margin-top:10px;">{{prediction}}</h1>
+    </div>
+    {% endif %}
+       
+      <script src="static/js/script.js">
+      </script>
+</body>
+</html>

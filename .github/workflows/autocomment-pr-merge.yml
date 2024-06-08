@@ -25,7 +25,7 @@ jobs:
       run: |
         COMMENT=$(cat <<EOF
         {
-          "body": "🎉 Your pull request has been successfully merged! 🎉 Thank you for your valuable contribution to our project. Your efforts are greatly appreciated. Feel free to reach out if you have any more contributions or if there's anything else we can assist you with. Keep up the fantastic work! 🚀"
+          "body": "🎉 Your pull request has been successfully merged! 🎉 Thank you for your valuable contribution to our project. \n\n Ideally I take around a day to review and approve the issues, So comment only if your PR goes stale more than a 2 days, please tag me and comment below. \n\n Your efforts are greatly appreciated. Feel free to reach out if you have any more contributions or if there's anything else we can assist you with. Keep up the fantastic work! 🚀"
         }
         EOF
         )
