@@ -1,5 +1,5 @@
 
-# Email Spam Detection
+# Diamond Price Detection
 
 ## Overview
 
