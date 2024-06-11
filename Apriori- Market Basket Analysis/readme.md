@@ -5,18 +5,22 @@ In the era of data-driven decision-making, understanding the relationships and p
 
 
 - Market Basket Analysis is a popular data mining technique used to identify associations between items in large datasets. This notebook demonstrates the use of the Apriori algorithm to find frequent itemsets and generate association rules from a transactional dataset.
+- 
 The Apriori algorithm works by identifying the frequent individual items in the dataset and extending them to larger and larger itemsets as long as those itemsets appear sufficiently often in the dataset. The key concepts involved in this process are:
+
 **Support:** The proportion of transactions that contain the itemset.
+
 **Confidence:** The likelihood that a transaction containing item A also contains item B.
+
 **Lift:** The ratio of the observed support to that expected if A and B were independent.
 
 
 _In this notebook, we will:_
-1.Load and preprocess the dataset.
-2.Generate frequent itemsets using the Apriori algorithm.
-3.Derive association rules from the frequent itemsets.
-4.Visualize the top associations.
-5.Build a simple recommendation system based on the association rules.
+1. Load and preprocess the dataset.
+2. Generate frequent itemsets using the Apriori algorithm.
+3. Derive association rules from the frequent itemsets.
+4. Visualize the top associations.
+5. Build a simple recommendation system based on the association rules.
 6. Further allow users to give their recommendations.
 
 
