@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        button[type="submit"] a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .signout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .signout-btn:hover {
+            background-color: #bd2130;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stress Prediction</h1>
+
+    <h1>Welcome to Stress Prediction Page!!</h1>
+
+    <form action="/predict/" method="post">
+            {% csrf_token %}
+        <label for="text">Enter Text:</label>
+        <textarea name="text" id="text" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit" id = 'predict_btn' name="predict_btn" value="predict_btn">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <p>{{ prediction }}</p>
+    {% endif %}
+
+    <button type="submit"><a href="/home"></a> SignOut </button>
+</body>
+</html>
