@@ -1,7 +1,3 @@
-Here's the enhanced README.md with the added details:
-
----
-
 # Breast Cancer Detection using Deep Learning with Ultrasound Imaging
 
 ## 📝 Abstract
