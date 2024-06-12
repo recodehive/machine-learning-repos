@@ -32,6 +32,9 @@ pip install numpy
 
 #### Output 
 
+<img width="572" alt="Screenshot 2024-06-04 at 11 38 04 AM" src="https://github.com/KamakshiOjha/machine-learning-repos/assets/114620432/07c64a97-2912-42b3-a362-31ca3b862283">
+
+<img width="571" alt="Screenshot 2024-06-04 at 11 37 57 AM" src="https://github.com/KamakshiOjha/machine-learning-repos/assets/114620432/2f55f105-54b6-4230-9f52-65c776d46a15">
 
 
 ### Happy Coding 👦
