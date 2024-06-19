@@ -1133,11 +1133,79 @@ If later found out the points will be deducted. you cant be earning more than 60
       </tr>    
   </table>
 
-  ### Projects
+  ### Projects 
 
 > These Projects help you gain real time exprience for building machine learning models.
 
 #### Beginner Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/disease-prediction-using-machine-learning/">Disease Prediction Using Machine Learning</a></td>
+    <td>Project on predicting diseases using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-heart-disease-prediction-using-logistic-regression/">ML | Heart Disease Prediction Using Logistic Regression</a></td>
+    <td>Implementation of heart disease prediction using logistic regression.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/prediction-of-wine-type-using-deep-learning/?ref=rp">Prediction of Wine Type using Deep Learning</a></td>
+    <td>Project on predicting the type of wine using deep learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/parkinson-disease-prediction-using-machine-learning-python/">Parkinson’s Disease Prediction using Machine Learning in Python</a></td>
+    <td>Project on predicting Parkinson's disease using machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-kaggle-breast-cancer-wisconsin-diagnosis-using-logistic-regression/">ML | Kaggle Breast Cancer Wisconsin Diagnosis using Logistic Regression</a></td>
+    <td>Breast cancer diagnosis project using logistic regression on Kaggle dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-cancer-cell-classification-using-scikit-learn/">ML | Cancer cell classification using Scikit-learn</a></td>
+    <td>Cancer cell classification project using Scikit-learn.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-kaggle-breast-cancer-wisconsin-diagnosis-using-knn/">ML | Kaggle Breast Cancer Wisconsin Diagnosis using KNN and Cross-Validation</a></td>
+    <td>Breast cancer diagnosis project using KNN and cross-validation on Kaggle dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/autism-prediction-using-machine-learning/">Autism Prediction using Machine Learning</a></td>
+    <td>Project on predicting autism using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-credit-card-fraud-detection/">Credit Card Fraud Detection</a></td>
+    <td>Project on detecting credit card fraud using machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/dogecoin-price-prediction-with-machine-learning/?ref=rp">Dogecoin Price Prediction with Machine Learning</a></td>
+    <td>Project on predicting Dogecoin price using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/zillow-home-value-zestimate-prediction-in-ml/">Zillow Home Value (Zestimate) Prediction in ML</a></td>
+    <td>Project on predicting Zillow home values using machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/bitcoin-price-prediction-using-machine-learning-in-python/">Bitcoin Price Prediction using Machine Learning in Python</a></td>
+    <td>Project on predicting Bitcoin price using machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/sales-forecast-prediction-python/">Sales Forecast Prediction – Python</a></td>
+    <td>Project on predicting sales forecasts using Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/analyzing-selling-price-of-used-cars-using-python/">Customer Segmentation using Unsupervised Machine Learning in Python</a></td>
+    <td>Project on customer segmentation using unsupervised machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/box-office-revenue-prediction-using-linear-regression-in-ml/">Analyzing Selling Price of Used Cars using Python</a></td>
+    <td>Project on analyzing the selling price of used cars using Python.</td>
+  </tr>
+</table>
+
 #### Intermediate Level Projects
 #### Advanced Level Projects
 
