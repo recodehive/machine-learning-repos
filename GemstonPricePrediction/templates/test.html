@@ -1,0 +1,271 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+  caret-color: red;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.container1 .box {
+    display : flex;
+   flex-direction : row;
+   margin: 0.01rem;
+   padding: 0.1rem 0.1rem;
+}
+select{
+border-radius: 15px;
+width:190px;
+color: gray;
+height: 30px;
+background: #ecf0f3;
+padding: 5px;
+padding-left: 20px;
+height: 30px;
+font-size: 14px;
+border-radius: 50px;
+border: #ecf0f3;
+box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.container {
+  position: relative;
+  width: 450px;
+  height: 610px;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  position:absolute;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("/static/gemstone.png");
+  margin:auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #a9afb5, -7px -7px 10px rgb(218, 214, 214);
+}
+
+.brand-title {
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #f21d80;
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 5px;
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+.inputs1 {
+  text-align: left;
+  margin-top: 5px;
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+label {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-left: 120px;
+  }
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+.input1 {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+
+label {
+  margin-bottom: 2px;
+  height: 30px;
+  padding-top: 4px;
+}
+
+label:nth-of-type(1) {
+  margin-top: 2px;
+}
+label:nth-of-type(2) {
+  margin-top: 8px;
+}
+
+input::placeholder {
+  color: gray;
+}
+.input1::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 5px;
+  padding-left: 20px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.input1 {
+  background: #ecf0f3;
+  padding: 5px;
+  padding-right: 50px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button {
+  color: white;
+  margin-top: 0px;
+  background: #f21d79;
+  height: 40px;
+  width: 40%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #939191, -6px -6px 6px rgb(238, 235, 235);
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow:#b9aab1;
+  color: #e46fb6;
+}
+
+a {
+  position: absolute;
+  font-size: 20px;
+  bottom: 8px;
+  right: 6px;
+  text-decoration: none;
+  color: rgb(250, 248, 249);
+  background: rgb(242, 30, 122);
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+</style>
+
+
+
+<div class="container">
+  <div class="brand-logo"></div>
+  <div class="brand-title">Gemstone Price</div>
+  <div class="container1">
+    <div>
+      <form class="box" action="{{url_for('predict_datapoint')}}" method="POST" style="display: flex;">
+      <div class="inputs" style="float: left;">
+        <label for="carat">CARAT</label>
+      <input type="text" name="carat" id="carat" placeholder="Gemstone Carat" />
+
+      <label for="depth">Depth</label>
+      <input type="text" name="depth" id="depth" placeholder="Gemstone Depth" />
+
+      <label type="table">Table</label>
+      <input type="text" name="table" id="table" placeholder="Gemstone Table" />
+
+      <label type="x">Dimension X</label>
+      <input type="text" name="x" id="x" placeholder="Gemstone Dimension X" />
+
+      <label type="y">Dimension Y</label>
+      <input type="text" name="y" id="y" placeholder="Gemstone Dimension Y" />
+    </div>
+
+    <div class="inputs1" style="float: right;">
+      <label for="cut">CUT</label>
+      <select name="cut" id="cut">
+        <option value="Fair">Fair</option>
+        <option value="Good">Good</option>
+        <option value="Very Good">Very Good</option>
+        <option value="Premium">Premium</option>
+        <option value="Ideal">Ideal</option>
+    </select>
+      <label for="color">Color</label>
+      <select name="color" id="color">
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="H">H</option>
+        <option value="I">I</option>
+        <option value="J">J</option>
+    </select>
+      <label for="clarity">Clarity</label>
+      <select name="clarity" id="clarity">
+        <option value="I1">I1</option>
+        <option value="SI1">SI1</option>
+        <option value="SI2">SI2</option>
+        <option value="VS1">VS1</option>
+        <option value="VS2">VS2</option>
+        <option value="VVS1">VVS1</option>
+        <option value="VVS2">VVS2</option>
+        <option value="IF">IF</option>
+    </select>
+    <label for="z">Dimension z</label>
+    <input name="z" id="z" placeholder="Gemstone Dimension Z" />
+    
+  </div>
+</div>
+<!-- <button type="">Submit</button> -->
+<button onclick="style.display = 'none'" type="submit">Submit</button>
+<a href="/">reset</a>
+</form>
+<!-- <div style="clear:both;"></div> -->
+<br>
+{{final_result}}
+    
+    </div>
+  </div>

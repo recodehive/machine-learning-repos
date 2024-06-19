@@ -1,0 +1,14 @@
+Dataset->we used  keras.datasets import mnist , for the dataset 
+Requirements->
+here are some require libraries -
+import pandas as pd
+import numpy as np
+from keras.models import Sequential
+from keras.layers import Input,Convolution2D,MaxPooling2D ,Flatten ,Dense,Dropout
+from keras.utils import np_utils
+import tensorflow
+import matplotlib.pyplot as plt
+from keras.layers import *
+from keras.utils import to_categorical
+import matplotlib.pyplot as plt
+import cv2
