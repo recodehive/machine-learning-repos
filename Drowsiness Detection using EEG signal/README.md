@@ -74,6 +74,6 @@ To provide a conclusion based on the three models provided:
 
 **Conclusion**:
 - Model 1 is the most comprehensive and robust among the three, due to use of residual connections and global pooling.
-- Model 3, while simpler, may struggle with capturing complex patterns in sequential data compared to the other two models.
+- Model 2, while simpler, may struggle with capturing complex patterns in sequential data compared to the other two models.
 
 **The choice of the best model depends on factors such as the complexity of the dataset, computational resources, and the specific requirements of the task at hand.**
