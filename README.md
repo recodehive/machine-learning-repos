@@ -1233,6 +1233,41 @@ If later found out the points will be deducted. you cant be earning more than 60
 
 #### Advanced Level Projects
 
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/multiclass-image-classification-using-transfer-learning/">Multiclass Image Classification using Transfer Learning</a></td>
+    <td>Advanced project on multiclass image classification using transfer learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/image-caption-generator-using-deep-learning-on-flickr8k-dataset/">Image Caption Generator using Deep Learning on Flickr8K Dataset</a></td>
+    <td>Project on generating image captions using deep learning models on the Flickr8K dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/facemask-detection-using-tensorflow-in-python/">FaceMask Detection using TensorFlow in Python</a></td>
+    <td>Project on detecting face masks using TensorFlow in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/coupon-purchase-prediction">Coupon Purchase Prediction</a></td>
+    <td>Project on predicting coupon purchases using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/loan-prediction-analytics">Loan Eligibility Prediction</a></td>
+    <td>Project on predicting loan eligibility using advanced analytics and machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/bkkinfo/Inventory-Product-Demand-Forecasting-ML-">Inventory Demand Forecasting</a></td>
+    <td>Project on forecasting inventory demand using machine learning models.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/watch?v=D7_SqyWiPOg">Passenger Survival Prediction</a></td>
+    <td>Project on predicting passenger survival using machine learning techniques.</td>
+  </tr>
+</table>
+
  
 
 ###  Interview 
