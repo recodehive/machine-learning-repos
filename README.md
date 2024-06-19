@@ -192,7 +192,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://keras.io/getting_started/">Keras</a></td>
-      <td>That documentation is a great resource for anyone looking to get started with Keras, a popular deep learning framework. Keras provides a user-friendly interface for building and training deep learning models. Whether you're a beginner or an experienced practitioner, Keras offers a lot of flexibility and ease of use.</td>
+      <td>This documentation is a great resource for anyone looking to get started with Keras, a popular deep learning framework. Keras provides a user-friendly interface for building and training deep learning models. Whether you're a beginner or an experienced practitioner, Keras offers a lot of flexibility and ease of use.</td>
     </tr>
     <tr>
       <td ><a href="https://scikit-learn.org/stable/tutorial/index.html">Scikit-learn</a></td>
