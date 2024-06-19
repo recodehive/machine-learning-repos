@@ -5,15 +5,15 @@
 
 <h3>A curated list of awesome machine learning frameworks, libraries and software (by language). </h3>
 
-This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
-Repeated issue creation for more scores will be considered has flag.
-If later found out the points will be deducted. you cant be earning more than 60 points from this repo. any techincal feature addition is excluded
+This is a complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
+Repeated issue creation for more scores will be considered as flag.
+If later found out, the points will be deducted. You can't be earning more than 60 points from this repo. Any technical feature addition is excluded
 
 <h1>Machine Learning <picture>
   <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.webp" type="image/webp">
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="32" height="32">
 </picture></h1>
- <h3>What is machine Learning?</h3>
+ <h3>What is Machine Learning?</h3>
  <img src="https://atriainnovation.com/uploads/2023/11/portada-9.jpg" align="right">
   <p>    ------------------------------------------------------------------------------ </p>
   <p>Machine Learning (ML) is a subfield of Artificial Intelligence (AI) that empowers systems to learn from data without explicit programming. ML algorithms analyze vast datasets to identify patterns, extract insights, and make predictions or decisions based on the derived knowledge.
@@ -38,8 +38,8 @@ If later found out the points will be deducted. you cant be earning more than 60
       - [Model Selection](#model-selection)
       - [Model Training](#model-training)
       - [Model Evaluation](#model-evaluation)
-      - [Model optimizing](#model-optimization)
-      - [Model deploying](#model-deployment)
+      - [Model Optimizing](#model-optimization)
+      - [Model Deploying](#model-deployment)
     - [Machine learning algorithms](#machine-learning-algorithms)
     - [Machine Learning Python](#machine-learning-python)
       - [Python General-Purpose Machine Learning](#python-general-purpose-machine-learning)
@@ -76,17 +76,17 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
 <tr>
    <td><a href="https://www.scaler.com/blog/machine-learning-roadmap/"> Machine Learning Roadmap </a></td>
-   <td>This roadmap provided by scaler gives you clear cut roadmap for studying/learning Machine learning</td>
+   <td>This roadmap provided by scaler gives you clear cut roadmap for studying/learning Machine learning.</td>
 </tr>
 <tr>
    <td><a href="https://drive.google.com/file/d/11KvoK4FMs6gJbo-u-0H5Kj-EY5jPz7g5/view?usp=sharing"> ML Engineer Roadmap </a></td>
-   <td>This roadmap  gives you clear cut roadmap for becoming ready for the  ML Engineer Job Profile</td>
+   <td>This roadmap  gives you clear cut roadmap for becoming ready for the  ML Engineer job profile.</td>
 </tr>
 </table>
 
 ### Tutorials or Courses
 
-> Discover a collection of tutorials and courses for learning the Mathamatics,Fundamentals,Algorithms and more which are requied for Machine learning.
+> Discover a collection of tutorials and courses for learning the Mathematics, Fundamentals, Algorithms and more which are required for Machine learning.
 
 #### Fundamentals of Mathematics
 
@@ -128,7 +128,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     <tr>
         <td><a href="https://www.youtube.com/watch?v=LHBE6Q9XlzI&t=1s">Python for Data Science</a></td>
         <td>
-        This 12 hrs video provided Freecodecamp give you the fundamental knowledge required for the data science using python including the introduction of pandas,numpy and matplotlib </td>
+        This 12 hrs video provided Freecodecamp give you the fundamental knowledge required for the data science using python including the introduction of pandas, numpy and matplotlib </td>
     </tr>
     <tr>
         <td><a href="https://www.youtube.com/watch?v=_YWwU-gJI5U&t=1s">Data Visualization using Python</a></td>
@@ -213,7 +213,7 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
   <tr>
     <td><a href="https://www.youtube.com/watch?v=BuezNNeOGCI&t=1s">Introduction to Machine Learning</a></td>
-    <td>This video by Edureka on "Introduction To Machine Learning" will help you understand the basics of Machine Learning like how,what,when and how it can be used to solve real-world problems. </td>
+    <td>This video by Edureka on "Introduction To Machine Learning" will help you understand the basics of Machine Learning like what, when and how it can be used to solve real-world problems. </td>
   </tr>
 </table>
 
@@ -226,7 +226,7 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
   <tr>
     <td><a href="https://www.geeksforgeeks.org/supervised-machine-learning/">Supervised Learning</a></td>
-    <td>The GeeksforGeeks article on supervised machine learning is the best resource. Their tutorials often break down complex topics into understandable explanations and provide code examples to illustrate concepts. Supervised learning is a fundamental concept in machine learning, where models are trained on labeled data to make predictions or decisions..</td>
+    <td>The GeeksforGeeks article on supervised machine learning is the best resource. Their tutorials often break down complex topics into understandable explanations and provide code examples to illustrate concepts. Supervised learning is a fundamental concept in machine learning, where models are trained on labeled data to make predictions or decisions.</td>
   </tr>
   <tr>
     <td><a href="https://www.geeksforgeeks.org/ml-types-learning-part-2/">Unsupervised Learning</a></td>
@@ -234,7 +234,7 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
   <tr>
     <td><a href="https://www.geeksforgeeks.org/what-is-reinforcement-learning/">Reinforcement learning</a></td>
-    <td>This geeksforgeeks article on reinforcement learning is the best to understand the RL.RL has applications in various domains, such as robotics, game playing, recommendation systems, and autonomous vehicle control, among others.</td>
+    <td>This geeksforgeeks article on reinforcement learning is the best to understand the RL. RL has applications in various domains, such as robotics, game playing, recommendation systems, and autonomous vehicle control, among others.</td>
   </tr>
 </table>
 
@@ -277,7 +277,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://developers.google.com/machine-learning/data-prep/">Data Preparation by Google developers</a></td>
-      <td>The Google's Machine Learning Data Preparation guide is a valuable resource for understanding best practices and techniques for preparing data for machine learning projects. Effective data preparation is crucial for building accurate and reliable machine learning models,</td>
+      <td>The Google's Machine Learning Data Preparation guide is a valuable resource for understanding best practices and techniques for preparing data for machine learning projects. Effective data preparation is crucial for building accurate and reliable machine learning models.</td>
     </tr>
 </table>
 
@@ -294,7 +294,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://youtu.be/r-Mc8YswoCE">Model selection process</a></td>
-      <td>This Edureka video on Model Selection and Boosting, gives you Step by step guide to select and boost your models in Machine Learning, including need For Model Evaluation,Resampling techniques and more</td>
+      <td>This Edureka video on Model Selection and Boosting, gives you Step by step guide to select and boost your models in Machine Learning, including need For Model Evaluation,Resampling techniques and more.</td>
     </tr>
     <tr>
       <td ><a href="https://youtu.be/SF0YdBXjr_A">Model selection - video</a></td>
@@ -336,7 +336,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://medium.com/analytics-vidhya/model-evaluation-metrics-in-machine-learning-928999fb79b2">Model Evaluation - Article</a></td>
-      <td>This Medium article is about the resource discussing various model evaluation metrics in machine learning which are crucial for understanding their performance and making informed decisions about model selection and deployment</td>
+      <td>This Medium article is about the resource discussing various model evaluation metrics in machine learning which are crucial for understanding their performance and making informed decisions about model selection and deployment.</td>
     </tr>
     <tr>
       <td ><a href="https://youtu.be/LbX4X71-TFI">Model Evaluation - Video</a></td>
@@ -357,7 +357,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://towardsdatascience.com/understanding-optimization-algorithms-in-machine-learning-edfdb4df766b">Model Optimization - Article</a></td>
-      <td>Theis article from Towards Data Science is a comprehensive guide on understanding optimization algorithms in machine learning. Optimization algorithms play a crucial role in training machine learning models by iteratively adjusting model parameters to minimize a loss function..</td>
+      <td>This article from Towards Data Science is a comprehensive guide on understanding optimization algorithms in machine learning. Optimization algorithms play a crucial role in training machine learning models by iteratively adjusting model parameters to minimize a loss function..</td>
     </tr>
     <tr>
       <td ><a href="https://youtu.be/x6f5JOPhci0">Model Optimization - Video</a></td>
@@ -404,7 +404,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://www.youtube.com/watch?v=vsWrXfO3wWw">Gradient Descent</a></td>
-      <td>This video, will teach you few important concepts in machine learning such as cost function, gradient descent, learning rate and mean squared error and more. This helps you to python code to implement gradient descent for linear regression in python</td>
+      <td>This video, will teach you few important concepts in machine learning such as cost function, gradient descent, learning rate and mean squared error and more. This helps you to python code to implement gradient descent for linear regression in python.</td>
     </tr>
     <tr>
       <td ><a href="https://www.youtube.com/watch?v=FB5EdxAGxQg"> Support Vector Machines</a></td>
