@@ -55,6 +55,9 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [Machine learning forums](#machine-learning-forums)
 - [courses](#courses)
 - [Projects](#projects)
+  - [Beginner Level Projects](#beginner-level-projects)
+  - [Intermediate Level Projects](#intermediate-level-projects)
+  - [Advanced Level Projects](#advanced-level-projects)
 - [Interview](#interview)
 - [Others](#others)
 - [Conclusion](#conclusion)
@@ -1130,26 +1133,142 @@ If later found out the points will be deducted. you cant be earning more than 60
       </tr>    
   </table>
 
-  ### Projects
+  ### Projects 
 
 > These Projects help you gain real time exprience for building machine learning models.
 
-  <table width="100%">
-      <tr>
-        <th>Resource Name</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td><a href="https://www.geeksforgeeks.org/machine-learning-projects/">100+ Machine learning projects</a></td>
-        <td>This link which navigates to geekforgeeks article focuses on machine learning projects page on which serves as a valuable resource for individuals looking to explore, learn, and practice machine learning concepts through hands-on projects.
-        </td>
-      </tr> 
-      <tr>
-        <td><a href="https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code">500 ML projects repo</a></td>
-        <td>This GitHub repo maintained by Ashish Patel offers a comprehensive collection of machine learning and AI projects, providing valuable resources and learning opportunities for enthusiasts, students, researchers, and practitioners interested in exploring ML.
-        </td>
-      </tr>  
+#### Beginner Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/disease-prediction-using-machine-learning/">Disease Prediction Using Machine Learning</a></td>
+    <td>Project on predicting diseases using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-heart-disease-prediction-using-logistic-regression/">ML | Heart Disease Prediction Using Logistic Regression</a></td>
+    <td>Implementation of heart disease prediction using logistic regression.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/prediction-of-wine-type-using-deep-learning/?ref=rp">Prediction of Wine Type using Deep Learning</a></td>
+    <td>Project on predicting the type of wine using deep learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/parkinson-disease-prediction-using-machine-learning-python/">Parkinson’s Disease Prediction using Machine Learning in Python</a></td>
+    <td>Project on predicting Parkinson's disease using machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-kaggle-breast-cancer-wisconsin-diagnosis-using-logistic-regression/">ML | Kaggle Breast Cancer Wisconsin Diagnosis using Logistic Regression</a></td>
+    <td>Breast cancer diagnosis project using logistic regression on Kaggle dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-cancer-cell-classification-using-scikit-learn/">ML | Cancer cell classification using Scikit-learn</a></td>
+    <td>Cancer cell classification project using Scikit-learn.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-kaggle-breast-cancer-wisconsin-diagnosis-using-knn/">ML | Kaggle Breast Cancer Wisconsin Diagnosis using KNN and Cross-Validation</a></td>
+    <td>Breast cancer diagnosis project using KNN and cross-validation on Kaggle dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/autism-prediction-using-machine-learning/">Autism Prediction using Machine Learning</a></td>
+    <td>Project on predicting autism using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-credit-card-fraud-detection/">Credit Card Fraud Detection</a></td>
+    <td>Project on detecting credit card fraud using machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/dogecoin-price-prediction-with-machine-learning/?ref=rp">Dogecoin Price Prediction with Machine Learning</a></td>
+    <td>Project on predicting Dogecoin price using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/zillow-home-value-zestimate-prediction-in-ml/">Zillow Home Value (Zestimate) Prediction in ML</a></td>
+    <td>Project on predicting Zillow home values using machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/bitcoin-price-prediction-using-machine-learning-in-python/">Bitcoin Price Prediction using Machine Learning in Python</a></td>
+    <td>Project on predicting Bitcoin price using machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/sales-forecast-prediction-python/">Sales Forecast Prediction – Python</a></td>
+    <td>Project on predicting sales forecasts using Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/analyzing-selling-price-of-used-cars-using-python/">Customer Segmentation using Unsupervised Machine Learning in Python</a></td>
+    <td>Project on customer segmentation using unsupervised machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/box-office-revenue-prediction-using-linear-regression-in-ml/">Analyzing Selling Price of Used Cars using Python</a></td>
+    <td>Project on analyzing the selling price of used cars using Python.</td>
+  </tr>
 </table>
+
+#### Intermediate Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/article/recommender-systems-python-methods-and-algorithms/413">Movie Recommender System</a></td>
+    <td>Project on building a movie recommender system using various methods and algorithms in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/topics/housing-price-prediction">House Pricing Prediction</a></td>
+    <td>Project on predicting house prices using different machine learning models.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/ecommerce-product-reviews-ranking-sentiment-analysis">Sentiment Analysis</a></td>
+    <td>Project on analyzing sentiment in e-commerce product reviews and ranking them accordingly.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/rental-listing-inquiries">Interest Rate Prediction</a></td>
+    <td>Project on predicting interest rates for rental listings using machine learning techniques.</td>
+  </tr>
+</table>
+
+#### Advanced Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/multiclass-image-classification-using-transfer-learning/">Multiclass Image Classification using Transfer Learning</a></td>
+    <td>Advanced project on multiclass image classification using transfer learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/image-caption-generator-using-deep-learning-on-flickr8k-dataset/">Image Caption Generator using Deep Learning on Flickr8K Dataset</a></td>
+    <td>Project on generating image captions using deep learning models on the Flickr8K dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/facemask-detection-using-tensorflow-in-python/">FaceMask Detection using TensorFlow in Python</a></td>
+    <td>Project on detecting face masks using TensorFlow in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/coupon-purchase-prediction">Coupon Purchase Prediction</a></td>
+    <td>Project on predicting coupon purchases using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/loan-prediction-analytics">Loan Eligibility Prediction</a></td>
+    <td>Project on predicting loan eligibility using advanced analytics and machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/bkkinfo/Inventory-Product-Demand-Forecasting-ML-">Inventory Demand Forecasting</a></td>
+    <td>Project on forecasting inventory demand using machine learning models.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/watch?v=D7_SqyWiPOg">Passenger Survival Prediction</a></td>
+    <td>Project on predicting passenger survival using machine learning techniques.</td>
+  </tr>
+</table>
+
+ 
 
 ###  Interview 
 
