@@ -964,6 +964,56 @@ If later found out the points will be deducted. you cant be earning more than 60
     <td>Paid</td>
 
   </tr>      
+  <tr>
+    <td><a href="https://www.manning.com/books/machine-learning-in-action">Machine Learning in Action</a></td>
+    <td>A comprehensive guide to implementing machine learning algorithms with real-world examples.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/books/machine-learning-engineering-in-action">Machine Learning Engineering in Action</a></td>
+    <td>Practical guide to machine learning engineering practices and deployment.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.amazon.in/Machine-Learning-Action-Newbies-Beginners/dp/1717819990">Machine Learning in Action: A Primer for the Layman, Step by Step Guide for Newbies</a></td>
+    <td>An introductory guide for beginners to understand and apply machine learning concepts.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/books/real-world-machine-learning">Real-World Machine Learning</a></td>
+    <td>Focuses on applying machine learning techniques to real-world problems.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://link.springer.com/book/10.1007/978-1-4302-5990-9">Efficient Learning Machines: Theories, Concepts, and Applications for Engineers and System Designers</a></td>
+    <td>Discusses theories, concepts, and practical applications of machine learning for engineers.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/books/bayesian-optimization-in-action">Bayesian Optimization in Action</a></td>
+    <td>Guide to applying Bayesian optimization techniques in real-world scenarios.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.statlearning.com/">An Introduction to Statistical Learning: With Applications in R</a></td>
+    <td>Introductory text on statistical learning with practical applications in R.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://mitpress.mit.edu/9780262029445/fundamentals-of-machine-learning-for-predictive-data-analytics/">Fundamentals of Machine Learning for Predictive Data Analytics: Algorithms, Worked Examples, and Case Studies</a></td>
+    <td>Comprehensive overview of machine learning algorithms with worked examples and case studies.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.ibm.com/downloads/cas/GB8ZMQZ3">Machine Learning For Dummies</a></td>
+    <td>Beginner-friendly introduction to machine learning concepts and applications.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.amazon.in/Quantum-Machine-Learning-Computing-Mining/dp/0128100400">Quantum Machine Learning: What Quantum Computing Means to Data Mining</a></td>
+    <td>Explores the intersection of quantum computing and machine learning.</td>
+    <td>Paid</td>
+  </tr>
   </table>
 
 ### Datasets
