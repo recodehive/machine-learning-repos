@@ -1,0 +1,7 @@
+TensorFlow==2.10.0
+NumPy==1.22.2
+Pandas==1.5.5
+Matplotlib==3.5.1
+Librosa==0.8.1
+Seaborn==0.11.3
+Resampy==0.2.3
