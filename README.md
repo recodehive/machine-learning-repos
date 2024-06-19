@@ -1207,6 +1207,30 @@ If later found out the points will be deducted. you cant be earning more than 60
 </table>
 
 #### Intermediate Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/article/recommender-systems-python-methods-and-algorithms/413">Movie Recommender System</a></td>
+    <td>Project on building a movie recommender system using various methods and algorithms in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/topics/housing-price-prediction">House Pricing Prediction</a></td>
+    <td>Project on predicting house prices using different machine learning models.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/ecommerce-product-reviews-ranking-sentiment-analysis">Sentiment Analysis</a></td>
+    <td>Project on analyzing sentiment in e-commerce product reviews and ranking them accordingly.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/rental-listing-inquiries">Interest Rate Prediction</a></td>
+    <td>Project on predicting interest rates for rental listings using machine learning techniques.</td>
+  </tr>
+</table>
+
 #### Advanced Level Projects
 
  
