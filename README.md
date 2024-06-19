@@ -53,7 +53,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [GitHub Repositories](#github-repositories)
 - [Youtube Channels](#youtube-channels)
 - [Machine learning forums](#machine-learning-forums)
-- [courses](#courses)
+- [Courses](#courses)
 - [Projects](#projects)
 - [Interview](#interview)
 - [Others](#others)
