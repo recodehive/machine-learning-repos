@@ -55,6 +55,9 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [Machine learning forums](#machine-learning-forums)
 - [courses](#courses)
 - [Projects](#projects)
+  - [Beginner Level Projects](#beginner-level-projects)
+  - [Intermediate Level Projects](#intermediate-level-projects)
+  - [Advanced Level Projects](#advanced-level-projects)
 - [Interview](#interview)
 - [Others](#others)
 - [Conclusion](#conclusion)
@@ -1134,22 +1137,11 @@ If later found out the points will be deducted. you cant be earning more than 60
 
 > These Projects help you gain real time exprience for building machine learning models.
 
-  <table width="100%">
-      <tr>
-        <th>Resource Name</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td><a href="https://www.geeksforgeeks.org/machine-learning-projects/">100+ Machine learning projects</a></td>
-        <td>This link which navigates to geekforgeeks article focuses on machine learning projects page on which serves as a valuable resource for individuals looking to explore, learn, and practice machine learning concepts through hands-on projects.
-        </td>
-      </tr> 
-      <tr>
-        <td><a href="https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code">500 ML projects repo</a></td>
-        <td>This GitHub repo maintained by Ashish Patel offers a comprehensive collection of machine learning and AI projects, providing valuable resources and learning opportunities for enthusiasts, students, researchers, and practitioners interested in exploring ML.
-        </td>
-      </tr>  
-</table>
+#### Beginner Level Projects
+#### Intermediate Level Projects
+#### Advanced Level Projects
+
+ 
 
 ###  Interview 
 
