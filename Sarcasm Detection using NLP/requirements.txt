@@ -1,0 +1,4 @@
+tensorflow==2.10.0
+numpy
+pandas
+scikit-learn
