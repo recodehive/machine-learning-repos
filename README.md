@@ -5,15 +5,15 @@
 
 <h3>A curated list of awesome machine learning frameworks, libraries and software (by language). </h3>
 
-This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
-Repeated issue creation for more scores will be considered has flag.
-If later found out the points will be deducted. you cant be earning more than 60 points from this repo. any techincal feature addition is excluded
+This is a complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
+Repeated issue creation for more scores will be considered as flag.
+If later found out, the points will be deducted. You can't be earning more than 60 points from this repo. Any technical feature addition is excluded
 
 <h1>Machine Learning <picture>
   <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.webp" type="image/webp">
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="32" height="32">
 </picture></h1>
- <h3>What is machine Learning?</h3>
+ <h3>What is Machine Learning?</h3>
  <img src="https://atriainnovation.com/uploads/2023/11/portada-9.jpg" align="right">
   <p>    ------------------------------------------------------------------------------ </p>
   <p>Machine Learning (ML) is a subfield of Artificial Intelligence (AI) that empowers systems to learn from data without explicit programming. ML algorithms analyze vast datasets to identify patterns, extract insights, and make predictions or decisions based on the derived knowledge.
@@ -38,8 +38,8 @@ If later found out the points will be deducted. you cant be earning more than 60
       - [Model Selection](#model-selection)
       - [Model Training](#model-training)
       - [Model Evaluation](#model-evaluation)
-      - [Model optimizing](#model-optimization)
-      - [Model deploying](#model-deployment)
+      - [Model Optimizing](#model-optimization)
+      - [Model Deploying](#model-deployment)
     - [Machine learning algorithms](#machine-learning-algorithms)
     - [Machine Learning Python](#machine-learning-python)
       - [Python General-Purpose Machine Learning](#python-general-purpose-machine-learning)
@@ -53,8 +53,11 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [GitHub Repositories](#github-repositories)
 - [Youtube Channels](#youtube-channels)
 - [Machine learning forums](#machine-learning-forums)
-- [courses](#courses)
+- [Courses](#courses)
 - [Projects](#projects)
+  - [Beginner Level Projects](#beginner-level-projects)
+  - [Intermediate Level Projects](#intermediate-level-projects)
+  - [Advanced Level Projects](#advanced-level-projects)
 - [Interview](#interview)
 - [Others](#others)
 - [Conclusion](#conclusion)
@@ -76,17 +79,17 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
 <tr>
    <td><a href="https://www.scaler.com/blog/machine-learning-roadmap/"> Machine Learning Roadmap </a></td>
-   <td>This roadmap provided by scaler gives you clear cut roadmap for studying/learning Machine learning</td>
+   <td>This roadmap provided by scaler gives you clear cut roadmap for studying/learning Machine learning.</td>
 </tr>
 <tr>
    <td><a href="https://drive.google.com/file/d/11KvoK4FMs6gJbo-u-0H5Kj-EY5jPz7g5/view?usp=sharing"> ML Engineer Roadmap </a></td>
-   <td>This roadmap  gives you clear cut roadmap for becoming ready for the  ML Engineer Job Profile</td>
+   <td>This roadmap  gives you clear cut roadmap for becoming ready for the  ML Engineer job profile.</td>
 </tr>
 </table>
 
 ### Tutorials or Courses
 
-> Discover a collection of tutorials and courses for learning the Mathamatics,Fundamentals,Algorithms and more which are requied for Machine learning.
+> Discover a collection of tutorials and courses for learning the Mathematics, Fundamentals, Algorithms and more which are required for Machine learning.
 
 #### Fundamentals of Mathematics
 
@@ -128,7 +131,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     <tr>
         <td><a href="https://www.youtube.com/watch?v=LHBE6Q9XlzI&t=1s">Python for Data Science</a></td>
         <td>
-        This 12 hrs video provided Freecodecamp give you the fundamental knowledge required for the data science using python including the introduction of pandas,numpy and matplotlib </td>
+        This 12 hrs video provided Freecodecamp give you the fundamental knowledge required for the data science using python including the introduction of pandas, numpy and matplotlib </td>
     </tr>
     <tr>
         <td><a href="https://www.youtube.com/watch?v=_YWwU-gJI5U&t=1s">Data Visualization using Python</a></td>
@@ -192,7 +195,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://keras.io/getting_started/">Keras</a></td>
-      <td>That documentation is a great resource for anyone looking to get started with Keras, a popular deep learning framework. Keras provides a user-friendly interface for building and training deep learning models. Whether you're a beginner or an experienced practitioner, Keras offers a lot of flexibility and ease of use.</td>
+      <td>This documentation is a great resource for anyone looking to get started with Keras, a popular deep learning framework. Keras provides a user-friendly interface for building and training deep learning models. Whether you're a beginner or an experienced practitioner, Keras offers a lot of flexibility and ease of use.</td>
     </tr>
     <tr>
       <td ><a href="https://scikit-learn.org/stable/tutorial/index.html">Scikit-learn</a></td>
@@ -213,7 +216,7 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
   <tr>
     <td><a href="https://www.youtube.com/watch?v=BuezNNeOGCI&t=1s">Introduction to Machine Learning</a></td>
-    <td>This video by Edureka on "Introduction To Machine Learning" will help you understand the basics of Machine Learning like how,what,when and how it can be used to solve real-world problems. </td>
+    <td>This video by Edureka on "Introduction To Machine Learning" will help you understand the basics of Machine Learning like what, when and how it can be used to solve real-world problems. </td>
   </tr>
 </table>
 
@@ -226,7 +229,7 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
   <tr>
     <td><a href="https://www.geeksforgeeks.org/supervised-machine-learning/">Supervised Learning</a></td>
-    <td>The GeeksforGeeks article on supervised machine learning is the best resource. Their tutorials often break down complex topics into understandable explanations and provide code examples to illustrate concepts. Supervised learning is a fundamental concept in machine learning, where models are trained on labeled data to make predictions or decisions..</td>
+    <td>The GeeksforGeeks article on supervised machine learning is the best resource. Their tutorials often break down complex topics into understandable explanations and provide code examples to illustrate concepts. Supervised learning is a fundamental concept in machine learning, where models are trained on labeled data to make predictions or decisions.</td>
   </tr>
   <tr>
     <td><a href="https://www.geeksforgeeks.org/ml-types-learning-part-2/">Unsupervised Learning</a></td>
@@ -234,7 +237,7 @@ If later found out the points will be deducted. you cant be earning more than 60
   </tr>
   <tr>
     <td><a href="https://www.geeksforgeeks.org/what-is-reinforcement-learning/">Reinforcement learning</a></td>
-    <td>This geeksforgeeks article on reinforcement learning is the best to understand the RL.RL has applications in various domains, such as robotics, game playing, recommendation systems, and autonomous vehicle control, among others.</td>
+    <td>This geeksforgeeks article on reinforcement learning is the best to understand the RL. RL has applications in various domains, such as robotics, game playing, recommendation systems, and autonomous vehicle control, among others.</td>
   </tr>
 </table>
 
@@ -277,7 +280,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://developers.google.com/machine-learning/data-prep/">Data Preparation by Google developers</a></td>
-      <td>The Google's Machine Learning Data Preparation guide is a valuable resource for understanding best practices and techniques for preparing data for machine learning projects. Effective data preparation is crucial for building accurate and reliable machine learning models,</td>
+      <td>The Google's Machine Learning Data Preparation guide is a valuable resource for understanding best practices and techniques for preparing data for machine learning projects. Effective data preparation is crucial for building accurate and reliable machine learning models.</td>
     </tr>
 </table>
 
@@ -294,7 +297,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://youtu.be/r-Mc8YswoCE">Model selection process</a></td>
-      <td>This Edureka video on Model Selection and Boosting, gives you Step by step guide to select and boost your models in Machine Learning, including need For Model Evaluation,Resampling techniques and more</td>
+      <td>This Edureka video on Model Selection and Boosting, gives you Step by step guide to select and boost your models in Machine Learning, including need For Model Evaluation,Resampling techniques and more.</td>
     </tr>
     <tr>
       <td ><a href="https://youtu.be/SF0YdBXjr_A">Model selection - video</a></td>
@@ -336,7 +339,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://medium.com/analytics-vidhya/model-evaluation-metrics-in-machine-learning-928999fb79b2">Model Evaluation - Article</a></td>
-      <td>This Medium article is about the resource discussing various model evaluation metrics in machine learning which are crucial for understanding their performance and making informed decisions about model selection and deployment</td>
+      <td>This Medium article is about the resource discussing various model evaluation metrics in machine learning which are crucial for understanding their performance and making informed decisions about model selection and deployment.</td>
     </tr>
     <tr>
       <td ><a href="https://youtu.be/LbX4X71-TFI">Model Evaluation - Video</a></td>
@@ -357,7 +360,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://towardsdatascience.com/understanding-optimization-algorithms-in-machine-learning-edfdb4df766b">Model Optimization - Article</a></td>
-      <td>Theis article from Towards Data Science is a comprehensive guide on understanding optimization algorithms in machine learning. Optimization algorithms play a crucial role in training machine learning models by iteratively adjusting model parameters to minimize a loss function..</td>
+      <td>This article from Towards Data Science is a comprehensive guide on understanding optimization algorithms in machine learning. Optimization algorithms play a crucial role in training machine learning models by iteratively adjusting model parameters to minimize a loss function..</td>
     </tr>
     <tr>
       <td ><a href="https://youtu.be/x6f5JOPhci0">Model Optimization - Video</a></td>
@@ -404,7 +407,7 @@ If later found out the points will be deducted. you cant be earning more than 60
     </tr>
     <tr>
       <td ><a href="https://www.youtube.com/watch?v=vsWrXfO3wWw">Gradient Descent</a></td>
-      <td>This video, will teach you few important concepts in machine learning such as cost function, gradient descent, learning rate and mean squared error and more. This helps you to python code to implement gradient descent for linear regression in python</td>
+      <td>This video, will teach you few important concepts in machine learning such as cost function, gradient descent, learning rate and mean squared error and more. This helps you to python code to implement gradient descent for linear regression in python.</td>
     </tr>
     <tr>
       <td ><a href="https://www.youtube.com/watch?v=FB5EdxAGxQg"> Support Vector Machines</a></td>
@@ -964,6 +967,56 @@ If later found out the points will be deducted. you cant be earning more than 60
     <td>Paid</td>
 
   </tr>      
+  <tr>
+    <td><a href="https://www.manning.com/books/machine-learning-in-action">Machine Learning in Action</a></td>
+    <td>A comprehensive guide to implementing machine learning algorithms with real-world examples.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/books/machine-learning-engineering-in-action">Machine Learning Engineering in Action</a></td>
+    <td>Practical guide to machine learning engineering practices and deployment.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.amazon.in/Machine-Learning-Action-Newbies-Beginners/dp/1717819990">Machine Learning in Action: A Primer for the Layman, Step by Step Guide for Newbies</a></td>
+    <td>An introductory guide for beginners to understand and apply machine learning concepts.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/books/real-world-machine-learning">Real-World Machine Learning</a></td>
+    <td>Focuses on applying machine learning techniques to real-world problems.</td>
+    <td>Paid</td>
+  </tr>
+  <tr>
+    <td><a href="https://link.springer.com/book/10.1007/978-1-4302-5990-9">Efficient Learning Machines: Theories, Concepts, and Applications for Engineers and System Designers</a></td>
+    <td>Discusses theories, concepts, and practical applications of machine learning for engineers.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/books/bayesian-optimization-in-action">Bayesian Optimization in Action</a></td>
+    <td>Guide to applying Bayesian optimization techniques in real-world scenarios.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.statlearning.com/">An Introduction to Statistical Learning: With Applications in R</a></td>
+    <td>Introductory text on statistical learning with practical applications in R.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://mitpress.mit.edu/9780262029445/fundamentals-of-machine-learning-for-predictive-data-analytics/">Fundamentals of Machine Learning for Predictive Data Analytics: Algorithms, Worked Examples, and Case Studies</a></td>
+    <td>Comprehensive overview of machine learning algorithms with worked examples and case studies.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.ibm.com/downloads/cas/GB8ZMQZ3">Machine Learning For Dummies</a></td>
+    <td>Beginner-friendly introduction to machine learning concepts and applications.</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.amazon.in/Quantum-Machine-Learning-Computing-Mining/dp/0128100400">Quantum Machine Learning: What Quantum Computing Means to Data Mining</a></td>
+    <td>Explores the intersection of quantum computing and machine learning.</td>
+    <td>Paid</td>
+  </tr>
   </table>
 
 ### Datasets
@@ -1130,26 +1183,142 @@ If later found out the points will be deducted. you cant be earning more than 60
       </tr>    
   </table>
 
-  ### Projects
+  ### Projects 
 
 > These Projects help you gain real time exprience for building machine learning models.
 
-  <table width="100%">
-      <tr>
-        <th>Resource Name</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td><a href="https://www.geeksforgeeks.org/machine-learning-projects/">100+ Machine learning projects</a></td>
-        <td>This link which navigates to geekforgeeks article focuses on machine learning projects page on which serves as a valuable resource for individuals looking to explore, learn, and practice machine learning concepts through hands-on projects.
-        </td>
-      </tr> 
-      <tr>
-        <td><a href="https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code">500 ML projects repo</a></td>
-        <td>This GitHub repo maintained by Ashish Patel offers a comprehensive collection of machine learning and AI projects, providing valuable resources and learning opportunities for enthusiasts, students, researchers, and practitioners interested in exploring ML.
-        </td>
-      </tr>  
+#### Beginner Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/disease-prediction-using-machine-learning/">Disease Prediction Using Machine Learning</a></td>
+    <td>Project on predicting diseases using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-heart-disease-prediction-using-logistic-regression/">ML | Heart Disease Prediction Using Logistic Regression</a></td>
+    <td>Implementation of heart disease prediction using logistic regression.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/prediction-of-wine-type-using-deep-learning/?ref=rp">Prediction of Wine Type using Deep Learning</a></td>
+    <td>Project on predicting the type of wine using deep learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/parkinson-disease-prediction-using-machine-learning-python/">Parkinson’s Disease Prediction using Machine Learning in Python</a></td>
+    <td>Project on predicting Parkinson's disease using machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-kaggle-breast-cancer-wisconsin-diagnosis-using-logistic-regression/">ML | Kaggle Breast Cancer Wisconsin Diagnosis using Logistic Regression</a></td>
+    <td>Breast cancer diagnosis project using logistic regression on Kaggle dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-cancer-cell-classification-using-scikit-learn/">ML | Cancer cell classification using Scikit-learn</a></td>
+    <td>Cancer cell classification project using Scikit-learn.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-kaggle-breast-cancer-wisconsin-diagnosis-using-knn/">ML | Kaggle Breast Cancer Wisconsin Diagnosis using KNN and Cross-Validation</a></td>
+    <td>Breast cancer diagnosis project using KNN and cross-validation on Kaggle dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/autism-prediction-using-machine-learning/">Autism Prediction using Machine Learning</a></td>
+    <td>Project on predicting autism using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/ml-credit-card-fraud-detection/">Credit Card Fraud Detection</a></td>
+    <td>Project on detecting credit card fraud using machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/dogecoin-price-prediction-with-machine-learning/?ref=rp">Dogecoin Price Prediction with Machine Learning</a></td>
+    <td>Project on predicting Dogecoin price using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/zillow-home-value-zestimate-prediction-in-ml/">Zillow Home Value (Zestimate) Prediction in ML</a></td>
+    <td>Project on predicting Zillow home values using machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/bitcoin-price-prediction-using-machine-learning-in-python/">Bitcoin Price Prediction using Machine Learning in Python</a></td>
+    <td>Project on predicting Bitcoin price using machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/sales-forecast-prediction-python/">Sales Forecast Prediction – Python</a></td>
+    <td>Project on predicting sales forecasts using Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/analyzing-selling-price-of-used-cars-using-python/">Customer Segmentation using Unsupervised Machine Learning in Python</a></td>
+    <td>Project on customer segmentation using unsupervised machine learning in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/box-office-revenue-prediction-using-linear-regression-in-ml/">Analyzing Selling Price of Used Cars using Python</a></td>
+    <td>Project on analyzing the selling price of used cars using Python.</td>
+  </tr>
 </table>
+
+#### Intermediate Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/article/recommender-systems-python-methods-and-algorithms/413">Movie Recommender System</a></td>
+    <td>Project on building a movie recommender system using various methods and algorithms in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/topics/housing-price-prediction">House Pricing Prediction</a></td>
+    <td>Project on predicting house prices using different machine learning models.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/ecommerce-product-reviews-ranking-sentiment-analysis">Sentiment Analysis</a></td>
+    <td>Project on analyzing sentiment in e-commerce product reviews and ranking them accordingly.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/rental-listing-inquiries">Interest Rate Prediction</a></td>
+    <td>Project on predicting interest rates for rental listings using machine learning techniques.</td>
+  </tr>
+</table>
+
+#### Advanced Level Projects
+
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/multiclass-image-classification-using-transfer-learning/">Multiclass Image Classification using Transfer Learning</a></td>
+    <td>Advanced project on multiclass image classification using transfer learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/image-caption-generator-using-deep-learning-on-flickr8k-dataset/">Image Caption Generator using Deep Learning on Flickr8K Dataset</a></td>
+    <td>Project on generating image captions using deep learning models on the Flickr8K dataset.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.geeksforgeeks.org/facemask-detection-using-tensorflow-in-python/">FaceMask Detection using TensorFlow in Python</a></td>
+    <td>Project on detecting face masks using TensorFlow in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/coupon-purchase-prediction">Coupon Purchase Prediction</a></td>
+    <td>Project on predicting coupon purchases using machine learning techniques.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.projectpro.io/project-use-case/loan-prediction-analytics">Loan Eligibility Prediction</a></td>
+    <td>Project on predicting loan eligibility using advanced analytics and machine learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/bkkinfo/Inventory-Product-Demand-Forecasting-ML-">Inventory Demand Forecasting</a></td>
+    <td>Project on forecasting inventory demand using machine learning models.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/watch?v=D7_SqyWiPOg">Passenger Survival Prediction</a></td>
+    <td>Project on predicting passenger survival using machine learning techniques.</td>
+  </tr>
+</table>
+
+ 
 
 ###  Interview 
 
