@@ -43,5 +43,6 @@ https://www.kaggle.com/prosperchuks/machine-learning-users-on-github
 
 * There are many ML users from Nigeria, it shows that Nigerians are more interested in ML.
 
-## **Contributed By:** ##
-Avik Mukherjee, 2022
+## Authors
+
+- Created by [@Priyankesh](https://github.com/priyankeshh), GSSoC 2024
