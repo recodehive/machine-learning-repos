@@ -1054,6 +1054,90 @@ If later found out, the points will be deducted. You can't be earning more than 
         <td><a href="https://data.gov/">Data.gov</a></td>
         <td>Data.gov, a US government website, is invaluable for machine learning enthusiasts with its vast collection of nearly 300,000 datasets. It provides high-quality, reliable training data from various sectors, enabling innovative applications in public health, economics, and environmental science. The open data is freely available, eliminating licensing costs and allowing unrestricted use. Its authoritative sources ensure improved accuracy and reliability in machine learning models.</td>
       </tr>
+      <tr>
+    <td><a href="http://knoema.com/">Knoema – Home</a></td>
+    <td>Comprehensive data platform offering a variety of datasets for different industries and research purposes.</td>
+  </tr>
+  <tr>
+    <td><a href="http://aws.amazon.com/datasets">Public Data Sets : Amazon Web Services</a></td>
+    <td>Collection of public datasets hosted on AWS, covering various domains such as genomics, climate, and more.</td>
+  </tr>
+  <tr>
+    <td><a href="https://opendata.socrata.com/">Socrata</a></td>
+    <td>Platform providing access to open data from government and public sector organizations.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.data-publica.com/">Data Publica | Les données pour votre business</a></td>
+    <td>Resource offering datasets for business analytics and insights.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.archive-it.org/">Archive-It – Web Archiving Services for Libraries and Archives</a></td>
+    <td>Web archiving service that provides access to a wide range of archived data from various sources.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.freebase.com/">Freebase</a></td>
+    <td>Community-curated database of structured data across various topics.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.google.com/publicdata/directory">Google Public Data Explorer</a></td>
+    <td>Tool by Google that allows users to explore, visualize, and share datasets from a variety of sources.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.zanran.com/q/">Zanran Numerical Data Search</a></td>
+    <td>Search engine focused on finding numerical data and statistics from the web.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.quandl.com/">Quandl – Intelligent Search for Numerical Data</a></td>
+    <td>Platform offering financial, economic, and alternative datasets for analysis and research.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.imf.org/external/data.htm">IMF Data and Statistics</a></td>
+    <td>International Monetary Fund's data and statistics on global economic indicators.</td>
+  </tr>
+  <tr>
+    <td><a href="http://data.worldbank.org/">Data | The World Bank</a></td>
+    <td>World Bank's open data platform providing access to global development data.</td>
+  </tr>
+  <tr>
+    <td><a href="http://stats.oecd.org/">OECD.Stat</a></td>
+    <td>OECD's database with a wide range of economic, social, and environmental statistics.</td>
+  </tr>
+  <tr>
+    <td><a href="http://mldata.org/">mldata :: Welcome</a></td>
+    <td>Repository of machine learning datasets for research and development.</td>
+  </tr>
+  <tr>
+    <td><a href="http://archive.ics.uci.edu/ml/datasets.html">UCI Machine Learning Repository: Data Sets</a></td>
+    <td>Popular repository of machine learning datasets used for empirical research.</td>
+  </tr>
+  <tr>
+    <td><a href="https://toolbox.google.com/datasetsearch">Google Dataset Search</a></td>
+    <td>Google's tool to help researchers locate online datasets for various topics.</td>
+  </tr>
+  <tr>
+    <td><a href="https://registry.opendata.aws/">Registry of Open Data on AWS</a></td>
+    <td>Amazon-hosted datasets covering areas such as genomics, satellite imagery, and population statistics.</td>
+  </tr>
+  <tr>
+    <td><a href="https://vincentarelbundock.github.io/Rdatasets/datasets">A list of over 1,000 datasets available in R packages</a></td>
+    <td>Curated list of datasets available in R packages for statistical analysis and research.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/curran/data">curran/data</a></td>
+    <td>Collection of public datasets, primarily in text format, hosted on GitHub.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/rfordatascience/tidytuesday">Tidy Tuesday</a></td>
+    <td>Weekly social data project in R with curated datasets for analysis and visualization.</td>
+  </tr>
+  <tr>
+    <td><a href="https://rstudio-education.github.io/dsbox/reference/index.html">dsbox</a></td>
+    <td>Datasets for data science practice, homework, and projects, provided by Data Science in the Box.</td>
+  </tr>
+  <tr>
+    <td><a href="https://cran.r-project.org/web/packages/dslabs/index.html">dslabs</a></td>
+    <td>Datasets and functions for data analysis practice in data science courses and workshops.</td>
+  </tr>
 </table>
 
 ### GitHub Repositories
