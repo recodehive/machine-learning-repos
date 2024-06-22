@@ -44,6 +44,7 @@ If later found out, the points will be deducted. You can't be earning more than 
     - [Machine Learning Python](#machine-learning-python)
       - [Python General-Purpose Machine Learning](#python-general-purpose-machine-learning)
       - [Data Manipulation | Data Analysis | Data Visualization](#data-manipulation--data-analysis--data-visualization)
+      - [Computer Vision](#computer-vision)
   - [Machine Learning R](#machine-learning-r)
       - [R General-Purpose Machine Learning](#r-general-purpose-machine-learning)
       - [Data Manipulation | Data Analysis | Data Visualization](#data-manipulation--data-analysis--data-visualization-1)
@@ -560,6 +561,7 @@ If later found out, the points will be deducted. You can't be earning more than 
 
 #### Data Manipulation | Data Analysis | Data Visualization
 
+
 <table>
   <tr>
     <th>Resource Name</th>
@@ -670,6 +672,49 @@ If later found out, the points will be deducted. You can't be earning more than 
     <td>A pure-python graphics and GUI library built on PyQt4 / PySide and NumPy.</td>
   </tr>
 </table>
+
+#### Computer Vision
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/scikit-image/scikit-image">Scikit-Image</a></td>
+    <td>A collection of algorithms for image processing in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/guofei9987/scikit-opt">Scikit-Opt</a></td>
+    <td>Swarm Intelligence in Python, including Genetic Algorithm, Particle Swarm Optimization, Simulated Annealing, Ant Colony Algorithm, Immune Algorithm, Artificial Fish Swarm Algorithm.</td>
+  </tr>
+  <tr>
+    <td><a href="http://simplecv.org/">SimpleCV</a></td>
+    <td>An open-source computer vision framework that gives access to several high-powered computer vision libraries, such as OpenCV. Written in Python and runs on Mac, Windows, and Ubuntu Linux.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ukoethe/vigra">Vigranumpy</a></td>
+    <td>Python bindings for the VIGRA C++ computer vision library.</td>
+  </tr>
+  <tr>
+    <td><a href="https://cmusatyalab.github.io/openface/">OpenFace</a></td>
+    <td>Free and open-source face recognition with deep neural networks.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/jesolem/PCV">PCV</a></td>
+    <td>Open-source Python module for computer vision. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ageitgey/face_recognition">face_recognition</a></td>
+    <td>Face recognition library that recognizes and manipulates faces from Python or from the command line.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/serengil/deepface">deepface</a></td>
+    <td>A lightweight face recognition and facial attribute analysis (age, gender, emotion, and race) framework for Python, covering cutting-edge models such as VGG-Face, FaceNet, OpenFace, DeepFace, DeepID, Dlib, and ArcFace.</td>
+  </tr>
+</table>
+
+
+
 
 ### Machine Learning R
 > Machine learning using R.
