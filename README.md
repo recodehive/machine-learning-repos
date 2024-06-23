@@ -45,6 +45,10 @@ If later found out, the points will be deducted. You can't be earning more than 
       - [Python General-Purpose Machine Learning](#python-general-purpose-machine-learning)
       - [Data Manipulation | Data Analysis | Data Visualization](#data-manipulation--data-analysis--data-visualization)
       - [Computer Vision](#computer-vision)
+      - [Natural Language Processing](#natural-language-processing)
+      - [Neural Networks](#neural-networks)
+     
+    
   - [Machine Learning R](#machine-learning-r)
       - [R General-Purpose Machine Learning](#r-general-purpose-machine-learning)
       - [Data Manipulation | Data Analysis | Data Visualization](#data-manipulation--data-analysis--data-visualization-1)
@@ -712,6 +716,105 @@ If later found out, the points will be deducted. You can't be earning more than 
     <td>A lightweight face recognition and facial attribute analysis (age, gender, emotion, and race) framework for Python, covering cutting-edge models such as VGG-Face, FaceNet, OpenFace, DeepFace, DeepID, Dlib, and ArcFace.</td>
   </tr>
 </table>
+
+#### Natural Language Processing
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/lancopku/pkuseg-python">pkuseg-python</a></td>
+    <td>A better version of Jieba, developed by Peking University for Chinese word segmentation.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.nltk.org/">NLTK</a></td>
+    <td>A leading platform for building Python programs to work with human language data.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/clips/pattern">Pattern</a></td>
+    <td>A web mining module for the Python programming language. It has tools for natural language processing, machine learning, and more.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/machinalis/quepy">Quepy</a></td>
+    <td>A Python framework to transform natural language questions into database queries.</td>
+  </tr>
+  <tr>
+    <td><a href="http://textblob.readthedocs.io/en/dev/">TextBlob</a></td>
+    <td>Provides a consistent API for diving into common natural language processing (NLP) tasks. Built on top of NLTK and Pattern.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/machinalis/yalign">YAlign</a></td>
+    <td>A sentence aligner tool for extracting parallel sentences from comparable corpora. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fxsjy/jieba#jieba-1">jieba</a></td>
+    <td>Chinese words segmentation utility.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/isnowfy/snownlp">SnowNLP</a></td>
+    <td>A library for processing Chinese text.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/tasdikrahman/spammy">spammy</a></td>
+    <td>A library for email spam filtering built on top of NLTK.</td>
+  </tr>
+</table>
+
+#### Neural Networks
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/kinhosz/Neural">Kinho</a></td>
+    <td>Simple API for Neural Network, better for image processing with CPU/GPU + Transfer Learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/p-christ/nn_builder">nn_builder</a></td>
+    <td>A Python package that lets you build neural networks in one line.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/karpathy/neuraltalk">NeuralTalk</a></td>
+    <td>A Python+numpy project for learning Multimodal Recurrent Neural Networks that describe images with sentences.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/karpathy/neuraltalk2">NeuralTalk2</a></td>
+    <td>A Python+numpy project for learning Multimodal Recurrent Neural Networks that describe images with sentences. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/molcik/python-neuron">Neuron</a></td>
+    <td>A simple class for time series predictions utilizing various neural networks learned with Gradient descent or Levenberg–Marquardt algorithm. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/atmb4u/data-driven-code">Data Driven Code</a></td>
+    <td>A simple implementation of neural networks for dummies in Python without using any libraries, with detailed comments.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/livevideo/machine-learning-data-science-and-deep-learning-with-python">Machine Learning, Data Science and Deep Learning with Python</a></td>
+    <td>LiveVideo course that covers machine learning, TensorFlow, artificial intelligence, and neural networks.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/mrT23/TResNet">TResNet</a></td>
+    <td>TResNet models designed and optimized to give the best speed-accuracy tradeoff on GPUs.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/zueve/neurolab">Neurolab</a></td>
+    <td>A simple and powerful neural network library for Python with a variety of supported types of Artificial Neural Network and learning algorithms.</td>
+  </tr>
+  <tr>
+    <td><a href="https://jina.ai/">Jina AI</a></td>
+    <td>An easier way to build neural search in the cloud, compatible with Jupyter Notebooks.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/shobrook/sequitur">sequitur</a></td>
+    <td>PyTorch library for creating and training sequence autoencoders in just two lines of code.</td>
+  </tr>
+</table>
+
+
+
 
 
 
