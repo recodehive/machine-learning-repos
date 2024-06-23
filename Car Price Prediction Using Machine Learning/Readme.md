@@ -29,10 +29,10 @@
 
 ## Features 💡
 
-1   **Data Preprocessing**: Normalize and encode data for better model performance.
-2   **Model Training**: Train various machine learning models.
-3   **Model Evaluation**: Evaluate models using multiple metrics.
-4   **Data Visualization**: Visualize data and results using various plots.
+1. **Data Preprocessing**: Normalize and encode data for better model performance.
+2.  **Model Training**: Train various machine learning models.
+3.  **Model Evaluation**: Evaluate models using multiple metrics.
+4.  **Data Visualization**: Visualize data and results using various plots.
 
 ## Conclusion 📌
 
