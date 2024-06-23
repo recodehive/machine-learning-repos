@@ -39,13 +39,13 @@ Test the system with unseen satellite imagery data.<br>
 Design a dashboard for inputting data and viewing change detection results.<br>
 
 
-III.Model Training and code snippets
-Technology and concepts used:
- Keras : high-level neural networks API. Used for classification task with images as inputs, given the convolutional layers and the final dense layer with softmax activation. Each neuron applies regression over it and passes to  next layer.
-Softmax  Regression: Binary classification applied to multi class classification. 
-Model We used: Slding Window approach
-Models we can use later: YoloV5
-Libraries used :
+III.Model Training and code snippets  <br>
+Technology and concepts used: <br>
+ Keras : high-level neural networks API. Used for classification task with images as inputs, given the convolutional layers and the final dense layer with softmax activation. Each neuron applies regression over it and passes to  next layer.<br>
+Softmax  Regression: Binary classification applied to multi class classification. <br>
+Model We used: Slding Window approach<br>
+Models we can use later: YoloV5<br>
+Libraries used :<br>
 import cv2
 import os
 import glob
@@ -86,29 +86,29 @@ image_dataset = np.array(image_dataset).reshape((NUMBER_OF_IMAGES * NUMBER_OF_PA
 image_dataset.shape
 
 
-Steps in data preprocessing
+Steps in data preprocessing<br>
 
-NUMBER_OF_IMAGES: This sets the number of images to use for dataset creation. It appears that you are limiting the dataset to the first 2000 images from the available images in the directory.
-IMG_WIDTH and IMG_HEIGHT: These variables define the width and height of the images.
-PATCH_SIZE: The size of patches into which each image will be divided for processing.
-IMG_CHANNEL: This defines the number of image channels (usually 3 for RGB color images).
-IOU_THRESHOLD: The Intersection over Union (IoU) threshold, which is likely used for evaluating the accuracy of the segmentation model.
-Calculating Patch Details:
+NUMBER_OF_IMAGES: This sets the number of images to use for dataset creation. It appears that you are limiting the dataset to the first 2000 images from the available images in the directory.<br>
+IMG_WIDTH and IMG_HEIGHT: These variables define the width and height of the images.<br>
+PATCH_SIZE: The size of patches into which each image will be divided for processing.<br>
+IMG_CHANNEL: This defines the number of image channels (usually 3 for RGB color images).<br>
+IOU_THRESHOLD: The Intersection over Union (IoU) threshold, which is likely used for evaluating the accuracy of the segmentation model.<br>
+Calculating Patch Details:<br>
 
-NUMBER_OF_PATCHES_PER_IMG: This calculates the number of patches that can be extracted from each image. It divides the image into patches of size PATCH_SIZE with a step of PATCH_SIZE.
-TOTAL_PATCHES: This variable calculates the total number of patches considering all images in the dataset.
-TRAIN_IMG and TRAIN_MASK: These variables store file paths to the image and corresponding target mask files. They are obtained by using the glob module to search for files in the specified directories.
-Inside the loop, each image is read using OpenCV (cv2.imread) and normalized by dividing by 255 to scale pixel values to the range [0, 1].
-Patching Images:
-patchify is a custom or imported function that divides each image into non-overlapping patches of size (PATCH_SIZE, PATCH_SIZE, 3) with a step equal to PATCH_SIZE. The function may be a wrapper around slicing operations.
-Reshaping Patches:
-The patches are reshaped into a 4D array. img_patches is reshaped into a shape that represents (NUMBER_OF_PATCHES_PER_IMG, PATCH_SIZE, PATCH_SIZE, IMG_CHANNEL), and these patches are appended to image_dataset.
-Final Dataset Shape:
-After processing all the images, image_dataset is transformed into a NumPy array, resulting in a dataset with the shape (TOTAL_PATCHES, PATCH_SIZE, PATCH_SIZE, IMG_CHANNEL).
-TQDM Progress Bar:
-The tqdm library is used to display a progress bar while processing the images. It shows the progress of the loop as it processes each image.
+NUMBER_OF_PATCHES_PER_IMG: This calculates the number of patches that can be extracted from each image. It divides the image into patches of size PATCH_SIZE with a step of PATCH_SIZE.<br>
+TOTAL_PATCHES: This variable calculates the total number of patches considering all images in the dataset.<br>
+TRAIN_IMG and TRAIN_MASK: These variables store file paths to the image and corresponding target mask files. They are obtained by using the glob module to search for files in the specified directories.<br>
+Inside the loop, each image is read using OpenCV (cv2.imread) and normalized by dividing by 255 to scale pixel values to the range [0, 1].<br><br>
+Patching Images:<br>
+patchify is a custom or imported function that divides each image into non-overlapping patches of size (PATCH_SIZE, PATCH_SIZE, 3) with a step equal to PATCH_SIZE. The function may be a wrapper around slicing operations.<br>
+Reshaping Patches:<br>
+The patches are reshaped into a 4D array. img_patches is reshaped into a shape that represents (NUMBER_OF_PATCHES_PER_IMG, PATCH_SIZE, PATCH_SIZE, IMG_CHANNEL), and these patches are appended to image_dataset.<br>
+Final Dataset Shape: <br>
+After processing all the images, image_dataset is transformed into a NumPy array, resulting in a dataset with the shape (TOTAL_PATCHES, PATCH_SIZE, PATCH_SIZE, IMG_CHANNEL).<br>
+TQDM Progress Bar:<br>
+The tqdm library is used to display a progress bar while processing the images. It shows the progress of the loop as it processes each image.<br>
 
-Model training
+#Model training<br>
 def unet_model(IMG_WIDTH, IMG_HIGHT, IMG_CHANNELS):
     inputs = tf.keras.layers.Input((IMG_WIDTH, IMG_HIGHT, IMG_CHANNELS))
 
