@@ -1,7 +1,6 @@
 Landscape change detection
-
-Project: Change detection due to human activities.
-Aim: Using satellite imagery, create an automated system for detecting change related only to human activities from satellite imagery. i.e. Develop AI/ML based model for change detection of only man-made objects like vehicles, buildings, roads, aircraft etc. from remote sensing images Data: Sentinel-2, LISS-4
+<b> Change detection due to human activities. <b>  <br>
+<h1>Aim: </h1> Using satellite imagery, create an automated system for detecting change related only to human activities from satellite imagery. i.e. Develop AI/ML based model for change detection of only man-made objects like vehicles, buildings, roads, aircraft etc. from remote sensing images Data: Sentinel-2, LISS-4
 Points to cover:
 I. Objectives
 II. Data set analysis
