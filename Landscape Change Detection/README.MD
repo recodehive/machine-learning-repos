@@ -182,29 +182,3 @@ def unet_model(IMG_WIDTH, IMG_HIGHT, IMG_CHANNELS):
    
     return model
 model = unet_model(PATCH_SIZE, PATCH_SIZE, IMG_CHANNEL)
-# model.summary()
-
-We define a U-Net architecture for image segmentation, particularly for binary image segmentation tasks. U-Net is a popular architecture for tasks like image segmentation because it's known for its ability to capture fine details and accurately segment objects within images.
-
-Function Definition:
-The code defines a function named unet_model that takes three arguments: IMG_WIDTH, IMG_HIGHT, and IMG_CHANNELS. These arguments are used to define the shape and characteristics of the input images.
-Input Layer:
-inputs is defined as the input layer for the neural network. It expects input images with dimensions (IMG_WIDTH, IMG_HEIGHT, IMG_CHANNELS).
-Contraction Path:
-The code defines a series of convolutional and pooling layers in the "Contraction Path" to extract features from the input images. These layers gradually reduce the spatial dimensions.
-Convolutional layers (c1, c2, c3, c4, and c5) with increasing filters and subsequent max-pooling layers (p1, p2, p3, and p4) are used to downsample the input.
-Bottleneck:
-c5 represents the bottleneck of the U-Net, where features are captured at the highest resolution.
-Expansive Path:
-
-The "Expansive Path" defines a series of convolutional transpose (deconvolution) layers (u6, u7, u8, u9) followed by skip connections (concatenation with c4, c3, c2, and c1) to upsample and expand the feature maps.
-Convolutional layers (c6, c7, c8, c9) with dropout layers are used in the expansive path to refine the segmentation output.
-Output Layer:
-The final layer (outputs) is a convolutional layer with one filter and a sigmoid activation function, producing a binary mask for segmentation. This layer outputs the segmentation mask for the input image.
-Model Compilation:
-The model is compiled using the Adam optimizer and binary cross-entropy loss, which is common for binary image segmentation tasks.
-Return Model:
-The function returns the compiled U-Net model.
-Model Initialization:
-
-
