@@ -5,45 +5,41 @@ Landscape change detection
 <ul>Points to cover: 
 <li>I. Objectives   </li>
 <li>II. Data set analysis </li>
-<li>III. Block diag. And  Use case</li>
-<li>IV. Model Training and code snippets</li>
-<li>V.  Images</li>
-<li>VI. Result (accuracy etc)</li>
-<li>VII. Gap and limitations</li>
+
+<li>III. Model Training and code snippets</li>
+<li>IV.  Images</li>
+<li>V. Result (accuracy etc)</li>
+<li>VI. Gap and limitations</li>
 </ul>
 I.Objectives <br>
-Importance:
-Monitoring deforestation: This project can be used to monitor deforestation by detecting changes in the amount of forest cover over time. 
+Importance: <br>
+Monitoring deforestation: This project can be used to monitor deforestation by detecting changes in the amount of forest cover over time.  <br>
 Urban Planning and Development: monitor changes in building structures, road networks, and land use in cities. 
-Disaster Response and Management:
-In the event of natural disasters, such as earthquakes, floods, or wildfires, the system can quickly identify      changes in the affected areas
-Transportation and Infrastructure: Transportation agencies can use the system to monitor traffic, road conditions, and infrastructure changes.
- Defense and Security:
- The system can be used for national security and defense purposes by monitoring changes in sensitive                   areas, identifying the movement of military equipment, and detecting unauthorized construction near critical installations.
-            Steps To follow:
-1. Data Collection and Preprocessing:
+Disaster Response and Management:<br>
+In the event of natural disasters, such as earthquakes, floods, or wildfires, the system can quickly identify      changes in the affected areas<br>
+Transportation and Infrastructure: Transportation agencies can use the system to monitor traffic, road conditions, and infrastructure changes.<br>
+ Defense and Security:<br>
+ The system can be used for national security and defense purposes by monitoring changes in sensitive                   areas, identifying the movement of military equipment, and detecting unauthorized construction near critical installations.<br>
+            Steps To follow:<br>
+1. Data Collection and Preprocessing:<br>
 Acquire satellite imagery data (Sentinel-2 and LISS-4) from relevant sources.
-Preprocess the data, including:cropping,resizing, Geometric correction. cloud removal.
-2. Data Labeling:
+Preprocess the data, including:cropping,resizing, Geometric correction. cloud removal.<br>
+2. Data Labeling:<br>
 Manually or semi-automatically label the data for training and validation.
-Annotate images with information about the changes, specifying object types (e.g., buildings, roads).
-4. Model Selection and Training:
-Train the model using the labeled data.
-5. Model Integration:
+Annotate images with information about the changes, specifying object types (e.g., buildings, roads).<br>
+4. Model Selection and Training:<br>
+Train the model using the labeled data.<br>
+5. Model Integration:<br>
 Develop an application or system for automated change detection.
 Integrate the trained model into the system. Example  .h5 file integrated with flutter UI.
-Ensure scalability and real-time processing capabilities.
-6. Testing and Validation:
-Test the system with unseen satellite imagery data.
-7. User Interface (UI) :
-Design a dashboard for inputting data and viewing change detection results.
+Ensure scalability and real-time processing capabilities.<br>
+6. Testing and Validation:<br>
+Test the system with unseen satellite imagery data.<br>
+7. User Interface (UI) :<br>
+Design a dashboard for inputting data and viewing change detection results.<br>
 
-III.BLOCK DIAGRAM AND USE CASES
-Flow chart
 
-Use case
-
-IV.Model Training and code snippets
+III.Model Training and code snippets
 Technology and concepts used:
  Keras : high-level neural networks API. Used for classification task with images as inputs, given the convolutional layers and the final dense layer with softmax activation. Each neuron applies regression over it and passes to  next layer.
 Softmax  Regression: Binary classification applied to multi class classification. 
