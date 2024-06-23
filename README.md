@@ -47,8 +47,6 @@ If later found out, the points will be deducted. You can't be earning more than 
       - [Computer Vision](#computer-vision)
       - [Natural Language Processing](#natural-language-processing)
       - [Neural Networks](#neural-networks)
-     
-    
   - [Machine Learning R](#machine-learning-r)
       - [R General-Purpose Machine Learning](#r-general-purpose-machine-learning)
       - [Data Manipulation | Data Analysis | Data Visualization](#data-manipulation--data-analysis--data-visualization-1)
