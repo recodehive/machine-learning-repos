@@ -876,6 +876,26 @@ If later found out, the points will be deducted. You can't be earning more than 
     <td><a href="https://cran.r-project.org/web/packages/frbs/index.html">frbs</a></td>
     <td>Fuzzy rule-based systems for classification and regression tasks. [Deprecated]</td>
   </tr>
+   <tr>
+    <td><a href="https://github.com/tqchen/xgboost/tree/master/R-package">XGBoost.R</a></td>
+    <td>R binding for eXtreme Gradient Boosting (Tree) Library.</td>
+  </tr>
+  <tr>
+    <td><a href="https://optunity.readthedocs.io/en/latest/">Optunity</a></td>
+    <td>A library dedicated to automated hyperparameter optimization with a simple, lightweight API to facilitate drop-in replacement of grid search. Optunity is written in Python but interfaces seamlessly to R.</td>
+  </tr>
+  <tr>
+    <td><a href="https://igraph.org/r/">igraph</a></td>
+    <td>Binding to igraph library - General purpose graph library.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/apache/incubator-mxnet">MXNet</a></td>
+    <td>Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Go, JavaScript, and more.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/Azure/Azure-TDSP-Utilities">TDSP-Utilities</a></td>
+    <td>Two data science utilities in R from Microsoft: 1) Interactive Data Exploration, Analysis, and Reporting (IDEAR); 2) Automated Modelling and Reporting (AMR).</td>
+  </tr>
   <tr>
     <td><a href="https://cran.r-project.org/web/packages/GAMBoost/index.html">GAMBoost</a></td>
     <td>Generalized linear and additive models by likelihood-based boosting. [Deprecated]</td>
