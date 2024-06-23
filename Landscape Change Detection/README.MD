@@ -4,14 +4,14 @@ Landscape change detection
  
 <ul>Points to cover: 
 <li>I. Objectives   </li>
-II. Data set analysis
-III. Block diag. And  Use case
-IV. Model Training and code snippets
-V.  Images
-VI. Result (accuracy etc)
-VII. Gap and limitations
+<li>II. Data set analysis </li>
+<li>III. Block diag. And  Use case</li>
+<li>IV. Model Training and code snippets</li>
+<li>V.  Images</li>
+<li>VI. Result (accuracy etc)</li>
+<li>VII. Gap and limitations</li>
 </ul>
-I.Objectives
+I.Objectives <br>
 Importance:
 Monitoring deforestation: This project can be used to monitor deforestation by detecting changes in the amount of forest cover over time. 
 Urban Planning and Development: monitor changes in building structures, road networks, and land use in cities. 
