@@ -44,6 +44,9 @@ If later found out, the points will be deducted. You can't be earning more than 
     - [Machine Learning Python](#machine-learning-python)
       - [Python General-Purpose Machine Learning](#python-general-purpose-machine-learning)
       - [Data Manipulation | Data Analysis | Data Visualization](#data-manipulation--data-analysis--data-visualization)
+      - [Computer Vision](#computer-vision)
+      - [Natural Language Processing](#natural-language-processing)
+      - [Neural Networks](#neural-networks)
   - [Machine Learning R](#machine-learning-r)
       - [R General-Purpose Machine Learning](#r-general-purpose-machine-learning)
       - [Data Manipulation | Data Analysis | Data Visualization](#data-manipulation--data-analysis--data-visualization-1)
@@ -560,6 +563,7 @@ If later found out, the points will be deducted. You can't be earning more than 
 
 #### Data Manipulation | Data Analysis | Data Visualization
 
+
 <table>
   <tr>
     <th>Resource Name</th>
@@ -671,6 +675,148 @@ If later found out, the points will be deducted. You can't be earning more than 
   </tr>
 </table>
 
+#### Computer Vision
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/scikit-image/scikit-image">Scikit-Image</a></td>
+    <td>A collection of algorithms for image processing in Python.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/guofei9987/scikit-opt">Scikit-Opt</a></td>
+    <td>Swarm Intelligence in Python, including Genetic Algorithm, Particle Swarm Optimization, Simulated Annealing, Ant Colony Algorithm, Immune Algorithm, Artificial Fish Swarm Algorithm.</td>
+  </tr>
+  <tr>
+    <td><a href="http://simplecv.org/">SimpleCV</a></td>
+    <td>An open-source computer vision framework that gives access to several high-powered computer vision libraries, such as OpenCV. Written in Python and runs on Mac, Windows, and Ubuntu Linux.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ukoethe/vigra">Vigranumpy</a></td>
+    <td>Python bindings for the VIGRA C++ computer vision library.</td>
+  </tr>
+  <tr>
+    <td><a href="https://cmusatyalab.github.io/openface/">OpenFace</a></td>
+    <td>Free and open-source face recognition with deep neural networks.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/jesolem/PCV">PCV</a></td>
+    <td>Open-source Python module for computer vision. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ageitgey/face_recognition">face_recognition</a></td>
+    <td>Face recognition library that recognizes and manipulates faces from Python or from the command line.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/serengil/deepface">deepface</a></td>
+    <td>A lightweight face recognition and facial attribute analysis (age, gender, emotion, and race) framework for Python, covering cutting-edge models such as VGG-Face, FaceNet, OpenFace, DeepFace, DeepID, Dlib, and ArcFace.</td>
+  </tr>
+</table>
+
+#### Natural Language Processing
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/lancopku/pkuseg-python">pkuseg-python</a></td>
+    <td>A better version of Jieba, developed by Peking University for Chinese word segmentation.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.nltk.org/">NLTK</a></td>
+    <td>A leading platform for building Python programs to work with human language data.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/clips/pattern">Pattern</a></td>
+    <td>A web mining module for the Python programming language. It has tools for natural language processing, machine learning, and more.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/machinalis/quepy">Quepy</a></td>
+    <td>A Python framework to transform natural language questions into database queries.</td>
+  </tr>
+  <tr>
+    <td><a href="http://textblob.readthedocs.io/en/dev/">TextBlob</a></td>
+    <td>Provides a consistent API for diving into common natural language processing (NLP) tasks. Built on top of NLTK and Pattern.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/machinalis/yalign">YAlign</a></td>
+    <td>A sentence aligner tool for extracting parallel sentences from comparable corpora. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fxsjy/jieba#jieba-1">jieba</a></td>
+    <td>Chinese words segmentation utility.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/isnowfy/snownlp">SnowNLP</a></td>
+    <td>A library for processing Chinese text.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/tasdikrahman/spammy">spammy</a></td>
+    <td>A library for email spam filtering built on top of NLTK.</td>
+  </tr>
+</table>
+
+#### Neural Networks
+<table>
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/kinhosz/Neural">Kinho</a></td>
+    <td>Simple API for Neural Network, better for image processing with CPU/GPU + Transfer Learning.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/p-christ/nn_builder">nn_builder</a></td>
+    <td>A Python package that lets you build neural networks in one line.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/karpathy/neuraltalk">NeuralTalk</a></td>
+    <td>A Python+numpy project for learning Multimodal Recurrent Neural Networks that describe images with sentences.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/karpathy/neuraltalk2">NeuralTalk2</a></td>
+    <td>A Python+numpy project for learning Multimodal Recurrent Neural Networks that describe images with sentences. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/molcik/python-neuron">Neuron</a></td>
+    <td>A simple class for time series predictions utilizing various neural networks learned with Gradient descent or Levenberg–Marquardt algorithm. <strong>[Deprecated]</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/atmb4u/data-driven-code">Data Driven Code</a></td>
+    <td>A simple implementation of neural networks for dummies in Python without using any libraries, with detailed comments.</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.manning.com/livevideo/machine-learning-data-science-and-deep-learning-with-python">Machine Learning, Data Science and Deep Learning with Python</a></td>
+    <td>LiveVideo course that covers machine learning, TensorFlow, artificial intelligence, and neural networks.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/mrT23/TResNet">TResNet</a></td>
+    <td>TResNet models designed and optimized to give the best speed-accuracy tradeoff on GPUs.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/zueve/neurolab">Neurolab</a></td>
+    <td>A simple and powerful neural network library for Python with a variety of supported types of Artificial Neural Network and learning algorithms.</td>
+  </tr>
+  <tr>
+    <td><a href="https://jina.ai/">Jina AI</a></td>
+    <td>An easier way to build neural search in the cloud, compatible with Jupyter Notebooks.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/shobrook/sequitur">sequitur</a></td>
+    <td>PyTorch library for creating and training sequence autoencoders in just two lines of code.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
 ### Machine Learning R
 > Machine learning using R.
 
@@ -727,6 +873,26 @@ If later found out, the points will be deducted. You can't be earning more than 
   <tr>
     <td><a href="https://cran.r-project.org/web/packages/frbs/index.html">frbs</a></td>
     <td>Fuzzy rule-based systems for classification and regression tasks. [Deprecated]</td>
+  </tr>
+   <tr>
+    <td><a href="https://github.com/tqchen/xgboost/tree/master/R-package">XGBoost.R</a></td>
+    <td>R binding for eXtreme Gradient Boosting (Tree) Library.</td>
+  </tr>
+  <tr>
+    <td><a href="https://optunity.readthedocs.io/en/latest/">Optunity</a></td>
+    <td>A library dedicated to automated hyperparameter optimization with a simple, lightweight API to facilitate drop-in replacement of grid search. Optunity is written in Python but interfaces seamlessly to R.</td>
+  </tr>
+  <tr>
+    <td><a href="https://igraph.org/r/">igraph</a></td>
+    <td>Binding to igraph library - General purpose graph library.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/apache/incubator-mxnet">MXNet</a></td>
+    <td>Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Go, JavaScript, and more.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/Azure/Azure-TDSP-Utilities">TDSP-Utilities</a></td>
+    <td>Two data science utilities in R from Microsoft: 1) Interactive Data Exploration, Analysis, and Reporting (IDEAR); 2) Automated Modelling and Reporting (AMR).</td>
   </tr>
   <tr>
     <td><a href="https://cran.r-project.org/web/packages/GAMBoost/index.html">GAMBoost</a></td>
@@ -1054,6 +1220,90 @@ If later found out, the points will be deducted. You can't be earning more than 
         <td><a href="https://data.gov/">Data.gov</a></td>
         <td>Data.gov, a US government website, is invaluable for machine learning enthusiasts with its vast collection of nearly 300,000 datasets. It provides high-quality, reliable training data from various sectors, enabling innovative applications in public health, economics, and environmental science. The open data is freely available, eliminating licensing costs and allowing unrestricted use. Its authoritative sources ensure improved accuracy and reliability in machine learning models.</td>
       </tr>
+      <tr>
+    <td><a href="http://knoema.com/">Knoema – Home</a></td>
+    <td>Comprehensive data platform offering a variety of datasets for different industries and research purposes.</td>
+  </tr>
+  <tr>
+    <td><a href="http://aws.amazon.com/datasets">Public Data Sets : Amazon Web Services</a></td>
+    <td>Collection of public datasets hosted on AWS, covering various domains such as genomics, climate, and more.</td>
+  </tr>
+  <tr>
+    <td><a href="https://opendata.socrata.com/">Socrata</a></td>
+    <td>Platform providing access to open data from government and public sector organizations.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.data-publica.com/">Data Publica | Les données pour votre business</a></td>
+    <td>Resource offering datasets for business analytics and insights.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.archive-it.org/">Archive-It – Web Archiving Services for Libraries and Archives</a></td>
+    <td>Web archiving service that provides access to a wide range of archived data from various sources.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.freebase.com/">Freebase</a></td>
+    <td>Community-curated database of structured data across various topics.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.google.com/publicdata/directory">Google Public Data Explorer</a></td>
+    <td>Tool by Google that allows users to explore, visualize, and share datasets from a variety of sources.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.zanran.com/q/">Zanran Numerical Data Search</a></td>
+    <td>Search engine focused on finding numerical data and statistics from the web.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.quandl.com/">Quandl – Intelligent Search for Numerical Data</a></td>
+    <td>Platform offering financial, economic, and alternative datasets for analysis and research.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.imf.org/external/data.htm">IMF Data and Statistics</a></td>
+    <td>International Monetary Fund's data and statistics on global economic indicators.</td>
+  </tr>
+  <tr>
+    <td><a href="http://data.worldbank.org/">Data | The World Bank</a></td>
+    <td>World Bank's open data platform providing access to global development data.</td>
+  </tr>
+  <tr>
+    <td><a href="http://stats.oecd.org/">OECD.Stat</a></td>
+    <td>OECD's database with a wide range of economic, social, and environmental statistics.</td>
+  </tr>
+  <tr>
+    <td><a href="http://mldata.org/">mldata :: Welcome</a></td>
+    <td>Repository of machine learning datasets for research and development.</td>
+  </tr>
+  <tr>
+    <td><a href="http://archive.ics.uci.edu/ml/datasets.html">UCI Machine Learning Repository: Data Sets</a></td>
+    <td>Popular repository of machine learning datasets used for empirical research.</td>
+  </tr>
+  <tr>
+    <td><a href="https://toolbox.google.com/datasetsearch">Google Dataset Search</a></td>
+    <td>Google's tool to help researchers locate online datasets for various topics.</td>
+  </tr>
+  <tr>
+    <td><a href="https://registry.opendata.aws/">Registry of Open Data on AWS</a></td>
+    <td>Amazon-hosted datasets covering areas such as genomics, satellite imagery, and population statistics.</td>
+  </tr>
+  <tr>
+    <td><a href="https://vincentarelbundock.github.io/Rdatasets/datasets">A list of over 1,000 datasets available in R packages</a></td>
+    <td>Curated list of datasets available in R packages for statistical analysis and research.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/curran/data">curran/data</a></td>
+    <td>Collection of public datasets, primarily in text format, hosted on GitHub.</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/rfordatascience/tidytuesday">Tidy Tuesday</a></td>
+    <td>Weekly social data project in R with curated datasets for analysis and visualization.</td>
+  </tr>
+  <tr>
+    <td><a href="https://rstudio-education.github.io/dsbox/reference/index.html">dsbox</a></td>
+    <td>Datasets for data science practice, homework, and projects, provided by Data Science in the Box.</td>
+  </tr>
+  <tr>
+    <td><a href="https://cran.r-project.org/web/packages/dslabs/index.html">dslabs</a></td>
+    <td>Datasets and functions for data analysis practice in data science courses and workshops.</td>
+  </tr>
 </table>
 
 ### GitHub Repositories
