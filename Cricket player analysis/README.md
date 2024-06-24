@@ -1,1 +1,0 @@
-This project focuses on analyzing cricket player statistics to uncover insights such as innings played, batting averages and more. The analysis aims to provide a comprehensive view of player performance over time, aiding in strategic decision-making for teams and enthusiasts alike.
