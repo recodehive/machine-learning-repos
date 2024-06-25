@@ -33,7 +33,7 @@ This project performs a comprehensive data analysis on a dataset of stock inform
 - mplfinance
 
 ## Example Analysis
-- **Stock Symbol**: AAPL
+- **Stock Symbol**: AMZN
 - **Moving Averages**: 20-day and 50-day
 - **Daily Returns**: Calculated and plotted
 - **Correlation Matrix**: Computed and visualized
