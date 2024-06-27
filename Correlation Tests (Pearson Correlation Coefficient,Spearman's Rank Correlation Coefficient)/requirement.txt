@@ -1,0 +1,5 @@
+here are the library which i imported->
+import pandas as pd
+from scipy.stats import pearsonr, spearmanr
+import matplotlib.pyplot as plt
+import seaborn as sns
