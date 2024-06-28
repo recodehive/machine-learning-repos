@@ -1,0 +1,85 @@
+AFGHANI  | Afghanistan 
+ARIARY | Madagascar 
+BAHT | Thailand 
+BALBOA | Panama 
+BIRR | Ethiopia 
+BOLIVAR | Venezuela 
+BOLIVIANO  | Bolivia 
+CEDI | Ghana 
+COLON  | Costa Rica 
+CÓRDOBA  | Nicaragua 
+DALASI | Gambia 
+DENAR | Macedonia (Former Yug. Rep.) 
+DINAR | Algeria 
+DIRHAM  | Morocco 
+DOBRA | São Tom and Príncipe 
+DONG | Vietnam 
+DRAM | Armenia 
+ESCUDO  | Cape Verde 
+EURO  | Belgium 
+FLORIN | Aruba 
+FORINT | Hungary 
+GOURDE | Haiti 
+GUARANI | Paraguay 
+GULDEN | Netherlands Antilles 
+HRYVNIA  | Ukraine 
+KINA | Papua New Guinea 
+KIP | Laos 
+KONVERTIBILNA MARKA  | Bosnia-Herzegovina 
+KORUNA  | Czech Republic 
+KRONA | Sweden 
+KRONE | Denmark 
+KROON | Estonia 
+KUNA | Croatia 
+KWACHA | Zambia 
+KWANZA | Angola 
+KYAT | Myanmar 
+LARI | Georgia 
+LATS | Latvia 
+LEK | Albania 
+LEMPIRA | Honduras 
+LEONE | Sierra Leone 
+LEU | Romania 
+LEV | Bulgaria 
+LILANGENI  | Swaziland 
+LIRA | Lebanon 
+LITAS | Lithuania 
+LOTI | Lesotho 
+MANAT | Azerbaijan 
+METICAL | Mozambique 
+NAIRA | Nigeria 
+NAKFA | Eritrea 
+NEW LIRA | Turkey 
+NEW SHEQEL  | Israel 
+NGULTRUM  | Bhutan 
+NUEVO SOL | Peru 
+OUGUIYA  | Mauritania 
+PATACA | Macau 
+PESO  | Mexico 
+POUND  | Egypt 
+PULA  | Botswana 
+QUETZAL | Guatemala 
+RAND | South Africa 
+REAL  | Brazil 
+RENMINBI  | China 
+RIAL | Iran 
+RIEL | Cambodia 
+RINGGIT | Malaysia 
+RIYAL | Saudi Arabia 
+RUBLE | Russia 
+RUFIYAA | Maldives 
+RUPEE  | India 
+RUPEE  | Pakistan 
+RUPIAH  | Indonesia 
+SHILLING  | Uganda 
+SOM | Uzbekistan 
+SOMONI  | Tajikistan 
+SPECIAL DRAWING RIGHTS  | International Monetary Fund 
+TAKA | Bangladesh 
+TALA | Western Samoa 
+TENGE | Kazakhstan 
+TUGRIK  | Mongolia 
+VATU | Vanuatu 
+WON  | Korea, South 
+YEN | Japan 
+ZLOTY | Poland 

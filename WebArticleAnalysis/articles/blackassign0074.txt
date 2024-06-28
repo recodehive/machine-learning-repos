@@ -1,0 +1,52 @@
+Gender diversity and Equality in the tech industry
+
+Efficient Supply Chain Assessment: Overcoming Technical Hurdles for Web Application Development
+Streamlined Integration: Interactive Brokers API with Python for Desktop Trading Application
+Efficient Data Integration and User-Friendly Interface Development: Navigating Challenges in Web Application Deployment
+Effective Management of Social Media Data Extraction: Strategies for Authentication, Security, and Reliability
+AI Bot Audio to audio
+Methodology for ETL Discovery Tool using LLMA, OpenAI, Langchain
+Methodology for database discovery tool using openai, LLMA, Langchain
+Chatbot using VoiceFlow
+Rising IT cities and its impact on the economy, environment, infrastructure, and city life by the year 2040.
+Rising IT Cities and Their Impact on the Economy, Environment, Infrastructure, and City Life in Future
+Internet Demand’s Evolution, Communication Impact, and 2035’s Alternative Pathways
+Rise of Cybercrime and its Effect in upcoming Future
+AI/ML and Predictive Modeling
+Solution for Contact Centre Problems
+How to Setup Custom Domain for Google App Engine Application?
+Code Review Checklist
+Gender diversity is an equal representation of all genders in workplaces. One of the most important sectors where there is under-representation of gender diversity is the technological industry. Gender diversity means you have an equal opportunity which is not limited by gender. But, the true reality is gender diversity is a far outcry in the world.
+Gender diversity isn’t a new topic but an old and global phenomenon and technology industry is not a stranger to it.  Women are often underrepresented in the technology sector. To understand the gap, let’s look at some statistics.
+After looking at these staggering numbers, we see how biased gender diversity is even in the technological sector.
+With rapid industrialization and education about the importance of rights, gender diversity is very important in today’s world. Gender equality represents a society that has lesser violence and provides a safer world for everyone. It is also directly proportional to sustainable development and ensures human rights to everyone. As today’s markets are increasing along with customers’ preferences, to understand customer profiles and build products we need gender diversity in our organizations. Equal representation helps in a better decision-making process for a positive impact.
+Men and Women invest back into their families and having gender equality and diversity helps build values into families and households. Empowering individuals not only help themselves but also the economy of the nations. Gender equality and diversity should be built into organizations’ beliefs and values.
+Global Gender Gap Report (2017)
+Perception: If we see the word “gender”, it is a socially constructed definition. And this definition changes as per different cultural norms. In a much broader term, our society is also not aware of the concept of binary and non-binary gender, which includes queer, Trans, and Intersex individuals as well. The socially acceptable thing is to have gender expressions as per our gender identity. So, when it comes to choosing their career, people tend to choose a job role that gives them higher social belongingness. E.g. We see more women(as compared to men) in nursing careers as it requires more feminine qualities.
+There are different versions of this perception: which we can see either in the society(in terms of socially assigned gender roles) or in the workplace(in the form of gender discrimination, stereotypical thinking, sexism, etc.). E.g. As per their assigned roles in society, women are most likely to take care of their family and children, and this affects their income and career growth. The motherhood penalty is a term defined by sociologists which states about the inverse correlation between income level and the number of children, i.e. there is also an income difference between a mother and a non-mother employee. As per OECD data(2012), there is a 7% reduction in wages for women per child.
+Lack of economic opportunities: Even in the tech industry, women are paid less than men. As per ILO data(2019), on average women are paid 20% less than men worldwide.
+Even when it comes to promotion, men are preferred more. It is to be noted that the numbers are even worse when there is intersectionality involved. E.g., a transgender woman will be paid less than a white woman and so on. As per the National Centre for Transgender equality, one out of two transgender people faces adverse effects: including 23% were denied a promotion, 44% were passed over for a particular job position and 26% are fired from their workplace just because they are transgender.
+We can improve this scenario from the perspective of different stakeholders who are involved.
+For Society :
+Creating Tech awareness from School level: As per the HDR report( 2017), no. of boys pursuing STEM program is 97% higher than girls. One way to improve this is to introduce more strong role models to advocate for this issue. Minority gender communities should be aware of the multiple job opportunities and career growth available in this field. These job roles are not even gender-specific anymore. For developing countries like India, STEM scholarship programs can be introduced from the secondary education level.
+Address Bias/Stereotypes: It is to be noted that perceptions, stereotypes, and biases are not just something we learn in school but our upbringing also creates these, the things we watch, listen, and read daily. So, it also becomes the duty of the society to create a more inclusive environment. E.g. A more privileged person should fight for the fundamental right of the less empowered or less privileged person in society.
+There should be active encouragement from parents, teachers, and educators for students in STEM programs regardless of their gender identity.
+For Companies:
+To promote gender diversity in the workplace, companies need to focus on three things:
+Unbiased Recruitment policies:
+Generally, there is a lot of unconscious bias and prejudices when hiring women, trans, intersex, and queer individuals. There needs to be a diversity and inclusivity team in the HR itself that addresses these issues. A blind recruitment drive can be conducted where there is no need to mention gender in any of the documents.
+Having structured questions during the interview might help to remove any unconscious biases.
+Diversity sensitivity training: Workplace policies need to create a company image that hires everyone irrespective of their gender identity and can even keep it optional in all the job formalities and documents.
+Conducting proper sensitivity training to employees is essential as they need to use correct pronoun/gender-neutral language.
+Not just sensitivity training, strong workplace policies need to be in place which deal with any form of harassment or gender discrimination.
+ To create accountability and transparency in their process, companies can also share diversity and inclusivity company data.
+Retention policies:
+Creating Mentorship models:
+Including proper maternity leaves, child care facilities, and flexibility of working hours/remote working arrangements can be helpful for minority gender in keeping their work-life balance.
+Develop support programs for these communities who are joining after maternity leave. It might be in terms of psychiatric or mentorship support.
+Increase Pay parities: It can be done in the following ways:
+Lastly, there needs to be proper government policies in place which provide a constitutional or legal framework starting from the basic education level. It may begin from increasing the gross enrollment rates of all students in schools (irrespective of their gender identity) for developing countries( like India) to have proper compensation policies in the workplace(as similar to what states like California, New York has adopted) to ensure pay parity.
+ 
+We provide intelligence, accelerate innovation and implement technology with extraordinary breadth and depth global insights into the big data,data-driven dashboards, applications development, and information management for organizations through combining unique, specialist services and high-lvel human expertise.
+Contact us: hello@blackcoffer.com
+© All Right Reserved, Blackcoffer(OPC) Pvt. Ltd
