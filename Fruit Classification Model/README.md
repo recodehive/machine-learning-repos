@@ -1,0 +1,1 @@
+The fruit classification model aims to categorize images into one of five fruit types: apples, bananas, grapes, mangoes, and strawberries. It will be trained and tested on a dataset containing 2,000 images per fruit, totaling 10,000 images. The model will analyze visual features of the images to accurately identify the type of fruit depicted.
