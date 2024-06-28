@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mani AgroTech</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/myhomee.css')}}"> 
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Mani AgroTech</h1>
+      <p style="color: black;">Mani AgroTech Welcomes you on our website, Hope you are earning well from your farm 
+        but we are here for you to provide some suggetions about your crop cultivation 
+      We recommends you to which crop you should grow in your farm for better yields. Its 
+      very easy to predict which crop you should grow on the basis of your soil nutrients 
+      just you need to know your soil nutrients for this you can test your soil in lab.</p>
+      <br>
+      <h3 style="color: black;">Let's Start New Journey With Mani AgroTech</h3>
+      <br>
+      <h2 style="color: black;">Click following button for Crop recommandation</h2>
+    </main>
+     <form action="/Predict">
+      <input type="submit" id="Predict" name="Predict" action="/Predict" value="Predict">
+     </form>
+  </body>
+</html>
