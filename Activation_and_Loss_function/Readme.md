@@ -17,6 +17,9 @@ Activation functions play a critical role in determining the output of each neur
     - Suitable for binary classification tasks where the output needs to be interpreted as probabilities.
     - As the range is minimum, prediction would be more accurate.
     - It causes a problem mainly called as vanishing gradient problem which occurs during backpropagation, the gradients can       become extremely small, especially for large positive or negative inputs, which can slow down learning or even cause it to stall.
+  
+      ![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/404deac7-2bd2-431b-9402-a63415c757ef)
+
 
 2. Hyperbolic Tangent (tanh) Activation Function:
 
@@ -25,6 +28,9 @@ Activation functions play a critical role in determining the output of each neur
     - Range: (-1, 1)
     - It is also used to predict or to differentiate between two classes but it maps the negative input into negative quantity only 
     - Can suffer from vanishing gradients similar to the sigmoid function.
+  
+      ![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/da3865fc-4b84-494a-82c8-51c139309f28)
+
 
 3. Rectified Linear Unit (ReLU) Activation Function:
 
@@ -35,6 +41,9 @@ Activation functions play a critical role in determining the output of each neur
     - Problem associated with it is unbounded on the positive side, which can lead to exploding gradients, especially in deep    
     networks. It also suffers from a problem known as Dying ReLU which is ReLU neurons can sometimes become "dead" during training, meaning they always output zero due to having a negative weight update. This problem particularly occurs when the learning rate is too high, causing a large portion of the neurons to be inactive.
 
+![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/10b19c41-1f02-404a-b2ac-a8439e0c7ec6)
+
+
 4.  Leaky ReLU Activation Function:
 
     - Formula: `f(x) = {x , if(x>0) and αx , if(x<=0)}`
@@ -43,6 +52,9 @@ Activation functions play a critical role in determining the output of each neur
     - It also solves the problem of Dying ReLU as discussed in ReLU Activation Function.
     - Introduces an additional hyperparameter (α) that needs to be tuned, although often a small value like 0.01 suffices.
 
+      ![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/41e5cc62-f325-49dc-a994-141dd58dcb4f)
+
+
 5. Softmax Activation Function:
 
     - the softmax basically gives value to the input variable according to their weight.
@@ -50,6 +62,7 @@ Activation functions play a critical role in determining the output of each neur
     - Primarily used in the output layer of a neural network for multi-class classification problems.
     - Softmax output is dependent on the values of all other outputs, making it sensitive to changes in other predictions. This can make training more complex, especially in multi-label classification scenarios.
     
+![image](https://github.com/Recode-Hive/machine-learning-repos/assets/72333364/68fcb829-f497-4b09-8734-e7b17e2a2dfe)
 
 
 # Loss Functions:
