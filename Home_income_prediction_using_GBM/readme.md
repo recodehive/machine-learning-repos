@@ -56,8 +56,7 @@ The project follows the below structured methodology ranging from data preproces
 5. **NumPy**: For efficient numerical operations.
 6. **Seaborn** : for advanced data visualizations
 7. **plotly** : for 3D data visualizations .
-8. **Streamlit** : for creating gui of the web application.
-9. **requests** : requests for creating Htttp requests
+8. **requests** : requests for creating Htttp requests
 
 ## How to Use
 
