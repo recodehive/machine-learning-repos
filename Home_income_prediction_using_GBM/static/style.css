@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background-color: #87CEEB; /* Sky blue background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure body takes full height of the viewport */
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 20%), radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.4) 20%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+}
+
+.container {
+    max-width: 400px; /* Adjusted max-width for better fit */
+    width: 100%; /* Ensure container doesn't overflow horizontally */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background with transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Enable vertical scrolling within container */
+    max-height: 90vh; /* Limit container height to 90% of viewport height */
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px; /* Slightly reduced font size for heading */
+    color: #fff;
+    margin-bottom: 15px; /* Reduced margin bottom for heading */
+}
+
+.form-group {
+    margin-bottom: 12px; /* Reduced margin bottom for form groups */
+}
+
+label {
+    display: block;
+    font-size: 16px; /* Slightly reduced font size for labels */
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="number"],
+select,
+input[type="text"] {
+    padding: 8px; /* Slightly reduced padding for inputs */
+    width: calc(100% - 18px); /* Adjusted width to account for padding and border */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px; /* Slightly reduced font size for inputs */
+    margin-bottom: 8px; /* Reduced margin bottom for inputs */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+button {
+    padding: 10px 18px; /* Slightly reduced padding for button */
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745; /* Green background color */
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px; /* Slightly reduced font size for button */
+    margin-top: 12px; /* Reduced margin top for button */
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 15px; /* Reduced margin top for result container */
+    font-size: 20px; /* Slightly reduced font size for result */
+    color: #28a745; /* Green color for result */
+    font-weight: bold;
+    display: none; /* Initially hide result container */
+}
