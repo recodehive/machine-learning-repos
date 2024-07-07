@@ -1,0 +1,10 @@
+Before deep down into project you must be installed these things-
+
+Python 3.7+
+TensorFlow 2.x
+Keras
+OpenCV
+NumPy
+Pandas
+Matplotlib
+Scikit-learn
