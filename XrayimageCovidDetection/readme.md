@@ -21,6 +21,13 @@ Ensure the dataset is organized into appropriate directories, such as `train`, `
 - Scikit-learn
 
 You can install the required packages using the following command:
+## model architecure
+1. pooling layer
+2. conventaional layer
+3. dropout layer
+4. flatten layer
+5.dense layer
+6. output layer
 
 
 pip install -r requirements.txt
