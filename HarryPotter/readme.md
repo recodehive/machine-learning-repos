@@ -18,7 +18,11 @@ Ensure you have Python 3.x installed on your machine.
 
 
 2. Install the required Python packages:
+<<<<<<< HEAD
     
+=======
+    ```sh
+>>>>>>> upstream/fix6
     pip install -r requirements.txt
     ```
 
