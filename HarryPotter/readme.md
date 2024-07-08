@@ -18,7 +18,7 @@ Ensure you have Python 3.x installed on your machine.
 
 
 2. Install the required Python packages:
-    ```sh
+    
     pip install -r requirements.txt
     ```
 
