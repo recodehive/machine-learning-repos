@@ -1,0 +1,5 @@
+geopandas: 0.10.2
+shapely: 1.7.1
+rasterio: 1.2.10
+numpy: 1.21.2
+matplotlib: 3.4.3
