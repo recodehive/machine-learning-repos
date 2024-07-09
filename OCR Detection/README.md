@@ -27,9 +27,3 @@ Additionally, for web integration, GUI is not needed but the other functionaliti
 
 Multi-processing can be used to get seamless detections without delay.
 
-# Demo
-- The image is purely for the demonstration purposes:
-
-![Figure_1](https://github.com/SAM-DEV007/ThereForYou/assets/60264918/86f3abd0-5fe6-4c23-ad6f-22300058eca2)
-
-- The more the resolution of the camera, the better the results.
