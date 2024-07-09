@@ -1,0 +1,2 @@
+pyproj: For handling coordinate reference systems and transformations.
+matplotlib: For plotting coordinates on a map.
