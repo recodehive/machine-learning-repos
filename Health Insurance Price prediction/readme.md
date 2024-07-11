@@ -68,7 +68,12 @@ Web Application Development: Streamlit for creating interactive and user-friendl
 
 Conclusion:
 
-Your project revolves around leveraging machine learning techniques to predict insurance charges based on various customer attributes. The journey has included data exploration, preprocessing, model building, evaluation, and deployment using modern tools and frameworks. This structured approach ensures robust predictions and a seamless user experience through the Streamlit application.
+The project revolves around leveraging machine learning techniques to predict insurance charges based on various customer attributes. The journey has included data exploration, preprocessing, model building, evaluation, and deployment using modern tools and frameworks. This structured approach ensures robust predictions and a seamless user experience through the Streamlit application.
+
+## Demo :
+
+
+https://github.com/RajKhanke/machine-learning-repos/assets/137288727/d20733aa-3c0f-4487-a2ae-0db67d82f0f9
 
 
 ## How to Use
