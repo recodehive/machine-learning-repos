@@ -8,6 +8,13 @@ Further model comparisons were made with Support Vector Machine (SVM), Gradient 
 
 The Streamlit application integrated these models seamlessly, enabling users to input their data interactively and receive instant predictions regarding their anemia status. This user-friendly interface leveraged efficient model loading with joblib and ensured accurate predictions through robust preprocessing steps and model selection. Overall, the project highlighted the application of machine learning in healthcare diagnostics, promoting accessibility and ease of use for individuals concerned about their health status.
 
+## Demo
+
+
+https://github.com/user-attachments/assets/c73ddf0e-ac0e-44fa-bc56-d424e1c616cd
+
+
+
 
 ## How to Use
 
