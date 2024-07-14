@@ -1,0 +1,6 @@
+google_play_scraper
+streamlit
+pandas
+numpy
+requests
+beautifysoup4
