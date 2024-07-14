@@ -1,0 +1,530 @@
+﻿Patient ID,Sample ID,Cancer Type Detailed,Overall Survival Status,Disease Free Status,Disease-specific Survival status,Mutation Count,Fraction Genome Altered,Diagnosis Age,MSI MANTIS Score,MSIsensor Score,Race Category,Subtype,Tumor Type
+TCGA-2E-A9G8,TCGA-2E-A9G8-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,65,0.3311,59,0.3234,0.85,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-4E-A92E,TCGA-4E-A92E-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,147,0.0341,54,0.3396,0.01,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-5B-A90C,TCGA-5B-A90C-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,45,0.6903,69,0.3344,0.55,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-5S-A9Q8,TCGA-5S-A9Q8-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,50,0.0581,51,0.3199,0.09,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0G1,TCGA-A5-A0G1-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,10808,0.0001,67,0.3108,1.74,White,UCEC_POLE,Serous Endometrial Adenocarcinoma
+TCGA-A5-A0G2,TCGA-A5-A0G2-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,25696,0.3729,57,0.4003,8.63,Asian,UCEC_POLE,Serous Endometrial Adenocarcinoma
+TCGA-A5-A0G3,TCGA-A5-A0G3-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,38,,61,0.272,1.18,Black or African American,,Serous Endometrial Adenocarcinoma
+TCGA-A5-A0G5,TCGA-A5-A0G5-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,123,0.2308,73,0.2625,0.66,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-A5-A0G9,TCGA-A5-A0G9-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,439,0.0341,79,0.6507,20.59,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GA,TCGA-A5-A0GA-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,301,0.0391,67,0.5237,15.97,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GB,TCGA-A5-A0GB-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,670,0.0346,65,1.0919,36.5,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GD,TCGA-A5-A0GD-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0046,75,0.285,0.07,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GE,TCGA-A5-A0GE-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,31,0.1421,38,0.2535,0.06,Asian,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GG,TCGA-A5-A0GG-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0998,76,0.4172,7.05,Black or African American,,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GH,TCGA-A5-A0GH-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,431,0.0038,57,0.9762,30.24,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GI,TCGA-A5-A0GI-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,340,0.0439,63,0.5646,14.54,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GJ,TCGA-A5-A0GJ-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,61,0.4758,44,0.2959,0.31,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GM,TCGA-A5-A0GM-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.0002,53,0.2497,0.05,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GN,TCGA-A5-A0GN-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,56,0.557,65,0.2642,0.65,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GP,TCGA-A5-A0GP-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1453,0.0001,58,0.2524,0.07,Asian,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GQ,TCGA-A5-A0GQ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,57,0,76,0.261,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GR,TCGA-A5-A0GR-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.3353,69,0.2857,0.22,Black or African American,,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GU,TCGA-A5-A0GU-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.1123,58,0.286,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GV,TCGA-A5-A0GV-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,46,0.2282,67,0.263,0.14,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GW,TCGA-A5-A0GW-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,307,0.0502,46,0.6829,24.38,Asian,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0GX,TCGA-A5-A0GX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,32,0.0299,53,0.2715,0.01,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0R6,TCGA-A5-A0R6-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.1466,64,0.2949,0.03,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-A5-A0R7,TCGA-A5-A0R7-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,69,0.3529,55,0.2748,0.37,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0R8,TCGA-A5-A0R8-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,77,0,81,0.2859,0.07,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0R9,TCGA-A5-A0R9-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,43,0.0465,51,0.2815,0.33,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0RA,TCGA-A5-A0RA-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,76,0.0018,68,0.2688,0.03,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0VO,TCGA-A5-A0VO-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,63,,64,0.2792,0,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0VP,TCGA-A5-A0VP-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1472,0.0813,74,0.5739,13.09,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A0VQ,TCGA-A5-A0VQ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,366,0.0001,62,0.6689,15.57,,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A1OF,TCGA-A5-A1OF-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,10487,0.0009,47,0.4126,1.9,,UCEC_POLE,Mixed Serous and Endometrioid Carcinoma
+TCGA-A5-A1OG,TCGA-A5-A1OG-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,37,0.3103,65,0.329,0.24,Asian,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-A5-A1OH,TCGA-A5-A1OH-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,112,0.5541,86,0.3161,0.4,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-A5-A1OJ,TCGA-A5-A1OJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,63,0.081,31,0.2921,0,Asian,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A1OK,TCGA-A5-A1OK-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,65,0.0342,63,0.2684,0.01,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A2K2,TCGA-A5-A2K2-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,124,0.2488,77,0.2927,0.29,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-A5-A2K3,TCGA-A5-A2K3-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1232,0.0559,68,0.4541,1.65,White,UCEC_MSI,Serous Endometrial Adenocarcinoma
+TCGA-A5-A2K4,TCGA-A5-A2K4-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,30,0.2796,69,0.2858,0.04,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-A5-A2K5,TCGA-A5-A2K5-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,8510,0.0001,76,0.2961,0.27,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A2K7,TCGA-A5-A2K7-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,609,0.0004,41,0.9748,20.29,,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A3LO,TCGA-A5-A3LO-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,30,0.3955,64,0.3011,0.18,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A3LP,TCGA-A5-A3LP-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.5228,74,0.3022,0.08,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-A5-A7WJ,TCGA-A5-A7WJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0346,64,0.8862,22.73,Black or African American,,Endometrioid Endometrial Adenocarcinoma
+TCGA-A5-A7WK,TCGA-A5-A7WK-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,61,0.2537,71,0.3449,0.36,Black or African American,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-A5-AB3J,TCGA-A5-AB3J-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,43,0.1192,52,0.328,0.01,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A23M,TCGA-AJ-A23M-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,105,0.5519,61,0.3253,0.51,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A23N,TCGA-AJ-A23N-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,46,0.4072,70,0.328,0.11,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A23O,TCGA-AJ-A23O-01,Uterine Endometrioid Carcinoma,1:DECEASED,,0:ALIVE OR DEAD TUMOR FREE,860,0.1019,69,0.8244,15.75,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A2QK,TCGA-AJ-A2QK-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,70,0.2657,65,0.2833,0.03,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A2QL,TCGA-AJ-A2QL-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,44,0.011,60,0.3116,0.01,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A2QM,TCGA-AJ-A2QM-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,180,0.3679,67,0.3159,0.37,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A2QN,TCGA-AJ-A2QN-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,53,0.1558,60,0.2877,0.01,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A2QO,TCGA-AJ-A2QO-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1126,0,85,1.104,29.06,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3BD,TCGA-AJ-A3BD-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,77,0.482,57,0.2845,0.05,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A3BF,TCGA-AJ-A3BF-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,26,0.2474,65,0.3014,0.22,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A3BG,TCGA-AJ-A3BG-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,1279,0.0339,65,1.1057,25.85,White,UCEC_MSI,Mixed Serous and Endometrioid Carcinoma
+TCGA-AJ-A3BH,TCGA-AJ-A3BH-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,2671,0.1476,,1.0149,28.1,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3BI,TCGA-AJ-A3BI-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,40,0.4537,67,0.2936,0.45,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3BK,TCGA-AJ-A3BK-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,58,0.1333,68,0.2952,0.03,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3EJ,TCGA-AJ-A3EJ-01,Uterine Mixed Endometrial Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,55,0.494,74,0.2933,0.29,White,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-AJ-A3EK,TCGA-AJ-A3EK-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,5729,0.0002,53,0.4287,3.25,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3EL,TCGA-AJ-A3EL-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,7385,0.0008,47,0.298,1.37,Native Hawaiian or Other Pacific Islander,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3EM,TCGA-AJ-A3EM-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,50,0.6265,69,0.3264,0.43,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3I9,TCGA-AJ-A3I9-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,26,0.1598,52,0.2895,0.18,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3IA,TCGA-AJ-A3IA-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,231,0.4993,77,0.3185,0.23,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A3NC,TCGA-AJ-A3NC-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0816,63,0.2928,0.01,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3NE,TCGA-AJ-A3NE-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0062,46,0.555,8.48,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3NF,TCGA-AJ-A3NF-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,55,0.1269,60,0.2883,0.06,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A3NG,TCGA-AJ-A3NG-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,75,0.1254,83,0.3693,0.47,White,UCEC_CN_LOW,Mixed Serous and Endometrioid Carcinoma
+TCGA-AJ-A3NH,TCGA-AJ-A3NH-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.7584,90,0.3145,0.36,White,,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A3OJ,TCGA-AJ-A3OJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,885,0.0003,54,0.8896,21.1,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3OK,TCGA-AJ-A3OK-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,655,0,73,0.4056,1.24,White,UCEC_CN_LOW,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A3OL,TCGA-AJ-A3OL-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,292,0.0844,55,0.7708,15.72,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A3QS,TCGA-AJ-A3QS-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,228,0.2386,57,0.2803,0.22,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A3TW,TCGA-AJ-A3TW-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,113,0.5385,78,0.4195,0.43,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AJ-A5DV,TCGA-AJ-A5DV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,80,0,65,0.3053,0,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A5DW,TCGA-AJ-A5DW-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,3184,0.0001,56,0.3003,0.04,Black or African American,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A6NU,TCGA-AJ-A6NU-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.2061,64,0.3416,0,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A8CT,TCGA-AJ-A8CT-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,630,0.0004,58,0.503,5.44,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A8CV,TCGA-AJ-A8CV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,219,0,58,0.5694,7.86,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AJ-A8CW,TCGA-AJ-A8CW-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,660,0.0951,64,0.8784,24.7,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A051,TCGA-AP-A051-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,8311,0.0341,69,0.6799,30.46,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A052,TCGA-AP-A052-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,42,0.2774,59,0.2738,0.34,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A054,TCGA-AP-A054-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,1090,0.0545,64,1.04,31.98,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A056,TCGA-AP-A056-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,8231,0.0011,64,0.2881,1.71,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A059,TCGA-AP-A059-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,10942,0.0001,69,0.3351,3.41,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A05A,TCGA-AP-A05A-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,67,0.1828,81,0.2515,0.29,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A05D,TCGA-AP-A05D-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,32,0.2183,67,0.2783,0.34,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A05H,TCGA-AP-A05H-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,65,0.6909,75,0.3134,2.68,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A05J,TCGA-AP-A05J-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,44,0.1747,66,0.2622,0.33,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A05N,TCGA-AP-A05N-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,257,0.0004,58,0.5364,12.59,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A05O,TCGA-AP-A05O-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,,0.0197,68,0.5925,25.33,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A05P,TCGA-AP-A05P-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,50,0.1359,54,0.2436,0.01,Asian,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0L8,TCGA-AP-A0L8-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,60,0.737,70,0.3118,1.78,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A0L9,TCGA-AP-A0L9-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,64,0.5243,71,0.3048,1.98,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A0LD,TCGA-AP-A0LD-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,446,0.13,63,1.0367,34.2,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LE,TCGA-AP-A0LE-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,545,0.0341,57,0.9987,33.29,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LF,TCGA-AP-A0LF-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,240,0.3339,82,0.2706,0.66,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LG,TCGA-AP-A0LG-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,411,0,54,0.7979,24.16,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LH,TCGA-AP-A0LH-01,Uterine Mixed Endometrial Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,30,0.1132,60,0.246,0.25,White,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-AP-A0LI,TCGA-AP-A0LI-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,104,0.3668,67,0.27,0.27,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A0LJ,TCGA-AP-A0LJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,38,0.0469,42,0.2669,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LL,TCGA-AP-A0LL-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,45,0.0344,56,0.2821,0.27,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LM,TCGA-AP-A0LM-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,13201,0.0001,33,0.3086,3.61,Black or African American,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LN,TCGA-AP-A0LN-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,61,0.0465,56,0.2415,0.11,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LO,TCGA-AP-A0LO-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,28,0.2933,45,0.272,0.08,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LP,TCGA-AP-A0LP-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,294,0,76,0.5949,17.64,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LQ,TCGA-AP-A0LQ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,53,0.0464,59,0.2808,0.12,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LS,TCGA-AP-A0LS-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,420,0.0001,63,0.8371,14.91,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LT,TCGA-AP-A0LT-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,635,0,57,1.1312,37.41,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A0LV,TCGA-AP-A0LV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,20,0.0001,39,0.2684,0.06,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1DH,TCGA-AP-A1DH-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,580,0,62,0.7077,13.83,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1DK,TCGA-AP-A1DK-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,10302,0.0003,53,0.5415,4.49,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1DM,TCGA-AP-A1DM-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,353,0.0415,60,0.6163,13.24,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1DO,TCGA-AP-A1DO-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,546,0.2144,62,0.8996,26.21,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1DP,TCGA-AP-A1DP-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,448,0.0341,70,0.8032,20.7,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1DQ,TCGA-AP-A1DQ-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,29,0.501,76,0.3125,0.31,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AP-A1DR,TCGA-AP-A1DR-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,738,0.0002,59,0.9916,27.51,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1DV,TCGA-AP-A1DV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,12038,0.0195,59,0.3398,0.7,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1E0,TCGA-AP-A1E0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,4826,0.0004,40,0.2856,0.05,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1E1,TCGA-AP-A1E1-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,551,0.0338,74,0.7298,12.89,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1E3,TCGA-AP-A1E3-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,41,0.0001,45,0.2838,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A1E4,TCGA-AP-A1E4-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,20,0.127,54,0.301,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AP-A3K1,TCGA-AP-A3K1-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,,0.4611,56,0.3224,1.07,White,,Serous Endometrial Adenocarcinoma
+TCGA-AP-A5FX,TCGA-AP-A5FX-01,Uterine Mixed Endometrial Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,38,0.4774,68,0.2855,0.3,Black or African American,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-AW-A1PO,TCGA-AW-A1PO-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,66,0.9487,66,0.3268,0.36,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A05S,TCGA-AX-A05S-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,494,0.0904,81,0.846,31.68,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A05T,TCGA-AX-A05T-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,45,0.0464,82,0.2436,0.4,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A05U,TCGA-AX-A05U-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,27,0.0586,56,0.2546,0.07,American Indian or Alaska Native,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A05W,TCGA-AX-A05W-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,66,0.2216,60,0.2715,0.04,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A05Y,TCGA-AX-A05Y-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,184,0.0411,57,0.5212,7.31,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A05Z,TCGA-AX-A05Z-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,7370,0.019,37,0.2617,0.35,,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A060,TCGA-AX-A060-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,741,0.0342,77,,35.52,American Indian or Alaska Native,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A062,TCGA-AX-A062-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,25,0.0001,53,0.2416,0.15,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A063,TCGA-AX-A063-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1000,0.044,63,0.922,34.04,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A064,TCGA-AX-A064-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,262,0.0341,81,0.5467,15.94,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A06B,TCGA-AX-A06B-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,41,0.5106,72,0.2743,0.26,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A06F,TCGA-AX-A06F-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,7276,0.0013,59,0.3375,3.4,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A06H,TCGA-AX-A06H-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,408,0.0004,60,0.6159,23.79,American Indian or Alaska Native,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A06J,TCGA-AX-A06J-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,57,0.0464,71,0.2922,0.64,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A06L,TCGA-AX-A06L-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,40,0.0002,63,0.2699,0.06,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A0IS,TCGA-AX-A0IS-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,49,0.1065,52,0.2846,0.2,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A0IU,TCGA-AX-A0IU-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,55,0.2139,79,0.289,0.25,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A0IW,TCGA-AX-A0IW-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,51,0.6545,67,0.2889,0.95,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A0IZ,TCGA-AX-A0IZ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0004,53,0.5541,9.18,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A0J0,TCGA-AX-A0J0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,7793,0.0006,47,0.3,1.72,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A0J1,TCGA-AX-A0J1-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,5113,0.0341,80,0.7195,29.85,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1C4,TCGA-AX-A1C4-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,856,0.0853,52,1.0651,25,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1C5,TCGA-AX-A1C5-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,845,0.004,47,0.6802,13.16,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1C7,TCGA-AX-A1C7-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,44,0.3689,77,0.3124,0.77,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A1C8,TCGA-AX-A1C8-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,70,0.2344,77,0.2994,0.18,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A1C9,TCGA-AX-A1C9-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,963,0.0989,73,0.5573,8.72,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1CA,TCGA-AX-A1CA-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,108,0.5031,70,0.3043,0.97,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A1CC,TCGA-AX-A1CC-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,19,0.0123,65,0.3195,0.28,White,UCEC_CN_LOW,Serous Endometrial Adenocarcinoma
+TCGA-AX-A1CE,TCGA-AX-A1CE-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,11440,0.0013,60,0.6541,17.4,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1CF,TCGA-AX-A1CF-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,92,0.5489,69,0.2825,0.92,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1CI,TCGA-AX-A1CI-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,60,0.0488,61,0.333,1.46,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1CJ,TCGA-AX-A1CJ-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,49,0.0811,59,0.2804,0,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1CK,TCGA-AX-A1CK-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,59,0.1396,58,0.2799,0.54,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A1CN,TCGA-AX-A1CN-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,35,0.069,54,0.3094,0.03,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2H2,TCGA-AX-A2H2-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,185,0.6405,86,0.292,0.26,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A2H4,TCGA-AX-A2H4-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,165,0.5642,66,0.3093,0.35,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A2H5,TCGA-AX-A2H5-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,47,0.289,67,0.3194,1.63,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A2H7,TCGA-AX-A2H7-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,84,0.2716,87,0.2908,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2HA,TCGA-AX-A2HA-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1509,0.0934,35,1.3049,35.7,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2HC,TCGA-AX-A2HC-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,12979,0.0764,53,0.5408,9.49,Black or African American,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2HD,TCGA-AX-A2HD-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,7836,0.03,69,0.9828,25.8,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2HG,TCGA-AX-A2HG-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,861,0.0004,56,0.9147,20.23,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2HH,TCGA-AX-A2HH-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,39,0.2247,60,0.2913,0.11,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2HJ,TCGA-AX-A2HJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1573,0.0524,35,1.1152,26.9,Asian,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2HK,TCGA-AX-A2HK-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,63,0.5945,77,0.3002,0.45,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2IN,TCGA-AX-A2IN-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,513,0.0341,63,0.7682,11.9,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A2IO,TCGA-AX-A2IO-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,343,0.3254,83,0.2914,0.05,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A3FS,TCGA-AX-A3FS-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,757,0.0371,82,1.0475,28.76,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3FT,TCGA-AX-A3FT-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,1280,0.0499,64,0.8254,20.39,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3FV,TCGA-AX-A3FV-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,81,0.7134,62,0.3357,2.15,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3FW,TCGA-AX-A3FW-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,42,0.1587,66,0.3134,0.33,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3FX,TCGA-AX-A3FX-01,Uterine Endometrioid Carcinoma,1:DECEASED,,,58,0.2339,69,0.2922,0.11,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3FZ,TCGA-AX-A3FZ-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,40,0.3266,33,0.336,1.08,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3G1,TCGA-AX-A3G1-01,Uterine Endometrioid Carcinoma,1:DECEASED,,,57,0.3476,84,0.3099,0.31,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3G4,TCGA-AX-A3G4-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,35,0.4534,60,0.3004,0.39,Native Hawaiian or Other Pacific Islander,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A3G6,TCGA-AX-A3G6-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,55,0.5603,67,0.3125,0.35,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A3G7,TCGA-AX-A3G7-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,28,0.1583,71,0.3123,0.02,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-AX-A3G8,TCGA-AX-A3G8-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,781,0.0345,76,0.9574,28.31,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3G9,TCGA-AX-A3G9-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,658,0.0001,63,1.016,25.12,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3GB,TCGA-AX-A3GB-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,79,0.0345,73,0.3008,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-AX-A3GI,TCGA-AX-A3GI-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,38,0.7361,66,0.2908,1.63,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A0JN,TCGA-B5-A0JN-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,139,0.5279,84,0.3115,0.59,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A0JR,TCGA-B5-A0JR-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,569,0.1187,73,0.8081,26.39,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0JS,TCGA-B5-A0JS-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,28,0.0195,54,0.2933,0.03,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0JT,TCGA-B5-A0JT-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,66,0.3758,63,0.2672,0.14,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0JU,TCGA-B5-A0JU-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,407,0,57,0.8228,20.47,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0JV,TCGA-B5-A0JV-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,346,0.0359,63,0.6077,22.81,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0JX,TCGA-B5-A0JX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,65,0.1203,62,0.2686,0.26,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0JY,TCGA-B5-A0JY-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,9685,0.0003,50,0.3015,0.87,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0JZ,TCGA-B5-A0JZ-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,499,0.0001,60,0.7918,28.87,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K0,TCGA-B5-A0K0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,20,0.0888,48,0.2477,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K1,TCGA-B5-A0K1-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0,69,0.2459,0.06,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K2,TCGA-B5-A0K2-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,301,0.0004,54,0.522,10.65,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K3,TCGA-B5-A0K3-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,53,0.2142,62,0.2639,0.55,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K4,TCGA-B5-A0K4-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.3111,51,0.2551,0.22,,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K6,TCGA-B5-A0K6-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,352,0.0488,58,0.5327,16.83,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K7,TCGA-B5-A0K7-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,44,0.1183,64,0.2724,0.14,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A0K8,TCGA-B5-A0K8-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,41,0.3133,71,0.3173,0.48,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A0K9,TCGA-B5-A0K9-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,759,0.1183,88,0.7746,22.1,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11E,TCGA-B5-A11E-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,9038,0.079,53,0.3566,5.48,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11F,TCGA-B5-A11F-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,39,0.0629,55,0.2879,0.52,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11G,TCGA-B5-A11G-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,553,0.036,71,0.862,28.95,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11H,TCGA-B5-A11H-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1016,0.067,67,0.9954,40.43,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11I,TCGA-B5-A11I-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,49,0.2983,65,0.2907,1.24,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11J,TCGA-B5-A11J-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,436,0,64,0.7092,23.51,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11L,TCGA-B5-A11L-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,111,0.0678,71,0.3009,0.08,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11M,TCGA-B5-A11M-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,36,,43,0.2609,0.02,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11N,TCGA-B5-A11N-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1909,0.0279,69,0.259,0.03,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11O,TCGA-B5-A11O-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,96,0.0001,62,0.2876,0.56,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11P,TCGA-B5-A11P-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,43,0.6382,87,0.3046,0.29,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11Q,TCGA-B5-A11Q-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.112,64,0.2746,0.49,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11R,TCGA-B5-A11R-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,594,0.3046,51,0.2964,0.41,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11S,TCGA-B5-A11S-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,52,0.1509,63,0.2571,0.22,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11U,TCGA-B5-A11U-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,369,0.0001,74,0.7585,27.25,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11V,TCGA-B5-A11V-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,56,0.1219,64,0.2837,0.25,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11W,TCGA-B5-A11W-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,73,0.0009,61,0.2663,0.22,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11X,TCGA-B5-A11X-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,60,,66,0.2725,0,Black or African American,,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11Y,TCGA-B5-A11Y-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,951,0,59,0.4514,3.92,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A11Z,TCGA-B5-A11Z-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,52,0.0343,61,0.2746,0.19,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A121,TCGA-B5-A121-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,31,0.0001,57,0.2653,0.13,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A1MR,TCGA-B5-A1MR-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,7302,0.0499,65,0.3618,0.12,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A1MS,TCGA-B5-A1MS-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,45,0.3454,60,0.3021,0.38,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A1MU,TCGA-B5-A1MU-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,32,0.135,79,0.3022,0.03,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A1MV,TCGA-B5-A1MV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,60,0.1008,84,0.3134,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A1MW,TCGA-B5-A1MW-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,537,0.0499,55,0.8113,13.94,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A1MX,TCGA-B5-A1MX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,5686,0.0008,47,0.8573,16.15,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A1MY,TCGA-B5-A1MY-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,47,0.5939,62,0.3174,0.61,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A1MZ,TCGA-B5-A1MZ-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,52,0.0341,54,0.2827,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A1N2,TCGA-B5-A1N2-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,140,0.5747,70,0.3409,2.02,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A3F9,TCGA-B5-A3F9-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,57,0.0636,56,0.2781,0,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A3FA,TCGA-B5-A3FA-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,9645,0.0003,73,0.4634,7.28,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A3FB,TCGA-B5-A3FB-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,43,0.0111,73,0.2756,0.02,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A3FC,TCGA-B5-A3FC-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,12205,0.0043,53,0.6869,24.24,Black or African American,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A3FD,TCGA-B5-A3FD-01,Uterine Endometrioid Carcinoma,1:DECEASED,,0:ALIVE OR DEAD TUMOR FREE,41,0.7669,70,0.2815,0.35,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A3FH,TCGA-B5-A3FH-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,38,0.0477,74,0.2786,0.04,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A3S1,TCGA-B5-A3S1-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,91,0.4083,71,0.3135,0.24,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A5OC,TCGA-B5-A5OC-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,977,0.0796,71,0.6411,13.96,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-B5-A5OD,TCGA-B5-A5OD-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,50,0.6366,67,0.3578,0.15,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-B5-A5OE,TCGA-B5-A5OE-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,69,0.4046,68,0.3429,0.33,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-BG-A0LW,TCGA-BG-A0LW-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,30,0.0001,47,0.2465,0.22,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0LX,TCGA-BG-A0LX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,448,0.0811,57,0.8188,26.46,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0M0,TCGA-BG-A0M0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,138,0.1187,66,0.4648,9.83,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0M2,TCGA-BG-A0M2-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,27,0.3315,62,0.2688,0.83,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0M3,TCGA-BG-A0M3-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,58,0.1516,74,0.277,0.18,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0M4,TCGA-BG-A0M4-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,582,0.1939,60,0.8536,28.95,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0M6,TCGA-BG-A0M6-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,45,0.6552,73,0.3034,0.63,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-BG-A0M7,TCGA-BG-A0M7-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,63,0.0001,60,0.2483,0.21,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0M9,TCGA-BG-A0M9-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,57,0.0498,73,0.2818,0.16,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MA,TCGA-BG-A0MA-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,44,0.0499,60,0.2841,0.03,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MC,TCGA-BG-A0MC-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,50,0.0296,74,0.2669,0.05,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MG,TCGA-BG-A0MG-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,101,0.0938,73,0.2676,0.4,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MI,TCGA-BG-A0MI-01,Uterine Endometrioid Carcinoma,1:DECEASED,,0:ALIVE OR DEAD TUMOR FREE,52,0,83,0.2475,0.21,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MK,TCGA-BG-A0MK-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,80,0.0002,52,0.3119,0,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MO,TCGA-BG-A0MO-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,39,0.0433,63,0.237,0.04,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MQ,TCGA-BG-A0MQ-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,603,0.0493,71,0.8335,23.55,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MT,TCGA-BG-A0MT-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,33,0.1556,64,0.2661,0.32,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0MU,TCGA-BG-A0MU-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,53,0.0495,78,0.2799,0.31,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0RY,TCGA-BG-A0RY-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,45,0.3342,68,0.2835,0.18,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0VT,TCGA-BG-A0VT-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,32,0.0492,56,0.2866,0.12,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0VV,TCGA-BG-A0VV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.0342,53,0.2528,0.05,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0VW,TCGA-BG-A0VW-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,435,0.0117,77,0.5605,18.29,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0VX,TCGA-BG-A0VX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,177,0,58,0.2605,0.08,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0VZ,TCGA-BG-A0VZ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,332,0.0026,58,0.757,22.9,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0W1,TCGA-BG-A0W1-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,66,0.1698,89,0.3122,0.35,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0W2,TCGA-BG-A0W2-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,30,0.0465,57,0.2844,0.06,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0YU,TCGA-BG-A0YU-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,18,0.0495,37,0.2784,0.05,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A0YV,TCGA-BG-A0YV-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,72,0.2432,67,0.2924,0.25,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-BG-A186,TCGA-BG-A186-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,30,0.0496,61,0.2865,0.08,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A187,TCGA-BG-A187-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,80,0.0465,65,0.2921,0.09,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A18A,TCGA-BG-A18A-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,54,0.0464,74,0.2765,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A18B,TCGA-BG-A18B-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,371,0.0005,53,0.8185,23.12,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A18C,TCGA-BG-A18C-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.8304,72,0.2796,2.12,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A222,TCGA-BG-A222-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,4260,0.0443,49,1.1195,25.38,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A2AD,TCGA-BG-A2AD-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0016,63,,,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A2AE,TCGA-BG-A2AE-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,55,0.238,57,0.3042,0.01,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A2L7,TCGA-BG-A2L7-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,618,0.0004,68,0.8115,17.46,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A3EW,TCGA-BG-A3EW-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,446,0.0349,62,0.7928,16.14,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BG-A3PP,TCGA-BG-A3PP-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,46,0.418,82,0.2949,0.04,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-BK-A0C9,TCGA-BK-A0C9-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,587,0.5839,57,0.5893,19.92,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A0CA,TCGA-BK-A0CA-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,48,,61,0.3061,0.01,White,UCEC_CN_LOW,Mixed Serous and Endometrioid Carcinoma
+TCGA-BK-A0CB,TCGA-BK-A0CB-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,53,0.05,60,0.2778,0.09,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A0CC,TCGA-BK-A0CC-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,52,,69,0.3195,5.36,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-BK-A139,TCGA-BK-A139-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,125,,74,0.2959,0.73,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A13B,TCGA-BK-A13B-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,633,0.0344,58,0.8641,22.97,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A13C,TCGA-BK-A13C-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,44,0.0343,47,0.2743,0.36,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A26L,TCGA-BK-A26L-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,74,,71,0.3083,0.39,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-BK-A4ZD,TCGA-BK-A4ZD-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,70,0.8106,42,0.3226,0.32,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A56F,TCGA-BK-A56F-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,54,0.0024,75,0.297,0,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A6W3,TCGA-BK-A6W3-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,3922,0.0003,34,0.3435,0.07,Black or African American,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-BK-A6W4,TCGA-BK-A6W4-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,24,0,62,0.3301,0,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0T9,TCGA-BS-A0T9-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,58,0.0504,39,0.2737,0.01,Native Hawaiian or Other Pacific Islander,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0TA,TCGA-BS-A0TA-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,472,0.0005,58,0.5657,19.35,Native Hawaiian or Other Pacific Islander,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0TC,TCGA-BS-A0TC-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1315,0.0005,69,0.2784,0.22,Asian,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0TD,TCGA-BS-A0TD-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,35,0.0001,65,0.2691,0.03,Asian,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0TE,TCGA-BS-A0TE-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,299,0.6335,35,0.4882,4.84,Asian,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0TG,TCGA-BS-A0TG-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,39,0.0498,60,0.2899,0.17,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0TI,TCGA-BS-A0TI-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,84,0.3669,64,0.3761,0.9,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0TJ,TCGA-BS-A0TJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,701,0.0002,59,0.9925,32.67,Asian,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0U5,TCGA-BS-A0U5-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,58,0.0001,76,0.2767,0.17,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0U7,TCGA-BS-A0U7-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,185,0.0908,63,0.3873,3.2,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0U8,TCGA-BS-A0U8-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,425,0.0034,55,0.8033,24.27,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0U9,TCGA-BS-A0U9-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,36,0.6511,59,,0.49,Native Hawaiian or Other Pacific Islander,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0UA,TCGA-BS-A0UA-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,321,0,68,0.5364,16.89,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0UF,TCGA-BS-A0UF-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,8372,0.0001,65,0.3009,0.93,Asian,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0UJ,TCGA-BS-A0UJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1583,0.0001,68,0.3517,5.03,Asian,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0UL,TCGA-BS-A0UL-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,388,0.0001,54,0.4699,12.99,Native Hawaiian or Other Pacific Islander,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0UM,TCGA-BS-A0UM-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,473,,64,0.5523,28.86,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0UT,TCGA-BS-A0UT-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,39,0.1947,62,0.2888,0.19,Asian,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0UV,TCGA-BS-A0UV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,8969,0.1249,55,0.2839,0.85,Native Hawaiian or Other Pacific Islander,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0V4,TCGA-BS-A0V4-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,325,0.0307,56,0.6106,6.86,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0V6,TCGA-BS-A0V6-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,51,0.0002,55,0.2612,0.01,Asian,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0V7,TCGA-BS-A0V7-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,59,0.0001,48,0.2599,0,Native Hawaiian or Other Pacific Islander,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0V8,TCGA-BS-A0V8-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,76,0.5415,68,0.2631,0.36,Native Hawaiian or Other Pacific Islander,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0VI,TCGA-BS-A0VI-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,308,0.044,58,0.5701,7.04,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-BS-A0WQ,TCGA-BS-A0WQ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.0471,55,0.2671,0.06,Asian,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZN,TCGA-D1-A0ZN-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.0767,60,0.2645,0.14,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZO,TCGA-D1-A0ZO-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,630,0.0834,75,0.7496,28.32,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZP,TCGA-D1-A0ZP-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,30,0.1861,59,0.2709,0.36,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A0ZQ,TCGA-D1-A0ZQ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,75,0.1772,90,0.2599,0.33,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZR,TCGA-D1-A0ZR-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,50,0.0341,57,0.2979,0.16,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZS,TCGA-D1-A0ZS-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,389,0,54,0.7448,28.29,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZU,TCGA-D1-A0ZU-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,32,0.0964,34,0.2884,0.28,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZV,TCGA-D1-A0ZV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,38,0,58,0.2787,0.04,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A0ZZ,TCGA-D1-A0ZZ-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,63,0.5039,80,0.3019,1.48,White,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-D1-A101,TCGA-D1-A101-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,435,0.0002,60,0.5438,16.28,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A102,TCGA-D1-A102-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,43,0.1758,49,0.2975,0.4,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A103,TCGA-D1-A103-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,6850,0.0001,87,0.4066,3.98,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A15V,TCGA-D1-A15V-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.3738,68,0.2688,0.79,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A15W,TCGA-D1-A15W-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,66,0.0024,58,0.2687,0.08,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A15X,TCGA-D1-A15X-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1507,0.0006,45,0.4476,11.04,White,UCEC_CN_LOW,Serous Endometrial Adenocarcinoma
+TCGA-D1-A15Z,TCGA-D1-A15Z-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,65,0.0465,72,0.2623,0.09,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A160,TCGA-D1-A160-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,499,0.0341,70,0.6785,21.45,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A161,TCGA-D1-A161-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,79,0.0468,78,0.2671,0.16,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A163,TCGA-D1-A163-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,570,0.0001,50,0.9412,29.96,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A165,TCGA-D1-A165-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,63,0.1588,64,0.2651,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A167,TCGA-D1-A167-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1559,0.0001,70,0.9382,24.6,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A168,TCGA-D1-A168-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.232,67,0.2875,0.24,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A169,TCGA-D1-A169-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,54,0.2083,63,0.2669,0.15,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16B,TCGA-D1-A16B-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.0001,64,0.2725,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16D,TCGA-D1-A16D-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.0003,49,0.2708,0.05,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16E,TCGA-D1-A16E-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,53,0.0001,73,0.2678,0.06,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16F,TCGA-D1-A16F-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,493,,60,0.6303,21.79,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16G,TCGA-D1-A16G-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,41,0.1014,74,0.2742,0,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A16I,TCGA-D1-A16I-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,37,0.3811,62,0.2793,0.77,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A16J,TCGA-D1-A16J-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,224,0.106,61,0.2648,0.09,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16N,TCGA-D1-A16N-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,129,0.5101,51,0.3686,3.98,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16O,TCGA-D1-A16O-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,31,0.0635,44,0.2821,0.07,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16Q,TCGA-D1-A16Q-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,29,0.0061,54,0.2458,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16R,TCGA-D1-A16R-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,45,0.0525,39,0.2517,0.04,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16S,TCGA-D1-A16S-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,53,0.427,70,0.2503,0.86,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A16V,TCGA-D1-A16V-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,40,0.3077,78,0.2571,0.9,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16X,TCGA-D1-A16X-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,2727,0.0001,54,0.2756,0.01,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A16Y,TCGA-D1-A16Y-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1068,0,56,0.279,0.41,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A174,TCGA-D1-A174-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,802,0.0006,51,0.9107,35.73,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A175,TCGA-D1-A175-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,,0.0001,48,1.0047,36.73,White,,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A176,TCGA-D1-A176-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,434,0.0392,67,0.6796,19.2,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A177,TCGA-D1-A177-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,804,0.0342,70,1.0196,31.14,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A179,TCGA-D1-A179-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,,0.854,76,0.2998,1.7,White,,Serous Endometrial Adenocarcinoma
+TCGA-D1-A17A,TCGA-D1-A17A-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,242,0.035,59,0.5402,12.22,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17B,TCGA-D1-A17B-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,286,0.0341,69,0.436,8.2,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17C,TCGA-D1-A17C-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,51,0.0001,78,0.2689,0.01,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17D,TCGA-D1-A17D-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,479,0,58,0.6777,18.85,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17F,TCGA-D1-A17F-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,218,0,68,0.3968,4.57,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17H,TCGA-D1-A17H-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,665,0.0052,61,0.8869,30.4,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17K,TCGA-D1-A17K-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,58,0.2631,74,0.2804,0.53,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17L,TCGA-D1-A17L-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,64,0.0341,81,0.2703,0.21,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17M,TCGA-D1-A17M-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,436,0.0454,56,0.53,16.57,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17N,TCGA-D1-A17N-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,28,0,46,0.2676,0.01,,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17Q,TCGA-D1-A17Q-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,5948,0,54,0.2907,0.78,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17R,TCGA-D1-A17R-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,253,0.2392,58,0.4451,9.94,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17S,TCGA-D1-A17S-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,47,0,59,0.265,0.14,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17T,TCGA-D1-A17T-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,66,0.0464,67,0.2691,0.1,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A17U,TCGA-D1-A17U-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,422,0.0009,53,0.792,27.42,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A1NS,TCGA-D1-A1NS-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,290,0.0002,53,0.5021,4.32,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A1NU,TCGA-D1-A1NU-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,79,0.4092,74,0.3328,0.56,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A1NW,TCGA-D1-A1NW-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,55,0.2859,72,0.3416,0.68,White,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-D1-A1NX,TCGA-D1-A1NX-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,41,0.1787,66,0.3074,0.27,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A1NY,TCGA-D1-A1NY-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,576,0.0562,67,0.9023,20.73,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A1NZ,TCGA-D1-A1NZ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,716,0.0341,60,0.898,18.91,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A1O0,TCGA-D1-A1O0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,48,0.4475,77,0.3044,0.6,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A1O5,TCGA-D1-A1O5-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,64,0.0002,61,0.2812,0.03,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A1O7,TCGA-D1-A1O7-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,328,0,60,0.6161,5.26,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A1O8,TCGA-D1-A1O8-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,59,0,70,0.2803,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A2G0,TCGA-D1-A2G0-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,815,0.0916,70,0.938,23.71,White,UCEC_MSI,Mixed Serous and Endometrioid Carcinoma
+TCGA-D1-A2G5,TCGA-D1-A2G5-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,213,0.9268,50,0.4585,1.53,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A2G6,TCGA-D1-A2G6-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,69,0.2916,53,0.3306,0.02,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A2G7,TCGA-D1-A2G7-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.2241,65,0.2867,0,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-D1-A3DA,TCGA-D1-A3DA-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,76,0.0399,77,0.3098,0.07,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A3DG,TCGA-D1-A3DG-01,Uterine Endometrioid Carcinoma,1:DECEASED,,0:ALIVE OR DEAD TUMOR FREE,94,0.929,81,0.2964,0.66,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A3DH,TCGA-D1-A3DH-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,89,0.7039,71,0.3135,1.8,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-D1-A3JQ,TCGA-D1-A3JQ-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,30,0.2228,61,0.3422,0.09,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-DF-A2KN,TCGA-DF-A2KN-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,4337,0.0008,,0.8466,19.89,,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-DF-A2KR,TCGA-DF-A2KR-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,93,0.7258,84,0.3419,0.58,,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-DF-A2KS,TCGA-DF-A2KS-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,117,0.6253,69,0.3045,0.71,,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-DF-A2KU,TCGA-DF-A2KU-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,10042,0.0048,,0.3546,0.73,,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-DF-A2KV,TCGA-DF-A2KV-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,1323,0.0003,55,0.288,0,,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-DF-A2KY,TCGA-DF-A2KY-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,,0.012,49,0.8855,26.17,,,Endometrioid Endometrial Adenocarcinoma
+TCGA-DF-A2KZ,TCGA-DF-A2KZ-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,601,0.0341,87,0.715,16.97,,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-DF-A2L0,TCGA-DF-A2L0-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,44,0.5377,60,0.3109,0.67,,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-DI-A0WH,TCGA-DI-A0WH-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,588,0.0346,64,0.7904,25.06,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-DI-A1BU,TCGA-DI-A1BU-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,7632,0.0001,55,0.991,38.69,White,UCEC_MSI,Mixed Serous and Endometrioid Carcinoma
+TCGA-DI-A1BY,TCGA-DI-A1BY-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,56,0.0005,63,0.2991,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-DI-A1C3,TCGA-DI-A1C3-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,41,0,38,0.2916,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-DI-A1NN,TCGA-DI-A1NN-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,47,0.1974,63,0.3003,0.17,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-DI-A1NO,TCGA-DI-A1NO-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,229,0.5988,68,0.3418,2.08,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-DI-A2QT,TCGA-DI-A2QT-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,22,0.3625,51,0.3099,0.43,American Indian or Alaska Native,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-DI-A2QU,TCGA-DI-A2QU-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,63,0.3324,67,0.3052,0.3,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-DI-A2QY,TCGA-DI-A2QY-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,109,0.6407,64,0.301,0.33,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-E6-A1LX,TCGA-E6-A1LX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,12694,0.0112,40,0.3376,0.41,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-E6-A1LZ,TCGA-E6-A1LZ-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,239,0.5552,76,0.3134,0.43,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-E6-A1M0,TCGA-E6-A1M0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1740,0.2016,56,0.2895,0.05,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-E6-A2P8,TCGA-E6-A2P8-01,Uterine Mixed Endometrial Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,558,0.0002,53,0.6942,17.31,Black or African American,UCEC_MSI,Mixed Serous and Endometrioid Carcinoma
+TCGA-E6-A2P9,TCGA-E6-A2P9-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,862,0.081,65,1.0301,20.99,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-E6-A8L9,TCGA-E6-A8L9-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,51,0.6129,61,0.361,0.61,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EC-A1NJ,TCGA-EC-A1NJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,257,0.053,73,0.4662,3.24,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EC-A1QX,TCGA-EC-A1QX-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,645,0.0796,71,0.6203,7.97,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EC-A24G,TCGA-EC-A24G-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1019,0.0005,57,0.5199,6.4,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A1Y5,TCGA-EO-A1Y5-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,71,0.4065,63,0.3174,0.44,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EO-A1Y7,TCGA-EO-A1Y7-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,42,0.2798,65,0.3284,0.36,,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A1Y8,TCGA-EO-A1Y8-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.3002,87,0.302,0.39,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EO-A22R,TCGA-EO-A22R-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,12770,0.0002,56,0.3971,2.11,,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A22S,TCGA-EO-A22S-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,632,0.0001,58,0.9162,21.04,,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A22T,TCGA-EO-A22T-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,993,0.0499,56,0.7835,17.64,Asian,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A22U,TCGA-EO-A22U-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,13820,0.0004,83,0.4032,3.26,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A22X,TCGA-EO-A22X-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,9421,0.0458,36,0.3086,0.29,,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A22Y,TCGA-EO-A22Y-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,49,0.6535,68,0.306,0.08,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A2CG,TCGA-EO-A2CG-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,35,0.4929,69,0.2776,0.02,Asian,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EO-A2CH,TCGA-EO-A2CH-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,40,0.384,73,0.3164,0.28,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EO-A3AS,TCGA-EO-A3AS-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,157,0.5218,86,0.3139,0.25,,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A3AU,TCGA-EO-A3AU-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,669,0,72,0.8955,19.24,,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A3AV,TCGA-EO-A3AV-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,4097,0.0242,51,0.2853,0.05,,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A3AY,TCGA-EO-A3AY-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,3382,0.0002,58,0.2784,0.18,,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A3AZ,TCGA-EO-A3AZ-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1002,0.2176,80,0.6422,16.05,,UCEC_MSI,Mixed Serous and Endometrioid Carcinoma
+TCGA-EO-A3B0,TCGA-EO-A3B0-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,10915,0.05,43,0.3052,0.14,Asian,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A3B1,TCGA-EO-A3B1-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,38,0.5055,63,0.2923,0.02,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EO-A3KU,TCGA-EO-A3KU-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,54,0.471,68,0.3216,0.31,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EO-A3KW,TCGA-EO-A3KW-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,41,0.3475,72,0.3047,0.11,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EO-A3KX,TCGA-EO-A3KX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,3200,0.0002,80,1.2214,35.73,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EO-A3L0,TCGA-EO-A3L0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,75,0.0963,76,0.2865,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GC,TCGA-EY-A1GC-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,34,0.4314,62,0.2988,0.71,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GD,TCGA-EY-A1GD-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1076,0.0347,51,0.2816,0.1,Black or African American,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GE,TCGA-EY-A1GE-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,41,0,67,0.2908,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GF,TCGA-EY-A1GF-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,340,0.0441,75,0.7116,16.22,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GH,TCGA-EY-A1GH-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,56,0.1841,70,0.2897,0.09,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GI,TCGA-EY-A1GI-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,4487,0.0005,52,0.2889,0.18,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GJ,TCGA-EY-A1GJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,45,0.2352,73,0.2833,0.31,Black or African American,,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GK,TCGA-EY-A1GK-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,839,0.055,74,0.9016,21.97,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GL,TCGA-EY-A1GL-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.0655,51,0.2939,0.05,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GM,TCGA-EY-A1GM-01,Uterine Mixed Endometrial Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,33,0.324,60,0.2797,0.59,Black or African American,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-EY-A1GO,TCGA-EY-A1GO-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,291,0.6229,65,0.4959,3.82,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GP,TCGA-EY-A1GP-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,30,0.9472,54,0.3006,0.5,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GQ,TCGA-EY-A1GQ-01,Uterine Endometrioid Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,453,0.2584,76,0.6634,13.42,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GR,TCGA-EY-A1GR-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.723,67,0.281,0.58,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GS,TCGA-EY-A1GS-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,353,0.6302,71,0.3141,1.42,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EY-A1GT,TCGA-EY-A1GT-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,78,0.081,68,0.2756,0.02,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GU,TCGA-EY-A1GU-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1181,0.0341,66,0.9342,22.78,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GV,TCGA-EY-A1GV-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,35,0.1646,75,0.2862,0.01,White,UCEC_CN_LOW,Mixed Serous and Endometrioid Carcinoma
+TCGA-EY-A1GW,TCGA-EY-A1GW-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,55,0.5739,73,0.2974,0.32,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1GX,TCGA-EY-A1GX-01,Uterine Endometrioid Carcinoma,1:DECEASED,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,71,0.1997,76,0.3021,0.43,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A1H0,TCGA-EY-A1H0-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,342,0.1423,57,0.941,23.33,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A210,TCGA-EY-A210-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,32,0.2899,82,0.2829,0.3,Black or African American,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-EY-A212,TCGA-EY-A212-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,64,0.3487,83,0.3103,0.53,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EY-A214,TCGA-EY-A214-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,51,0.6385,66,0.2972,0.14,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A215,TCGA-EY-A215-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,4645,0.0013,60,0.8962,18.6,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A2OM,TCGA-EY-A2OM-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,621,0.0512,55,0.9415,21.96,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A2ON,TCGA-EY-A2ON-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,73,0.4427,61,0.2803,0.12,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EY-A2OO,TCGA-EY-A2OO-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,63,0.4278,56,0.3071,0.06,White,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-EY-A2OP,TCGA-EY-A2OP-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,448,0.0803,63,0.7773,14.61,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A2OQ,TCGA-EY-A2OQ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,47,0.6205,61,0.3004,0.33,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A3L3,TCGA-EY-A3L3-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,53,0.5223,82,0.2962,0.94,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EY-A3QX,TCGA-EY-A3QX-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,46,0.6635,64,0.3143,0.14,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EY-A4KR,TCGA-EY-A4KR-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,73,0.2889,56,0.2999,0.06,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-EY-A547,TCGA-EY-A547-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,149,0.3713,75,0.4834,6.04,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A548,TCGA-EY-A548-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,596,0.0001,83,0.8116,17.93,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A549,TCGA-EY-A549-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1323,0.156,78,0.8695,20.02,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A54A,TCGA-EY-A54A-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,101,0.2869,67,0.3081,0.17,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A5W2,TCGA-EY-A5W2-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,775,0.0341,72,0.9861,27.19,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-EY-A72D,TCGA-EY-A72D-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,50,0.7701,87,0.3729,1.6,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A2CX,TCGA-FI-A2CX-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,20,0.0044,82,0.2871,0,White,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A2CY,TCGA-FI-A2CY-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,33,0.2356,60,0.2839,0.3,Black or African American,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-FI-A2D0,TCGA-FI-A2D0-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,6448,0,55,0.6227,8.76,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A2D2,TCGA-FI-A2D2-01,Uterine Mixed Endometrial Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,40,0.5059,66,0.2878,0.37,White,UCEC_CN_HIGH,Mixed Serous and Endometrioid Carcinoma
+TCGA-FI-A2D4,TCGA-FI-A2D4-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,328,0.1856,44,0.814,14.97,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A2D5,TCGA-FI-A2D5-01,Uterine Endometrioid Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,13852,0.0005,56,0.3854,0.82,White,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A2D6,TCGA-FI-A2D6-01,Uterine Endometrioid Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,630,0.0456,74,1.1265,22.68,White,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A2EU,TCGA-FI-A2EU-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,57,0.3318,68,0.3271,1.87,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-FI-A2EW,TCGA-FI-A2EW-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,98,0.5549,71,0.322,1.87,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-FI-A2EX,TCGA-FI-A2EX-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,63,0.527,58,0.3055,0.44,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-FI-A2EY,TCGA-FI-A2EY-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,95,0.6687,63,0.3239,1.09,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-FI-A2F4,TCGA-FI-A2F4-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1906,0.0344,64,0.7492,19.52,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A2F8,TCGA-FI-A2F8-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,68,0.3156,64,0.3111,0.06,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-FI-A2F9,TCGA-FI-A2F9-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,45,0.3709,79,0.3153,0.22,White,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-FI-A3PV,TCGA-FI-A3PV-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,61,0.4828,68,0.2839,0.31,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-FI-A3PX,TCGA-FI-A3PX-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,87,0.513,57,0.3305,0.5,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-H5-A2HR,TCGA-H5-A2HR-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,46,0.2775,71,0.2896,0.51,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-JU-AAVI,TCGA-JU-AAVI-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,1:Recurred/Progressed,1:DEAD WITH TUMOR,48,0.4885,61,0.3208,0.46,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-K6-A3WQ,TCGA-K6-A3WQ-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,32,0.733,60,0.3158,0.63,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-KP-A3VZ,TCGA-KP-A3VZ-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,76,0.7216,69,0.3111,0.55,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-KP-A3W0,TCGA-KP-A3W0-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,39,0.3267,72,0.2945,0.21,,UCEC_CN_LOW,Serous Endometrial Adenocarcinoma
+TCGA-KP-A3W1,TCGA-KP-A3W1-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,43,0.5404,76,0.2968,0.04,,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-KP-A3W3,TCGA-KP-A3W3-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,1:Recurred/Progressed,0:ALIVE OR DEAD TUMOR FREE,32,0.6446,72,0.4075,0.55,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-KP-A3W4,TCGA-KP-A3W4-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,47,0.1501,63,0.3573,0.06,White,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-PG-A5BC,TCGA-PG-A5BC-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,42,0.42,72,0.3104,0.35,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-PG-A6IB,TCGA-PG-A6IB-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,433,0.0006,68,0.6358,9.83,Black or African American,UCEC_MSI,Serous Endometrial Adenocarcinoma
+TCGA-PG-A7D5,TCGA-PG-A7D5-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,30,0.4382,62,0.3506,0.1,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-PG-A914,TCGA-PG-A914-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,135,0.6161,73,0.3571,0.34,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-PG-A915,TCGA-PG-A915-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,73,0.4091,60,0.3462,0.42,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-PG-A916,TCGA-PG-A916-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,41,0,70,0.3407,0.08,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-PG-A917,TCGA-PG-A917-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,715,0.0516,74,0.809,22.02,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-QF-A5YS,TCGA-QF-A5YS-01,Uterine Mixed Endometrial Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1559,0,57,0.323,0.04,Black or African American,UCEC_POLE,Mixed Serous and Endometrioid Carcinoma
+TCGA-QF-A5YT,TCGA-QF-A5YT-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,7,0.0001,57,0.3502,0,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-QS-A5YQ,TCGA-QS-A5YQ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,933,0.0003,55,0.348,0,Black or African American,UCEC_POLE,Endometrioid Endometrial Adenocarcinoma
+TCGA-QS-A5YR,TCGA-QS-A5YR-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,246,0.0001,61,0.5106,3.89,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-QS-A744,TCGA-QS-A744-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,63,0.1992,86,0.3346,0.07,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-QS-A8F1,TCGA-QS-A8F1-01,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,1:DECEASED,,1:DEAD WITH TUMOR,63,0.6549,85,0.3647,0.15,Black or African American,UCEC_CN_HIGH,Serous Endometrial Adenocarcinoma
+TCGA-SJ-A6ZI,TCGA-SJ-A6ZI-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,1306,0.0275,64,0.6138,14.35,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
+TCGA-SJ-A6ZJ,TCGA-SJ-A6ZJ-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,56,0.0466,61,0.3382,0,Black or African American,UCEC_CN_LOW,Endometrioid Endometrial Adenocarcinoma
+TCGA-SL-A6J9,TCGA-SL-A6J9-01,Uterine Endometrioid Carcinoma,0:LIVING,,0:ALIVE OR DEAD TUMOR FREE,48,0.4226,73,0.3503,0.03,Black or African American,UCEC_CN_HIGH,Endometrioid Endometrial Adenocarcinoma
+TCGA-SL-A6JA,TCGA-SL-A6JA-01,Uterine Endometrioid Carcinoma,0:LIVING,0:DiseaseFree,0:ALIVE OR DEAD TUMOR FREE,742,0.0488,77,0.9515,26.1,Black or African American,UCEC_MSI,Endometrioid Endometrial Adenocarcinoma
