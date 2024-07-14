@@ -1,0 +1,7 @@
+#prerequisite you have ot install
+numpy==1.23.5
+pandas==1.5.3
+tensorflow==2.11.0
+keras==2.11.0
+scikit-learn==1.2.2
+matplotlib==3.7.1
