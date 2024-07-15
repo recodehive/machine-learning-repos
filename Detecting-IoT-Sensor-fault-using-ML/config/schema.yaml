@@ -1,0 +1,339 @@
+columns:
+  - class: category
+  - aa_000: int
+  - ac_000: int
+  - ad_000: int
+  - ae_000: int
+  - af_000: int
+  - ag_000: int
+  - ag_001: int
+  - ag_002: int
+  - ag_003: int
+  - ag_004: int
+  - ag_005: int
+  - ag_006: int
+  - ag_007: int
+  - ag_008: int
+  - ag_009: int
+  - ah_000: int
+  - ai_000: int
+  - aj_000: int
+  - ak_000: int
+  - al_000: int
+  - am_0: int
+  - an_000: int
+  - ao_000: int
+  - ap_000: int
+  - aq_000: int
+  - ar_000: int
+  - as_000: int
+  - at_000: int
+  - au_000: int
+  - av_000: int
+  - ax_000: int
+  - ay_000: int
+  - ay_001: int
+  - ay_002: int
+  - ay_003: int
+  - ay_004: int
+  - ay_005: int
+  - ay_006: int
+  - ay_007: int
+  - ay_008: int
+  - ay_009: int
+  - az_000: int
+  - az_001: int
+  - az_002: int
+  - az_003: int
+  - az_004: int
+  - az_005: int
+  - az_006: int
+  - az_007: int
+  - az_008: int
+  - az_009: int
+  - ba_000: int
+  - ba_001: int
+  - ba_002: int
+  - ba_003: int
+  - ba_004: int
+  - ba_005: int
+  - ba_006: int
+  - ba_007: int
+  - ba_008: int
+  - ba_009: int
+  - bb_000: int
+  - bc_000: int
+  - bd_000: int
+  - be_000: int
+  - bf_000: int
+  - bg_000: int
+  - bh_000: int
+  - bi_000: int
+  - bj_000: int
+  - bk_000: int
+  - bl_000: int
+  - bm_000: int
+  - bs_000: int
+  - bt_000: int
+  - bu_000: int
+  - bv_000: int
+  - bx_000: int
+  - by_000: int
+  - bz_000: int
+  - ca_000: int
+  - cb_000: int
+  - cc_000: int
+  - cd_000: int
+  - ce_000: int
+  - cf_000: int
+  - cg_000: int
+  - ch_000: int
+  - ci_000: int
+  - cj_000: int
+  - ck_000: int
+  - cl_000: int
+  - cm_000: int
+  - cn_000: int
+  - cn_001: int
+  - cn_002: int
+  - cn_003: int
+  - cn_004: int
+  - cn_005: int
+  - cn_006: int
+  - cn_007: int
+  - cn_008: int
+  - cn_009: int
+  - co_000: int
+  - cp_000: int
+  - cq_000: int
+  - cs_000: int
+  - cs_001: int
+  - cs_002: int
+  - cs_003: int
+  - cs_004: int
+  - cs_005: int
+  - cs_006: int
+  - cs_007: int
+  - cs_008: int
+  - cs_009: int
+  - ct_000: int
+  - cu_000: int
+  - cv_000: int
+  - cx_000: int
+  - cy_000: int
+  - cz_000: int
+  - da_000: int
+  - db_000: int
+  - dc_000: int
+  - dd_000: int
+  - de_000: int
+  - df_000: int
+  - dg_000: int
+  - dh_000: int
+  - di_000: int
+  - dj_000: int
+  - dk_000: int
+  - dl_000: int
+  - dm_000: int
+  - dn_000: int
+  - do_000: int
+  - dp_000: int
+  - dq_000: int
+  - dr_000: int
+  - ds_000: int
+  - dt_000: int
+  - du_000: int
+  - dv_000: int
+  - dx_000: int
+  - dy_000: int
+  - dz_000: int
+  - ea_000: int
+  - eb_000: int
+  - ec_00: int
+  - ed_000: int
+  - ee_000: int
+  - ee_001: int
+  - ee_002: int
+  - ee_003: int
+  - ee_004: int
+  - ee_005: int
+  - ee_006: int
+  - ee_007: int
+  - ee_008: int
+  - ee_009: int
+  - ef_000: int
+  - eg_000: int
+
+numerical_columns:
+  - aa_000
+  - ac_000
+  - ad_000
+  - ae_000
+  - af_000
+  - ag_000
+  - ag_001
+  - ag_002
+  - ag_003
+  - ag_004
+  - ag_005
+  - ag_006
+  - ag_007
+  - ag_008
+  - ag_009
+  - ah_000
+  - ai_000
+  - aj_000
+  - ak_000
+  - al_000
+  - am_0
+  - an_000
+  - ao_000
+  - ap_000
+  - aq_000
+  - ar_000
+  - as_000
+  - at_000
+  - au_000
+  - av_000
+  - ax_000
+  - ay_000
+  - ay_001
+  - ay_002
+  - ay_003
+  - ay_004
+  - ay_005
+  - ay_006
+  - ay_007
+  - ay_008
+  - ay_009
+  - az_000
+  - az_001
+  - az_002
+  - az_003
+  - az_004
+  - az_005
+  - az_006
+  - az_007
+  - az_008
+  - az_009
+  - ba_000
+  - ba_001
+  - ba_002
+  - ba_003
+  - ba_004
+  - ba_005
+  - ba_006
+  - ba_007
+  - ba_008
+  - ba_009
+  - bb_000
+  - bc_000
+  - bd_000
+  - be_000
+  - bf_000
+  - bg_000
+  - bh_000
+  - bi_000
+  - bj_000
+  - bk_000
+  - bl_000
+  - bm_000
+  - bs_000
+  - bt_000
+  - bu_000
+  - bv_000
+  - bx_000
+  - by_000
+  - bz_000
+  - ca_000
+  - cb_000
+  - cc_000
+  - cd_000
+  - ce_000
+  - cf_000
+  - cg_000
+  - ch_000
+  - ci_000
+  - cj_000
+  - ck_000
+  - cl_000
+  - cm_000
+  - cn_000
+  - cn_001
+  - cn_002
+  - cn_003
+  - cn_004
+  - cn_005
+  - cn_006
+  - cn_007
+  - cn_008
+  - cn_009
+  - co_000
+  - cp_000
+  - cq_000
+  - cs_000
+  - cs_001
+  - cs_002
+  - cs_003
+  - cs_004
+  - cs_005
+  - cs_006
+  - cs_007
+  - cs_008
+  - cs_009
+  - ct_000
+  - cu_000
+  - cv_000
+  - cx_000
+  - cy_000
+  - cz_000
+  - da_000
+  - db_000
+  - dc_000
+  - dd_000
+  - de_000
+  - df_000
+  - dg_000
+  - dh_000
+  - di_000
+  - dj_000
+  - dk_000
+  - dl_000
+  - dm_000
+  - dn_000
+  - do_000
+  - dp_000
+  - dq_000
+  - dr_000
+  - ds_000
+  - dt_000
+  - du_000
+  - dv_000
+  - dx_000
+  - dy_000
+  - dz_000
+  - ea_000
+  - eb_000
+  - ec_00
+  - ed_000
+  - ee_000
+  - ee_001
+  - ee_002
+  - ee_003
+  - ee_004
+  - ee_005
+  - ee_006
+  - ee_007
+  - ee_008
+  - ee_009
+  - ef_000
+  - eg_000
+
+drop_columns:
+  - br_000
+  - bq_000
+  - bp_000
+  - ab_000
+  - cr_000
+  - bo_000
+  - bn_000

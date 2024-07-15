@@ -1,0 +1,152 @@
+Random Forest
+Model performance for Training set
+- Accuracy: 1.0000
+- F1 score: 1.0000
+- Precision: 1.0000
+- Recall: 1.0000
+- Roc Auc Score: 1.0000
+- COST: 0.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.9929
+- F1 score: 0.9929
+- Precision: 0.9891
+- Recall: 0.9967
+- Roc Auc Score: 0.9929
+- COST: 12270.
+===================================
+
+
+Decision Tree
+Model performance for Training set
+- Accuracy: 1.0000
+- F1 score: 1.0000
+- Precision: 1.0000
+- Recall: 1.0000
+- Roc Auc Score: 1.0000
+- COST: 0.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.9866
+- F1 score: 0.9866
+- Precision: 0.9823
+- Recall: 0.9910
+- Roc Auc Score: 0.9866
+- COST: 32750.
+===================================
+
+
+Gradient Boosting
+Model performance for Training set
+- Accuracy: 0.9839
+- F1 score: 0.9840
+- Precision: 0.9803
+- Recall: 0.9876
+- Roc Auc Score: 0.9839
+- COST: 179060.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.9843
+- F1 score: 0.9844
+- Precision: 0.9811
+- Recall: 0.9876
+- Roc Auc Score: 0.9843
+- COST: 44830.
+===================================
+
+
+Logistic Regression
+Model performance for Training set
+- Accuracy: 0.5888
+- F1 score: 0.6935
+- Precision: 0.5529
+- Recall: 0.9300
+- Roc Auc Score: 0.5888
+- COST: 1193120.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.5815
+- F1 score: 0.6895
+- Precision: 0.5478
+- Recall: 0.9304
+- Roc Auc Score: 0.5819
+- COST: 297840.
+===================================
+
+
+K-Neighbors Classifier
+Model performance for Training set
+- Accuracy: 0.9814
+- F1 score: 0.9816
+- Precision: 0.9707
+- Recall: 0.9927
+- Roc Auc Score: 0.9814
+- COST: 110900.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.9744
+- F1 score: 0.9748
+- Precision: 0.9605
+- Recall: 0.9894
+- Roc Auc Score: 0.9744
+- COST: 39850.
+===================================
+
+
+XGBClassifier
+Model performance for Training set
+- Accuracy: 1.0000
+- F1 score: 1.0000
+- Precision: 1.0000
+- Recall: 1.0000
+- Roc Auc Score: 1.0000
+- COST: 0.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.9960
+- F1 score: 0.9960
+- Precision: 0.9936
+- Recall: 0.9984
+- Roc Auc Score: 0.9960
+- COST: 5950.
+===================================
+
+
+CatBoosting Classifier
+Model performance for Training set
+- Accuracy: 0.9993
+- F1 score: 0.9993
+- Precision: 0.9993
+- Recall: 0.9994
+- Roc Auc Score: 0.9993
+- COST: 9210.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.9947
+- F1 score: 0.9947
+- Precision: 0.9921
+- Recall: 0.9974
+- Roc Auc Score: 0.9947
+- COST: 9560.
+===================================
+
+
+AdaBoost Classifier
+Model performance for Training set
+- Accuracy: 0.9749
+- F1 score: 0.9750
+- Precision: 0.9736
+- Recall: 0.9763
+- Roc Auc Score: 0.9749
+- COST: 339420.
+----------------------------------
+Model performance for Test set
+- Accuracy: 0.9756
+- F1 score: 0.9756
+- Precision: 0.9745
+- Recall: 0.9767
+- Roc Auc Score: 0.9756
+- COST: 83290.
+===================================
+
+
