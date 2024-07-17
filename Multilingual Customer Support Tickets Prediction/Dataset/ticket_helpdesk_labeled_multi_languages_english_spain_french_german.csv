@@ -1,0 +1,367 @@
+queue,priority,software_used,hardware_used,accounting_category,language,subject,text
+Hardware,2,,Wireless Mouse,,en,Wireless Mouse suddenly stops working,"Dear Support Team, I've been using the Wireless Mouse I purchased recently, and all of a sudden, it just stopped working. I've tried changing the batteries and reconnecting it, but nothing helps. Could you please provide a solution? Thanks, Jane Doe"
+Hardware,2,,IP PBX,,fr,Problème de connexions IP PBX,"Bonjour, nous rencontrons un problème avec notre matériel IP PBX. Les connexions sont instables et nous observons des interruptions fréquentes. Cela affecte fortement notre communication interne. Votre assistance serait très appréciée pour régler ce problème rapidement."
+Hardware,2,,SFX-Netzteil,,de,Problem mit meinem SFX-Netzteil,"Sehr geehrte Damen und Herren, mein SFX-Netzteil zeigt unregelmäßige Spannungsabfälle, wodurch mein System plötzlich einfriert. Das Netzteil ist etwa sechs Monate alt. Können Sie mir bitte weiterhelfen? Vielen Dank!"
+Accounting,2,,,Customer Inquiries::Technical Support,en,Invoice Adjustment Request,"Dear Customer Support,
+I recently received my latest invoice (#123456) and noticed an error. The invoice includes two items that were not part of my original order. Can you please review and adjust the invoice accordingly? Your prompt assistance would be greatly appreciated.
+Best regards,
+John Doe"
+Software,2,Arbitrum,,,en,Issue with Arbitrum: UI not loading,"Hello Support Team,
+I've been experiencing an issue with the Arbitrum software. The user interface fails to load properly upon startup. I've tried reinstalling the application and clearing the cache, but the problem persists. Could you please assist in resolving this matter?
+Best Regards,
+Sarah Becker"
+Software,1,Drug Discovery,,,es,Pregunta sobre actualización Drug Discovery,"Estimados, me gustaría saber si hay alguna actualización próxima para el software Drug Discovery que solucione algunos errores menores que he encontrado. No es urgente, pero apreciaría una respuesta."
+Software,3,Adobe Premiere Pro 2021,,,de,Dringendes Problem mit Adobe Premiere Pro 2021,"Hallo Team,Adobe Premiere Pro 2021 stürzt ständig ab. Ich habe ein dringendes Projekt und kann auf keine Dateien zugreifen. Das Programm startet, friert kurz danach aber immer ein. Habe alles probiert und brauche dringend Hilfe. Mit freundlichen Grüßen, Kai Müller"
+Accounting,2,,,Employee Inquiries::Technical,fr,Changement d'adresse de facturation souhaité,"Bonjour, pourriez-vous mettre à jour notre adresse de facturation avec la nouvelle : 68 Rue de Rivoli, 75001 Paris ? Merci beaucoup."
+Accounting,2,,,Employee Inquiries::IT Support::Access Rights,fr,Demande de mise à jour des droits d'accès,"Bonjour Service IT, je rencontre des difficultés d'accès à certaines applications indispensables pour mon travail. Pourriez-vous vérifier et ajuster mes droits d'accès ? Numero employé: 549876. Domaine: Comptabilité Merci d'avance pour votre aide. Cordialement, Marc Durand"
+Hardware,2,,Portable Console,,en,Issue with Portable Console - Screen flickering,The screen flickers randomly during use.
+Hardware,2,,NAS-Gehäuse,,en,Issue with NAS enclosure temperature,"Hello Support, my NAS enclosure is overheating often. Could it be the fan malfunctioning? Need assistance."
+Accounting,2,,,Employee Inquiries::Technical::Hardware Issues,en,Invoice Query: Changing Corporate Billing Details,"Dear Support Team,
+I am writing to request a modification in our corporate billing details for future transactions. Please update your records to the following: Tech Innovators Inc., 123 Silicon Valley, Suite 300, San Francisco, CA 90210. Your prompt attention to this matter would be greatly appreciated.
+Sincerely, Alex Carter"
+Hardware,2,,NAS-Gehäuse,,es,Problema con el funcionamiento del NAS-Gehäuse,"Hola, el NAS-Gehäuse que compré no se enciende adecuadamente con los discos duros instalados. ¿Alguna solución?"
+Accounting,3,,,Employee Inquiries::General,en,Issue with expense report submission,"Dear Accounting Team, I am having trouble submitting my expense report for last month. The system prompts errors. Please resolve this urgently."
+Software,3,Excel,,,de,Dringendes Excel Problem - Makros funktionieren nicht mehr,Seit dem letzten Windows-Update funktionieren meine Excel-Makros nicht mehr korrekt. Ich benötige dringend Unterstützung!
+Hardware,2,,Huion Inspiroy H1060P,,es,Problemas con la conexión de Huion Inspiroy H1060P,"Hola equipo de soporte, Estoy teniendo problemas para conectar mi Huion Inspiroy H1060P a mi PC. A veces pierde la conexión y otras veces no es detectado por completo. Ya probé diferentes puertos USB y cables, pero el problema sigue. ¿Podrían ayudarme con una solución? Gracias de antemano."
+Software,3,Carbon Management,,,es,¡Urgente! Problema con Carbon Management,"Hola, después de la última actualización, nuestro sistema de Carbon Management ha dejado de funcionar. Es esencial para nosotros y necesitamos una solución crítica."
+Software,1,SketchUp Pro 2021,,,de,Fehler im Dialogfenster bei SketchUp Pro 2021,"Hallo Support-Team,
+
+mir ist bei der Nutzung von SketchUp Pro 2021 etwas aufgefallen. Im Dialogfenster für die Splines gibt es einen kleinen Fehler: oft erscheinen die Werkzeuge nicht korrekt. Es beeinträchtigt die Nutzung nicht stark, aber ein Fix wäre super.
+
+Vielen Dank und Grüße,
+Julian Meier"
+Accounting,2,,,Employee Inquiries::Technical::Software Issues,en,Timesheet entry software malfunctioning,"Hello support team, our employees can't access the portal for entering timesheets. The system displays an error code (53400) when they try to log in. Please assist!"
+Hardware,3,,Smart-Haustierkamera,,en,Critical: Smart Pet Camera Complete Failure,"Hello Support,
+My Smart Pet Camera suddenly stopped working; it won't power on. I've tried multiple power sources. I urgently need assistance.
+Best,
+Alice James"
+Hardware,3,,USB-Hub,,en,URGENT: USB-HUB malfunctioning - Need Assistance ASAP,"Dear Support Team,My new USB-Hub, Model Q35-T, constantly disconnects and causes all my peripherals to hang. I've tried different computers and cables. Please help me with a solution as soon as possible as I need it for my work.Best regards,John Carter"
+Accounting,1,,,Employee Inquiries::IT Support,en,Inquiry about different company name on invoice,Can I have a different company name on my invoice?
+Accounting,1,,,Customer Inquiries::Cancellations,es,Consulta sobre la cancelación de mi suscripción,"Hola equipo de soporte,
+Me gustaría solicitar la cancelación de mi suscripción a su servicio. Ya no necesito utilizarla y preferiría cancelar antes del próximo ciclo de facturación. ¿Podrían indicarme los pasos para concluir este proceso?
+Agradezco su pronta respuesta a este asunto.
+Saludos cordiales,
+Laura Flores"
+Software,3,Sales Forecasting,,,fr,Problème crucial : Sales Forecasting - plantages répétés,"Bonjour, Nous rencontrons des difficultés majeures avec le logiciel Sales Forecasting. Il se plante systématiquement chaque fois que nous tentons de générer des rapports de vente mensuels. Cela perturbe gravement notre activité car nous dépendons de ces rapports pour la prise de décisions stratégiques. Merci de résoudre ce problème en urgence. Cordialement"
+Hardware,2,,All-in-One PC,,de,All-in-One PC - Grafikfehler,"Guten Tag liebes Support-Team,
+
+mein neuer All-in-One PC zeigt seit dem letzten Update Grafikfehler an. Das Bild flackert und hat bunte Streifen. Treiber-Updates haben nicht geholfen. Was kann ich noch ausprobieren? Hoffe auf schnelle Rückmeldung.
+
+Mit freundlichen Grüßen, 
+Alexander Maier"
+Software,1,Confluence,,,en,Small UI error in Confluence,"Hi Support Team, I've noticed a small UI bug in Confluence when navigating through the sidebar. Some entries overlap and it's hard to read. There’s no rush, but could you check?"
+Software,2,FL Studio,,,es,Problema con FL Studio al importar samples,"Buenos días, tengo un problema al intentar importar samples en FL Studio. La aplicación se cuelga constantemente. ¿Podrían ayudarme?"
+Software,1,Udemy,,,en,Udemy - Issue with Progress Tracking,"Hi Support Team,I've noticed that the progress tracking for my Udemy courses isn't working correctly. Some completed videos are not marked as finished, making it hard to keep track of what's remaining.It's important, but no urgency needed. Could you look into this and help resolve the issue? Thanks in advance,- Michael H."
+Software,3,Heroku Dashboard,,,es,Heroku Dashboard no responde,"Hola equipo de soporte, desde esta tarde mi Heroku Dashboard ha dejado de responder. Hemos intentado reiniciar la aplicación sin éxito y necesitamos acceder de inmediato para seguir nuestro trabajo."
+Accounting,2,,,Employee Inquiries::Technical,es,Pregunta sobre bonificación laboral,"Estimado equipo de contabilidad, querría saber si la empresa va a aplicar %nalmente la bonificación adicional prometida para este trimestre en mi próximo salario. Agradecería obtener respuesta. Gracias, Marta Hidalgo"
+Accounting,1,,,Customer Inquiries::Security Inquiries,en,Inquiry regarding billing security protocols,"Hello Support Team,
+I would like to inquire about the security protocols you have in place regarding our billing and account information security. Can you provide details on how my financial data is protected? Ensuring safety and compliance is crucial for us.
+Thank you,
+Alex Brunner"
+Hardware,3,,Spectre x360,,en,Spectre x360 - Screen bleibt schwarz nach Update,"Hallo Support, nach dem neuesten Update bleibt der Bildschirm meines Spectre x360 schwarz beim Hochfahren. Ich benötige das Gerät dringend für wichtige Arbeiten. Habe bereits den Akku entfernt und neu gestartet, aber es hilft nichts. Könnent ihr mir bitte schnellstmöglich weiterhelfen? Vielen Dank, Max Bauer"
+Software,2,VMware,,,de,Problem mit VMware nach Update,Nach dem letzten Update funktioniert meine VMware nicht mehr. Bitte um schnelle Hilfe!
+Hardware,2,,iPad,,es,Problemas con el iPad,"Hola soporte, mi iPad no toma suficiente carga. ¿Pueden arreglarlo? He intentado todo sin éxito. Gracias."
+Software,3,Oracle Commerce,,,de,Oracle Commerce - Schwerwiegender Fehler,"Unsere Oracle Commerce Plattform ist abgestürzt, bitte dringend um Unterstützung. Fehlercodes anbei!"
+Hardware,3,,Smart-Reiskocher,,de,Smart-Reiskocher heizt nicht mehr,"Sehr geehrtes Support-Team, mein Smart-Reiskocher heizt seit gestern nicht mehr. Ich habe ihn an verschiedenen Steckdosen getestet, aber ohne Erfolg. Bitte um schnelle Hilfe!"
+Accounting,2,,,Customer Inquiries::Complaints,es,Consulta urgente por sobrecargo en la factura,"Hola equipo de contabilidad,
+
+Recientemente noté un sobrecargo inesperado en mi factura mensual y no entiendo el motivo. Intenté contactar a través del número de teléfono al cliente hospedaje, pero no recibí respuesta alguna. Me gustaría que revisaran el detalle de la factura y corregir cualquier error que pudiese haber. Espero su pronta respuesta.
+
+Gracias y saludos,
+Carlos Rodriguez"
+Software,3,AML Compliance,,,es,AML Compliance no verifica transacciones automáticamente,"Estimado equipo de soporte, necesitamos ayuda urgente. AML Compliance ha dejado de verificar las transacciones automáticamente, lo cual es crítico para nuestras operaciones diarias. Hemos reiniciado el sistema pero el problema persiste. ¿Podrían revisar esto a la brevedad posible? Gracias, Hugo Fernández"
+Hardware,2,,Fractal Design Meshify C,,en,Issues with Fractal Design Meshify C Case,"Hello Customer Support, I have recently encountered an issue with my Fractal Design Meshify C PC case. The front panel USB ports seem to be malfunctioning, as they often lose connection with my peripherals. I've reseated the connectors and tried different cables, but the issue persists. Can you please assist me in troubleshooting this problem or advise on a potential replacement of the front panel? Kind regards, Emily Clark"
+Software,3,Google Meet,,,en,Critical error with Google Meet - Immediate assistance needed,"Dear Support Team,
+
+I'm facing a critical issue with Google Meet. The application crashes abruptly during important company meetings, causing major disruptions. We've tried reinstalling and updating to the latest version, but the problem persists. We rely heavily on this tool for our daily operations. Please address this at your earliest.
+
+Best regards,
+Marc Stein"
+Accounting,3,,,Customer Inquiries::Contract Questions,de,Dringende Vertragsfrage - Klärung erforderlich,"Sehr geehrte Damen und Herren, bitte erläutern Sie den aktuellen Stand meines Vertrages Nr. 123456. Es gibt Unklarheiten bezüglich der Laufzeit und der Gebührenstruktur. Dies ist äußerst dringend, da nächste Woche eine Frist endet. Vielen Dank und beste Grüße, Martin Keller"
+Hardware,3,,Robot Vacuum,,en,Robot Vacuum funktioniert nicht nach Update,Der Staubsauger startet nicht mehr nach dem letzten Update.
+Accounting,2,,,Customer Inquiries,en,Invoice Request for Order 3424BXT - Customer ID 762119,"Dear Support Team, I need an invoice copy for order 3424BXT (Customer ID 762119) as the original was lost. Could you please assist me by emailing a new copy? It's quite important for my records and accounting. Best regards, Kay Robinson"
+Hardware,2,,VR Treadmill,,en,Issue with VR Treadmill losing calibration,"Hi Support Team, I’m experiencing a calibration issue with my VR Treadmill. After using it for about 25-30 minutes, the tracking seems to go off, which impacts my VR experience. I’ve tried to recalibrate, but the issue persists. Can you help me diagnose and resolve this problem? Thanks in advance! Best regards, Alex Turner"
+Software,1,AWS CloudFormation,,,de,Fehlermeldung bei Nutzung von AWS CloudFormation,"Hallo, ich bekomme bei der Verwendung von AWS CloudFormation öfter eine unerwartete Fehlermeldung. Könnten Sie das überprüfen? Grüße, Max"
+Hardware,1,,Ringlicht,,en,Minor issue with Ringlicht brightness,"Hi Support, I've noticed that my Ringlicht is slightly dimmer than before, even on max settings. Could you advise on troubleshooting steps?"
+Accounting,1,,,Employee Inquiries::Legal Inquiries::Contract Law,es,Cambio de dirección en el contrato,"Hola equipo de contabilidad, quisiera realizar un cambio en mi contrato actual en cuanto a la dirección corporativa. Ahora operamos desde la calle Gran Vía, 52, 28013 Madrid. ¿Podrían generar un nuevo contrato con esta dirección? No hay urgencia pero apreciaría la confirmación. Gracias de antemano."
+Hardware,2,,Gaming Monitor,,es,Problema con el monitor de juegos,"Hola equipo de soporte, compré un monitor de juegos hace un mes y desde hace unos días la pantalla parpadea intermitentemente. He intentado reiniciar y cambiar los cables, pero el problema persiste. ¿Podrían ayudarme a resolverlo? Gracias, Javier Morales."
+Software,1,XSplit Broadcaster,,,es,Pequeño bug en XSplit Broadcaster,"Hola soporte de XSplit, Espero que estén bien. He notado un pequeño problema en su software XSplit Broadcaster. Cada vez que intento cambiar el perfil de audio, la aplicación tarda mucho en responder y a veces se congela. ¿Podrían investigar esto, aunque no es urgente? Un saludo, Juan Rodríguez"
+Software,3,Building Automation,,,de,Kritischer Fehler in Building Automation,"Sehr geehrte Damen und Herren,
+unsere Produktionslinie ist durch einen kritischen Fehler in der Software Building Automation komplett stillgelegt. Ein Neustart oder eine Neuinstallation bringen keine Lösung. Wir benötigen dringend Ihre Unterstützung, um den Betrieb wieder aufzunehmen. Vielen Dank im Voraus für Ihre schnelle Hilfe.
+Mit freundlichen Grüßen,
+Fritz Müller"
+Hardware,2,,Mac Mini,,en,Mac mini - USB ports intermittently fail,"Dear Support Team, I’ve been experiencing intermittent connectivity issues with the USB ports on my Mac mini (purchased from your store, Order Number #1234-567), which creates disruptions in my workflow. I’ve checked the cables and peripherals, but the issue persists. Can you provide guidance or assistance on this matter? Thanks, John Smith"
+Software,1,Freehostia,,,es,Small bug in Freehostia - text alignment,"Hola equipo de soporte,
+
+Me he dado cuenta de un pequeño fallo en Freehostia. El texto en las etiquetas de algunos botones no está alineado correctamente en la última versión. No es urgente pero sería genial si pudieran corregirlo en una futura actualización.
+
+Saludos,
+Carlos Mendoza"
+Hardware,2,,VGA Cable,,de,Probleme mit VGA-Kabel - Bildschirm bleibt schwarz,"Sehr geehrtes Support-Team, ich verwende ein VGA-Kabel, das ich bei Ihnen gekauft habe, und habe seit kurzem das Problem, dass mein Bildschirm beim Anschließen schwarz bleibt. Ich habe das Kabel und den Monitor mit anderen Geräten getestet, und da funktioniert alles einwandfrei. Könnte es ein Problem mit der Signalübertragung sein? Viele Grüße, Patrick Sauer"
+Accounting,2,,,Employee Inquiries::Technical::Hardware Issues,fr,Problème avec le scanner du nouveau photocopieur,"Bonjour, j'ai trouvé un problème avec le scanner de notre nouveau photocopieur au bureau. Merci!"
+Accounting,2,,,Employee Inquiries::Staff Development,en,Payroll Query,"Dear HR Team, I've noticed discrepancies in my recent payroll statement and would like to schedule a meeting to clarify. Additionally, I'd like information on upcoming development opportunities. Thank you! Best regards, Jane Doe"
+Software,1,Watchlist Monitoring,,,en,Minor bug report in Watchlist Monitoring Software,"Hello Support Team,
+I have encountered a small but persistent issue with the Watchlist Monitoring software. Each time I attempt to save a new watchlist, the software freezes momentarily before proceeding. Please advise any potential fixes.
+Thanks,
+John Doe"
+Hardware,2,,Gaming PC,,de,Grafikkarten-Problem bei Gaming PC,"Hallo Support, meine Grafikkarte läuft seit dem letzten Update überhitzt. Was kann ich tun? Grüße, Lena Schmidt"
+Software,3,Equity Crowdfunding,,,de,Equity Crowdfunding stürzt ab - Dringende Hilfe benötigt,"Sehr geehrte Damen und Herren,
+unser Team nutzt die Software Equity Crowdfunding, aber seit heute früh stürzt sie immer wieder ab und wir können keine Projekte bearbeiten. Können Sie uns dringend weiterhelfen?
+Vielen Dank!
+Stefan Müller"
+Hardware,2,,Cellular Antenna,,en,Cellular Antenna experiencing intermittent signal loss,"Dear Support Team, I am facing an issue with the Cellular Antenna I received last week. There is constant intermittent signal loss affecting connectivity. Tried power cycles with no improvement. Could you assist?"
+Software,3,BlueJeans,,,fr,BlueJeans - Erreur critique lors du démarrage,"Bonjour équipe de support, lorsque je tente de démarrer BlueJeans, je rencontre constamment une erreur critique qui m'empêche d'utiliser le programme pour mes réunions professionnelles. Veuillez m'aider rapidement, svp. Merci. Client #48632"
+Software,3,Insurance Analytics,,,es,Insurance Analytics no se inicia después de actualizar,"Recientemente actualicé Insurance Analytics a la última versión y ahora la aplicación no arranca. Necesito acceder a mis datos cuanto antes, ya que los uso diariamente para mis análisis. Por favor ayúdenme a resolverlo rápidamente."
+Accounting,1,,,Employee Inquiries::IT Support::Network Issues,fr,Demande concernant la prochaine facture,"Salut l'équipe, Je me demande s'il serait possible d'utiliser le nom de notre nouvelle société pour la prochaine facture: 'TechLinks SARL' au lieu de l'ancien. C'est une petite mise à jour mais importante pour notre comptabilité. Merci d'avance! Bien cordialement, Marc Leblanc"
+Accounting,1,,,Employee Inquiries::Accounting::Accounting Policies,en,Clarification on Updated Travel Expense Policy,"Hi Team, can you provide more details on the new travel expense policy changes?"
+Software,1,Data Privacy,,,de,Data Privacy: Ab und zu verschwinden meine EXP Reports,"Hallo, bei der Nutzung der Data Privacy Software verschwinden ab und zu meine EXP Reports plötzlich. Es passiert nicht regelmäßig, nur ab und zu. Warum?"
+Software,1,Homestead,,,de,Anfrage zur Homestead-Version 2.3,"Hallo Support-Team, ich habe festgestellt, dass bei meiner aktuellen Version 2.3 von Homestead ein kleines Rendering-Problem mit SVG-Grafiken auftritt. Könntet Ihr das bitte überprüfen? Danke!"
+Accounting,3,,,Employee Inquiries::Technical::Hardware Issues,es,Solicitud urgente cambio dirección de facturación,"Buenos días, requiero con urgencia cambiar la dirección de facturación registrada actualmente. La nueva dirección es Calle Pérez 456, 28013 Madrid. Espero una respuesta rápida, muchas gracias."
+Accounting,1,,,Employee Inquiries::General::Administrative Inquiries,es,Cambiar el nombre en la factura próxima,"Estimado equipo de contabilidad, Espero se encuentren bien. Podrían cambiar el nombre de mi empresa en la próxima factura a 'Consultora Innovatriz S.L.'? No es urgente, pero agradecería que lo hicieran antes del próximo ciclo de facturación. Atentamente, Marc Gómez"
+Hardware,2,,Festplatte,,en,External Hard Drive not recognized,"Hi team, I recently purchased an external hard drive (Order #46392) from your store, but it seems my computer is not recognizing the drive. I've tried different USB ports and another computer to no avail. The drive's light is on, indicating power, but it's not showing up in My Computer. I need the data ASAP. Could you please guide me? Thanks, Michael. (Customer #70612)"
+Software,1,Telemedicine,,,en,Telemedicine - Feature Request,"Hello support team,
+
+I’ve been using your Telemedicine software and it’s working remarkably well. I was wondering if you could add a feature to export patient data in CSV format? It would immensely help with our backend processing of patient records.
+
+Thanks and regards,
+Nina"
+Hardware,3,,OLED-Monitor,,en,Urgent: OLED Monitor verbindet sich nicht korrekt,"Hello, This is Emil Krause. My OLED monitor suddenly stopped connecting to any of my devices via HDMI or DisplayPort. I've tried different cables and reset the settings, but it still doesn't work. This is really impacting my work schedule. Can you please assist me in resolving this issue urgently? Thanks a lot!"
+Accounting,2,,,Customer Inquiries::Security Inquiries,de,Sicherheitswarnung - Verdächtige Aktivität auf meinem Konto,"Sehr geehrte Damen und Herren, in letzter Zeit habe ich verdächtige Aktivitäten auf meinem Konto bemerkt. Könnten Sie bitte prüfen, ob ein unbefugter Zugriff stattgefunden hat und mein Konto überprüfen? Vielen Dank für Ihre Hilfe!"
+Software,1,WeChat,,,fr,Mise à jour WeChat demandée,"Bonjour support, je voudrais savoir s'il est possible d'obtenir une mise à jour pour ma version de WeChat. L'application semble un peu lente ces derniers temps et j'étais curieux de savoir s'il existe une nouvelle version qui pourrait résoudre ce problème. Merci!"
+Hardware,1,,IP PBX,,de,IP PBX Hardware: Kleinere technische Fragen,"Sehr geehrte Damen und Herren, ich benutze Ihre IP PBX Hardware und habe ein paar kleinere Rückfragen zu einigen Funktionen: Gibt es eine Möglichkeit, die sprachliche Ausgabe anzupassen? Und wie kann ich festlegen, dass bestimmte Nummern immer Priorität haben? Vielen Dank für Ihre Hilfe, Mit freundlichen Grüßen, Robert Müller"
+Accounting,3,,,Employee Inquiries::Technical,es,Solicitud urgente: Problema técnico,"Estimado equipo de soporte, tengo un problema con el acceso a mi cuenta de empleado. No puedo iniciar sesión y necesito acceder urgentemente a los documentos de nómina. El sistema me muestra un error 'Usuario no encontrado'. Podrían ayudarme lo antes posible? Es crítico para cumplir con los plazos. Gracias."
+Hardware,1,,Converter,,en,Question about Converter hardware settings,"Hello Support Team,
+
+I recently purchased the Converter hardware for my home setup, and I have a small question about adjusting the settings for optimal performance. Can you please guide me through the process or provide any documentation that might help?
+
+Thanks in advance,
+Matt Bernsen"
+Software,3,Pinnacle Studio 24,,,en,Pinnacle Studio 24 crashes during editing,"Hello Support Team,
+I'm experiencing critical issues with Pinnacle Studio 24. Every time I try to edit my project, the software crashes, and I lose all my unsaved work. I am working on a tight deadline and urgently need a resolution. Could you please assist me in fixing this problem as soon as possible?
+Thank you,
+Peter Schmitt"
+Hardware,1,,Netzwerkadapter,,en,Minor issue with network adapter,"Blinking light issue on network adapter, but everything else works fine."
+Software,3,Balsamiq Mockups 4,,,fr,Balsamiq Mockups 4 entre en conflit avec macOS,"Bonjour l'équipe support, mon Balsamiq Mockups 4 se ferme automatiquement dès que je l'ouvre sur macOS. J'ai essayé de le réinstaller, mais le problème persiste. Pouvez-vous me aider? Merci, CM894238"
+Software,2,DEXs,,,fr,Problème avec la dernière mise à jour de DEXs,"Bonjour équipe de support, 
+Depuis la dernière mise à jour de votre application DEXs, j'ai remarqué de nombreux bugs. Par exemple, l'application se fige régulièrement lorsque j'essaie de sauvegarder mon travail. De plus, certaines fonctionnalités comme l'intégration de l'API ne fonctionnent plus correctement. Pourriez-vous m'aider à résoudre ces problèmes ? 
+Merci d'avance et cordialement, 
+Charlotte Dubois"
+Software,3,Sales Forecasting,,,es,Sales Forecasting no arranca después de la actualización,"Hola soporte, mi Sales Forecasting ya no funciona después del último update. ¡Urge su ayuda!"
+Hardware,2,,Barcode-Scanner,,en,Barcode scanner malfunction when scanning codes,"Dear Support Team, 
+
+Our latest batch of barcode scanners is having a strange issue. About 50% of the time, when scanning barcodes, the scanner beeps but nothing is registered. We've attempted multiple reboots and firmware updates without success. Could you please provide some further troubleshooting steps or a potential solution?
+
+Thanks,
+Mia Roberts"
+Software,3,Zapier,,,en,Critical Issue: Zapier workflows not running,"Dear Support, I urgently need your help. My Zapier workflows have stopped running suddenly, preventing critical automation from completing. Deadlines are being missed. Please assist as soon as possible, need immediate resolution."
+Software,3,Policy Administration,,,es,Problema crítico con Policy Administration,"Hola equipo de soporte, nuestra instalación de Policy Administration ha dejado de funcionar repentinamente después de una actualización. Es vital para nuestras operaciones diarias. Necesitamos una solución inmediata para evitar interrupciones. Gracias, Miguel Santana."
+Hardware,3,,AMD Radeon RX 6800 XT,,en,Urgent: AMD Radeon RX 6800 XT not powering on,"Dear support team, Last night, my AMD Radeon RX 6800 XT suddenly stopped working and won't power on. I'm in the middle of a project and desperately need this resolved. I've checked all connections and tried different slots but no luck. Please assist ASAP.Regards,Jamie Doe"
+Software,3,Magento,,,fr,"Urgent - Problème critique avec Magento, deux versions vendues sont incorrectes","Bonjour, nous rencontrons un problème critique avec notre instance Magento. Deux versions de nos produits sont incorrectement vendues même après plusieurs mises à jour. Les produits affectés sont basés sur des SKU importants et cela impacte fortement notre inventaire. Pourriez-vous vérifier et résoudre cela dès que possible? Nous avons vraiment besoin d'une résolution rapide."
+Software,3,Duda,,,de,Duda zeigt Fehler 404 nach dem Login,"Hallo Support-Team,
+
+ich habe ein ernsthaftes Problem mit der Duda Software. Direkt nach dem Login erhalte ich ständig einen Fehler 404, der Zugriff ist damit komplett blockiert. Ich bin dringend auf diesen Zugang angewiesen, vor allem um Kunden-Websites zu aktualisieren. Bitte um schnellstmögliche Hilfe! 
+
+Vielen Dank,
+Peter Müller"
+Accounting,3,,,Employee Inquiries::Accounting::Accounting Policies,en,Urgent: Clarification on New Accounting Policies,"Hello Team, Can someone explain the recent changes in the accounting policies immediately?"
+Accounting,3,,,Customer Inquiries,de,Dringende Überprüfung meiner letzten Rechnung,"Sehr geehrte Damen und Herren, ich habe eine Diskrepanz in meiner letzten Rechnung festgestellt. Laut meinen Aufzeichnungen entspricht der Betrag nicht dem vereinbarten Preis. Bitte prüfen Sie dies dringend und korrigieren Sie gegebenenfalls den Fehler. Teilen Sie mir schnellstmöglich das Ergebnis Ihrer Überprüfung mit. Vielen Dank!"
+Software,3,Sitecore Experience Platform,,,de,Dringend: Sitecore Experience Platform verstürzt nach dem Starten,"Hallo Support-Team,
+bereits nach dem Starten stürzt unsere Sitecore Experience Platform gleich ab. Dies gefährdet unseren Dienstbetrieb erheblich. Bitte dringend helfen!"
+Hardware,3,,Function Generator,,fr,Générateur de fonctions défectueux - ne s'allume plus,"Bonjour, J'ai récemment acheté un générateur de fonctions chez vous et il semble maintenant qu'il ne fonctionne plus. Il ne s'allume pas malgré plusieurs tentatives et tests sur plusieurs prises. Cet appareil est essentiel pour mes projets en cours. Pouvez-vous vérifier cela d'urgence, s'il vous plaît ? Merci."
+Software,3,Learning Management System,,,de,[Wichtig] LMS-System nicht nutzbar nach letztem Update,"Sehr geehrtes Support-Team,
+nach dem letzten Update unserer Lernplattform Learning Management System können sich die Nutzer nicht mehr anmelden. Alle Kurse und Daten sind somit nicht zugänglich. Dies beeinträchtigt den laufenden Betrieb erheblich. Benötigen umgehend Unterstützung!
+Danke!"
+Hardware,3,,Sector Antenna,,en,Sector Antenna Not Powering On,"Hello Support Team,
+I recently purchased a Sector Antenna from your store. Unfortunately, it seems like it isn't powering on. I've tried different cables and outlets without success, and my project deadlines are approaching, so I urgently need assistance to resolve this issue. Could this be a defect? Please advise on the next steps. My Order Number is 12345678. Thank you in advance!
+Sincerely,
+John Doe"
+Accounting,1,,,Customer Inquiries::Feedback,en,Feedback zur letzten Abrechnung,"Sehr geehrtes Accounting-Team, ich möchte Ihnen ein kurzes Feedback zu meiner letzten Rechnung geben. Ich bin mit Ihrer schnellen und präzisen Abwicklung äußerst zufrieden. Weiter so! Viele Grüße, Claire Johnson"
+Accounting,2,,,Employee Inquiries::Accounting::Year-End Closing,de,Klarstellung zur Jahresendabrechnung,"Sehr geehrtes Team, ich benötige Unterstützung bei meiner letzten Jahresendabrechnung. Vielen Dank!"
+Software,1,M&A Software,,,es,Pequeño error en M&A Software,"Hola, he notado un pequeño error de visualización en su M&A Software. ¿Podrían revisarlo cuando tengan oportunidad? Gracias."
+Accounting,2,,,Employee Inquiries::Legal Inquiries::Labor Law,en,Question about labor law lease term notice,"Dear accounting support, can you explain the required notice period if an employment contract is terminated from our end? Regards, John"
+Accounting,1,,,Employee Inquiries::General::Administrative Inquiries,en,Request for Invoice Adjustment,"Dear Support Team,Could you kindly inform me about the possibility of adjusting our next invoice to reflect the updated project codes? I’d appreciate detailed guidance on this matter. Thank you in advance for your assistance. Best regards, Mark Stevenson"
+Hardware,2,,4K-Webcam,,es,Problema con Webcam 4K,"Buenas tardes, compré una Webcam 4K de su tienda y he estado experimentando algunos problemas. La cámara no se está encendiendo correctamente y a veces deja de funcionar inesperadamente durante las videollamadas. También he notado una baja calidad de imagen en ciertas situaciones. ¿Podrían ayudarme a resolver esto?"
+Accounting,2,,,Employee Inquiries::Accounting::Accounting Policies,fr,Question sur les politiques comptables,"Bonjour,
+
+J'ai une question concernant les nouvelles politiques comptables récemment mises en place. Pourriez-vous me fournir des éclaircissements sur certains points spécifiques? En particulier, je suis intéressé par les changements en matière de report des dépenses. Merci d'avance pour votre aide.
+
+Cordialement,
+Alex Dupont"
+Software,3,macOS Monterey,,,fr,Problème urgent avec macOS Monterey,"Bonjour, Depuis la mise à jour vers macOS Monterey, mon MacBook Pro ne démarre plus. J'ai besoin du logiciel pour des tâches critiques et j'ai tout essayé: redémarrage, mode sans échec, rien ne fonctionne. Pouvez-vous m'aider dès que possible? C'est vraiment urgent! Merci d'avance.Pierre Durand"
+Software,3,Redis 6.2,,,en,Critical Issue - Redis 6.2 Not Starting,"Hello Team,
+Our Redis 6.2 instance has suddenly stopped working and won't restart. This is affecting our primary database. Immediate assistance needed.
+Thanks,
+Michael Brown"
+Software,3,Photoshop CC 2022,,,en,Photoshop CC 2022 - Plötzlich-Abstürze bei Filter,"Dear Support Team, Photoshop CC 2022 crashes unexpectedly whenever I apply certain filters. My project deadlines are at risk. Could you urgently help me fix this?"
+Software,3,Yearn.finance,,,fr,Annulation automatique des transactions - Yearn.finance urgent,"Bonjour, je rencontre des problèmes critiques avec Yearn.finance. Mes transactions sont automatiquement annulées et je perds des fonds à chaques fois. Une aide immédiate est nécessaire"
+Hardware,3,,Desktop-Tower,,en,Desktop-Tower cannot boot after recent Windows update,"Hello,
+My desktop-tower won’t boot anymore after a Windows update. I need assistance quickly.
+Thanks,
+John Doe"
+Hardware,1,,NFC Tag,,en,Issue with NFC Tag reading,Just received my NFC Tag but it's faulty  - what should I do next?
+Accounting,3,,,Employee Inquiries::Technical::Software Issues,en,Payroll App Issue - Urgente Hilfe benötigt,"Good day, our payroll software stopped working suddenly. Employees cannot log in to view payslips. Immediate assistance needed."
+Software,2,Access,,,de,Probleme mit Microsoft Access - Formular stürzt ab,"Sehr geehrte Damen und Herren,
+ich habe zurzeit Schwierigkeiten mit meiner Microsoft Access Anwendung. Beim Öffnen eines spezifischen Formulars kommt es ständig zu einem Absturz. Obwohl ich mehrere Datenbankreparaturen durchgeführt habe, tritt das Problem weiterhin auf. Können Sie mir bitte weiterhelfen?
+Beste Grüße,
+Niclas Schuster"
+Accounting,2,,,Employee Inquiries::Accounting::Travel Expenses,en,Reimbursement for Travel Expenses,"Dear Accounting Team, I am writing to request information regarding the reimbursement process for my recent business trip to Berlin. Despite submitting all required receipts 10 days ago, I have yet to receive the reimbursement. Could you please update me on the status of my request? I also have questions about my daily allowances. Thank you. Best regards, Anna Schultz"
+Hardware,3,,Raspberry Pi,,fr,Raspberry Pi ne démarre plus après mise à jour,"Bonjour le support, après une mise à jour récente, mon Raspberry Pi ne veut plus démarrer. J'ai tenté de réinstaller le système, mais sans succès. J'ai besoin de ce dispositif pour un projet critique de mesure environnementale. Pouvez-vous m'aider en urgence? Merci beaucoup."
+Accounting,2,,,Employee Inquiries::General::Administrative Inquiries,en,Clarification on next month's payroll,"Kindly provide details on the changes in next month's payroll. Best, Christopher."
+Accounting,3,,,Customer Inquiries::Praise,es,Cambio de dirección de facturación,"Hola equipo, en las siguientes facturas usad esta dirección: Calle Mayor 45, 28005 Madrid. También quería felicitaros por vuestro excelente servicio al cliente y por el soporte oportuno. Gracias y saludos cordiales, Miguel Martínez."
+Hardware,2,,VR Headset,,de,VR Headset lädt nicht richtig,"Sehr geehrte Damen und Herren, mein VR Headset, das ich letzten Monat bei Ihnen gekauft habe (Bestellnr. 10024567), zeigt beim Laden ständig Fehlermeldungen und lädt teilweise gar nicht. Ich habe bereits verschiedene Ladegeräte ausprobiert, aber es hat nichts geholfen. Was kann ich tun? Freundliche Grüße, Patrick Müller"
+Hardware,1,,Sound Card,,en,Query regarding Sound Card functionality,"Dear Support Team,
+
+I recently installed a new sound card in my desktop, and everything seems to be working fine. However, there is a minor issue with the bass output. Can you guide me on possible settings or updates?
+
+Best regards,
+Chris Moore"
+Software,3,DataRobot,,,es,Errores constantes en DataRobot,"Estimado soporte, mi DataRobot lanzó errores constantes y no puedo acceder a los datos. Lo necesito urgentemente."
+Software,3,Penetration Testing,,,en,Urgent: Penetration Testing failure after update,"Hi Support Team, после последнего обновления наша программа для тестирования на проникновение перестала работать. Как можно быстрее постарайтесь помочь: у наших двоих клиентов исследуется серьёзная уязвимость. Мы должны провести проверку сразу после вашей помощи. Best regards, Андрей Смирнов"
+Software,3,FreeHosting,,,en,FreeHosting - Security Breach Identified,"Dear Support Team,
+
+I urgently need your assistance. I've identified a security breach in FreeHosting, which potentially exposes sensitive user data. This requires immediate attention before it causes significant harm. Please respond promptly.
+
+Kind regards,
+Alex Becker"
+Software,3,Elastix,,,en,Elastix VM Not Booting,"Hello Support Team, we urgently need help as our Elastix virtual machine is not booting up after a recent update. The system hangs on the boot screen and all our communication services are down, affecting client interactions severely. We have tried restarting the VM multiple times, but to no avail. Immediate assistance is required!"
+Software,1,Competitive Analysis,,,fr,Erreur mineure dans Competitive Analysis,"Bonjour Support, J'ai remarqué une petite erreur dans Competitive Analysis. Une icône semble ne pas s'afficher correctement sans raison. Merci de regarder cela."
+Software,3,OpenShift,,,es,Urgente: Problema crítico con OpenShift,"Saludos, estamos enfrentando un problema serio con la plataforma OpenShift. Nuestros servidores de producción están caídos y necesitamos asistencia inmediata para solucionar esto. Gracias."
+Accounting,2,,,Employee Inquiries::Health and Safety::Health Checks,en,Health Check Inquiry - Upcoming Schedule,"Hello HR Team,
+Could you please provide the schedule for upcoming health checks for this quarter? Also, how can employees book their slots? Any updates or changes in policy we need to be aware of? Thanks!"
+Accounting,2,,,Employee Inquiries::Staff Development::Training,de,Schulung beziehungsweise Employee Development für 2023,"Sehr geehrtes Buchhaltungs-Team, im Zuge unserer Weiterentwicklung als Firma möchten wir diverse Schulungen für das Jahr 2023 planen. Könnten Sie uns bitte Informationen und möglicherweise Angebote über verfügbaren Kurse und seminare für unsere Buchhaltung schicken? Vielen Dank im Voraus."
+Software,1,Board Management,,,de,Board Management Software: Nutzerrechte verwalten,"Hallo Team,
+
+ich habe eine kleine Frage zur Verwaltung von Nutzerrechten in der Board Management Software. Ich bin mir nicht sicher, wie ich einem neuen Benutzer Administratorrechte geben kann. Gibt es dafür eine Anleitung oder könnten Sie mir dies kurz erklären?
+
+Grüße, Laura Günther"
+Software,3,osCommerce,,,en,osCommerce crash after module installation – urgent help needed,"Hello Support Team,
+After installing a new payment gateway module, our osCommerce system crashes every time we try to go to the checkout page. This issue is heavily impacting our sales. We're in the middle of a big promotion and need this fixed urgently.
+Best Regards,
+Michael Johnson"
+Accounting,3,,,Employee Inquiries::IT Support::Access Rights,es,Solicitud urgente de derechos de acceso,Necesito acceso inmediato a los archivos del proyecto X. Escríbame si tienen inconveniente
+Hardware,3,,Lenovo ThinkPad X1 Carbon,,de,Lenovo ThinkPad X1 Carbon fährt nicht hoch,"Sehr geehrter Kundensupport, mein Lenovo ThinkPad X1 Carbon fährt nicht mehr hoch. Der Bildschirm bleibt schwarz, obwohl die Stromversorgung anliegt. Hilfe?"
+Software,1,Recruiting Software,,,en,Suggestion for Future Update in Recruiting Software,"Hi there, it would be really beneficial if the TXT file import function could support more than 1,000 entries per batch. Thanks!"
+Software,3,Grafana,,,de,Dringend: Grafana-Datenquellen landen im Timeout,"Sehr geehrte Damen und Herren, bei Einsatz in Grafana gibt es Zeitüberschreitungen beim Abrufen der Datenquellen. Please help ASAP!"
+Hardware,3,,Zune HD,,en,Zune HD lässt sich nicht einschalten,"Hi Support, mein Zune HD lässt sich plötzlich nicht mehr einschalten, egal was ich mache. Ich habe bereits mehrere Ladevorgänge und diverse Reset-Versuche unternommen, aber nichts hat geholfen. Brauche dringend Hilfe! Markus Wolf"
+Software,3,MicroSIP,,,en,MicroSIP - Failed to Load SIP Account,"Dear Support Team, I am experiencing issues with MicroSIP. It fails to load my SIP account config, impacting daily communication. This is critical for my workflow. Tried multiple fixes but no result. Immediate help needed. Regards, Chris Thompson"
+Software,3,Squarespace,,,en,URGENT: Squarespace Website Not Loading After Update,"Dear Support Team, My Squarespace website stopped loading after the recent update. I've tried clearing the cache and even reinstalled the update, but it didn't help. This is critically affecting my business as clients can't access my services. Can you please prioritize this and provide a speedy resolution? I need the site back up and running ASAP. Thanks, Jane Smith"
+Hardware,1,,Epson WorkForce ES-500W Scanner,,es,Adaptador de corriente para Epson WorkForce ES-500W defectuoso,Noté que el adaptador de corriente de mi Epson WorkForce ES-500W está funcionando intermitentemente. ¿Qué debo hacer?
+Hardware,2,,Gateway,,de,Mouse funktioniert nicht an meinem Gateway Laptop,Meine Maus reagiert plötzlich nicht mehr am Gateway. Hilfe?
+Software,3,Mobile Security,,,fr,Problème critique de Mobile Security - Déconnections fréquentes,"Bonjour, depuis la dernière mise à jour, mon application Mobile Security subit des déconnexions fréquentes sur mon appareil. Utilisant cette application pour des opérations sensibles, cela représente un gros risque. Pouvez-vous résoudre cela d'urgence ? Mon numéro de client: 12345678. Merci d'avance."
+Software,3,Oracle VM VirtualBox,,,de,Oracle VM VirtualBox - Fehler bei Netzwerkverbindung,"Sehr geehrter Support, seit gestern funktioniert die Netzwerkverbindung in Oracle VM VirtualBox nicht mehr. Neustarts und Neuinstallationen haben nicht geholfen. Dringende Hilfe benötigt! Beste Grüße, Max Schröder"
+Hardware,2,,"Kabel: HDMI, USB, Thunderbolt",,en,USB-C Adapter funktioniert nicht an meinem Monitor,"Hello Support Team, my USB-C to HDMI adapter stopped working today."
+Accounting,3,,,Employee Inquiries::Technical::Hardware Issues,es,Fallo urgente con impresora HP-Mod12345,"Hola equipo de soporte, desde hace 2 días nuestra impresora HP-Mod12345 dejó de funcionar. La necesitamos urgente para imprimir documentos esenciales. ¿Podrían ayudarnos a resolverlo? Gracias."
+Software,2,Angel Investing,,,es,Error en la aplicación de Angel Investing,"Hola equipo de soporte, estoy experimentando problemas de rendimiento y errores intermitentes al usar Angel Investing. ¿Podrían revisarlo, por favor?"
+Software,1,SAP Business Suite,,,es,Pequeño error en SAP Business Suite,"Hola equipo de soporte, he notado un pequeño error en la interfaz de usuario de SAP Business Suite. A veces, algunos botones no reaccionan al primer clic y tengo que intentarlo de nuevo. No es urgente, pero sería genial si pudieran solucionarlo en una futura actualización. Gracias."
+Hardware,3,,LF Antenna,,fr,[CRITIQUE] Problème urgent avec antenne LF,"Bonjour, mon antenne LF ne s'allume plus du tout!"
+Accounting,1,,,Employee Inquiries::Legal Inquiries,de,Gesellschaftsform-Bestätigung benötigt,"Liebes Buchhaltungsteam, für unsere internationalen Geschäfte benötige ich eine schriftliche Bestätigung über unsere derzeitige Gesellschaftsform inkl. Gründungsdatum und Sitz des Unternehmens. Könntet ihr mir diese kurzfristig zukommen lassen? Vielen Dank im Voraus, Jurij Kowalski Unternehmens-ID: 56789-1234"
+Software,2,Financial Analysis,,,en,Issue with Financial Analysis Software - Unresponsive after last update,"Hi Support Team, I noticed that since the last update, the Financial Analysis software has become unresponsive at times. Specifically, the program freezes when generating certain reports, making it nearly impossible to work efficiently. I've reinstalled the software but the issue persists. Could you please guide me on troubleshooting steps or provide a workaround? Thanks, Michael Johnson"
+Software,1,P2P Lending,,,de,Kleine Unregelmäßigkeiten bei P2P Lending Interface,"Hallo Kundensupport, mir ist in letzter Zeit eine kleine Unregelmäßigkeit in Ihrem P2P Lending Interface aufgefallen. Bei der Übersicht der Transaktionen scheint es, als ob einige Daten doppelt angezeigt werden. Es ist nichts Dringendes, aber ich wollte es trotzdem zu Ihrer Kenntnis bringen. Vielen Dank im Voraus für Ihre Mühe. Mit besten Grüßen, Finn Meier"
+Hardware,2,,Accelerometer,,fr,Dysfonctionnement de l'accéléromètre,"Bonjour le support technique,
+j'ai récemment remarqué que l'accéléromètre de mon appareil ne fonctionne plus correctement. Les mesures sont souvent incorrectes, ce qui affecte mes applications. Pouvez-vous m'aider à diagnostiquer et résoudre ce problème au plus vite ? Merci.
+Cordialement,
+Alex Dupuis"
+Hardware,1,,Smart Home Hub,,de,Kleine Probleme mit meinem Smart Home Hub,"Sehr geehrte Damen und Herren,
+
+ich habe vor einigen Wochen bei Ihnen einen Smart Home Hub erworben. Alles funktioniert soweit, jedoch zeigt das Display ab und zu unregelmäßige Fehlermeldungen, die rasch wieder verschwinden. Es ist kein großer Störfaktor, dennoch wollte ich Sie informieren und fragen, ob ein Update des Gerätes dies beheben könnte.
+
+Vielen Dank für Ihre Unterstützung,
+Maximilian Krause"
+Hardware,3,,Externe Festplatte,,en,External Hard Drive Data Inaccessible,"Dear Support Team, 
+I urgently need assistance. My external hard drive (Model: XHD-5000) has suddenly become inaccessible. I have tried connecting it to multiple devices, but it is not being recognized. My work files are on it, and I need them for an ongoing project. Can you please help restore access immediately? 
+Thank you in advance, 
+Best regards, 
+Michael Fischer"
+Software,3,Veterinary Software,,,fr,Problème critique avec le logiciel Veterinary Software,"Bonjour, le logiciel de gestion des dossiers vétérinaires ne se lance plus correctement après la dernière mise à jour. Nous avons absolument besoin d'une solution immédiate!"
+Software,2,Google Translate,,,fr,Problème avec Google Translate - inexactitudes,"Bonjour, la traduction en français via Google Translate montre beaucoup d'inexactitudes depuis hier. Pouvez-vous vérifier cela, s'il vous plaît ?"
+Accounting,2,,,Employee Inquiries::Staff Development::Career Counseling,en,Question about Career Counseling Program,"Dear Accounting Team, 
+I am considering options for career development and came across your Career Counseling Program. I would like to inquire about the specifics of this program. Can you provide details on how it works, the process for enrolling, and any costs involved? Additionally, is there a recommendation or priority for employees at certain levels? 
+Thank you, 
+Jessica Harper"
+Hardware,2,,Smart-Gartenbeleuchtung,,en,Smart-Gartenbeleuchtung reagiert nicht,"Hi Support-Team, ich habe vor ungefähr einem Monat über Ihre Webseite die Smart-Gartenbeleuchtung gekauft, und nun leider funktioniert sie nicht mehr korrekt. Mehrere LEDs bleiben dunkel oder flackern. Batterien habe ich bereits mehrfach getauscht, ohne Wirkung. Könnten Sie bitte weitere Diagnosemöglichkeiten anbieten? Danke und Grüße, Alexander Bauer"
+Software,2,SharePoint,,,es,Problema con SharePoint - No puedo subir archivos grandes,"Hola equipo de soporte, estamos experimentando un problema con nuestro SharePoint. Cuando intentamos subir archivos grandes, no lo permite y muestra un error. ¿Podrían ayudarnos?"
+Accounting,2,,,Customer Inquiries::Complaints,de,Beschwerde bezüglich langsamer Antwortzeiten,"Sehr geehrtes Support-Team, leider musste ich feststellen, dass meine letzten Anfragen bisher unbeantwortet blieben. Ich erwartete eine zeitnahe Hilfe für mein Anliegen, kann jedoch keinen Fortschritt erkennen. So ist es schwierig, unsere weitere Zusammenarbeit zu planen. Bitte melden Sie sich unverzüglich, um den Vorgang zu klären. Mit besten Grüßen, Laura Müller"
+Software,3,BigCommerce Control Panel,,,es,Sistema BigCommerce Control Panel detenido - Ayuda urgente,"Hola equipo de soporte, nuestro sistema BigCommerce Control Panel ha dejado de funcionar inesperadamente hoy y estamos en medio de un lanzamiento importante de un nuevo producto. Todo nuestro proceso de ventas está detenido. Necesitamos asistencia inmediata para resolver este problema y reanudar las operaciones lo antes posible."
+Hardware,2,,Das Keyboard 4 Professional,,en,Das Keyboard 4 Professional funktioniert nach Update nicht mehr,"Hello Support Team, I updated the firmware on my Das Keyboard 4 Professional, and now some keys are unresponsive and RGB lights are malfunctioning. I'm relying on this keyboard daily. Can you help out? Thanks, Jake Carter."
+Hardware,2,,PC-Lüfter,,en,PC-Lüfter dreht nicht mehr,"Hi Support-Team,
+mein PC-Lüfter hat plötzlich aufgehört zu funktionieren. Der Computer läuft ständig heiß und ich kann ihn nicht lange in Betrieb lassen. Habe versucht, das Bios zu aktualisieren und das Kabel neu anzustecken, ohne Erfolg. Kann jemand von euch mal einen Blick drauf werfen?
+Danke, Johannes Schmidt"
+Accounting,3,,,Employee Inquiries::Health and Safety::Health Checks,de,Dringende Gesundheitsüberprüfung erforderlich,"Sehr geehrte Damen und Herren, als Angestellter unserer Firma beantrage ich dringend eine umfassende Gesundheitsüberprüfung. Ich habe seit einigen Tagen gesundheitliche Beschwerden und möchte sicherstellen, dass diese in Verbindung mit meinem Arbeitsplatz stehen. Ein baldiger Termin wäre sehr wichtig. Danke im Voraus! Mit freundlichen Grüßen, Max Müller"
+Accounting,3,,,Customer Inquiries::Update Requests,en,Invoice Modification Required - Urgent,"Hello Support Team, I urgently need to modify the invoice for the last transaction (Customer No: C123456, Order No: O7891011). The company name on the invoice should be updated to 'Tech Innovators Ltd.' instead of 'Innovation Tech Ltd.' Please ensure this is done immediately, as it's crucial for my records. Thank you."
+Accounting,3,,,Employee Inquiries::Legal Inquiries::Contract Law,es,Urgente: Dudas legales sobre el contrato en curso,"Estimado equipo de soporte, Mi nombre es Ignacio Fernández, empleado número 10923. Tengo serias dudas sobre algunas clausulas presentes en mi contrato actual, particularmente los términos relacionados con la cláusula de no competencia y mi tiempo de aviso de renuncia. Agradezco una respuesta rápida. Muchas gracias de antemano. Atentamente, Ignacio Fernández"
+Software,2,Debt Collection,,,fr,Débogage urgente requis pour Debt Collection,"Bonjour, depuis la dernière mise à jour, notre logiciel Debt Collection plante régulièrement lors de la génération des rapports. Notre équipe est bloquée. Pouvez-vous investiguer ça rapidement?"
+Hardware,2,,Smart-Beleuchtung,,en,Smart-Beleuchtung: Probleme mit Verbindung,"Hello Support Team,
+I am experiencing an issue with my Smart-Beleuchtung system. It repeatedly loses connection with my phone and other home devices. I have tried resetting the system and even updated the firmware, but the problem persists. Could you please help me resolve this issue? Your assistance would be greatly appreciated.
+Best regards,
+Oliver Häusler"
+Accounting,2,,,Employee Inquiries::Health and Safety::Health Checks,en,Health Check Documentation Needed,"Dear Team, I need an update on the health check protocols and results for our team. Please provide the necessary documentation promptly."
+Software,2,Pinterest Analytics,,,de,Mittelschwerer Fehler in Pinterest Analytics,"Hallo Kundensupport, bei meinem Pinterest Analytics-Konto (Kunden-ID: 70259183) zeigt die Statistikseite immer wieder Ladefehler an und aktualisiert sich nicht. Ich bin unsicher, ob es an meinem Konto oder einem generellen Systemproblem liegt. Mit freundlichen Grüßen, Katja Henning."
+Hardware,2,,KVM Switch,,en,Issue with new KVM Switch,"Hi Support Team, I recently purchased a KVM Switch from your company and am experiencing issues. The switch occasionally fails to recognize the connected keyboards and mice intermittently, disrupting my work. I've tried resetting it and updating the firmware as per the manual, but the issue persists. Can someone please assist me in resolving this as soon as possible? Thanks, John Smith"
+Hardware,3,,Heart Rate Monitor,,en,Heart Rate Monitor lässt sich nicht mehr einschalten,"Hello Support Team, My discounted order from Todd HBX19036 isn't turning on, it was working fine till last night. Charged it fully but still no response. Please resolve it urgently as I truly require daily health checkups. Regards, Julian Ryder"
+Accounting,3,,,Employee Inquiries::General,fr,Urgent: Courriel du service comptable requis,"Bonjour, Veuillez envoyer les détails de paiement concernant la facture #56734 à notre nouveau courriel: comptes@entreprise.fr. Merci!"
+Software,3,Sales Forecasting,,,es,Problema crítico con Sales Forecasting,La aplicación Sales Forecasting no permite iniciar sesión.
+Software,3,Cash Management,,,en,Critical Issue with Cash Management Software,"Dear Support Team,
+
+My Cash Management software crashed multiple times today, rendering it completely unusable. This software is vital for our daily financial operations and immediate intervention is necessary. Please resolve this issue at the earliest.
+
+Kind regards,
+Sarah Jensen"
+Software,3,Inventor,,,de,Inventor stürzt bei Speichern ab – Dringend!,"Sehr geehrte Damen und Herren, mein Inventor stürzt beim Speichern jeder Datei ab. Ich muss dringend weiterarbeiten und benötige sofortige Unterstützung. Danke im Voraus! Freundliche Grüße, Andreas Müller"
+Accounting,3,,,Employee Inquiries::Legal Inquiries,en,Urgent: Frage zu steuerlichen Auswirkungen der Ausgaben,"Sehr geehrtes Buchhaltungsteam, ich benötige dringend Informationen über die steuerlichen Auswirkungen bestimmter Geschäftsausgaben für unser Unternehmen. Bitte um schnellstmögliche Klärung!"
+Accounting,2,,,Employee Inquiries::Health and Safety::Workplace Safety,es,Consulta sobre Seguridad en el Lugar de Trabajo,"Estimados Señores, necesito información sobre las normativas actuales de seguridad laboral que rigen en nuestra empresa. ¿Podrían enviarme un documento actualizado con las pautas y recomendaciones vigentes? Muchas gracias."
+Hardware,1,,XP-Pen Deco Pro Small,,de,Kleine Lags beim Zeichnen mit der XP-Pen Deco Pro Small,"Sehr geehrter Kundensupport, ich nutze das Grafiktablett XP-Pen Deco Pro Small und beim Zeichnen habe ich immer wieder kleine Lags bemerkt. Ist dies ein bekanntes Problem oder gibt es dafür eine einfache Lösung? Vielen Dank und Grüße, Markus Henke"
+Software,1,App Store Optimization,,,es,Consulta sobre update para App Store Optimization,"Hola soporte, me gustaría saber si hay una actualización disponible para App Store Optimization. Noté algunos errores menores. ¿Podrían indicarme los pasos para actualizar?"
+Software,3,CNC Software,,,fr,CNC Software se bloque après mise à jour,"Bonjour, après avoir mis à jour CNC Software, le logiciel se bloque à chaque  démarrage. Je ne peux plus travailler. Pouvez-vous résoudre ce problème urgent?"
+Accounting,2,,,Employee Inquiries::General,de,Anfrage zur nächsten Rechnungsstellung,"Guten Tag, bitte um Klärung bzgl. der nächsten Rechnung. Könnte die zukünftige Rechnung auf die neue Rechnungsadresse lauten?"
+Hardware,2,,Smart-Spielzeug,,de,Problem mit dem Smart-Spielzeug,"Hallo zusammen,
+ich habe für meinen Sohn ein Smart-Spielzeug Müller MarkteX bei Ihnen gekauft. Seit einiger Zeit reagiert es nicht mehr auf Sprachbefehle und zeigt statt dessen einen Ladebildschirm. Die Batterien habe ich bereits mehrmals gewechselt.
+Mit freundlichen Grüßen,
+Nina Özdogan"
+Hardware,2,,AMD Ryzen 9 5950X,,es,Problema de sobrecalentamiento con AMD Ryzen 9 5950X,"Hola equipo de soporte, he notado que mi procesador AMD Ryzen 9 5950X se está sobrecalentando extrañamente bajo cargas de trabajo. He revisado el sistema de enfriamiento y no encuentro errores evidentes. ¿Podrían ayudarme a resolver este problema?"
+Hardware,3,,CPU Cooler,,fr,Problème urgent concernant le refroidisseur CPU,"Bonjour,\r\n\r\nMon refroidisseur de CPU vient soudainement de tomber en panne et le processeur surchauffe rapidement. J'ai essayé de le redémarrer plusieurs fois sans succès. Une intervention rapide serait appréciée!\r\n\r\nCordialement, Marc Petit"
+Hardware,3,,Spiegellose Kamera,,en,Urgent: Spiegellose Kamera fällt nach kurzer Nutzung aus,"Dear Support Team, my mirrorless camera refuses to power on after brief periods of use. It's crucial for my professional work, and I have tried multiple factories resets without success. The issue persists regardless of power source. Please provide immediate assistance as this is very urgent. Regards, Sarah Mueller"
+Hardware,2,,Feature Phone,,en,Problem with Feature Phone Speaker,"Hello Support Team,
+I purchased a Feature Phone from your store last month. Recently, I've been experiencing issues with the speaker; the sound is very unclear and often distorts during calls. I tried resetting the phone and checking the volume settings but the problem persists. Could you please assist me in solving this issue?
+Best regards,
+Eleanor Whitman"
+Accounting,1,,,Employee Inquiries::IT Support::Network Issues,es,Cambio de nombre en la próxima factura,"Hola a todos, ¿podrían cambiar el nombre de la empresa en la próxima factura a ""Tech Solutions S.A.""? Tal vez necesite una actualización también. Gracias."
+Hardware,3,,Bluetooth Antenna,,de,Notfall! Bluetooth-Antenne funktioniert nicht mehr,"Sehr geehrte Damen und Herren, meine Bluetooth-Antenne (Bestellnummer: 4765298) hat plötzlich den Geist aufgegeben und ich bin stark auf sie angewiesen, um verschiedene Geräte zu verbinden. Bitte helfen Sie mir so schnell wie möglich, da ich viele wichtige Aufgaben dadurch nicht erledigen kann."
+Hardware,3,,Smartphone,,de,iPhone 13 schaltet sich nicht ein,"Guten Tag, mein iPhone 13 lässt sich plötzlich nicht mehr einschalten. Brauche dringend Hilfe!"
+Software,2,Pinterest Ads,,,es,Publicidad en Pinterest Ads no se publica,"Hola soporte, he notado que mis anuncios en Pinterest Ads no se están publicando correctamente. ¿Qué puedo hacer?"
+Accounting,3,,,Employee Inquiries::Technical::Hardware Issues,es,Problemas con la impresora Dell 3000,"Hola equipo de soporte,
+tenemos un problema con nuestra impresora Dell 3000. No imprime desde ayer y necesitamos urgentemente resolverlo para nuestras facturas.
+¡Gracias de antemano!"
+Hardware,2,,Intel Core i9,,fr,"Problème avec Intel Core i9, performances réduites","Bonjour, je rencontre des problèmes avec mon processeur Intel Core i9. Les performances semblent réduites sans raison claire. J'ai également mis à jour tous les pilotes, mais sans succès. Merci."
+Software,1,Solana Program Library,,,en,Request for Assistance with Updating Solana Program Library,"Hi Support Team, I need some guidance on updating the Solana Program Library to the latest version. There are a few minor bugs that I would like to address with the new features. It's not urgent, but I'd appreciate any instructions or documentation you can share. Thanks! John Miller"
+Software,3,FISMA Compliance,,,es,FISMA Compliance - Error critico después de la actualización 4.2,"Estimado equipo de soporte,
+Después de actualizar a la versión 4.2, nuestra herramienta FISMA Compliance ha dejado de funcionar por completo. Esto está afectando seriamente nuestras operaciones diarias. Solicitamos asistencia urgente por favor.
+Atentamente, Manuel López"
+Software,3,Twitch Studio,,,en,Twitch Studio keeps crashing during streams,"Hello team, I need urgent help. My Twitch Studio keeps crashing while I am streaming. I have a major live event scheduled tomorrow, and this issue is disrupting my preparations. Hope you can assist right away! Kind Regards, Alex Johnson"
+Software,2,Perl 5.32,,,de,Probleme mit Perl 5.32 - Module Loader Fehler,"Hallo Kundensupport,
+Ich benutze derzeit Perl 5.32 und stoße ständig auf Probleme mit dem Module Loader. Beim Import mehrerer Libraries erhalte ich Fehlermeldungen und mein Skript bricht ab. Neuinstallationen der Modules haben nichts gebracht. Haben Sie Vorschläge?
+Vielen Dank und Gruß,
+Marc Keller"
+Software,3,SEO Tools,,,en,SEO Tools crash repeatedly - Immediate action required,"Hi team,
+My SEO Tools software crashes constantly after login. I have tried reinstalling it but nothing works. This is affecting my workflow immensely. Need urgent support!
+
+Best,
+Tom Turner"
+Software,2,Airtable,,,fr,Problèmes de synchronisation avec Airtable,"Bonjour, j'utilise Airtable pour gérer plusieurs projets mais j'ai des problèmes de synchronisation entre mes tableaux. Y a-t-il une solution rapide pour résoudre ce problème? Merci d'avance."
+Hardware,1,,Ringlicht,,es,Problema menor con mi Ringlicht,"Hola, mi Ringlicht funciona bien, pero hay un pequeño zumbido molesto. ¿Pueden ayudarme a resolver esto?"
+Software,3,Amazon Advertising,,,de,Amazon Advertising stürzt beim Start ab,"Hallo, die Software startet und stürzt sofort ab."
+Hardware,3,,Smart Plug,,de,Smart Plug lässt sich nicht mehr einschalten,"Guten Tag, mein Smart Plug (Kundennummer 7894561) lässt sich seit dem letzten Firmware-Update nicht mehr einschalten. Ich benötige dringend eine Lösung, da er für mein Homeoffice essenziell ist. Mit freundlichen Grüßen, Max Müller"
+Accounting,1,,,Employee Inquiries::Staff Development::Career Counseling,en,Anfrage zur Personalentwicklung und Karriereberatung,"Hallo Personalabteilung, ich würde gerne über Möglichkeiten zur Personalentwicklung und Karriereberatung sprechen. Können wir vielleicht einen Termin für ein Gespräch vereinbaren? Vielen Dank im Voraus und freundliche Grüße, Max Mustermann"
+Software,2,Google Cloud Platform,,,es,Problemas con Google Cloud Platform después de la actualización,"Hola equipo de soporte, desde la última actualización de Google Cloud Platform encuentro problemas al acceder a algunos recursos en la nube. Fallan y muestran errores HTTP 500. He intentado reiniciarlo varias veces sin éxito. ¿Podrían ayudarme a solucionar esto lo antes posible? Saludos, Juan Sánchez"
+Hardware,1,,Swift Laptop,,es,Pantalla parpadea en Swift Laptop,La pantalla de mi portátil Swift parpadea de vez en cuando. ¿Es posible revisar esto o sugerirme una solución rápida?
+Software,1,AWS,,,de,Feature-Anfrage: Automatische Backups für AWS,"Hallo Support-Team, ich würde gerne wissen, ob es möglich ist, eine Funktion für automatische Backups in AWS zu integrieren. Das würde unser Management erheblich erleichtern. Könntet Ihr mich darüber informieren, was dafür notwendig ist und ob zusätzliche Kosten anfallen? Danke."
+Hardware,1,,GPU,,es,Problemas menores con la GPU,"Hola soporte, tengo una tarjeta gráfica GPU que en ocasiones muestra artefactos visuales durante el uso. No es un problema constante, pero es molesto. ¿Podrían ayudarme a resolverlo? Gracias."
+Software,3,Avast Free Antivirus 2021,,,en,[URGENT] Avast Free Antivirus 2021 blocks system files,"Dear Support Team,
+
+After the latest update of Avast Free Antivirus 2021, my system has been blocking essential system files and a critical application for my work is unable to run at all. I've tried disabling real-time protection and reinstalled the app, but the problem persists. This issue needs immediate attention as my productivity is severely impacted.
+
+Best regards,
+John Doe"
+Hardware,2,,Smart-Tracker,,fr,Le Smart-Tracker ne s'allume plus,"Bonsoir support technique,
+J’ai un souci avec mon Smart-Tracker. Depuis hier, il ne s'allume plus et je n'arrive pas à le charger. J'ai suivi toutes les instructions du manuel, mais rien n'y fait. Pouvez-vous m'indiquer comment résoudre ce problème?
+Merci d'avance,
+Mathieu Dupont"
