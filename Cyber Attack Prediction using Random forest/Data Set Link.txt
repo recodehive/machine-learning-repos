@@ -1,0 +1,5 @@
+Training data set:
+https://drive.google.com/file/d/1L6QeDeCygvypoC3m8gMHYnQKXbd0mkvh/view?usp=sharing
+
+testing data set:
+https://drive.google.com/file/d/1uhQwlBuOTKezuXJzjSUvJE9BEyJWAxb7/view?usp=sharing
