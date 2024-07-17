@@ -24,12 +24,5 @@ Run this notebook on Google Colab and test on proposed dataset.
 [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/mehrdad-dev/PDS/blob/main/notebooks/Parkinson_detection.ipynb)
 
 
-## Dataset samples
-
-![Shreyan Dhar](https://raw.githubusercontent.com/mehrdad-dev/PDS/main/assets/1.png)
-![Shreyan Dhar](https://raw.githubusercontent.com/mehrdad-dev/PDS/main/assets/2.png)
-![Shreyan Dhar](https://raw.githubusercontent.com/mehrdad-dev/PDS/main/assets/3.png)
-
-
 ## Based on
 - [Easy Few-Shot Learning](https://github.com/sicara/easy-few-shot-learning)
