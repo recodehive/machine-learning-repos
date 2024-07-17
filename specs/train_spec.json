@@ -1,0 +1,10 @@
+{
+    "class_names": [
+        "parkinson",
+        "healthy"
+    ],
+    "class_roots": [
+        "/content/PDS/dataset/wave/training/parkinson",
+        "/content/PDS/dataset/wave/training/healthy"
+    ]
+}
