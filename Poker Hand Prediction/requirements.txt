@@ -1,0 +1,7 @@
+tensorflow
+keras
+pandas
+numpy
+prettytable
+sklearn
+dill
