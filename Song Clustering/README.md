@@ -7,7 +7,7 @@ Use machine learning algorithms to dynamically cluster songs into different genr
 * Python and python libraries
 
 ## DataBase
-* Link 🔗: https://open.spotify.com/playlist/5muSk2zfQ3LI70S64jbrX7
+* Link 🔗: https://open.spotify.com/playlist/uSk2zfQ3brX7
 
 ## Solution 
 - Data Collection and Preprocessing: Collect a diverse dataset of song lyrics.
