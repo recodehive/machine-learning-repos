@@ -39,6 +39,7 @@ where f is the activation function, zᵢˡ is the net input of neuron i in layer
 $$
 L = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 $$
+
 2) **Cross-Entropy Loss:**
 
 $$
@@ -50,11 +51,11 @@ $$
 
 $$
 \frac{\partial L}{\partial w} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w}
-
 $$
 
 
 - Weights are updated using the gradient descent algorithm:
+  
 $$
 w \leftarrow w - \eta \frac{\partial L}{\partial w}
 $$
