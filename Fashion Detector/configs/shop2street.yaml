@@ -1,0 +1,27 @@
+
+size: [512,320]
+
+datasets:
+  shop2street:
+    setting: "paired"
+    image_dir: "street_tryon/validation/image"
+    image_postfix: ".jpg"
+    segm_dir: "street_tryon/validation/segm_atr_labels"
+    segm_postfix: ".png"
+    densepose_dir: "street_tryon/validation/densepose"
+    densepose_postfix: "_densepose.png"
+
+    garment_image_dir: "zalando/test/cloth"
+    garment_image_postfix: ".jpg"
+    garment_segm_dir: "zalando/test/cloth-mask"
+    garment_segm_postfix: ".jpg"
+    garment_densepose_dir: "zalando/test/garment_densepose"
+    garment_densepose_postfix: "_densepose.png"
+
+    pair_annotation_path: "street_tryon/annotations/shop2street_test_pairs_top.csv"
+    image_list: "street_tryon/annotations/validation_image_list.txt"
+
+
+
+
+

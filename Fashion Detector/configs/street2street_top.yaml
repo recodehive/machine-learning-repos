@@ -1,0 +1,21 @@
+
+size: [512,320]
+
+datasets:
+  street2street_top:
+    setting: "single"
+    image_dir: "street_tryon/validation/image"
+    image_postfix: ".jpg"
+    segm_dir: "street_tryon/validation/segm_atr_labels"
+    segm_postfix: ".png"
+    densepose_dir: "street_tryon/validation/densepose"
+    densepose_postfix: "_densepose.png"
+    caption_type: "none"
+    default_caption_path: ""
+    reconstruction_test: False
+    pair_annotation_path: 'street_tryon/annotations/street2street_test_pairs_top.csv'
+    image_list: "street_tryon/annotations/validation_image_list.txt"
+
+
+
+
