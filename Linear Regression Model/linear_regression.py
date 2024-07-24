@@ -9,7 +9,7 @@ plt.xlabel("X")
 plt.ylabel("Y")
 plt.title("Scatter Plot")
 plt.show()
-
+ 
 X=df[['YearsExperience']]
 y=df['Salary']
 
