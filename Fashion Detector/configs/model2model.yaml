@@ -1,0 +1,16 @@
+
+size: [512,384]
+
+datasets:
+  model2model:
+    setting: "single"
+    garment_only: True
+    image_dir: "zalando/test/image"
+    image_postfix: ".jpg"
+    segm_dir: "zalando/test/image-parse-v3"
+    segm_postfix: ".png"
+    densepose_dir: "zalando/test/human_densepose"
+    densepose_postfix: "_densepose.png"
+
+    pair_annotation_path: "zalando/test_pairs.txt"
+    image_list: "zalando/test_list.txt"
