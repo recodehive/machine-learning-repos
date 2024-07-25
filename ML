@@ -1,4 +1,4 @@
-#Introduction to Machine Learning
+# Introduction to Machine Learning
 
 Machine Learning (ML) is a subset of artificial intelligence (AI) that enables computers to learn from data and improve their performance over time without being explicitly programmed. It involves developing algorithms that can identify patterns, make decisions, and predict future outcomes based on historical data.
 
