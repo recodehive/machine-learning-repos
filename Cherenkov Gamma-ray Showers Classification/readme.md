@@ -1,3 +1,5 @@
+This project focuses on classifying Cherenkov gamma-ray showers detected by a ground-based atmospheric Cherenkov gamma telescope.
+
 The main task is to classify each detected shower image as either:
 
 -Gamma-ray shower: Signal event caused by high-energy gamma rays.
