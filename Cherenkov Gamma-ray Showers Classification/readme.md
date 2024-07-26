@@ -1,4 +1,5 @@
 The main task is to classify each detected shower image as either:
+
 -Gamma-ray shower: Signal event caused by high-energy gamma rays.
 
 -Hadronic shower: Background event caused by cosmic rays or other particles.
