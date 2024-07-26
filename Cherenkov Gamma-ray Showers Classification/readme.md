@@ -7,6 +7,6 @@ The main task is to classify each detected shower image as either:
 Models Used:
 Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Neural Network, Decision Tree, Random Forest, XGBoost.
 
-By Feature Engineering using Polynomial Features, generated new features by applying polynomial transformations to the original features to capture non-linear relationships.
+By Feature Engineering used Polynomial Features, generated new features by applying polynomial transformations to the original features to capture non-linear relationships.
 
 Dataset: Imported from UCI through Python.
