@@ -1,36 +1,98 @@
-## Market Basket Analysis using Apriori Algorithm
-This project contains a project that focuses on uncovering hidden insights within datasets through association rule mining using the Apriori algorithm and sequential pattern mining techniques.
-
-In the era of data-driven decision-making, understanding the relationships and patterns within large datasets is crucial. This project delves into applying the Apriori algorithm and sequential pattern mining to extract valuable insights from transactional data. By identifying frequent itemsets and sequential patterns, we aim to uncover hidden associations and trends that can inform business strategies and decision-making processes.
 
 
-- Market Basket Analysis is a popular data mining technique used to identify associations between items in large datasets. This notebook demonstrates the use of the Apriori algorithm to find frequent itemsets and generate association rules from a transactional dataset.
-- The Apriori algorithm works by identifying the frequent individual items in the dataset and extending them to larger and larger itemsets as long as those itemsets appear sufficiently often in the dataset. The key concepts involved in this process are:
+# Market Basket Analysis using Apriori Algorithm
 
-**Support:** The proportion of transactions that contain the itemset.
+## Introduction
 
-**Confidence:** The likelihood that a transaction containing item A also contains item B.
+This project involves performing Market Basket Analysis using the Apriori algorithm. Market Basket Analysis is a popular data mining technique used to identify associations or relationships between products in a large dataset of transactions. The Apriori algorithm is a classic algorithm used to find frequent itemsets and generate association rules.
 
-**Lift:** The ratio of the observed support to that expected if A and B were independent.
+## Dataset
 
+The dataset used for this analysis consists of transactional data. Each transaction represents a customer's purchase, and the dataset includes multiple transactions. The dataset can be sourced from various places such as retail store records, e-commerce platforms, or publicly available datasets.
 
-_In this notebook, we will:_
-1. Load and preprocess the dataset.
-2. Generate frequent itemsets using the Apriori algorithm.
-3. Derive association rules from the frequent itemsets.
-4. Visualize the top associations.
-5. Build a simple recommendation system based on the association rules.
-6. Further allow users to give their recommendations.
+### Data Dictionary
 
+The dataset typically includes the following columns:
 
-#### Workflow:
-1. User inputs an item.
-2. If no strong recommendations are found, the system prompts the user to enter additional items they would like to buy along with the input item.
-3. User provides additional items separated by commas.
-4. The system adds these associations to its data.
-5. Recommendations are displayed to the user, including the newly added associations.
+- `TransactionID`: Unique identifier for each transaction.
+- `Item`: The item purchased in the transaction.
 
-#### Code Changes:
-- Added functionality to prompt users for additional items and incorporate their recommendations into the system's data.
-- Modified the `add_new_association` function to handle multiple associations.
-- Updated the `display_recommendations` function to handle user input for additional items and to display recommendations after adding new associations.
+Example of a dataset format:
+```
+TransactionID, Item
+1, Bread
+1, Milk
+1, Butter
+2, Bread
+2, Milk
+3, Milk
+3, Butter
+```
+
+## Project Structure
+
+The project is structured as follows:
+
+```
+market-basket-analysis/
+├── data/
+│   ├── transactions.csv
+├── notebooks/
+│   ├── data_preprocessing.ipynb
+│   ├── apriori_algorithm.ipynb
+│   ├── results_analysis.ipynb
+├── src/
+│   ├── data_processing.py
+│   ├── apriori.py
+│   ├── analysis.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+### Notebooks
+
+- `data_preprocessing.ipynb`: Data loading, exploration, and preprocessing steps.
+- `apriori_algorithm.ipynb`: Implementation of the Apriori algorithm to find frequent itemsets and generate association rules.
+- `results_analysis.ipynb`: Analysis of the results, visualization of frequent itemsets, and interpretation of association rules.
+
+### Scripts
+
+- `data_processing.py`: Contains functions for data loading, preprocessing, and transformation.
+- `apriori.py`: Contains the implementation of the Apriori algorithm.
+- `analysis.py`: Contains functions for analyzing and visualizing the results.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have Python 3.6 or above installed. You can use the `requirements.txt` file to install the necessary dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Notebooks
+
+You can start by running the notebooks in the following order:
+
+1. `data_preprocessing.ipynb`
+2. `apriori_algorithm.ipynb`
+3. `results_analysis.ipynb`
+
+## Contributing
+
+If you wish to contribute to this project, please fork the repository and submit a pull request with your changes. Make sure to include a detailed description of what you've done.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgments
+
+- The data science community for their continuous support and inspiration.
+- Various sources for providing datasets for analysis.
+
+---
+
+This `README.md` file provides an overview of the Market Basket Analysis project using the Apriori algorithm, including the dataset, project structure, and instructions on how to get started. Feel free to customize it further based on your specific project details.
