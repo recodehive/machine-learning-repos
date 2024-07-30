@@ -1,3 +1,8 @@
+#postman chsllenge completion detaiks:
+| 481 | Anshuman Tiwari | tanshuman145@gmail.com | [Anshuman Tiwari](https://www.linkedin.com/in/anshumantiiwari/) | [Certificate](https://api.badgr.io/public/assertions/kgt6zK9HSuu4uAhiy0r8JA?identity__email=tanshuman145%40gmail.com) | Good Course |
+
+
+
 # Eye Cancer Detection
 This project aims to detect eye cancer using deep learning techniques. It leverages convolutional neural networks (CNNs) to classify images of the eye and identify cancerous regions.
 
