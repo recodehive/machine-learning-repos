@@ -1,5 +1,6 @@
 # Eye Cancer Detection
 This project aims to detect eye cancer using deep learning techniques. It leverages convolutional neural networks (CNNs) to classify images of the eye and identify cancerous regions.
+![image](https://github.com/user-attachments/assets/cb9e30ae-6ae8-4422-8854-18a4cd22d02a)
 
 ### Feature Description
 
