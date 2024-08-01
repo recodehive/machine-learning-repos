@@ -5,11 +5,11 @@ from sklearn.linear_model import LinearRegression
 df=pd.read_csv("/kaggle/input/salary-dataset-simple-linear-regression/Salary_dataset.csv")
 
 plt.scatter(df['YearsExperience'],df['Salary'])
-plt.xlabel("X")
+plt.xlabel("X") 
 plt.ylabel("Y")
 plt.title("Scatter Plot")
 plt.show()
-
+ 
 X=df[['YearsExperience']]
 y=df['Salary']
 
