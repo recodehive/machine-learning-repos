@@ -1,0 +1,44 @@
+What is the repercussion of the environment due to the COVID-19 pandemic situation?
+
+Efficient Supply Chain Assessment: Overcoming Technical Hurdles for Web Application Development
+Streamlined Integration: Interactive Brokers API with Python for Desktop Trading Application
+Efficient Data Integration and User-Friendly Interface Development: Navigating Challenges in Web Application Deployment
+Effective Management of Social Media Data Extraction: Strategies for Authentication, Security, and Reliability
+AI Bot Audio to audio
+Methodology for ETL Discovery Tool using LLMA, OpenAI, Langchain
+Methodology for database discovery tool using openai, LLMA, Langchain
+Chatbot using VoiceFlow
+Rising IT cities and its impact on the economy, environment, infrastructure, and city life by the year 2040.
+Rising IT Cities and Their Impact on the Economy, Environment, Infrastructure, and City Life in Future
+Internet Demand’s Evolution, Communication Impact, and 2035’s Alternative Pathways
+Rise of Cybercrime and its Effect in upcoming Future
+AI/ML and Predictive Modeling
+Solution for Contact Centre Problems
+How to Setup Custom Domain for Google App Engine Application?
+Code Review Checklist
+What is COVID 19 pandemic?
+On 31st December 2019, a novel coronavirus was identified in Wuhan, China. It spread like wildfire in the world. On 11th March 2020, WHO declared COVID 19 as a pandemic and issued guidelines like Sanitizing hands regularly, wearing masks, and social distancing as viable methods for prevention against this virus.
+What is social distancing and how is it helpful?
+Social distancing means staying away from other people. So, to limit human interaction various governments all over the world chose life before the economy and ordered complete lockdown in their countries. All schools, colleges, offices, factories, public places, etc. were shutdown from immediate effect.
+As of 7th June 2020, COVID 19 confirmed cases worldwide are 69,94,605 with 4,02,453 deaths and 34,20,048 recovered.
+The USA didn’t impose lockdown in the early stages due to which it has nearly 19,88,545 confirmed cases with a death rate of 5.6% (as of 7th June 2020) whereas in India lockdown was imposed at the first stage, and so we have 2,47,000 confirmed cases with a death rate of 2.8%.
+Impact on Environment
+Rights reserved to Statista
+As we know it is us, Humans, who keep exploiting nature which has nurtured us and turn a blind eye to the havoc of our misdeeds. Current environmental concerns like depletion of the ozone layer, climate change, soil erosion, air pollution, water pollution, soil pollution, acid rain, noise pollution, loss of biodiversity, and many more are a result of our selfish and never-ending desires for development at the cost of the environment.
+But when the lockdown was imposed worldwide, our lives just stopped. Air traffic (due to flights) dropped by 95% (Cntraveller). Since no one was allowed to leave homes, Carbon footprint per person dropped significantly. The Hindu newspaper reported a 17% decline in carbon pollution during the pandemic peak. According to an article in Economic Times onMay 14th,2020, Global air quality has improved this year due to lockdown.
+Economic Times posted an article on 8th April 2020 titled “COVID 19: All world’s now a zoo, only this time with animals on outside and humans on inside”.
+This sounds like lock down is good for Environment . Right?
+Humans are getting what they deserved, animals are safe and the environment is healing due to a reduction in pollution levels.
+But, NO.
+All this is just the tip of the iceberg .
+The reality is that humans, despite being under threat due to COVID 19, cyclones, earthquakes, and locusts attacks are still damaging the environment.
+According to Voicesofyouth.org:” There has also been an increase in medical waste – much of the personal protective equipment that healthcare professionals are using can only be worn once before being disposed of. Hospitals in Wuhan, for example, produced over 200 tons of waste per day during the peak of their outbreak, compared to an average of fewer than 50 tons prior. “
+According to Mongabay News: “Despite COVID, Amazon Deforestation is racing higher. The new figures come amid rising fears that illegal loggers and speculators are using the COVID-19 crisis as an opportunity to invade indigenous lands and protected areas in Brazil”.
+According to an article in Conservation International , an expert said ” In Africa, there has been an alarming increase in bush meat harvest and wildlife trafficking that is directly linked to COVID-19-related lockdowns, decreased food availability and damaged economies as a result of tourism collapses”
+Apart from the above-mentioned media channels, various other news articles have reported such incidents from various locations around the world.
+Now, what do you think :
+COVID 19 has helped the environment for good or just deteriorated it further? Check for yourself.
+Follow social distancing guidelines . Stay Safe .
+We provide intelligence, accelerate innovation and implement technology with extraordinary breadth and depth global insights into the big data,data-driven dashboards, applications development, and information management for organizations through combining unique, specialist services and high-lvel human expertise.
+Contact us: hello@blackcoffer.com
+© All Right Reserved, Blackcoffer(OPC) Pvt. Ltd

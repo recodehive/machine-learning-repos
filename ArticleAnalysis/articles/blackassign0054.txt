@@ -1,0 +1,25 @@
+How Google fit measure heart and respiratory rates using a phone camera?
+
+Efficient Supply Chain Assessment: Overcoming Technical Hurdles for Web Application Development
+Streamlined Integration: Interactive Brokers API with Python for Desktop Trading Application
+Efficient Data Integration and User-Friendly Interface Development: Navigating Challenges in Web Application Deployment
+Effective Management of Social Media Data Extraction: Strategies for Authentication, Security, and Reliability
+AI Bot Audio to audio
+Methodology for ETL Discovery Tool using LLMA, OpenAI, Langchain
+Methodology for database discovery tool using openai, LLMA, Langchain
+Chatbot using VoiceFlow
+Rising IT cities and its impact on the economy, environment, infrastructure, and city life by the year 2040.
+Rising IT Cities and Their Impact on the Economy, Environment, Infrastructure, and City Life in Future
+Internet Demand’s Evolution, Communication Impact, and 2035’s Alternative Pathways
+Rise of Cybercrime and its Effect in upcoming Future
+AI/ML and Predictive Modeling
+Solution for Contact Centre Problems
+How to Setup Custom Domain for Google App Engine Application?
+Code Review Checklist
+It was in March that Tech giant Google came up with a ground-breaking announcement of Google Fit able to measure one’s heart and respiratory rates using their smartphones. This news spread like wildfire. Instantly became the talk of the town. This feature was said to be available to the Google Fit app exclusively to its Pixel phone users. Google also plans to expand to its other Android devices in the future.
+This was after Google’s newest endeavor of acquiring the Fitbit for a whopping $2.1 billion. This acquisition not only does steps up a stage for a potential Google Smartwatch but also gives Google the ownerships to Fitbit’s health business and wealth of data assets. Users just need to place their head and upper torso in view of the front-facing phone camera for those who wish to measure their respiratory rate. For measuring Heart rate the user just has to place their finger on the rear-facing camera lens. Mind-blowing right!
+Once the measurements have been taken the users simply have to store and save them in the Google Fit app to monitor and track their day-to-day wellness. On asked how it’s measuring these heart rate and respiratory rate, Google Health director of health technologies Shwethak Patel explained that these features rely on the sensors that have been built into the smartphone, such as its camera, microphone, and accelerometer. Thanks to increasingly power sensors even in affordable smartphones and advancements in computer vision, these features let use one smartphone’s camera to track even tiny physical signals like your chest movement to measure your respiratory rate and subtle changes in the color of your finger for your heart rate.
+Pixel underwent and completed initial clinical trials to validate the algorithm cloud work in a variety of different world conditions and that too with many people while developing the features. Since our heart rate relies on approximating blood flow from color changes in someone’s fingertip, it has to account for factors such as lighting, skin tone, age. Adding to be able to measure heart and respiratory rate soon Google Fit also displays user daily stats such as daily goals, weekly goals, heart points, workout, and also sleep monitor.
+We provide intelligence, accelerate innovation and implement technology with extraordinary breadth and depth global insights into the big data,data-driven dashboards, applications development, and information management for organizations through combining unique, specialist services and high-lvel human expertise.
+Contact us: hello@blackcoffer.com
+© All Right Reserved, Blackcoffer(OPC) Pvt. Ltd
