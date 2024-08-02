@@ -1,0 +1,244 @@
+Impact of COVID-19 pandemic on sports events around the world.
+
+Efficient Supply Chain Assessment: Overcoming Technical Hurdles for Web Application Development
+Streamlined Integration: Interactive Brokers API with Python for Desktop Trading Application
+Efficient Data Integration and User-Friendly Interface Development: Navigating Challenges in Web Application Deployment
+Effective Management of Social Media Data Extraction: Strategies for Authentication, Security, and Reliability
+AI Bot Audio to audio
+Methodology for ETL Discovery Tool using LLMA, OpenAI, Langchain
+Methodology for database discovery tool using openai, LLMA, Langchain
+Chatbot using VoiceFlow
+Rising IT cities and its impact on the economy, environment, infrastructure, and city life by the year 2040.
+Rising IT Cities and Their Impact on the Economy, Environment, Infrastructure, and City Life in Future
+Internet Demand’s Evolution, Communication Impact, and 2035’s Alternative Pathways
+Rise of Cybercrime and its Effect in upcoming Future
+AI/ML and Predictive Modeling
+Solution for Contact Centre Problems
+How to Setup Custom Domain for Google App Engine Application?
+Code Review Checklist
+The COVID-19 pandemic has caused the most significant disruption to the worldwide sporting calender since World war II. Across the world and to varying degrees, sports events have been canceled or postponed. The 2020 Summer Olympics in Tokyo were rescheduled to 2021. Spectators have no games to watch and players no games to play. Only a few countries, such as Turkmenistan Belarus and Nicaragua, have continued professional sporting matches as planned.
+SOCCER
+For an overview of the state of play in Europe’s soccer leagues amid the coronavirus outbreak click here:
+* Major League Soccer players returned to voluntary training on May 6.
+* The 2020 K-League season kicked off on May 8 behind closed doors.
+* Euro 2020 and Copa America were postponed. The two tournaments will now be staged from June 11 to July 11, 2021.
+* The Euro 2021 Women’s Championship has been pushed back to July 6-31, 2022.
+* Asian Champions League: The start of the knockout rounds was moved back to September.
+* The Chinese Football Association (CFA) has drawn up three plans to complete the 2020 Chinese Super League (CSL) season, one of which would see the campaign begin in late June and finish in December.
+* The women’s Bundesliga season will resume from May 29.
+* The Portuguese league approved nine stadiums for the league’s restart.
+* Costa Rica became the first country in the Americas to restart their professional league.
+* The women’s Under-20 World Cup in Costa Rica and Panama, postponed from August-September, has been rescheduled for Jan. 20-Feb. 6, 2021.
+* The National Women’s Soccer League (NWSL) said clubs could begin small group training sessions from May 25. The league is aiming for a late June return with a single city month-long tournament.
+OLYMPICS
+* The postponed Tokyo Olympic Games will now begin on July 23, 2021 and run until Aug. 8.
+* World Athletics has suspended Olympic qualification until December.
+PARALYMPICS
+The postponed Paralympic Games will run from Aug. 24-Sep. 5, 2021.
+WORLD BEACH GAMES
+The 2021 World Beach Games were moved to 2023.
+WORLD GAMES
+* The 2021 World Games have been pushed back by a year to avoid clashing with the Olympics.
+ATHLETICS
+* The World Athletics Championships scheduled for 2021 in Eugene, Oregon have been moved to the summer of 2022 because of the Olympic Games rescheduling.
+* The World Athletics Indoor Championships (Nanjing, March 13-15) were postponed to March 19-21, 2021.
+* Boston Marathon organisers have postponed the race from April 20 to Sept. 14.
+* The London Marathon which was due to take place on April 26 has been postponed to Oct. 4.
+* The Diamond League plans to hold three meetings in August in Monaco, Gateshead and Stockholm followed by September events in Lausanne, Brussels, Paris, Shanghai, and possibly Rome or Naples. Meetings in Eugene, Doha, and China have been scheduled for October.
+* World Athletics released its calendar for the international season beginning with a Continental Tour Gold event in Finland on Aug. 11 and ending with a Diamond League meeting in China.
+* This year’s Biathle/Triathle World Championships in Weiden have been moved to 2021.
+* The World Triathlon Series (WTS) event and Mixed Relay World Championships in Hamburg have been rescheduled for the weekend of Sept. 5-6.
+* The Ironman triathlon has been pushed back to Sept. 6 from its original June 21 start.
+AUSTRALIAN RULES
+* The Australian Football League season will resume on June 11, with four clubs moving to the Gold Coast due to tighter COVID-19 restrictions in their home states.
+BADMINTON
+* The Thomas and Uber Cup will be held from Oct. 3-11.
+* The 2021 World Championships will begin in late November instead of August to avoid clashing with the rescheduled Tokyo Olympics.
+* The BWF announced a new 2020 calendar with the World Tour set to return with the Taipei Open from Sept. 1-6.
+BASEBALL
+* The South Korean league started on May 5 without fans.
+* Taiwan’s baseball season resumed in April behind closed doors. On May 9, fans were allowed in for the first time, with 1,000 spectators watching games in New Taipei and Taichung.
+* Major League Baseball team owners on May 11 agreed a plan to start playing in empty stadiums in early July.
+* Japan’s Nippon Professional Baseball (NPB) league will begin its 2020 season on June 19 with games played in empty stadiums.
+BOXING
+* Dillian Whyte’s heavyweight fight against Alexander Povetkin has been rescheduled for July 4.
+CANOEING
+* Canoe Slalom World Cups in France and Czech Republic have been tentatively rescheduled to October or November.
+* The Canoe Slalom World Cup Final and non-Olympic World Championships in Germany have been moved from September to October.
+* Canoe Polo World Championships in Rome have been pushed back until April 2021.
+CRICKET
+* English cricket’s The Hundred, originally scheduled to begin on July 17, was pushed back to 2021.
+CYCLING
+* Giro d’Italia will begin on Oct. 3, while the Spanish Vuelta will be held from Oct. 20.
+* Milan-Sanremo will be held on Aug. 8, Liege-Bastogne-Liege on Oct. 4, the Tour des Flandres on Oct. 18, Paris-Roubaix on Oct. 25 and the Tour of Lombardy on Oct. 31.
+* The Tour de France that was due to be held from June 27-July 19 has been postponed to Aug. 29-Sept 20.
+* The European Road Cycling Championships, scheduled for Sept. 9-13, have been postponed by a year.
+GOLF
+* Tiger Woods and Peyton Manning defeated Phil Mickelson and Tom Brady in a charity golf match in Florida on May 24 at Medalist Golf Club in Hobe Sound, Florida.
+* The Masters at Augusta National Golf Club has been rescheduled for Nov. 12-15 from April 9-12.
+* The PGA Championships at TPC Harding Park San Francisco, has been rescheduled for Aug. 6-9 from May 14-17.
+* The U.S. Open at Winged Foot Golf Club, Mamaroneck, New York, was rescheduled to Sept. 17-20 from June 8-21.
+* The Ladies Professional Golf Association (LPGA) is hoping to get the 2020 season underway with the Dow Great Lakes Bay Invitational from July 15-18.
+* The Women’s PGA Championship has been postponed from late June to Oct. 8-11.
+* The Australian PGA Championship will take place at the Royal Queensland Golf Club from Dec. 3-6.
+* The first major of the 2020 golf season got underway on May 14 when South Korea hosted the Korea Ladies Professional Golf Association (KLPGA) Championship. Park Hyun-kyung won the title.
+* World number one Ko Jin-young will take on No. 3 Park Sung-hyun in a charity skins match on May 24 at the Sky 72 Golf & Resort in Incheon.
+HORSE RACING
+* Racing in France began without spectators at ParisLongchamp on May 11.
+* Horse racing resumed in Germany on May 7 with a limited number of races in front of empty stands in Hanover. Races were also scheduled for May 8 in Cologne.
+* The Kentucky Derby, the first jewel in North American horse racing’s Triple Crown (May 2) was postponed to Sept. 5.
+* Churchill Downs, the home of the Kentucky Derby, opened for spectator-free racing on May 16.
+* The British Horseracing Authority (BHA) has said it is planning to resume the season on June 1.
+* Horse racing will be allowed to resume in Ireland without spectators on June 8.
+* The shortened Belmont Stakes will be run on June 20 without spectators.
+MOTOR SPORTS
+* The NASCAR season resumed with races at the Darlington Raceway in South Carolina on May 17 and May 20.
+* The Le Mans 24 hours race was postponed from June 13-14 to Sept. 19-20.
+* The Indianapolis 500 has been postponed until Aug. 23.
+* MotoGP intends to start its season with races on July 19 and 26 at the Jerez circuit in southern Spain.
+* IndyCar will open its delayed season on June 6 with the Genesys 300 at Texas Motor Speedway (TMS) without fans in attendance. The race at St. Petersburg, Florida scheduled for March 15 has been pushed back to Oct. 25.
+* Formula One hopes to start the delayed season in Austria in July without spectators before ending in Abu Dhabi in December. Silverstone have agreed terms for two races without spectators at the circuit this season.
+NBA
+The NBA is in talks with The Walt Disney Company about restarting its suspended season at Disney World in Florida in late July.
+NFL
+* The NFL season will begin on Sept. 10 with a game between Super Bowl champions Kansas City Chiefs and Houston Texans.
+NHL
+The National Hockey League has scrapped plans to play regular-season games in the Czech Republic and Finland this year.
+The NHL suspended play in mid-March, but hopes to reopen training facilities in June. The league on May 24 released a set of safety protocols that allow players to return to clubs for small-group workouts.
+RUGBY
+* Australia’s National Rugby League is set for a May 28 restart after players agreed to 20% pay-cuts for the abridged 2020 season.
+* Rugby Australia hopes to get players back in training in June for matches in July.
+* New Zealand’s five Super Rugby teams will play each other in a 10-week domestic competition from June 13.
+* The Mitre 10 Cup, New Zealand’s annual provincial competition, will start with a full 14-team championship from Sept. 11.
+* Rugby Australia are looking at potentially including both the Western Force and Japan’s Sunwolves in a competition with their four Super Rugby sides to start in early July.
+SNOOKER
+* The World Snooker Championship, originally scheduled to begin on April 18, will start on July 31 at the Crucible Theatre in Sheffield.
+* Snooker will resume in the United Kingdom on June 1 with the Championship League event which will be held without fans at the Marshall Arena in Milton Keynes.
+SWIMMING
+* The 2020 European Aquatics Championships scheduled to take place from May 11-24 in Budapest, Hungary, have been postponed to next year.
+* The World Aquatics Championships, scheduled for July 16-Aug. 1, 2021, were pushed back to May 13-29, 2022.
+* The World Swimming Championships in Abu Dhabi, scheduled to take place in December, have been pushed back by a year.
+TENNIS
+* The French Open was postponed until Sept. 20-Oct. 4.
+* The women’s Rogers Cup tournament in Montreal was postponed until 2021.
+* Professional tennis returned with the Tennis Point Exhibition Series event in Germany on May 1.
+* Hubert Hurkacz, Miomir Kecmanovic, Reilly Opelka and Tommy Paul took part in the UTR Pro Match Series in Florida that began on May 8.
+* Patrick Mouratoglou’s tennis academy in France will host a five-week series starting in May.
+* Bianca Andreescu and Sofia Kenin will be among 16 WTA players who will launch the Credit One Bank Invitational in Charleston on June 23.
+* Novak Djokovic is bringing together some of the world’s top tennis players for a series of matches to run from June 13-July 5 in the Balkan region.
+* New Zealand will stage a team-based tennis tournament for local-based men’s players from June 3.
+* World TeamTennis, an innovative mixed-gender professional tennis league, will start from July 5 at the Greenbrier, West Virginia, and up to 500 fans will be allowed to attend matches.
+ULTIMATE FIGHTING CHAMPIONSHIP
+* UFC action returned with three cards on May 9, May 13 and May 16.
+List of sports events that have either been cancelled or postponed due to the outbreak:
+OLYMPIC TRIALS
+* U.S. trials for wrestling (April 4-5) were postponed.
+* U.S. Rowing postponed its team trials.
+* U.S. diving trials (April 3-5) were postponed.
+NORTH AMERICA
+* The MLB has further delayed its 2020 season’s opening day of March 26.
+* The Women’s National Basketball Association postponed the start of its 2020 regular season, originally scheduled to run from May 15-Sept. 20.
+* The 2019-20 American Hockey League (AHL) regular season and the 2020 Calder Cup Playoffs were cancelled. The AHL standings at the time of suspension will be used to determine league awards.
+SOCCER
+* FIFA has agreed to delay the first edition of its revamped Club World Cup due to be held in 2021.
+* UEFA put all club and national team competitions for men and women on hold until further notice.
+* The men’s and women’s Champions League finals and Europa League final originally scheduled for May have been postponed.
+* South America’s two biggest club competitions, the Copa Libertadores and Copa Sudamericana, are suspended.
+* CONCACAF suspended all competitions, including the Champions League and men’s Olympic qualifiers.
+* Asian and South American qualifying matches for 2022 World Cup were postponed.
+* Japan’s J.League will not hold any games in May.
+* Barcelona’s women’s team were declared champions of Spain’s Liga Iberdrola after the national soccer federation’s executive committee agreed to end all non-professional competitions.
+* The Asian Football Confederation on April 14 postponed all matches and competitions scheduled for May-June until further notice.
+* Semi-finals of the CAF Champions league (May 1-3) and CAF Confederation Cup (May 8-10) were postponed.
+* This year’s International Champions Cup, a pre-season tournament featuring Europe’s top clubs, was cancelled.
+* Cameroon cancelled the rest of its league season and declared leaders PWD Bamenda as champions.
+* Wales’ top flight league was called off and Connah’s Quay Nomads were crowned champions.
+* Mexico cancelled the remainder of its men’s and women’s seasons. No champions will be crowned.
+* England’s Women’s Super League and second-tier Women’s Championship seasons were cancelled on May 25.
+ATHLETICS
+* The Diamond League, the elite track and field competition, was forced to cancel its London meeting scheduled for July 4-5. It had previously postponed events in seven cities scheduled between April and June.
+* The Paris and Barcelona marathons were postponed.
+* The 2020 European Athletics Championship due to take place from Aug. 25-30 were cancelled.
+BADMINTON
+* The Badminton World Federation (BWF) cancelled the last five tournaments in the qualification period for the Olympics.
+* The Indonesia Open (June 16-21) was among a host of events that have been cancelled while tournaments over the next three months were also suspended in Australia, Thailand and Russia.
+* The U.S. Open, set to be held from June 23-28 in California, was suspended.
+BASEBALL
+* The final qualification tournament in Taiwan for the Olympics was put back from April to June 17-21, while the March 22-26 qualification event in Arizona was postponed.
+BASKETBALL
+* The International Basketball Federation postponed the men’s Olympic qualifiers, European Championship and the Americas Championship by a year.
+* Turkey cancelled its basketball season on May 11.
+* Europe’s top two club basketball competitions, EuroLeague and EuroCup, have been terminated without naming any winners.
+BOXING
+* Anthony Joshua’s world heavyweight title defence against Bulgarian Kubrat Pulev at Tottenham Hotspur’s stadium on June 20 was postponed.
+CRICKET
+* The Indian Premier League, originally suspended until April 15, has been postponed indefinitely.
+* The last two games of Australia’s three-match one-day international series against New Zealand in Sydney and Hobart were cancelled while the limited-overs tours were postponed.
+* The boards of India and South Africa agreed to reschedule a three-match ODI series to a later date.
+* England’s test series against Sri Lanka and West Indies were postponed. The England and Wales Cricket Board extended the suspension of the professional game in the country until July 1.
+* South Africa’s limited-overs tour of Sri Lanka that was scheduled to take place in June has been postponed.
+* Australia’s proposed test tour of Bangladesh in June has been postponed.
+* Ireland’s home series against New Zealand and Pakistan scheduled for June and July have been postponed.
+CURLING
+* Men’s and women’s world championships in Scotland and Canada respectively were cancelled.
+* World mixed doubles and senior championships in Canada, scheduled from April 18-25 were cancelled.
+CYCLING
+* The final two stages of the UAE Tour were cancelled after two Italian participants tested positive.
+* The Paris-Nice cycling race ended a day early after the eighth stage into Nice was cancelled.
+* The Women’s Tour, scheduled to take place from June 8-13 was cancelled.
+* This year’s Tour of Britain scheduled for September has been cancelled.
+GOLF
+* The British Open Championship was cancelled.
+* The European Tour cancelled the BMW International Open (June 25-28) and the Open de France (July 2-5). The Scottish Open (July 9-12) was postponed. The Tour had postponed or cancelled events scheduled between March and May.
+* The LPGA cancelled Tour qualifying “Q-schools” this year as well as the Meijer LPGA Classic in Michigan.
+HANDBALL
+* The German handball season was cancelled after top clubs voted in favour of abandoning the campaign.
+* The men’s and women’s EHF Cup and Challenge Cup were cancelled.
+* The remaining women’s Euro 2020 qualifiers as well as European playoff matches for the 2021 men’s world championship were cancelled.
+HORSE RACING
+* The Grand National festival (April 2-4) was cancelled.
+* The Dubai World Cup, one of the world’s richest horse races and a premier annual sporting event in the United Arab Emirates, will not go ahead this year.
+* The Guineas Festival at Newmarket in May and June’s Epsom Derby have been postponed while June’s Royal Ascot may be held without spectators.
+* This year’s Shergar Cup, due to take place on Aug. 8, has been cancelled.
+MOTOR SPORTS
+* NASCAR postponed events at Kansas Speedway May 30-31, Michigan International Speedway June 5-7, the NASCAR Xfinity Series race at Mid-Ohio May 30, and the Gander Trucks Series race at Texas Motor Speedway, previously scheduled for June 5.
+* The Bretagne World Rallycross at Loheac, scheduled to take place on Sept. 5-6, has been cancelled.
+* This year’s Silverstone Classic, scheduled for July 31-Aug. 2, has been cancelled.
+NETBALL
+* Netball Superleague fixtures were postponed until at least May 31.
+ROWING
+* The 2020 US Rowing National Championships scheduled for July and the 2020 US Rowing Masters National Championships scheduled for August have been cancelled.
+* British Rowing extended the suspension of all its events to July 31. The British Rowing Offshore Championships & Beach Sprints and British Rowing Junior Championships have been cancelled.
+RUGBY
+* Four Six Nations matches were postponed.
+* France’s rugby federation suspended all its competitions and will not be allowed to return until September.
+* The European rugby season was suspended after European Professional Club Rugby postponed Champions Cup and Challenge Cup quarter-final matches (April 3-5).
+* The semi-final and final of this season’s Champions Cup and Challenge Cup tournaments, which were due to take place in Marseille in May, have been postponed.
+* England’s Rugby Football Union and Wales’ governing body confirmed the end of the 2019-20 season for all league, cup and county rugby, but the English Premiership has been excluded.
+* Super Rugby suspended its season.
+* World Rugby has postponed all test matches scheduled for July.
+* This year’s Rugby League Challenge Cup final, scheduled for July 18 at Wembley Stadium, has been postponed.
+SURFING
+* The World Surfing League extended the postponement of events through June while also announcing a major overhaul for future tours, with details on a post-season surf-off to be announced in July.
+TABLE TENNIS
+* The International Table Tennis Federation (ITTF) scrapped all table tennis competitions until the end of July.
+TENNIS
+* The Wimbledon championships were cancelled for the first time since World War Two.
+* The Fed Cup finals (Budapest; April 14-19) were postponed.
+* The Sept. 25-27 Laver Cup was cancelled to avoid a clash with the re-scheduled French Open.
+* ATP events in Hamburg, Bastad, Newport, Los Cabos, Gstaad, Umag, Atlanta and Kitzbuhel will not go ahead as scheduled while WTA events in Bastad, Lausanne, Bucharest and Jurmala scheduled for July will not be held.
+VOLLEYBALL
+* The international volleyball federation (FIVB) cancelled this year’s Volleyball Nations League, which was scheduled to begin on May 19 for the women’s competition and May 22 for the men’s event.
+* Turkey cancelled its volleyball season on May 11.
+WINTER SPORTS
+* The International Ski Federation cancelled the final races of the men’s Alpine skiing World Cup.
+* The World Cup finals in Cortina were cancelled along with the last three women’s races in Are.
+* The women’s world ice hockey championships in Canada were cancelled.
+* The Ice Hockey World Championship scheduled for Switzerland in May was cancelled.
+* The speed skating world championships in Seoul were postponed until at least October.
+* The March 16-22 world figure skating championships in Montreal were cancelled.
+* The Kontinental Hockey League (KHL) has cancelled the remainder of its season after temporarily suspending its playoffs.
+
+We provide intelligence, accelerate innovation and implement technology with extraordinary breadth and depth global insights into the big data,data-driven dashboards, applications development, and information management for organizations through combining unique, specialist services and high-lvel human expertise.
+Contact us: hello@blackcoffer.com
+© All Right Reserved, Blackcoffer(OPC) Pvt. Ltd
