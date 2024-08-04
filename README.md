@@ -1,3 +1,20 @@
+<div align="center">
+  
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<a href="https://github.com/recodehive/awesome-github-profiles/stargazers"><img src="https://img.shields.io/github/stars/recodehive/awesome-github-profiles" alt="Stars Badge"/></a>
+<a href="https://github.com/recodehive/awesome-github-profiles/network/members"><img src="https://img.shields.io/github/forks/recodehive/awesome-github-profiles" alt="Forks Badge"/></a>
+<a href="https://github.com/recodehive/awesome-github-profiles/pulls"><img src="https://img.shields.io/github/issues-pr/recodehive/awesome-github-profiles" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/recodehive/awesome-github-profiles/issues"><img src="https://img.shields.io/github/issues/recodehive/awesome-github-profiles" alt="Issues Badge"/></a>
+<a href="https://github.com/recodehive/awesome-github-profiles/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/recodehive/awesome-github-profiles?color=2b9348"></a>
+<a href="https://github.com/recodehive/awesome-github-profiles/blob/master/LICENSE"><img src="https://img.shields.io/github/license/recodehive/awesome-github-profiles?color=2b9348" alt="License Badge"/></a>
+[![](https://visitcount.itsvg.in/api?id=gssoc-postman&label=Profile%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+🔍Welcome to the Machine learning repo project! 🌟.
+</div>
+
+
 This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
 Repeated issue creation for more scores will be considered has flag.
 If later found out the points will be deducted. you cant be earning more than 60 points from this repo. any techincal feature addition is excluded
