@@ -84,6 +84,5 @@ git push origin <your-branch-name>
 9. **Wait for Review:**
     Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the machine-learning-repos repository.
 
-
 ⭐️ Support the Project
 If you find this project helpful, please consider giving it a star on GitHub! Your support helps to grow the project and reach more contributors.
