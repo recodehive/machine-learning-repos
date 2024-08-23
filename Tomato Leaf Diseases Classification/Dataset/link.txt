@@ -1,3 +1,0 @@
-Since dataset is more than 100mb. Providing dataset link.
-
-Link: "https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf"

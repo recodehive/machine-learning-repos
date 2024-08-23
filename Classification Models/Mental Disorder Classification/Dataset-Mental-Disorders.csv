@@ -1,0 +1,121 @@
+﻿Patient Number,Sadness,Euphoric,Exhausted,Sleep dissorder,Mood Swing,Suicidal thoughts,Anorxia,Authority Respect,Try-Explanation,Aggressive Response,Ignore & Move-On,Nervous Break-down,Admit Mistakes,Overthinking,Sexual Activity,Concentration,Optimisim,Expert Diagnose
+Patiant-01,Usually,Seldom,Sometimes,Sometimes,YES,YES ,NO,NO,YES,NO,NO,YES,YES,YES,3 From 10,3 From 10,4 From 10,Bipolar Type-2
+Patiant-02,Usually,Seldom,Usually,Sometimes,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,4 From 10,2 From 10,5 From 10,Depression
+Patiant-03,Sometimes,Most-Often,Sometimes,Sometimes,YES,NO,NO,NO,YES,YES,NO,YES,YES,NO,6 From 10,5 From 10,7 From 10,Bipolar Type-1
+Patiant-04,Usually,Seldom,Usually,Most-Often,YES,YES,YES,NO,YES,NO,NO,NO,NO,NO,3 From 10,2 From 10,2 From 10,Bipolar Type-2
+Patiant-05,Usually,Usually,Sometimes,Sometimes,NO,NO,NO,NO,NO,NO,NO,YES,YES,YES,5 From 10,5 From 10,6 From 10,Normal
+Patiant-06,Usually,Sometimes,Sometimes,Most-Often,NO,YES,YES,YES,NO,NO,NO,NO,YES,NO,3 From 10,5 From 10,5 From 10,Depression
+Patiant-07,Seldom,Usually,Seldom,Sometimes,YES,YES,YES,NO,YES,YES,NO,YES,YES,YES,7 From 10,2 From 10,9 From 10,Bipolar Type-1
+Patiant-08,Usually,Sometimes,Sometimes,Sometimes,NO,NO,NO,NO,YES,NO,NO,NO,NO,YES,5 From 10,5 From 10,5 From 10,Normal
+Patiant-09,Most-Often,Seldom,Most-Often,Usually,YES,YES,YES,NO,YES,YES,NO,YES,NO,NO,8 From 10,2 From 10,3 From 10,Bipolar Type-2
+Patiant-10,Usually,Seldom,Most-Often,Sometimes,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,3 From 10,4 From 10,2 From 10,Depression
+Patiant-11,Seldom,Sometimes,Seldom,Seldom,NO,NO,NO,YES,NO,NO,NO,NO,YES,NO,5 From 10,7 From 10,8 From 10,Normal
+Patiant-12,Seldom,Sometimes,Sometimes,Usually,YES,YES,YES,NO,YES,YES,NO,YES,NO,YES,8 From 10,4 From 10,9 From 10,Bipolar Type-1
+Patiant-13,Most-Often,Sometimes,Most-Often,Usually,YES,YES,YES,NO,YES,YES,NO,YES,NO,YES,9 From 10,2 From 10,4 From 10,Bipolar Type-2
+Patiant-14,Usually,Usually,Sometimes,Sometimes,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,5 From 10,7 From 10,5 From 10,Normal
+Patiant-15,Usually,Seldom,Most-Often,Usually,NO,YES,NO,NO,YES,NO,YES,YES,YES,YES,5 From 10,4 From 10,2 From 10,Depression
+Patiant-16,Sometimes,Sometimes,Sometimes,Sometimes,YES,NO,YES,NO,YES,YES,NO,NO,NO,YES,6 From 10,4 From 10,6 From 10,Bipolar Type-1
+Patiant-17,Sometimes,Usually,Sometimes,Sometimes,NO,NO,NO,NO,YES,NO,NO,NO,YES,NO,5 From 10,4 From 10,6 From 10,Normal
+Patiant-18,Usually,Sometimes,Most-Often,Sometimes,YES,NO,NO,NO,YES,YES,NO,YES,NO,YES,6 From 10,2 From 10,3 From 10,Bipolar Type-1
+Patiant-19,Most-Often,Seldom,Most-Often,Most-Often,NO,NO,NO,NO,YES,NO,YES,YES,YES,YES,3 From 10,4 From 10,1 From 10,Depression
+Patiant-20,Sometimes,Usually,Usually,Sometimes,NO,NO,NO,YES,YES,YES,NO,NO,YES,YES,4 From 10,4 From 10,6 From 10,Normal
+Patiant-21,Sometimes,Sometimes,Sometimes,Usually,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,6 From 10,2 From 10,3 From 10,Bipolar Type-2
+Patiant-22,Usually,Sometimes,Sometimes,Sometimes,YES,YES,YES,NO,YES,YES,NO,NO,NO,YES,6 From 10,4 From 10,6 From 10,Bipolar Type-1
+Patiant-23,Sometimes,Sometimes,Sometimes,Usually,NO,NO,YES,YES,YES,NO,NO,NO,NO,YES,3 From 10,7 From 10,6 From 10,Normal
+Patiant-24,Usually,Sometimes,Usually,Sometimes,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,4 From 10,4 From 10,2 From 10,Depression
+Patiant-25,Usually,Sometimes,Sometimes,Usually,YES,NO,NO,NO,NO,NO,NO,YES,YES,YES,4 From 10,4 From 10,3 From 10,Bipolar Type-2
+Patiant-26,Sometimes,Sometimes,Sometimes,Seldom,NO,NO,NO,YES,NO,NO,YES,NO,YES,NO,6 From 10,6 From 10,5 From 10,Normal
+Patiant-27,Sometimes,Sometimes,Usually,Sometimes,NO,NO,NO,NO,YES,YES,NO,NO,NO,NO,3 From 10,4 From 10,2 From 10,Normal
+Patiant-28,Usually,Seldom,Usually,Usually,NO,NO,NO,NO,YES,NO,YES,YES,NO,YES,5 From 10,2 From 10,4 From 10,Depression
+Patiant-29,Usually,Seldom,Usually,Usually,YES,YES,YES,YES,YES,NO,YES,YES,NO,YES,2 From 10,2 From 10,3 From 10,Bipolar Type-2
+Patiant-30,Sometimes,Sometimes,Sometimes,Seldom,NO,YES,NO,YES,NO,NO,YES,NO,YES,NO,5 From 10,5 From 10,5 From 10,Normal
+Patiant-31,Sometimes,Most-Often,Sometimes,Sometimes,YES,YES,NO,YES,YES,YES,NO,YES,NO,NO,3 From 10,2 From 10,6 From 10,Bipolar Type-1
+Patiant-32,Most-Often,Sometimes,Most-Often,Sometimes,NO,YES,NO,YES,NO,NO,YES,NO,YES,YES,4 From 10,4 From 10,3 From 10,Depression
+Patiant-33,Sometimes,Seldom,Most-Often,Seldom,YES,YES,NO,YES,NO,NO,YES,YES,NO,YES,5 From 10,5 From 10,4 From 10,Bipolar Type-2
+Patiant-34,Sometimes,Usually,Sometimes,Most-Often,YES,YES,YES,NO,YES,YES,NO,NO,NO,NO,6 From 10,5 From 10,4 From 10,Bipolar Type-1
+Patiant-35,Sometimes,Seldom,Sometimes,Seldom,NO,NO,NO,YES,YES,NO,YES,NO,YES,NO,5 From 10,5 From 10,6 From 10,Normal
+Patiant-36,Most-Often,Seldom,Usually,Sometimes,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,2 From 10,4 From 10,4 From 10,Depression
+Patiant-37,Sometimes,Seldom,Usually,Seldom,YES,YES,YES,NO,YES,NO,NO,YES,NO,NO,8 From 10,5 From 10,5 From 10,Bipolar Type-1
+Patiant-38,Usually,Seldom,Most-Often,Sometimes,YES,YES,NO,YES,YES,NO,NO,YES,NO,NO,4 From 10,3 From 10,4 From 10,Bipolar Type-2
+Patiant-39,Sometimes,Seldom,Usually,Sometimes,NO,NO,NO,YES,NO,NO,YES,NO,YES,NO,5 From 10,5 From 10,3 From 10,Normal
+Patiant-40,Sometimes,Sometimes,Sometimes,Sometimes,YES,YES,NO,YES,YES,YES,NO,NO,YES,NO,3 From 10,3 From 10,2 From 10,Bipolar Type-2
+Patiant-41,Usually,Sometimes,Usually,Sometimes,NO,YES,NO,NO,YES,NO,NO,NO,NO,YES,8 From 10,2 From 10,2 From 10,Depression
+Patiant-42,Most-Often,Seldom,Most-Often,Most-Often,YES,YES,YES,NO,YES,NO,YES,YES,NO,YES,2 From 10,2 From 10,2 From 10,Bipolar Type-2
+Patiant-43,Seldom,Sometimes,Sometimes,Seldom,YES,NO,NO,YES,NO,NO,YES,NO,YES,YES,4 From 10,4 From 10,6 From 10,Normal
+Patiant-44,Sometimes,Most-Often,Seldom,Usually,YES,YES,YES,NO,NO,YES,NO,YES,NO,NO,8 From 10,2 From 10,8 From 10,Bipolar Type-1
+Patiant-45,Most-Often,Seldom,Most-Often,Most-Often,NO,YES,YES,NO,NO,NO,YES,YES,NO,YES,4 From 10,3 From 10,3 From 10,Depression
+Patiant-46,Most-Often,Sometimes,Usually,Sometimes,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,4 From 10,4 From 10,4 From 10,Bipolar Type-2
+Patiant-47,Sometimes,Seldom,Usually,Seldom,NO,NO,NO,YES,NO,NO,YES,NO,YES,NO,4 From 10,5 From 10,5 From 10,Normal
+Patiant-48,Most-Often,Seldom,Usually,Most-Often,YES,YES,NO,NO,YES,NO,YES,NO,YES,NO,4 From 10,3 From 10,6 From 10,Bipolar Type-2
+Patiant-49,Seldom,Usually,Usually,Usually,YES,YES,NO,NO,NO,NO,NO,YES,NO,NO,5 From 10,4 From 10,6 From 10,Bipolar Type-1
+Patiant-50,Usually,Seldom,Most-Often,Usually,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,4 From 10,4 From 10,3 From 10,Depression
+Patiant-51,Sometimes,Sometimes,Sometimes,Seldom,NO,NO,NO,YES,NO,YES,YES,NO,YES,NO,4 From 10,4 From 10,6 From 10,Normal
+Patiant-52,Usually,Seldom,Sometimes,Sometimes,YES,NO,NO,NO,YES,YES,NO,NO,NO,NO,3 From 10,3 From 10,3 From 10,Bipolar Type-2
+Patiant-53,Most-Often,Seldom,Most-Often,Most-Often,NO,YES,NO,NO,NO,NO,YES,YES,NO,YES,2 From 10,2 From 10,2 From 10,Depression
+Patiant-54,Seldom,Usually,Seldom,Most-Often,YES,NO,YES,YES,NO,YES,YES,YES,NO,NO,5 From 10,1 From 10,4 From 10,Bipolar Type-1
+Patiant-55,Most-Often,Seldom,Most-Often,Most-Often,YES,YES,YES,NO,NO,YES,NO,YES,YES,YES,2 From 10,2 From 10,1 From 10,Bipolar Type-2
+Patiant-56,Sometimes,Seldom,Usually,Usually,NO,NO,YES,NO,NO,YES,YES,YES,NO,NO,3 From 10,4 From 10,3 From 10,Normal
+Patiant-57,Seldom,Most-Often,Most-Often,Most-Often,YES,NO,NO,YES,YES,NO,YES,NO,NO,YES,5 From 10,4 From 10,6 From 10,Bipolar Type-1
+Patiant-58,Seldom,Usually,Most-Often,Most-Often,YES,NO,YES,NO,YES,NO,NO,NO,NO,YES,7 From 10,2 From 10,2 From 10,Bipolar Type-1
+Patiant-59,Sometimes,Sometimes,Most-Often,Usually,NO,NO,YES,YES,NO,NO,NO,YES,YES,YES,3 From 10,7 From 10,4 From 10,Depression
+Patiant-60,Seldom,Most-Often,Seldom,Seldom,NO,NO,YES,NO,YES,NO,YES,NO,YES,NO,5 From 10,4 From 10,4 From 10,Normal
+Patiant-61,Usually,Sometimes,Usually,Usually,YES,YES,NO,NO,NO,YES,YES,NO,YES,YES,4 From 10,4 From 10,3 From 10,Bipolar Type-2
+Patiant-62,Usually,Sometimes,Usually,Most-Often,NO,YES,NO,NO,YES,NO,NO,YES,YES,YES,4 From 10,5 From 10,2 From 10,Depression
+Patiant-63,Usually,Seldom,Sometimes,Usually,YES,NO,YES,NO,NO,YES,NO,NO,NO,NO,7 From 10,4 From 10,6 From 10,Bipolar Type-1
+Patiant-64,Most-Often,Seldom,Sometimes,Usually,YES,YES,YES,YES,NO,YES,NO,YES,NO,NO,4 From 10,4 From 10,4 From 10,Bipolar Type-2
+Patiant-65,Sometimes,Sometimes,Sometimes,Usually,NO,YES,YES,NO,YES,YES,NO,NO,NO,NO,5 From 10,6 From 10,5 From 10,Normal
+Patiant-66,Usually,Seldom,Most-Often,Sometimes,NO,YES,NO,NO,NO,NO,NO,NO,YES,YES,3 From 10,5 From 10,2 From 10,Depression
+Patiant-67,Sometimes,Usually,Usually,Usually,NO,NO,YES,YES,YES,NO,YES,NO,NO,NO,7 From 10,6 From 10,6 From 10,Normal
+Patiant-68,Sometimes,Seldom,Most-Often,Most-Often,YES,NO,YES,NO,YES,YES,NO,YES,YES,NO,8 From 10,4 From 10,5 From 10,Bipolar Type-1
+Patiant-69,Usually,Seldom,Most-Often,Usually,YES,YES,NO,NO,YES,NO,NO,YES,YES,NO,7 From 10,5 From 10,4 From 10,Bipolar Type-2
+Patiant-70,Sometimes,Usually,Sometimes,Usually,NO,YES,NO,NO,NO,YES,NO,NO,YES,YES,5 From 10,4 From 10,6 From 10,Bipolar Type-1
+Patiant-71,Sometimes,Seldom,Usually,Sometimes,NO,YES,NO,NO,NO,YES,YES,YES,YES,YES,2 From 10,6 From 10,2 From 10,Depression
+Patiant-72,Seldom,Seldom,Sometimes,Sometimes,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,5 From 10,3 From 10,5 From 10,Bipolar Type-2
+Patiant-73,Sometimes,Seldom,Most-Often,Sometimes,YES,NO,NO,NO,NO,YES,NO,YES,NO,NO,7 From 10,5 From 10,7 From 10,Bipolar Type-1
+Patiant-74,Sometimes,Usually,Sometimes,Seldom,NO,NO,NO,YES,NO,NO,NO,YES,NO,YES,6 From 10,4 From 10,5 From 10,Normal
+Patiant-75,Usually,Sometimes,Seldom,Seldom,YES,NO,YES,NO,NO,YES,NO,YES,YES,YES,3 From 10,7 From 10,4 From 10,Bipolar Type-2
+Patiant-76,Usually,Sometimes,Usually,Seldom,NO,YES,YES,NO,YES,NO,YES,YES,NO,NO,7 From 10,3 From 10,2 From 10,Depression
+Patiant-77,Usually,Sometimes,Seldom,Seldom,NO,NO,YES,NO,NO,YES,NO,NO,NO,YES,8 From 10,2 From 10,8 From 10,Depression
+Patiant-78,Usually,Seldom,Seldom,Seldom,YES,NO,NO,NO,NO,YES,YES,NO,NO,NO,2 From 10,2 From 10,4 From 10,Bipolar Type-2
+Patiant-79,Usually,Sometimes,Sometimes,Seldom,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,6 From 10,6 From 10,6 From 10,Normal
+Patiant-80,Most-Often,Seldom,Most-Often,Sometimes,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,6 From 10,3 From 10,3 From 10,Depression
+Patiant-81,Sometimes,Sometimes,Usually,Most-Often,YES,YES,NO,NO,NO,YES,NO,NO,YES,YES,8 From 10,2 From 10,6 From 10,Bipolar Type-1
+Patiant-82,Most-Often,Sometimes,Sometimes,Usually,YES,NO,NO,NO,NO,NO,NO,YES,NO,NO,2 From 10,4 From 10,5 From 10,Bipolar Type-2
+Patiant-83,Usually,Seldom,Most-Often,Sometimes,NO,NO,NO,NO,NO,YES,NO,YES,YES,YES,5 From 10,7 From 10,4 From 10,Depression
+Patiant-84,Seldom,Usually,Most-Often,Most-Often,NO,NO,YES,YES,YES,YES,YES,NO,YES,YES,7 From 10,8 From 10,6 From 10,Normal
+Patiant-85,Usually,Seldom,Seldom,Sometimes,YES,NO,NO,NO,NO,YES,YES,YES,NO,NO,7 From 10,6 From 10,7 From 10,Bipolar Type-1
+Patiant-86,Sometimes,Sometimes,Most-Often,Usually,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,2 From 10,4 From 10,1 From 10,Bipolar Type-2
+Patiant-87,Usually,Sometimes,Usually,Most-Often,NO,YES,NO,NO,YES,NO,NO,YES,NO,YES,4 From 10,7 From 10,2 From 10,Depression
+Patiant-88,Usually,Seldom,Sometimes,Sometimes,YES,NO,YES,NO,NO,YES,NO,YES,YES,YES,9 From 10,2 From 10,8 From 10,Bipolar Type-1
+Patiant-89,Seldom,Most-Often,Sometimes,Usually,NO,NO,YES,YES,NO,YES,NO,YES,NO,YES,6 From 10,6 From 10,7 From 10,Bipolar Type-1
+Patiant-90,Sometimes,Usually,Seldom,Sometimes,NO,NO,NO,YES,YES,YES,YES,YES,YES,NO,7 From 10,3 From 10,5 From 10,Normal
+Patiant-91,Most-Often,Seldom,Usually,Usually,NO,YES,NO,YES,NO,YES,YES,YES,NO,YES,4 From 10,4 From 10,3 From 10,Depression
+Patiant-92,Usually,Sometimes,Most-Often,Sometimes,YES,YES,NO,YES,NO,YES,NO,NO,YES,YES,2 From 10,6 From 10,4 From 10,Bipolar Type-2
+Patiant-93,Sometimes,Usually,Most-Often,Usually,NO,NO,NO,YES,NO,NO,NO,NO,YES,YES,5 From 10,7 From 10,6 From 10,Normal
+Patiant-94,Usually,Seldom,Usually,Usually,YES,NO,YES,NO,YES,YES,NO,NO,YES,NO,7 From 10,1 From 10,7 From 10,Bipolar Type-1
+Patiant-95,Most-Often,Seldom,Most-Often,Sometimes,NO,YES,NO,NO,NO,NO,NO,NO,NO,YES,2 From 10,8 From 10,4 From 10,Depression
+Patiant-96,Usually,Sometimes,Seldom,Sometimes,YES,YES,NO,YES,YES,NO,YES,YES,NO,YES,1 From 10,4 From 10,5 From 10,Bipolar Type-2
+Patiant-97,Sometimes,Usually,Seldom,Sometimes,YES,NO,NO,YES,NO,YES,NO,NO,YES,YES,5 From 10,5 From 10,8 From 10,Bipolar Type-1
+Patiant-98,Sometimes,Most-Often,Sometimes,Seldom,NO,NO,NO,YES,NO,NO,NO,NO,YES,YES,6 From 10,2 From 10,6 From 10,Normal
+Patiant-99,Most-Often,Sometimes,Usually,Usually,NO,YES,NO,NO,YES,NO,NO,YES,NO,NO,3 From 10,7 From 10,2 From 10,Depression
+Patiant-100,Usually,Seldom,Usually,Sometimes,YES,YES,YES,YES,YES,NO,NO,NO,YES,NO,2 From 10,5 From 10,2 From 10,Bipolar Type-2
+Patiant-101,Usually,Sometimes,Seldom,Usually,YES,NO,NO,NO,NO,YES,YES,NO,NO,YES,8 From 10,1 From 10,8 From 10,Bipolar Type-1
+Patiant-102,Sometimes,Seldom,Most-Often,Most-Often,NO,YES,NO,NO,NO,NO,YES,NO,YES,NO,1 From 10,6 From 10,3 From 10,Depression
+Patiant-103,Seldom,Usually,Seldom,Sometimes,NO,YES,NO,NO,YES,YES,NO,YES,YES,NO,6 From 10,6 From 10,5 From 10,Bipolar Type-1
+Patiant-104,Sometimes,Most-Often,Sometimes,Seldom,NO,NO,YES,YES,NO,YES,YES,YES,YES,NO,7 From 10,4 From 10,5 From 10,Normal
+Patiant-105,Usually,Sometimes,Most-Often,Usually,YES,YES,YES,NO,NO,NO,YES,YES,NO,NO,2 From 10,4 From 10,4 From 10,Bipolar Type-2
+Patiant-106,Most-Often,Seldom,Usually,Most-Often,NO,YES,YES,YES,NO,NO,YES,NO,YES,YES,3 From 10,7 From 10,1 From 10,Depression
+Patiant-107,Seldom,Usually,Sometimes,Seldom,NO,NO,NO,NO,YES,YES,YES,NO,YES,YES,6 From 10,5 From 10,7 From 10,Normal
+Patiant-108,Sometimes,Sometimes,Usually,Usually,NO,YES,YES,NO,YES,YES,NO,YES,YES,NO,8 From 10,7 From 10,5 From 10,Depression
+Patiant-109,Usually,Sometimes,Sometimes,Sometimes,YES,YES,YES,YES,NO,YES,YES,YES,NO,YES,2 From 10,1 From 10,1 From 10,Bipolar Type-2
+Patiant-110,Most-Often,Seldom,Seldom,Sometimes,NO,NO,YES,NO,YES,NO,NO,YES,NO,YES,3 From 10,3 From 10,3 From 10,Depression
+Patiant-111,Sometimes,Most-Often,Usually,Usually,NO,NO,NO,YES,NO,NO,NO,NO,YES,NO,4 From 10,7 From 10,5 From 10,Normal
+Patiant-112,Sometimes,Sometimes,Usually,Most-Often,YES,YES,NO,YES,NO,NO,YES,YES,NO,NO,4 From 10,1 From 10,2 From 10,Bipolar Type-2
+Patiant-113,Seldom,Usually,Usually,Sometimes,YES,NO,YES,YES,YES,YES,YES,YES,NO,YES,8 From 10,8 From 10,5 From 10,Bipolar Type-1
+Patiant-114,Sometimes,Seldom,Sometimes,Most-Often,YES,YES,YES,NO,NO,NO,YES,NO,YES,YES,1 From 10,5 From 10,1 From 10,Bipolar Type-2
+Patiant-115,Seldom,Sometimes,Seldom,Usually,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,5 From 10,8 From 10,7 From 10,Normal
+Patiant-116,Most-Often,Seldom,Usually,Sometimes,NO,YES,NO,NO,YES,NO,YES,NO,NO,YES,2 From 10,5 From 10,3 From 10,Depression
+Patiant-117,Sometimes,Sometimes,Sometimes,Seldom,YES,NO,NO,NO,NO,YES,NO,NO,NO,YES,6 From 10,7 From 10,8 From 10,Bipolar Type-1
+Patiant-118,Usually,Sometimes,Usually,Sometimes,YES,NO,YES,YES,NO,NO,NO,YES,NO,YES,1 From 10,5 From 10,3 From 10,Bipolar Type-2
+Patiant-119,Usually,Sometimes,Seldom,Seldom,NO,YES,YES,NO,YES,YES,YES,NO,YES,YES,7 From 10,7 From 10,7 From 10,Depression
+Patiant-120,Sometimes,Usually,Seldom,Usually,NO,NO,NO,YES,YES,NO,YES,YES,NO,NO,7 From 10,3 From 10,8 From 10,Normal
