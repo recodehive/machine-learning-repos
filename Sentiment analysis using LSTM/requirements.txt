@@ -1,6 +1,0 @@
-pandas==1.5.3
-seaborn==0.12.2
-tensorflow==2.12.0
-scikit-learn==1.2.2
-nltk==3.8.1
-wordcloud==1.9.2

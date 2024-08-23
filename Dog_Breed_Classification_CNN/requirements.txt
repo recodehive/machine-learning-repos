@@ -1,6 +1,0 @@
-tensorflow==2.15.0
-pandas
-numpy
-requests
-streamlit
-pillow

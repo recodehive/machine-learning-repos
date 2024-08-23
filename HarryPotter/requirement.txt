@@ -1,6 +1,0 @@
-## prerequisite
-numpy
-pandas
-matplotlib
-seaborn
-wordcloud
