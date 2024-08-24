@@ -602,3 +602,72 @@ button#toggle-languages:hover {
     opacity: 0.9;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121245; 
+    color: #f1f1f1; 
+}
+
+.dark-mode .navbar {
+    background-color: #000; 
+}
+
+.dark-mode .nav-links a {
+    color: #fff;
+}
+
+.dark-mode .welcome-title {
+    color: #fff; 
+}
+
+.dark-mode .highlight {
+    color: #fff; 
+}
+
+.dark-mode .stat-card {
+    background-color: #212148;
+}
+
+.dark-mode .stat-card h3 {
+    color: #fff;
+}
+
+.dark-mode .stat-card p {
+    color: rgb(255, 213, 98);
+}
+
+.dark-mode .stat-icon {
+    color: #fff;
+}
+
+.dark-mode .stat-card:hover {
+    background-color: #151537;
+}
+
+.dark-mode .stat-card:hover .stat-icon{
+    color: #fff;
+}
+
+
+#toggle-dark-mode {
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .welcome-section a{
+    color: #cfd9e5;
+}
+
+#toggle-dark-mode i {
+    font-size: 1.5em;
+}
+
+#toggle-dark-mode:hover {
+    color: #fff;
+}
+
+
