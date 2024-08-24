@@ -6,15 +6,14 @@ html, body {
 }
 
 body {
-    background-color: #0a0a2e; /* Darkest blue */
-    color: #f1f1f1;
+    background-color: #f4f4f4;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: #121245; /* Slightly lighter dark blue */
+    background-color: #333; 
     padding: 10px 20px;
 }
 
@@ -52,6 +51,10 @@ header {
     white-space: nowrap; /* Prevents wrapping of links */
 }
 
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
 main {
     padding: 20px;
     flex: 1; /* Makes main content take up the remaining space */
@@ -85,12 +88,13 @@ button#toggle-stats {
 }
 
 button#toggle-stats:hover {
-    background-color: #2a2a7e; /* Lighter blue on hover */
+    background-color: #2a2a7e;
 }
 
 #statistics-cards {
     display: none;
     text-align: center;
+    color: black;
 }
 
 .stats-grid {
@@ -101,7 +105,7 @@ button#toggle-stats:hover {
 }
 
 .stat-card {
-    background-color: #121245; /* Dark blue for stat cards */
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     width: 150px;
@@ -142,6 +146,9 @@ button#toggle-stats:hover {
     text-align: center;
     margin-top: auto;
 }
+#footer-link{
+    color: white
+}
 
 button#toggle-languages {
     display: block;
@@ -157,4 +164,66 @@ button#toggle-languages {
 
 button#toggle-languages:hover {
     background-color: #2a2a7e; /* Lighter blue on hover */
+}
+
+#repo-list {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+#directories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card .btn-view-repo {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #1a1a5e;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.card .btn-view-repo:hover{
+    background-color:#2a2a7e;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
 }

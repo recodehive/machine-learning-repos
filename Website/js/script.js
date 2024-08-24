@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleLanguagesSection() {
         const toggleLanguagesButton = document.createElement('button');
         toggleLanguagesButton.id = 'toggle-languages';
-        toggleLanguagesButton.textContent = 'Show/Hide Languages Used';
+        toggleLanguagesButton.textContent = 'Show Languages Used';
         const languagesList = document.getElementById('language-list');
         document.getElementById('languages').insertBefore(toggleLanguagesButton, languagesList);
 
@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         toggleLanguagesButton.addEventListener('click', function() {
             languagesList.style.display = languagesList.style.display === 'none' ? 'block' : 'none';
+            toggleLanguagesButton.textContent = languagesList.style.display === 'none' ? 'Show Languages Used' : 'Hide Languages Used';
         });
     }
 
@@ -97,10 +98,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleStatsSection() {
         const toggleButton = document.getElementById('toggle-stats');
         const statsSection = document.getElementById('statistics-cards');
+        const toggleTextDisplay = document.getElementById('display');
         statsSection.style.display = 'none';
 
         toggleButton.addEventListener('click', function() {
             statsSection.style.display = statsSection.style.display === 'none' ? 'block' : 'none';
+            toggleTextDisplay.textContent = statsSection.style.display === 'none' ? 'Show' : 'Hide';
         });
     }
 

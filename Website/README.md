@@ -61,6 +61,20 @@
   ```bash
   git push origin <your_branch_name>
   ```
+
+> [!NOTE] 
+> If you're having trouble cloning the repository on your system, try running the following commands to optimize Git for large repositories and slower connections:
+>
+> ```bash
+> git config --global core.compression 9
+> git config --global http.maxRequestBuffer 1G
+> git config --global http.lowSpeedLimit 0
+> git config --global http.lowSpeedTime 999999
+> git config --global http.postBuffer 1048576000
+> ```
+>
+> Alternatively, you can use [GitHub Codespaces](https://github.com/features/codespaces) to clone and work on the repository in a cloud environment.
+
 - Go to your forked repository on GitHub and click on `Compare & pull request`.
 - Add an appropriate title and description to your pull request explaining your changes and efforts done.
 - Click on `Create pull request`.
