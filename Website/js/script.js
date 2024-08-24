@@ -241,3 +241,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+const body = document.body;
+
+toggleDarkModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    // Change icon based on dark mode status
+    const icon = toggleDarkModeButton.querySelector('i');
+    icon.classList.toggle('fa-moon');
+    icon.classList.toggle('fa-sun');
+});
