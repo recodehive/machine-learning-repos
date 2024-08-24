@@ -31,6 +31,32 @@ document.addEventListener('DOMContentLoaded', function() {
             directoriesList.innerHTML = '<li class="card">Failed to load directories.</li>';
         }
     }
+// Function to fetch and count subdirectories for each directory
+async function fetchSubdirectoryCounts() {
+    try {
+        const directoriesResponse = await fetch('/api/github/repos');
+        if (!directoriesResponse.ok) {
+            throw new Error(`HTTP error! status: ${directoriesResponse.status}`);
+        }
+        const directoriesData = await directoriesResponse.json();
+        const directories = directoriesData.filter(item => item.type === 'dir' && item.name !== 'Website');
+        const directoryCounts = [];
+
+        for (const directory of directories) {
+            const subResponse = await fetch(`https://api.github.com/repos/recodehive/machine-learning-repos/contents/${directory.name}`);
+            if (!subResponse.ok) {
+                throw new Error(`HTTP error! status: ${subResponse.status} for ${directory.name}`);
+            }
+            const subData = await subResponse.json();
+            const subDirectoriesCount = subData.filter(item => item.type === 'dir').length;
+            directoryCounts.push({ name: directory.name, count: subDirectoriesCount });
+        }
+
+        return directoryCounts;
+    } catch (error) {
+        console.error('Error fetching subdirectory counts:', error);
+    }
+}
 
     // Function to toggle languages section
     function toggleLanguagesSection() {
@@ -76,14 +102,12 @@ document.addEventListener('DOMContentLoaded', function() {
             for (const [language, bytes] of Object.entries(languagesData)) {
                 const percentage = ((bytes / totalBytes) * 100).toFixed(2);
                 const listItem = document.createElement('li');
-                listItem.classList.add('card-languages');
-                const h3 = document.createElement('h3');
-                h3.textContent = `${language}`;
-                listItem.appendChild(h3);
-                // listItem.innerHTML = `
-                //     <h3>${language}</h3>
-                //     <div class="progress-bar" style="width: ${percentage}%;"></div>
-                // `;
+                listItem.innerHTML = `
+                    <span>${language}</span>
+                    <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: ${percentage}%;">${percentage}%</div>
+                    </div>
+                `;
                 languageList.appendChild(listItem);
 
                 if (bytes > mostUsedLanguage.bytes) {
@@ -97,7 +121,45 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error fetching data from GitHub API:', error);
         }
     }
-
+    async function createPieChart() {
+        const directoryCounts = await fetchSubdirectoryCounts();
+        const ctx = document.getElementById('milestoneChart').getContext('2d');
+        const labels = directoryCounts.map(dir => dir.name);
+        const data = directoryCounts.map(dir => dir.count);
+        
+        const chart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: [
+                        '#FF6384',
+                        '#36A2EB',
+                        '#FFCE56',
+                        '#4BC0C0',
+                        '#9966FF',
+                        '#FF9F40'
+                    ],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false // Disable Chart.js default legend
+                    }
+                }
+            }
+        });
+    
+        // Inject custom legend
+        const legendContainer = document.querySelector('.legend');
+        legendContainer.innerHTML = labels.map((label, index) => `
+            <span style="color: ${chart.data.datasets[0].backgroundColor[index]}">${label}</span>
+        `).join('');
+    }
+    
     // Function to toggle statistics section
     function toggleStatsSection() {
         const toggleButton = document.getElementById('toggle-stats');
@@ -203,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     fetchDirectories();
-    toggleLanguagesSection();
+    createPieChart();
     fetchRepoStats();
     toggleStatsSection();
 });
