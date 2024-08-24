@@ -37,3 +37,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fetchDirectories();
 });
+
+
+document.addEventListener('DOMContentLoaded', async function () {
+    // Existing code...
+
+    // Toggle languages section
+    const toggleLanguagesButton = document.createElement('button');
+    toggleLanguagesButton.id = 'toggle-languages';
+    toggleLanguagesButton.textContent = 'Show/Hide Languages Used';
+    document.getElementById('languages').insertBefore(toggleLanguagesButton, document.getElementById('language-list'));
+
+    const languagesList = document.getElementById('language-list');
+    languagesList.style.display = 'none';
+
+    toggleLanguagesButton.addEventListener('click', function () {
+        if (languagesList.style.display === 'none') {
+            languagesList.style.display = 'block';
+        } else {
+            languagesList.style.display = 'none';
+        }
+    });
+});
