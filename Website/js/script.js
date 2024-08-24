@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const questionsAndAnswers = [
         { question: 'What is Machine Learning?', answer: 'Machine Learning is a field of AI that enables computers to learn from data without being explicitly programmed.' },
         { question: 'Tell me about Machine Learning Repos.', answer: 'Machine Learning Repos is a curated collection of Machine Learning Repositories' },
-        { question: 'How do I contribute to the repository?', answer: 'You can contribute by forking the repository, making changes, and submitting a pull request. Learn more here: <a href="https://github.com/recodehive/machine-learning-repos/blob/main/Website/README.md" target="_blank">here</a>' },
+        { question: 'How do I contribute to the repository?', answer: 'You can contribute by forking the repository, making changes, and submitting a pull request. Learn more <a href="https://github.com/recodehive/machine-learning-repos/blob/main/Website/README.md" target="_blank">here</a>' },
     ];
     
 
