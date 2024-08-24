@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar">
             <div class="logo-container">
-                <img src="logo.png" alt="RecodeHive Logo" width="50" height="50"> <!-- Added logo to navbar -->
+                <img src="logo-bg.png" alt="RecodeHive Logo" width="50" height="50"> <!-- Added logo to navbar -->
                 <span class="brand-name">RecodeHive</span>
             </div>
             <ul class="nav-links">
@@ -92,6 +92,32 @@
         
 
     </main>
+
+    <!-- Chatbot Button -->
+    <div class="chatbot-button" id="chatbot-button">
+        <img src="logo-bg.png" height="50px" width="50px">
+    </div>
+
+     <!-- Chatbox -->
+     <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            Recodehive's Chatbot
+            <span class="close-btn" id="close-chatbot">&times;</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-questions">
+            <p>Choose a question:</p>
+            <ul id="question-list">
+                <!-- Questions will be populated here -->
+            </ul>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button id="chatbot-send">Send</button>
+        </div>
+    </div>
+
+    <button id="go-to-top">TOP▶️</button> <!-- Go to top button -->
 
     <footer class="footer">
         <p>&copy; 2024 Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</p>
