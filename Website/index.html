@@ -26,11 +26,6 @@
             <p>This website provides an overview of various machine learning repositories available on GitHub, brought to you by the RecodeHive organization.</p>
             <a href="https://github.com/recodehive/machine-learning-repos" class="cta-button">Visit the Repository</a>
         </section>.
-        <section id="repo-list">
-            <h2>Repositories</h2>
-            <ul id="directories">
-            </ul>
-        </section>
 
         <!-- Repository Information -->
         <section id="repository-info">
@@ -82,23 +77,12 @@
             </div>
         </section>
 
-        <!-- Contributors -->
-        <section id="contributors">
-            <h2>Contributors</h2>
-            <div id="contributors-list" class="contributors-grid"></div>
+        <section id="repo-list">
+            <h2>Repositories</h2>
+            <ul id="directories">
+            </ul>
         </section>
 
-        <!-- Languages -->
-        <section id="languages">
-            <h2>Languages Used</h2>
-            <ul id="language-list"></ul>
-        </section>
-
-        <!-- Milestones -->
-        <section id="milestones">
-            <h2>Project Milestones</h2>
-            <div id="milestones-chart" class="milestones-grid"></div>
-        </section>
     </main>
 
     <footer>
@@ -131,10 +115,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         document.getElementById('license').innerText = repoData.license ? repoData.license.spdx_id : 'No License';
         document.getElementById('repo-size').innerText = (repoData.size / 1024).toFixed(2) + ' MB';
 
-        // Fetch number of contributors
-        const contributorsResponse = await fetch(`${apiUrl}/contributors`);
-        const contributorsData = await contributorsResponse.json();
-        document.getElementById('contributors-count').innerText = contributorsData.length;
 
         // Fetch languages
         const languagesResponse = await fetch(`${apiUrl}/languages`);
@@ -163,35 +143,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Replace this with a dynamic calculation if you have a method to determine the total number of projects
         document.getElementById('total-projects').innerText = "10";
 
-        // Fetch milestones (if any)
-        const milestonesResponse = await fetch(`${apiUrl}/milestones`);
-        const milestonesData = await milestonesResponse.json();
-        const milestonesChart = document.getElementById('milestones-chart');
 
-        milestonesData.forEach(milestone => {
-            const milestoneDiv = document.createElement('div');
-            milestoneDiv.className = 'milestone';
-            milestoneDiv.innerHTML = `
-                <h4>${milestone.title}</h4>
-                <div class="progress">
-                    <div class="progress-bar" style="width: ${(milestone.closed_issues / (milestone.open_issues + milestone.closed_issues)) * 100}%;"></div>
-                </div>
-            `;
-            milestonesChart.appendChild(milestoneDiv);
-        });
-
-        // Populate contributors list
-        const contributorsList = document.getElementById('contributors-list');
-        contributorsData.forEach(contributor => {
-            const contributorCard = document.createElement('div');
-            contributorCard.className = 'contributor-card';
-            contributorCard.innerHTML = `
-                <a href="${contributor.html_url}" target="_blank">
-                    <img src="${contributor.avatar_url}" alt="${contributor.login}">
-                </a>
-            `;
-            contributorsList.appendChild(contributorCard);
-        });
 
     } catch (error) {
         console.error('Error fetching data from GitHub API:', error);
