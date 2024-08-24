@@ -84,3 +84,60 @@ footer a {
     text-decoration: none;
     color: #f4f4f4;
 }
+
+#repo-list {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+#directories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card .btn-view-repo {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: rgb(33, 16, 189);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
