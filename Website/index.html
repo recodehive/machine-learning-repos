@@ -6,6 +6,7 @@
     <title>Machine Learning Repositories</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="logo.png" type="image/png"> <!-- Added favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -31,8 +32,14 @@
 
     <main>
         <section class="welcome-section">
-            <h2>Welcome to the Machine Learning Repositories</h2>
-            <p>Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community.</p>
+            <div class="container">
+                <div>
+                    <div>
+                        <h1 class="welcome-title">Welcome to <span class="highlight">Machine Learning Repositories</span></h1>
+                        <p class="welcome-description">Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the <span> <a href="https://github.com/recodehive"> RecodeHive </a></span>community.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Toggle button for Repository Statistics -->
@@ -41,35 +48,41 @@
         </section>
 
         <!-- Statistics Cards -->
-        <section id="statistics-cards">
-            <h2>Repository Statistics</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3>Total Stars</h3>
-                    <p id="total-stars">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Total Forks</h3>
-                    <p id="total-forks">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Open Issues</h3>
-                    <p id="open-issues">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <h3>License</h3>
-                    <p id="license">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Repository Size</h3>
-                    <p id="repo-size">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Most Used Language</h3>
-                    <p id="most-used-language">Loading...</p>
-                </div>
+    <section id="statistics-cards">
+        <h2>Repository Statistics</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-star stat-icon"></i> 
+                <h3>Total Stars</h3>
+                <p id="total-stars">Loading...</p>
             </div>
-        </section>
+            <div class="stat-card">
+                <i class="fas fa-code-branch stat-icon"></i> 
+                <h3>Total Forks</h3>
+                <p id="total-forks">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-exclamation-circle stat-icon"></i>
+                <h3>Open Issues</h3>
+                <p id="open-issues">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-balance-scale stat-icon"></i> 
+                <h3>License</h3>
+                <p id="license">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-database stat-icon"></i> 
+                <h3>Repository Size</h3>
+                <p id="repo-size">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-code stat-icon"></i> 
+                <h3>Most Used Language</h3>
+                <p id="most-used-language">Loading...</p>
+            </div>
+        </div>
+    </section>
 
         <!-- Languages -->
         <section id="languages">
