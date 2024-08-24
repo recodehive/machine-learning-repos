@@ -1,5 +1,6 @@
 /* Ensure full height of the body and remove margin/padding */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #333; 
+    background-color: #333;
     padding: 10px 20px;
 }
 
@@ -26,7 +27,8 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Adds space between logo and links */
+    margin-right: 20px;
+    /* Adds space between logo and links */
 }
 
 .brand-name {
@@ -37,32 +39,64 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    flex-grow: 1; /* Makes the nav links take up available space */
-    justify-content: flex-end; /* Align links to the left */
-    gap: 50px; /* Adds space between each link */
+    flex-grow: 1;
+    /* Makes the nav links take up available space */
+    justify-content: flex-end;
+    /* Align links to the left */
+    gap: 50px;
+    /* Adds space between each link */
     margin-left: 20px;
-    right: 10px; /* Adjust this value for the gap between logo and links */
+    right: 10px;
+    /* Adjust this value for the gap between logo and links */
 }
 
 .nav-links a {
     text-decoration: none;
     color: #f1f1f1;
     font-weight: bold;
-    white-space: nowrap; /* Prevents wrapping of links */
+    white-space: nowrap;
+    /* Prevents wrapping of links */
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     text-decoration: underline;
 }
 
 main {
     padding: 20px;
-    flex: 1; /* Makes main content take up the remaining space */
+    flex: 1;
+    /* Makes main content take up the remaining space */
 }
+
 
 .welcome-section {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.welcome-title {
+    font-size: 37px;
+}
+
+.welcome-description {
+    font-size : 22px;
+    width:60%;
+    margin: auto;
+}
+
+.welcome-description a { 
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.welcome-description a:hover { 
+    text-decoration: underline;
+    cursor: pointer;
+}
+.highlight {
+    color: rgb(3, 3, 122);
+    text-shadow: rgb(183, 189, 248) 1px 0 10px;
 }
 
 h2 {
@@ -80,7 +114,8 @@ button#toggle-stats {
     margin: 0 auto 20px auto;
     padding: 10px 20px;
     font-size: 1.1em;
-    background-color: #1a1a5e; /* Dark blue button */
+    background-color: #1a1a5e;
+    /* Dark blue button */
     color: #f1f1f1;
     border: none;
     cursor: pointer;
@@ -94,7 +129,6 @@ button#toggle-stats:hover {
 #statistics-cards {
     display: none;
     text-align: center;
-    color: black;
 }
 
 .stats-grid {
@@ -105,19 +139,65 @@ button#toggle-stats:hover {
 }
 
 .stat-card {
-    background-color: white;
+    background-color: #050066; 
+    /* background: linear-gradient(130deg, #473eed, #04004c); */
     padding: 20px;
     border-radius: 8px;
     width: 150px;
     text-align: center;
     margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(0, 10, 150), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
+
+.stat-card:hover {
+    /* background-color: #1a1d29; */
+    background: linear-gradient(135deg, #090293, #040054);
+    /* background: linear-gradient(135deg, #473eed, #04004c); */
+    transform: scale(1.05);
+    text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    cursor: pointer;
+}
+
 
 .stat-card h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
+.stat-card p {
+    font-size: 18px;
+    color: rgb(243, 206, 1);
+    text-shadow: none;
+    font-weight: 500;
+}
+
+.stat-icon {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.stat-card:hover h3 {
+    color: #ffffff;
+}
+.stat-card:hover p {
+    color: yellow;
+    font-weight: 500;
+
+}
+
+.stat-card:hover .stat-icon 
+{
+    color: white;
+    text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    color: rgb(255, 213, 98);
+
+}
 #languages {
     text-align: center;
     margin-bottom: 30px;
@@ -128,25 +208,30 @@ button#toggle-stats:hover {
     padding: 0;
     display: inline-block;
     text-align: center;
-    column-count: 4; /* Adjust this value to increase or decrease the number of columns */
-    column-gap: 40px; /* Space between columns */
+    column-count: 4;
+    /* Adjust this value to increase or decrease the number of columns */
+    column-gap: 40px;
+    /* Space between columns */
 }
 
 #language-list li {
     margin: 10px 0;
-    text-align: left; /* Align text to the left within each column */
+    text-align: left;
+    /* Align text to the left within each column */
 }
 
 
 /* Footer stays at the bottom */
 .footer {
-    background-color: #121245; /* Dark blue for footer */
+    background-color: #121245;
+    /* Dark blue for footer */
     color: #f1f1f1;
     padding: 20px;
     text-align: center;
     margin-top: auto;
 }
-#footer-link{
+
+#footer-link {
     color: white
 }
 
@@ -155,7 +240,8 @@ button#toggle-languages {
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 1.1em;
-    background-color: #1a1a5e; /* Dark blue button */
+    background-color: #1a1a5e;
+    /* Dark blue button */
     color: #f1f1f1;
     border: none;
     cursor: pointer;
@@ -163,7 +249,8 @@ button#toggle-languages {
 }
 
 button#toggle-languages:hover {
-    background-color: #2a2a7e; /* Lighter blue on hover */
+    background-color: #2a2a7e;
+    /* Lighter blue on hover */
 }
 
 #repo-list {
@@ -188,7 +275,7 @@ button#toggle-languages:hover {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 20px); 
+    flex: 1 1 calc(33.333% - 20px);
     max-width: calc(33.333% - 20px);
     padding: 20px;
     box-sizing: border-box;
@@ -199,6 +286,7 @@ button#toggle-languages:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .card .btn-view-repo {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -209,8 +297,8 @@ button#toggle-languages:hover {
     font-size: 0.875rem;
 }
 
-.card .btn-view-repo:hover{
-    background-color:#2a2a7e;
+.card .btn-view-repo:hover {
+    background-color: #2a2a7e;
 }
 
 
@@ -223,7 +311,7 @@ button#toggle-languages:hover {
 
 @media (max-width: 480px) {
     .card {
-        flex: 1 1 100%; 
+        flex: 1 1 100%;
         max-width: 100%;
     }
 }
