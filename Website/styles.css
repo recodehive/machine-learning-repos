@@ -1,190 +1,160 @@
-body {
-    font-family: Arial, sans-serif;
+/* Ensure full height of the body and remove margin/padding */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    overflow-y: auto; 
 }
 
+body {
+    background-color: #0a0a2e; /* Darkest blue */
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
 
-/* Header Styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px 20px; 
+    background-color: #121245; /* Slightly lighter dark blue */
+    padding: 10px 20px;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    text-align: left;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.logo-container {
     display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adds space between logo and links */
 }
 
-nav ul li {
-    margin: 0 15px;
+.brand-name {
+    font-size: 1.5em;
+    color: #f1f1f1;
 }
 
-nav ul li a {
-    color: white;
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1; /* Makes the nav links take up available space */
+    justify-content: flex-end; /* Align links to the left */
+    gap: 50px; /* Adds space between each link */
+    margin-left: 20px;
+    right: 10px; /* Adjust this value for the gap between logo and links */
+}
+
+.nav-links a {
     text-decoration: none;
+    color: #f1f1f1;
     font-weight: bold;
+    white-space: nowrap; /* Prevents wrapping of links */
 }
 
-/* Main Section Styles */
 main {
     padding: 20px;
+    flex: 1; /* Makes main content take up the remaining space */
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+button#toggle-stats {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #1a1a5e; /* Dark blue button */
+    color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#toggle-stats:hover {
+    background-color: #2a2a7e; /* Lighter blue on hover */
+}
+
+#statistics-cards {
+    display: none;
     text-align: center;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* Statistics Cards Styles */
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 1rem;
-    margin-top: 2rem;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .stat-card {
-    background-color: #fff;
+    background-color: #121245; /* Dark blue for stat cards */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    width: 150px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .stat-card h3 {
-    margin-bottom: 0.5rem;
-    color: #007bff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .stats-grid,
-    .contributors-grid {
-        grid-template-columns: 1fr; 
-    }
+#languages {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Language List Styles */
-#languages ul {
+#language-list {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-
-#languages li {
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-}
-
-.language-bar {
-    flex-grow: 1;
-    height: 10px;
-    border-radius: 5px;
-    margin-left: 0.5rem;
-    background-color: #007bff;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: #f4f4f4;
-}
-
-#repo-list {
-    margin: 20px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-#directories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 20px); 
-    max-width: calc(33.333% - 20px);
-    padding: 20px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.card .btn-view-repo {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    color: rgb(33, 16, 189);
-    text-decoration: none;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
+    text-align: center;
+    column-count: 4; /* Adjust this value to increase or decrease the number of columns */
+    column-gap: 40px; /* Space between columns */
+}
+
+#language-list li {
+    margin: 10px 0;
+    text-align: left; /* Align text to the left within each column */
 }
 
 
-@media (max-width: 768px) {
-    .card {
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
+/* Footer stays at the bottom */
+.footer {
+    background-color: #121245; /* Dark blue for footer */
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
 }
 
-@media (max-width: 480px) {
-    .card {
-        flex: 1 1 100%; 
-        max-width: 100%;
-    }
+button#toggle-languages {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #1a1a5e; /* Dark blue button */
+    color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-/* Additional Styles for Responsiveness */
-@media (max-width: 768px) {
-    .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
 
-    .contributors-grid {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    }
+button#toggle-languages:hover {
+    background-color: #2a2a7e; /* Lighter blue on hover */
 }
