@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,31 +7,15 @@ body {
     overflow-y: auto; /* Ensure vertical scrollbar appears if needed */
 }
 
-::-webkit-scrollbar {
-    width: 10px; /* Set the width of the scrollbar */
-}
 
-::-webkit-scrollbar-track {
-    background: #f4f4f4; /* Background color of the track */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #007bff; /* Color of the scrollbar thumb */
-    border-radius: 5px; /* Round the corners of the scrollbar thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0056b3; /* Darker color on hover */
-}
-
+/* Header Styles */
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 20px 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px; 
 }
 
 header h1 {
@@ -55,6 +40,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Main Section Styles */
 main {
     padding: 20px;
     text-align: center;
@@ -70,6 +56,77 @@ main {
     margin-top: 20px;
 }
 
+/* Statistics Cards Styles */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in desktop view */
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+.stat-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+/* Contributors Grid Styles */
+.contributors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in desktop view */
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contributors-grid img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .stats-grid,
+    .contributors-grid {
+        grid-template-columns: 1fr; /* 1 column in mobile view */
+    }
+}
+
+/* Language List Styles */
+#languages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#languages li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.language-bar {
+    flex-grow: 1;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    background-color: #007bff;
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
@@ -139,5 +196,15 @@ footer a {
     .card {
         flex: 1 1 100%; 
         max-width: 100%;
+    }
+}
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .contributors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     }
 }
