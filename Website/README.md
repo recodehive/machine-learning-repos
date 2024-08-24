@@ -66,3 +66,43 @@
 - Congrats! 🥳 You've made your first pull request to this project repo.
 - Wait for your pull request to be reviewed and if required suggestions would be provided to improve it.
 - Celebrate 🥳 your success after your pull request is merged successfully.
+
+
+## ✅ Guidelines for Good Commit Messages 
+We follow a standardized commit message format using Commitlint to ensure consistency and clarity in our commit history. Each commit message should adhere to the following guidelines:
+
+1. **Be Concise and Descriptive**: Summarize the change in a way that’s easy to understand at a glance.
+2. **Use the Imperative Mood**: Write as if giving a command (e.g., `Add`, `Fix`, `Update`), which is a convention in many projects.
+3. **Include Context**: Provide context or reason for the change if it’s not immediately obvious from the summary.
+4. **Reference Issues and Pull Requests**: Include `issue numbers` or PR references if the commit addresses them.
+5. **Issue reference** (Optional): Include the issue number associated with the commit (e.g., `#123`).
+
+## 📝 Commit Message Examples ✅
+### Enhancing Documentation
+- `Improve - readability of <document> tutorial`
+- `Add - examples to ML documentation`
+- `Enhance - troubleshooting section in Prometheus guide`
+
+### General Maintenance
+- `Refactor - README for better clarity`
+- `Reorganize repository structure for easier navigation`
+- `Remove - outdated tools from recommendations`
+
+# ❌ Examples of Invalid Commit Messages
+
+- `Added new stuff`
+- `Fixed a bug`
+- `Updated code`
+- `auth feature update`
+- `chore: fixed some stuff`
+
+## Commit Example with Commitlint
+
+```bash
+git commit -m "feat(auth): Implement user signup process (#789)"
+```
+
+---
+
+- If something is missing here, or you feel something is not well described, please [raise an issue](https://github.com/recodehive/machine-learning-repos/issues).
+
