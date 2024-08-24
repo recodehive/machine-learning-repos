@@ -1,10 +1,9 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    overflow-y: auto; /* Ensure vertical scrollbar appears if needed */
+    overflow-y: auto; 
 }
 
 
@@ -59,7 +58,7 @@ main {
 /* Statistics Cards Styles */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns in desktop view */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 1rem;
     margin-top: 2rem;
     padding: 20px;
@@ -78,30 +77,11 @@ main {
     color: #007bff;
 }
 
-/* Contributors Grid Styles */
-.contributors-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns in desktop view */
-    gap: 1rem;
-    margin-top: 1rem;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contributors-grid img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .stats-grid,
     .contributors-grid {
-        grid-template-columns: 1fr; /* 1 column in mobile view */
+        grid-template-columns: 1fr; 
     }
 }
 
