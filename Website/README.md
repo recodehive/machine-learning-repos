@@ -1,4 +1,4 @@
-# Machine Learning Repos COntributing Guidelines
+# Machine Learning Repos Contributing Guidelines
 
 ## Prerequisites ⚠️
 
@@ -10,7 +10,7 @@
 
 ### Setup guidelines 🪜
 
-**Follow these steps to setup HelpOps-Hub on your local machine 👇**
+**Follow these steps to setup Machine-Learning-Repos on your local machine 👇**
 
 - [Fork](https://github.com/recodehive/machine-learning-repos/fork) the repository
 - Clone the forked repository in your local system.
@@ -24,6 +24,7 @@
    ```
  - Now install dependency
    ```bash
+    cd server
     npm install
    ```
 - Setup env file
