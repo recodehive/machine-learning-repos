@@ -3,6 +3,7 @@ import fetch from 'node-fetch';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import router from './route.js'
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(express.static(path.join(__dirname, '../')));
 app.get('/welcome', (req, res) => {
     res.send('Welcome to the Machine Learning Repos API!');
 });
+
 app.get('/api/github/repos', async (req, res) => {
     try {
         const response = await fetch('https://api.github.com/repos/recodehive/machine-learning-repos/contents/', {
@@ -36,9 +38,11 @@ app.get('/api/github/repos', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../index.html'));
+// });
+app.use(router);    // using router for navigation routes
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
