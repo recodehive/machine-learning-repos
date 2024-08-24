@@ -112,3 +112,37 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchRepoStats();
     toggleStatsSection();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetchContributors();
+
+    function fetchContributors() {
+        const repoOwner = 'recodehive'; // Replace with your repository owner
+        const repoName = 'machine-learning-repos'; // Replace with your repository name
+        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contributors`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(contributors => {
+                const contributorsGrid = document.getElementById('contributors-grid');
+                
+                contributors.forEach(contributor => {
+                    const contributorDiv = document.createElement('div');
+                    contributorDiv.className = 'contributor';
+
+                    contributorDiv.innerHTML = `
+                        <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-image">
+                        <div class="contributor-info">
+                            <a href="${contributor.html_url}" target="_blank" class="contributor-github">GitHub Profile</a>
+                        </div>
+                    `;
+
+                    contributorsGrid.appendChild(contributorDiv);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching contributors:', error);
+            });
+    }
+});
+
