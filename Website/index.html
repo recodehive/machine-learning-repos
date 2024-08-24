@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machine Learning Repositories</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Added favicon -->
 </head>
 <body>
     <header>
-        <h1>Machine Learning Repos</h1>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" alt="RecodeHive Logo" width="50" height="50"> <!-- Added logo to navbar -->
+                <span class="brand-name">RecodeHive</span>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Organization</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="25" height="25"> <!-- GitHub Icon -->
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <section>
-            <h2>Welcome to the Machine Learning Repositories</h2>
-            <p>This website provides an overview of various machine learning repositories available on GitHub, brought to you by the RecodeHive organization.</p>
-            <a href="https://github.com/recodehive/machine-learning-repos" class="cta-button">Visit the Repository</a>
-        </section>.
 
-        <!-- Repository Information -->
-        <section id="repository-info">
-            <h2>Repository Information</h2>
-            <div>
-                <h3 id="repo-name"></h3>
-                <p>Owner: <a id="repo-owner-link"><span id="repo-owner-name"></span></a></p>
-                <img id="repo-owner-avatar" src="" alt="Owner Avatar" width="100" />
-                <p><a id="repo-link">View on GitHub</a></p>
-            </div>
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to the Machine Learning Repositories</h2>
+            <p>Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community.</p>
+        </section>
+
+        <!-- Toggle button for Repository Statistics -->
+        <section>
+            <button id="toggle-stats">Show/Hide Repository Statistics</button>
         </section>
 
         <!-- Statistics Cards -->
@@ -44,44 +46,36 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <h3>Total Stars</h3>
-                    <div id="total-stars">0</div>
+                    <p id="total-stars">Loading...</p>
                 </div>
                 <div class="stat-card">
                     <h3>Total Forks</h3>
-                    <div id="total-forks">0</div>
+                    <p id="total-forks">Loading...</p>
                 </div>
                 <div class="stat-card">
                     <h3>Open Issues</h3>
-                    <div id="open-issues">0</div>
+                    <p id="open-issues">Loading...</p>
                 </div>
                 <div class="stat-card">
                     <h3>License</h3>
-                    <div id="license">No License</div>
+                    <p id="license">Loading...</p>
                 </div>
                 <div class="stat-card">
                     <h3>Repository Size</h3>
-                    <div id="repo-size">0 MB</div>
-                </div>
-                <div class="stat-card">
-                    <h3>Total Contributors</h3>
-                    <div id="contributors-count">0</div>
-                </div>
-                <div class="stat-card">
-                    <h3>Total Projects</h3>
-                    <div id="total-projects">10</div>
+                    <p id="repo-size">Loading...</p>
                 </div>
                 <div class="stat-card">
                     <h3>Most Used Language</h3>
-                    <div id="most-used-language">N/A</div>
+                    <p id="most-used-language">Loading...</p>
                 </div>
             </div>
         </section>
 
-                <!-- Languages -->
-                <section id="languages">
-                    <h2>Languages Used</h2>
-                    <ul id="language-list"></ul>
-                </section>
+        <!-- Languages -->
+        <section id="languages">
+            <h2>Languages Used</h2>
+            <ul id="language-list"></ul>
+        </section>
 
         <section id="repo-list">
             <h2>Repositories</h2>
@@ -91,71 +85,10 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Machine Learning Repos - <a href="https://github.com/recodehive">RecodeHive</a>. All rights reserved.</p>
     </footer>
 
-    <script>
-
-document.addEventListener('DOMContentLoaded', async function () {
-    const repoOwner = 'recodehive'; // Your GitHub username
-    const repoName = 'machine-learning-repos'; // The repository name
-    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}`;
-
-    try {
-        // Fetch repository data
-        const repoResponse = await fetch(apiUrl);
-        const repoData = await repoResponse.json();
-
-        // Populate repository info
-        document.getElementById('repo-name').innerText = repoData.name;
-        document.getElementById('repo-owner-name').innerText = repoData.owner.login;
-        document.getElementById('repo-owner-avatar').src = repoData.owner.avatar_url;
-        document.getElementById('repo-owner-link').href = repoData.owner.html_url;
-        document.getElementById('repo-link').href = repoData.html_url;
-
-        // Populate statistics cards
-        document.getElementById('total-stars').innerText = repoData.stargazers_count;
-        document.getElementById('total-forks').innerText = repoData.forks_count;
-        document.getElementById('open-issues').innerText = repoData.open_issues_count;
-        document.getElementById('license').innerText = repoData.license ? repoData.license.spdx_id : 'No License';
-        document.getElementById('repo-size').innerText = (repoData.size / 1024).toFixed(2) + ' MB';
-
-
-        // Fetch languages
-        const languagesResponse = await fetch(`${apiUrl}/languages`);
-        const languagesData = await languagesResponse.json();
-        const languageList = document.getElementById('language-list');
-        const totalBytes = Object.values(languagesData).reduce((acc, val) => acc + val, 0);
-        let mostUsedLanguage = { name: '', bytes: 0 };
-
-        for (const [language, bytes] of Object.entries(languagesData)) {
-            const percentage = ((bytes / totalBytes) * 100).toFixed(2);
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `
-                <span>${language}</span>
-                <div class="progress-bar" style="width: ${percentage}%;"></div>
-            `;
-            languageList.appendChild(listItem);
-
-            if (bytes > mostUsedLanguage.bytes) {
-                mostUsedLanguage = { name: language, bytes: bytes };
-            }
-        }
-
-        document.getElementById('most-used-language').innerText = mostUsedLanguage.name;
-
-        // Populate total projects (assuming this is a static value)
-        // Replace this with a dynamic calculation if you have a method to determine the total number of projects
-        document.getElementById('total-projects').innerText = "10";
-
-
-
-    } catch (error) {
-        console.error('Error fetching data from GitHub API:', error);
-    }
-});
-
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -11,8 +11,8 @@
 <a href="https://github.com/recodehive/machine-learning-repos/blob/master/LICENSE"><img src="https://img.shields.io/github/license/recodehive/machine-learning-repos?color=2b9348" alt="License Badge"/></a>
 [![](https://visitcount.itsvg.in/api?id=gssoc-postman&label=Profile%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-🔍Welcome to the Machine learning repo project! 🌟.
-</div> 
+🔍Welcome to the Machine learning repo project! 🌟...
+</div>
 
 
 This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
