@@ -139,7 +139,9 @@ async function fetchSubdirectoryCounts() {
                         '#FFCE56',
                         '#4BC0C0',
                         '#9966FF',
-                        '#FF9F40'
+                        '#FF9F40',
+                        '#01A02A',
+                        '#FA5F20'
                     ],
                 }]
             },
