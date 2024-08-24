@@ -31,12 +31,173 @@
             <ul id="directories">
             </ul>
         </section>
+
+        <!-- Repository Information -->
+        <section id="repository-info">
+            <h2>Repository Information</h2>
+            <div>
+                <h3 id="repo-name"></h3>
+                <p>Owner: <a id="repo-owner-link"><span id="repo-owner-name"></span></a></p>
+                <img id="repo-owner-avatar" src="" alt="Owner Avatar" width="100" />
+                <p><a id="repo-link">View on GitHub</a></p>
+            </div>
+        </section>
+
+        <!-- Statistics Cards -->
+        <section id="statistics-cards">
+            <h2>Repository Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Stars</h3>
+                    <div id="total-stars">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Forks</h3>
+                    <div id="total-forks">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Open Issues</h3>
+                    <div id="open-issues">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>License</h3>
+                    <div id="license">No License</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Repository Size</h3>
+                    <div id="repo-size">0 MB</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Contributors</h3>
+                    <div id="contributors-count">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Projects</h3>
+                    <div id="total-projects">10</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Most Used Language</h3>
+                    <div id="most-used-language">N/A</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contributors -->
+        <section id="contributors">
+            <h2>Contributors</h2>
+            <div id="contributors-list" class="contributors-grid"></div>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages">
+            <h2>Languages Used</h2>
+            <ul id="language-list"></ul>
+        </section>
+
+        <!-- Milestones -->
+        <section id="milestones">
+            <h2>Project Milestones</h2>
+            <div id="milestones-chart" class="milestones-grid"></div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Machine Learning Repos - <a href="https://github.com/recodehive">RecodeHive</a>. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', async function () {
+    const repoOwner = 'recodehive'; // Your GitHub username
+    const repoName = 'machine-learning-repos'; // The repository name
+    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}`;
+
+    try {
+        // Fetch repository data
+        const repoResponse = await fetch(apiUrl);
+        const repoData = await repoResponse.json();
+
+        // Populate repository info
+        document.getElementById('repo-name').innerText = repoData.name;
+        document.getElementById('repo-owner-name').innerText = repoData.owner.login;
+        document.getElementById('repo-owner-avatar').src = repoData.owner.avatar_url;
+        document.getElementById('repo-owner-link').href = repoData.owner.html_url;
+        document.getElementById('repo-link').href = repoData.html_url;
+
+        // Populate statistics cards
+        document.getElementById('total-stars').innerText = repoData.stargazers_count;
+        document.getElementById('total-forks').innerText = repoData.forks_count;
+        document.getElementById('open-issues').innerText = repoData.open_issues_count;
+        document.getElementById('license').innerText = repoData.license ? repoData.license.spdx_id : 'No License';
+        document.getElementById('repo-size').innerText = (repoData.size / 1024).toFixed(2) + ' MB';
+
+        // Fetch number of contributors
+        const contributorsResponse = await fetch(`${apiUrl}/contributors`);
+        const contributorsData = await contributorsResponse.json();
+        document.getElementById('contributors-count').innerText = contributorsData.length;
+
+        // Fetch languages
+        const languagesResponse = await fetch(`${apiUrl}/languages`);
+        const languagesData = await languagesResponse.json();
+        const languageList = document.getElementById('language-list');
+        const totalBytes = Object.values(languagesData).reduce((acc, val) => acc + val, 0);
+        let mostUsedLanguage = { name: '', bytes: 0 };
+
+        for (const [language, bytes] of Object.entries(languagesData)) {
+            const percentage = ((bytes / totalBytes) * 100).toFixed(2);
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <span>${language}</span>
+                <div class="progress-bar" style="width: ${percentage}%;"></div>
+            `;
+            languageList.appendChild(listItem);
+
+            if (bytes > mostUsedLanguage.bytes) {
+                mostUsedLanguage = { name: language, bytes: bytes };
+            }
+        }
+
+        document.getElementById('most-used-language').innerText = mostUsedLanguage.name;
+
+        // Populate total projects (assuming this is a static value)
+        // Replace this with a dynamic calculation if you have a method to determine the total number of projects
+        document.getElementById('total-projects').innerText = "10";
+
+        // Fetch milestones (if any)
+        const milestonesResponse = await fetch(`${apiUrl}/milestones`);
+        const milestonesData = await milestonesResponse.json();
+        const milestonesChart = document.getElementById('milestones-chart');
+
+        milestonesData.forEach(milestone => {
+            const milestoneDiv = document.createElement('div');
+            milestoneDiv.className = 'milestone';
+            milestoneDiv.innerHTML = `
+                <h4>${milestone.title}</h4>
+                <div class="progress">
+                    <div class="progress-bar" style="width: ${(milestone.closed_issues / (milestone.open_issues + milestone.closed_issues)) * 100}%;"></div>
+                </div>
+            `;
+            milestonesChart.appendChild(milestoneDiv);
+        });
+
+        // Populate contributors list
+        const contributorsList = document.getElementById('contributors-list');
+        contributorsData.forEach(contributor => {
+            const contributorCard = document.createElement('div');
+            contributorCard.className = 'contributor-card';
+            contributorCard.innerHTML = `
+                <a href="${contributor.html_url}" target="_blank">
+                    <img src="${contributor.avatar_url}" alt="${contributor.login}">
+                </a>
+            `;
+            contributorsList.appendChild(contributorCard);
+        });
+
+    } catch (error) {
+        console.error('Error fetching data from GitHub API:', error);
+    }
+});
+
+    </script>
 </body>
 </html>
