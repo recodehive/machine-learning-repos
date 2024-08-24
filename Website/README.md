@@ -29,7 +29,7 @@
    ```
 - Setup env file
   ```
-  1. Create .env in the Website folder
+  1. Create .env in the server folder
   2. Store your Github PAT Token
   GITHUB_TOKEN = YOUR_GITHUB_TOKEN
   ```
