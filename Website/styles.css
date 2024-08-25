@@ -25,12 +25,27 @@ header {
     align-items: center;
 }
 
-.logo-container {
+  .logo-container{
     display: flex;
+    cursor: pointer;
     align-items: center;
-    margin-right: 20px;
-    /* Adds space between logo and links */
-}
+  }
+
+  .logo-container img{
+    filter: brightness(1) invert(1);
+  }
+  
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
 
 .brand-name {
     font-size: 1.5em;
@@ -58,6 +73,14 @@ header {
     font-weight: bold;
     white-space: nowrap;
     /* Prevents wrapping of links */
+}
+
+.nav-links a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    filter: brightness(0) invert(1);
+    margin-top: -5px;
 }
 
 .nav-links a:hover {
