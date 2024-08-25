@@ -188,12 +188,26 @@ async function fetchSubdirectoryCounts() {
         { text: 'Hello! Welcome to Machine Learning Repos', type: 'bot' }
     ];
 
-    // hardcoded questions and answers
-    const questionsAndAnswers = [
-        { question: 'What is Machine Learning?', answer: 'Machine Learning is a field of AI that enables computers to learn from data without being explicitly programmed.' },
-        { question: 'Tell me about Machine Learning Repos.', answer: 'Machine Learning Repos is a curated collection of Machine Learning Repositories' },
-        { question: 'How do I contribute to the repository?', answer: 'You can contribute by forking the repository, making changes, and submitting a pull request. Learn more <a href="https://github.com/recodehive/machine-learning-repos/blob/main/Website/README.md" target="_blank">here</a>' },
-    ];
+    // hardcoded questions and answers      
+      const questionsAndAnswers = [
+            { question: 'What is RecoderHive?',answer: 'RecodeHive is a community-driven platform offering curated machine learning repositories'},
+            { question: 'What is Machine Learning?', answer: 'Machine Learning is a field of AI that enables computers to learn from data without being explicitly programmed.' },
+            { question: 'Tell me about Machine Learning Repos.', answer: 'Machine Learning Repos is a curated collection of Machine Learning Repositories' },
+            { question: 'How do I contribute to the repository?', answer: 'You can contribute by forking the repository, making changes, and submitting a pull request. Learn more <a href="https://github.com/recodehive/machine-learning-repos/blob/main/Website/README.md" target="_blank">here</a>' },
+            { question: 'How many repositories are included in this collection?', answer: 'There are multiple repositories included, each covering various aspects of Machine Learning.' },
+            { question: 'What are the main topics covered by these repositories?', answer: 'The repositories cover topics like data preprocessing, model training, NLP, and more.' },
+            { question: 'Does the repository offer any courses?', answer: 'Yes, the repository provides links to courses related to Machine Learning.' },
+            { question: 'What programming languages are used in these repositories?', answer: 'The repositories utilize languages such as Python, R, HTML, CSS, JavaScript and others.' },
+            { question: 'Which frameworks are utilized in these repositories?', answer: 'Frameworks like TensorFlow, PyTorch, and Scikit-Learn are used.' },
+            { question: 'What is the most popular repository in the collection?', answer: 'The most popular repository is the "Awesome Machine Learning" collection.' },
+            { question: 'Are there any projects focusing on NLP in this collection?', answer: 'Yes, there are projects specifically focused on Natural Language Processing (NLP).' },
+            { question: 'How many topics are covered in the repository?', answer: 'The repository covers several key topics, including data science, deep learning, and more.' },
+            { question: 'Does the repository provide any tutorials?', answer: 'Yes, there are tutorials available that help users understand various machine learning concepts.' },
+            { question: 'What is the purpose of the repository?', answer: 'The repository aims to provide a comprehensive collection of resources and projects for learning and applying machine learning.' },
+            { question: 'Are there any datasets included in the repository?', answer: 'Yes, some repositories include datasets that can be used for training and testing machine learning models.' },
+            { question: 'How frequently is the repository updated?', answer: 'The repository is regularly updated with new content and improvements.' }
+        ];
+        
     
 
     function renderMessages() {
@@ -272,46 +286,3 @@ async function fetchSubdirectoryCounts() {
     toggleStatsSection();
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    fetchContributors();
-
-    function fetchContributors() {
-        const repoOwner = 'recodehive'; // Replace with your repository owner
-        const repoName = 'machine-learning-repos'; // Replace with your repository name
-        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contributors`;
-
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(contributors => {
-                const contributorsGrid = document.getElementById('contributors-grid');
-                
-                contributors.forEach(contributor => {
-                    const contributorDiv = document.createElement('div');
-                    contributorDiv.className = 'contributor';
-
-                    contributorDiv.innerHTML = `
-                        <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-image">
-                        <div class="contributor-info">
-                            <a href="${contributor.html_url}" target="_blank" class="contributor-github">GitHub Profile</a>
-                        </div>
-                    `;
-
-                    contributorsGrid.appendChild(contributorDiv);
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching contributors:', error);
-            });
-    }
-});
-
-const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-const body = document.body;
-
-toggleDarkModeButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    // Change icon based on dark mode status
-    const icon = toggleDarkModeButton.querySelector('i');
-    icon.classList.toggle('fa-moon');
-    icon.classList.toggle('fa-sun');
-});
