@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machine Learning Repositories</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png" type="image/png"> <!-- Added favicon -->
+    <link rel="icon" href="logo-bg.png" type="image/png"> <!-- Added favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="loading-container" id="loading-animation">
+        <div class="loader"></div>
+    </div>
     <header>
         <nav class="navbar">
             <div class="logo-container" onclick="window.location.href=`index.html`">
@@ -16,15 +20,20 @@
                 <span class="logo-text">Recode Hive</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Organization</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/organization">Organization</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li>
                     <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
                         <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
                     </a>
+                </li>
+                <li>
+                    <button id="toggle-dark-mode">
+                        <i class="fas fa-moon"></i> 
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -32,15 +41,10 @@
 
     <main>
         <section class="welcome-section">
-            <div class="container">
-                <div>
-                    <div>
-                        <h1 class="welcome-title">Welcome to <span class="highlight">Machine Learning Repositories</span></h1>
-                        <p class="welcome-description">Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the <span> <a href="https://github.com/recodehive"> RecodeHive </a></span>community.</p>
-                    </div>
-                </div>
-            </div>
+            <h2>Welcome to the Machine Learning Repositories</h2>
+            <p>Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community.</p>
         </section>
+
 
         <!-- Toggle button for Repository Statistics -->
         <section>
@@ -84,11 +88,22 @@
         </div>
     </section>
 
-        <!-- Languages -->
+    <!-- Languages and Milestone-->
+         
+    <section class="language-and-milestone">
         <section id="languages">
-            <h2>Languages Used</h2>
+            <div class="text-base">Languages</div>
             <ul id="language-list"></ul>
         </section>
+        <section id="milestone">
+            <div class="text-base">Milestones Progress</div>
+            <div class="chart-container">
+                <canvas id="milestoneChart"></canvas>
+                <div class="legend">
+                </div>
+            </div>                 
+        </section>
+     </section>
 
         <section id="repo-list">
             <h2>Repositories</h2>
@@ -102,13 +117,82 @@
                 <!-- Contributors will be loaded here by JavaScript -->
             </div>
         </section>
+        <section id="milestones-progress">
+            <h2>Milestones Progress</h2>
+            <div class="milestones-grid">
+                <div class="milestone-card">
+                    <h3>Algorithms and Deep Learning Models</h3>
+                    <p>This milestone enhances the website's performance and design by integrating advanced algorithms and Deep Learning models.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>34 closed / 34 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Classification Models</h3>
+                    <p>This Milestone focuses on improving the website's performance and design by implementing and optimizing various classification models.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>23 closed / 23 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Data Analysis</h3>
+                    <p>This milestone is dedicated to enhancing the website's performance and design through the integration and application of data analysis techniques.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>20 closed / 20 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>NLP Models</h3>
+                    <p>This milestone focuses on integrating NLP models to enhance website functionality and user interaction, improving performance and design through advanced natural language processing techniques.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p>5 closed / 10 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Computer Vision Models</h3>
+                    <p>This milestone focuses on integrating computer vision models to improve website performance and design by enabling advanced image and video analysis capabilities.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p>10 closed / 20 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Detection Models</h3>
+                    <p>This milestone involves improving the website's performance and design by implementing advanced detection models to enhance functionality and accuracy.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>34 closed / 34 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Prediction Models</h3>
+                    <p>This milestone aims to integrate advanced prediction models to boost website performance and user experience with cutting-edge algorithms and machine learning techniques.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>60 closed / 60 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Recommendation Models</h3>
+                    <p>This milestone focuses on integrating advanced recommendation models to improve website performance and deliver personalized user experiences.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>4 closed / 4 total</p>
+                </div>
+            </div>
+        </section>
         
-
     </main>
 
     <!-- Chatbot Button -->
     <div class="chatbot-button" id="chatbot-button">
-        <img src="logo-bg.png" height="50px" width="50px">
+        <!-- <img src="logo-bg.png" height="50px" width="50px"> -->
+        <svg fill="#444" width="163px" height="163px" viewBox="-0.96 -0.96 25.92 25.92" xmlns="http://www.w3.org/2000/svg" stroke="#444" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#fff" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"><path d="M21.928 11.607c-.202-.488-.635-.605-.928-.633V8c0-1.103-.897-2-2-2h-6V4.61c.305-.274.5-.668.5-1.11a1.5 1.5 0 0 0-3 0c0 .442.195.836.5 1.11V6H5c-1.103 0-2 .897-2 2v2.997l-.082.006A1 1 0 0 0 1.99 12v2a1 1 0 0 0 1 1H3v5c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5a1 1 0 0 0 1-1v-1.938a1.006 1.006 0 0 0-.072-.455zM5 20V8h14l.001 3.996L19 12v2l.001.005.001 5.995H5z"></path><ellipse cx="8.5" cy="12" rx="1.5" ry="2"></ellipse><ellipse cx="15.5" cy="12" rx="1.5" ry="2"></ellipse><path d="M8 16h8v2H8z"></path></g></svg>
     </div>
 
      <!-- Chatbox -->
@@ -129,13 +213,10 @@
             <button id="chatbot-send">Send</button>
         </div>
     </div>
-
     <button id="go-to-top">TOP▶️</button> <!-- Go to top button -->
-
     <footer class="footer">
         <p>&copy; 2024 Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</p>
     </footer>
-
     <script src="js/script.js"></script>
 </body>
 </html>
