@@ -285,6 +285,7 @@ async function fetchSubdirectoryCounts() {
     fetchRepoStats();
     toggleStatsSection();
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     fetchContributors();
 
@@ -305,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     contributorDiv.innerHTML = `
                         <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-image">
                         <div class="contributor-info">
-                            <a href="${contributor.html_url}" target="_blank" class="contributor-github">GitHub Profile</a>
+                            <a href="${contributor.html_url}" target="_blank" class="contributor-name">${contributor.login}</a>
                         </div>
                     `;
 

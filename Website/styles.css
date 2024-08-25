@@ -470,7 +470,6 @@ button#toggle-languages:hover {
         max-width: 100%;
     }
 }
-
 #contributors {
     padding: 40px;
     background-color: #0a0a2e;
@@ -505,7 +504,7 @@ button#toggle-languages:hover {
     border: none; /* Remove default border */
     border-radius: 15px; /* More rounded corners */
     padding: 15px;
-    background: #0b0b38; /* White background */
+    background: #0b0b38; /* Darker background for the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
     animation: slideInRight 1s ease-in-out;
@@ -530,24 +529,24 @@ button#toggle-languages:hover {
     border-color: #024c8c; /* Darker border color on hover */
 }
 
-/* Styling for the GitHub profile link */
+/* Styling for the contributor's name link */
 .contributor-info {
     margin-top: 10px; /* Adjusted space between image and link */
 }
 
-.contributor-github {
+.contributor-name {
     text-decoration: none;
-    color: white; /* GitHub blue color */
+    color: #0366d6; /* GitHub blue color */
     font-size: 14px; /* Slightly smaller font size */
     font-weight: bold; /* Bold font */
-    background: linear-gradient(135deg, #1f1f65, #3c3c99); /* Gradient background */
+    background:  #add3ff;
     padding: 8px 12px; /* Adjusted padding around the link */
     border-radius: 20px; /* Rounded button shape */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for button */
     transition: background 0.3s ease, color 0.3s ease; /* Smooth transition effects */
 }
 
-.contributor-github:hover {
+.contributor-name:hover {
     background: #0366d6; /* Darker background on hover */
     color: #ffffff; /* White text color on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
@@ -559,8 +558,8 @@ button#toggle-languages:hover {
     font-weight: 900; /* Bold font weight */
     color: white; /* Dark color for better contrast */
     animation: fadeIn 1s ease-in-out;
-   
 }
+
 
 /* Chatbot button */
 .chatbot-button {
