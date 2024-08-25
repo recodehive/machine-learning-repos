@@ -648,7 +648,7 @@ button#toggle-languages:hover {
 .chatbot.active {
     display: flex;
     margin-right: -18px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .chatbot-header {
