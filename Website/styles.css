@@ -600,8 +600,8 @@ button#toggle-languages:hover {
     transition: background-color 0.3s ease;
 }
 #question-list {
-    max-height: 200px; 
-    overflow-y: auto;  
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;  /* Enable vertical scrolling */
     padding: 10px;
     border: 1px solid #ccc;
 }
