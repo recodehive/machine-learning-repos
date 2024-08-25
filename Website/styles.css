@@ -659,6 +659,74 @@ button#toggle-languages:hover {
 }
 
 
+/* Milestones Progress Section */
+#milestones-progress {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#milestones-progress h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.milestone-card {
+    background-color: rgb(87, 251, 248);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #054ffd;
+    transition: transform 0.3s ease;
+}
+
+.milestone-card:hover {
+    transform: translateY(-5px);
+}
+
+.milestone-card h3 {
+    color: #333;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.milestone-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.progress-bar {
+    background-color: rgb(116, 243, 209);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 8px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0366d6;
+    transition: width 0.4s ease;
+}
+
+/* Optional: Media Query for Responsive Design */
+@media (max-width: 600px) {
+    .milestones-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* Loading Animation CSS */
 .loading-container {
     position: fixed;
@@ -754,6 +822,7 @@ body.dark-mode {
 #toggle-dark-mode:hover {
     color: #fff;
 }
+
 
 
 
