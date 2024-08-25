@@ -65,6 +65,10 @@ header {
   .logo-container img{
     filter: brightness(1) invert(1);
   }
+
+  a.logo-container{
+    text-decoration: none;
+  }
   
   .logo-icon {
     width: 30px;
