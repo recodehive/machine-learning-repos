@@ -1,80 +1,474 @@
 /* General fade-in animation */
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  /* Slide-In Animations */
-  @keyframes slide-in-right {
-      0% {
-          transform: translateX(100%);
-          opacity: 0;
-      }
-      100% {
-          transform: translateX(0);
-          opacity: 1;
-      }
-  }
-  
-  
-  .slide-in-right {
-      animation: slide-in-right 0.5s ease-out;
-  }
-  
-  
-  /* Ensure full height of the body and remove margin/padding */
-  html,
-  body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-  }
-  
-  body {
-      background-color: #0a0a2e; 
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      color:white;
-      
-  }
-  
-  header {
-      background-color: #121245;
-      padding: 10px 20px;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-    .logo-container{
-      display: flex;
-      cursor: pointer;
-      align-items: center;
-    }
-  
-    .logo-container img{
-      filter: brightness(1) invert(1);
-    }
-    
-    .logo-icon {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-    }
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Slide-In Animations */
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.slide-in-right {
+    animation: slide-in-right 0.5s ease-out;
+}
+
+
+/* Ensure full height of the body and remove margin/padding */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0a0a2e; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;  
+}
+header {
+    background-color: #121245;
+    padding: 10px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .logo-container{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .logo-container img{
+    filter: brightness(1) invert(1);
+  }
+  
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+
+.brand-name {
+    font-size: 1.5em;
+    color: #f1f1f1;
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    /* Makes the nav links take up available space */
+    justify-content: flex-end;
+    /* Align links to the left */
+    gap: 50px;
+    /* Adds space between each link */
+    margin-left: 20px;
+    right: 10px;
+    /* Adjust this value for the gap between logo and links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevents wrapping of links */
+}
+
+.nav-links a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    filter: brightness(0) invert(1);
+    margin-top: -5px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    animation: fadeIn 1s ease-in-out;
+    /* Makes main content take up the remaining space */
+}
+
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+    color:white;
+}
+
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: slideInRight 1s ease-in-out;
+    color:white;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color:white;
+}
+
+button#toggle-stats {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #1a1a5e;
+    /* Dark blue button */
+    color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slideInRight 1s ease-in-out;
+}
+
+button#toggle-stats:hover {
+    background-color: #2a2a7e;
+}
+
+#statistics-cards {
+    display: none;
+    text-align: center;
+    animation: slideInRight 0.3s ease-in-out;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color:#121245; 
+    /* background: linear-gradient(130deg, #473eed, #04004c); */
+    padding: 20px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px rgb(0, 10, 150), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    animation: slideInRight 0.3s ease-in-out;
+}
+
+.stat-card:hover {
+    /* background-color: #1a1d29; */
+    background: linear-gradient(135deg, #090293, #040054);
+    /* background: linear-gradient(135deg, #473eed, #04004c); */
+    transform: scale(1.05);
+    text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    cursor: pointer;
+}
+
+
+.stat-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 18px;
+    color: rgb(243, 206, 1);
+    text-shadow: none;
+    font-weight: 500;
+}
+
+.stat-icon {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.stat-card:hover h3 {
+    color: #ffffff;
+}
+.stat-card:hover p {
+    color: yellow;
+    font-weight: 500;
+
+}
+
+.stat-card:hover .stat-icon 
+{
+    color: white;
+    text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    color: rgb(255, 213, 98);
+
+}
+
+.language-and-milestone{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    animation: slide-in-right 0.5s ease-in-out;
+}
+
+.text-base{
+    text-align: left;
+    font-size: 16px;
+}
+#languages {
+    text-align: center;
+    margin-bottom: 30px;
+    width:500px;
+    background-color: #121245;
+    padding:10px 20px;
+    border-radius: 15px;
+    height:340px;
+    color:white;
+    animation: slideInRight 0.3s ease-in-out;
+}
+#language-list {
+    list-style: none;
+    text-align: center;
+    width:100%;
+    padding:0px;
+}
+
+#language-list li {
+    padding: 10px 0px;
+    display: flex;
+    width:100%;
+    gap:20px;
+    border-bottom:2px solid white;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.progress-bar-container{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+    width:300px;
+    height:20px;
+    animation: fadeIn 1s ease-in-out;
+}
+.progress-bar {
+    height: 20px;
+    background-color: #0D6EFD; 
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    animation: fadeIn 1s ease-in-out;
+}
+#milestone {
+    text-align: center;
+    margin-bottom: 30px;
+    width:500px;
+    background-color: #121245;
+    padding:10px 20px;
+    border-radius: 15px;
+    height:340px;
+    color:white;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    width:150px;
+    margin: 50px 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    width:300px;
+}
+
+.legend span::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: currentColor; /* This will be set dynamically */
+}
+
+/* Footer stays at the bottom */
+.footer {
+    background-color: #121245;
+    /* Dark blue for footer */
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#footer-link {
+    color: white
+}
+
+button#toggle-languages {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #1a1a5e;
+    /* Dark blue button */
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slideInRight 1s ease-in-out;
+}
+
+button#toggle-languages:hover {
+    background-color: #2a2a7e;
+    /* Lighter blue on hover */
+}
+
+#repo-list {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#directories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.card {
+    background: #121245;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+.card h3{
+    color:white;
+}
+.card-languages{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(100% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: clamp(0.375rem, 0.2159rem + 1.2727vw, 1.25rem);
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.card-languages h3{
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card-languages:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .btn-view-repo {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #1a1a5e;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.card .btn-view-repo:hover {
+    background-color: #2a2a7e;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 #contributors {
@@ -185,20 +579,6 @@
     z-index: 100;
     animation: fadeIn 1s ease-in-out;
 }
-
-.chatbot-button .floating {  
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
-    to   { transform: translate(0, -0px); }    
-}
-
 
 /* Chatbox */
 .chatbot {
@@ -372,25 +752,24 @@
 #milestones-progress {
     margin: 50px 0;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
 #milestones-progress h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
     animation: slideInRight 1s ease-in-out;
 }
 
 .milestones-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
 }
 
 .milestone-card {
-    background-color: rgb(87, 251, 248);
+    background-color: #121245;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -404,19 +783,19 @@
 }
 
 .milestone-card h3 {
-    color: #333;
+    color: white;
     font-size: 1.25em;
     margin-bottom: 10px;
 }
 
 .milestone-card p {
-    color: #666;
+    color: white;
     font-size: 0.9em;
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
-.progress-bar {
+.milestone-progress-bar {
     background-color: rgb(116, 243, 209);
     border-radius: 5px;
     overflow: hidden;
@@ -435,817 +814,94 @@
 @media (max-width: 600px) {
     .milestones-grid {
         grid-template-columns: 1fr;
-
-    
-    .logo-text {
-      font-size: 18px;
-      font-weight: bold;
-      color: #f1f1f1;
-
     }
-  
-  .brand-name {
-      font-size: 1.5em;
-      color: #f1f1f1;
-      margin-left: 10px;
-  }
-  
-  .nav-links {
-      list-style: none;
-      display: flex;
-      flex-grow: 1;
-      /* Makes the nav links take up available space */
-      justify-content: flex-end;
-      /* Align links to the left */
-      gap: 50px;
-      /* Adds space between each link */
-      margin-left: 20px;
-      right: 10px;
-      /* Adjust this value for the gap between logo and links */
-  }
-  
-  .nav-links a {
-      text-decoration: none;
-      color: #f1f1f1;
-      font-weight: bold;
-      white-space: nowrap;
-      /* Prevents wrapping of links */
-  }
-  
-  .nav-links a img{
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      filter: brightness(0) invert(1);
-      margin-top: -5px;
-  }
-  
-  .nav-links a:hover {
-      text-decoration: underline;
-  }
-  
-  main {
-      padding: 20px;
-      flex: 1;
-      animation: fadeIn 1s ease-in-out;
-      /* Makes main content take up the remaining space */
-  }
-  
-  
-  .welcome-section {
-      text-align: center;
-      margin-bottom: 30px;
-      color:white;
-  }
-  
-  
-  h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  p {
-      font-size: 1.2em;
-      line-height: 1.6;
-  }
-  
-  button#toggle-stats {
-      display: block;
-      margin: 0 auto 20px auto;
-      padding: 10px 20px;
-      font-size: 1.1em;
-      background-color: #1a1a5e;
-      /* Dark blue button */
-      color: #f1f1f1;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  button#toggle-stats:hover {
-      background-color: #2a2a7e;
-  }
-  
-  #statistics-cards {
-      display: none;
-      text-align: center;
-      animation: slideInRight 0.3s ease-in-out;
-  }
-  
-  .stats-grid {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-  }
-  
-  .stat-card {
-      background-color:#121245; 
-      /* background: linear-gradient(130deg, #473eed, #04004c); */
-      padding: 20px;
-      border-radius: 8px;
-      width: 150px;
-      text-align: center;
-      margin-bottom: 20px;
-      color: #fff;
-      text-shadow: 0.5px 0.5px 1px rgb(0, 10, 150), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
-      transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-      animation: slideInRight 0.3s ease-in-out;
-  }
-  
-  .stat-card:hover {
-      /* background-color: #1a1d29; */
-      background: linear-gradient(135deg, #090293, #040054);
-      /* background: linear-gradient(135deg, #473eed, #04004c); */
-      transform: scale(1.05);
-      text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
-      cursor: pointer;
-  }
-  
-  
-  .stat-card h3 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-  }
-  
-  .stat-card p {
-      font-size: 18px;
-      color: rgb(243, 206, 1);
-      text-shadow: none;
-      font-weight: 500;
-  }
-  
-  .stat-icon {
-      font-size: 2.7em;
-      margin-bottom: 10px;
-      color: rgb(255, 255, 255);
-      text-shadow: none;
-      transition: all 0.3s ease-in-out;
-  }
-  
-  
-  .stat-card:hover h3 {
-      color: #ffffff;
-  }
-  .stat-card:hover p {
-      color: yellow;
-      font-weight: 500;
-  
-  }
-  
-  .stat-card:hover .stat-icon 
-  {
-      color: white;
-      text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
-      color: rgb(255, 213, 98);
-  
-  }
-  
-  .language-and-milestone{
-      display: flex;
-      gap:20px;
-      justify-content: center;
-      align-items: center;
-      animation: slide-in-right 0.5s ease-in-out;
-  }
-  
-  .text-base{
-      text-align: left;
-      font-size: 16px;
-  }
-  #languages {
-      text-align: center;
-      margin-bottom: 30px;
-      width:500px;
-      background-color: #121245;
-      padding:10px 20px;
-      border-radius: 15px;
-      height:340px;
-      color:white;
-      animation: slideInRight 0.3s ease-in-out;
-  }
-  #language-list {
-      list-style: none;
-      text-align: center;
-      width:100%;
-      padding:0px;
-  }
-  
-  #language-list li {
-      padding: 10px 0px;
-      display: flex;
-      width:100%;
-      gap:20px;
-      border-bottom:2px solid white;
-      justify-content: space-between;
-      font-size: 16px;
-      font-weight: 600;
-  }
-  
-  .progress-bar-container{
-      background-color: whitesmoke;
-      border-radius: 8px;
-      overflow: hidden;
-      width:300px;
-      height:20px;
-      animation: fadeIn 1s ease-in-out;
-  }
-  .progress-bar {
-      height: 20px;
-      background-color: #0D6EFD; 
-      width: 300px;
-      text-align: left;
-      display: flex;
-      flex-wrap: nowrap;
-      font-size: 12px;
-      justify-content: center;
-      align-items: center;
-      color:white;
-      animation: fadeIn 1s ease-in-out;
-  }
-  #milestone {
-      text-align: center;
-      margin-bottom: 30px;
-      width:500px;
-      background-color: #121245;
-      padding:10px 20px;
-      border-radius: 15px;
-      height:340px;
-      color:white;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  .chart-container {
-      display: flex;
-      align-items: center;
-      width:150px;
-      margin: 50px 20px;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  .legend {
-      display: flex;
-      flex-direction: column;
-      margin-left: 20px;
-      font-size: 14px;
-  }
-  
-  .legend span {
-      display: flex;
-      align-items: center;
-      margin-bottom: 8px;
-      width:300px;
-  }
-  
-  .legend span::before {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
-      border-radius: 50%;
-      background-color: currentColor; /* This will be set dynamically */
-  }
-  
-  /* Footer stays at the bottom */
-  .footer {
-      background-color: #121245;
-      /* Dark blue for footer */
-      color: #f1f1f1;
-      padding: 20px;
-      text-align: center;
-      margin-top: auto;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  #footer-link {
-      color: white
-  }
-  
-  button#toggle-languages {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      font-size: 1.1em;
-      background-color: #1a1a5e;
-      /* Dark blue button */
-      color: #f0f0f0;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  button#toggle-languages:hover {
-      background-color: #2a2a7e;
-      /* Lighter blue on hover */
-  }
-  
-  #repo-list {
-      margin: 20px auto;
-      max-width: 1200px;
-      padding: 0 20px;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  #directories {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      list-style-type: none;
-      padding: 0;
-      margin-top: 50px;
-      margin-bottom: 100px;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  .card {
-      background: #121245;
-      /* border: 1px solid #ddd; */
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      flex: 1 1 calc(33.333% - 20px);
-      max-width: calc(33.333% - 20px);
-      padding: 20px;
-      box-sizing: border-box;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  .card-languages{
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      flex: 1 1 calc(100% - 20px);
-      padding: 20px;
-      box-sizing: border-box;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      font-size: clamp(0.375rem, 0.2159rem + 1.2727vw, 1.25rem);
-      max-width: 100%;
-      margin-bottom: 20px;
-  }
-  
-  .card-languages h3{
-      text-align: center;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  .card-languages:hover{
-      transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card .btn-view-repo {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      color: white;
-      background-color: #1a1a5e;
-      text-decoration: none;
-      border-radius: 0.25rem;
-      font-size: 0.875rem;
-  }
-  
-  .card .btn-view-repo:hover {
-      background-color: #2a2a7e;
-  }
-  
-  
-  @media (max-width: 768px) {
-      .card {
-          flex: 1 1 calc(50% - 20px);
-          max-width: calc(50% - 20px);
-      }
-  }
-  
-  @media (max-width: 480px) {
-      .card {
-          flex: 1 1 100%;
-          max-width: 100%;
-      }
-  }
-  
-  #contributors {
-      padding: 40px;
-      background-color: #0a0a2e;
-      text-align: center;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  #contributors h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: white;
-  }
-  
-  /* Container for contributors grid */
-  #contributors-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px; /* Reduced space between contributors */
-      justify-content: center;
-      padding: 20px; /* Padding around the grid */
-      background: linear-gradient(135deg, #121245, #121245); /* Subtle gradient background */
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  /* Styling for individual contributor div */
-  .contributor {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      max-width: 180px; /* Adjusted width for better visuals */
-      border: none; /* Remove default border */
-      border-radius: 15px; /* More rounded corners */
-      padding: 15px;
-      background: #0b0b38; /* White background */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
-      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  .contributor:hover {
-      transform: translateY(-8px); /* Slight lift effect on hover */
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-  }
-  
-  /* Styling for contributor's image */
-  .contributor-image {
-      width: 110px; /* Adjusted size */
-      height: 110px; /* Adjusted size */
-      border-radius: 50%; /* Circular image */
-      object-fit: cover; /* Ensure image covers area without distortion */
-      border: 3px solid #0366d6; /* Border around the image */
-      transition: border-color 0.3s ease; /* Smooth border color change */
-  }
-  
-  .contributor-image:hover {
-      border-color: #024c8c; /* Darker border color on hover */
-  }
-  
-  /* Styling for the GitHub profile link */
-  .contributor-info {
-      margin-top: 10px; /* Adjusted space between image and link */
-  }
-  
-  .contributor-github {
-      text-decoration: none;
-      color: white; /* GitHub blue color */
-      font-size: 14px; /* Slightly smaller font size */
-      font-weight: bold; /* Bold font */
-      background: linear-gradient(135deg, #1f1f65, #3c3c99); /* Gradient background */
-      padding: 8px 12px; /* Adjusted padding around the link */
-      border-radius: 20px; /* Rounded button shape */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for button */
-      transition: background 0.3s ease, color 0.3s ease; /* Smooth transition effects */
-  }
-  
-  .contributor-github:hover {
-      background: #0366d6; /* Darker background on hover */
-      color: #ffffff; /* White text color on hover */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-  }
-  
-  /* Styling for the heading with class 'contri-heading' */
-  .contri-heading {
-      font-size: 2.5rem; /* Increase font size */
-      font-weight: 900; /* Bold font weight */
-      color: white; /* Dark color for better contrast */
-      animation: fadeIn 1s ease-in-out;
-     
-  }
-  
-  /* Chatbot button */
-  .chatbot-button {
-      position: fixed;
-      bottom: 25px;
-      right: 35px;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      font-size: 24px;
-      z-index: 100;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  /* Chatbox */
-  .chatbot {
-      display: none;
-      flex-direction: column;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      bottom: 35px;
-      right: 55px;
-      width: 400px;
-      z-index: 1000;
-      transition: all 0.3s ease;
-      max-height: 600px; /* Adjust as needed */
-      overflow: hidden;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  .chatbot.active {
-      display: flex;
-  }
-  
-  .chatbot-header {
-      background-color: #1a1a5e;
-      color: rgb(255, 250, 250);
-      padding: 15px;
-      border-radius: 8px 8px 0 0;
-      font-size: 16px;
-      font-weight: bold;
-      position: relative;
-  }
-  
-  .chatbot-header .close-btn {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      cursor: pointer;
-      font-size: 20px;
-  }
-  
-  .chatbot-messages {
-      flex-grow: 1;
-      overflow-y: auto;
-      padding: 10px;
-      animation: fadeIn 1s ease-in-out;
-  }
-  
-  .message {
-      margin-bottom: 10px;
-  }
-  
-  .message.bot {
-      text-align: left;
-  }
-  
-  .message.user {
-      text-align: right;
-  }
-  
-  .message .message-text {
-      display: inline-block;
-      padding: 10px;
-      border-radius: 10px;
-      max-width: 80%;
-  }
-  
-  .message.bot .message-text {
-      background-color: #0075fa;
-  }
-  
-  .message.user .message-text {
-      background-color: #0075fa;
-      color: rgb(255, 254, 254);
-      word-wrap: break-word;
-  }
-  
-  .chatbot-questions {
-      padding: 15px;
-      background-color: #dddcdc;
-      color:#000;
-  }
-  
-  .chatbot-questions p {
-      font-size: 14px;
-      margin-bottom: 10px;
-  }
-  
-  .chatbot-questions ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-  }
-  
-  .chatbot-questions li {
-      background-color: rgba(244, 246, 252, 0.5);
-      padding: 10px 15px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  }
-  #question-list {
-      max-height: 200px; /* Adjust height as needed */
-      overflow-y: auto;  /* Enable vertical scrolling */
-      padding: 10px;
-      border: 1px solid #ccc;
-  }
-  
-  .chatbot-questions li:hover {
-      background-color: #2f3a57;
-      color: rgb(255, 255, 255);
-  }
-  
-  .chatbot-input-container {
-      display: flex;
-      padding: 15px;
-      background-color: #f9f9f9;
-      border-top: 1px solid #0f0a0a;
-  }
-  
-  .chatbot-input-container input {
-      flex-grow: 1;
-      padding: 8px;
-      border: 1px solid #f8f2f2;
-      border-radius: 8px;
-  }
-  
-  .chatbot-input-container button {
-      padding: 8px 15px;
-      margin-left: 10px;
-      border: none;
-      background-color: #2f3a57;
-      color: rgb(252, 251, 251);
-      border-radius: 8px;
-      cursor: pointer;
-  }
-  
-  .chatbot-input-container button:hover {
-      background-color: #40486b;
-  }
-  
-   /* Styles for the go to top button */
-   #go-to-top {
-      display: none;
-      position: fixed;
-      bottom: 50px;
-      right: -50px;
-      width: 150px;
-      height: 30px;
-      background: none;
-      transform: rotate(-90deg);
-      color: rgb(75, 44, 228);
-      border: none;
-      font-size: 24px;
-      text-align: center;
-      line-height: 50px;
-      cursor: pointer;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      z-index: 1000;
-      animation: slideInRight 0.5s ease-in-out;
-  }
-  
-  #go-to-top:hover {
-      color: black;
-      opacity: 0.9;
-  }
-  
-  
-  /* Milestones Progress Section */
-  #milestones-progress {
-      margin: 50px 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-  }
-  
-  #milestones-progress h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #333;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  .milestones-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-  }
-  
-  .milestone-card {
-      background-color: rgb(87, 251, 248);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-left: 5px solid #054ffd;
-      transition: transform 0.3s ease;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  .milestone-card:hover {
-      transform: translateY(-5px);
-  }
-  
-  .milestone-card h3 {
-      color: #333;
-      font-size: 1.25em;
-      margin-bottom: 10px;
-  }
-  
-  .milestone-card p {
-      color: #666;
-      font-size: 0.9em;
-      margin-bottom: 15px;
-      line-height: 1.5;
-  }
-  
-  .progress-bar {
-      background-color: rgb(116, 243, 209);
-      border-radius: 5px;
-      overflow: hidden;
-      margin-bottom: 10px;
-      height: 8px;
-      animation: slideInRight 1s ease-in-out;
-  }
-  
-  .progress {
-      height: 100%;
-      background-color: #0366d6;
-      transition: width 0.4s ease;
-  }
-  
-  /* Optional: Media Query for Responsive Design */
-  @media (max-width: 600px) {
-      .milestones-grid {
-          grid-template-columns: 1fr;
-      }
-  }
-  
-  
-  /* Dark Mode Styles */
-  body.dark-mode {
-      background-color: #121245; 
-      color: #f1f1f1; 
-  }
-  
-  .dark-mode .navbar {
-      background-color: #000; 
-  }
-  
-  .dark-mode .nav-links a {
-      color: #fff;
-  }
-  
-  .dark-mode .welcome-title {
-      color: #fff; 
-  }
-  
-  .dark-mode .highlight {
-      color: #fff; 
-  }
-  
-  .dark-mode .stat-card {
-      background-color: #212148;
-  }
-  
-  .dark-mode .stat-card h3 {
-      color: #fff;
-  }
-  
-  .dark-mode .stat-card p {
-      color: rgb(255, 213, 98);
-  }
-  
-  .dark-mode .stat-icon {
-      color: #fff;
-  }
-  
-  .dark-mode .stat-card:hover {
-      background-color: #151537;
-  }
-  
-  .dark-mode .stat-card:hover .stat-icon{
-      color: #fff;
-  }
-  
-  
-  #toggle-dark-mode {
-      background: none;
-      border: none;
-      color: #f1f1f1;
-      cursor: pointer;
-      font-size: 1.2em;
-      transition: color 0.3s ease;
-  }
-  
-  .dark-mode .welcome-section a{
-      color: #cfd9e5;
-  }
-  
-  #toggle-dark-mode i {
-      font-size: 1.5em;
-  }
-  
-  #toggle-dark-mode:hover {
-      color: #fff;
-  }
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color:#f4f4f4; 
+}
+
+.dark-mode .nav-links a {
+    color:#fff;
+}
+
+.dark-mode h2{
+    color:black;
+}
+.dark-mode .card h3{
+    color:black;
+}
+.dark-mode .welcome-section span{
+    color:rgb(3, 3, 122);
+}
+.dark-mode .welcome-section p{
+    color:black;
+}
+.dark-mode .highlight {
+    color: black; 
+}
+
+.dark-mode .stat-card {
+    background-color: #050066; 
+}
+.dark-mode .contri-heading{
+    color:black;
+}
+
+
+#toggle-dark-mode {
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+.dark-mode #languages{
+    background-color: #fff;
+    color: black;
+}
+.dark-mode #milestone{
+    background-color: #fff;
+    color:black;
+}
+.dark-mode .card{
+    background-color: #fff;
+}
+.dark-mode #milestone{
+    background-color: #fff;
+    color:black;
+}
+.dark-mode #contributors{
+    background-color: #f9f9f9;
+}
+.dark-mode #contributors h2{
+    color: #333;
+}
+.dark-mode #contributors-grid{
+    background: linear-gradient(135deg, #f0f4f8, #cfd9e5);
+}
+
+.dark-mode .contributor-github {
+    background: linear-gradient(135deg, #f0f4f8, #cfd9e5);
+    color: #0366d6;
+}
+.dark-mode .contributor{
+    background: #ffffff;
+}
+
+.dark-mode #milestones-progress h2 {
+    color: black;
+}
+
+.dark-mode .milestone-card {
+    background-color: white;
+}
+.dark-mode .milestone-card h3{
+    color:black;
+}
+.dark-mode .milestone-card p{
+    color:black;
+}
