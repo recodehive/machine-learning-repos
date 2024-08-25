@@ -42,11 +42,8 @@ body {
     background-color: #0a0a2e; 
     font-family: 'Arial', sans-serif;
     display: flex;
-    flex-direction: column;
-    color:white;
-    
+    flex-direction: column;  
 }
-
 header {
     background-color: #121245;
     padding: 10px 20px;
@@ -140,11 +137,13 @@ h2 {
     font-size: 2em;
     margin-bottom: 20px;
     animation: slideInRight 1s ease-in-out;
+    color:white;
 }
 
 p {
     font-size: 1.2em;
     line-height: 1.6;
+    color:white;
 }
 
 button#toggle-stats {
@@ -411,7 +410,9 @@ button#toggle-languages:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 1s ease-in-out;
 }
-
+.card h3{
+    color:white;
+}
 .card-languages{
     background: #fff;
     border: 1px solid #ddd;
@@ -751,25 +752,24 @@ button#toggle-languages:hover {
 #milestones-progress {
     margin: 50px 0;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
 #milestones-progress h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
     animation: slideInRight 1s ease-in-out;
 }
 
 .milestones-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
 }
 
 .milestone-card {
-    background-color: rgb(87, 251, 248);
+    background-color: #121245;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -783,19 +783,19 @@ button#toggle-languages:hover {
 }
 
 .milestone-card h3 {
-    color: #333;
+    color: white;
     font-size: 1.25em;
     margin-bottom: 10px;
 }
 
 .milestone-card p {
-    color: #666;
+    color: white;
     font-size: 0.9em;
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
-.progress-bar {
+.milestone-progress-bar {
     background-color: rgb(116, 243, 209);
     border-radius: 5px;
     overflow: hidden;
@@ -820,48 +820,34 @@ button#toggle-languages:hover {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121245; 
-    color: #f1f1f1; 
-}
-
-.dark-mode .navbar {
-    background-color: #000; 
+    background-color:#f4f4f4; 
 }
 
 .dark-mode .nav-links a {
-    color: #fff;
+    color:#fff;
 }
 
-.dark-mode .welcome-title {
-    color: #fff; 
+.dark-mode h2{
+    color:black;
 }
-
+.dark-mode .card h3{
+    color:black;
+}
+.dark-mode .welcome-section span{
+    color:rgb(3, 3, 122);
+}
+.dark-mode .welcome-section p{
+    color:black;
+}
 .dark-mode .highlight {
-    color: #fff; 
+    color: black; 
 }
 
 .dark-mode .stat-card {
-    background-color: #212148;
+    background-color: #050066; 
 }
-
-.dark-mode .stat-card h3 {
-    color: #fff;
-}
-
-.dark-mode .stat-card p {
-    color: rgb(255, 213, 98);
-}
-
-.dark-mode .stat-icon {
-    color: #fff;
-}
-
-.dark-mode .stat-card:hover {
-    background-color: #151537;
-}
-
-.dark-mode .stat-card:hover .stat-icon{
-    color: #fff;
+.dark-mode .contri-heading{
+    color:black;
 }
 
 
@@ -873,18 +859,49 @@ body.dark-mode {
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
-
-.dark-mode .welcome-section a{
-    color: #cfd9e5;
+.dark-mode #languages{
+    background-color: #fff;
+    color: black;
+}
+.dark-mode #milestone{
+    background-color: #fff;
+    color:black;
+}
+.dark-mode .card{
+    background-color: #fff;
+}
+.dark-mode #milestone{
+    background-color: #fff;
+    color:black;
+}
+.dark-mode #contributors{
+    background-color: #f9f9f9;
+}
+.dark-mode #contributors h2{
+    color: #333;
+}
+.dark-mode #contributors-grid{
+    background: linear-gradient(135deg, #f0f4f8, #cfd9e5);
 }
 
-#toggle-dark-mode i {
-    font-size: 1.5em;
+.dark-mode .contributor-github {
+    background: linear-gradient(135deg, #f0f4f8, #cfd9e5);
+    color: #0366d6;
+}
+.dark-mode .contributor{
+    background: #ffffff;
 }
 
-#toggle-dark-mode:hover {
-    color: #fff;
+.dark-mode #milestones-progress h2 {
+    color: black;
 }
 
-
-
+.dark-mode .milestone-card {
+    background-color: white;
+}
+.dark-mode .milestone-card h3{
+    color:black;
+}
+.dark-mode .milestone-card p{
+    color:black;
+}
