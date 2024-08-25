@@ -546,7 +546,7 @@ button#toggle-languages:hover {
 
 .chatbot-header {
     background-color: #1a1a5e;
-    color: white;
+    color: rgb(255, 250, 250);
     padding: 15px;
     border-radius: 8px 8px 0 0;
     font-size: 16px;
@@ -588,18 +588,18 @@ button#toggle-languages:hover {
 }
 
 .message.bot .message-text {
-    background-color: #f1f1f1;
+    background-color: #d1d0d0;
 }
 
 .message.user .message-text {
     background-color: #1a1a5e;
-    color: white;
+    color: rgb(254, 252, 252);
     word-wrap: break-word;
 }
 
 .chatbot-questions {
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: #f4f1f1;
 }
 
 .chatbot-questions p {
@@ -616,29 +616,35 @@ button#toggle-languages:hover {
 }
 
 .chatbot-questions li {
-    background-color: #f1f1f1;
+    background-color: #e8e5e5;
     padding: 10px 15px;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+#question-list {
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
 
 .chatbot-questions li:hover {
     background-color: #2f3a57;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .chatbot-input-container {
     display: flex;
     padding: 15px;
     background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #0f0a0a;
 }
 
 .chatbot-input-container input {
     flex-grow: 1;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #f8f2f2;
     border-radius: 8px;
 }
 
@@ -647,7 +653,7 @@ button#toggle-languages:hover {
     margin-left: 10px;
     border: none;
     background-color: #2f3a57;
-    color: white;
+    color: rgb(252, 251, 251);
     border-radius: 8px;
     cursor: pointer;
 }
@@ -750,34 +756,6 @@ button#toggle-languages:hover {
 }
 
 
-/* Loading Animation CSS */
-.loading-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-    z-index: 1000;
-}
-
-.loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #121245; 
@@ -845,7 +823,6 @@ body.dark-mode {
 #toggle-dark-mode:hover {
     color: #fff;
 }
-
 
 
 
