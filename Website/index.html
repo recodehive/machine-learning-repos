@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="logo.png" type="image/png"> <!-- Added favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="loading-container" id="loading-animation">
+        <div class="loader"></div>
+    </div>
     <header>
         <nav class="navbar">
             <div class="logo-container">
@@ -26,21 +30,21 @@
                         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="25" height="25"> <!-- GitHub Icon -->
                     </a>
                 </li>
+                <li>
+                    <button id="toggle-dark-mode">
+                        <i class="fas fa-moon"></i> 
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="welcome-section">
-            <div class="container">
-                <div>
-                    <div>
-                        <h1 class="welcome-title">Welcome to <span class="highlight">Machine Learning Repositories</span></h1>
-                        <p class="welcome-description">Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the <span> <a href="https://github.com/recodehive"> RecodeHive </a></span>community.</p>
-                    </div>
-                </div>
-            </div>
+            <h2>Welcome to the Machine Learning Repositories</h2>
+            <p>Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community.</p>
         </section>
+
 
         <!-- Toggle button for Repository Statistics -->
         <section>
@@ -84,11 +88,22 @@
         </div>
     </section>
 
-        <!-- Languages -->
+    <!-- Languages and Milestone-->
+         
+    <section class="language-and-milestone">
         <section id="languages">
-            <h2>Languages Used</h2>
+            <div class="text-base">Languages</div>
             <ul id="language-list"></ul>
         </section>
+        <section id="milestone">
+            <div class="text-base">Milestones Progress</div>
+            <div class="chart-container">
+                <canvas id="milestoneChart"></canvas>
+                <div class="legend">
+                </div>
+            </div>                 
+        </section>
+     </section>
 
         <section id="repo-list">
             <h2>Repositories</h2>
