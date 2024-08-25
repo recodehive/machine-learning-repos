@@ -3,6 +3,7 @@ import fetch from 'node-fetch';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import router from './route.js'
 
 dotenv.config();
 
@@ -13,10 +14,31 @@ const app = express();
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../')));
+app.get('/api/github/repos/subdir', async (req, res) => {
+    const dirName = req.query.dir;
+    if (!dirName) {
+        return res.status(400).json({ error: "Directory name is required" });
+    }
 
-app.get('/welcome', (req, res) => {
-    res.send('Welcome to the Machine Learning Repos API!');
+    try {
+        const response = await fetch(`https://api.github.com/repos/recodehive/machine-learning-repos/contents/${dirName}`, {
+            headers: {
+                Authorization: `Bearer ${GITHUB_TOKEN}`, 
+            },
+        });
+        if (!response.ok) {
+            const errorDetails = await response.text();
+            throw new Error(`GitHub API error: ${response.status} - ${response.statusText}: ${errorDetails}`);
+        }
+
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error(`Error fetching GitHub subdirectory contents for ${dirName}:`, error);
+        res.status(500).json({ error: error.message });
+    }
 });
+
 app.get('/api/github/repos', async (req, res) => {
     try {
         const response = await fetch('https://api.github.com/repos/recodehive/machine-learning-repos/contents/', {
@@ -36,9 +58,11 @@ app.get('/api/github/repos', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../index.html'));
+// });
+app.use(router);    // using router for navigation routes
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });

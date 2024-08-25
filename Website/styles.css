@@ -7,14 +7,15 @@ body {
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #0a0a2e; 
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
+    color:white;
 }
 
 header {
-    background-color: #333;
+    background-color: #121245;
     padding: 10px 20px;
 }
 
@@ -73,32 +74,9 @@ main {
 .welcome-section {
     text-align: center;
     margin-bottom: 30px;
+    color:white;
 }
 
-.welcome-title {
-    font-size: 37px;
-}
-
-.welcome-description {
-    font-size : 22px;
-    width:60%;
-    margin: auto;
-}
-
-.welcome-description a { 
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
-.welcome-description a:hover { 
-    text-decoration: underline;
-    cursor: pointer;
-}
-.highlight {
-    color: rgb(3, 3, 122);
-    text-shadow: rgb(183, 189, 248) 1px 0 10px;
-}
 
 h2 {
     font-size: 2em;
@@ -140,7 +118,7 @@ button#toggle-stats:hover {
 }
 
 .stat-card {
-    background-color: #050066; 
+    background-color:#121245; 
     /* background: linear-gradient(130deg, #473eed, #04004c); */
     padding: 20px;
     border-radius: 8px;
@@ -148,7 +126,7 @@ button#toggle-stats:hover {
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
-    text-shadow: 1px 1px 2px rgb(0, 10, 150), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    text-shadow: 0.5px 0.5px 1px rgb(0, 10, 150), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
     transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
@@ -199,28 +177,106 @@ button#toggle-stats:hover {
     color: rgb(255, 213, 98);
 
 }
+
+.language-and-milestone{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-base{
+    text-align: left;
+    font-size: 16px;
+}
 #languages {
     text-align: center;
     margin-bottom: 30px;
+    width:500px;
+    background-color: #121245;
+    padding:10px 20px;
+    border-radius: 15px;
+    height:340px;
+    color:white;
 }
-
 #language-list {
     list-style: none;
-    padding: 0;
-    display: inline-block;
     text-align: center;
-    column-count: 4;
-    /* Adjust this value to increase or decrease the number of columns */
-    column-gap: 40px;
-    /* Space between columns */
+    width:100%;
+    padding:0px;
 }
 
 #language-list li {
-    margin: 10px 0;
-    text-align: left;
-    /* Align text to the left within each column */
+    padding: 10px 0px;
+    display: flex;
+    width:100%;
+    gap:20px;
+    border-bottom:2px solid white;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
 }
 
+.progress-bar-container{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+    width:300px;
+    height:20px;
+}
+.progress-bar {
+    height: 20px;
+    background-color: #0D6EFD; 
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+#milestone {
+    text-align: center;
+    margin-bottom: 30px;
+    width:500px;
+    background-color: #121245;
+    padding:10px 20px;
+    border-radius: 15px;
+    height:340px;
+    color:white;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    width:150px;
+    margin: 50px 20px;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    width:300px;
+}
+
+.legend span::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: currentColor; /* This will be set dynamically */
+}
 
 /* Footer stays at the bottom */
 .footer {
@@ -243,7 +299,7 @@ button#toggle-languages {
     font-size: 1.1em;
     background-color: #1a1a5e;
     /* Dark blue button */
-    color: #f1f1f1;
+    color: #f0f0f0;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -272,8 +328,8 @@ button#toggle-languages:hover {
 }
 
 .card {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #121245;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33.333% - 20px);
@@ -342,14 +398,14 @@ button#toggle-languages:hover {
 
 #contributors {
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: #0a0a2e;
     text-align: center;
 }
 
 #contributors h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
 }
 
 /* Container for contributors grid */
@@ -359,7 +415,7 @@ button#toggle-languages:hover {
     gap: 20px; /* Reduced space between contributors */
     justify-content: center;
     padding: 20px; /* Padding around the grid */
-    background: linear-gradient(135deg, #f0f4f8, #cfd9e5); /* Subtle gradient background */
+    background: linear-gradient(135deg, #121245, #121245); /* Subtle gradient background */
 }
 
 /* Styling for individual contributor div */
@@ -372,7 +428,7 @@ button#toggle-languages:hover {
     border: none; /* Remove default border */
     border-radius: 15px; /* More rounded corners */
     padding: 15px;
-    background: #ffffff; /* White background */
+    background: #0b0b38; /* White background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
 }
@@ -403,10 +459,10 @@ button#toggle-languages:hover {
 
 .contributor-github {
     text-decoration: none;
-    color: #0366d6; /* GitHub blue color */
+    color: white; /* GitHub blue color */
     font-size: 14px; /* Slightly smaller font size */
     font-weight: bold; /* Bold font */
-    background: linear-gradient(135deg, #f0f4f8, #cfd9e5); /* Gradient background */
+    background: linear-gradient(135deg, #1f1f65, #3c3c99); /* Gradient background */
     padding: 8px 12px; /* Adjusted padding around the link */
     border-radius: 20px; /* Rounded button shape */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for button */
@@ -423,7 +479,7 @@ button#toggle-languages:hover {
 .contri-heading {
     font-size: 2.5rem; /* Increase font size */
     font-weight: 900; /* Bold font weight */
-    color: #2c3e50; /* Dark color for better contrast */
+    color: white; /* Dark color for better contrast */
    
 }
 
@@ -602,6 +658,7 @@ button#toggle-languages:hover {
     opacity: 0.9;
 }
 
+
 /* Milestones Progress Section */
 #milestones-progress {
     margin: 50px 0;
@@ -668,3 +725,104 @@ button#toggle-languages:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Loading Animation CSS */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    z-index: 1000;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121245; 
+    color: #f1f1f1; 
+}
+
+.dark-mode .navbar {
+    background-color: #000; 
+}
+
+.dark-mode .nav-links a {
+    color: #fff;
+}
+
+.dark-mode .welcome-title {
+    color: #fff; 
+}
+
+.dark-mode .highlight {
+    color: #fff; 
+}
+
+.dark-mode .stat-card {
+    background-color: #212148;
+}
+
+.dark-mode .stat-card h3 {
+    color: #fff;
+}
+
+.dark-mode .stat-card p {
+    color: rgb(255, 213, 98);
+}
+
+.dark-mode .stat-icon {
+    color: #fff;
+}
+
+.dark-mode .stat-card:hover {
+    background-color: #151537;
+}
+
+.dark-mode .stat-card:hover .stat-icon{
+    color: #fff;
+}
+
+
+#toggle-dark-mode {
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .welcome-section a{
+    color: #cfd9e5;
+}
+
+#toggle-dark-mode i {
+    font-size: 1.5em;
+}
+
+#toggle-dark-mode:hover {
+    color: #fff;
+}
+
+
+
+
