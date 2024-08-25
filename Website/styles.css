@@ -1,3 +1,35 @@
+/* General fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Slide-In Animations */
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.slide-in-right {
+    animation: slide-in-right 0.5s ease-out;
+}
+
+
 /* Ensure full height of the body and remove margin/padding */
 html,
 body {
@@ -12,11 +44,13 @@ body {
     display: flex;
     flex-direction: column;
     color:white;
+    
 }
 
 header {
     background-color: #121245;
     padding: 10px 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .navbar {
@@ -90,6 +124,7 @@ header {
 main {
     padding: 20px;
     flex: 1;
+    animation: fadeIn 1s ease-in-out;
     /* Makes main content take up the remaining space */
 }
 
@@ -104,6 +139,7 @@ main {
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    animation: slideInRight 1s ease-in-out;
 }
 
 p {
@@ -122,6 +158,7 @@ button#toggle-stats {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    animation: slideInRight 1s ease-in-out;
 }
 
 button#toggle-stats:hover {
@@ -131,6 +168,7 @@ button#toggle-stats:hover {
 #statistics-cards {
     display: none;
     text-align: center;
+    animation: slideInRight 0.3s ease-in-out;
 }
 
 .stats-grid {
@@ -151,6 +189,7 @@ button#toggle-stats:hover {
     color: #fff;
     text-shadow: 0.5px 0.5px 1px rgb(0, 10, 150), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
     transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    animation: slideInRight 0.3s ease-in-out;
 }
 
 .stat-card:hover {
@@ -206,6 +245,7 @@ button#toggle-stats:hover {
     gap:20px;
     justify-content: center;
     align-items: center;
+    animation: slide-in-right 0.5s ease-in-out;
 }
 
 .text-base{
@@ -221,6 +261,7 @@ button#toggle-stats:hover {
     border-radius: 15px;
     height:340px;
     color:white;
+    animation: slideInRight 0.3s ease-in-out;
 }
 #language-list {
     list-style: none;
@@ -246,6 +287,7 @@ button#toggle-stats:hover {
     overflow: hidden;
     width:300px;
     height:20px;
+    animation: fadeIn 1s ease-in-out;
 }
 .progress-bar {
     height: 20px;
@@ -258,6 +300,7 @@ button#toggle-stats:hover {
     justify-content: center;
     align-items: center;
     color:white;
+    animation: fadeIn 1s ease-in-out;
 }
 #milestone {
     text-align: center;
@@ -268,6 +311,7 @@ button#toggle-stats:hover {
     border-radius: 15px;
     height:340px;
     color:white;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .chart-container {
@@ -275,6 +319,7 @@ button#toggle-stats:hover {
     align-items: center;
     width:150px;
     margin: 50px 20px;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .legend {
@@ -309,6 +354,7 @@ button#toggle-stats:hover {
     padding: 20px;
     text-align: center;
     margin-top: auto;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #footer-link {
@@ -326,6 +372,7 @@ button#toggle-languages {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    animation: slideInRight 1s ease-in-out;
 }
 
 button#toggle-languages:hover {
@@ -337,6 +384,7 @@ button#toggle-languages:hover {
     margin: 20px auto;
     max-width: 1200px;
     padding: 0 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #directories {
@@ -348,6 +396,7 @@ button#toggle-languages:hover {
     padding: 0;
     margin-top: 50px;
     margin-bottom: 100px;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .card {
@@ -360,6 +409,7 @@ button#toggle-languages:hover {
     padding: 20px;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .card-languages{
@@ -378,6 +428,7 @@ button#toggle-languages:hover {
 
 .card-languages h3{
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .card-languages:hover{
@@ -423,6 +474,7 @@ button#toggle-languages:hover {
     padding: 40px;
     background-color: #0a0a2e;
     text-align: center;
+    animation: slideInRight 1s ease-in-out;
 }
 
 #contributors h2 {
@@ -439,6 +491,7 @@ button#toggle-languages:hover {
     justify-content: center;
     padding: 20px; /* Padding around the grid */
     background: linear-gradient(135deg, #121245, #121245); /* Subtle gradient background */
+    animation: slideInRight 1s ease-in-out;
 }
 
 /* Styling for individual contributor div */
@@ -454,6 +507,7 @@ button#toggle-languages:hover {
     background: #0b0b38; /* White background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    animation: slideInRight 1s ease-in-out;
 }
 
 .contributor:hover {
@@ -503,6 +557,7 @@ button#toggle-languages:hover {
     font-size: 2.5rem; /* Increase font size */
     font-weight: 900; /* Bold font weight */
     color: white; /* Dark color for better contrast */
+    animation: fadeIn 1s ease-in-out;
    
 }
 
@@ -521,6 +576,7 @@ button#toggle-languages:hover {
     cursor: pointer;
     font-size: 24px;
     z-index: 100;
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Chatbox */
@@ -538,6 +594,7 @@ button#toggle-languages:hover {
     transition: all 0.3s ease;
     max-height: 600px; /* Adjust as needed */
     overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .chatbot.active {
@@ -566,6 +623,7 @@ button#toggle-languages:hover {
     flex-grow: 1;
     overflow-y: auto;
     padding: 10px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .message {
@@ -680,6 +738,7 @@ button#toggle-languages:hover {
     cursor: pointer;
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 1000;
+    animation: slideInRight 0.5s ease-in-out;
 }
 
 #go-to-top:hover {
@@ -700,6 +759,7 @@ button#toggle-languages:hover {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .milestones-grid {
@@ -715,6 +775,7 @@ button#toggle-languages:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #054ffd;
     transition: transform 0.3s ease;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .milestone-card:hover {
@@ -740,6 +801,7 @@ button#toggle-languages:hover {
     overflow: hidden;
     margin-bottom: 10px;
     height: 8px;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .progress {
