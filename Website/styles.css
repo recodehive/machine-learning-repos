@@ -597,8 +597,57 @@ button#toggle-languages:hover {
     animation: fadeIn 1s ease-in-out;
 }
 
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #0D6EFD;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 9px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 70px;
+    right: -130px;
+    transform: translateX(-50%);
+    width: 270px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.chatbot-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Hided tooltip on touch devices */
+@media (hover: none) and (pointer: coarse), (max-width: 767px) {
+    .tooltip {
+        display: none;
+    }
+}
+
 .chatbot.active {
     display: flex;
+    margin-right: -18px;
+    margin-bottom: 50px;
 }
 
 .chatbot-header {
