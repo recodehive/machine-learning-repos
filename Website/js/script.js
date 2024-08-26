@@ -325,10 +325,43 @@ document.addEventListener("DOMContentLoaded", function() {
 const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
 const body = document.body;
 
+// function to apply the theme based on stored value
+function applyTheme(theme) {
+    if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        toggleDarkModeButton.querySelector('i').classList.add('fa-sun');
+        toggleDarkModeButton.querySelector('i').classList.remove('fa-moon');
+    } else {
+        body.classList.remove('dark-mode');
+        toggleDarkModeButton.querySelector('i').classList.add('fa-moon');
+        toggleDarkModeButton.querySelector('i').classList.remove('fa-sun');
+    }
+}
+
+// check for saved theme in localStorage!
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    applyTheme(savedTheme);
+} else {
+    // setting default theme to light
+    applyTheme('light');
+}
+
 toggleDarkModeButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    // Change icon based on dark mode status
+    
     const icon = toggleDarkModeButton.querySelector('i');
-    icon.classList.toggle('fa-moon');
-    icon.classList.toggle('fa-sun');
+    const isDarkMode = body.classList.contains('dark-mode');
+    
+    if (isDarkMode) {
+        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-moon');
+        // saving the theme=dark in localStorage
+        localStorage.setItem('theme', 'dark');
+    } else {
+        icon.classList.add('fa-moon');
+        icon.classList.remove('fa-sun');
+        // saving the theme=light in localStorage
+        localStorage.setItem('theme', 'light');
+    }
 });
