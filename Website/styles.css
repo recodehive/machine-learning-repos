@@ -965,3 +965,77 @@ body.dark-mode {
 .dark-mode .milestone-card p{
     color:black;
 }
+
+.testimonial-section {
+    background-color: #111151;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 350px;
+    margin: 20px;
+    background-color: #111151;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.testimonial h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* Light Mode for Testimonial Section */
+.dark-mode .testimonial-section {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dark-mode .testimonial-section h2 {
+    color: #111;
+}
+
+.dark-mode .testimonial {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .testimonial p {
+    color: #555;
+}
+
+.dark-mode .testimonial h3 {
+    color: #555;
+}
+
+.light-mode .testimonial img {
+    border: 2px solid #ddd;
+}
