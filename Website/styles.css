@@ -774,29 +774,37 @@ button#toggle-languages:hover {
 }
 
  /* Styles for the go to top button */
- #go-to-top {
-    display: none;
+
+ #scroll-top-btn {
     position: fixed;
-    bottom: 50px;
-    right: -50px;
-    width: 150px;
-    height: 30px;
-    background: none;
-    transform: rotate(-90deg);
-    color: rgb(75, 44, 228);
+    bottom: 34px;
+    left: 20px;
+    display: none; 
     border: none;
+    background: none;
+    border-radius: 50%;
+    padding: 10px;
     font-size: 24px;
-    text-align: center;
-    line-height: 50px;
+    height: 45px; 
+    width: 45px; 
     cursor: pointer;
-    transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 1000;
-    animation: slideInRight 0.5s ease-in-out;
+    transition: background-color 0.3s ease;
 }
 
-#go-to-top:hover {
-    color: black;
-    opacity: 0.9;
+.dark-mode #scroll-top-btn svg {
+    pointer-events: none; 
+    height: 45px; 
+    width: 45px; 
+    fill: rgb(0, 12, 150); 
+    
+}
+#scroll-top-btn svg {
+    pointer-events: none; 
+    height: 45px; 
+    width: 45px; 
+    fill: rgb(255, 255, 255); 
+    
 }
 
 
