@@ -965,3 +965,49 @@ body.dark-mode {
 .dark-mode .milestone-card p{
     color:black;
 }
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width if necessary */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333; /* Dark gray track (background) color */
+    border-radius: 10px; /* Rounded corners for the track */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle inner shadow for depth */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* Gray thumb (scroll handle) color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Inner shadow for a 3D effect */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000; /* Change thumb color on hover */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #333; /* thumb color | track color */
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #555;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+}
