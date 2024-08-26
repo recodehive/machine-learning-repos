@@ -6,29 +6,32 @@ const router = express.Router();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-router.get('/', (req, res) => {     // root path
-    res.sendFile(path.resolve(__dirname, '../index.html'));
+const rootDirectory = path.resolve(__dirname, '../');
+
+// Routes to serve the HTML files
+router.get('/', (req, res) => {
+    res.sendFile(path.join(rootDirectory, 'index.html'));
 });
 
 router.get('/about', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../about.html'));
+    res.sendFile(path.join(rootDirectory, 'about.html'));
 });
 
 router.get('/organization', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../organization.html'));
+    res.sendFile(path.join(rootDirectory, 'organization.html'));
 });
 
 router.get('/faq', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../faq.html'));
+    res.sendFile(path.join(rootDirectory, 'faq.html'));
 });
 
 router.get('/contact', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../contact.html'));
+    res.sendFile(path.join(rootDirectory, 'contact.html'));
 });
 
-router.get('*',(req, res) => {      // routes to handle invalid url path
-    res.status(404).sendFile(path.resolve(__dirname, '../404.html'));
-})
-
+// Handle all other routes with a 404 page
+router.get('*', (req, res) => {
+    res.status(404).sendFile(path.join(rootDirectory, '404.html'));
+});
 
 export default router;
