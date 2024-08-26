@@ -1,54 +1,65 @@
 const logo = document.getElementById('logo');
-        const gameContainer = document.getElementById('game-container');
-        const scoreDisplay = document.getElementById('score');
-        let score = 0;
+const gameContainer = document.getElementById('game-container');
+const scoreDisplay = document.getElementById('score');
+let score = 0;
+let intervalId;
 
-        function randomPosition() {
-            const containerWidth = gameContainer.offsetWidth;
-            const containerHeight = gameContainer.offsetHeight;
-            const logoWidth = logo.offsetWidth;
-            const logoHeight = logo.offsetHeight;
+function randomPosition() {
+    const containerWidth = gameContainer.offsetWidth;
+    const containerHeight = gameContainer.offsetHeight;
+    const logoWidth = logo.offsetWidth;
+    const logoHeight = logo.offsetHeight;
 
-            // Generatng random positions within the container boundary
-            const randomX = Math.floor(Math.random() * (containerWidth - logoWidth));
-            const randomY = Math.floor(Math.random() * (containerHeight - logoHeight));
+    const randomX = Math.floor(Math.random() * (containerWidth - logoWidth));
+    const randomY = Math.floor(Math.random() * (containerHeight - logoHeight));
 
-            // random positions to the logo
-            logo.style.left = `${randomX}px`;
-            logo.style.top = `${randomY}px`;
-        }
+    logo.style.left = `${randomX}px`;
+    logo.style.top = `${randomY}px`;
+}
 
-        function randomMovement() {
-            // Move the logo to a random position every 800 to 1500 milliseconds
-            setInterval(() => {
-                randomPosition();
-            }, Math.floor(Math.random() * (1500 - 800 + 1)) + 800);
-        }
+function randomMovement() {
+    const minInterval = 990;
+    const maxInterval = 1500;
 
-        logo.addEventListener('click', () => {
-            score++;
-            scoreDisplay.textContent = `Score: ${score}`;
-            randomPosition();  // change pos after being catched
-        });
+    intervalId = setInterval(() => {
+        randomPosition();
+    }, Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval);
+}
 
-        // trigger the random movement when the page loads
-        randomMovement();
+logo.addEventListener('click', () => {
+    score++;
+    scoreDisplay.textContent = `Score: ${score}`;
+    randomPosition();
+    increaseDifficulty();
+    playSound('click');
+});
 
-        // Show notification when the page loads
-        const notification = document.getElementById('notification');
-        const closeBtn = document.getElementById('close-btn');
+function increaseDifficulty() {
+    clearInterval(intervalId);
+    const newInterval = Math.max(500, 1500 - score * 10);
+    randomMovement();
+}
 
-        function showNotification() {
-            notification.classList.add('show');
-            // Auto-hide notification after 5 seconds
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 5000);
-        }
+function playSound(type) {
+    const audio = new Audio(`/sounds/${type}.mp3`);
+    audio.play();
+}
 
-        closeBtn.addEventListener('click', () => {
-            notification.classList.remove('show');
-        });
+function showNotification() {
+    const notification = document.getElementById('notification');
+    notification.classList.add('show');
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 5000);
+}
 
-        // Display the notification when the page loads
-        window.onload = showNotification;
+const closeBtn = document.getElementById('close-btn');
+closeBtn.addEventListener('click', () => {
+    const notification = document.getElementById('notification');
+    notification.classList.remove('show');
+});
+
+window.onload = () => {
+    showNotification();
+    randomMovement();
+};
