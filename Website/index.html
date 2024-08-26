@@ -16,11 +16,22 @@
                 <span class="brand-name">RecodeHive</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Organization</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+
+                <!-- Dropdown on navbar -->
+                <li class="dropdown">
+                    <button id="dropdownButton" class="dropbtn">Organization</button>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="/how-we-work">How we work?</a>
+                        <a href="/projects">Projects</a>
+                        <a href="/team">Team</a>
+                        <a href="/code-of-conduct">Code of Conduct</a>
+                    </div>
+                </li>
+
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li>
                     <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
                         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="25" height="25"> <!-- GitHub Icon -->
