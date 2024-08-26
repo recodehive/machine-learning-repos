@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machine Learning Repositories</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png" type="image/png"> <!-- Added favicon -->
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body class="dark-mode">
+    <div class="loading-container" id="loading-animation">
+        <div class="loader"></div>
+    </div>
     <header>
         <nav class="navbar">
-            <div class="logo-container">
-                <img src="logo-bg.png" alt="RecodeHive Logo" width="50" height="50"> <!-- Added logo to navbar -->
-                <span class="brand-name">RecodeHive</span>
-            </div>
+            <a class="logo-container" href="/">
+                <img src="assets/recode-hive.png" alt="Recode Hive Icon" class="logo-icon">
+                <span class="logo-text">Recode Hive</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
+
 
                 <!-- Dropdown on navbar -->
                 <li class="dropdown">
@@ -30,12 +35,20 @@
                     </div>
                 </li>
 
+
+
+
                 <li><a href="/faq">FAQ</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li>
                     <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
-                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="25" height="25"> <!-- GitHub Icon -->
+                        <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
                     </a>
+                </li>
+                <li>
+                    <button id="toggle-dark-mode">
+                        <i class="fas fa-moon"></i> 
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -43,15 +56,10 @@
 
     <main>
         <section class="welcome-section">
-            <div class="container">
-                <div>
-                    <div>
-                        <h1 class="welcome-title">Welcome to <span class="highlight">Machine Learning Repositories</span></h1>
-                        <p class="welcome-description">Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the <span> <a href="https://github.com/recodehive"> RecodeHive </a></span>community.</p>
-                    </div>
-                </div>
-            </div>
+            <h2>Welcome to the <span>Machine Learning Repositories</span></h2>
+            <p>Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community.</p>
         </section>
+
 
         <!-- Toggle button for Repository Statistics -->
         <section>
@@ -95,11 +103,22 @@
         </div>
     </section>
 
-        <!-- Languages -->
+    <!-- Languages and Milestone-->
+         
+    <section class="language-and-milestone">
         <section id="languages">
-            <h2>Languages Used</h2>
+            <div class="text-base">Languages</div>
             <ul id="language-list"></ul>
         </section>
+        <section id="milestone">
+            <div class="text-base">Milestones Progress</div>
+            <div class="chart-container">
+                <canvas id="milestoneChart"></canvas>
+                <div class="legend">
+                </div>
+            </div>                 
+        </section>
+     </section>
 
         <section id="repo-list">
             <h2>Repositories</h2>
@@ -113,13 +132,82 @@
                 <!-- Contributors will be loaded here by JavaScript -->
             </div>
         </section>
+        <section id="milestones-progress">
+            <h2>Milestones Progress</h2>
+            <div class="milestones-grid">
+                <div class="milestone-card">
+                    <h3>Algorithms and Deep Learning Models</h3>
+                    <p>This milestone enhances the website's performance and design by integrating advanced algorithms and Deep Learning models.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>34 closed / 34 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Classification Models</h3>
+                    <p>This Milestone focuses on improving the website's performance and design by implementing and optimizing various classification models.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>23 closed / 23 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Data Analysis</h3>
+                    <p>This milestone is dedicated to enhancing the website's performance and design through the integration and application of data analysis techniques.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>20 closed / 20 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>NLP Models</h3>
+                    <p>This milestone focuses on integrating NLP models to enhance website functionality and user interaction, improving performance and design through advanced natural language processing techniques.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p>5 closed / 10 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Computer Vision Models</h3>
+                    <p>This milestone focuses on integrating computer vision models to improve website performance and design by enabling advanced image and video analysis capabilities.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p>10 closed / 20 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Detection Models</h3>
+                    <p>This milestone involves improving the website's performance and design by implementing advanced detection models to enhance functionality and accuracy.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>34 closed / 34 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Prediction Models</h3>
+                    <p>This milestone aims to integrate advanced prediction models to boost website performance and user experience with cutting-edge algorithms and machine learning techniques.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>60 closed / 60 total</p>
+                </div>
+                <div class="milestone-card">
+                    <h3>Recommendation Models</h3>
+                    <p>This milestone focuses on integrating advanced recommendation models to improve website performance and deliver personalized user experiences.</p>
+                    <div class="milestone-progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>4 closed / 4 total</p>
+                </div>
+            </div>
+        </section>
         
-
     </main>
 
     <!-- Chatbot Button -->
     <div class="chatbot-button" id="chatbot-button">
-        <img src="logo-bg.png" height="50px" width="50px">
+        <img src="assets/chatbot.png" height="50px" width="50px" id="chatbot-img" class="floating">
+        <div class="tooltip">Welcome to RecodeHive - Machine Learning Repos, How can we help you?</div>
     </div>
 
      <!-- Chatbox -->
@@ -141,12 +229,25 @@
         </div>
     </div>
 
-    <button id="go-to-top">TOP▶️</button> <!-- Go to top button -->
-
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+            <path d="M256 512c70.684 0 134.695-28.658 181.019-74.981C483.342 390.695 512 326.691 512 256s-28.658-134.695-74.981-181.019C390.695 28.658 326.691 0 256 0S121.305 28.658 74.981 74.981C28.658 121.305 0 185.309 0 256s28.658 134.695 74.981 181.019C121.305 483.342 185.309 512 256 512zm-79.003-200.641c-30.983 17.861-46.316-6.963-29.012-25.063l88.741-101.046c16.129-16.136 22.426-16.136 38.563 0l88.741 101.046c17.18 18.187 2.203 42.867-29.02 25.063l-79.003-46.932-79.01 46.932z"/>
+        </svg>
+    </button>
+    
+    
+    
+   
     <footer class="footer">
-        <p>&copy; 2024 Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</p>
+        <div>&copy; <span id="year"></span> Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</div>
     </footer>
-
+    
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById("year").textContent = year;
+    </script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

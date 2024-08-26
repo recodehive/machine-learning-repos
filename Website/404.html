@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | ML Repos</title>
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .game-container {
+            position: relative;
+            width: 80vw;
+            height: 80vh;
+            max-width: 600px;
+            max-height: 400px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-image: url('/assets/recode-hive.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            padding: 5px 20px;
+        }
+
+        .score {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        a {
+            color: #551a8b;
+            font-size: 1.2rem;
+        }
+
+        a:hover {
+            color: #72469b;
+        }
+
+        a:active {
+            color: rgb(47, 47, 247);
+        }
+
+        /* Notification Popup Styles */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(-30px);
+            transition: opacity 0.5s, transform 0.5s;
+            z-index: 1000;
+        }
+
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin-left: 15px;
+            color: #ff7373;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                /* Further adjust font size */
+            }
+
+            .score {
+                font-size: 1rem;
+                /* Further adjust font size */
+            }
+
+            p {
+                font-size: 0.9rem;
+                /* Further adjust font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-container {
+                width: 100vw;
+                /* Full width on very small screens */
+                height: 50vh;
+                /* Adjust height */
+            }
+
+            .logo {
+                width: 60px;
+                /* Smaller logo size */
+                height: 60px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                /* Further adjust font size */
+            }
+
+            p {
+                font-size: 0.8rem;
+                /* Further adjust font size */
+            }
+
+            .score {
+                font-size: 0.9rem;
+                /* Further adjust font size */
+            }
+
+            .notification {
+                padding: 8px 15px;
+                /* Adjust padding */
+                max-width: 70%;
+                /* Full width on very small screens */
+            }
+
+            .close-btn {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="logo-bg.png" alt="RecodeHive logo"> -->
+    <div class="container">
+        <div class="score" id="score">Score: 0</div>
+        <div class="game-container" id="game-container">
+            <div class="logo" id="logo"></div>
+            <h1>404 - Page Not Found</h1>
+            <p>Sorry, the page you're looking for does not exist. Try catching the logo!</p>
+            <a href="/">Go Back Home</a>
+        </div>
+    </div>
+    <!-- Notification Popup -->
+    <div class="notification" id="notification">
+        Oops! Looks like you've wandered off track. While you're here, try catching the logo for some fun.
+        <button class="close-btn" id="close-btn">&times;</button>
+    </div>
+
+    <!-- // linking script -->
+    <script src="/js/404.js"></script>
+</body>
+
+</html>

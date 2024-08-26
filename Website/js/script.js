@@ -31,6 +31,32 @@ document.addEventListener('DOMContentLoaded', function() {
             directoriesList.innerHTML = '<li class="card">Failed to load directories.</li>';
         }
     }
+// Function to fetch and count subdirectories for each directory
+async function fetchSubdirectoryCounts() {
+    try {
+        const directoriesResponse = await fetch('/api/github/repos');
+        if (!directoriesResponse.ok) {
+            throw new Error(`HTTP error! status: ${directoriesResponse.status}`);
+        }
+        const directoriesData = await directoriesResponse.json();
+        const directories = directoriesData.filter(item => item.type === 'dir' && item.name !== 'Website');
+        const directoryCounts = [];
+
+        for (const directory of directories) {
+            const subResponse = await fetch(`https://api.github.com/repos/recodehive/machine-learning-repos/contents/${directory.name}`);
+            if (!subResponse.ok) {
+                throw new Error(`HTTP error! status: ${subResponse.status} for ${directory.name}`);
+            }
+            const subData = await subResponse.json();
+            const subDirectoriesCount = subData.filter(item => item.type === 'dir').length;
+            directoryCounts.push({ name: directory.name, count: subDirectoriesCount });
+        }
+
+        return directoryCounts;
+    } catch (error) {
+        console.error('Error fetching subdirectory counts:', error);
+    }
+}
 
     // Function to toggle languages section
     function toggleLanguagesSection() {
@@ -76,14 +102,12 @@ document.addEventListener('DOMContentLoaded', function() {
             for (const [language, bytes] of Object.entries(languagesData)) {
                 const percentage = ((bytes / totalBytes) * 100).toFixed(2);
                 const listItem = document.createElement('li');
-                listItem.classList.add('card-languages');
-                const h3 = document.createElement('h3');
-                h3.textContent = `${language}`;
-                listItem.appendChild(h3);
-                // listItem.innerHTML = `
-                //     <h3>${language}</h3>
-                //     <div class="progress-bar" style="width: ${percentage}%;"></div>
-                // `;
+                listItem.innerHTML = `
+                    <span>${language}</span>
+                    <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: ${percentage}%;">${percentage}%</div>
+                    </div>
+                `;
                 languageList.appendChild(listItem);
 
                 if (bytes > mostUsedLanguage.bytes) {
@@ -97,7 +121,47 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error fetching data from GitHub API:', error);
         }
     }
-
+    async function createPieChart() {
+        const directoryCounts = await fetchSubdirectoryCounts();
+        const ctx = document.getElementById('milestoneChart').getContext('2d');
+        const labels = directoryCounts.map(dir => dir.name);
+        const data = directoryCounts.map(dir => dir.count);
+        
+        const chart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: [
+                        '#FF6384',
+                        '#36A2EB',
+                        '#FFCE56',
+                        '#4BC0C0',
+                        '#9966FF',
+                        '#FF9F40',
+                        '#01A02A',
+                        '#FA5F20'
+                    ],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false // Disable Chart.js default legend
+                    }
+                }
+            }
+        });
+    
+        // Inject custom legend
+        const legendContainer = document.querySelector('.legend');
+        legendContainer.innerHTML = labels.map((label, index) => `
+            <span style="color: ${chart.data.datasets[0].backgroundColor[index]}">${label}</span>
+        `).join('');
+    }
+    
     // Function to toggle statistics section
     function toggleStatsSection() {
         const toggleButton = document.getElementById('toggle-stats');
@@ -138,12 +202,26 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: 'Hello! Welcome to Machine Learning Repos', type: 'bot' }
     ];
 
-    // hardcoded questions and answers
-    const questionsAndAnswers = [
-        { question: 'What is Machine Learning?', answer: 'Machine Learning is a field of AI that enables computers to learn from data without being explicitly programmed.' },
-        { question: 'Tell me about Machine Learning Repos.', answer: 'Machine Learning Repos is a curated collection of Machine Learning Repositories' },
-        { question: 'How do I contribute to the repository?', answer: 'You can contribute by forking the repository, making changes, and submitting a pull request. Learn more <a href="https://github.com/recodehive/machine-learning-repos/blob/main/Website/README.md" target="_blank">here</a>' },
-    ];
+    // hardcoded questions and answers      
+      const questionsAndAnswers = [
+            { question: 'What is RecoderHive?',answer: 'RecodeHive is a community-driven platform offering curated machine learning repositories'},
+            { question: 'What is Machine Learning?', answer: 'Machine Learning is a field of AI that enables computers to learn from data without being explicitly programmed.' },
+            { question: 'Tell me about Machine Learning Repos.', answer: 'Machine Learning Repos is a curated collection of Machine Learning Repositories' },
+            { question: 'How do I contribute to the repository?', answer: 'You can contribute by forking the repository, making changes, and submitting a pull request. Learn more <a href="https://github.com/recodehive/machine-learning-repos/blob/main/Website/README.md" target="_blank">here</a>' },
+            { question: 'How many repositories are included in this collection?', answer: 'There are multiple repositories included, each covering various aspects of Machine Learning.' },
+            { question: 'What are the main topics covered by these repositories?', answer: 'The repositories cover topics like data preprocessing, model training, NLP, and more.' },
+            { question: 'Does the repository offer any courses?', answer: 'Yes, the repository provides links to courses related to Machine Learning.' },
+            { question: 'What programming languages are used in these repositories?', answer: 'The repositories utilize languages such as Python, R, HTML, CSS, JavaScript and others.' },
+            { question: 'Which frameworks are utilized in these repositories?', answer: 'Frameworks like TensorFlow, PyTorch, and Scikit-Learn are used.' },
+            { question: 'What is the most popular repository in the collection?', answer: 'The most popular repository is the "Awesome Machine Learning" collection.' },
+            { question: 'Are there any projects focusing on NLP in this collection?', answer: 'Yes, there are projects specifically focused on Natural Language Processing (NLP).' },
+            { question: 'How many topics are covered in the repository?', answer: 'The repository covers several key topics, including data science, deep learning, and more.' },
+            { question: 'Does the repository provide any tutorials?', answer: 'Yes, there are tutorials available that help users understand various machine learning concepts.' },
+            { question: 'What is the purpose of the repository?', answer: 'The repository aims to provide a comprehensive collection of resources and projects for learning and applying machine learning.' },
+            { question: 'Are there any datasets included in the repository?', answer: 'Yes, some repositories include datasets that can be used for training and testing machine learning models.' },
+            { question: 'How frequently is the repository updated?', answer: 'The repository is regularly updated with new content and improvements.' }
+        ];
+        
     
 
     function renderMessages() {
@@ -202,22 +280,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const goToTopButton = document.getElementById('go-to-top');
+   // Get the button
+const scrollTopBtn = document.getElementById("scroll-top-btn");
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            goToTopButton.style.display = 'block';
-        } else {
-            goToTopButton.style.display = 'none';
-        }
-    });
+// Show the button when the user scrolls down 100px from the top of the document
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
 
-    goToTopButton.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+// When the user clicks the button, scroll to the top of the document
+scrollTopBtn.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
     fetchDirectories();
-    toggleLanguagesSection();
+    createPieChart();
     fetchRepoStats();
     toggleStatsSection();
 });
@@ -242,7 +323,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     contributorDiv.innerHTML = `
                         <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-image">
                         <div class="contributor-info">
-                            <a href="${contributor.html_url}" target="_blank" class="contributor-github">GitHub Profile</a>
+                            <a href="${contributor.html_url}" target="_blank" class="contributor-name">${contributor.login}</a>
                         </div>
                     `;
 
@@ -255,3 +336,46 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+const body = document.body;
+
+// function to apply the theme based on stored value
+function applyTheme(theme) {
+    if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        toggleDarkModeButton.querySelector('i').classList.add('fa-sun');
+        toggleDarkModeButton.querySelector('i').classList.remove('fa-moon');
+    } else {
+        body.classList.remove('dark-mode');
+        toggleDarkModeButton.querySelector('i').classList.add('fa-moon');
+        toggleDarkModeButton.querySelector('i').classList.remove('fa-sun');
+    }
+}
+
+// check for saved theme in localStorage!
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    applyTheme(savedTheme);
+} else {
+    // setting default theme to light
+    applyTheme('light');
+}
+
+toggleDarkModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    const icon = toggleDarkModeButton.querySelector('i');
+    const isDarkMode = body.classList.contains('dark-mode');
+    
+    if (isDarkMode) {
+        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-moon');
+        // saving the theme=dark in localStorage
+        localStorage.setItem('theme', 'dark');
+    } else {
+        icon.classList.add('fa-moon');
+        icon.classList.remove('fa-sun');
+        // saving the theme=light in localStorage
+        localStorage.setItem('theme', 'light');
+    }
+});
