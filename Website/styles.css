@@ -4,6 +4,31 @@
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+
+::-webkit-scrollbar {
+    width: 7.5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #c5d8eb8d;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    /* background: #4d7fff; */
+    background: linear-gradient(45deg, rgb(0, 87, 208), #002a95);
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px #004cff;
+    border: 1.5px solid rgba(0, 34, 255, 0.479);
+    transition: background 0.9s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    /* background: #00ffff; */
+    /* background: linear-gradient(45deg, #021e85, #00caca); */
+    background: linear-gradient(45deg, rgb(0, 54, 171), #0268a8);
+  }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
