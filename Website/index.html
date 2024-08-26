@@ -215,8 +215,14 @@
     </div>
     <button id="go-to-top">TOP▶️</button> <!-- Go to top button -->
     <footer class="footer">
-        <div>&copy; 2024 Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</div>
+        <div>&copy; <span id="year"></span> Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</div>
     </footer>
+    
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById("year").textContent = year;
+    </script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
