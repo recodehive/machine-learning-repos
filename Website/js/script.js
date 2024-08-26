@@ -266,19 +266,22 @@ async function fetchSubdirectoryCounts() {
         }
     });
 
-    const goToTopButton = document.getElementById('go-to-top');
+   // Get the button
+const scrollTopBtn = document.getElementById("scroll-top-btn");
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            goToTopButton.style.display = 'block';
-        } else {
-            goToTopButton.style.display = 'none';
-        }
-    });
+// Show the button when the user scrolls down 100px from the top of the document
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
 
-    goToTopButton.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+// When the user clicks the button, scroll to the top of the document
+scrollTopBtn.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
     fetchDirectories();
     createPieChart();
