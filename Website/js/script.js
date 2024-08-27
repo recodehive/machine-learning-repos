@@ -365,3 +365,12 @@ toggleDarkModeButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
     }
 });
+function hamburger() {
+    const line = document.getElementById("line");
+    const navLinks = document.querySelector(".nav-links");
+
+    line.classList.toggle("change");
+    navLinks.classList.toggle("active");
+}
+
+document.getElementById("line").addEventListener("click", hamburger);
