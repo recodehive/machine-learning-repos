@@ -1099,3 +1099,8 @@ body.dark-mode {
     width: 100%;
     border-radius: 8px;
 }
+/* Dark Mode Styles */
+
+.dark-mode .github-section{
+    background-color: #8397fa;
+}
