@@ -101,6 +101,69 @@ header {
     right: 10px;
     /* Adjust this value for the gap between logo and links */
 }
+.line {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Hamburger Active State */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.nav-icons{
+    display: flex;
+    gap:20px;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        padding:10px;
+        top: 40px;
+        right: 0;
+        gap: 10px;
+        width: 100%;
+        background-color: #13034f;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .line {
+        display: flex;
+    }
+}
+
 
 .nav-links a {
     text-decoration: none;
@@ -249,6 +312,7 @@ button#toggle-stats:hover {
     justify-content: center;
     align-items: center;
     animation: slide-in-right 0.5s ease-in-out;
+    flex-wrap: wrap;
 }
 
 .text-base{
@@ -338,7 +402,20 @@ button#toggle-stats:hover {
     margin-bottom: 8px;
     width:300px;
 }
-
+@media (max-width: 560px) {
+    .chart-container {
+        width:120px;
+    }
+    .legend span {
+        width:170px;
+    }
+    .progress-bar-container{
+        width:200px;
+    }
+    .progress-bar {
+        width: 200px;
+    }
+}
 .legend span::before {
     content: '';
     display: inline-block;
@@ -459,7 +536,6 @@ button#toggle-languages:hover {
 .card .btn-view-repo:hover {
     background-color: #2a2a7e;
 }
-
 
 @media (max-width: 768px) {
     .card {
