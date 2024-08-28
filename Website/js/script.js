@@ -1,36 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to fetch and display directories
-    async function fetchDirectories() {
-        const directoriesList = document.getElementById('directories');
-        try {
-            const response = await fetch('/api/github/repos');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
-            const directories = data.filter(item => item.type === 'dir' && item.name !== 'Website' && item.name !== '.github');
-
-            directories.forEach(directory => {
-                const li = document.createElement('li');
-                li.classList.add('card');
-
-                const h3 = document.createElement('h3');
-                h3.textContent = directory.name;
-
-                const a = document.createElement('a');
-                a.href = directory.html_url;
-                a.textContent = 'View Repository';
-                a.classList.add('btn-view-repo');
-
-                li.appendChild(h3);
-                li.appendChild(a);
-                directoriesList.appendChild(li);
-            });
-        } catch (error) {
-            console.error('Error fetching directories:', error);
-            directoriesList.innerHTML = '<li class="card">Failed to load directories.</li>';
+// Function to fetch and display directories
+async function fetchDirectories() {
+    const directoriesList = document.getElementById('directories');
+    try {
+        const response = await fetch('/api/github/repos');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
+        const data = await response.json();
+        const directories = data.filter(item => item.type === 'dir' && item.name !== 'Website' && item.name !== '.github');
+
+        directories.forEach(directory => {
+            const li = document.createElement('li');
+            li.classList.add('card');
+
+            const h3 = document.createElement('h3');
+            h3.textContent = directory.name;
+
+            const a = document.createElement('a');
+            a.href = `models.html?directory=${encodeURIComponent(directory.name)}`;
+            a.textContent = 'View Models';
+            a.classList.add('btn-view-repo');
+
+            li.appendChild(h3);
+            li.appendChild(a);
+            directoriesList.appendChild(li);
+        });
+    } catch (error) {
+        console.error('Error fetching directories:', error);
+        directoriesList.innerHTML = '<li class="card">Failed to load directories.</li>';
     }
+}
+
 // Function to fetch and count subdirectories for each directory
 async function fetchSubdirectoryCounts() {
     try {
@@ -379,3 +380,12 @@ toggleDarkModeButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
     }
 });
+function hamburger() {
+    const line = document.getElementById("line");
+    const navLinks = document.querySelector(".nav-links");
+
+    line.classList.toggle("change");
+    navLinks.classList.toggle("active");
+}
+
+document.getElementById("line").addEventListener("click", hamburger);

@@ -1,5 +1,7 @@
 # Contributor Covenant Code of Conduct
 
+We follow the [Code of Conduct](https://recodehive.github.io/awesome-github-profiles/pages/exploremore.html#) to ensure a welcoming and inclusive community. Please read and adhere to the guidelines.
+
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our

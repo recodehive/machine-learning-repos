@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="title" content="Machine Learning Repositories">
+    <meta name="description"
+        content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community">
+    <meta name="keywords"
+        content="machine learning, machine learning repositories, machine learning repos, machine learning recode hive, recode hive, recode hive ml repos, recode give ml, ml, ml repositories, github repositories ml, machine learning github repositories">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Recode Hive">
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="url" /> define URL when deployed -->
+    <meta property="og:description"
+        content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community" />
     <title>Machine Learning Repositories</title>
+    <!-- <link rel="canonical" href="url-here" /> define base(root) link of deployment here -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -24,6 +40,7 @@
                 <li><a href="/about">About</a></li>
 
 
+
                 <!-- Dropdown on navbar -->
                 <li class="dropdown">
                     <button id="dropdownButton" class="dropbtn">Organization</button>
@@ -36,10 +53,11 @@
                 </li>
 
 
-
-
+                <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
+                <li><a href="/organization">Organization</a></li>
                 <li><a href="/faq">FAQ</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <div class="nav-icons">
                 <li>
                     <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
                         <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
@@ -47,10 +65,16 @@
                 </li>
                 <li>
                     <button id="toggle-dark-mode">
-                        <i class="fas fa-moon"></i> 
+                        <i class="fas fa-moon"></i>
                     </button>
                 </li>
+            </div>
             </ul>
+            <div class="line" id="line">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </nav>
     </header>
 
@@ -67,58 +91,58 @@
         </section>
 
         <!-- Statistics Cards -->
-    <section id="statistics-cards">
-        <h2>Repository Statistics</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <i class="fas fa-star stat-icon"></i> 
-                <h3>Total Stars</h3>
-                <p id="total-stars">Loading...</p>
-            </div>
-            <div class="stat-card">
-                <i class="fas fa-code-branch stat-icon"></i> 
-                <h3>Total Forks</h3>
-                <p id="total-forks">Loading...</p>
-            </div>
-            <div class="stat-card">
-                <i class="fas fa-exclamation-circle stat-icon"></i>
-                <h3>Open Issues</h3>
-                <p id="open-issues">Loading...</p>
-            </div>
-            <div class="stat-card">
-                <i class="fas fa-balance-scale stat-icon"></i> 
-                <h3>License</h3>
-                <p id="license">Loading...</p>
-            </div>
-            <div class="stat-card">
-                <i class="fas fa-database stat-icon"></i> 
-                <h3>Repository Size</h3>
-                <p id="repo-size">Loading...</p>
-            </div>
-            <div class="stat-card">
-                <i class="fas fa-code stat-icon"></i> 
-                <h3>Most Used Language</h3>
-                <p id="most-used-language">Loading...</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages and Milestone-->
-         
-    <section class="language-and-milestone">
-        <section id="languages">
-            <div class="text-base">Languages</div>
-            <ul id="language-list"></ul>
-        </section>
-        <section id="milestone">
-            <div class="text-base">Milestones Progress</div>
-            <div class="chart-container">
-                <canvas id="milestoneChart"></canvas>
-                <div class="legend">
+        <section id="statistics-cards">
+            <h2>Repository Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-star stat-icon"></i>
+                    <h3>Total Stars</h3>
+                    <p id="total-stars">Loading...</p>
                 </div>
-            </div>                 
+                <div class="stat-card">
+                    <i class="fas fa-code-branch stat-icon"></i>
+                    <h3>Total Forks</h3>
+                    <p id="total-forks">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-exclamation-circle stat-icon"></i>
+                    <h3>Open Issues</h3>
+                    <p id="open-issues">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-balance-scale stat-icon"></i>
+                    <h3>License</h3>
+                    <p id="license">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-database stat-icon"></i>
+                    <h3>Repository Size</h3>
+                    <p id="repo-size">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code stat-icon"></i>
+                    <h3>Most Used Language</h3>
+                    <p id="most-used-language">Loading...</p>
+                </div>
+            </div>
         </section>
-     </section>
+
+        <!-- Languages and Milestone-->
+
+        <section class="language-and-milestone">
+            <section id="languages">
+                <div class="text-base">Languages</div>
+                <ul id="language-list"></ul>
+            </section>
+            <section id="milestone">
+                <div class="text-base">Milestones Progress</div>
+                <div class="chart-container">
+                    <canvas id="milestoneChart"></canvas>
+                    <div class="legend">
+                    </div>
+                </div>
+            </section>
+        </section>
 
         <section id="repo-list">
             <h2>Repositories</h2>
@@ -201,17 +225,70 @@
                 </div>
             </div>
         </section>
+
         
+
+        <section id="testimonials" class="testimonial-section">
+            <h2>Testimonials</h2>
+            <h3>Here's what our users are saying about their experince with Recodehive</h3>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <img src="assets/Images/user1.png" alt="Alex Johnson">
+                    <p>"RecodeHive has been a game-changer for my projects. The curated repositories are top-notch, and the community support is unparalleled!"</p>
+                    <h3>Alex Johnson</h3>
+                </div>
+                <div class="testimonial">
+                    <img src="assets/Images/user2.png" alt="Maria Garcia">
+                    <p>"I found exactly what I needed to advance my ML models. The resources provided by RecodeHive are simply the best."</p>
+                    <h3>Maria Garcia</h3>
+                </div>
+                <div class="testimonial">
+                    <img src="assets/Images/user3.png" alt="John Doe">
+                    <p>"A fantastic platform for anyone serious about machine learning. The repositories are well-organized and easy to navigate."</p>
+                    <h3>John Doe</h3>
+                </div>
+            </div>
+        </section>
+        
+
+<!-- GitHub Repositories Section -->
+<section class="github-section">
+    <h2>Here are some of our active GitHub repositories</h2>
+    <p>Everyone is welcome to come and contribute to our open source projects.</p>
+    
+    <div class="github-container">
+      <!-- Repository Buttons -->
+      <div class="github-buttons">
+        <button onclick="changeImage('assets/Images/awesome-github-profiles.png')">Awesome GitHub Profiles</button>
+        <button onclick="changeImage('assets/Images/machine-learning-repos.png')">Machine Learning Repo</button>
+        <button onclick="changeImage('assets/Images/scrape-ml.png')">Scrape ML</button>
+      </div>
+  
+      <!-- Image Display -->
+      <div class="github-image">
+        <img id="repoImage" src="assets/Images/recodehive.png" alt="GitHub Repository">
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function changeImage(image) {
+      document.getElementById('repoImage').src = image;
+    }
+  </script>
+  
+
+
     </main>
 
     <!-- Chatbot Button -->
     <div class="chatbot-button" id="chatbot-button">
-        <img src="assets/chatbot.png" height="50px" width="50px" id="chatbot-img" class="floating">
+        <img src="assets/chatbot.png" height="50px" width="50px" id="chatbot-img" class="floating" alt="chatbot">
         <div class="tooltip">Welcome to RecodeHive - Machine Learning Repos, How can we help you?</div>
     </div>
 
-     <!-- Chatbox -->
-     <div class="chatbot" id="chatbot">
+    <!-- Chatbox -->
+    <div class="chatbot" id="chatbot">
         <div class="chatbot-header">
             Recodehive's Chatbot
             <span class="close-btn" id="close-chatbot">&times;</span>
@@ -235,19 +312,64 @@
             <path d="M256 512c70.684 0 134.695-28.658 181.019-74.981C483.342 390.695 512 326.691 512 256s-28.658-134.695-74.981-181.019C390.695 28.658 326.691 0 256 0S121.305 28.658 74.981 74.981C28.658 121.305 0 185.309 0 256s28.658 134.695 74.981 181.019C121.305 483.342 185.309 512 256 512zm-79.003-200.641c-30.983 17.861-46.316-6.963-29.012-25.063l88.741-101.046c16.129-16.136 22.426-16.136 38.563 0l88.741 101.046c17.18 18.187 2.203 42.867-29.02 25.063l-79.003-46.932-79.01 46.932z"/>
         </svg>
     </button>
+
     
+    <!-- Side Icons -->
     
-    
+    <div class="side-icons">
+        <div class="icon-content">
+          <a href="https://www.facebook.com/recodehive" target="_blank" aria-label="Facebook" data-social="facebook">
+            <i class="fab fa-facebook-f"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://www.linkedin.com/in/sanjay-k-v/" target="_blank" aria-label="LinkedIn" data-social="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://twitter.com/sanjay_kv" target="_blank" aria-label="Twitter" data-social="twitter">
+            <i class="fab fa-twitter"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube" data-social="youtube">
+            <i class="fab fa-youtube"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://github.com/recodehive" target="_blank" aria-label="GitHub" data-social="github">
+            <i class="fab fa-github"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+      </div>
    
+
     <footer class="footer">
         <div>&copy; <span id="year"></span> Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</div>
+        <div class="code-of-conduct-button">
+            <a href="conduct.html">View Code of Conduct</a>
+        </div>        
     </footer>
-    
+
+
+
     <script>
         const year = new Date().getFullYear();
         document.getElementById("year").textContent = year;
     </script>
-    
+
     <script src="js/script.js"></script>
+
+    <script>
+        function changeImage(image) {
+          document.getElementById('repoImage').src = image;
+        }
+      </script>
 </body>
 </html>
