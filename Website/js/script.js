@@ -176,6 +176,20 @@ async function fetchSubdirectoryCounts() {
         });
     }
 
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', function(event) {
+        dropdownMenu.classList.toggle('show');
+        event.stopPropagation(); // Prevent click event from bubbling up
+    });
+
+    window.addEventListener('click', function(event) {
+        if (!dropdownButton.contains(event.target)) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
+
     const chatbotButton = document.getElementById('chatbot-button');
     const chatbot = document.getElementById('chatbot');
     const closeChatbot = document.getElementById('close-chatbot');
