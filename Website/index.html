@@ -194,6 +194,32 @@
             </div>
         </section>
         
+<!-- GitHub Repositories Section -->
+<section class="github-section">
+    <h2>Here are some of our active GitHub repositories</h2>
+    <p>Everyone is welcome to come and contribute to our open source projects.</p>
+    
+    <div class="github-container">
+      <!-- Repository Buttons -->
+      <div class="github-buttons">
+        <button onclick="changeImage('assets/Images/awesome-github-profiles.png')">Awesome GitHub Profiles</button>
+        <button onclick="changeImage('assets/Images/machine-learning-repos.png')">Machine Learning Repo</button>
+        <button onclick="changeImage('assets/Images/scrape-ml.png')">Scrape ML</button>
+      </div>
+  
+      <!-- Image Display -->
+      <div class="github-image">
+        <img id="repoImage" src="assets/Images/recodehive.png" alt="GitHub Repository">
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function changeImage(image) {
+      document.getElementById('repoImage').src = image;
+    }
+  </script>
+  
     </main>
 
     <!-- Chatbot Button -->
@@ -273,5 +299,11 @@
     </script>
     
     <script src="js/script.js"></script>
+
+    <script>
+        function changeImage(image) {
+          document.getElementById('repoImage').src = image;
+        }
+      </script>
 </body>
 </html>
