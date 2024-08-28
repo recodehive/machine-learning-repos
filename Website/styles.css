@@ -1175,6 +1175,161 @@ body.dark-mode {
 }
 
 
+.testimonial-section {
+    background-color: #111151;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 350px;
+    margin: 20px;
+    background-color: #111151;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.testimonial h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* Light Mode for Testimonial Section */
+.dark-mode .testimonial-section {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dark-mode .testimonial-section h2 {
+    color: #111;
+}
+
+.dark-mode .testimonial {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .testimonial p {
+    color: #555;
+}
+
+.dark-mode .testimonial h3 {
+    color: #555;
+}
+
+.light-mode .testimonial img {
+    border: 2px solid #ddd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0266;
+    color: #333;
+}
+
+.code-of-conduct {
+    margin: 20px;
+    padding: 40px;
+    background-color: #01043b;
+    border: 2px solid #6ae6fc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4866ee;
+    text-transform: uppercase;
+}
+
+.rule {
+    margin: 10px 0;
+    padding: 30px;
+    background-color: #0915c3;
+    border-radius: 8px;
+    border-left: 8px solid #fa6508;
+    position: relative;
+}
+
+.rule-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #03f4fd;
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    background-color: #0366d6;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b07f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-button a:hover {
+    background-color: #05c6fc;
+}
+
+.code-of-conduct-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.code-of-conduct-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2505f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.code-of-conduct-button a:hover {
+    background-color: #0acbf7;
+}
+=======
+
 /* Section Styles */
 .github-section {
     background-color: #050066;
@@ -1237,4 +1392,5 @@ body.dark-mode {
 .dark-mode .github-section{
     background-color: #8397fa;
 }
+
 
