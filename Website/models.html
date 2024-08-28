@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <div class="loading-container" id="loading-animation">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <a class="logo-container" href="/">
+                <img src="assets/recode-hive.png" alt="Recode Hive Icon" class="logo-icon">
+                <span class="logo-text">Recode Hive</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/organization">Organization</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <div class="nav-icons">
+                <li>
+                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
+                        <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
+                    </a>
+                </li>
+                <li>
+                    <button id="toggle-dark-mode">
+                        <i class="fas fa-moon"></i> 
+                    </button>
+                </li>
+            </div>
+            </ul>
+            <div class="line" id="line">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="model-list">
+        <h2>Explore Our Models</h2>
+        <ul id="subdirectories"></ul>
+    </section>
+    <footer class="footer">
+        <div>&copy; <span id="year"></span> Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</div>
+    </footer>
+    
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById("year").textContent = year;
+    </script>
+    <script src="js/models.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
