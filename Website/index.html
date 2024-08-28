@@ -210,6 +210,34 @@
             </div>
         </section>
 
+        
+<!-- GitHub Repositories Section -->
+<section class="github-section">
+    <h2>Here are some of our active GitHub repositories</h2>
+    <p>Everyone is welcome to come and contribute to our open source projects.</p>
+    
+    <div class="github-container">
+      <!-- Repository Buttons -->
+      <div class="github-buttons">
+        <button onclick="changeImage('assets/Images/awesome-github-profiles.png')">Awesome GitHub Profiles</button>
+        <button onclick="changeImage('assets/Images/machine-learning-repos.png')">Machine Learning Repo</button>
+        <button onclick="changeImage('assets/Images/scrape-ml.png')">Scrape ML</button>
+      </div>
+  
+      <!-- Image Display -->
+      <div class="github-image">
+        <img id="repoImage" src="assets/Images/recodehive.png" alt="GitHub Repository">
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function changeImage(image) {
+      document.getElementById('repoImage').src = image;
+    }
+  </script>
+  
+
     </main>
 
     <!-- Chatbot Button -->
@@ -244,8 +272,42 @@
         </svg>
     </button>
 
-
-
+    
+    <!-- Side Icons -->
+    
+    <div class="side-icons">
+        <div class="icon-content">
+          <a href="https://www.facebook.com/recodehive" target="_blank" aria-label="Facebook" data-social="facebook">
+            <i class="fab fa-facebook-f"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://www.linkedin.com/in/sanjay-k-v/" target="_blank" aria-label="LinkedIn" data-social="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://twitter.com/sanjay_kv" target="_blank" aria-label="Twitter" data-social="twitter">
+            <i class="fab fa-twitter"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube" data-social="youtube">
+            <i class="fab fa-youtube"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+        <div class="icon-content">
+          <a href="https://github.com/recodehive" target="_blank" aria-label="GitHub" data-social="github">
+            <i class="fab fa-github"></i>
+            <div class="filled"></div>
+          </a>
+        </div>
+      </div>
+   
 
     <footer class="footer">
         <div>&copy; <span id="year"></span> Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</div>
@@ -257,5 +319,11 @@
     </script>
 
     <script src="js/script.js"></script>
+
+    <script>
+        function changeImage(image) {
+          document.getElementById('repoImage').src = image;
+        }
+      </script>
 </body>
 </html>
