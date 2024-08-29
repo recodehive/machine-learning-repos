@@ -1,12 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | ML Repos</title>
-    <link rel="icon" href="/assets/recode-hive.png" type="image/png">
-</head>
-<body>
-    <h1>This is the about page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="title" content="Machine Learning Repositories" />
+    <meta
+      name="description"
+      content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community"
+    />
+    <meta
+      name="keywords"
+      content="machine learning, machine learning repositories, machine learning repos, machine learning recode hive, recode hive, recode hive ml repos, recode give ml, ml, ml repositories, github repositories ml, machine learning github repositories"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="Recode Hive" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="url" /> define URL when deployed -->
+    <meta
+      property="og:description"
+      content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community"
+    />
+    <title>About | Machine Learning Repositories</title>
+    <!-- <link rel="canonical" href="url-here" /> define base(root) link of deployment here -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png" />
+    <!-- Added favicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .content {
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+        background-color: #170179;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s ease-in-out;
+      }
+      .dark-mode .content{
+        background-color: white;
+      }
+      .dark-mode .title{
+        color: #333;
+      }
+      .dark-mode .paragraph{
+        color: #555;
+      }
+      .title {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #ffffff;
+        animation: slideDown 1s ease-in-out;
+      }
+      .paragraph {
+        font-size: 1.2em;
+        line-height: 1.8em;
+        margin-bottom: 30px;
+        color: #ffffff;
+        text-align: center;
+        animation: fadeInUp 1.2s ease-in-out;
+      }
+      .repo-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+      .repo {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 12px;
+        width: 250px; 
+        text-align: center;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInUp 1.2s ease-in-out;
+      }
+      .repo a {
+        text-decoration: none;
+      }
+      .repo:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .repo img {
+        max-width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      .repo:hover img {
+        transform: scale(1.05);
+      }
+      .repo-title {
+        font-size: 1.4em;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .repo-description {
+        font-size: 1em;
+        color: #777;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="dark-mode">
+    <header>
+      <nav class="navbar">
+        <a class="logo-container" href="/">
+          <img
+            src="assets/recode-hive.png"
+            alt="Recode Hive Icon"
+            class="logo-icon"
+          />
+          <span class="logo-text">Recode Hive</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li>
+            <a
+              href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html"
+              >Learn</a
+            >
+          </li>
+          <li><a href="/organization">Organization</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <!-- Dropdown on navbar -->
+          <li class="dropdown">
+            <button id="dropdownButton" class="dropbtn">Know More</button>
+            <div id="dropdownMenu" class="dropdown-content">
+              <a href="/how-we-work">How we work?</a>
+              <a href="/projects">Projects</a>
+              <a href="/team">Team</a>
+              <a href="/code-of-conduct">Code of Conduct</a>
+            </div>
+          </li>
+          <div class="nav-icons">
+            <li>
+              <a
+                href="https://github.com/recodehive/machine-learning-repos"
+                target="_blank"
+              >
+                <img src="assets/images.png" alt="GitHub" />
+              </a>
+            </li>
+            <li>
+              <button id="toggle-dark-mode">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </div>
+        </ul>
+        <div class="line" id="line">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="title">About Machine Learning Repositories</div>
+      <div class="paragraph">
+        Welcome to the Machine Learning Repositories, a curated collection of
+        diverse machine learning repositories available on GitHub, presented by
+        the RecodeHive community. Our goal is to make it easy for developers,
+        data scientists, and AI enthusiasts to explore and utilize these
+        repositories for their own projects.
+      </div>
+      <div class="paragraph">
+        At RecodeHive, we believe in the power of open-source collaboration. Our
+        community-driven platform gathers the best resources in machine
+        learning, providing a comprehensive overview of various projects ranging
+        from basic tutorials to advanced implementations. Whether you're a
+        beginner looking to learn the basics or an experienced developer seeking
+        new tools and libraries, our repository collection has something for
+        everyone.
+      </div>
+
+      <div class="paragraph">
+        <h3>Explore Our Models</h3>
+      </div>
+      <div class="repo-section">
+        <div class="repo">
+          <a
+            href="https://github.com/recodehive/machine-learning-repos/tree/main/Recommendation%20Models"
+            target="_blank"
+          >
+            <img
+              src="./assets/Images/RecommendationModel.png"
+              alt="Recommendation Models"
+            />
+            <div class="repo-title">Recommendation Models</div>
+            <div class="repo-description">
+              Explore models that suggest products, services, or content to
+              users based on their preferences and behaviors.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a
+            href="https://github.com/recodehive/machine-learning-repos/tree/main/Prediction%20Models"
+            target="_blank"
+          >
+            <img
+              src="./assets/Images/PredictionModel.png"
+              alt="Prediction Models"
+            />
+            <div class="repo-title">Prediction Models</div>
+            <div class="repo-description">
+              Dive into models that forecast future outcomes based on historical
+              data, such as stock prices or weather patterns.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a
+            href="https://github.com/recodehive/machine-learning-repos/tree/main/Detection%20Models"
+            target="_blank"
+          >
+            <img
+              src="./assets/Images/DetectionModel.png"
+              alt="Detection Models"
+            />
+            <div class="repo-title">Detection Models</div>
+            <div class="repo-description">
+              Browse models that identify objects, patterns, or anomalies in
+              data, such as image or fraud detection.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a
+            href="https://github.com/recodehive/machine-learning-repos/tree/main/Data%20Analysis"
+            target="_blank"
+          >
+            <img src="./assets/Images/DataAnalysis.png" alt="Data Analysis" />
+            <div class="repo-title">Data Analysis</div>
+            <div class="repo-description">
+              Discover tools and models for analyzing datasets to extract
+              meaningful insights and trends.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a
+            href="https://github.com/recodehive/machine-learning-repos/tree/main/Classification%20Models"
+            target="_blank"
+          >
+            <img
+              src="./assets/Images/ClassificationModel.png"
+              alt="Classification Models"
+            />
+            <div class="repo-title">Classification Models</div>
+            <div class="repo-description">
+              Check out models that categorize data into predefined classes,
+              like spam detection or sentiment analysis.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a
+            href="https://github.com/recodehive/machine-learning-repos/tree/main/Algorithms%20and%20Deep%20Learning%20Models"
+            target="_blank"
+          >
+            <img
+              src="./assets/Images/DeepLearningModel.png"
+              alt="Algorithms and Deep Learning"
+            />
+            <div class="repo-title">Algorithms and Deep Learning Models</div>
+            <div class="repo-description">
+              Explore complex models and algorithms that leverage neural
+              networks and deep learning techniques.
+            </div>
+          </a>
+        </div>
+
+        <div class="paragraph">
+          <h3>Join the Community</h3>
+          Add your machine learning project to our collection by raising an
+          issue in our GitHub repository.
+          <a
+            href="https://github.com/recodehive/machine-learning-repos/issues"
+            target="_blank"
+            >Contribute Here</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        &copy; <span id="year"></span> Machine Learning Repos -
+        <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>.
+        All rights reserved.
+      </div>
+      <div class="code-of-conduct-button">
+        <a href="conduct.html">View Code of Conduct</a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
