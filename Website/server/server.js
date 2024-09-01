@@ -59,6 +59,5 @@ app.get('/api/github/repos', async (req, res) => {
     }
 });
 
-app.use(router);  // using router for navigation routes
 
 export default app;
