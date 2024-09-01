@@ -3,17 +3,17 @@ import fetch from 'node-fetch';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import router from './route.js'
+import router from './route.js';
 
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const app = express();
-const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../')));
+
 app.get('/api/github/repos/subdir', async (req, res) => {
     const dirName = req.query.dir;
     if (!dirName) {
@@ -58,11 +58,7 @@ app.get('/api/github/repos', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../index.html'));
-// });
-app.use(router);    // using router for navigation routes
 
-app.listen(port, () => {
-    console.log(`Server running at ${port}`);
-});
+app.use(router);  // using router for navigation routes
+
+export default app;
