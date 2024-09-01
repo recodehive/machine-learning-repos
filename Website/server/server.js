@@ -64,5 +64,5 @@ app.get('/api/github/repos', async (req, res) => {
 app.use(router);    // using router for navigation routes
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at ${port}`);
 });
