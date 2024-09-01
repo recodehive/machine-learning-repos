@@ -282,6 +282,9 @@ p {
     line-height: 1.6;
     color:white;
 }
+.dark-mode p {
+    color:black;
+}
 
 button#toggle-stats {
     display: block;
