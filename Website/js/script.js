@@ -362,7 +362,7 @@ if (savedTheme) {
     applyTheme('light');
 }
 
-toggleDarkModeButton.addEventListener('click', () => {
+function toggleTheme(){
     body.classList.toggle('dark-mode');
     
     const icon = toggleDarkModeButton.querySelector('i');
@@ -379,7 +379,17 @@ toggleDarkModeButton.addEventListener('click', () => {
         // saving the theme=light in localStorage
         localStorage.setItem('theme', 'light');
     }
+}
+toggleDarkModeButton.addEventListener('click', toggleTheme);
+
+document.addEventListener('keydown', function (event) {
+    // Check if the 'Q' key is pressed along with the 'Ctrl' key
+    if (event.ctrlKey && (event.key === 'q' || event.key === 'Q')) {
+        event.preventDefault(); // Prevent the default action (if any)
+        toggleTheme(); // Call the function to toggle the theme
+    }
 });
+
 function hamburger() {
     const line = document.getElementById("line");
     const navLinks = document.querySelector(".nav-links");
