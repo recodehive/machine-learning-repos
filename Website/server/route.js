@@ -8,7 +8,6 @@ const __dirname = path.dirname(__filename);
 
 const rootDirectory = path.resolve(__dirname, '../');
 
-// Routes to serve the HTML files
 router.get('/', (req, res) => {
     res.sendFile(path.join(rootDirectory, 'index.html'));
 });

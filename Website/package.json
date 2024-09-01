@@ -4,8 +4,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/server.js",
+    "build": "echo 'No build step necessary'",
+    "vercel-build": "node server/server.js"
   },
   "keywords": [],
   "author": "",
