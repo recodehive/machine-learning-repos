@@ -1,4 +1,4 @@
-TensorFlow==2.10.0
+TensorFlow==2.12.1
 NumPy==1.22.2
 Pandas==1.5.5
 Matplotlib==3.5.1
