@@ -25,7 +25,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 
 - [Roadmap](roadmaps)
   - [Machine Learning Roadmap](#machine-learning)
-  - [Roadmap.sh](#roadmap.sh)
+  - [Roadmap.sh](#roadmapsh)
 - [Tutorials or Courses](#tutorials-or-courses)
     - [Fundamentals of Mathematics](#fundamentals-of-mathematics)
     - [Fundamentals of Programming Language](#fundamentals-of-programming-language)
@@ -97,7 +97,11 @@ If later found out the points will be deducted. you cant be earning more than 60
 </tr>
 </table>
 
-> [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps)Browse the ever-growing list of up-to-date, community driven roadmaps.
+> [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps) Browse the ever-growing list of up-to-date, community driven roadmaps.
+> Offers clear visual representations of career paths.
+> Provides step-by-step guidance for various tech roles.
+> Allows users to track their progress and customize paths.
+> Features feedback from industry professionals.
 
 ### Tutorials or Courses
 
