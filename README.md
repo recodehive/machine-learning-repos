@@ -72,8 +72,13 @@ If later found out the points will be deducted. you cant be earning more than 60
 </tr>
 </table>
 
-> [Roadmap.sh](https://roadmap.sh/) contains community-curated roadmaps, study plans, paths, and resources for developers.
 #### Roadmap.sh
+> [Roadmap.sh](https://roadmap.sh/) contains community-curated roadmaps, study plans, paths, and resources for developers. 
+- Offers clear visual representations of career paths.
+- Provides step-by-step guidance for various tech roles.
+- Allows users to track their progress and customize paths.
+- Features feedback from industry professionals.
+
 <table width="100%">
     <tr>
     <th>Machine Learning Roadmaps</th>
@@ -97,11 +102,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 </tr>
 </table>
 
-> [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps) Browse the ever-growing list of up-to-date, community driven roadmaps.
-> Offers clear visual representations of career paths.
-> Provides step-by-step guidance for various tech roles.
-> Allows users to track their progress and customize paths.
-> Features feedback from industry professionals.
+> [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps) browse the ever-growing list of up-to-date, community driven roadmaps.
 
 ### Tutorials or Courses
 
