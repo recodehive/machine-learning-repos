@@ -74,7 +74,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 
 #### Roadmap.sh
 > [Roadmap.sh](https://roadmap.sh/) <a href="https://roadmap.sh/" style="display: inline;">
-  <img src="https://cdn-1.webcatalog.io/catalog/roadmap-sh/roadmap-sh-icon-filled-256.webp?v=1714780925346" alt="Roadmap.sh Logo" width="22" style="vertical-align: middle; margin-right: 5px;" />
+  <img src="https://cdn-1.webcatalog.io/catalog/roadmap-sh/roadmap-sh-icon-filled-256.webp?v=1714780925346" alt="Roadmap.sh Logo" width="22" style="vertical-align; margin-right: 5px;" />
 </a> contains community-curated roadmaps, study plans, paths, and resources for developers.
 
 - Offers clear visual representations of career paths.
