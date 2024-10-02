@@ -7,7 +7,6 @@ This is basically a Super Resolution Generative Adversarial Network (SRGAN) with
 - Matplotlib
 - MS COCO unlabeled2017 Dataset (for training)
 
-```
 ## Usage
 To train model (which we highly reccomend doing some more):
 ```
