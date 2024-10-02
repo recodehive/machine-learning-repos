@@ -77,26 +77,27 @@ If later found out the points will be deducted. you cant be earning more than 60
 <table width="100%">
     <tr>
     <th>Machine Learning Roadmaps</th>
-    <th>URL</th>
+    <th>Description</th>
   </tr>
 <tr>
-   <td>AI and Data Scientist</td>
-   <td><a href="https://roadmap.sh/ai-data-scientist"></a></td>
+   <td><a href="https://roadmap.sh/ai-data-scientist">AI and Data Scientist</a></td>
+   <td>Step by step guide to becoming an AI and Data Scientist in 2024</td>
 </tr>
 <tr>
-   <td>Data Analyst</td>
-   <td><a href="https://roadmap.sh/data-analyst"></a></td>
+   <td><a href="https://roadmap.sh/data-analyst">Data Analyst</a></td>
+   <td>Step by step guide to becoming an Data Analyst in 2024</td>
 </tr>
 <tr>
-   <td>MLOps</td>
-   <td><a href="https://roadmap.sh/mlops"></a></td>
+   <td><a href="https://roadmap.sh/mlops">MLOps</a></td>
+   <td>Step by step guide to learn MLOps in 2024</td>
 </tr>
 <tr>
-   <td>Prompt Engineering</td>
-   <td><a href="https://roadmap.sh/prompt-engineering"></a></td>
+   <td><a href="https://roadmap.sh/prompt-engineering">Prompt Engineering</a></td>
+   <td>Step by step guide to learning Prompt Engineering</td>
 </tr>
 </table>
 
+> [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps)Browse the ever-growing list of up-to-date, community driven roadmaps.
 
 ### Tutorials or Courses
 
