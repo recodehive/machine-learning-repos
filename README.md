@@ -25,7 +25,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 
 - [Roadmap](roadmaps)
   - [Machine Learning Roadmap](#machine-learning)
-  - [Roadmap.sh](https://roadmap.sh/)
+  - [Roadmap.sh](#roadmap.sh)
 - [Tutorials or Courses](#tutorials-or-courses)
     - [Fundamentals of Mathematics](#fundamentals-of-mathematics)
     - [Fundamentals of Programming Language](#fundamentals-of-programming-language)
@@ -71,18 +71,29 @@ If later found out the points will be deducted. you cant be earning more than 60
    <td>This roadmap  gives you clear cut roadmap for becoming ready for the  ML Engineer Job Profile</td>
 </tr>
 </table>
+
 > [Roadmap.sh](https://roadmap.sh/) contains community-curated roadmaps, study plans, paths, and resources for developers.
 #### Roadmap.sh
 <table width="100%">
     <tr>
-    <th>Visit Roadmaps</th>
+    <th>Machine Learning Roadmaps</th>
     <th>URL</th>
   </tr>
 <tr>
-   <td>AI and Data Scientist </td>
+   <td>AI and Data Scientist</td>
    <td><a href="https://roadmap.sh/ai-data-scientist"></a></td>
 </tr>
 <tr>
+   <td>Data Analyst</td>
+   <td><a href="https://roadmap.sh/data-analyst"></a></td>
+</tr>
+<tr>
+   <td>MLOps</td>
+   <td><a href="https://roadmap.sh/mlops"></a></td>
+</tr>
+<tr>
+   <td>Prompt Engineering</td>
+   <td><a href="https://roadmap.sh/prompt-engineering"></a></td>
 </tr>
 </table>
 
