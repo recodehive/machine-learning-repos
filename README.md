@@ -71,6 +71,21 @@ If later found out the points will be deducted. you cant be earning more than 60
    <td>This roadmap  gives you clear cut roadmap for becoming ready for the  ML Engineer Job Profile</td>
 </tr>
 </table>
+> [Roadmap.sh](https://roadmap.sh/) contains community-curated roadmaps, study plans, paths, and resources for developers.
+#### Roadmap.sh
+<table width="100%">
+    <tr>
+    <th>Visit Roadmaps</th>
+    <th>URL</th>
+  </tr>
+<tr>
+   <td>AI and Data Scientist </td>
+   <td><a href="https://roadmap.sh/ai-data-scientist"></a></td>
+</tr>
+<tr>
+</tr>
+</table>
+
 
 ### Tutorials or Courses
 
