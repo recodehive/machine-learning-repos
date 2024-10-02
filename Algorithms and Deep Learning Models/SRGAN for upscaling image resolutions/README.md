@@ -17,4 +17,3 @@ To run the model on an image:
 ```
 python srgan.py -p image.jpg
 ```
-Thats it!
