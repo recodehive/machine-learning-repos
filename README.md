@@ -25,6 +25,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 
 - [Roadmap](roadmaps)
   - [Machine Learning Roadmap](#machine-learning)
+  - [Roadmap.sh](#roadmapsh)
 - [Tutorials or Courses](#tutorials-or-courses)
     - [Fundamentals of Mathematics](#fundamentals-of-mathematics)
     - [Fundamentals of Programming Language](#fundamentals-of-programming-language)
@@ -44,8 +45,8 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [Datasets](#datasets)
 - [GitHub Repositories](#github-repositories)
 - [Youtube Channels](#youtube-channels)
-- [Machine learning forums](#machine-learning-forums)
-- [courses](#courses)
+- [Machine Learning Forums](#machine-learning-forums)
+- [Courses](#courses)
 - [Projects](#projects)
 - [Interview](#interview)
 - [Others](#others)
@@ -70,6 +71,38 @@ If later found out the points will be deducted. you cant be earning more than 60
    <td>This roadmap  gives you clear cut roadmap for becoming ready for the  ML Engineer Job Profile</td>
 </tr>
 </table>
+
+#### Roadmap.sh
+> <a href="https://roadmap.sh/" style="text-decoration: none;">Roadmap.sh</a><a href="https://roadmap.sh/"><img src="https://cdn-1.webcatalog.io/catalog/roadmap-sh/roadmap-sh-icon-filled-256.webp?v=1714780925346" width="21" style="margin-left: 5px; margin-top: 4px;"></a> contains community-curated roadmaps, study plans, paths, and resources for developers. 
+
+- Offers clear visual representations of career paths.
+- Provides step-by-step guidance for various tech roles.
+- Allows users to track their progress and customize paths. 
+- Features feedback from industry professionals.
+
+<table width="100%">
+    <tr>
+    <th>Machine Learning Roadmaps</th>
+    <th>Description</th></tr>
+<tr>
+   <td><a href="https://roadmap.sh/ai-data-scientist">AI and Data Scientist</a></td>
+   <td>Step by step guide to becoming an AI and Data Scientist in 2024</td>
+</tr>
+<tr>
+   <td><a href="https://roadmap.sh/data-analyst">Data Analyst</a></td>
+   <td>Step by step guide to becoming an Data Analyst in 2024</td>
+</tr>
+<tr>
+   <td><a href="https://roadmap.sh/mlops">MLOps</a></td>
+   <td>Step by step guide to learn MLOps in 2024</td>
+</tr>
+<tr>
+   <td><a href="https://roadmap.sh/prompt-engineering">Prompt Engineering</a></td>
+   <td>Step by step guide to learning Prompt Engineering</td>
+</tr>
+</table>
+
+> [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps) browse the ever-growing list of up-to-date, community driven roadmaps.
 
 ### Tutorials or Courses
 
