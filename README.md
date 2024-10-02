@@ -85,6 +85,10 @@ If later found out the points will be deducted. you cant be earning more than 60
     <th>Machine Learning Roadmaps</th>
     <th>Description</th></tr>
 <tr>
+   <td><a href="https://roadmap.sh/ai-data-scientist">AI and Data Scientist</a></td>
+   <td>Step by step guide to becoming an AI and Data Scientist in 2024</td>
+</tr>
+<tr>
    <td><a href="https://roadmap.sh/data-analyst">Data Analyst</a></td>
    <td>Step by step guide to becoming an Data Analyst in 2024</td>
 </tr>
