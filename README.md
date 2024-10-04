@@ -26,6 +26,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [Roadmap](roadmaps)
   - [Machine Learning Roadmap](#machine-learning)
   - [Roadmap.sh](#roadmapsh)
+- [Latest Trends in Machine Learning](#machine-learning-Latest-Trends)
 - [Tutorials or Courses](#tutorials-or-courses)
     - [Fundamentals of Mathematics](#fundamentals-of-mathematics)
     - [Fundamentals of Programming Language](#fundamentals-of-programming-language)
@@ -103,7 +104,17 @@ If later found out the points will be deducted. you cant be earning more than 60
 </table>
 
 > [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps) browse the ever-growing list of up-to-date, community driven roadmaps.
+<h2 id="machine-learning-Latest-Trends">Latest Trends in Machine Learning</h2>
+<p><a href="https://equal-iron-969.notion.site/Latest-Trends-in-Machine-Learning-1151a8b25d4c8067a8f8fd48dd8a7d6a?pvs=4">Latest Trends in Machine Learning</a></p>
 
+<h3>Key Trends:</h3>
+<ul>
+    <li><strong>AI Democratization:</strong> Making AI more accessible to developers and organizations.</li>
+    <li><strong>Edge Computing:</strong> Bringing machine learning models closer to data collection points.</li>
+    <li><strong>Explainable AI (XAI):</strong> Enhancing model transparency and interpretability.</li>
+    <li><strong>Federated Learning:</strong> Training models collaboratively across devices without data exchange.</li>
+    <li><strong>AI Ethics and Fairness:</strong> Focus on ethical AI development and minimizing biases.</li>
+</ul>
 ### Tutorials or Courses
 
 > Discover a collection of tutorials and courses for learning the Mathamatics,Fundamentals,Algorithms and more which are requied for Machine learning.
