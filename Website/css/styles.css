@@ -1246,8 +1246,6 @@ body.dark-mode {
 .dark-mode .milestone-card p{
     color:black;
 }
-
-
 .testimonial-section {
     background-color: #111151;
     padding: 60px 20px;
@@ -1274,6 +1272,7 @@ body.dark-mode {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .testimonial img {
@@ -1293,6 +1292,18 @@ body.dark-mode {
     font-size: 1.2em;
     font-weight: bold;
     color: #ffd700;
+}
+
+/* Hover effect */
+.testimonial:hover {
+    background-color: #ffd700; /* Change to a contrasting color */
+    color: #111151; /* Change text color */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Brighter shadow */
+}
+
+.testimonial:hover p,
+.testimonial:hover h3 {
+    color: #111151; /* Ensure text is visible against new background */
 }
 
 /* Light Mode for Testimonial Section */
@@ -1320,6 +1331,18 @@ body.dark-mode {
 
 .light-mode .testimonial img {
     border: 2px solid #ddd;
+}
+
+/* Hover effect for dark mode */
+.dark-mode .testimonial:hover {
+    background-color: #555; /* A darker color for light mode */
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .testimonial:hover p,
+.dark-mode .testimonial:hover h3 {
+    color: #fff; /* Ensure text remains visible */
 }
 
 body {
