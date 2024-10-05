@@ -1,13 +1,12 @@
 # Real-Time Google Play Store Data Analytics Dashboard
 
-This project provides a real-time data analytics dashboard for Google Play Store, built using Python. The dashboard presents interactive visualizations based on Google Play Store app data and user reviews.
+This project provides a real-time data analytics dashboard for the Google Play Store, built using Python. The dashboard presents interactive visualizations based on Google Play Store app data and user reviews.
 
 ## Project Structure
-- `Real_Time_Google_Play_Store_Data_Analytics_Dashboard_Python.ipynb`- Contains the .ipynb file.
+- `Real_Time_Google_Play_Store_Data_Analytics_Dashboard_Python.ipynb`- Contains the .ipynb file (Jupyter notebook).
 - `Datasets/`
   - `play_store.csv` - Contains data of Google Play Store apps.
   - `user_reviews.csv` - Contains user reviews of apps.
-- `README.md`
 
 ## Methodology
 The analysis and dashboard creation is done in the accompanying `.ipynb` notebook, with the following steps:
@@ -34,5 +33,9 @@ Running the code generates a `dashboard.html` file that contains the final dashb
 - webbrowser
 - Numpy
 - os
+
+## Demo Video - Interactive Dashboard
+
+https://github.com/user-attachments/assets/79ed7470-4084-4ca4-a2bf-5b59c927667f
 
 
