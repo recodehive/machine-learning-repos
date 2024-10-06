@@ -65,7 +65,10 @@ The Neural Style Transfer algorithm works by combining the content of one image 
 - Generated Image: The final result that merges content and style.
 
 ---
+### Sample Output
+![PNG image](https://github.com/user-attachments/assets/acbe6b29-5088-4346-8433-216efa604418)
 
+---
 ### Future Enhancements
 Here are some potential improvements for future releases:
 
