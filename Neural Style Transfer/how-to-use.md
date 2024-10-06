@@ -69,7 +69,7 @@ The Neural Style Transfer algorithm works by combining the content of one image 
 ### Future Enhancements
 Here are some potential improvements for future releases:
 
-- Implement support for batch processing multiple images.
+- Implement a custom CNN model for a comprehensive output.
 - Add more advanced style transfer techniques for real-time processing.
 - Enhance the UI or add a GUI for easier use.
 
