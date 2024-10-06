@@ -4,10 +4,8 @@
 1. [Introduction](#introduction)
 2. [Project Structure](#project-structure)
 3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Dependencies](#dependencies)
-6. [How It Works](#how-it-works)
-7. [Future Enhancements](#future-enhancements)
+4. [How It Works](#how-it-works)
+5. [Future Enhancements](#future-enhancements)
 
 ---
 
