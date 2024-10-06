@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Authentication POC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-column {
+            background-color: #f4f4f9;
+        }
+
+        .camera-column {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .toggle-link {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .toggle-link:hover {
+            text-decoration: underline;
+        }
+
+        #video, #video-login {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        #status, #status-login {
+            font-size: 18px;
+            color: green;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .canvas-container {
+            display: none;
+        }
+
+        .auth-hidden {
+            display: none;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Face Authentication POC</h1>
+
+    <!-- Registration form with camera on right -->
+    <div class="container" id="register-container">
+        <div class="column form-column">
+            <h3>Register</h3>
+            <input type="text" id="register-username" placeholder="Enter username" />
+            <button onclick="register()">Register</button>
+            <div class="toggle-link" onclick="toggleAuth()">Already have an account? Login</div>
+        </div>
+        <div class="column camera-column">
+            <video id="video" autoplay></video>
+            <canvas id="canvas" class="canvas-container"></canvas>
+            <div id="status">Waiting for face authentication...</div>
+        </div>
+    </div>
+
+    <!-- Login form with camera on left -->
+    <div class="container auth-hidden" id="login-container">
+        <div class="column camera-column">
+            <video id="video-login" autoplay></video>
+            <canvas id="canvas-login" class="canvas-container"></canvas>
+            <div id="status-login">Waiting for face authentication...</div>
+        </div>
+        <div class="column form-column">
+            <h3>Login</h3>
+            <input type="text" id="login-username" placeholder="Enter username" />
+            <button onclick="login()">Login</button>
+            <div class="toggle-link" onclick="toggleAuth()">Don't have an account? Register</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+    <script>
+        let model;
+
+        // Initialize the camera for video feed
+        async function initializeCamera(videoId) {
+            const video = document.getElementById(videoId);
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            video.srcObject = stream;
+            video.onloadedmetadata = () => {
+                video.play();
+            };
+        }
+
+        // Load the FaceMesh model
+        async function initializeModel() {
+            model = await facemesh.load();
+            document.getElementById('status').textContent = 'Model loaded, ready for authentication...';
+        }
+
+        // Capture an image from the video feed
+        function captureImage(videoId, canvasId) {
+            const video = document.getElementById(videoId);
+            const canvas = document.getElementById(canvasId);
+            const context = canvas.getContext('2d');
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            return canvas.toDataURL('image/png');
+        }
+
+        // Register a new user with the captured image
+        async function register() {
+            const username = document.getElementById('register-username').value;
+            const image = captureImage('video', 'canvas');
+
+            const response = await fetch('/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: username, data: image })
+            });
+
+            const result = await response.json();
+            document.getElementById('status').textContent = result.result || result.error;
+        }
+
+        // Login a user and authenticate their face
+        async function login() {
+            const username = document.getElementById('login-username').value;
+            const image = captureImage('video-login', 'canvas-login');
+
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: username, data: image })
+            });
+
+            const result = await response.json();
+            document.getElementById('status-login').textContent = result.result || result.error;
+
+            if (result.result) {
+                // Redirect to a dummy home page after successful login
+                setTimeout(() => {
+                    window.location.href = "/home";
+                }, 2000);
+            }
+        }
+
+        // Toggle between register and login forms
+        function toggleAuth() {
+            const registerContainer = document.getElementById('register-container');
+            const loginContainer = document.getElementById('login-container');
+
+            if (registerContainer.classList.contains('auth-hidden')) {
+                registerContainer.classList.remove('auth-hidden');
+                loginContainer.classList.add('auth-hidden');
+                initializeCamera('video');
+            } else {
+                registerContainer.classList.add('auth-hidden');
+                loginContainer.classList.remove('auth-hidden');
+                initializeCamera('video-login');
+            }
+        }
+
+        // Initialize everything on page load
+        initializeModel();
+        initializeCamera('video'); // Initialize camera for registration form
+    </script>
+</body>
+</html>
