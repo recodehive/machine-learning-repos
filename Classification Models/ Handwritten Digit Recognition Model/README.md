@@ -9,10 +9,10 @@
 1. [📖 Overview](#-overview)
 2. [🚀Problem Statement](#-problem-statement)
 3. [💡 Proposed Solution](#-proposed-solution)
-4. [⚙️ Alternatives Considered](#-alternatives-considered)
-5. [📊 Results](#-results)
-6. [🔍 Conclusion](#-conclusion)
-7. [📦 Installation & Usage](#-installation--usage)
+4. [📦 Installation & Usage](#-installation--usage)
+5. [⚙️ Alternatives Considered](#-alternatives-considered)
+6. [📊 Results](#-results)
+7. [🔍 Conclusion](#-conclusion)
 8. [🤝 Acknowledgments](#-acknowledgments)
 9. [📧 Contact](#-contact)
    
@@ -37,6 +37,13 @@ Accurately recognizing handwritten digits is essential for many automated system
 - **Pooling Layers**: Reduce dimensionality while retaining important features.
 - **Fully Connected Layers**: Perform final classification.
 
+## 📦 Installation & Usage
+To get started, ensure you have Python and the necessary libraries installed:
+
+```bash
+pip install tensorflow numpy matplotlib
+```
+
 ## ⚙️ Alternatives Considered
 Several alternative approaches were evaluated:
 
@@ -50,12 +57,6 @@ The model aims to achieve high accuracy in recognizing handwritten digits, provi
 ## 🔍 Conclusion
 This project showcases the effectiveness of deep learning in image classification. The structured approach demonstrates the potential of neural networks in automating digit recognition across various industries.
 
-## 📦 Installation & Usage
-To get started, ensure you have Python and the necessary libraries installed:
-
-```bash
-pip install tensorflow numpy matplotlib
-```
 ## 🤝 Acknowledgments
 Dataset: MNIST Database
 Frameworks: TensorFlow and Keras
