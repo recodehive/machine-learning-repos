@@ -1,6 +1,4 @@
-# 🖊️ Handwritten Digit Recognition Model![DigitVision - Handwritten Digit Recognition (1)](https://github.com/user-attachments/assets/87fcdec9-2e50-424a-9f15-a5a6b9b9931c)
-![DigitVision - Handwritten Digit Recognition (1)](https://github.com/user-attachments/assets/2a5499ca-88c4-4432-ba87-68e03d0fd0f4)
-
+# 🖊️ Handwritten Digit Recognition Model
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/alo7lika/ML-Nexus/refs/heads/main/Handwritten%20Digit%20Recognition/DigitVision%20-%20Handwritten%20Digit%20Recognition%20(1).png" alt="CNN Model Architecture" width="600"/>
