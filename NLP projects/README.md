@@ -66,6 +66,7 @@ Once trained, the model is evaluated on the test set to ensure it generalizes we
  - Confusion Matrix: Provides insight into the number of true positives, true negatives, false positives, and false negatives.
 
 ## Results
+Accuracy of various models on test data is compared below. Out of all models SVM performs the best, closely followed by Logistic Regression and Random forest. :
 
 MultinomialNB - 92%
 
