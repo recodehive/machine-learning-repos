@@ -1,12 +1,11 @@
 # 📈 Market Trend Classification Model
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/alo7lika/ML-Nexus/refs/heads/main/Time%20Series%20Analysis/Market%20Regime%20Detection/Market%20Regime%20Detection%20Project%20-%20Analysis%20Dashboard.png" alt="Market Regime Detection Dashboard" width="600"/>
+  <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/Classification%20Models/Market%20Trend%20Classification%20Model/MarketTrend%20Analytics%20-%20Classification%20Model.png" alt="Market Trend Classification Model" width="600"/>
 </p>
 
-
 ## 📖 Overview
-The Market Trend Classification Model aims to identify different market conditions by analyzing historical stock price data. By utilizing advanced data analysis techniques, this project classifies market regimes to aid in informed trading decisions and strategy development.
+The Market Trend Classification Model aims to identify different market conditions by analyzing historical stock price data. This project classifies market regimes by utilizing advanced data analysis techniques to aid in informed trading decisions and strategy development.
 
 ## 📚 Table of Contents
 - [🚀 Problem Statement](#-problem-statement)
@@ -56,7 +55,7 @@ Several alternative approaches were evaluated, including:
 The model aims to classify market regimes accurately, providing valuable insights for trading strategies.
 
 ## 🔍 Conclusion
-This project demonstrates the significance of time series analysis and clustering techniques in financial market analysis. The identified regimes can enhance decision-making processes for traders and investors.
+This project demonstrates the significance of time series analysis and clustering techniques in financial market analysis. The identified regimes can enhance traders' and investors' decision-making processes.
 
 ## 🤝 Acknowledgments
 - **Dataset:** Yahoo Finance
