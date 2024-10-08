@@ -1,7 +1,7 @@
 # 🛍️ ClusterLogic Model
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Customer%20Clust%20-%20Customer%20Segmentation%20Tool/Customer%20Clust%20-%20Segmentation%20Tool.png" alt="Customer Clust Segmentation Tool" width="600"/>
+  <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/Prediction%20Models/ClusterLogic%20Model/ClusterLogic%20Model.png" alt="Customer Clust Segmentation Tool" width="600"/>
 </p>
 
 
