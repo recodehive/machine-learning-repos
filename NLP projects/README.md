@@ -15,15 +15,15 @@ Basic NLP steps for categorizing the E-commerce dataset include:-
 **1. Importing Libraries**
 
  - Libraries such as NumPy, Pandas, Matplotlib are imported for data manipulation and visualization , NLTK for nlp processing, sklearn for model building and performance metrics.
- - 
+   
 **2. Data preprocessing**
    
- - Tokenization: Tokenization is the process of splitting text into smaller units, typically words or phrases.Tokenizes product titles and descriptions.
- - Stopword Removal: Removes common stopwords that do not provide categorization value.
- - Stemming: Involves reducing words to their root form. It removes suffixes like "-ing", "-ed", and "-ly", simplifying words to their base form.
- - Lemmatization: Similar to stemming but more sophisticated. Instead of just chopping off word endings, it transforms words into their dictionary base form (or lemma) based on their context.
- - Vectorization: Once text is preprocessed (tokenized, lowercased, and lemmatized), it’s transformed into numerical vectors that can be fed into a machine learning model. Techniques like TF-IDF (Term Frequency-Inverse Document Frequency) or Word2Vec are used to convert textual data into a format that a model can understand.
- - Removing Special Characters : Before or during the vectorization process, unnecessary characters like punctuation marks, symbols, and numbers (unless relevant to the product, like in technical specifications) are removed from the text.
+ - **Tokenization:** Tokenization is the process of splitting text into smaller units, typically words or phrases.Tokenizes product titles and descriptions.
+ - **Stopword Removal:** Removes common stopwords that do not provide categorization value.
+ - **Stemming:** Involves reducing words to their root form. It removes suffixes like "-ing", "-ed", and "-ly", simplifying words to their base form.
+ - **Lemmatization:** Similar to stemming but more sophisticated. Instead of just chopping off word endings, it transforms words into their dictionary base form (or lemma) based on their context.
+ - **Vectorization:** Once text is preprocessed (tokenized, lowercased, and lemmatized), it’s transformed into numerical vectors that can be fed into a machine learning model. Techniques like TF-IDF (Term Frequency-Inverse Document Frequency) or Word2Vec are used to convert textual data into a format that a model can understand.
+ - **Removing Special Characters :** Before or during the vectorization process, unnecessary characters like punctuation marks, symbols, and numbers (unless relevant to the product, like in technical specifications) are removed from the text.
 
 **3. Model Overview**
 
@@ -32,10 +32,10 @@ Basic NLP steps for categorizing the E-commerce dataset include:-
 Multinomial Naive Bayes is a popular algorithm for text classification tasks. It’s based on Bayes' Theorem.
 - How it works: MultinomialNB assumes that features (words) are conditionally independent given the class and calculates the probability of a product belonging to a specific category.
 
-**b. Support Vector Classifier (SVC)**
+**b. Support Vector Machine (SVM)**
 
-Support Vector Classifier (SVC) is a supervised learning algorithm used for classification tasks. It aims to find the best hyperplane that separates different classes in the feature space.
- - How it works: SVC tries to maximize the margin between different classes by finding the hyperplane that best separates the data points. In the case of text, the features are usually word embeddings or TF-IDF vectors.
+Support Vector Machine (SVM) is a supervised learning algorithm used for classification tasks. It aims to find the best hyperplane that separates different classes in the feature space.
+ - How it works: SVM tries to maximize the margin between different classes by finding the hyperplane that best separates the data points. In the case of text, the features are usually word embeddings or TF-IDF vectors.
 
 **c. Random Forest Classifier**
 
@@ -66,7 +66,7 @@ Once trained, the model is evaluated on the test set to ensure it generalizes we
 
 MultinomialNB - 92%
 
-SVC - 96%
+SVM - 96%
 
 RandomForestClassifier - 93.058%
 
