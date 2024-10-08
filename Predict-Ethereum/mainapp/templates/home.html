@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="Ethereum Price Prediction using Extra Trees and Random Forest Regressors"
+        content="Ethereum Price Prediction"
+    />
+    <title>Predict ETH</title>
+
+    <link rel="shortcut icon" href="images\favicon-removebg-preview.png" type="image/x-icon">
+    <!-- linking css files -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Lining email js -->
+    <script src="{% static 'jquery-3.7.1.min.js' %}"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="#">
+            <img src="images\favicon-removebg-preview.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
+          Predict ETH
+          </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#vision">Vision</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#prediction">Prediction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-dark" href="#contact">Contact Us</button>
+        </div>
+    </div>
+</nav>
+
+
+<div class="content">
+    <section class="main-section" id="home">
+
+        <div class="content-right">
+            <div class="image-container">
+                <img src="images\Background.png" alt="sectionImage" class="section-image" />
+            </div>
+        </div>
+
+        <div class="content-left">
+            <p class="section-label">Very proud to introduce</p>
+            <h1 class="section-title">Ethereum Price Prediction</h1>
+            <p class="section-description">
+                Forging Tomorrow's Wealth with Vision and Precision. Navigate the Future of Finance with Confidence.
+            </p>
+            <div class="button-group">
+                <a href="https://ethereum.org/en/" class="tour-button" target="_blank">Take Tour</a>
+            </div>
+        </div>
+       
+    </section>
+</div>
+
+<div class="feature-container">
+    <div class="feature-content">
+        <div class="main-info">
+            <h2 class="main-title">
+               Welcome to Ethereum
+            </h2>
+            <p class="main-description">
+                Ethereum is the community-run technology powering the cryptocurrency ether (ETH) and thousands of decentralized applications.
+            </p>
+        </div>
+        <div class="feature-grid">
+            <!-- card 1 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img class="feature-svg" src="images\Eth_logo-removebg-preview.png"/>
+                </div>
+                <div class="feature-info">
+                    <div class="feature-title">
+                        What is Ethereum
+                    </div>
+                    <div class="feature-description">
+                        Ethereum is a technology that's home to digital money, global payments, and applications. The community has built a booming digital economy, bold new ways for creators to earn online, and so much more. It's open to everyone, wherever you are in the world – all you need is the internet.
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img class="feature-svg" src="images\Analytics.svg"/>
+                </div>
+                <div class="feature-info">
+                    <div class="feature-title">
+                        Key Use Cases
+                    </div>
+                    <div class="feature-description">
+                        Ethereum expands blockchain tech with faster transactions, enhancing efficiency and decentralization.
+                        Key use cases include De-Fi, DAOs, Smart Contracts, NFTs, and Dapps.
+                        From entertainment to healthcare, ETH provides value across sectors, driven by its unique model.
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img class="feature-svg" src="images\Concept.svg"/>
+                </div>
+                <div class="feature-info">
+                    <div class="feature-title">
+                        Concept Of Our Project
+                    </div>
+                    <div class="feature-description">
+                        Our project employs Extra Trees and Random Forest Regressors, sophisticated machine learning techniques, to predict outcomes accurately. Leveraging ensemble learning, we aim to enhance predictive performance and model robustness.
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img class="feature-svg" src="images\Response.svg"/>
+                </div>
+                <div class="feature-info">
+                    <div class="feature-title">
+                        Responsive Support
+                    </div>
+                    <div class="feature-description">
+                        Delivering exceptional customer support is our priority. Our dedicated team ensures prompt assistance and issue resolution. Trust us for reliable support whenever you need it
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="testimonial-container" id="vision">
+    <div class="testimonial-content">
+        <h2 class="testimonial-title" >
+            Vision
+        </h2>
+        <div class="testimonial-grid">
+            <!-- card 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-details">
+                    <h2 class="testimonial-name">
+                        01 Precision Analysis
+                    </h2>
+                </div>
+                <div class="testimonial-avatar">
+                    <img src="images\analytics_black_24dp.svg"/>
+                </div>
+                <div class="testimonial-text">
+                    “Utilizing advanced algorithms and historical data to meticulously analyze market trends, technological advancements, and regulatory changes for accurate predictions.”
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-details">
+                    <h2 class="testimonial-name">
+                        02 Strategic Insights
+                    </h2>
+                </div>
+                <div class="testimonial-avatar">
+                    <img src="images\insights_black_24dp.svg"/>
+                </div>
+                <div class="testimonial-text">
+                    “Leveraging expert insights alongside sophisticated methodologies to anticipate Ethereum's price fluctuations and identify lucrative investment opportunities.”
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-details">
+                    <h2 class="testimonial-name">
+                        02 Future Foresight
+                    </h2>
+                </div>
+                <div class="testimonial-avatar">
+                    <img src="images\back_hand_black_24dp.svg"/>
+                </div>
+                <div class="testimonial-text">
+                    “Navigating cryptocurrency volatility with a visionary approach, employing predictive models and innovative strategies to forecast Ethereum's price movements with precision and foresight.”
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+
+{% comment %} <div class="predict-container" id="prediction">
+    <section class="main-section">
+        <div class="predict-content">
+            <h2 class="predict-title">Predictions</h2>
+            <h3 class="predict-header">
+                Try our Price Prediction Model!
+            </h3>
+        </div>
+        <div class="model-selection" >
+            <form class="row" method="post">
+                {%csrf_token%}
+                <input type="date" id="date" onchange="updateValue()" class="date" > <br>
+            
+            <div class="row">
+                <div class="result-box">
+                    <div class="result-model" id="result_model">Price: $</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-model" id="result_high">High: $</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-model" id="result_low">Low: $</div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+</div> {% endcomment %}
+
+
+<div class="predict-container" id="prediction">
+    <section class="main-section">
+        <div class="predict-content">
+            <h2 class="predict-title">Predictions</h2>
+            <h3 class="predict-header">
+                Try our Price Prediction Model!
+            </h3>
+        </div>
+        <div class="model-selection">
+            <form class="row" method="post">
+                {% csrf_token %}
+                <input type="date" id="date" onchange="updateValue()" class="date"><br>
+
+                <div class="row">
+                    <div class="result-box">
+                        <div class="result-model" id="result_model">Price: $<span id="price_dollars"></span> (₹<span id="price_rupees"></span>)</div>
+                    </div>
+                    <div class="result-box">
+                        <div class="result-model" id="result_high">High: $<span id="high_dollars"></span> (₹<span id="high_rupees"></span>)</div>
+                    </div>
+                    <div class="result-box">
+                        <div class="result-model" id="result_low">Low: $<span id="low_dollars"></span> (₹<span id="low_rupees"></span>)</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+
+
+{% comment %} Chart View from Trading view {% endcomment %}
+
+<!-- TradingView Widget BEGIN -->
+{% comment %} <div class="tradingview-widget-container" style="height:50px;width:50px">
+    <div class="tradingview-widget-container__widget" style="height:calc(50% - 32px);width:50%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+    "autosize": true,
+    "symbol": "COINBASE:ETHUSD",
+    "timezone": "Asia/Kolkata",
+    "theme": "light",
+    "style": "2",
+    "locale": "en",
+    "withdateranges": true,
+    "range": "1D",
+    "allow_symbol_change": true,
+    "calendar": false,
+    "support_host": "https://www.tradingview.com"
+  }
+    </script>
+  </div> {% endcomment %}
+  <!-- TradingView Widget END -->
+
+<hr>
+
+<div class="about-us" id="about">
+    <section class="about-main-section">
+        <div class="about-content-left"> 
+            <h2 class="about-us-title">About Us</h2>
+            <p class="about-us-text">
+                Welcome to Predict ETH, your trusted source for accurate and insightful Ethereum price predictions. At Predict ETH, we're passionate about empowering cryptocurrency traders with the information they need to make informed decisions in the dynamic world of digital assets.
+            </p>
+            <br>
+            <h2 class="about-us-title">Our Approach</h2>
+            <p class="about-us-text">
+                At Predict ETH, we employ a rigorous methodology that combines fundamental analysis, technical indicators, and machine learning algorithms to forecast Ethereum's price movements with precision. Our data-driven approach ensures that our predictions are based on objective analysis rather than speculative guesswork, providing you with the confidence to make well-informed trading decisions.
+            </p>
+            <br>
+            <h2 class="about-us-title">Mission</h2>
+            <p class="about-us-text">
+                Our mission at Predict ETH is simple: to provide reliable Ethereum price predictions backed by robust analysis and cutting-edge technology. We understand the challenges that traders face in navigating the volatile cryptocurrency markets, and we're committed to delivering actionable insights that help you stay ahead of the curve.
+            </p>
+        </div>
+        <div class="about-content-right"> 
+            <div class="about-image-container">
+                <img src="images\Human Working.png" alt="sectionImage" class="about-section-image" />
+            </div>
+        </div>
+    </section>
+</div>
+
+<hr>
+
+{% comment %} Contact us Form {% endcomment %}
+
+
+<div class="about-us" id="contact">
+    <section class="contact-main-section">
+        <div class="contact-content-left"> 
+            <h2 class="about-us-title">Contact Us</h2>
+<form action="https://api.web3forms.com/submit" method="POST" class="p-4 m-2">
+
+     <input type="hidden" name="access_key" value="69b77066-4dc7-48ec-893f-53897bf2104b">
+
+    <div class="row mb-2">
+      <label for="name" class="col-sm-2 col-form-label">Name </label>
+      <div class="col-sm-3">
+         <input type="text" name="name" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+        <label for="email" class="col-sm-2 col-form-label">Email </label>
+        <div class="col-sm-3">
+            <input type="email" name="email" required>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <label for="textarea" class="col-sm-2 col-form-label textarea-20" required>Message Description</label>
+        <div class="col-sm-3">
+            <textarea name="message" required></textarea>
+
+        </div>
+    <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+      <div class="col-sm-3">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" required>
+          <label class="form-check-label" for="gridRadios1">
+           Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+         Female
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+          Others
+            </label>
+          </div>
+      </div>
+    </fieldset>
+
+      </div>
+    </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+  <hr>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+             <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="#home">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">Team</span></p>
+    </div>
+</footer>
+<button onclick="scrollToTop()" class="scroll-to-top">&uparrow;</button>
+
+<script src="{% static 'script.js' %}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
