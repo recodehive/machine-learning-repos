@@ -9,6 +9,9 @@ Product categorization is the task of classifying products as belonging to one o
 ## Dataset
 The dataset used in this project is sourced from Kaggle(https://www.kaggle.com/datasets/sumedhdataaspirant/e-commerce-text-dataset) . It consists of >50000 records for 4 categories - "Electronics", "Household", "Books" and "Clothing & Accessories", which cover almost 80% of any E-commerce website.
 
+![image](https://github.com/user-attachments/assets/5647eacf-2a1b-40f7-b887-7283216ee25d)
+
+
 ## Methodology
 Basic NLP steps for categorizing the E-commerce dataset include:-
 
