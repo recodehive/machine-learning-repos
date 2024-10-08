@@ -60,8 +60,8 @@ ClusterLogic Model is a powerful customer segmentation tool designed to categori
 ### Installation
 Clone this repository:
 ```bash
-git clone https://github.com/yourusername/Customer_Clust.git
-cd Customer_Clust
+git clone https://github.com/yourusername/ClusterLogic.git
+cd ClusterLogic
 ```
 Install the necessary dependencies:
 
@@ -72,7 +72,7 @@ pip install -r requirements.txt
 Run the Jupyter notebook to explore the data and generate customer segments:
 
 ```bash
-jupyter notebook notebooks/Customer_Segmentation.ipynb
+jupyter notebook notebooks/ClusterLogic_Model.ipynb
 ```
 To run the segmentation pipeline as a script:
 
