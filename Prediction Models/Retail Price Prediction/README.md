@@ -8,10 +8,8 @@ This repository contains a machine learning model for retail price optimization.
 - [Dataset](#dataset)
 - [Model](#model)
 - [Requirements](#requirements)
-- [Usage](#usage)
+
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
