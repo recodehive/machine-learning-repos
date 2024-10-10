@@ -60,7 +60,7 @@ pip install torch torchvision matplotlib Pillow
 
 | Content Image                                                                                  | Style Image                                                                                   |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| ![Content Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/content%20image.jpg) | ![Style Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/style%20image.jpg) |
+| ![Content Image](https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/Neural%20Style%20Transfer/Style%20Transfer%20with%20Neural%20Networks/content%20image.jpg) | ![Style Image](https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/Neural%20Style%20Transfer/Style%20Transfer%20with%20Neural%20Networks/style%20image.jpg) |
 
 ## 🔬 Concepts Behind the Project
 - **Content Representation**: Extracted from deeper layers of the neural network to capture the high-level structures in the image.
