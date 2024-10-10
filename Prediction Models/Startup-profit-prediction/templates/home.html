@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Profit prediction for startups</h1>
+    <p>Predict the profit of a startup basis their expenditure on R&D, Marketing etc.</p>
+    <form action="/submit" , method="POST">
+        <label for="state">Startup is in which state?</label><br>
+        <input type="radio" id="newyork" name="state" value="New York">
+        <label for="newyork">New York</label><br>
+        <input type="radio" id="florida" name="state" value="Florida">
+        <label for="florida">Florida</label><br>
+        <input type="radio" id="california" name="state" value="California">
+        <label for="california">California</label><br><br>
+        <label for="rdspend">What is the total expenditure on R&D?</label><br>
+        <input type="text" , id="rdspend" , name="rdspend" , value="0"><br>
+        <label for="adspend">What is the total expenditure on Administration?</label><br>
+        <input type="text" , id="adspend" , name="adspend" , value="0"><br>
+        <label for="mkspend">What is the total expenditure on Marketing?</label><br>
+        <input type="text" , id="mkspend" , name="mkspend" , value="0"><br><br>
+        <input type="submit" , value="Submit">
+
+
+    </form>
+
+
+</body>
+
+</html>
