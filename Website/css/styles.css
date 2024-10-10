@@ -379,59 +379,71 @@ button#toggle-stats:hover {
 
 }
 
-.language-and-milestone{
+.language-and-milestone {
     display: flex;
-    gap:20px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     animation: slide-in-right 0.5s ease-in-out;
     flex-wrap: wrap;
 }
 
-.text-base{
+.text-base {
     text-align: left;
     font-size: 16px;
 }
-#languages {
+
+#languages, #milestone {
     text-align: center;
     margin-bottom: 30px;
-    width:500px;
+    width: 500px;
     background-color: #121245;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 15px;
-    height:340px;
-    color:white;
+    height: 340px;
+    color: white;
     animation: slideInRight 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
+
+/* Hover effect for cards */
+#languages:hover, #milestone:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    background-color: #0f0f66;
+}
+
 #language-list {
     list-style: none;
     text-align: center;
-    width:100%;
-    padding:0px;
+    width: 100%;
+    padding: 0px;
 }
 
 #language-list li {
     padding: 10px 0px;
     display: flex;
-    width:100%;
-    gap:20px;
-    border-bottom:2px solid white;
+    width: 100%;
+    gap: 20px;
+    border-bottom: 2px solid white;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
 }
 
-.progress-bar-container{
+.progress-bar-container {
     background-color: whitesmoke;
     border-radius: 8px;
     overflow: hidden;
-    width:300px;
-    height:20px;
+    width: 300px;
+    height: 20px;
     animation: fadeIn 1s ease-in-out;
 }
+
 .progress-bar {
     height: 20px;
-    background-color: #0D6EFD; 
+    background-color: #0D6EFD;
     width: 300px;
     text-align: left;
     display: flex;
@@ -439,25 +451,28 @@ button#toggle-stats:hover {
     font-size: 12px;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
     animation: fadeIn 1s ease-in-out;
 }
+
 #milestone {
     text-align: center;
     margin-bottom: 30px;
-    width:500px;
+    width: 500px;
     background-color: #121245;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 15px;
-    height:340px;
-    color:white;
+    height: 340px;
+    color: white;
     animation: slideInRight 1s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
 }
 
 .chart-container {
     display: flex;
     align-items: center;
-    width:150px;
+    width: 150px;
     margin: 50px 20px;
     animation: slideInRight 1s ease-in-out;
 }
@@ -473,22 +488,9 @@ button#toggle-stats:hover {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    width:300px;
+    width: 300px;
 }
-@media (max-width: 560px) {
-    .chart-container {
-        width:120px;
-    }
-    .legend span {
-        width:170px;
-    }
-    .progress-bar-container{
-        width:200px;
-    }
-    .progress-bar {
-        width: 200px;
-    }
-}
+
 .legend span::before {
     content: '';
     display: inline-block;
@@ -496,7 +498,26 @@ button#toggle-stats:hover {
     height: 20px;
     margin-right: 8px;
     border-radius: 50%;
-    background-color: currentColor; /* This will be set dynamically */
+    background-color: currentColor; 
+}
+
+/* Responsive styles */
+@media (max-width: 560px) {
+    .chart-container {
+        width: 120px;
+    }
+
+    .legend span {
+        width: 170px;
+    }
+
+    .progress-bar-container {
+        width: 200px;
+    }
+
+    .progress-bar {
+        width: 200px;
+    }
 }
 
 /* Footer stays at the bottom */
