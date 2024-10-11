@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/premium-vector/network-connection-background_23-2148899874.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text more readable */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #000;
+    font-size: 3em; /* Larger font size */
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Increased letter spacing */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #2ecc71; /* Emerald green color */
+    color: #fff;
+    border: none;
+    padding: 15px 25px; /* Increased padding for a larger button */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Adjust the font size */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+button:hover {
+    background-color: #27ae60; /* Darker shade on hover */
+}
+
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e74c3c; 
+    font-size: 1.2em; /* Adjust the font size */
+    text-align: center; /* Center the text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
