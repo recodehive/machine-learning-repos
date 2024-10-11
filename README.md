@@ -1,3 +1,4 @@
+<a id="top"></a>
 <div align="center">
   
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -11,7 +12,9 @@
 <a href="https://github.com/recodehive/machine-learning-repos/blob/master/LICENSE"><img src="https://img.shields.io/github/license/recodehive/machine-learning-repos?color=2b9348" alt="License Badge"/></a>
 [![](https://visitcount.itsvg.in/api?id=gssoc-postman&label=Profile%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ## 🔍Welcome to the Machine Learning repo project! 🌟
+
 </div>
 
 
@@ -20,11 +23,11 @@ Repeated issue creation for more scores will be considered has flag.
 If later found out, the points will be deducted. You can't be earning more than 60 points from this repo. Any techincal feature addition is excluded.
 
 <br />
+<h1 align="center">Machine Learning 🤖</h1>
 
-# Machine Learning 🤖
-
-## Table of Contents
-
+<details>
+ <summary><h2>:pushpin:Table of Contents</h2></summary>
+  
 - [Roadmap](roadmaps)
   - [Machine Learning Roadmap](#machine-learning)
   - [Roadmap.sh](#roadmapsh)
@@ -55,10 +58,17 @@ If later found out, the points will be deducted. You can't be earning more than 
 - [Others](#others)
 - [Conclusion](#conclusion)
 
-<br />
+</details>
 
-## Roadmap
+<hr>
+
+<details>
+ <summary><h2>📑Roadmap</h2>
+   
 > This is a roadmap, we can refer to for starting with Machine Learning.
+ 
+ </summary>
+ 
 ### Machine Learning
 
 <table width="100%">
@@ -108,10 +118,17 @@ If later found out, the points will be deducted. You can't be earning more than 
 
 > [Explore/Customize Roadmaps](https://roadmap.sh/roadmaps) browse the ever-growing list of up-to-date, community driven roadmaps.
 
-<br />
+</details>
 
-<h2 id="machine-learning-Latest-Trends">Latest Trends in Machine Learning</h2>
+<hr>
+
+
+<details>
+ <summary><h2 id="machine-learning-Latest-Trends"> 📈 Latest Trends in Machine Learning</h2>  
+
+   > This is a roadmap, we can refer to for starting with Machine Learning.
 <p><a href="https://equal-iron-969.notion.site/Latest-Trends-in-Machine-Learning-1151a8b25d4c8067a8f8fd48dd8a7d6a?pvs=4">Latest Trends in Machine Learning</a></p>
+ </summary>
 
 <h3>Key Trends:</h3>
 <ul>
@@ -122,11 +139,18 @@ If later found out, the points will be deducted. You can't be earning more than 
     <li><strong>AI Ethics and Fairness:</strong> Focus on ethical AI development and minimizing biases.</li>
 </ul>
 
-<br />
+</details>
 
-## Tutorials or Courses
+<hr>
+
+
+<details>
+  <summary><h2 id="tutorials-or-courses"> ✉️ Tutorials or Courses</h2>   
 
 > Discover a collection of tutorials and courses for learning the Mathematics, Fundamentals, Algorithms and more which are requied for Machine Learning.
+
+ </summary>
+   
 ### Fundamentals of Mathematics
 
 <table width="100%">
@@ -196,7 +220,6 @@ If later found out, the points will be deducted. You can't be earning more than 
         The Google Colab introductory notebook provides a comprehensive guide on how to use Google Colab for interactive Python programming. It covers the basics of creating and running code cells, integrating with Google Drive for storage, and using Colab's powerful computing resources. </td>
     </tr>
 </table>
-
 
 ### Modules/Libraries
 
@@ -473,11 +496,15 @@ If later found out, the points will be deducted. You can't be earning more than 
     </tr>
 </table>
 
-<br />
+</details>
 
-## Books
+<hr>
+
+<details>
+ <summary><h2 id="books">	📚 Books</h2>  
 
 > Discover a diverse collection of valuable books for Machine Learning.
+</summary>
 <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -502,10 +529,16 @@ If later found out, the points will be deducted. You can't be earning more than 
       </tr>      
   </table>
 
-  <br />
+  </details>
 
-## Datasets
+  <hr>
+
+<details>
+ <summary><h2 id="datasets"> 📊 Datasets</h2>  
+   
 > These are some datasets that can help you practice Machine Learning
+
+</summary>
 <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -541,11 +574,17 @@ If later found out, the points will be deducted. You can't be earning more than 
       </tr>
 </table>
 
-<br />
+</details>
 
-## GitHub Repositories
+<hr>
+
+
+<details>
+ <summary><h2 id="github-repositories">:rocket: GitHub Repositories</h2>  
 
 > These are some GitHub repositories you can refer to
+
+</summary>
 <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -569,11 +608,17 @@ If later found out, the points will be deducted. You can't be earning more than 
       </tr>  
 </table>
 
-<br />
+</details>
 
-## YouTube Channels
+<hr>
+
+<details>
+ <summary><h2 id="youtube-channels"> ▶️ Youtube Channels</h2>
 
 > Explore amazing YouTubers specializing in web development.
+
+</summary>
+
 <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -607,12 +652,16 @@ If later found out, the points will be deducted. You can't be earning more than 
         <td>The YouTube channel "codebasics," hosted by codebasics, offers a variety of tutorials and resources focused on programming, data science, Machine Learning, and artificial intelligence. </td>
       </tr>
   </table>
+  </details>
 
-  <br />
+  <hr>
 
-## Machine Learning Forums
+<details>
+ <summary><h2 id="machine-learning-forums"> :clipboard: Machine Learning Forums</h2>  
+
 
 > Here are valuable resources to help you excel in your web development interview. You'll find videos, articles, and more to aid your preparation.
+</summary>
 <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -642,11 +691,15 @@ If later found out, the points will be deducted. You can't be earning more than 
 
 </table>
 
-<br />
+</details>
 
-## Courses
+<hr>
+
+<details>
+ <summary><h2 id="courses">	📓Courses</h2>  
 
 > These are Some valuable resources for learning Machine Learning.
+</summary>
   <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -673,11 +726,17 @@ If later found out, the points will be deducted. You can't be earning more than 
       </tr>    
   </table>
 
-  <br />
+  </details>
 
-## Projects
+  <hr>
+
+
+<details>
+ <summary><h2 id="projects">🔰Projects</h2>  
 
 > These Projects help you gain real time exprience for building Machine Learning models.
+</summary>
+
   <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -694,12 +753,16 @@ If later found out, the points will be deducted. You can't be earning more than 
         </td>
       </tr>  
 </table>
+</details>
 
-<br />
+<hr>
 
-##  Interview 
+<details>
+ <summary><h2 id="interview"> 🎓Interview </h2>  
 
 > These are some interview preparation resources.
+</summary>
+
   <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -717,11 +780,15 @@ If later found out, the points will be deducted. You can't be earning more than 
         </td>
       </tr>  
 </table>
+</details>
 
-<br />
+<hr>
 
-## Others
+<details>
+ <summary><h2 id="others"> 📎 Others</h2>  
+
 > These are some other resources you can refer to.
+ </summary>
   <table width="100%">
       <tr>
         <th>Resource Name</th>
@@ -758,11 +825,29 @@ If later found out, the points will be deducted. You can't be earning more than 
         </td>
       </tr>    
 </table>
+</details>
 
-<br />
+<hr>
 
-## Conclusion
+
+<div>
+<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="35" height="35" />Conclusion</h2>
+</div>
 
 Machine Learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and discovery. Its ability to analyze vast amounts of data and uncover patterns makes it indispensable for various applications, from predictive analytics and natural language processing to computer vision and autonomous systems. The wealth of libraries and frameworks available, such as TensorFlow, PyTorch, and scikit-learn, empowers developers and data scientists to build sophisticated models with relative ease. A strong community provides extensive resources, including tutorials, forums, and documentation, to support learners and professionals alike. To truly excel in Machine Learning, consistent practice is essential—engage in coding challenges, contribute to open-source projects, and apply your knowledge to real-world problems. This hands-on experience not only hones your skills but also opens doors to numerous career opportunities in tech, research, and beyond.
 
+<hr>
+
+<div>
+  Don't forget to leave a star<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="30"> for this project!
+</div> <br>
+
 **Never stop learning!**
+
+
+
+<a href="#top" style="background-color: red; color: white; padding: 10px 15px; border-radius: 8px; text-align: center; font-size: 16px; text-decoration: none; display: inline-block;">⬆️ Go to Top</a>
+
+
+
+
