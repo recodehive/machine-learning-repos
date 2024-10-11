@@ -1,12 +1,233 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ | ML Repos</title>
-    <link rel="icon" href="/assets/recode-hive.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="js/script.js">
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .faq-content {
+            display: none;
+        }
+        .faq-content.active {
+            display: block;
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+    #progress-container {
+    position: fixed ;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    z-index: 99990;
+    /* background: #f3f3f3; */
+}
+
+#progress-bar {
+    height: 53%;
+    width: 0;
+    background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(58, 114, 227) 50%, rgb(22, 121, 250) 100%);
+    box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: width 0.09s ease-in-out;
+    border-radius: 10px;
+}
+
+    </style>
+    <script>
+        function toggleFaqContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('active');
+        }
+    </script>
 </head>
-<body>
-    <h1>This is the FAQ page</h1>
+<body class="dark-mode">
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <script>
+            
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+        </script>
+    <div class="loading-container" id="loading-animation">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <a class="logo-container" href="/">
+                <img src="assets/recode-hive.png" alt="Recode Hive Icon" class="logo-icon">
+                <span class="logo-text">Recode Hive</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+
+                <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
+                <li><a href="organization">Organization</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="contact">Contact</a></li>
+                <!-- Dropdown on navbar -->
+                <li class="dropdown">
+                    <button id="dropdownButton" class="dropbtn">Know More</button>
+                        <div id="dropdownMenu" class="dropdown-content">
+                            <a href="/how-we-work">How we work?</a>
+                            <a href="/projects">Projects</a>
+                            <a href="/team">Team</a>
+                            <a href="conduct">Code of Conduct</a>
+                        </div>
+                </li>
+                <div class="nav-icons">
+                <li>
+                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
+                        <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
+                    </a>
+                </li>
+                <li>
+                    <button id="toggle-dark-mode" title="Use Ctrl+Q to toggle themes easily">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </div>
+            </ul>
+            <div class="line" id="line">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+ <main class="flex justify-center items-center">
+    <div class="w-full max-w-2xl p-4">
+        <h1 class="text-4xl font-bold text-blue-700 mb-8">
+            Frequently Asked Questions<span class="text-black">(FAQs)</span>
+        </h1>
+        <div class="space-y-4">
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq1')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>What is machine learning?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq1" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">Machine learning is a subset of artificial intelligence that enables computers to learn from data and improve their performance over time without explicit programming.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq2')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>How does your machine learning model work?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq2" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">Our model uses algorithms to analyze and learn patterns from data, which allows it to make predictions or decisions based on new, unseen data.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq3')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>What kind of data do you use?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq3" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">We use diverse datasets, including structured and unstructured data, to train our models, ensuring they can generalize well across different scenarios.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq4')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>How accurate is your model?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq4" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">The accuracy of our model varies by application and is evaluated using metrics like precision, recall, and F1 score. Detailed performance statistics are provided on our results page.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq5')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>Can I use your model for my own project?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq5" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">Yes, our model is available for use through API access or by downloading the code, depending on the licensing agreement.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq6')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>What programming languages and tools do you use?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq6" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">We primarily use Python with libraries like TensorFlow, Keras, and scikit-learn for model development, along with tools like Jupyter Notebooks for experimentation.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq7')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>How do you handle data privacy?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq7" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">We prioritize data privacy and comply with relevant regulations. All data is anonymized, and sensitive information is securely managed.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq8')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>What types of problems can your model solve?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq8" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">Our models are designed to tackle various problems, including classification, regression, clustering, and anomaly detection across multiple domains.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq9')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>Is there a community or support available?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq9" class="faq-content p-4 bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">Yes, we offer community support through forums and documentation. Users can also reach out for direct assistance via our contact page.</h3>
+            </div>
+    
+            <div class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer" onclick="toggleFaqContent('faq10')">
+                <div class="flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>How can I contribute to the project?</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="faq10" class="bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-black">We welcome contributions! You can participate by submitting code improvements, reporting issues, or suggesting features through our GitHub repository.</h3>
+            </div>
+        </div>
+    </div>
+ </main>
+ 
 </body>
 </html>
