@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #160457;
+    background-color: #160457; /* Blue background */
     color: #99d6dd;
     margin: 0;
     padding: 0;
@@ -13,23 +13,30 @@ body {
 
 /* Contact Form Container */
 .contact-container {
-    background-color: rgb(4, 9, 85);
+    background-color: #0b065f; /* Darker blue for form background */
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(243, 246, 246, 0.1);
+    box-shadow: 0 0 10px rgba(243, 246, 246, 0.2);
     max-width: 500px;
     width: 100%;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6); /* White hover shadow */
 }
 
 .contact-container h2 {
     margin-bottom: 20px;
     font-size: 24px;
+    color: #ffffff; /* White title for contrast */
 }
 
 .contact-container p {
     margin-bottom: 30px;
-    color: #0bc1f9;
+    color: #0bc1f9; /* Light blue for the paragraph text */
 }
 
 /* Form Styles */
@@ -41,19 +48,39 @@ form {
 label {
     text-align: left;
     margin-bottom: 5px;
-    color: #8fe8f4;
+    color: #8fe8f4; /* Lighter text color for labels */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
+    background-color: #110769; /* Darker blue text field background */
+    color: #ffffff; /* White text in the fields */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    background-color: #0d0891; /* Slightly lighter blue on hover */
+    border-color: #0bc1f9; /* Lighter blue border on hover */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* White shadow on hover */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: #0d0891; /* Lighter blue background when focused */
+    border-color: #05d1fa; /* Light blue border on focus */
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Stronger white shadow when focused */
 }
 
 textarea {
@@ -68,11 +95,14 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
     background-color: #05d1fa;
+    color: #08044c; /* Darker blue text on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* White hover shadow on button */
 }
 
 /* Back to Home Button Styles */
@@ -85,9 +115,12 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .back-button:hover {
     background-color: #06fdfd;
+    color: #08044c;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* White hover shadow */
 }
