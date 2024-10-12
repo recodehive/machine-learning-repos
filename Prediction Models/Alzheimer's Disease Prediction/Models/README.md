@@ -10,8 +10,6 @@ This project aims to classify images of individuals into different categories of
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
 - [Training](#training)
-- [Results](#results)
-- [Acknowledgements](#acknowledgements)
 
 ## Installation
 
