@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Sync</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome Icons for a more polished UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-check-label {
+            font-size: 1rem;
+        }
+        .btn {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .analysis-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .skill-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .form-group .dynamic-skill {
+            margin-top: 10px;
+        }
+        .btn-add-skill {
+            background-color: #28a745;
+            margin-left: 10px;
+        }
+        #manualSkillsInput input {
+            margin-bottom: 10px;
+        }
+        .btn-proceed {
+            margin-top: 20px;
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1><i class="fas fa-sync-alt"></i> Skill Sync</h1>
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="careerGoal"><i class="fas fa-bullseye"></i> Career Goal:</label>
+                <input type="text" class="form-control" id="careerGoal" name="careerGoal" placeholder="Enter your career goal">
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="manualSkills" name="manualSkills" onchange="toggleSkillsInput()">
+                <label class="form-check-label" for="manualSkills"><i class="fas fa-pencil-alt"></i> Manually add skills</label>
+            </div>
+
+            <div id="manualSkillsInput" style="display:none;">
+                <div class="form-group">
+                    <label for="skill">Skill:</label>
+                    <input type="text" class="form-control" id="skill" name="skill[]" placeholder="Enter a skill">
+                    <button type="button" class="btn btn-add-skill mt-2" onclick="addSkill()"><i class="fas fa-plus-circle"></i> Add Skill</button>
+                </div>
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="linkedinSkills" name="linkedinSkills" onchange="toggleLinkedinInput()">
+                <label class="form-check-label" for="linkedinSkills"><i class="fab fa-linkedin"></i> Import skills from LinkedIn</label>
+            </div>
+
+            <div id="linkedinInput" style="display:none;">
+                <div class="form-group">
+                    <label for="linkedinUsername"><i class="fab fa-linkedin"></i> LinkedIn Username:</label>
+                    <input type="text" class="form-control" id="linkedinUsername" name="linkedinUsername" placeholder="Enter your LinkedIn username">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mt-4">Submit</button>
+        </form>
+
+        {% if profile_data %}
+            <div class="analysis-section">
+                {% if gemini_response %}
+                    <h2>Skill Gap Analysis</h2>
+                    <p>{{ gemini_response }}</p>
+                {% endif %}
+                {% if courses %}
+                    <h2>Recommended Courses</h2>
+                    <ul class="skill-list">
+                        {% for course in courses %}
+                            <li>{{ course }}</li>
+                        {% endfor %}
+                    </ul>
+                    <button class="btn btn-proceed btn-lg" onclick="gotoHome()">Proceed to EduConnect</button>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleSkillsInput() {
+            var manualSkillsInput = document.getElementById("manualSkillsInput");
+            if (document.getElementById("manualSkills").checked) {
+                manualSkillsInput.style.display = "block";
+            } else {
+                manualSkillsInput.style.display = "none";
+            }
+        }
+
+        function toggleLinkedinInput() {
+            var linkedinInput = document.getElementById("linkedinInput");
+            if (document.getElementById("linkedinSkills").checked) {
+                linkedinInput.style.display = "block";
+            } else {
+                linkedinInput.style.display = "none";
+            }
+        }
+
+        function addSkill() {
+            var skillInput = document.createElement("input");
+            skillInput.setAttribute("type", "text");
+            skillInput.setAttribute("class", "form-control dynamic-skill");
+            skillInput.setAttribute("name", "skill[]");
+
+            var skill = document.getElementById("skill").value.trim();
+            if (skill !== "") {
+                skillInput.value = skill;
+                document.getElementById("skill").value = "";
+                document.getElementById("manualSkillsInput").appendChild(skillInput);
+            }
+        }
+
+        function gotoHome(){
+            window.location.href = "http://localhost:5000";
+        }
+    </script>
+</body>
+</html>
