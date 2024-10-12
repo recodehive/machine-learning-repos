@@ -1518,7 +1518,14 @@ h1 {
 .github-image img {
     width: 100%;
     border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.github-image img:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); 
+    transform: translateY(-5px); 
+}
+
 /* Dark Mode Styles */
 
 .dark-mode .github-section{
