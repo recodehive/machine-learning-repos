@@ -10,9 +10,6 @@ This project utilizes the California housing dataset to predict housing prices b
 - Usage
 - Data Exploration
 - Model Training
-- Results
-- Contributions
-- License
 
 
 ### Dataset:
@@ -82,9 +79,6 @@ The project utilizes a Random Forest Regressor to predict the median house value
 
       - Evaluating the model's performance using Mean Squared Error (MSE) and R-squared metrics.
 
-
-### Results
-The model's performance metrics are as follows:
 
 - Training MSE: 0.04
 - Testing MSE: 0.26
