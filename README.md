@@ -88,7 +88,9 @@ Through these stages, the machine learning workflow provides a systematic approa
 <p align="center">
   <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/Machine%20Learning%20Workflow%20Flowchart(1)(1).png" width="400" />
 </p>
+
 ---
+
 ### Roadmap
 > This is a roadmap, we can refer to for starting with machine learning.
 #### Machine Learning
