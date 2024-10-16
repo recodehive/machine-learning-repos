@@ -1,5 +1,4 @@
 <h1 align="center">Machine Learning 🤖</h1>
-
 <div align="center">
   
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -20,13 +19,11 @@
 This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
 Repeated issue creation for more scores will be considered has flag.
 If later found out the points will be deducted. you cant be earning more than 60 points from this repo. any techincal feature addition is excluded
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/ML%20Hub%20-%20Learning%20Resource(1)(1).png" width="500" />
 </p>
 
 ## Table of Contents
-
 - [Roadmap](roadmaps)
   - [Machine Learning Roadmap](#machine-learning)
   - [Roadmap.sh](#roadmapsh)
