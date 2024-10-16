@@ -21,6 +21,10 @@ If later found out the points will be deducted. you cant be earning more than 60
 
 # Machine Learning 🤖
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/ML%20Hub%20-%20Learning%20Resource(1)(1).png" width="500" />
+</p>
+
 ## Table of Contents
 
 - [Roadmap](roadmaps)
