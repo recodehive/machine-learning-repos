@@ -1,4 +1,5 @@
-# Machine Learning 🤖
+<h1 align="center">Machine Learning 🤖</h1>
+
 <div align="center">
   
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
