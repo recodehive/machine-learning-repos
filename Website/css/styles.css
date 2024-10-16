@@ -1544,4 +1544,8 @@ h1 {
     background-color: #8397fa;
 }
 
+/*Update the twitter icon to its real one */
+ .fa.fa-twitter::before{
+	content:"𝕏";
+}
 
