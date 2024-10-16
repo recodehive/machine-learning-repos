@@ -51,7 +51,7 @@ If later found out the points will be deducted. you cant be earning more than 60
 - [Interview](#interview)
 - [Others](#others)
 - [Conclusion](#conclusion)
-- 
+---
 ## 📘 Theory of Machine Learning Workflow
 
 Machine learning (ML) is a subset of artificial intelligence that focuses on building systems capable of learning from data, identifying patterns, and making decisions with minimal human intervention. The machine learning workflow is a structured approach that guides practitioners through the stages of developing effective models.
@@ -86,10 +86,9 @@ Post-deployment, continuous monitoring of the model's performance is necessary t
 Through these stages, the machine learning workflow provides a systematic approach to building, validating, and deploying models that can yield valuable insights and drive decision-making across various domains.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/Machine%20Learning%20Workflow%20Flowchart(1)(1).png" width="600" />
+  <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/Machine%20Learning%20Workflow%20Flowchart(1)(1).png" width="400" />
 </p>
-
-
+---
 ### Roadmap
 > This is a roadmap, we can refer to for starting with machine learning.
 #### Machine Learning
