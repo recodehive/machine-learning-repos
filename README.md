@@ -1,3 +1,4 @@
+# Machine Learning 🤖
 <div align="center">
   
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -18,8 +19,6 @@
 This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
 Repeated issue creation for more scores will be considered has flag.
 If later found out the points will be deducted. you cant be earning more than 60 points from this repo. any techincal feature addition is excluded
-
-# Machine Learning 🤖
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/alo7lika/machine-learning-repos/refs/heads/main/ML%20Hub%20-%20Learning%20Resource(1)(1).png" width="500" />
@@ -735,6 +734,7 @@ If later found out the points will be deducted. you cant be earning more than 60
         </td>
       </tr>    
 </table>
+
 ### Conclusion
 
 Machine learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and discovery. Its ability to analyze vast amounts of data and uncover patterns makes it indispensable for various applications, from predictive analytics and natural language processing to computer vision and autonomous systems. The wealth of libraries and frameworks available, such as TensorFlow, PyTorch, and scikit-learn, empowers developers and data scientists to build sophisticated models with relative ease. A strong community provides extensive resources, including tutorials, forums, and documentation, to support learners and professionals alike. To truly excel in machine learning, consistent practice is essential—engage in coding challenges, contribute to open-source projects, and apply your knowledge to real-world problems. This hands-on experience not only hones your skills but also opens doors to numerous career opportunities in tech, research, and beyond.
