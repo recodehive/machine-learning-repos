@@ -45,9 +45,8 @@ Steps involved:
 
 ## Results
 
-1. **Logistic Regression**: 94% accuracy
-2. **Random Forest Regressor**: 89% accuracy
-3. **Multinomial Naive Bayes**: 96% accuracy
+1. **Logistic Regression**: 98% accuracy
+2. **Multinomial Naive Bayes**: 97% accuracy
 
 ## Enhanced Features
 
