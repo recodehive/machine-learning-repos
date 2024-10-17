@@ -1027,7 +1027,7 @@ button#toggle-languages:hover {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: white;
+    /* color: white; */
     animation: slideInRight 1s ease-in-out;
 }
 
@@ -1355,8 +1355,8 @@ body.dark-mode {
     color: #333;
 }
 
-.dark-mode .testimonial-section h2 {
-    color: #111;
+.blue-mode .text-white-light-mode{
+    color: black !important;
 }
 
 .dark-mode .testimonial {
@@ -1545,3 +1545,406 @@ h1 {
 }
 
 
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.light-mode .dropdown-content {
+    background-color: #fff; /* Light dropdown background */
+}
+
+.light-mode .text-black-light-mode, .light-mode .card h3{
+    color: #333 !important; 
+}
+
+.light-mode p{
+    color: white;
+}
+
+.light-mode #scroll-top-btn svg {
+    fill: rgb(0, 0, 150); /* Adjust SVG color */
+}
+
+.light-mode .side-icons .icon-content a {
+    background-color: #fff; /* White background for icons */
+    color: #333; /* Dark text color */
+}
+
+.light-mode .side-icons .icon-content a:hover .filled {
+    background-color: #ddd; /* Light hover effect */
+}
+
+.light-mode .highlight {
+    color: #333; /* Highlight color */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #f1f1f1; /* Light text */
+}
+
+.dark-mode .dropdown-content {
+    background-color: #1c1c1c; /* Dark dropdown background */
+}
+
+.dark-mode p, .dark-mode h2, .dark-mode .card h3 {
+    color: #f1f1f1; /* Light text color */
+}
+
+.dark-mode #scroll-top-btn svg {
+    fill: rgb(255, 255, 255); /* Adjust SVG color */
+}
+
+.dark-mode .side-icons .icon-content a {
+    background-color: #1f1f1f; /* Dark background for icons */
+    color: #f1f1f1; /* Light text color */
+}
+
+.dark-mode .side-icons .icon-content a:hover .filled {
+    background-color: #444; /* Dark hover effect */
+}
+
+.dark-mode .highlight {
+    color: #f1f1f1; /* Highlight color */
+}
+
+/* Blue Mode Styles */
+body.blue-mode {
+    background-color: #170179; /* Dark blue background */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode .dropdown-content {
+    background-color: #121245; /* Blue dropdown background */
+}
+
+.blue-mode p, .blue-mode h2, .blue-mode .card h3 {
+    color: #fff; /* Light text color */
+}
+
+.blue-mode #scroll-top-btn svg {
+    fill: rgb(0, 12, 150); /* SVG color for blue mode */
+}
+
+.blue-mode .side-icons .icon-content a {
+    background-color: #121245; /* Dark blue background for icons */
+    color: #ddd; /* Light text color */
+}
+
+.blue-mode .side-icons .icon-content a:hover .filled {
+    background-color: #444; /* Dark hover effect */
+}
+
+.blue-mode .highlight {
+    color: #fff; /* Highlight color */
+}
+
+/* Additional Styles for Cards and Sections */
+.light-mode .card, 
+.dark-mode .card, 
+.blue-mode .card {
+    background-color: #fff; /* Default card background for light mode */
+}
+
+.dark-mode .card {
+    background-color: #1f1f1f; /* Dark card background */
+}
+
+.blue-mode .card {
+    background-color: #121245; /* Blue card background */
+}
+
+/* Testimonial Section Styles */
+.light-mode .testimonial-section{
+    color: white;
+}
+.light-mode .text-black-light-mode{
+    color: black;
+}
+.dark-mode .text-black-light-mode{
+    color: white !important;
+}
+.dark-mode .testimonial-section,
+.blue-mode .testimonial-section {
+    color: #333;
+}
+
+.dark-mode .testimonial-section {
+    background-color: #333; /* Dark testimonial section */
+}
+
+.blue-mode .testimonial-section {
+    background-color: #f9f9f9; /* Blue testimonial section */
+}
+
+/* Additional styling for testimonials */
+.light-mode .testimonial, 
+.dark-mode .testimonial, 
+.blue-mode .testimonial {
+    background-color: #fff; /* Default testimonial background for light mode */
+}
+
+.dark-mode .testimonial {
+    background-color: #222; /* Dark testimonial background */
+}
+
+.blue-mode .testimonial {
+    background-color: #170179; /* Blue testimonial background */
+}
+
+/* Button Styles */
+.light-mode #toggle-dark-mode {
+    /* background-color: #007bff; Blue button background for light mode */
+    color: #fff; /* White text */
+}
+
+.dark-mode #toggle-dark-mode {
+    /* background-color: #444; Dark button background */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode #toggle-dark-mode {
+    /* background-color: #170179; Dark blue button background */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Card Styles */
+.light-mode .card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #ddd; /* Light border */
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e; /* Dark gray card background */
+    border: 1px solid #333; /* Darker border */
+}
+
+.blue-mode .card {
+    background-color: #121245; /* Blue card background */
+    border: 1px solid #0f0f2e; /* Darker blue border */
+}
+
+/* Section Headers */
+.light-mode .section-header {
+    color: #333; /* Dark text for section headers */
+}
+
+.dark-mode .section-header {
+    color: #f1f1f1; /* Light text for section headers */
+}
+
+.blue-mode .section-header {
+    color: #f1f1f1; /* Light text for section headers */
+}
+
+/* Links Styles */
+.light-mode a {
+    /* color: #007bff; Blue link color */
+}
+
+.dark-mode a {
+    color: #1e90ff; /* Lighter blue link color */
+}
+
+.blue-mode a {
+    color: #f1f1f1; /* Light text color for links */
+}
+
+/* Hover Effects for Links */
+.light-mode a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.dark-mode a:hover {
+    color: #00aaff; /* Change link color on hover */
+}
+
+.blue-mode a:hover {
+    color: #ddd; /* Change link color on hover */
+}
+
+/* Footer Styles */
+.light-mode footer {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.dark-mode footer {
+    background-color: #333; /* Dark background */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode footer {
+    background-color: #121245; /* Dark blue background */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px; /* Margin adjustments for mobile */
+    }
+
+    #toggle-dark-mode {
+        width: 100%; /* Full width button on mobile */
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+/* Form Styles */
+.light-mode input,
+.light-mode textarea,
+.light-mode select {
+    background-color: #fff; /* White background for input fields */
+    color: #333; /* Dark text */
+    border: 1px solid #ccc; /* Light border */
+    padding: 10px; /* Padding for comfort */
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #2c2c2c; /* Dark background for input fields */
+    color: #f1f1f1; /* Light text */
+    border: 1px solid #555; /* Dark border */
+}
+
+.blue-mode input,
+.blue-mode textarea,
+.blue-mode select {
+    background-color: #121245; /* Dark blue background for input fields */
+    color: #fff; /* Light text */
+    border: 1px solid #444; /* Darker blue border */
+}
+
+/* Button Styles */
+.light-mode button,
+.light-mode .btn {
+    /* background-color: #007bff; Primary button color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    /* padding: 10px 15px; Padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.dark-mode button,
+.dark-mode .btn {
+    /* background-color: #444; Dark button color */
+    color: #f1f1f1; /* Light text */
+    border: none; /* No border */
+}
+
+.blue-mode button,
+.blue-mode .btn {
+    /* background-color: #170179; Dark blue button color */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Hover Effects for Buttons */
+.light-mode button:hover,
+.light-mode .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.dark-mode button:hover,
+.dark-mode .btn:hover {
+    background-color: #555; /* Lighter dark on hover */
+}
+
+.blue-mode button:hover,
+.blue-mode .btn:hover {
+    background-color: #0f0f2e; /* Lighter blue on hover */
+}
+
+/* Alert Styles */
+.light-mode .alert {
+    background-color: #dff0d8; /* Light green for success */
+    color: #3c763d; /* Dark green text */
+}
+
+.dark-mode .alert {
+    background-color: #d9534f; /* Red for danger */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode .alert {
+    background-color: #f0f4f8; /* Light blue for info */
+    color: #31708f; /* Dark blue text */
+}
+
+/* Table Styles */
+.light-mode table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+.light-mode th,
+.light-mode td {
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 8px; /* Padding for cells */
+}
+
+.dark-mode table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid #444; /* Darker border for cells */
+    padding: 8px; /* Padding for cells */
+}
+
+.blue-mode table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+.blue-mode th,
+.blue-mode td {
+    border: 1px solid #444; /* Darker border for cells */
+    padding: 8px; /* Padding for cells */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .light-mode .alert,
+    .dark-mode .alert,
+    .blue-mode .alert {
+        font-size: 0.9em; /* Slightly smaller font for alerts on mobile */
+    }
+
+    .light-mode table,
+    .dark-mode table,
+    .blue-mode table {
+        font-size: 0.9em; /* Smaller font for tables on mobile */
+    }
+
+    .light-mode button,
+    .dark-mode button,
+    .blue-mode button {
+        width: 100%; /* Full width buttons on mobile */
+        padding: 12px; /* Increased padding */
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+/* Miscellaneous Styles */
+.light-mode .tooltip {
+    background-color: #f9f9f9; /* Light background for tooltips */
+    color: #333; /* Dark text */
+}
+
+.dark-mode .tooltip {
+    background-color: #222; /* Dark background for tooltips */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode .tooltip {
+    background-color: #170179; /* Dark blue background for tooltips */
+    color: #f1f1f1; /* Light text */
+}
