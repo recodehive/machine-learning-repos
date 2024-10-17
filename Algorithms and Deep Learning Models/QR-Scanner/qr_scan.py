@@ -1,5 +1,4 @@
 import cv2
-from pyzbar.pyzbar import decode
 import webbrowser
 
 # Function to open web browser with the decoded QR code link
@@ -11,25 +10,24 @@ cam = cv2.VideoCapture(0)
 cam.set(3, 640)  # Width
 cam.set(4, 480)  # Height
 
+# Initialize the QRCode detector
+detector = cv2.QRCodeDetector()
+
 while True:
     success, frame = cam.read()
 
-    # Decode QR codes
-    for barcode in decode(frame):
-        # Extract barcode data
-        qr_data = barcode.data.decode('utf-8')
-        print(f"QR Code data: {qr_data}")
+    # Detect and decode the QR code
+    data, bbox, _ = detector.detectAndDecode(frame)
+
+    if data:
+        print(f"QR Code data: {data}")
 
         # Open the URL in a web browser only once
-        open_link_once(qr_data)
-        break  # Break out of the for loop after opening the link
+        open_link_once(data)
+        break  # Break out of the loop after opening the link
 
     # Display the camera frame
     cv2.imshow('QR Scanner', frame)
-
-    # Check if link has been opened and break out of the main loop
-    if 'qr_data' in locals():
-        break
 
     # Wait for key press and break loop if 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
