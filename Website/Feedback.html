@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/feedback.css" />
+</head>
+<body>
+
+    <div class="feedback-container">
+        <h2>Feedback Form</h2>
+        <p>We appreciate your feedback! Please rate us and leave a comment.</p>
+
+        <form id="feedbackForm" action="#" method="post" onsubmit="return handleSubmit(event);">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label class="rate-label">Rate Us:</label>
+            <div class="star-rating">
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1" title="1 star">★</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2" title="2 stars">★</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3" title="3 stars">★</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4" title="4 stars">★</label>
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5" title="5 stars">★</label>
+            </div>
+            
+            <button type="submit">Send Feedback</button>
+        </form>
+        
+        <!-- Back to Home Button -->
+        <button onclick="window.location.href='index.html'" class="back-button">Back to Home</button>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // You can add logic here to process the form data as needed
+            // For example, you could send the data to a server using AJAX
+            
+            // After processing, redirect to the home page
+            window.location.href = 'index.html';
+            return false; // Prevent any additional form submission
+        }
+
+        // Highlight stars logic
+        const stars = document.querySelectorAll('.star-rating input');
+
+        stars.forEach(star => {
+            star.addEventListener('change', () => {
+                // Reset all stars to gray
+                stars.forEach(s => s.nextElementSibling.style.color = '#ddd');
+                
+                // Highlight checked star and all stars to the left
+                for (let i = 0; i < star.value; i++) {
+                    stars[i].nextElementSibling.style.color = 'gold';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

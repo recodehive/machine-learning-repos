@@ -4,30 +4,26 @@
   animation: fadeIn 1s ease-in-out forwards;
 }
 
-
 ::-webkit-scrollbar {
-    width: 7.5px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #c5d8eb8d;
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    /* background: #4d7fff; */
-    background: linear-gradient(45deg, rgb(0, 87, 208), #002a95);
-    border-radius: 10px;
-    text-shadow: 2px 2px 5px #004cff;
-    border: 1.5px solid rgba(0, 34, 255, 0.479);
-    transition: background 0.9s ease-in-out;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    /* background: #00ffff; */
-    /* background: linear-gradient(45deg, #021e85, #00caca); */
-    background: linear-gradient(45deg, rgb(0, 54, 171), #0268a8);
-  }
+  width: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c5d8eb8d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgb(0, 87, 208), #002a95);
+  border-radius: 10px;
+  text-shadow: 2px 2px 5px #004cff;
+  border: 1.5px solid rgba(0, 34, 255, 0.479);
+  transition: background 0.9s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, rgb(0, 54, 171), #0268a8);
+}
 
 @keyframes fadeIn {
   from {
@@ -37,223 +33,233 @@
     opacity: 1;
   }
 }
+
 /* Slide-In Animations */
 @keyframes slide-in-right {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-
 
 .slide-in-right {
-    animation: slide-in-right 0.5s ease-out;
+  animation: slide-in-right 0.5s ease-out;
 }
-
 
 /* Ensure full height of the body and remove margin/padding */
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #0a0a2e; 
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;  
+  background-color: #0a0a2e;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
 header {
-    background-color: #121245;
-    padding: 10px 20px;
-    animation: fadeIn 1s ease-in-out;
+  background-color: #121245;
+  padding: 10px 20px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-  .logo-container{
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-  }
+.logo-container {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
 
-  .logo-container img{
-    filter: brightness(1) invert(1);
-  }
+.logo-container img {
+  filter: brightness(1) invert(1);
+}
 
-  a.logo-container{
-    text-decoration: none;
-  }
-  
-  .logo-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .logo-text {
-    font-size: 18px;
-    font-weight: bold;
-    color: #f1f1f1;
-  }
+a.logo-container {
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
 
 .brand-name {
-    font-size: 1.5em;
-    color: #f1f1f1;
-    margin-left: 10px;
+  font-size: 1.5em;
+  color: #f1f1f1;
+  margin-left: 10px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    flex-grow: 1;
-    /* Makes the nav links take up available space */
-    justify-content: flex-end;
-    /* Align links to the left */
-    gap: 50px;
-    /* Adds space between each link */
-    margin-left: 20px;
-    right: 10px;
-    /* Adjust this value for the gap between logo and links */
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 50px;
+  margin-left: 20px;
+  right: 10px;
 }
+
 .line {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .line div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.4s;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 /* Hamburger Active State */
 .change .bar1 {
-    transform: rotate(-45deg) translate(-10px, 8px);
+  transform: rotate(-45deg) translate(-10px, 8px);
 }
 
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .change .bar3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
-.nav-icons{
-    display: flex;
-    gap:20px;
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
 }
+
 /* Responsive */
 @media (max-width: 1024px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        padding:10px;
-        top: 40px;
-        right: 0;
-        gap: 10px;
-        width: 100%;
-        background-color: #13034f;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-20px);
-        transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-    }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    top: 40px;
+    right: 0;
+    gap: 10px;
+    width: 100%;
+    background-color: #13034f;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
 
-    .nav-links.active {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
+  .nav-links li {
+    margin: 10px 0;
+  }
 
-    .line {
-        display: flex;
-    }
+  .line {
+    display: flex;
+  }
 }
 
-
+/* Hover Effect for Navigation Links */
 .nav-links a {
-    text-decoration: none;
-    color: #f1f1f1;
-    font-weight: bold;
-    white-space: nowrap;
-    /* Prevents wrapping of links */
-}
-
-.nav-links a img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    filter: brightness(0) invert(1);
-    margin-top: -5px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out; 
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+  color: yellow; /* Yellow color on hover */
+  transform: scale(1.1); 
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow;
 }
 
+.nav-links a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  filter: brightness(0) invert(1);
+  margin-top: -5px;
+}
+
+/* Dropdown */
 .dropdown {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
 .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    font-weight: bold;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f0f4f8;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dark-mode .dropdown-content{
-    background-color: #170179;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  display: none;
+  position: absolute;
+  background-color: #f0f4f8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-/* Show dropdown on hover */
+.dark-mode .dropdown-content {
+  background-color: #170179;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Hover Effect for Dropdown Items */
+.dropdown-content a:hover {
+  color: #0066cc; 
+}
+
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .show {
-    display: block;
+  display: block;
 }
+
 
 main {
     padding: 20px;
@@ -379,59 +385,72 @@ button#toggle-stats:hover {
 
 }
 
-.language-and-milestone{
+.language-and-milestone {
     display: flex;
-    gap:20px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     animation: slide-in-right 0.5s ease-in-out;
     flex-wrap: wrap;
 }
 
-.text-base{
+.text-base {
     text-align: left;
     font-size: 16px;
 }
+
 #languages {
     text-align: center;
     margin-bottom: 30px;
-    width:500px;
+    width: 500px;
     background-color: #121245;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 15px;
-    height:340px;
-    color:white;
+    height: 340px;
+    color: white;
     animation: slideInRight 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
 }
+
+#languages:hover {
+    background-color: #0D6EFD; 
+}
+
 #language-list {
     list-style: none;
     text-align: center;
-    width:100%;
-    padding:0px;
+    width: 100%;
+    padding: 0px;
 }
 
 #language-list li {
     padding: 10px 0px;
     display: flex;
-    width:100%;
-    gap:20px;
-    border-bottom:2px solid white;
+    width: 100%;
+    gap: 20px;
+    border-bottom: 2px solid white;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.progress-bar-container{
+#language-list li:hover {
+    color: #0D6EFD; 
+}
+
+.progress-bar-container {
     background-color: whitesmoke;
     border-radius: 8px;
     overflow: hidden;
-    width:300px;
-    height:20px;
+    width: 300px;
+    height: 20px;
     animation: fadeIn 1s ease-in-out;
 }
+
 .progress-bar {
     height: 20px;
-    background-color: #0D6EFD; 
+    background-color: #0D6EFD;
     width: 300px;
     text-align: left;
     display: flex;
@@ -439,25 +458,36 @@ button#toggle-stats:hover {
     font-size: 12px;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
     animation: fadeIn 1s ease-in-out;
+    transition: width 0.3s ease;
 }
+
+.progress-bar-container:hover .progress-bar {
+    width: 320px; 
+}
+
 #milestone {
     text-align: center;
     margin-bottom: 30px;
-    width:500px;
+    width: 500px;
     background-color: #121245;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 15px;
-    height:340px;
-    color:white;
+    height: 340px;
+    color: white;
     animation: slideInRight 1s ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+#milestone:hover {
+    background-color: #0D6EFD; 
 }
 
 .chart-container {
     display: flex;
     align-items: center;
-    width:150px;
+    width: 150px;
     margin: 50px 20px;
     animation: slideInRight 1s ease-in-out;
 }
@@ -473,22 +503,29 @@ button#toggle-stats:hover {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    width:300px;
+    width: 300px;
+    transition: transform 0.3s ease;
 }
+
+.legend span:hover {
+    transform: scale(1.1); 
+}
+
 @media (max-width: 560px) {
     .chart-container {
-        width:120px;
+        width: 120px;
     }
     .legend span {
-        width:170px;
+        width: 170px;
     }
-    .progress-bar-container{
-        width:200px;
+    .progress-bar-container {
+        width: 200px;
     }
     .progress-bar {
         width: 200px;
     }
 }
+
 .legend span::before {
     content: '';
     display: inline-block;
@@ -496,8 +533,14 @@ button#toggle-stats:hover {
     height: 20px;
     margin-right: 8px;
     border-radius: 50%;
-    background-color: currentColor; /* This will be set dynamically */
+    background-color: currentColor;
+    transition: transform 0.3s ease;
 }
+
+.legend span::before:hover {
+    transform: rotate(45deg); 
+}
+
 
 /* Footer stays at the bottom */
 .footer {
@@ -984,7 +1027,7 @@ button#toggle-languages:hover {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: white;
+    /* color: white; */
     animation: slideInRight 1s ease-in-out;
 }
 
@@ -1312,8 +1355,8 @@ body.dark-mode {
     color: #333;
 }
 
-.dark-mode .testimonial-section h2 {
-    color: #111;
+.blue-mode .text-white-light-mode{
+    color: black !important;
 }
 
 .dark-mode .testimonial {
@@ -1443,7 +1486,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-/* Layout */
+/* Container layout */
 .github-container {
     display: flex;
     justify-content: space-between;
@@ -1460,18 +1503,24 @@ h1 {
     width: 80%;
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #48d4f0;
+    background-color: #48d4f0; 
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Button hover effect */
 .github-buttons button:hover {
-    background-color: #03404a;
+    background-color: #ffeb3b; 
+    color: #03404a; 
+    box-shadow: 0 0 15px #ffeb3b; 
+    font-weight: bold;
 }
+
 
 /* Image Display */
 .github-image {
@@ -1481,11 +1530,425 @@ h1 {
 .github-image img {
     width: 100%;
     border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.github-image img:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); 
+    transform: translateY(-5px); 
+}
+
 /* Dark Mode Styles */
 
 .dark-mode .github-section{
     background-color: #8397fa;
 }
 
+/*Update the twitter icon to its real one */
+ .fa.fa-twitter::before{
+	content:"𝕏";
+}
 
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.light-mode .dropdown-content {
+    background-color: #fff; /* Light dropdown background */
+}
+
+.light-mode .text-black-light-mode, .light-mode .card h3{
+    color: #333 !important; 
+}
+
+.light-mode p{
+    color: white;
+}
+
+.light-mode #scroll-top-btn svg {
+    fill: rgb(0, 0, 150); /* Adjust SVG color */
+}
+
+.light-mode .side-icons .icon-content a {
+    background-color: #fff; /* White background for icons */
+    color: #333; /* Dark text color */
+}
+
+.light-mode .side-icons .icon-content a:hover .filled {
+    background-color: #ddd; /* Light hover effect */
+}
+
+.light-mode .highlight {
+    color: #333; /* Highlight color */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #f1f1f1; /* Light text */
+}
+
+.dark-mode .dropdown-content {
+    background-color: #1c1c1c; /* Dark dropdown background */
+}
+
+.dark-mode p, .dark-mode h2, .dark-mode .card h3 {
+    color: #f1f1f1; /* Light text color */
+}
+
+.dark-mode #scroll-top-btn svg {
+    fill: rgb(255, 255, 255); /* Adjust SVG color */
+}
+
+.dark-mode .side-icons .icon-content a {
+    background-color: #1f1f1f; /* Dark background for icons */
+    color: #f1f1f1; /* Light text color */
+}
+
+.dark-mode .side-icons .icon-content a:hover .filled {
+    background-color: #444; /* Dark hover effect */
+}
+
+.dark-mode .highlight {
+    color: #f1f1f1; /* Highlight color */
+}
+
+/* Blue Mode Styles */
+body.blue-mode {
+    background-color: #170179; /* Dark blue background */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode .dropdown-content {
+    background-color: #121245; /* Blue dropdown background */
+}
+
+.blue-mode p, .blue-mode h2, .blue-mode .card h3 {
+    color: #fff; /* Light text color */
+}
+
+.blue-mode #scroll-top-btn svg {
+    fill: rgb(0, 12, 150); /* SVG color for blue mode */
+}
+
+.blue-mode .side-icons .icon-content a {
+    background-color: #121245; /* Dark blue background for icons */
+    color: #ddd; /* Light text color */
+}
+
+.blue-mode .side-icons .icon-content a:hover .filled {
+    background-color: #444; /* Dark hover effect */
+}
+
+.blue-mode .highlight {
+    color: #fff; /* Highlight color */
+}
+
+/* Additional Styles for Cards and Sections */
+.light-mode .card, 
+.dark-mode .card, 
+.blue-mode .card {
+    background-color: #fff; /* Default card background for light mode */
+}
+
+.dark-mode .card {
+    background-color: #1f1f1f; /* Dark card background */
+}
+
+.blue-mode .card {
+    background-color: #121245; /* Blue card background */
+}
+
+/* Testimonial Section Styles */
+.light-mode .testimonial-section{
+    color: white;
+}
+.light-mode .text-black-light-mode{
+    color: black;
+}
+.dark-mode .text-black-light-mode{
+    color: white !important;
+}
+.dark-mode .testimonial-section,
+.blue-mode .testimonial-section {
+    color: #333;
+}
+
+.dark-mode .testimonial-section {
+    background-color: #333; /* Dark testimonial section */
+}
+
+.blue-mode .testimonial-section {
+    background-color: #f9f9f9; /* Blue testimonial section */
+}
+
+/* Additional styling for testimonials */
+.light-mode .testimonial, 
+.dark-mode .testimonial, 
+.blue-mode .testimonial {
+    background-color: #fff; /* Default testimonial background for light mode */
+}
+
+.dark-mode .testimonial {
+    background-color: #222; /* Dark testimonial background */
+}
+
+.blue-mode .testimonial {
+    background-color: #170179; /* Blue testimonial background */
+}
+
+/* Button Styles */
+.light-mode #toggle-dark-mode {
+    /* background-color: #007bff; Blue button background for light mode */
+    color: #fff; /* White text */
+}
+
+.dark-mode #toggle-dark-mode {
+    /* background-color: #444; Dark button background */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode #toggle-dark-mode {
+    /* background-color: #170179; Dark blue button background */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Card Styles */
+.light-mode .card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #ddd; /* Light border */
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e; /* Dark gray card background */
+    border: 1px solid #333; /* Darker border */
+}
+
+.blue-mode .card {
+    background-color: #121245; /* Blue card background */
+    border: 1px solid #0f0f2e; /* Darker blue border */
+}
+
+/* Section Headers */
+.light-mode .section-header {
+    color: #333; /* Dark text for section headers */
+}
+
+.dark-mode .section-header {
+    color: #f1f1f1; /* Light text for section headers */
+}
+
+.blue-mode .section-header {
+    color: #f1f1f1; /* Light text for section headers */
+}
+
+/* Links Styles */
+.light-mode a {
+    /* color: #007bff; Blue link color */
+}
+
+.dark-mode a {
+    color: #1e90ff; /* Lighter blue link color */
+}
+
+.blue-mode a {
+    color: #f1f1f1; /* Light text color for links */
+}
+
+/* Hover Effects for Links */
+.light-mode a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.dark-mode a:hover {
+    color: #00aaff; /* Change link color on hover */
+}
+
+.blue-mode a:hover {
+    color: #ddd; /* Change link color on hover */
+}
+
+/* Footer Styles */
+.light-mode footer {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.dark-mode footer {
+    background-color: #333; /* Dark background */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode footer {
+    background-color: #121245; /* Dark blue background */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px; /* Margin adjustments for mobile */
+    }
+
+    #toggle-dark-mode {
+        width: 100%; /* Full width button on mobile */
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+/* Form Styles */
+.light-mode input,
+.light-mode textarea,
+.light-mode select {
+    background-color: #fff; /* White background for input fields */
+    color: #333; /* Dark text */
+    border: 1px solid #ccc; /* Light border */
+    padding: 10px; /* Padding for comfort */
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #2c2c2c; /* Dark background for input fields */
+    color: #f1f1f1; /* Light text */
+    border: 1px solid #555; /* Dark border */
+}
+
+.blue-mode input,
+.blue-mode textarea,
+.blue-mode select {
+    background-color: #121245; /* Dark blue background for input fields */
+    color: #fff; /* Light text */
+    border: 1px solid #444; /* Darker blue border */
+}
+
+/* Button Styles */
+.light-mode button,
+.light-mode .btn {
+    /* background-color: #007bff; Primary button color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    /* padding: 10px 15px; Padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.dark-mode button,
+.dark-mode .btn {
+    /* background-color: #444; Dark button color */
+    color: #f1f1f1; /* Light text */
+    border: none; /* No border */
+}
+
+.blue-mode button,
+.blue-mode .btn {
+    /* background-color: #170179; Dark blue button color */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Hover Effects for Buttons */
+.light-mode button:hover,
+.light-mode .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.dark-mode button:hover,
+.dark-mode .btn:hover {
+    background-color: #555; /* Lighter dark on hover */
+}
+
+.blue-mode button:hover,
+.blue-mode .btn:hover {
+    background-color: #0f0f2e; /* Lighter blue on hover */
+}
+
+/* Alert Styles */
+.light-mode .alert {
+    background-color: #dff0d8; /* Light green for success */
+    color: #3c763d; /* Dark green text */
+}
+
+.dark-mode .alert {
+    background-color: #d9534f; /* Red for danger */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode .alert {
+    background-color: #f0f4f8; /* Light blue for info */
+    color: #31708f; /* Dark blue text */
+}
+
+/* Table Styles */
+.light-mode table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+.light-mode th,
+.light-mode td {
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 8px; /* Padding for cells */
+}
+
+.dark-mode table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid #444; /* Darker border for cells */
+    padding: 8px; /* Padding for cells */
+}
+
+.blue-mode table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+.blue-mode th,
+.blue-mode td {
+    border: 1px solid #444; /* Darker border for cells */
+    padding: 8px; /* Padding for cells */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .light-mode .alert,
+    .dark-mode .alert,
+    .blue-mode .alert {
+        font-size: 0.9em; /* Slightly smaller font for alerts on mobile */
+    }
+
+    .light-mode table,
+    .dark-mode table,
+    .blue-mode table {
+        font-size: 0.9em; /* Smaller font for tables on mobile */
+    }
+
+    .light-mode button,
+    .dark-mode button,
+    .blue-mode button {
+        width: 100%; /* Full width buttons on mobile */
+        padding: 12px; /* Increased padding */
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+/* Miscellaneous Styles */
+.light-mode .tooltip {
+    background-color: #f9f9f9; /* Light background for tooltips */
+    color: #333; /* Dark text */
+}
+
+.dark-mode .tooltip {
+    background-color: #222; /* Dark background for tooltips */
+    color: #f1f1f1; /* Light text */
+}
+
+.blue-mode .tooltip {
+    background-color: #170179; /* Dark blue background for tooltips */
+    color: #f1f1f1; /* Light text */
+}

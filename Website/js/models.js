@@ -3,34 +3,52 @@ async function fetchSubdirectories() {
     const params = new URLSearchParams(window.location.search);
     const directoryName = params.get('directory');
     const subdirectoriesList = document.getElementById('subdirectories');
+    const loadingContainer = document.getElementById('loading-animation');
+
+    // Show loading indicator
+    loadingContainer.style.display = 'block';
+
+    if (!directoryName) {
+        subdirectoriesList.innerHTML = '<li class="card">No directory specified. Please try again.</li>';
+        loadingContainer.style.display = 'none';
+        return;
+    }
 
     try {
         const response = await fetch(`https://api.github.com/repos/recodehive/machine-learning-repos/contents/${directoryName}`);
+        
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            if (response.status === 404) {
+                throw new Error('Directory not found.');
+            } else {
+                throw new Error('Failed to fetch models. Please try again later.');
+            }
         }
+
         const data = await response.json();
         const subdirectories = data.filter(item => item.type === 'dir');
 
-        subdirectories.forEach(subdirectory => {
-            const li = document.createElement('li');
-            li.classList.add('card');
+        if (subdirectories.length === 0) {
+            subdirectoriesList.innerHTML = '<li class="card">No models found in this directory.</li>';
+        } else {
+            // Build HTML for subdirectories
+            let content = '';
+            subdirectories.forEach(subdirectory => {
+                content += `
+                    <li class="card">
+                        <h3>${subdirectory.name}</h3>
+                        <a href="${subdirectory.html_url}" class="btn-view-repo" target="_blank">Explore the Repository</a>
+                    </li>
+                `;
+            });
+            subdirectoriesList.innerHTML = content;
+        }
 
-            const h3 = document.createElement('h3');
-            h3.textContent = subdirectory.name;
-
-            const a = document.createElement('a');
-            a.href = subdirectory.html_url;
-            a.textContent = 'View Repository';
-            a.classList.add('btn-view-repo');
-
-            li.appendChild(h3);
-            li.appendChild(a);
-            subdirectoriesList.appendChild(li);
-        });
     } catch (error) {
-        console.error('Error fetching subdirectories:', error);
-        subdirectoriesList.innerHTML = '<li class="card">Failed to load models.</li>';
+        subdirectoriesList.innerHTML = `<li class="card">${error.message}</li>`;
+    } finally {
+        // Hide loading indicator
+        loadingContainer.style.display = 'none';
     }
 }
 
