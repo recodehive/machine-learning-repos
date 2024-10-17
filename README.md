@@ -837,6 +837,16 @@ If later found out, the points will be deducted. You can't be earning more than 
 Machine Learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and discovery. Its ability to analyze vast amounts of data and uncover patterns makes it indispensable for various applications, from predictive analytics and natural language processing to computer vision and autonomous systems. The wealth of libraries and frameworks available, such as TensorFlow, PyTorch, and scikit-learn, empowers developers and data scientists to build sophisticated models with relative ease. A strong community provides extensive resources, including tutorials, forums, and documentation, to support learners and professionals alike. To truly excel in Machine Learning, consistent practice is essential—engage in coding challenges, contribute to open-source projects, and apply your knowledge to real-world problems. This hands-on experience not only hones your skills but also opens doors to numerous career opportunities in tech, research, and beyond.
 
 <hr>
+          
+<h2 align = "center">Our Contributors ❤️</h2>
+<div align = "center">
+ <h3>Thank you for contributing to our repository</h3>
+ <a href="https://github.com/recodehive/machine-learning-repos/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=recodehive/machine-learning-repos" />
+</a>
+</div>
+
+<hr>
 
 <div>
   Don't forget to leave a star<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="30"> for this project!
