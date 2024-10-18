@@ -14,6 +14,6 @@ Customer segmentation is the process of dividing customers into distinct groups 
 - Evaluation & Visualization: Assess the effectiveness of the segmentation and visualize the results for better understanding.
   
 
-  To view the Analysis  👉 [Customer_Segmentation_Analysis.ipynb](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Customer%20Segmentation%20Analysis/Customer%20Segmentation.ipynb)
+ ## To view the Analysis  👉 [Customer_Segmentation_Analysis.ipynb](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Customer%20Segmentation%20Analysis/Customer%20Segmentation.ipynb)
   
-  To view the Dataset    👉 [Customer_Segmentation.csv](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Customer%20Segmentation%20Analysis/Shopping%20Mall%20Customer%20Segmentation%20Data%20.csv)
+ ## To view the Dataset    👉 [Customer_Segmentation.csv](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Customer%20Segmentation%20Analysis/Shopping%20Mall%20Customer%20Segmentation%20Data%20.csv)
