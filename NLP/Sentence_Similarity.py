@@ -1,4 +1,5 @@
 import os
+import numpy as np
 from sentence_transformers import SentenceTransformer, util
 
 MODEL_NAME = 'all-MiniLM-L6-v2'
@@ -21,23 +22,34 @@ def load_or_download_model():
         print(f"Model saved to {model_path}")
         return model
 
-def find_similar_sentences(query, file_path, top_n=5):
-    # Load the pre-trained model
-    model = load_or_download_model()
+def cosine_similarity(query_embedding, sentence_embeddings):
+    return util.pytorch_cos_sim(query_embedding, sentence_embeddings)[0]
 
-    # Load and encode the sentences from the file
+def euclidean_distance(query_embedding, sentence_embeddings):
+    return -np.linalg.norm(query_embedding - sentence_embeddings, axis=1)
+
+def manhattan_distance(query_embedding, sentence_embeddings):
+    return -np.sum(np.abs(query_embedding - sentence_embeddings), axis=1)
+
+def dot_product(query_embedding, sentence_embeddings):
+    return np.dot(sentence_embeddings, query_embedding.T).flatten()
+
+similarity_functions = {
+    '1': ('Cosine Similarity', cosine_similarity),
+    '2': ('Euclidean Distance', euclidean_distance),
+    '3': ('Manhattan Distance', manhattan_distance),
+    '4': ('Dot Product', dot_product)
+}
+
+def find_similar_sentences(query, file_path, similarity_func, top_n=5):
+    model = load_or_download_model()
     sentences = load_file(file_path)
     sentence_embeddings = model.encode(sentences)
-
-    # Encode the query
     query_embedding = model.encode([query])
-
-    # Calculate cosine similarities
-    cosine_scores = util.pytorch_cos_sim(query_embedding, sentence_embeddings)[0]
-
-    # Get top N results
-    top_results = sorted(zip(sentences, cosine_scores), key=lambda x: x[1], reverse=True)[:top_n]
-
+    
+    similarity_scores = similarity_func(query_embedding, sentence_embeddings)
+    top_results = sorted(zip(sentences, similarity_scores), key=lambda x: x[1], reverse=True)[:top_n]
+    
     return top_results
 
 def validate_file_path(file_path):
@@ -48,12 +60,10 @@ def validate_file_path(file_path):
     return file_path
 
 def main():
-    print("Welcome to the Sentence Similarity Search Tool!")
+    print("Welcome to the Enhanced Sentence Similarity Search Tool!")
     
-    # Get user input for query
     query = input("Enter your query: ")
     
-    # Get user input for file path and validate it
     while True:
         file_path = input("Enter the path to your text file without extension: ")
         try:
@@ -61,13 +71,23 @@ def main():
             break
         except FileNotFoundError as e:
             print(f"Error: {str(e)} Please try again.")
+    
+    print("\nChoose a similarity measurement method:")
+    for key, (name, _) in similarity_functions.items():
+        print(f"{key}. {name}")
+    
+    while True:
+        choice = input("Enter the number of your choice: ")
+        if choice in similarity_functions:
+            similarity_name, similarity_func = similarity_functions[choice]
+            break
+        print("Invalid choice. Please try again.")
 
     try:
-        results = find_similar_sentences(query, file_path)
-
-        print(f"\nTop 5 similar sentences for query: '{query}'\n")
+        results = find_similar_sentences(query, file_path, similarity_func)
+        print(f"\nTop 5 similar sentences for query: '{query}' using {similarity_name}\n")
         for sentence, score in results:
-            print(f"Similarity: {score:.4f}")
+            print(f"Similarity Score: {score:.4f}")
             print(f"Sentence: {sentence}\n")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
