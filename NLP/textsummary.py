@@ -1,14 +1,15 @@
 import os
+import nltk
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+from collections import Counter
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-from nltk.tokenize import sent_tokenize, word_tokenize
-import nltk
-from nltk.corpus import stopwords
-from collections import Counter
 
 MODEL_NAME = 'all-MiniLM-L6-v2'
 MODEL_FOLDER = 'model'
+NLTK_DATA_FOLDER = os.path.join(MODEL_FOLDER, 'nltk_data')
 
 def load_or_download_model():
     model_path = os.path.join(MODEL_FOLDER, MODEL_NAME)
@@ -24,13 +25,17 @@ def load_or_download_model():
         return model
 
 def download_nltk_resources():
-    resources = ['punkt', 'stopwords']
-    for resource in resources:
+    nltk.data.path.append(NLTK_DATA_FOLDER)
+    os.makedirs(NLTK_DATA_FOLDER, exist_ok=True)
+    
+    resources = [('punkt', 'tokenizers'), ('stopwords', 'corpora')]
+    for resource, folder in resources:
         try:
-            nltk.data.find(f'tokenizers/{resource}')
+            nltk.data.find(f'{folder}/{resource}')
+            print(f"{resource} is being Loaded.")
         except LookupError:
             print(f"Downloading {resource}...")
-            nltk.download(resource, quiet=True)
+            nltk.download(resource, download_dir=NLTK_DATA_FOLDER, quiet=True)
 
 def extract_keywords(text, model, top_n=10):
     # Tokenize the text
