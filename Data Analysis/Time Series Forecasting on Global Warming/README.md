@@ -24,8 +24,8 @@ Compare model performance to select the best approach for accurate long-term for
 
   
 
-  To view the Analysis 👉 [Time series forecasting on Global Warming.ipynb](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Time%20Series%20Forecasting%20on%20Global%20Warming/EDA%20-%20Time%20Series%20Forecasting%20on%20Global%20Warming%20Trends.ipynb)
+ ##  To view the Analysis 👉 [Time series forecasting on Global Warming.ipynb](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Time%20Series%20Forecasting%20on%20Global%20Warming/EDA%20-%20Time%20Series%20Forecasting%20on%20Global%20Warming%20Trends.ipynb)
   
-  To view the Datasets 👉 [long format Annual surface temp](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Time%20Series%20Forecasting%20on%20Global%20Warming/long_format_annual_surface_temp.csv)
+##  To view the Datasets 👉 [long format Annual surface temp](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Time%20Series%20Forecasting%20on%20Global%20Warming/long_format_annual_surface_temp.csv)
                            [Wide format Annual surface temp](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Time%20Series%20Forecasting%20on%20Global%20Warming/wide_format_annual_surface_temp.csv)
                            [Max_Min Dataset](https://github.com/Archi20876/machine-learning-repos/blob/main/Data%20Analysis/Time%20Series%20Forecasting%20on%20Global%20Warming/Max_Min_Dataset.csv)
