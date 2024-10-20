@@ -2,10 +2,9 @@ import os
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-from nltk.tokenize import sent_tokenize
+from nltk.tokenize import sent_tokenize, word_tokenize
 import nltk
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 from collections import Counter
 
 MODEL_NAME = 'all-MiniLM-L6-v2'
@@ -37,21 +36,29 @@ def extract_keywords(text, model, top_n=10):
     # Tokenize the text
     words = word_tokenize(text.lower())
     
-    # Remove stopwords
+    # Remove stopwords and non-alphanumeric tokens
     stop_words = set(stopwords.words('english'))
     filtered_words = [word for word in words if word.isalnum() and word not in stop_words]
     
-    # Get word embeddings
-    word_embeddings = model.encode(filtered_words)
+    # Count word frequencies
+    word_freq = Counter(filtered_words)
     
-    # Calculate importance scores (you can use different methods here)
+    # Get unique words
+    unique_words = list(set(filtered_words))
+    
+    # Get word embeddings
+    word_embeddings = model.encode(unique_words)
+    
+    # Calculate importance scores
     importance_scores = np.mean(word_embeddings, axis=1)
     
-    # Get top N words based on importance scores
-    top_indices = np.argsort(importance_scores)[-top_n:]
-    keywords = [filtered_words[i] for i in top_indices[::-1]]
+    # Combine frequency and importance
+    combined_scores = [(word, word_freq[word] * importance_scores[i]) for i, word in enumerate(unique_words)]
     
-    return keywords
+    # Sort by combined score and get top N
+    top_keywords = sorted(combined_scores, key=lambda x: x[1], reverse=True)[:top_n]
+    
+    return [word for word, _ in top_keywords]
 
 def summarize_text(text, model, num_sentences=3):
     # Split the text into sentences
