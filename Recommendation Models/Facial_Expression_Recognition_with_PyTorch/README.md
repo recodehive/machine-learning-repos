@@ -1,5 +1,6 @@
 # Facial Expression Recognition Using PyTorch
 
+
 ## Overview
 This project develops a facial expression recognition system using PyTorch. The model classifies facial expressions into categories such as happy, sad, angry, surprised, etc., by using a Convolutional Neural Network (CNN). The model is trained and tested using a dataset from Kaggle that contains labeled images of facial expressions.
 
