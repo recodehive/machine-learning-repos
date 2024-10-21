@@ -6,6 +6,7 @@ This project implements a sentence auto-completion model using a deep learning a
 ```
 ├── SentenceAutoCompletion.ipynb  # Jupyter notebook containing the entire implementation
 ├── README.md                     # Project overview and instructions
+├── requirements.txt              # install required dependencies
 └── holmes.txt                    # Input text file used for training the model
 ```
 
