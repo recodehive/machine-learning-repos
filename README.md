@@ -500,7 +500,7 @@ If later found out, the points will be deducted. You can't be earning more than 
 
 <details>
  <summary><h2 id="books">📚 Books</h2>  
- 
+ > Discover a diverse collection of valuable books for Machine Learning.
 </summary>
 <table width="100%">
       <tr>
