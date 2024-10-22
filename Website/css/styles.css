@@ -541,22 +541,6 @@ button#toggle-stats:hover {
     transform: rotate(45deg); 
 }
 
-
-/* Footer stays at the bottom */
-.footer {
-    background-color: #121245;
-    /* Dark blue for footer */
-    color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
-    animation: fadeIn 1s ease-in-out;
-}
-
-#footer-link {
-    color: white
-}
-
 button#toggle-languages {
     display: block;
     margin: 20px auto;
@@ -1771,19 +1755,105 @@ body.blue-mode {
 }
 
 /* Footer Styles */
-.light-mode footer {
-    background-color: #f8f9fa; /* Light background */
-    color: #333; /* Dark text */
+.light-mode .footer {
+    background-color: #0a0266;
+    z-index: -1;
 }
 
-.dark-mode footer {
-    background-color: #333; /* Dark background */
-    color: #f1f1f1; /* Light text */
+.light-mode .footer-bar {
+    z-index: -1;
+    width: 100%;
+    text-align: center;
+    background-color: #0a0266;
 }
 
-.blue-mode footer {
-    background-color: #121245; /* Dark blue background */
-    color: #f1f1f1; /* Light text */
+.dark-mode .footer-bar a {
+    color: white;
+}
+
+.light-mode .footer-bar a {
+    color: white;
+}
+
+.footer {
+    padding: 5rem 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-col img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.footer-p {
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social i {
+    color: white;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease 0s;
+}
+
+.footer-social i:hover {
+    opacity: 1;
+    background-color: #35373b;
+}
+
+.h46 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-col-main {
+    margin-top: -1rem;
+}
+
+.footer-col-main a {
+    display: block;
+    margin-bottom: 1rem;
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity 0.3s ease 0s;
+}
+
+.footer-col-main a:hover {
+    opacity: 1;
+}
+
+.footer-bar {
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.footer-bar a {
+    text-decoration: none;
+}
+
+/* footer responsive */
+@media (max-width: 900px) {
+    .footer {
+        grid-template-columns: 1fr 200px;
+    }
 }
 
 /* Responsive Design Adjustments */
