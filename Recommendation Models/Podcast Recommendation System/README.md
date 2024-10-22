@@ -1,4 +1,5 @@
 # Podcast Recommendation Engine
+
 :microphone: Building a content-based podcast recommender system using NLP
 
 ## Overview
@@ -272,47 +273,3 @@ This model performed the **worst**, but I am not too sure if my understanding an
 ## Results
 From the models above, the **custom trained Word2Vec + cosine similarity** performed the best by recommending the most relevant, similar podcasts.
 
-| [The Daily](https://podcasts.apple.com/us/podcast/the-daily/id1200361736) (News) | [Up First](https://podcasts.apple.com/us/podcast/up-first/id1222114325) (News) | [VIEWS with David Dobrik and Jason Nash](https://podcasts.apple.com/us/podcast/views-with-david-dobrik-and-jason-nash/id1236778275) (Comedy) | [Impaulsive with Logan Paul](https://podcasts.apple.com/us/podcast/impaulsive-with-logan-paul/id1442164847) (Comedy) | [The Bill Simmons Podcast](https://podcasts.apple.com/us/podcast/the-bill-simmons-podcast/id1043699613) (Sports) | [My Favorite Murder with Karen Kilgariff and Georgia Hardstark](https://podcasts.apple.com/us/podcast/my-favorite-murder-karen-kilgariff-georgia-hardstark/id1074507850) (True Crime) | [This American Life](https://podcasts.apple.com/us/podcast/this-american-life/id201671138) (Society & Culture) | [Joel Osteen Podcast](https://podcasts.apple.com/us/podcast/joel-osteen-podcast/id137254859) (Religion & Spirituality) | [TED Radio Hour](https://podcasts.apple.com/us/podcast/ted-radio-hour/id523121474) (Technology) | [Call Her Daddy](https://podcasts.apple.com/us/podcast/call-her-daddy/id1418960261) (Comedy) | [Skip and Shannon: Undisputed](https://podcasts.apple.com/us/podcast/skip-and-shannon-undisputed/id1150088852) (Sports) |
-|---|---|---|---|---|---|---|---|---|---|---|
-|[Impeachment: A Daily Podcast](https://podcasts.apple.com/us/podcast/impeachment-a-daily-podcast/id1482313742) (News)| [Impeachment: A Daily Podcast](https://podcasts.apple.com/us/podcast/impeachment-a-daily-podcast/id1482313742) (News)|[Amy Schumer Presents: 3 Girls, 1 Keith](https://podcasts.apple.com/us/podcast/amy-schumer-presents-3-girls-1-keith/id1395965429) (Comedy)|[Comments by Celeb](https://podcasts.apple.com/us/podcast/comments-by-celebs/id1409801789) (Society & Culture)|[The Ryen Russillo Podcast](https://podcasts.apple.com/us/podcast/the-ryen-russillo-podcast/id1433966613) (Sports) |[Fresh Hell Podcast](https://podcasts.apple.com/us/podcast/fresh-hell-podcast/id1456161753) (True Crime)|[Radio Diaries](https://podcasts.apple.com/us/podcast/radio-diaries/id207505466) (Documentary)|[Daily Grace](https://podcasts.apple.com/us/podcast/daily-grace/id1450011728) (Religion & Spirituality)|[TED Talks Society and Culture](https://podcasts.apple.com/us/podcast/ted-talks-society-and-culture/id470623803) (Society & Culture)|[Stiff Socks](https://podcasts.apple.com/us/podcast/stiff-socks/id1449678510) (Comedy)|[First Things First](https://podcasts.apple.com/us/podcast/first-things-first/id1277873664) (Sports)|
-|[Up First](https://podcasts.apple.com/us/podcast/up-first/id1222114325) (News)| [The Daily](https://podcasts.apple.com/us/podcast/the-daily/id1200361736) (News)| [Not Skinny But Not Fat](https://podcasts.apple.com/us/podcast/not-skinny-but-not-fat/id1444559244) (TV & Film)| [Drew and Mike Show](https://podcasts.apple.com/us/podcast/drew-and-mike-show/id1110860681) (Comedy) | [ESPN Podcasts](https://podcasts.apple.com/us/podcast/espn-podcasts/id461104878) (Sports) | [Wine & Crime](https://podcasts.apple.com/us/podcast/wine-crime/id1206817375) (Comedy)| [The Incomparable Radio Theater](https://podcasts.apple.com/us/podcast/the-incomparable-radio-theater/id914145316) (Fiction) | [Saddleback Church Weekend Messages](https://podcasts.apple.com/us/podcast/saddleback-church-weekend-messages/id664894243) (Religion & Spirituality) | [WGRL NYC](https://podcasts.apple.com/us/podcast/wgrl-nyc/id1185989720) (Kids & Family) | [Zane and Heath: Unfiltered](https://podcasts.apple.com/us/podcast/zane-and-heath-unfiltered/id1478746415) (Comedy) | [High Noon](https://podcasts.apple.com/us/podcast/high-noon/id1395395721) (Sports) |
-|[The Takeaway](https://podcasts.apple.com/us/podcast/the-takeaway/id363143310) (News)|[The Takeaway](https://podcasts.apple.com/us/podcast/the-takeaway/id363143310) (News)| [The Archers](https://podcasts.apple.com/us/podcast/the-archers/id265970428) (Arts) | [Heartland Radio 2.0](https://podcasts.apple.com/us/podcast/heartland-radio-2-0/id1435214757) (Comedy) | [The Peter King Podcast](https://podcasts.apple.com/us/podcast/the-peter-king-podcast/id1150960126) (Sports)|[Murderous Minors: killer kids](https://podcasts.apple.com/us/podcast/murderous-minors-killer-kids/id1328036628) (True Crime) |[Undiscovered](https://podcasts.apple.com/us/podcast/undiscovered/id1229128411) (Science)| [The Porch](https://podcasts.apple.com/us/podcast/the-porch/id325418914) (Religion & Spirituality) | [Deepak Chopra’s Infinite Potential](https://podcasts.apple.com/us/podcast/deepak-chopras-infinite-potential/id1453873374) (Society & Culture)| [Bully and the Beast](https://podcasts.apple.com/us/podcast/bully-and-the-beast/id1448534366) (Comedy) | [Speak For Yourself with Whitlock & Wiley](https://podcasts.apple.com/us/genre/podcasts-sports/id1545) (Sports)|
-|[Can He Do That?](https://podcasts.apple.com/us/podcast/can-he-do-that/id1198238095) (News) | [Mark Levin Podcast](https://podcasts.apple.com/us/podcast/mark-levin-podcast/id209377688) (News) | [The Fighter & The Kid](https://podcasts.apple.com/us/podcast/the-fighter-the-kid/id706421907) (Sports) | [Curious with Josh Peck](https://podcasts.apple.com/us/podcast/curious-with-josh-peck/id1378163166) (Comedy) | [Pardon My Take](https://podcasts.apple.com/us/podcast/pardon-my-take/id1089022756) (Sports) | [Jensen and Holes: The Murder Squad](https://podcasts.apple.com/us/podcast/jensen-and-holes-the-murder-squad/id1455668750) (True Crime) | [Locked Up Abroad](https://podcasts.apple.com/us/podcast/locked-up-abroad/id1252155965) (Society & Culture) | [VOUS Church](https://podcasts.apple.com/us/podcast/vous-church/id1042709241) (Religion & Spirituality) | [Clear+Vivid with Alan Alda](https://podcasts.apple.com/us/podcast/clear-vivid-with-alan-alda/id1400082430) (Society & Culture) | [Pretty Basic with Alisha Marie and Remi Cruz](https://podcasts.apple.com/us/podcast/pretty-basic-with-alisha-marie-and-remi-cruz/id1439655378) (Society & Culture)| [Jalen & Jacoby](https://podcasts.apple.com/us/podcast/jalen-jacoby/id730254722) (Sports) |
-|[Global News Podcast](https://podcasts.apple.com/us/podcast/global-news-podcast/id135067274) (News) | [Post Reports](https://podcasts.apple.com/us/podcast/post-reports/id1444873564) (News) | [Adulting](https://podcasts.apple.com/us/podcast/adulting/id1463400941) (Comedy) | [The MeatEater Podcast](https://podcasts.apple.com/us/podcast/the-meateater-podcast/id960902903) (Sports) | [The Jump](https://podcasts.apple.com/us/podcast/the-jump/id1106886477) (Sports) | [Murder, Myth & Mystery](https://podcasts.apple.com/us/genre/podcasts-true-crime/id1488) (True Crime) | [Brought to you by...](https://podcasts.apple.com/us/podcast/brought-to-you-by/id1413374332) (Business)| [The Fr. Mike Schmitz Catholic Podcast](https://podcasts.apple.com/us/podcast/the-fr-mike-schmitz-catholic-podcast/id1200915759) (Religion & Spirituality) | [The goop Podcast](https://podcasts.apple.com/us/podcast/the-goop-podcast/id1352546554) [Health & Fitness] | [Coffee Convos Podcast with Kail Lowry & Lindsie Chrisley](https://podcasts.apple.com/us/podcast/coffee-convos-podcast-with-kail-lowry-lindsie-chrisley/id1305546061) (Society & Culture) | [Golic and Wingo](https://podcasts.apple.com/us/podcast/golic-and-wingo/id154597838) (News)|
-
-*The table lists the top 5 (in order) recommendations for each podcast*
-
-To view all recommendations and recommendations for other models, refer to my [Jupyter Notebook](https://github.com/siddgood/podcast-recommendation-engine/blob/master/notebooks/podcast_recommender.ipynb).
-
-**Key Takeaways of Model:**
-  * Makes decent recommendations
-  * Clusters genre well
-  * Provides relevant recommendations across genres
-  * Consistent, sensible recommendations for 10+ recommendations (low model deterioration)
-
-Overall, I believe this recommendation model does a good job of recommending similar podcasts based on the input (based on my small test set). As an avid podcast listener and someone familiar with many of these podcast titles, these recommendations make sense given the time in which the data was compiled (mid-Nov 2019). Not only does the model cluster well, but it also recommends relevant podcasts across different genres too. Compared to the other models, this one outperformed by recommending the most similar podcasts.
-
-The only recommendations that seem out of place are *The Archers* and *The MeatEater Podcast*. But considering *VIEWS* and *Impaulsive* are podcasts that usually talk about random, unstructured topics each podcast episode, maybe these recommendations match the episode details from when the data was collected.
-
-## Future Work
-  * Collect more podcast data (include podcast transcriptions)
-  * Recommend podcast episodes (granular recommendations)
-  * Create a smaller or larger look back window for episode titles and descriptions
-  * Consider sub-genres for specificity
-  * Create a testing metric (i.e. genre classification or model deterioration) to validate model results
-  * Try collaborative filtering (given availability of podcast user-rating data)
-
-## Sources
-  1. http://nadbordrozd.github.io/blog/2016/05/20/text-classification-with-word2vec/
-  2. http://sujitpal.blogspot.com/2017/05/evaluating-simple-but-tough-to-beat.html
-  3. https://www.kaggle.com/ktattan/lda-and-document-similarity
-  4. https://medium.com/@adriensieg/text-similarities-da019229c894
-  5. https://openreview.net/pdf?id=SyK00v5xx
-  6. https://github.com/PrincetonML/SIF
-  7. https://medium.com/@Intellica.AI/comparison-of-different-word-embeddings-on-text-similarity-a-use-case-in-nlp-e83e08469c1c
-  8. https://github.com/peter3125/sentence2vec
-  9. https://github.com/kakshay21/sentence_embeddings
-  10. https://nlp.town/blog/sentence-similarity/
-  11. https://towardsdatascience.com/google-news-and-leo-tolstoy-visualizing-word2vec-word-embeddings-with-t-sne-11558d8bd4d
-  12. https://towardsdatascience.com/how-to-build-from-scratch-a-content-based-movie-recommender-with-natural-language-processing-25ad400eb243
-  13. https://machinelearningmastery.com/develop-word-embeddings-python-gensim/
