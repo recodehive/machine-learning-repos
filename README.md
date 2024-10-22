@@ -498,12 +498,9 @@ If later found out, the points will be deducted. You can't be earning more than 
 
 </details>
 
-<hr>
-
 <details>
- <summary><h2 id="books">	📚 Books</h2>  
-
-> Discover a diverse collection of valuable books for Machine Learning.
+ <summary><h2 id="books">📚 Books</h2>  
+ > Discover a diverse collection of valuable books for Machine Learning.
 </summary>
 <table width="100%">
       <tr>
@@ -512,24 +509,44 @@ If later found out, the points will be deducted. You can't be earning more than 
         <th>Cost</th>
       </tr>
       <tr>
-        <td> <a href="https://www.bing.com/ck/a?!&&p=5f61daa5e0205b73JmltdHM9MTcxNTgxNzYwMCZpZ3VpZD0xYjhkMzU3Yy02YmU3LTZiOGEtMjNkNC0yMWZkNmE4NDZhYTEmaW5zaWQ9NTE4NQ&ptn=3&ver=2&hsh=3&fclid=1b8d357c-6be7-6b8a-23d4-21fd6a846aa1&psq=Hands-On+Machine+Learning+with+Scikit-Learn+and+TensorFlow+pdf&u=a1aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RhdGEtc2NpZW5jZS1wcm9qZWN0cy1hbmQtcmVzb3VyY2VzL0RhdGEtU2NpZW5jZS1FQm9va3MvbWFpbi9NYWNoaW5lJTIwTGVhcm5pbmcvSGFuZHMtb24tTWFjaGluZS1MZWFybmluZy5wZGY&ntb=1">Hands-On Machine Learning with Scikit-Learn and TensorFlow</a></td>
+        <td><a href="https://www.bing.com/ck/a?!&&p=5f61daa5e0205b73JmltdHM9MTcxNTgxNzYwMCZpZ3VpZD0xYjhkMzU3Yy02YmU3LTZiOGEtMjNkNC0yMWZkNmE4NDZhYTEmaW5zaWQ9NTE4NQ&ptn=3&ver=2&hsh=3&fclid=1b8d357c-6be7-6b8a-23d4-21fd6a846aa1&psq=Hands-On+Machine+Learning+with+Scikit-Learn+and+TensorFlow+pdf&u=a1aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RhdGEtc2NpZW5jZS1wcm9qZWN0cy1hbmQtcmVzb3VyY2VzL0RhdGEtU2NpZW5jZS1FQm9va3MvbWFpbi9NYWNoaW5lJTIwTGVhcm5pbmcvSGFuZHMtb24tTWFjaGluZS1MZWFybmluZy5wZGY&ntb=1">Hands-On Machine Learning with Scikit-Learn and TensorFlow</a></td>
         <td>The Hands-On Machine Learning with Scikit-Learn and TensorFlow is a popular book by Aurélien Géron that covers various Machine Learning concepts and practical implementations using Scikit-Learn and TensorFlow.</td>
-      <td>Free</td>
-      </tr>
-      <tr>
-         <td> <a href="https://https://zlib.pub/book/the-hundred-page-machine-learning-book-5js7fsvqsjt0">The Hundred-Page Machine Learning Book</a></td>
-        <td>This book, authored by Andriy Burkov, provides a concise yet comprehensive overview of Machine Learning concepts and techniques. It's highly regarded for its accessibility and clarity, making it a valuable resource for both beginners and experienced practitioners</td>
         <td>Free</td>
       </tr>
       <tr>
-         <td> <a href="https://zlib.pub/book/data-mining-practical-machine-learning-tools-and-techniques-3qi4tcp5b12g">Data mining practical Machine Learning tools and techniques</a></td>
-        <td>'Data Mining: Practical Machine Learning Tools and Techniques' provides a comprehensive overview of the field of data mining and Machine Learning. Authored by Ian H. Witten, Eibe Frank, and Mark A. Hall, this book is widely regarded as an essential resource for students, researchers, and practitioners in the field.
-      </td>
+         <td><a href="https://zlib.pub/book/the-hundred-page-machine-learning-book-5js7fsvqsjt0">The Hundred-Page Machine Learning Book</a></td>
+        <td>This book, authored by Andriy Burkov, provides a concise yet comprehensive overview of Machine Learning concepts and techniques. It's highly regarded for its accessibility and clarity, making it a valuable resource for both beginners and experienced practitioners.</td>
         <td>Free</td>
-      </tr>      
+      </tr>
+      <tr>
+         <td><a href="https://zlib.pub/book/data-mining-practical-machine-learning-tools-and-techniques-3qi4tcp5b12g">Data Mining: Practical Machine Learning Tools and Techniques</a></td>
+        <td>'Data Mining: Practical Machine Learning Tools and Techniques' provides a comprehensive overview of the field of data mining and Machine Learning. Authored by Ian H. Witten, Eibe Frank, and Mark A. Hall, this book is widely regarded as an essential resource for students, researchers, and practitioners in the field.</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td><a href="https://zlib.pub/book/pattern-recognition-and-machine-learning-45j6nxyu5thk">Pattern Recognition and Machine Learning</a></td>
+        <td>Christopher Bishop's 'Pattern Recognition and Machine Learning' is a classic in the field, offering deep insights into the theoretical foundations of machine learning, pattern recognition, and probabilistic models.</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td><a href="https://zlib.pub/book/machine-learning-a-probabilistic-perspective-1j76stsj5t43">Machine Learning: A Probabilistic Perspective</a></td>
+        <td>Written by Kevin P. Murphy, this book offers an in-depth look at machine learning from a probabilistic viewpoint. It provides detailed explanations of machine learning methods along with mathematical principles.</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td><a href="https://zlib.pub/book/deep-learning-2th9eihfysck">Deep Learning</a></td>
+        <td>Authored by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, 'Deep Learning' is a foundational text covering the principles and practices of deep neural networks, making it essential for anyone serious about machine learning and AI.</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td><a href="https://zlib.pub/book/introduction-to-statistical-learning-7j9dfxsj6mq3">An Introduction to Statistical Learning</a></td>
+        <td>Written by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani, this book provides an accessible introduction to statistical learning methods, particularly useful for students and practitioners new to the field.</td>
+        <td>Free</td>
+      </tr>
   </table>
+</details>
 
-  </details>
+
 
   <hr>
 
