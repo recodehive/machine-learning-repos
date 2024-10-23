@@ -1,4 +1,4 @@
-# **Spatial Clustering and Hot Spot Analysis** 🍅
+# **Spatial Clustering and Hot Spot Analysis** 🌏
 
 ### 🎯 Goal
 
