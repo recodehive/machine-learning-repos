@@ -1,4 +1,4 @@
-#  **CSGO Round Winter Classification** 
+#  **CSGO Round Winter Classification** ❄️
 
 ### 🎯 Goal
 Predict the Winning individual of Snapshots round
