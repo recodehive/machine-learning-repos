@@ -1,0 +1,6 @@
+torch
+torchvision
+albumentations
+timm
+opencv-contrib-python
+numpy
