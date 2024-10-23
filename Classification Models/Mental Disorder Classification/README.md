@@ -1,8 +1,7 @@
 # **Mental Disorder Classification** ❤️
 
 ### 🎯 Goal
-
-The aim of this project is to make a classification model, which will classify the jewelries based on the various features.
+To develop and validate a machine learning model that accurately classifies different types of mental disorders based on clinical and demographic data.
 
 
 ### 🧵 Dataset :  [LINK](https://github.com/Archi20876/machine-learning-repos/blob/main/Classification%20Models/Mental%20Disorder%20Classification/Dataset-Mental-Disorders.csv)
