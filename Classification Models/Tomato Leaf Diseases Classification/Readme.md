@@ -2,14 +2,14 @@
 
 ### 🎯 Goal
 
-The aim of this project is to make a classification model, which will classify the tomatoes based on its diseases , so that farmers can find cure to thier diseases.
+The aim of this project is to make a classification model, which will classify the leaf of the tomatoes based on its diseases , so that farmers can find cure to thier diseases.
 
 
 ### 🧵 Dataset :  [LINK](https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf)
 
 
 ### 🧾 Description
-Tomato disease classification involves identifying and diagnosing various diseases affecting tomato plants by analyzing the visual symptoms on leaves, stems, and fruits. Common diseases include early blight, late blight, and leaf spot, which can cause significant crop loss if not detected and managed promptly.
+Tomato leaf disease refers to a variety of conditions that affect the leaves of tomato plants, often leading to reduced yield and quality. These diseases can be caused by pathogens such as fungi, bacteria, and viruses, as well as environmental factors.  
 
 ### 📚 Libraries Needed
 - os
