@@ -1796,6 +1796,7 @@ body.blue-mode {
 .footer-social {
     display: flex;
     align-items: center;
+    
 }
 
 .footer-social i {
@@ -1805,7 +1806,7 @@ body.blue-mode {
     opacity: 0.7;
     border: 2px solid white;
     border-radius: 100%;
-    padding: 0.5rem;
+    padding: 0.6rem;
     transition: background-color 0.3s ease 0s;
 }
 
