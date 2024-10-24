@@ -280,11 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sendButton.click();
             }
         });
-    
-       // Get the button
     const scrollTopBtn = document.getElementById("scroll-top-btn");
-    
-    // Show the button when the user scrolls down 100px from the top of the document
     window.onscroll = function() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             scrollTopBtn.style.display = "block";
@@ -293,7 +289,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    // When the user clicks the button, scroll to the top of the document
     scrollTopBtn.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -307,48 +302,58 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener("DOMContentLoaded", function() {
         fetchContributors();
     
-        function fetchContributors() {
-            const repoOwner = 'recodehive'; // Replace with your repository owner
-            const repoName = 'machine-learning-repos'; // Replace with your repository name
-            const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contributors`;
+        function fetchContributors(page = 1, allContributors = []) {
+            const repoOwner = 'recodehive';
+            const repoName = 'machine-learning-repos';
+            const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contributors?per_page=100&page=${page}`;
     
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(contributors => {
-                    const contributorsGrid = document.getElementById('contributors-grid');
+                    if (contributors.length > 0) {
+                        allContributors = allContributors.concat(contributors);
                     
-                    contributors.forEach(contributor => {
-                        const contributorDiv = document.createElement('div');
-                        contributorDiv.className = 'contributor';
-    
-                        contributorDiv.innerHTML = `
-                            <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-image">
-                            <div class="contributor-info">
-                                <a href="${contributor.html_url}" target="_blank" class="contributor-name">${contributor.login}</a>
-                            </div>
-                        `;
-    
-                        contributorsGrid.appendChild(contributorDiv);
-                    });
+                        if (contributors.length === 100) {
+                            fetchContributors(page + 1, allContributors);
+                        } else {
+                            displayContributors(allContributors);
+                        }
+                    } else if (allContributors.length > 0) {
+                        displayContributors(allContributors);
+                    }
                 })
                 .catch(error => {
                     console.error('Error fetching contributors:', error);
                 });
+        }
+    
+        function displayContributors(contributors) {
+            const contributorsGrid = document.getElementById('contributors-grid');
+            contributorsGrid.innerHTML = ''; 
+            contributors.forEach(contributor => {
+                const contributorDiv = document.createElement('div');
+                contributorDiv.className = 'contributor';
+    
+                contributorDiv.innerHTML = `
+                    <img src="${contributor.avatar_url}" alt="${contributor.login}" class="contributor-image">
+                    <div class="contributor-info">
+                        <a href="${contributor.html_url}" target="_blank" class="contributor-name">${contributor.login}</a>
+                    </div>
+                `;
+    
+                contributorsGrid.appendChild(contributorDiv);
+            });
         }
     });
     
     const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
     const body = document.body;
     
-    // function to apply the theme based on the stored value
     function applyTheme(theme) {
-        // Remove all theme classes
         body.classList.remove('light-mode', 'dark-mode', 'blue-mode');
     
-        // Apply the new theme class
         body.classList.add(theme);
     
-        // Update the icon based on the theme
         const icon = toggleDarkModeButton.querySelector('i');
         if (theme === 'dark-mode') {
             icon.classList.add('fa-adjust');
@@ -360,17 +365,12 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.classList.add('fa-moon');
             icon.classList.remove('fa-sun', 'fa-adjust');
         }
-    
-        // Save the current theme in localStorage
         localStorage.setItem('theme', theme);
     }
-    
-    // Check for the saved theme in localStorage
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         applyTheme(savedTheme);
     } else {
-        // Set default theme to light
         applyTheme('light-mode');
     }
     
@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'blue': 'blue-mode'
     };
     
-    let i = 0; // For light-mode
+    let i = 0;
     
     function toggleTheme() {
         i++;
