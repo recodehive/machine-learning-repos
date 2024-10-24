@@ -1,49 +1,52 @@
-# Restaurant Recommender
+# Restaurant Recommender System
 
-## Introduction
-- This project analyzes restaurant data from Zomato for restaurants located in Lucknow, India.
-- The dataset includes various attributes such as restaurant name, address, locality, cuisine, average cost, highlights, and customer ratings. 
-- The goal of this project is to explore the dataset, perform analysis, and identify the top 20 restaurants based on aggregate ratings. 
-- The analysis aims to provide insights into the best restaurants in the area based on customer feedback.
+This repository contains a restaurant recommendation system that uses restaurant data from a CSV file. The system can recommend restaurants based on their popularity, location, cuisines, and user ratings.
 
-## Prerequisites
-- Python 3.x
-- Jupyter Notebook / Google Colab
-- pandas
-- numpy
-- geopandas
-- matplotlib
-- seaborn
+## Project Structure
 
-To install: `pip install pandas numpy geopandas matplotlib seaborn`
+- `Restaurant_Reservation.ipynb`: This notebook contains the implementation of the restaurant recommendation system.
 
-## Methodology
-1. **Exploratory Data Analysis**: Key characteristics of the data were examined, including checking for missing or duplicate entries. Summary statistics were used to understand variables like `average_cost_for_one`, `votes`, and `aggregate_rating`.
-2. **Top 20 Restaurants**: The dataset was sorted by `aggregate_rating` to identify the top-rated restaurants. The top 20 were filtered and analyzed further to understand common patterns in ratings, cuisines, and locations.
-3. **Data Visualization**: Various visualizations were created to illustrate relationships between key variables such as *restaurant rating*, *number of votes*, and *average cost*.
-4. **Recommendation System Evaluation**: 
-   - **Precision**: Precision is a measure of the accuracy of the recommendations. It tells you what proportion of the recommended items were relevant to the user. In your case, a precision of 0.4 means that 40% of the recommended restaurants were relevant to the user.
-   - **Recall**: Recall measures the coverage of the relevant items in the recommendations. It indicates what proportion of the relevant items were successfully recommended. A recall of approximately 0.67 means that 67% of the relevant restaurants were included in the recommendations.
-   - These values are typically between 0 and 1, with higher values indicating better performance. So, a precision of 0.4 and a recall of 0.67 suggest that the recommendations are somewhat accurate and cover a significant portion of the relevant items, but there is room for improvement.
-   - **Error Metrics**: 
-     - **Mean Squared Error (MSE)**: Measures the average of the squared differences between the actual and predicted values. A lower MSE indicates better model performance.
-     - **Mean Absolute Error (MAE)**: Represents the average magnitude of the prediction errors, with smaller values preferred.
-     - **Root Mean Squared Error (RMSE)**: Used to measure the standard deviation of the prediction errors; lower values are better.
-5. **Clustering Analysis**: The "Elbow Method" is a technique to determine the optimal number of clusters for a K-Means clustering algorithm. It looks for an "elbow" point in the plot where the distortion starts to decrease at a slower rate. The number of clusters corresponding to this point is considered optimal for clustering your data. The code helps you visualize this concept by plotting distortions for different values of k.
+## Dataset
 
-## Results
-- **Top-rated Restaurants**:
-    - Barbeque Nation (Rating: 4.9)
-    - Pirates of Grill (Rating: 4.8)
-    - Farzi Café (Rating: 4.7)
-- **Popular Cuisines**:
-    - North Indian
-    - Mughlai
-    - Continental
-    - Modern Indian
-- **Location Insights**: Restaurants in high-demand localities such as *Gomti Nagar* and *Chowk* have higher ratings and more customer votes.
+The dataset used in this project is loaded from `food1.csv` and contains information about various restaurants, including:
+
+- `res_id`: Restaurant ID
+- `name`: Name of the restaurant
+- `url`: Zomato URL for the restaurant
+- `address`: Full address of the restaurant
+- `city`: City where the restaurant is located
+- `locality`: Locality or neighborhood of the restaurant
+- `cuisines`: Types of cuisines the restaurant serves
+- `timings`: Operating hours of the restaurant
+- `average_cost_for_one`: Average cost for one person
+- `highlights`: Special features or services of the restaurant
+- `aggregate_rating`: Average user rating of the restaurant
+- `votes`: Number of votes or reviews for the restaurant
+- `scope`: A custom score used for ranking restaurants
+
+## Model Explanation
+
+The restaurant recommendation system implemented in the notebook primarily ranks restaurants based on a combination of their user ratings and the number of reviews they have received. The model also allows filtering by locality, cuisines, and cost range.
+
+**Steps Involved:**
+
+1. **Data Exploration**:
+   - The dataset is loaded using Pandas.
+   - Basic exploration is done using `.head()`, `.info()`, and `.columns()` to understand the structure and details of the dataset.
+
+2. **Data Cleaning**:
+   - Missing values are handled for attributes like `timings`.
+
+3. **Recommendation System**:
+   - The recommendation system ranks restaurants based on their `aggregate_rating` and the number of `votes` they have received.
+   - The user can filter restaurants based on criteria such as location (`locality`), `cuisines`, and cost (`average_cost_for_one`).
+
+## How to Run
+
+1. Clone the repository.
+2. Install the necessary dependencies (`pandas`, `numpy`, `matplotlib`, `seaborn`, `geopandas`).
+3. Open the `Restaurant_Reservation.ipynb` notebook and run the cells sequentially to explore and use the recommendation system.
 
 ## Conclusion
-- This project provides an in-depth analysis of restaurant data from Zomato, specifically focusing on customer preferences and ratings in Lucknow. 
-- The top restaurants are distinguished by their cuisines and prime locations, offering valuable insights for food enthusiasts and restaurant owners. 
-- Additionally, the evaluation metrics provide a framework for understanding the effectiveness of the recommendation system and areas for future improvement.
+
+The restaurant recommendation system allows users to explore various restaurants and receive recommendations based on popularity, location, and cuisines. This project can be expanded by incorporating more advanced recommendation techniques, such as collaborative filtering, for personalized recommendations.

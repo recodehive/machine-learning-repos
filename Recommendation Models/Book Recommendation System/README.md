@@ -1,33 +1,58 @@
 # Book Recommendation System
 
-## Introduction
-The Book Recommendation System Project aims to understand the distribution of book ratings and publication years, and recommend well rated books.
+This repository contains two approaches to building a book recommendation system:
 
-## Prerequisites
-- Python 3.x
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
+1. **Popularity-based Book Recommendation**
+2. **Collaborative-based Book Recommendation**
 
-To install: ``pip install numpy pandas matplotlib seaborn``
+Both models use the same dataset, which includes information about books, users, and user ratings.
 
-## Methodology
-1. **Data Loading, Exploration, and Cleaning**: The datasets are loaded and then inspected to understand their structure, including the shape, column names, and basic statistics. They are then cleaned to make it understandable.
-2. **Univariate Analysis**: Univariate analysis was conducted to examine the distribution of ratings and publication years.
-3. **Summary Statistics**: Summary statistics was generated for the year of publication.
-4. **Handling Outliers and Anomalies**: Identified and handled any anomalies in the publication year.
-5. **Boxplot Visualization**: A boxplot was generated to visualize the distribution of publication years.
-6. **Filtering Data**: Books with publication years beyond 2022 were filtered out from the dataset.
+## Project Structure
 
-## Results
-1. **Rating Distribution**: The distribution of ratings indicated user preferences and the popularity of books.
-2. **Publication Years**: The analysis of publication years showed trends in book releases, with certain years having a higher frequency of publications.
-3. **Data Quality**: Identification of missing values and duplicates helped to maintain data integrity for further analysis.
-4. **Visualizations**
-    - **Count Plot**: A count plot of book ratings showcased user rating patterns.
-    - **Bar Chart**: A bar chart of books by year of publication highlighted trends in literature over the decades.
+- `Popularity_based_Book_Recommendation.ipynb`: A notebook that implements a popularity-based recommendation system.
+- `Collaborative_Book_Recommendation.ipynb`: A notebook that implements a collaborative filtering-based recommendation system.
+
+## Dataset
+
+The dataset used in both notebooks consists of three files:
+
+1. **Books.csv**: Contains details about books such as ISBN, title, author, and publisher.
+2. **Users.csv**: Information about the users, including their unique ID, location, and age.
+3. **Ratings.csv**: User ratings for the books.
+
+## Notebooks and Model Explanations
+
+### 1. Popularity-based Book Recommendation
+
+**Model Explanation:**
+
+The popularity-based recommendation model ranks books based on their overall rating. The more ratings a book has, combined with the higher average rating, the more popular it is considered. The model does not take user preferences into account and simply recommends the same popular books to all users. Key steps include:
+
+- **Data Preparation**: Loading the dataset and merging user ratings with book details.
+- **Popularity Calculation**: Sorting books based on the count of user ratings and their average rating.
+- **Recommendation Output**: Returning a list of the most popular books for recommendation.
+
+This approach works well for general recommendations but lacks personalization.
+
+### 2. Collaborative-based Book Recommendation
+
+**Model Explanation:**
+
+The collaborative-based recommendation model uses a more advanced approach, recommending books based on the preferences of similar users. This is done using **user-user collaborative filtering**, where the algorithm finds users with similar tastes and recommends books that those users have rated highly. The model works as follows:
+
+- **Data Preparation**: Loading and cleaning the datasets (Books, Users, Ratings).
+- **User Similarity**: Calculating the similarity between users based on their book ratings using techniques like **cosine similarity**.
+- **Collaborative Filtering**: Based on the similarity scores, the model recommends books that similar users have liked but the target user hasn't yet rated.
+- **Recommendation Output**: Personalized book recommendations for each user based on their preferences and the behavior of similar users.
+
+This method is highly personalized and usually yields better results than popularity-based systems, but it requires more data and computational resources.
+
+## How to Run
+
+1. Clone the repository.
+2. Install the necessary dependencies (`pandas`, `numpy`, `matplotlib`, `seaborn`).
+3. Open the notebooks and run the cells in sequence.
 
 ## Conclusion
-- This project provides valuable insights into the dynamics of book ratings and publication trends. 
-- By utilizing data visualization and analysis techniques, we can identify user preferences, detect anomalies in the dataset, and ensure data quality for future analyses.
+
+These two models offer different strategies for recommending books. The **popularity-based model** is simple and effective for recommending top-rated books to everyone, while the **collaborative filtering model** offers personalized recommendations based on user behavior and preferences.

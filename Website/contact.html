@@ -3,11 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="title" content="Machine Learning Repositories">
+    <meta name="description"
+        content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community">
+        <meta name="keywords"
+        content="machine learning, machine learning repositories, machine learning repos, machine learning recode hive, recode hive, recode hive ml repos, recode give ml, ml, ml repositories, github repositories ml, machine learning github repositories">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Recode Hive">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #progress-container {
+        position: fixed ;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 15px;
+        z-index: 99990;
+        /* background: #f3f3f3; */
+    }
+    
+    #progress-bar {
+        height: 53%;
+        width: 0;
+        background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(58, 114, 227) 50%, rgb(22, 121, 250) 100%);
+        box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+        transition: width 0.09s ease-in-out;
+        border-radius: 10px;
+    }
+    .dark-mode .content{
+        background-color: white;
+      }
+      .dark-mode .title{
+        color: #333;
+      }
+      .dark-mode .paragraph{
+        color: #555;
+      }
+    </style>
 </head>
-<body>
+<body class="da">
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
 
+      <script>
+            
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+        </script>
+    <div class="loading-container" id="loading-animation">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <a class="logo-container" href="/">
+                <img src="assets/recode-hive.png" alt="Recode Hive Icon" class="logo-icon">
+                <span class="logo-text">Recode Hive</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Dropdown on navbar -->
+                <li class="dropdown">
+                    <button id="dropdownButton" class="dropbtn">Know More</button>
+                        <div id="dropdownMenu" class="dropdown-content">
+                            <a href="https://github.com/recodehive">How we work?</a>
+                            <a href="https://github.com/recodehive">Projects</a>
+                            <a href="https://github.com/recodehive">Team</a>
+                            <a href="conduct.html">Code of Conduct</a>
+                        </div>
+                </li>
+                <div class="nav-icons">
+                <li>
+                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
+                        <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
+                    </a>
+                </li>
+                <li>
+                    <button id="toggle-dark-mode" title="Use Ctrl+Q to toggle themes easily">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </div>
+            </ul>
+            <div class="line" id="line">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
     <div class="contact-container">
         <h2>Contact Us</h2>
         <p>We would love to hear from you! Please fill out this form and we'll get in touch with you shortly.</p>
@@ -31,6 +134,6 @@
         <!-- Back to Home Button -->
         <button onclick="window.location.href='index.html'" class="back-button">Back to Home</button>
     </div>
-
+</main>
 </body>
 </html>
