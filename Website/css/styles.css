@@ -1740,6 +1740,7 @@ body.blue-mode {
 }
 
 /* Links Styles */
+
 .light-mode a {
     /* color: #007bff; Blue link color */
 }
@@ -1747,6 +1748,13 @@ body.blue-mode {
 .dark-mode a {
     color: #1e90ff; /* Lighter blue link color */
 }
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .twitter-logo {
+        filter: invert(1); /* Inverts the colors, making a dark logo appear light */
+    }
+}
+
 
 .blue-mode a {
     color: #f1f1f1; /* Light text color for links */
