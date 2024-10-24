@@ -100,3 +100,4 @@ Before running the application, ensure you have the following libraries installe
 -   **Improved Language Detection**: Enhance the accuracy of language detection using advanced machine learning techniques.
 -   **Additional Features**: Add features such as text-to-speech conversion and language identification for multilingual texts.
 -   **Performance Optimization**: Optimize the translation process for faster and more efficient translations.
+5. **beneifts**

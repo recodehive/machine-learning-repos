@@ -1,35 +1,286 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #160457;
+    background-color: #0a0a2e;
+    font-family: 'Arial', sans-serif;
     color: #99d6dd;
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+header {
+    background-color: #121245;
+    padding: 10px 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    filter: brightness(1) invert(1);
+  }
+  
+  a.logo-container {
+    text-decoration: none;
+  }
+  
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .brand-name {
+    font-size: 1.5em;
+    color: #f1f1f1;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-left: 20px;
+    right: 10px;
+  }
+  
+  .line {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Hamburger Active State */
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 20px;
+  }
+/* Responsive */
+@media (max-width: 1024px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      padding: 10px;
+      top: 40px;
+      right: 0;
+      gap: 10px;
+      width: 100%;
+      background-color: #13034f;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+  
+    .nav-links.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .line {
+      display: flex;
+    }
+  }
+  
+  /* Hover Effect for Navigation Links */
+  .nav-links a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    position: relative;
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out; 
+  }
+  
+  .nav-links a:hover {
+    color: yellow; /* Yellow color on hover */
+    transform: scale(1.1); 
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow;
+  }
+  
+  .nav-links a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    filter: brightness(0) invert(1);
+    margin-top: -5px;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0f4f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dark-mode .dropdown-content {
+    background-color: #170179;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Hover Effect for Dropdown Items */
+  .dropdown-content a:hover {
+    color: #0066cc; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  
+  main {
+    max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+    display: flex;
+    flex-direction: column; 
+      padding: 20px;
+      flex: 1;
+      animation: fadeIn 1s ease-in-out;
+      /* Makes main content take up the remaining space */
+  }
+  
+  
+  .welcome-section {
+      text-align: center;
+      margin-bottom: 30px;
+      color:white;
+  }
+  
+  
+  h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      animation: slideInRight 1s ease-in-out;
+      color:white;
+  }
+  
+  p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color:white;
+  }
+  .dark-mode p {
+      color:black;
+  }
+  
+  button#toggle-stats {
+      display: block;
+      margin: 0 auto 20px auto;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      background-color: #1a1a5e;
+      /* Dark blue button */
+      color: #f1f1f1;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: slideInRight 1s ease-in-out;
+  }
 
 /* Contact Form Container */
 .contact-container {
-    background-color: rgb(4, 9, 85);
+    background-color: #0b065f; /* Darker blue for form background */
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(243, 246, 246, 0.1);
+    box-shadow: 0 0 10px rgba(243, 246, 246, 0.2);
     max-width: 500px;
     width: 100%;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6); /* White hover shadow */
 }
 
 .contact-container h2 {
     margin-bottom: 20px;
     font-size: 24px;
+    color: #ffffff; /* White title for contrast */
 }
 
 .contact-container p {
     margin-bottom: 30px;
-    color: #0bc1f9;
+    color: #0bc1f9; /* Light blue for the paragraph text */
 }
 
 /* Form Styles */
@@ -41,19 +292,39 @@ form {
 label {
     text-align: left;
     margin-bottom: 5px;
-    color: #8fe8f4;
+    color: #8fe8f4; /* Lighter text color for labels */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
+    background-color: #110769; /* Darker blue text field background */
+    color: #ffffff; /* White text in the fields */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    background-color: #0d0891; /* Slightly lighter blue on hover */
+    border-color: #0bc1f9; /* Lighter blue border on hover */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* White shadow on hover */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: #0d0891; /* Lighter blue background when focused */
+    border-color: #05d1fa; /* Light blue border on focus */
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Stronger white shadow when focused */
 }
 
 textarea {
@@ -63,16 +334,18 @@ textarea {
 button {
     background-color: #416f77;
     color: white;
-    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
     background-color: #05d1fa;
+    color: #08044c; /* Darker blue text on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* White hover shadow on button */
 }
 
 /* Back to Home Button Styles */
@@ -85,9 +358,12 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .back-button:hover {
     background-color: #06fdfd;
+    color: #08044c;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* White hover shadow */
 }
