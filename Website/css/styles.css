@@ -384,6 +384,17 @@ button#toggle-stats:hover {
     color: rgb(255, 213, 98);
 
 }
+div {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.languages, .milestones {
+    padding: 10px;
+    margin: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+}
 
 .language-and-milestone {
     display: flex;
@@ -688,8 +699,19 @@ button#toggle-languages:hover {
     justify-content: center;
     padding: 20px; /* Padding around the grid */
     background: linear-gradient(135deg, #121245, #121245); /* Subtle gradient background */
+    height: 600px; /* Fixed height for the grid */
+    overflow-y: auto; /* Enable vertical scrolling */
     animation: slideInRight 1s ease-in-out;
 }
+#contributors-grid::-webkit-scrollbar {
+    width: 10px;
+}
+
+#contributors-grid::-webkit-scrollbar-thumb {
+    background-color:#d60311;
+    border-radius: 10px;
+}
+
 
 /* Styling for individual contributor div */
 .contributor {
@@ -1729,6 +1751,7 @@ body.blue-mode {
 }
 
 /* Links Styles */
+
 .light-mode a {
     /* color: #007bff; Blue link color */
 }
@@ -1736,6 +1759,13 @@ body.blue-mode {
 .dark-mode a {
     color: #1e90ff; /* Lighter blue link color */
 }
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .twitter-logo {
+        filter: invert(1); /* Inverts the colors, making a dark logo appear light */
+    }
+}
+
 
 .blue-mode a {
     color: #f1f1f1; /* Light text color for links */
@@ -2023,3 +2053,4 @@ body.blue-mode {
     background-color: #170179; /* Dark blue background for tooltips */
     color: #f1f1f1; /* Light text */
 }
+
