@@ -723,7 +723,14 @@ Through these stages, the machine learning workflow provides a systematic approa
       <tr>
         <td> <a href="https://www.youtube.com/@campusx-official">CampusX</a></td>
         <td>The YouTube channel "CampusX," hosted by Nitish Singh (Founder), offers a variety of tutorials, courses, daily skill-building activities, hands-on projects, assignments, interactions with industry experts, and resources focused on Data Science, Machine Learning, and Artificial Intelligence. </td>
+      </tr
       </tr>
+      <tr>
+        <td> <a href="https://www.youtube.com/@krishnaik06">Krish Naik</a></td>
+        <td>The YouTube channel features a variety of topics on machine learning, deep learning, and AI, presented through real-world problem scenarios. With over 30 tech talks delivered at meet-ups and technical institutions, the channel aims to make ML and AI accessible to everyone. The creator is passionate about new technology and offers all videos for free, promising engaging and informative content for viewers.</td>
+      </tr>
+  
+  
   </table>
   </details>
 
