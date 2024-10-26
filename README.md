@@ -796,7 +796,11 @@ Through these stages, the machine learning workflow provides a systematic approa
       </tr>      
         <td> <a href="https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-with-python-from-linear-models-to-deep-learning">Machine Learning with python by MIT</a></td>
         <td>This course provided directly to the edX platform's "Machine Learning with Python: from Linear Models to Deep Learning" course offered by the Massachusetts Institute of Technology (MIT). </td>
-      </tr>    
+      </tr>
+      </tr>      
+        <td> <a href="https://learnwith.campusx.in/courses/Data-Science-Mentorship-Program-DSMP-20-653f50d1e4b0d2eae855480a">Data Science Mentorship Program 2.0 - CampusX</a></td>
+        <td>Data Science Mentorship Program 2.0 is an intensive live session program offering over 500 hours of comprehensive content. It includes five end-to-end case studies and a dedicated job preparation module, ensuring participants gain practical experience and are well-prepared for job opportunities. The program provides three years of validity, allowing for ample time to learn and engage with the material.</td>
+      </tr> 
   </table>
 
   </details>
