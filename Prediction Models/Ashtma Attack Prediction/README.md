@@ -1,27 +1,47 @@
-# Asthma-Risk-Prediction
-# ABSTRACT:
+# Asthma Risk Prediction System
 
-Air pollution poses a significant threat to global health, particularly in relation to respiratory conditions, contributing to over 8 million deaths annually. The impact is widespread, with more than 4.2 million deaths attributed to outdoor exposure and an additional 3.8 million linked to indoor pollution. Respiratory symptoms induced by pollutant agents are evident, with a pronounced interference in asthma outcomes, including incidence, prevalence, hospital admissions, emergency department visits, mortality, and asthma attacks. Amidst the ongoing COVID-19 situation, the risk escalates for older adults and individuals with complications like hypertension and diabetes during hospital admissions. Addressing this concern, an essential in-house monitoring framework for predicting asthma risk is proposed. The proposed Asthma Risk Prediction framework utilizes deep learning algorithms to estimate vulnerability based on particulate matter (PM) levels in the living environment and outdoor weather conditions. Employing Convolutional Neural Networks, the framework categorizes predicted peak expiratory flow rate (PEFR) levels into three groups: "Green" (Safe), "Yellow" (Moderate Risk), and "Red" (High Risk). When conditions indicate potential asthma risk, proactive measures such as activating air purifiers and notifying first responders are initiated. The hardware implementation involves PM sensors for detection, with a Raspberry Pi serving as the edge node to predict risk levels and trigger the response system. 
+## Table of Contents
+1. [Abstract](#abstract)
+2. [Algorithm](#algorithm)
+3. [Proposed Methodology](#proposed-methodology)
+4. [Dataset Details](#dataset-details)
+5. [Deep Learning Algorithm](#deep-learning-algorithm)
+6. [Model Validation](#model-validation)
+7. [Results](#results)
+8. [Conclusion and Future Plans](#conclusion-and-future-plans)
 
-KEYWORDS-edge computing, machine learning, iot, Asthma prediction, particulate matter (PM), peak expiratory flow rates (PEFR), convolutional neural network, Raspberry  
+## Abstract
+Air pollution poses a significant threat to global health, particularly in relation to respiratory conditions, contributing to over 8 million deaths annually. The impact is widespread, with more than 4.2 million deaths attributed to outdoor exposure and an additional 3.8 million linked to indoor pollution. Respiratory symptoms induced by pollutant agents are evident, with a pronounced interference in asthma outcomes, including incidence, prevalence, hospital admissions, emergency department visits, mortality, and asthma attacks. Amidst the ongoing COVID-19 situation, the risk escalates for older adults and individuals with complications like hypertension and diabetes during hospital admissions. Addressing this concern, an essential in-house monitoring framework for predicting asthma risk is proposed.
 
-# ALGORITHM: 
+The proposed Asthma Risk Prediction framework utilizes deep learning algorithms to estimate vulnerability based on particulate matter (PM) levels in the living environment and outdoor weather conditions. Employing Convolutional Neural Networks, the framework categorizes predicted peak expiratory flow rate (PEFR) levels into three groups: "Green" (Safe), "Yellow" (Moderate Risk), and "Red" (High Risk). When conditions indicate potential asthma risk, proactive measures such as activating air purifiers and notifying first responders are initiated. The hardware implementation involves PM sensors for detection, with a Raspberry Pi serving as the edge node to predict risk levels and trigger the response system.
 
-Algorithm explaining the proposed system working in real-time Input: PM2.5, PM10, outdoor temperature, humidity. Output: Safe, Moderate or High asthma risk prediction. Data processing stage on the Raspberry Pi: Collect PM2.5, PM10 using SDS011; Collect weather data using Openweather map; Data hosting the input features to server;Real-time stage on the Smartphone:
+**Keywords:** edge computing, machine learning, IoT, asthma prediction, particulate matter (PM), peak expiratory flow rates (PEFR), convolutional neural network, Raspberry Pi  
 
+## Algorithm
+The algorithm explaining the proposed system works in real-time:
+- **Input:** PM2.5, PM10, outdoor temperature, humidity.
+- **Output:** Safe, Moderate, or High asthma risk prediction.
+
+**Data Processing Stage on the Raspberry Pi:**
+- Collect PM2.5, PM10 using SDS011.
+- Collect weather data using OpenWeatherMap.
+- Host input features to the server.
+
+**Real-time Stage on the Smartphone:**
+```plaintext
 while MQTT publishing data:
-
-	 do Collect data from Sensor;
-	 CNN prediction;
-	 if PEFR > 80% then 
-		Safe; 
-	else if 50% < PEFR < 80% then 
-		Moderate risk;
-	 else 
-		High risk;
-	 end
+    do 
+        Collect data from Sensor;
+        CNN prediction;
+        if PEFR > 80% then 
+            Safe; 
+        else if 50% < PEFR < 80% then 
+            Moderate risk;
+        else 
+            High risk;
+        end
 end
-
+```
 # PROPOSED METHODOLOGY
 
 # Proposed Asthma Prediction Method 
