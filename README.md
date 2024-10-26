@@ -636,6 +636,10 @@ Through these stages, the machine learning workflow provides a systematic approa
         <td><a href="https://data.gov/">Data.gov</a></td>
         <td>Data.gov, a US government website, is invaluable for Machine Learning enthusiasts with its vast collection of nearly 300,000 datasets. It provides high-quality, reliable training data from various sectors, enabling innovative applications in public health, economics, and environmental science. The open data is freely available, eliminating licensing costs and allowing unrestricted use. Its authoritative sources ensure improved accuracy and reliability in Machine Learning models.</td>
       </tr>
+      <tr>
+        <td><a href="https://huggingface.co/datasets">Hugging Face</a></td>
+        <td>Hugging Face is a powerful platform for machine learning engineers. Its array of features, including Datasets, Models, and Spaces, streamline the process of working with ML data, making it more accessible and efficient.</td>
+      </tr>
 </table>
 
 </details>
@@ -714,6 +718,10 @@ Through these stages, the machine learning workflow provides a systematic approa
       <tr>
         <td> <a href="https://www.youtube.com/@codebasics">codebasics</a></td>
         <td>The YouTube channel "codebasics," hosted by codebasics, offers a variety of tutorials and resources focused on programming, data science, Machine Learning, and artificial intelligence. </td>
+      </tr>
+      <tr>
+        <td> <a href="https://www.youtube.com/@campusx-official">CampusX</a></td>
+        <td>The YouTube channel "CampusX," hosted by Nitish Singh (Founder), offers a variety of tutorials, courses, daily skill-building activities, hands-on projects, assignments, interactions with industry experts, and resources focused on Data Science, Machine Learning, and Artificial Intelligence. </td>
       </tr>
   </table>
   </details>
@@ -838,6 +846,10 @@ Through these stages, the machine learning workflow provides a systematic approa
         <td><a href="https://linkedin.com/jobs">linkedin.com/jobs</a></td>
     </tr>
     <tr>
+        <td><strong>Cuvette</strong></td>
+        <td><a href="https://cuvette.tech">cuvette.tech</a></td>
+    </tr>
+    <tr>
         <td><strong>Internshala</strong></td>
         <td><a href="https://internshala.com">internshala.com</a></td>
     </tr>
@@ -859,19 +871,11 @@ Through these stages, the machine learning workflow provides a systematic approa
     </tr>
     <tr>
         <td><strong>Indeed</strong></td>
-        <td><a href="https://indeed.com">indeed.com</a></td>
+        <td><a href="https://in.indeed.com/">indeed.com</a></td>
     </tr>
     <tr>
         <td><strong>SimplyHired</strong></td>
         <td><a href="https://simplyhired.com">simplyhired.com</a></td>
-    </tr>
-    <tr>
-        <td><strong>InternMatch</strong></td>
-        <td><a href="https://internmatch.com">internmatch.com</a></td>
-    </tr>
-    <tr>
-        <td><strong>CareerBuilder</strong></td>
-        <td><a href="https://careerbuilder.com">careerbuilder.com</a></td>
     </tr>
     <tr>
         <td><strong>Hired</strong></td>
@@ -880,10 +884,6 @@ Through these stages, the machine learning workflow provides a systematic approa
     <tr>
         <td><strong>WayUp</strong></td>
         <td><a href="https://wayup.com">wayup.com</a></td>
-    </tr>
-    <tr>
-        <td><strong>Cuvette</strong></td>
-        <td><a href="https://cuvette.tech">cuvette.tech</a></td>
     </tr>
 </table>
 
