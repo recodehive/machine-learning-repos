@@ -42,6 +42,7 @@ If later found out, the points will be deducted. You can't be earning more than 
     - [Fundamentals of Programming Language](#fundamentals-of-programming-language)
     - [Modules](#moduleslibraries)
     - [Introduction to Machine Learning](#introduction-to-machine-learning)
+    -  [Machine Learning Specialization](#machine-learning-specialization)
     - [Types of Machine Learning](#types-of-machine-learning)
     - [Steps involved for Machine Learning](#steps-involved-for-machine-learning)
       - [Data Collection](#data-collection)
@@ -184,6 +185,8 @@ Through these stages, the machine learning workflow provides a systematic approa
     <li><strong>Explainable AI (XAI):</strong> Enhancing model transparency and interpretability.</li>
     <li><strong>Federated Learning:</strong> Training models collaboratively across devices without data exchange.</li>
     <li><strong>AI Ethics and Fairness:</strong> Focus on ethical AI development and minimizing biases.</li>
+    <li><strong>Generative AI:</strong> Technologies that create new content (text, images, music) using models like GANs, VAEs, and diffusion models.</li>
+  <li><strong>Large Language Models (LLMs):</strong> Models like GPT and BERT that excel in natural language processing and support applications like chatbots and content generation.</li> </ul>
 </ul>
 
 </details>
@@ -310,6 +313,10 @@ Through these stages, the machine learning workflow provides a systematic approa
     <td><a href="https://www.geeksforgeeks.org/introduction-to-seaborn-python/">Seaborn</a></td>
     <td>Seaborn is an amazing visualization library for statistical graphics plotting in Python. It provides beautiful default styles and color palettes to make statistical plots more attractive.</td>
   </tr>
+   <tr>
+        <td><a href="https://www.scipy.org/">SciPy</a></td>
+        <td>SciPy is a library used for scientific and technical computing. It builds on NumPy and provides a large number of mathematical algorithms and functions for optimization, integration, interpolation, eigenvalue problems, and more.</td>
+    </tr>
 </table>
 
 ### Introduction to Machine Learning
@@ -324,6 +331,23 @@ Through these stages, the machine learning workflow provides a systematic approa
     <td>This video by Edureka on "Introduction To Machine Learning" will help you understand the basics of Machine Learning like how,what,when and how it can be used to solve real-world problems. </td>
   </tr>
 </table>
+
+### Machine Learning Specialization
+
+<table width="100%">
+  <tr>
+    <th>Resource Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.coursera.org/specializations/machine-learning-introduction">Andrew Ng's Machine Learning Specialization</a></td>
+    <td>This course by Andrew Ng on Coursera offers a comprehensive introduction to machine learning. It is an excellent starting point for beginners in the field, covering fundamental concepts and practical applications. The specialization consists of three courses:
+ Supervised Machine Learning: Regression and Classification , Advanced Learning Algorithms and Unsupervised Learning, Recommenders, and Reinforcement Learning.
+  </tr>
+</table>
+
+
+
 
 ### Types of Machine Learning
 
