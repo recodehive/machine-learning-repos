@@ -59,6 +59,7 @@ If later found out, the points will be deducted. You can't be earning more than 
 - [Machine Learning Forums](#machine-learning-forums)
 - [Courses](#courses)
 - [Projects](#projects)
+- [Internship Programs and Opportunities](#internship)
 - [Interview](#interview)
 - [Others](#others)
 - [Conclusion](#conclusion)
