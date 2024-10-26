@@ -956,13 +956,13 @@ Through these stages, the machine learning workflow provides a systematic approa
     </tr>
 </table>
 
-<h2>Shared Internship Opportunities </h2>
+<h2>Shared Internship/Job Opportunities </h2>
 <p><strong>Note:</strong> Below are some recent internship opportunities shared via LinkedIn posts. This list is not exhaustive, and more opportunities can be added as they are discovered. These references serve as a resource for current openings, which can change frequently. For up-to-date listings, consider regularly checking LinkedIn and other professional networks.</p>
 
   <table>
         <thead>
             <tr>
-                <th>Link(s) to Internship Opportunity</th>
+                <th>Link(s) to Opportunity</th>
             </tr>
         </thead>
         <tbody>
