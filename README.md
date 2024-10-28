@@ -59,6 +59,7 @@ If later found out, the points will be deducted. You can't be earning more than 
 - [Machine Learning Forums](#machine-learning-forums)
 - [Courses](#courses)
 - [Projects](#projects)
+- [Internship Programs and Opportunities](#internship)
 - [Interview](#interview)
 - [Others](#others)
 - [Conclusion](#conclusion)
@@ -636,6 +637,10 @@ Through these stages, the machine learning workflow provides a systematic approa
         <td><a href="https://data.gov/">Data.gov</a></td>
         <td>Data.gov, a US government website, is invaluable for Machine Learning enthusiasts with its vast collection of nearly 300,000 datasets. It provides high-quality, reliable training data from various sectors, enabling innovative applications in public health, economics, and environmental science. The open data is freely available, eliminating licensing costs and allowing unrestricted use. Its authoritative sources ensure improved accuracy and reliability in Machine Learning models.</td>
       </tr>
+      <tr>
+        <td><a href="https://huggingface.co/datasets">Hugging Face</a></td>
+        <td>Hugging Face is a powerful platform for machine learning engineers. Its array of features, including Datasets, Models, and Spaces, streamline the process of working with ML data, making it more accessible and efficient.</td>
+      </tr>
 </table>
 
 </details>
@@ -715,6 +720,17 @@ Through these stages, the machine learning workflow provides a systematic approa
         <td> <a href="https://www.youtube.com/@codebasics">codebasics</a></td>
         <td>The YouTube channel "codebasics," hosted by codebasics, offers a variety of tutorials and resources focused on programming, data science, Machine Learning, and artificial intelligence. </td>
       </tr>
+      <tr>
+        <td> <a href="https://www.youtube.com/@campusx-official">CampusX</a></td>
+        <td>The YouTube channel "CampusX," hosted by Nitish Singh (Founder), offers a variety of tutorials, courses, daily skill-building activities, hands-on projects, assignments, interactions with industry experts, and resources focused on Data Science, Machine Learning, and Artificial Intelligence. </td>
+      </tr
+      </tr>
+      <tr>
+        <td> <a href="https://www.youtube.com/@krishnaik06">Krish Naik</a></td>
+        <td>The YouTube channel features a variety of topics on machine learning, deep learning, and AI, presented through real-world problem scenarios. With over 30 tech talks delivered at meet-ups and technical institutions, the channel aims to make ML and AI accessible to everyone. The creator is passionate about new technology and offers all videos for free, promising engaging and informative content for viewers.</td>
+      </tr>
+  
+  
   </table>
   </details>
 
@@ -787,7 +803,11 @@ Through these stages, the machine learning workflow provides a systematic approa
       </tr>      
         <td> <a href="https://www.edx.org/learn/machine-learning/massachusetts-institute-of-technology-machine-learning-with-python-from-linear-models-to-deep-learning">Machine Learning with python by MIT</a></td>
         <td>This course provided directly to the edX platform's "Machine Learning with Python: from Linear Models to Deep Learning" course offered by the Massachusetts Institute of Technology (MIT). </td>
-      </tr>    
+      </tr>
+      </tr>      
+        <td> <a href="https://learnwith.campusx.in/courses/Data-Science-Mentorship-Program-DSMP-20-653f50d1e4b0d2eae855480a">Data Science Mentorship Program 2.0 - CampusX</a></td>
+        <td>Data Science Mentorship Program 2.0 is an intensive live session program offering over 500 hours of comprehensive content. It includes five end-to-end case studies and a dedicated job preparation module, ensuring participants gain practical experience and are well-prepared for job opportunities. The program provides three years of validity, allowing for ample time to learn and engage with the material.</td>
+      </tr> 
   </table>
 
   </details>
@@ -820,6 +840,176 @@ Through these stages, the machine learning workflow provides a systematic approa
 </details>
 
 <hr>
+
+<!--Internship-->
+<details>
+ <summary><h2 id="internship">💼 Internship Programs and Opportunities</h2>  
+
+> Where to Apply for Internships | Virtual Internship Programs | Shared Internship Opportunities 
+</summary>
+<h2>Where to Apply for Internships</h2>
+<table>
+    <tr>
+        <th>Platform(s)</th>
+        <th>Link(s)</th>
+    </tr>
+    <tr>
+        <td><strong>LinkedIn Jobs</strong></td>
+        <td><a href="https://linkedin.com/jobs">linkedin.com/jobs</a></td>
+    </tr>
+    <tr>
+        <td><strong>Cuvette</strong></td>
+        <td><a href="https://cuvette.tech">cuvette.tech</a></td>
+    </tr>
+    <tr>
+        <td><strong>Internshala</strong></td>
+        <td><a href="https://internshala.com">internshala.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>Glassdoor</strong></td>
+        <td><a href="https://glassdoor.com">glassdoor.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>Naukri</strong></td>
+        <td><a href="https://naukri.com">naukri.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>WellFound</strong></td>
+        <td><a href="https://wellfound.com">wellfound.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>YCombinator</strong></td>
+        <td><a href="https://ycombinator.com/jobs">ycombinator.com/jobs</a></td>
+    </tr>
+    <tr>
+        <td><strong>Indeed</strong></td>
+        <td><a href="https://in.indeed.com/">indeed.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>SimplyHired</strong></td>
+        <td><a href="https://simplyhired.com">simplyhired.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>Hired</strong></td>
+        <td><a href="https://hired.com">hired.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>WayUp</strong></td>
+        <td><a href="https://wayup.com">wayup.com</a></td>
+    </tr>
+</table>
+
+<h2>Virtual Internship Programs</h2>
+<table>
+    <tr>
+        <th>Program Name(s)</th>
+        <th>Link(s)</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><strong>SmartInternz</strong></td>
+        <td><a href="https://smartinternz.com">smartinternz.com</a></td>
+        <td>Provides real-world projects with mentorship for hands-on experience through virtual internships in areas like AI and ML.</td>
+    </tr>
+    <tr>
+        <td><strong>Internshala</strong></td>
+        <td><a href="https://internshala.com">internshala.com</a></td>
+        <td>Offers a variety of remote internships across India with opportunities in tech, business, design, and more.</td>
+    </tr>
+    <tr>
+        <td><strong>Pianalytix</strong></td>
+        <td><a href="https://pianalytix.com">pianalytix.com</a></td>
+        <td>8-week remote internship program focused on project-based learning with individual guidance in AI and data analytics.</td>
+    </tr>
+    <tr>
+        <td><strong>iNeuron</strong></td>
+        <td><a href="https://internship.ineuron.ai">ineuron.ai</a></td>
+        <td>Provides virtual internships for industry-aligned learning through AI-focused projects, exploring new tech applications.</td>
+    </tr>
+    <tr>
+        <td><strong>Ybi Foundation</strong></td>
+        <td><a href="https://www.ybifoundation.org">ybifoundation.org</a></td>
+        <td>Project-based learning internship program in AI and ML, including assignments and guidance for 30 days.</td>
+    </tr>
+    <tr>
+        <td><strong>Kodacy</strong></td>
+        <td><a href="https://kodacy.com">kodacy.com</a></td>
+        <td>A 30-day virtual internship offering immersive experience in AI, with real-world projects and mentorship.</td>
+    </tr>
+    <tr>
+        <td><strong>iNeuBytes</strong></td>
+        <td><a href="https://ineubytes.com">ineubytes.com</a></td>
+        <td>Virtual internships with structured tasks and industrial mentorship in data science and AI.</td>
+    </tr>
+    <tr>
+        <td><strong>1Stop.ai</strong></td>
+        <td><a href="https://www.1stop.ai">1stop.ai</a></td>
+        <td>Offers comprehensive two-month training with live sessions and project-focused AI internships.</td>
+    </tr>
+    <tr>
+        <td><strong>CodeClause</strong></td>
+        <td><a href="https://internship.codeclause.com">codeclause.com</a></td>
+        <td>A remote internship with flexible hours, industry expert sessions, and a focus on practical skills in tech and AI.</td>
+    </tr>
+    <tr>
+        <td><strong>Teachnook</strong></td>
+        <td><a href="https://teachnook.com">teachnook.com</a></td>
+        <td>Internship providing hands-on projects and mentorship for practical learning in tech and AI fields.</td>
+    </tr>
+    <tr>
+        <td><strong>Bharatintern</strong></td>
+        <td><a href="https://bharatintern.live/services-5">bharatintern.live</a></td>
+        <td>Offers field-specific, hands-on internships to help shape the next generation of tech leaders.</td>
+    </tr>
+    <tr>
+        <td><strong>AICTE Internships</strong></td>
+        <td><a href="https://internship.aicte-india.org/">aicte-india.org</a></td>
+        <td>Helps Indian students find internships across India, connecting organizations with skilled interns.</td>
+    </tr>
+</table>
+
+<h2>Shared Internship/Job Opportunities </h2>
+<p><strong>Note:</strong> Below are some recent internship opportunities shared via LinkedIn posts. This list is not exhaustive, and more opportunities can be added as they are discovered. These references serve as a resource for current openings, which can change frequently. For up-to-date listings, consider regularly checking LinkedIn and other professional networks.</p>
+
+  <table>
+        <thead>
+            <tr>
+                <th>Link(s) to Opportunity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.linkedin.com/posts/aniketsikdar_sony-genai-internship-activity-7255427875737149441-aDG4?utm_source=share&utm_medium=member_desktop">LinkedIn Post 1</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7253329759676350464?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7253329759676350464%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 2</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7254431622995861504?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7254431622995861504%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 3</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7254388172380332032?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7254388172380332032%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 4</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7254433488836153344?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7254433488836153344%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 5</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7250904809589874688?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7250904809589874688%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 6</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7254384401201983488?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7254384401201983488%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 7</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7254001003841081344?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7254001003841081344%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 8</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7249750467189092353?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7249750467189092353%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29">LinkedIn Post 9</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+  
+</details>
 
 <details>
  <summary><h2 id="interview"> 🎓Interview </h2>  
