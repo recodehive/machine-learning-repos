@@ -1,0 +1,74 @@
+{
+  "languages": [
+    {
+      "name": "Python",
+      "fileExtensions": [".py"],
+      "suggestions": [
+        "Provide data type hints.",
+        "Suggest popular libraries (e.g., NumPy, Pandas).",
+        "Offer function and class templates."
+      ],
+      "features": [
+        "Support for Jupyter notebooks.",
+        "Linting and formatting suggestions.",
+        "Integration with popular frameworks (e.g., Flask, Django)."
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "fileExtensions": [".js", ".jsx"],
+      "suggestions": [
+        "Suggest ES6+ syntax and features.",
+        "Provide common patterns (e.g., promises, async/await).",
+        "Recommend libraries (e.g., React, Lodash)."
+      ],
+      "features": [
+        "Support for Node.js and browser environments.",
+        "Real-time error detection.",
+        "Code snippet generation for React components."
+      ]
+    },
+    {
+      "name": "Java",
+      "fileExtensions": [".java"],
+      "suggestions": [
+        "Suggest object-oriented design patterns.",
+        "Provide import statements for common libraries.",
+        "Recommend best practices for exception handling."
+      ],
+      "features": [
+        "Integration with Maven and Gradle.",
+        "Support for Spring and JavaFX.",
+        "Refactoring suggestions."
+      ]
+    },
+    {
+      "name": "C#",
+      "fileExtensions": [".cs"],
+      "suggestions": [
+        "Provide LINQ query examples.",
+        "Suggest async programming patterns.",
+        "Recommend using attributes and annotations."
+      ],
+      "features": [
+        "Integration with .NET framework.",
+        "Support for Unity game development.",
+        "Code analysis and optimization suggestions."
+      ]
+    },
+    {
+      "name": "Go",
+      "fileExtensions": [".go"],
+      "suggestions": [
+        "Suggest goroutine patterns.",
+        "Provide examples of Go modules.",
+        "Recommend error handling techniques."
+      ],
+      "features": [
+        "Integration with Go tools (e.g., gofmt, golint).",
+        "Support for HTTP server and REST API examples.",
+        "Real-time dependency management."
+      ]
+    }
+  ]
+}
