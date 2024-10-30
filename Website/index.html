@@ -587,6 +587,118 @@
 
     <!-- new footer changes -->
     <div class="footer">
+
+
+      <!-- visitor counter -->
+      <div class="visitor-counter">
+        <div>Visitor</div>
+        <div class="website-counter"></div>
+      </div>
+      <style>
+        .visitor-counter {
+          position: fixed;
+          top: 570px;
+          left: 10px;
+          background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for better visibility */
+          height: 100px;
+          width: 100px;
+          color: #333; /* Darker text for better contrast */
+          font-weight: 700;
+          font-size: 18px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 12px; /* Softer corners */
+          backdrop-filter: blur(10px); /* Increased blur for a modern touch */
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), /* Slightly more pronounced shadow */
+                      0 2px 4px rgba(0, 0, 0, 0.1);
+          z-index: 9999999999999;
+          transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+      
+        .visitor-counter:hover {
+          transform: scale(1.05); /* Slightly enlarge on hover */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+        }
+      
+        .visitor-counter div:first-child {
+          margin-bottom: 5px;
+          font-size: 14px; /* Adjusted for clarity */
+          letter-spacing: 1px; /* Increased spacing for readability */
+        }
+      
+        .website-counter {
+          font-size: 24px;
+          font-family: 'Arial', sans-serif; /* Consistent font family */
+        }
+      
+        @media screen and (max-width: 768px) {
+          .visitor-counter {
+              height: 100px;
+              width: 100px;
+              font-size: 16px;
+          }
+      
+          .website-counter {
+              font-size: 20px;
+          }
+        }
+      
+        @media screen and (max-width: 480px) {
+          .visitor-counter {
+              height: 80px;
+              width: 80px;
+              font-size: 14px;
+          }
+      
+          .website-counter {
+              font-size: 18px;
+          }
+        }
+      
+        .dark-mode .visitor-counter div {
+          color: #f0f0f0; /* Lighter text for dark mode */
+        }
+      
+        .dark-mode .visitor-counter .website-counter {
+          color: #f0f0f0; /* Lighter color for consistency */
+        }
+      
+        .dark-mode .visitor-counter {
+          background-color: rgba(0, 0, 0, 0.7); /* Darker background for dark mode */
+          box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1),
+                      0 2px 4px rgba(255, 255, 255, 0.05);
+        }
+      
+      </style>
+      <script>
+         // Function to get the count from localStorage or initialize it
+       function getVisitorCount() {
+          return localStorage.getItem('visitorCount') || 0;
+        }
+      
+        // Function to increment and save the count
+        function incrementVisitorCount() {
+          let count = parseInt(getVisitorCount()) + 1;
+          localStorage.setItem('visitorCount', count);
+          return count;
+        }
+      
+        // Function to display the count
+        function displayVisitorCount() {
+          const counterElement = document.querySelector('.website-counter');
+          const count = incrementVisitorCount();
+          counterElement.textContent = count;
+        }
+      
+        // Call the display function when the page loads
+        document.addEventListener('DOMContentLoaded', displayVisitorCount);
+      </script>
+
+
+
         <div class="footer-col">
             <img src="./assets/recode-hive.png" alt="">
             <p class="footer-p">
