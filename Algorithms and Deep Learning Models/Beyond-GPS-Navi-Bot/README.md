@@ -1,6 +1,7 @@
 # NaviBot-Voice-Assistant
 
 To get started with NaviBot-Voice-Assistant, follow these steps:
+This is the step by step guide for installation. 
 
 1. Navigate to the project directory:
 
