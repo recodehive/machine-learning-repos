@@ -1,0 +1,13 @@
+easyocr==1.7.1
+googletrans==4.0.0rc1
+imutils==0.5.4
+langdetect==1.0.9
+numpy==2.1.2
+opencv_contrib_python==4.10.0.84
+opencv_python==4.10.0.82
+opencv_python_headless==4.10.0.84
+Pillow==11.0.0
+scipy==1.11.4
+streamlit==1.30.0
+streamlit==1.36.0
+streamlit_drawable_canvas==0.9.3
