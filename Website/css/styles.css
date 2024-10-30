@@ -421,6 +421,16 @@ div {
     color: white;
     animation: slideInRight 0.3s ease-in-out;
     transition: background-color 0.3s ease;
+    overflow-y: scroll;
+}
+
+#languages::-webkit-scrollbar {
+    width: 20px;
+}
+
+#languages::-webkit-scrollbar-track {
+    background: #121245;
+    border-radius: 15px;
 }
 
 #languages:hover {
@@ -489,6 +499,16 @@ div {
     color: white;
     animation: slideInRight 1s ease-in-out;
     transition: background-color 0.3s ease;
+    overflow-y: scroll;
+}
+
+#milestone::-webkit-scrollbar {
+    width: 20px;
+}
+
+#milestone::-webkit-scrollbar-track {
+    background: #121245;
+    border-radius: 15px;
 }
 
 #milestone:hover {
