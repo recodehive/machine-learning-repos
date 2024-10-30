@@ -36,7 +36,7 @@
         transition: width 0.09s ease-in-out;
         border-radius: 10px;
     }
-    .dark-mode .content{
+    /* .dark-mode .content{
         background-color: white;
       }
       .dark-mode .title{
@@ -44,10 +44,10 @@
       }
       .dark-mode .paragraph{
         color: #555;
-      }
+      } */
     </style>
 </head>
-<body class="da">
+ <body class="da">
     <div id="progress-container">
         <div id="progress-bar"></div>
       </div>
@@ -80,7 +80,18 @@
                 <li><a href="Feedback.html">Feedback</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <!-- Dropdown on navbar -->
-                <li class="dropdown">
+                 <!-- Inside your <ul class="nav-links"> -->
+<li class="dropdown">
+    <a href="#" class="dropbtn">Know More</a>
+    <div class="dropdown-content">
+        <a href="https://github.com/recodehive">How we work?</a>
+        <a href="https://github.com/recodehive">Projects</a>
+        <a href="https://github.com/recodehive">Team</a>
+        <a href="conduct.html">Code of Conduct</a>
+    </div>
+</li>
+
+                 <!-- <li class="dropdown">
                     <button id="dropdownButton" class="dropbtn">Know More</button>
                         <div id="dropdownMenu" class="dropdown-content">
                             <a href="https://github.com/recodehive">How we work?</a>
@@ -88,18 +99,23 @@
                             <a href="https://github.com/recodehive">Team</a>
                             <a href="conduct.html">Code of Conduct</a>
                         </div>
-                </li>
+                </li>  -->
                 <div class="nav-icons">
                 <li>
                     <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
                         <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
                     </a>
                 </li>
-                <li>
+            <li>
+                    <div>
+                        <img src="/Website/sun-solid (1).svg" id="icon">
+                    </div>
+            </li>
+                <!-- <li>
                     <button id="toggle-dark-mode" title="Use Ctrl+Q to toggle themes easily">
                         <i class="fas fa-moon"></i>
                     </button>
-                </li>
+                </li> -->
             </div>
             </ul>
             <div class="line" id="line">
@@ -135,5 +151,17 @@
         <button onclick="window.location.href='index.html'" class="back-button">Back to Home</button>
     </div>
 </main>
+<script>
+    var icon=document.getElementById("icon");
+    icon.onclick=function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src="/Website/moon-solid.svg" ;
+        }
+        else{
+            icon.src="/Website/sun-solid (1).svg";
+        }
+    }
+</script>
 </body>
-</html>
+</html> 
