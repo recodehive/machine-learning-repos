@@ -1,760 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="title" content="Machine Learning Repositories">
-    <meta name="description"
-        content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community">
-    <meta name="keywords"
-        content="machine learning, machine learning repositories, machine learning repos, machine learning recode hive, recode hive, recode hive ml repos, recode give ml, ml, ml repositories, github repositories ml, machine learning github repositories">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="1 days">
-    <meta name="author" content="Recode Hive">
-    <meta property="og:type" content="website" />
-    <!-- <meta property="og:url" content="url" /> define URL when deployed -->
-    <meta property="og:description"
-        content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community" />
-    <title>Machine Learning Repositories</title>
-    <!-- <link rel="canonical" href="url-here" /> define base(root) link of deployment here -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="title" content="Machine Learning Repositories">
+  <meta name="description"
+    content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community">
+  <meta name="keywords"
+    content="machine learning, machine learning repositories, machine learning repos, machine learning recode hive, recode hive, recode hive ml repos, recode give ml, ml, ml repositories, github repositories ml, machine learning github repositories">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Recode Hive">
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="url" /> define URL when deployed -->
+  <meta property="og:description"
+    content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community" />
+  <title>Machine Learning Repositories</title>
+  <!-- <link rel="canonical" href="url-here" /> define base(root) link of deployment here -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
     #progress-container {
-    position: fixed ;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 15px;
-    z-index: 99990;
-    /* background: #f3f3f3; */
-}
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      z-index: 99990;
+      /* background: #f3f3f3; */
+    }
 
-#progress-bar {
-    height: 53%;
-    width: 0;
-    background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(58, 114, 227) 50%, rgb(22, 121, 250) 100%);
-    box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
-    transition: width 0.09s ease-in-out;
-    border-radius: 10px;
-}
-.repo {
-        background-color: #f9f9f9;
-        padding: 20px;
-        margin: 15px;
-        border-radius: 12px;
-        width: 250px; 
-        text-align: center;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        animation: fadeInUp 1.2s ease-in-out;
-      }
-      .repo a {
-        text-decoration: none;
-      }
-      .repo:hover {
-        transform: translateY(-10px);
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-      }
-      .repo img {
-        max-width: 100%;
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-      }
-      .repo:hover img {
-        transform: scale(1.05);
-      }
-      .repo-title {
-        font-size: 1.4em;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        color: #333;
-      }
-      .repo-description {
-        font-size: 1em;
-        color: #777;
-      }
-      .paragraph {
-        font-size: 1.2em;
-        line-height: 1.8em;
-        margin-bottom: 30px;
-        color: #ffffff;
-        text-align: center;
-        animation: fadeInUp 1.2s ease-in-out;
-      }
-      .repo-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 30px;
-      }
-      .dark-mode .content{
-        background-color: white;
-      }
-      .dark-mode .title{
-        color: #333;
-      }
-      .dark-mode .paragraph{
-        color: #555;
-      }
+    #progress-bar {
+      height: 53%;
+      width: 0;
+      background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(58, 114, 227) 50%, rgb(22, 121, 250) 100%);
+      box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+      transition: width 0.09s ease-in-out;
+      border-radius: 10px;
+    }
 
-    </style>
+    .repo {
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .repo a {
+      text-decoration: none;
+    }
+
+    .repo:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .repo img {
+      max-width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .repo:hover img {
+      transform: scale(1.05);
+    }
+
+    .repo-title {
+      font-size: 1.4em;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .repo-description {
+      font-size: 1em;
+      color: #777;
+    }
+
+    .paragraph {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-align: center;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .repo-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .dark-mode .content {
+      background-color: white;
+    }
+
+    .dark-mode .title {
+      color: #333;
+    }
+
+    .dark-mode .paragraph {
+      color: #555;
+    }
+  </style>
 </head>
+
 <body class="dark-mode">
-    <div id="progress-container">
-        <div id="progress-bar"></div>
-      </div>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
 
-      <script>
-            
-        window.addEventListener('scroll', function() {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById('progress-bar').style.width = scrolled + '%';
-        });
-        </script>
-    <div class="loading-container" id="loading-animation">
-        <div class="loader"></div>
-    </div>
-    <header>
-        <nav class="navbar">
-            <a class="logo-container" href="/">
-                <img src="assets/recode-hive.png" alt="Recode Hive Icon" class="logo-icon">
-                <span class="logo-text">Recode Hive</span>
+  <script>
+
+    window.addEventListener('scroll', function () {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progress-bar').style.width = scrolled + '%';
+    });
+  </script>
+  <div class="loading-container" id="loading-animation">
+    <div class="loader"></div>
+  </div>
+  <header>
+    <nav class="navbar">
+      <a class="logo-container" href="/">
+        <img src="assets/recode-hive.png" alt="Recode Hive Icon" class="logo-icon">
+        <span class="logo-text">Recode Hive</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
+        <li><a href="organization.html">Organization</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Dropdown on navbar -->
+        <li class="dropdown">
+          <button id="dropdownButton" class="dropbtn">Know More</button>
+          <div id="dropdownMenu" class="dropdown-content">
+            <a href="https://github.com/recodehive">How we work?</a>
+            <a href="https://github.com/recodehive">Projects</a>
+            <a href="https://github.com/recodehive">Team</a>
+            <a href="https://github.com/recodehive">Code of Conduct</a>
+          </div>
+        </li>
+        <div class="nav-icons">
+          <li>
+            <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
+              <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
             </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-
-                <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
-                <li><a href="organization.html">Organization</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="Feedback.html">Feedback</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Dropdown on navbar -->
-                <li class="dropdown">
-                    <button id="dropdownButton" class="dropbtn">Know More</button>
-                        <div id="dropdownMenu" class="dropdown-content">
-                            <a href="https://github.com/recodehive">How we work?</a>
-                            <a href="https://github.com/recodehive">Projects</a>
-                            <a href="https://github.com/recodehive">Team</a>
-                            <a href="https://github.com/recodehive">Code of Conduct</a>
-                        </div>
-                </li>
-                <div class="nav-icons">
-                <li>
-                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
-                        <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
-                    </a>
-                </li>
-                <li>
-                    <button id="toggle-dark-mode" title="Use Ctrl+Q to toggle themes easily">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li>
-            </div>
-            </ul>
-            <div class="line" id="line">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="welcome-section">
-            <h2 class="text-black-light-mode">Welcome to the <span>Machine Learning Repositories</span></h2>
-            <p class="text-black-light-mode">Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community.</p>
-        </section>
-
-
-        <!-- Toggle button for Repository Statistics -->
-        <section>
-            <button id="toggle-stats"><span id="display">Show</span> Repository Statistics</button>
-        </section>
-
-        <!-- Statistics Cards -->
-        <section id="statistics-cards">
-            <h2>Repository Statistics</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <i class="fas fa-star stat-icon"></i>
-                    <h3>Total Stars</h3>
-                    <p id="total-stars">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-code-branch stat-icon"></i>
-                    <h3>Total Forks</h3>
-                    <p id="total-forks">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-exclamation-circle stat-icon"></i>
-                    <h3>Open Issues</h3>
-                    <p id="open-issues">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-balance-scale stat-icon"></i>
-                    <h3>License</h3>
-                    <p id="license">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-database stat-icon"></i>
-                    <h3>Repository Size</h3>
-                    <p id="repo-size">Loading...</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-code stat-icon"></i>
-                    <h3>Most Used Language</h3>
-                    <p id="most-used-language">Loading...</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Languages and Milestone-->
-
-        <section class="language-and-milestone">
-            <section id="languages">
-                <div class="text-base">Languages</div>
-                <ul id="language-list"></ul>
-            </section>
-            <section id="milestone">
-                <div class="text-base">Milestones Progress</div>
-                <div class="chart-container">
-                    <canvas id="milestoneChart"></canvas>
-                    <div class="legend">
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section id="repo-list">
-            <h2 class="text-black-light-mode">Repositories</h2>
-            <div class="paragraph">
-                <h3>Explore Our Models</h3>
-              </div>
-              <div class="repo-section">
-                <div class="repo">
-                  <a
-                    href="https://github.com/recodehive/machine-learning-repos/tree/main/OpenCV%20Projects"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/Images/Opencv.png"
-                      alt="OpencvModels"
-                    />
-                    <div class="repo-title">Open CV projects</div>
-                    <div class="repo-description">
-                        Real-time applications involving image processing, object detection, facial recognition, gesture detection, and more.
-                    </div>
-                  </a>
-                </div>
-                <div class="repo">
-                    <a
-                      href="https://github.com/recodehive/machine-learning-repos/tree/main/NLP"
-                      target="_blank"
-                    >
-                      <img
-                        src="./assets/Images/NLP.png"
-                        alt="NLP Models"
-                      />
-                      <div class="repo-title">NLP Models</div>
-                      <div class="repo-description">
-                        These models power applications such as chatbots, sentiment analysis, language translation, and text summarization.
-                      </div>
-                    </a>
-                  </div> 
-
-                  <div class="repo">
-                    <a
-                      href="https://github.com/recodehive/machine-learning-repos/tree/main/Recommendation%20Models"
-                      target="_blank"
-                    >
-                      <img
-                        src="./assets/Images/RecommendationModel.png"
-                        alt="Recommendation Models"
-                      />
-                      <div class="repo-title">Recommendation Models</div>
-                      <div class="repo-description">
-                        Explore models that suggest products, services, or content to
-                        users based on their preferences and behaviors.
-                      </div>
-                    </a>
-                  </div>        
-                <div class="repo">
-                  <a
-                    href="https://github.com/recodehive/machine-learning-repos/tree/main/Prediction%20Models"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/Images/PredictionModel.png"
-                      alt="Prediction Models"
-                    />
-                    <div class="repo-title">Prediction Models</div>
-                    <div class="repo-description">
-                      Dive into models that forecast future outcomes based on historical
-                      data, such as stock prices or weather patterns.
-                    </div>
-                  </a>
-                </div>
-        
-                <div class="repo">
-                  <a
-                    href="https://github.com/recodehive/machine-learning-repos/tree/main/Detection%20Models"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/Images/DetectionModel.png"
-                      alt="Detection Models"
-                    />
-                    <div class="repo-title">Detection Models</div>
-                    <div class="repo-description">
-                      Browse models that identify objects, patterns, or anomalies in
-                      data, such as image or fraud detection.
-                    </div>
-                  </a>
-                </div>
-        
-                <div class="repo">
-                  <a
-                    href="https://github.com/recodehive/machine-learning-repos/tree/main/Data%20Analysis"
-                    target="_blank"
-                  >
-                    <img src="./assets/Images/DataAnalysis.png" alt="Data Analysis" />
-                    <div class="repo-title">Data Analysis</div>
-                    <div class="repo-description">
-                      Discover tools and models for analyzing datasets to extract
-                      meaningful insights and trends.
-                    </div>
-                  </a>
-                </div>
-        
-                <div class="repo">
-                  <a
-                    href="https://github.com/recodehive/machine-learning-repos/tree/main/Classification%20Models"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/Images/ClassificationModel.png"
-                      alt="Classification Models"
-                    />
-                    <div class="repo-title">Classification Models</div>
-                    <div class="repo-description">
-                      Check out models that categorize data into predefined classes,
-                      like spam detection or sentiment analysis.
-                    </div>
-                  </a>
-                </div>
-        
-                <div class="repo">
-                  <a
-                    href="https://github.com/recodehive/machine-learning-repos/tree/main/Algorithms%20and%20Deep%20Learning%20Models"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/Images/DeepLearningModel.png"
-                      alt="Algorithms and Deep Learning"
-                    />
-                    <div class="repo-title">Algorithms and Deep Learning Models</div>
-                    <div class="repo-description">
-                      Explore complex models and algorithms that leverage neural
-                      networks and deep learning techniques.
-                    </div>
-                  </a>
-                </div>
-        
-                <div class="paragraph">
-                  <h3>Join the Community</h3>
-                  Add your machine learning project to our collection by raising an
-                  issue in our GitHub repository.
-                  <a
-                    href="https://github.com/recodehive/machine-learning-repos/issues"
-                    target="_blank"
-                    >Contribute Here</a
-                  >
-                </div>
-              </div>
-            </div>
-        
-        </section>
-
-        <section id="contributors">
-            <h1 class="contri-heading">Our Contributors</h1>
-            <div id="contributors-grid" class="contributors-grid" style="overflow-y: scroll;">
-                <!-- Contributors will be loaded here by JavaScript -->
-            </div>
-        </section>
-        <section id="milestones-progress">
-            <h2 class="text-black-light-mode">Milestones Progress</h2>
-            <div class="milestones-grid">
-                <div class="milestone-card">
-                    <h3>Algorithms and Deep Learning Models</h3>
-                    <p>This milestone enhances the website's performance and design by integrating advanced algorithms and Deep Learning models.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                    <p>34 closed / 34 total</p>
-                </div>
-                <div class="milestone-card">
-                    <h3>Classification Models</h3>
-                    <p>This Milestone focuses on improving the website's performance and design by implementing and optimizing various classification models.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                    <p>23 closed / 23 total</p>
-                </div>
-                <div class="milestone-card">
-                    <h3>Data Analysis</h3>
-                    <p>This milestone is dedicated to enhancing the website's performance and design through the integration and application of data analysis techniques.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                    <p>20 closed / 20 total</p>
-                </div>
-                <div class="milestone-card">
-                    <h3>NLP Models</h3>
-                    <p>This milestone focuses on integrating NLP models to enhance website functionality and user interaction, improving performance and design through advanced natural language processing techniques.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 50%;"></div>
-                    </div>
-                    <p>5 closed / 10 total</p>
-                </div>
-                <div class="milestone-card">
-                    <h3>Computer Vision Models</h3>
-                    <p>This milestone focuses on integrating computer vision models to improve website performance and design by enabling advanced image and video analysis capabilities.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 50%;"></div>
-                    </div>
-                    <p>10 closed / 20 total</p>
-                </div>
-                <div class="milestone-card">
-                    <h3>Detection Models</h3>
-                    <p>This milestone involves improving the website's performance and design by implementing advanced detection models to enhance functionality and accuracy.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                    <p>34 closed / 34 total</p>
-                </div>
-                <div class="milestone-card">
-                    <h3>Prediction Models</h3>
-                    <p>This milestone aims to integrate advanced prediction models to boost website performance and user experience with cutting-edge algorithms and machine learning techniques.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                    <p>60 closed / 60 total</p>
-                </div>
-                <div class="milestone-card">
-                    <h3>Recommendation Models</h3>
-                    <p>This milestone focuses on integrating advanced recommendation models to improve website performance and deliver personalized user experiences.</p>
-                    <div class="milestone-progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                    <p>4 closed / 4 total</p>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <section id="testimonials" class="testimonial-section">
-            <h2 class="text-white-light-mode">Testimonials</h2>
-            <h3 class="text-white-light-mode">Here's what our users are saying about their experince with Recodehive</h3>
-            <div class="testimonials-container">
-                <div class="testimonial">
-                    <img src="assets/Images/user1.png" alt="Alex Johnson">
-                    <p class="text-black-light-mode">"RecodeHive has been a game-changer for my projects. The curated repositories are top-notch, and the community support is unparalleled!"</p>
-                    <h3 class="text-black-light-mode">Alex Johnson</h3>
-                </div>
-                <div class="testimonial">
-                    <img src="assets/Images/user2.png" alt="Maria Garcia">
-                    <p class="text-black-light-mode">"I found exactly what I needed to advance my ML models. The resources provided by RecodeHive are simply the best."</p>
-                    <h3 class="text-black-light-mode">Maria Garcia</h3>
-                </div>
-                <div class="testimonial">
-                    <img src="assets/Images/user3.png" alt="John Doe">
-                    <p class="text-black-light-mode">"A fantastic platform for anyone serious about machine learning. The repositories are well-organized and easy to navigate."</p>
-                    <h3 class="text-black-light-mode">John Doe</h3>
-                </div>
-            </div>
-        </section>
-        
-
-<!-- GitHub Repositories Section -->
-<section class="github-section">
-    <h2>Here are some of our active GitHub repositories</h2>
-    <p>Everyone is welcome to come and contribute to our open source projects.</p>
-    
-    <div class="github-container">
-      <!-- Repository Buttons -->
-      <div class="github-buttons">
-        <button onclick="changeImage('assets/Images/awesome-github-profiles.png')">Awesome GitHub Profiles</button>
-        <button onclick="changeImage('assets/Images/machine-learning-repos.png')">Machine Learning Repo</button>
-        <button onclick="changeImage('assets/Images/scrape-ml.png')">Scrape ML</button>
+          </li>
+          <li>
+            <button id="toggle-dark-mode" title="Use Ctrl+Q to toggle themes easily">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </div>
+      </ul>
+      <div class="line" id="line">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-  
-      <!-- Image Display -->
-      <div class="github-image">
-        <img id="repoImage" src="assets/Images/recodehive.png" alt="GitHub Repository">
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome-section">
+      <h2 class="text-black-light-mode">Welcome to the <span>Machine Learning Repositories</span></h2>
+      <p class="text-black-light-mode">Explore a curated collection of diverse machine learning repositories available
+        on GitHub, presented by the RecodeHive community.</p>
+    </section>
+
+
+    <!-- Toggle button for Repository Statistics -->
+    <section>
+      <button id="toggle-stats"><span id="display">Show</span> Repository Statistics</button>
+    </section>
+
+    <!-- Statistics Cards -->
+    <section id="statistics-cards">
+      <h2>Repository Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fas fa-star stat-icon"></i>
+          <h3>Total Stars</h3>
+          <p id="total-stars">Loading...</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-code-branch stat-icon"></i>
+          <h3>Total Forks</h3>
+          <p id="total-forks">Loading...</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-exclamation-circle stat-icon"></i>
+          <h3>Open Issues</h3>
+          <p id="open-issues">Loading...</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-balance-scale stat-icon"></i>
+          <h3>License</h3>
+          <p id="license">Loading...</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-database stat-icon"></i>
+          <h3>Repository Size</h3>
+          <p id="repo-size">Loading...</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-code stat-icon"></i>
+          <h3>Most Used Language</h3>
+          <p id="most-used-language">Loading...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages and Milestone-->
+
+    <section class="language-and-milestone">
+      <section id="languages">
+        <div class="text-base">Languages</div>
+        <ul id="language-list"></ul>
+      </section>
+      <section id="milestone">
+        <div class="text-base">Milestones Progress</div>
+        <div class="chart-container">
+          <canvas id="milestoneChart"></canvas>
+          <div class="legend">
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="repo-list">
+      <h2 class="text-black-light-mode">Repositories</h2>
+      <div class="paragraph">
+        <h3>Explore Our Models</h3>
+      </div>
+      <div class="repo-section">
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/OpenCV%20Projects" target="_blank">
+            <img src="./assets/Images/Opencv.png" alt="OpencvModels" />
+            <div class="repo-title">Open CV projects</div>
+            <div class="repo-description">
+              Real-time applications involving image processing, object detection, facial recognition, gesture
+              detection, and more.
+            </div>
+          </a>
+        </div>
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/NLP" target="_blank">
+            <img src="./assets/Images/NLP.png" alt="NLP Models" />
+            <div class="repo-title">NLP Models</div>
+            <div class="repo-description">
+              These models power applications such as chatbots, sentiment analysis, language translation, and text
+              summarization.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/Recommendation%20Models"
+            target="_blank">
+            <img src="./assets/Images/RecommendationModel.png" alt="Recommendation Models" />
+            <div class="repo-title">Recommendation Models</div>
+            <div class="repo-description">
+              Explore models that suggest products, services, or content to
+              users based on their preferences and behaviors.
+            </div>
+          </a>
+        </div>
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/Prediction%20Models" target="_blank">
+            <img src="./assets/Images/PredictionModel.png" alt="Prediction Models" />
+            <div class="repo-title">Prediction Models</div>
+            <div class="repo-description">
+              Dive into models that forecast future outcomes based on historical
+              data, such as stock prices or weather patterns.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/Detection%20Models" target="_blank">
+            <img src="./assets/Images/DetectionModel.png" alt="Detection Models" />
+            <div class="repo-title">Detection Models</div>
+            <div class="repo-description">
+              Browse models that identify objects, patterns, or anomalies in
+              data, such as image or fraud detection.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/Data%20Analysis" target="_blank">
+            <img src="./assets/Images/DataAnalysis.png" alt="Data Analysis" />
+            <div class="repo-title">Data Analysis</div>
+            <div class="repo-description">
+              Discover tools and models for analyzing datasets to extract
+              meaningful insights and trends.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/Classification%20Models"
+            target="_blank">
+            <img src="./assets/Images/ClassificationModel.png" alt="Classification Models" />
+            <div class="repo-title">Classification Models</div>
+            <div class="repo-description">
+              Check out models that categorize data into predefined classes,
+              like spam detection or sentiment analysis.
+            </div>
+          </a>
+        </div>
+
+        <div class="repo">
+          <a href="https://github.com/recodehive/machine-learning-repos/tree/main/Algorithms%20and%20Deep%20Learning%20Models"
+            target="_blank">
+            <img src="./assets/Images/DeepLearningModel.png" alt="Algorithms and Deep Learning" />
+            <div class="repo-title">Algorithms and Deep Learning Models</div>
+            <div class="repo-description">
+              Explore complex models and algorithms that leverage neural
+              networks and deep learning techniques.
+            </div>
+          </a>
+        </div>
+
+        <div class="paragraph">
+          <h3>Join the Community</h3>
+          Add your machine learning project to our collection by raising an
+          issue in our GitHub repository.
+          <a href="https://github.com/recodehive/machine-learning-repos/issues" target="_blank">Contribute Here</a>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <section id="contributors">
+      <h1 class="contri-heading">Our Contributors</h1>
+      <div id="contributors-grid" class="contributors-grid" style="overflow-y: scroll;">
+        <!-- Contributors will be loaded here by JavaScript -->
+      </div>
+    </section>
+    <section id="milestones-progress">
+      <h2 class="text-black-light-mode">Milestones Progress</h2>
+      <div class="milestones-grid">
+        <div class="milestone-card">
+          <h3>Algorithms and Deep Learning Models</h3>
+          <p>This milestone enhances the website's performance and design by integrating advanced algorithms and Deep
+            Learning models.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+          </div>
+          <p>34 closed / 34 total</p>
+        </div>
+        <div class="milestone-card">
+          <h3>Classification Models</h3>
+          <p>This Milestone focuses on improving the website's performance and design by implementing and optimizing
+            various classification models.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+          </div>
+          <p>23 closed / 23 total</p>
+        </div>
+        <div class="milestone-card">
+          <h3>Data Analysis</h3>
+          <p>This milestone is dedicated to enhancing the website's performance and design through the integration and
+            application of data analysis techniques.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+          </div>
+          <p>20 closed / 20 total</p>
+        </div>
+        <div class="milestone-card">
+          <h3>NLP Models</h3>
+          <p>This milestone focuses on integrating NLP models to enhance website functionality and user interaction,
+            improving performance and design through advanced natural language processing techniques.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+          <p>5 closed / 10 total</p>
+        </div>
+        <div class="milestone-card">
+          <h3>Computer Vision Models</h3>
+          <p>This milestone focuses on integrating computer vision models to improve website performance and design by
+            enabling advanced image and video analysis capabilities.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+          <p>10 closed / 20 total</p>
+        </div>
+        <div class="milestone-card">
+          <h3>Detection Models</h3>
+          <p>This milestone involves improving the website's performance and design by implementing advanced detection
+            models to enhance functionality and accuracy.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+          </div>
+          <p>34 closed / 34 total</p>
+        </div>
+        <div class="milestone-card">
+          <h3>Prediction Models</h3>
+          <p>This milestone aims to integrate advanced prediction models to boost website performance and user
+            experience with cutting-edge algorithms and machine learning techniques.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+          </div>
+          <p>60 closed / 60 total</p>
+        </div>
+        <div class="milestone-card">
+          <h3>Recommendation Models</h3>
+          <p>This milestone focuses on integrating advanced recommendation models to improve website performance and
+            deliver personalized user experiences.</p>
+          <div class="milestone-progress-bar">
+            <div class="progress" style="width: 100%;"></div>
+          </div>
+          <p>4 closed / 4 total</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="testimonials" class="testimonial-section">
+      <h2 class="text-white-light-mode">Testimonials</h2>
+      <h3 class="text-white-light-mode">Here's what our users are saying about their experince with Recodehive</h3>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <img src="assets/Images/user1.png" alt="Alex Johnson">
+          <p class="text-black-light-mode">"RecodeHive has been a game-changer for my projects. The curated repositories
+            are top-notch, and the community support is unparalleled!"</p>
+          <h3 class="text-black-light-mode">Alex Johnson</h3>
+        </div>
+        <div class="testimonial">
+          <img src="assets/Images/user2.png" alt="Maria Garcia">
+          <p class="text-black-light-mode">"I found exactly what I needed to advance my ML models. The resources
+            provided by RecodeHive are simply the best."</p>
+          <h3 class="text-black-light-mode">Maria Garcia</h3>
+        </div>
+        <div class="testimonial">
+          <img src="assets/Images/user3.png" alt="John Doe">
+          <p class="text-black-light-mode">"A fantastic platform for anyone serious about machine learning. The
+            repositories are well-organized and easy to navigate."</p>
+          <h3 class="text-black-light-mode">John Doe</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- GitHub Repositories Section -->
+    <section class="github-section">
+      <h2>Here are some of our active GitHub repositories</h2>
+      <p>Everyone is welcome to come and contribute to our open source projects.</p>
+
+      <div class="github-container">
+        <!-- Repository Buttons -->
+        <div class="github-buttons">
+          <button onclick="changeImage('assets/Images/awesome-github-profiles.png')">Awesome GitHub Profiles</button>
+          <button onclick="changeImage('assets/Images/machine-learning-repos.png')">Machine Learning Repo</button>
+          <button onclick="changeImage('assets/Images/scrape-ml.png')">Scrape ML</button>
+        </div>
+
+        <!-- Image Display -->
+        <div class="github-image">
+          <img id="repoImage" src="assets/Images/recodehive.png" alt="GitHub Repository">
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function changeImage(image) {
+        document.getElementById('repoImage').src = image;
+      }
+    </script>
+
+
+
+  </main>
+
+  <!-- Chatbot Button -->
+  <div class="chatbot-button" id="chatbot-button">
+    <img src="assets/chatbot.png" height="50px" width="50px" id="chatbot-img" class="floating" alt="chatbot">
+    <div class="tooltip">Welcome to RecodeHive - Machine Learning Repos, How can we help you?</div>
+  </div>
+
+  <!-- Chatbox -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+      Recodehive's Chatbot
+      <span class="close-btn" id="close-chatbot">&times;</span>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-questions">
+      <p>Choose a question:</p>
+      <ul id="question-list">
+        <!-- Questions will be populated here -->
+      </ul>
+    </div>
+    <div class="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Type your message...">
+      <button id="chatbot-send">Send</button>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top-btn" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+      image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+      <path
+        d="M256 512c70.684 0 134.695-28.658 181.019-74.981C483.342 390.695 512 326.691 512 256s-28.658-134.695-74.981-181.019C390.695 28.658 326.691 0 256 0S121.305 28.658 74.981 74.981C28.658 121.305 0 185.309 0 256s28.658 134.695 74.981 181.019C121.305 483.342 185.309 512 256 512zm-79.003-200.641c-30.983 17.861-46.316-6.963-29.012-25.063l88.741-101.046c16.129-16.136 22.426-16.136 38.563 0l88.741 101.046c17.18 18.187 2.203 42.867-29.02 25.063l-79.003-46.932-79.01 46.932z" />
+    </svg>
+  </button>
+
+
+  <!-- Side Icons -->
+
+  <div class="side-icons">
+    <div class="icon-content">
+      <a href="https://www.facebook.com/recodehive" target="_blank" aria-label="Facebook" data-social="facebook">
+        <i class="fab fa-facebook-f"></i>
+        <div class="filled"></div>
+      </a>
+    </div>
+    <div class="icon-content">
+      <a href="https://www.linkedin.com/in/sanjay-k-v/" target="_blank" aria-label="LinkedIn" data-social="linkedin">
+        <i class="fab fa-linkedin-in"></i>
+        <div class="filled"></div>
+      </a>
+    </div>
+    <div class="icon-content">
+      <a href="https://twitter.com/sanjay_kv" target="_blank" aria-label="Twitter" data-social="twitter">
+        <i class="fa fa-twitter"></i>
+        <div class="filled"></div>
+      </a>
+    </div>
+    <div class="icon-content">
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube" data-social="youtube">
+        <i class="fab fa-youtube"></i>
+        <div class="filled"></div>
+      </a>
+    </div>
+    <div class="icon-content">
+      <a href="https://github.com/recodehive" target="_blank" aria-label="GitHub" data-social="github">
+        <i class="fab fa-github"></i>
+        <div class="filled"></div>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- new footer changes -->
+  <div class="footer">
+
+
+    <!-- visitor counter -->
+    <div class="visitor-counter">
+      <div>Visitor</div>
+      <div class="website-counter"></div>
+    </div>
+    <style>
+      .visitor-counter {
+        position: fixed;
+        top: 570px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        /* Slightly opaque background for better visibility */
+        height: 100px;
+        width: 100px;
+        color: #333;
+        /* Darker text for better contrast */
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        /* Softer corners */
+        backdrop-filter: blur(10px);
+        /* Increased blur for a modern touch */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15),
+          /* Slightly more pronounced shadow */
+          0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 9999999999999;
+        transition: all 0.3s ease;
+        /* Smooth transition for hover effect */
+      }
+
+      .visitor-counter:hover {
+        transform: scale(1.05);
+        /* Slightly enlarge on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Enhance shadow on hover */
+      }
+
+      .visitor-counter div:first-child {
+        margin-bottom: 5px;
+        font-size: 14px;
+        /* Adjusted for clarity */
+        letter-spacing: 1px;
+        /* Increased spacing for readability */
+      }
+
+      .website-counter {
+        font-size: 24px;
+        font-family: 'Arial', sans-serif;
+        /* Consistent font family */
+      }
+
+      @media screen and (max-width: 768px) {
+        .visitor-counter {
+          height: 100px;
+          width: 100px;
+          font-size: 16px;
+        }
+
+        .website-counter {
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .visitor-counter {
+          height: 80px;
+          width: 80px;
+          font-size: 14px;
+        }
+
+        .website-counter {
+          font-size: 18px;
+        }
+      }
+
+      .dark-mode .visitor-counter div {
+        color: #f0f0f0;
+        /* Lighter text for dark mode */
+      }
+
+      .dark-mode .visitor-counter .website-counter {
+        color: #f0f0f0;
+        /* Lighter color for consistency */
+      }
+
+      .dark-mode .visitor-counter {
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Darker background for dark mode */
+        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1),
+          0 2px 4px rgba(255, 255, 255, 0.05);
+      }
+    </style>
+    <script>
+      // Function to get the count from localStorage or initialize it
+      function getVisitorCount() {
+        return localStorage.getItem('visitorCount') || 0;
+      }
+
+      // Function to increment and save the count
+      function incrementVisitorCount() {
+        let count = parseInt(getVisitorCount()) + 1;
+        localStorage.setItem('visitorCount', count);
+        return count;
+      }
+
+      // Function to display the count
+      function displayVisitorCount() {
+        const counterElement = document.querySelector('.website-counter');
+        const count = incrementVisitorCount();
+        counterElement.textContent = count;
+      }
+
+      // Call the display function when the page loads
+      document.addEventListener('DOMContentLoaded', displayVisitorCount);
+    </script>
+
+
+
+    <div class="footer-col">
+      <img src="./assets/recode-hive.png" alt="">
+      <p class="footer-p">
+
+        Machine Learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and
+        discovery.
+
+      </p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/recodehive"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/sanjay_kv"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/sanjay-k-v/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/recodehive"><i class="fa-brands fa-github"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
-  </section>
-  
+    <div class="footer-col-main">
+      <h4 class="h46">Company</h4>
+      <a href="#">Organisation</a>
+      <a href="#">Franchise</a>
+      <a href="#">Contribute</a>
+      <a href="#">Network</a>
+    </div>
+    <div class="footer-col-main">
+      <h4 class="h46">About Us</h4>
+      <a href="#">Blogs</a>
+      <a href="#">Security</a>
+      <a href="#">Careers</a>
+      <a href="#">FAQS</a>
+    </div>
+    <div class="footer-col-main">
+      <h4 class="h46">Contact</h4>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Feedback</a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    Copyright &copy; 2024 <a href="https://github.com/recodehive">Recodehive</a>. All rights reserved.
+
+  </div>
+
+
+
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById("year").textContent = year;
+  </script>
+
+  <script src="js/script.js"></script>
+
   <script>
     function changeImage(image) {
       document.getElementById('repoImage').src = image;
     }
   </script>
-  
-
-
-    </main>
-
-    <!-- Chatbot Button -->
-    <div class="chatbot-button" id="chatbot-button">
-        <img src="assets/chatbot.png" height="50px" width="50px" id="chatbot-img" class="floating" alt="chatbot">
-        <div class="tooltip">Welcome to RecodeHive - Machine Learning Repos, How can we help you?</div>
-    </div>
-
-    <!-- Chatbox -->
-    <div class="chatbot" id="chatbot">
-        <div class="chatbot-header">
-            Recodehive's Chatbot
-            <span class="close-btn" id="close-chatbot">&times;</span>
-        </div>
-        <div class="chatbot-messages" id="chatbot-messages"></div>
-        <div class="chatbot-questions">
-            <p>Choose a question:</p>
-            <ul id="question-list">
-                <!-- Questions will be populated here -->
-            </ul>
-        </div>
-        <div class="chatbot-input-container">
-            <input type="text" id="chatbot-input" placeholder="Type your message...">
-            <button id="chatbot-send">Send</button>
-        </div>
-    </div>
-
-    <!-- Scroll to Top Button -->
-    <button id="scroll-top-btn" title="Go to top">
-        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
-            <path d="M256 512c70.684 0 134.695-28.658 181.019-74.981C483.342 390.695 512 326.691 512 256s-28.658-134.695-74.981-181.019C390.695 28.658 326.691 0 256 0S121.305 28.658 74.981 74.981C28.658 121.305 0 185.309 0 256s28.658 134.695 74.981 181.019C121.305 483.342 185.309 512 256 512zm-79.003-200.641c-30.983 17.861-46.316-6.963-29.012-25.063l88.741-101.046c16.129-16.136 22.426-16.136 38.563 0l88.741 101.046c17.18 18.187 2.203 42.867-29.02 25.063l-79.003-46.932-79.01 46.932z"/>
-        </svg>
-    </button>
-
-    
-    <!-- Side Icons -->
-    
-    <div class="side-icons">
-        <div class="icon-content">
-          <a href="https://www.facebook.com/recodehive" target="_blank" aria-label="Facebook" data-social="facebook">
-            <i class="fab fa-facebook-f"></i>
-            <div class="filled"></div>
-          </a>
-        </div>
-        <div class="icon-content">
-          <a href="https://www.linkedin.com/in/sanjay-k-v/" target="_blank" aria-label="LinkedIn" data-social="linkedin">
-            <i class="fab fa-linkedin-in"></i>
-            <div class="filled"></div>
-          </a>
-        </div>
-        <div class="icon-content">
-          <a href="https://twitter.com/sanjay_kv" target="_blank" aria-label="Twitter" data-social="twitter">
-           <i class="fa fa-twitter"></i>
-            <div class="filled"></div>
-          </a>
-        </div>
-        <div class="icon-content">
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube" data-social="youtube">
-            <i class="fab fa-youtube"></i>
-            <div class="filled"></div>
-          </a>
-        </div>
-        <div class="icon-content">
-          <a href="https://github.com/recodehive" target="_blank" aria-label="GitHub" data-social="github">
-            <i class="fab fa-github"></i>
-            <div class="filled"></div>
-          </a>
-        </div>
-      </div>
-   
-
-    <!-- new footer changes -->
-    <div class="footer">
-
-
-      <!-- visitor counter -->
-      <div class="visitor-counter">
-        <div>Visitor</div>
-        <div class="website-counter"></div>
-      </div>
-      <style>
-        .visitor-counter {
-          position: fixed;
-          top: 570px;
-          left: 10px;
-          background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for better visibility */
-          height: 100px;
-          width: 100px;
-          color: #333; /* Darker text for better contrast */
-          font-weight: 700;
-          font-size: 18px;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          border-radius: 12px; /* Softer corners */
-          backdrop-filter: blur(10px); /* Increased blur for a modern touch */
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), /* Slightly more pronounced shadow */
-                      0 2px 4px rgba(0, 0, 0, 0.1);
-          z-index: 9999999999999;
-          transition: all 0.3s ease; /* Smooth transition for hover effect */
-        }
-      
-        .visitor-counter:hover {
-          transform: scale(1.05); /* Slightly enlarge on hover */
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-        }
-      
-        .visitor-counter div:first-child {
-          margin-bottom: 5px;
-          font-size: 14px; /* Adjusted for clarity */
-          letter-spacing: 1px; /* Increased spacing for readability */
-        }
-      
-        .website-counter {
-          font-size: 24px;
-          font-family: 'Arial', sans-serif; /* Consistent font family */
-        }
-      
-        @media screen and (max-width: 768px) {
-          .visitor-counter {
-              height: 100px;
-              width: 100px;
-              font-size: 16px;
-          }
-      
-          .website-counter {
-              font-size: 20px;
-          }
-        }
-      
-        @media screen and (max-width: 480px) {
-          .visitor-counter {
-              height: 80px;
-              width: 80px;
-              font-size: 14px;
-          }
-      
-          .website-counter {
-              font-size: 18px;
-          }
-        }
-      
-        .dark-mode .visitor-counter div {
-          color: #f0f0f0; /* Lighter text for dark mode */
-        }
-      
-        .dark-mode .visitor-counter .website-counter {
-          color: #f0f0f0; /* Lighter color for consistency */
-        }
-      
-        .dark-mode .visitor-counter {
-          background-color: rgba(0, 0, 0, 0.7); /* Darker background for dark mode */
-          box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1),
-                      0 2px 4px rgba(255, 255, 255, 0.05);
-        }
-      
-      </style>
-      <script>
-         // Function to get the count from localStorage or initialize it
-       function getVisitorCount() {
-          return localStorage.getItem('visitorCount') || 0;
-        }
-      
-        // Function to increment and save the count
-        function incrementVisitorCount() {
-          let count = parseInt(getVisitorCount()) + 1;
-          localStorage.setItem('visitorCount', count);
-          return count;
-        }
-      
-        // Function to display the count
-        function displayVisitorCount() {
-          const counterElement = document.querySelector('.website-counter');
-          const count = incrementVisitorCount();
-          counterElement.textContent = count;
-        }
-      
-        // Call the display function when the page loads
-        document.addEventListener('DOMContentLoaded', displayVisitorCount);
-      </script>
-
-
-
-        <div class="footer-col">
-            <img src="./assets/recode-hive.png" alt="">
-            <p class="footer-p">
-
-                Machine Learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and discovery.
-
-            </p>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/recodehive"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/sanjay_kv"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/sanjay-k-v/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/recodehive"><i class="fa-brands fa-github"></i></a>
-                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="footer-col-main">
-            <h4 class="h46">Company</h4>
-            <a href="#">Organisation</a>
-            <a href="#">Franchise</a>
-            <a href="#">Contribute</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="footer-col-main">
-            <h4 class="h46">About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Security</a>
-            <a href="#">Careers</a>
-            <a href="#">FAQS</a>
-        </div>
-        <div class="footer-col-main">
-            <h4 class="h46">Contact</h4>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Feedback</a>
-        </div>
-    </div>
-    <div class="footer-bar"> 
-        Copyright &copy; 2024 <a href="https://github.com/recodehive">Recodehive</a>. All rights reserved.
-      
-    </div>
-
-
-
-    <script>
-        const year = new Date().getFullYear();
-        document.getElementById("year").textContent = year;
-    </script>
-
-    <script src="js/script.js"></script>
-
-    <script>
-        function changeImage(image) {
-          document.getElementById('repoImage').src = image;
-        }
-      </script>
 </body>
+
 </html>
