@@ -1,3 +1,9 @@
+/* 
+
+.icon img{
+    
+    
+}
 .dark-mode .intro-section {
     color: rgb(0, 0, 0);
     padding: 40px;
@@ -67,11 +73,11 @@
 .repos-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    gap: 43px;
+    /* gap: 43px;
     padding: 20px;
-}
+} */
 
-.dark-mode .repo-card {
+/* .dark-mode .repo-card {
     background-color: #ffffff;
     color: rgb(3, 0, 0);
     padding: 20px;
@@ -120,17 +126,17 @@
 @media (max-width: 1024px) {
     .repos-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns layout for medium screens */
-    }
-}
+    
 
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
     .repos-container {
-        grid-template-columns: 1fr; /* 1 column layout for small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 
-/* Get Involved Section */
+
 .get-involved-section {
     display: flex;
     align-items: center;
@@ -172,7 +178,7 @@
     max-width: 35%;
     display: inline-block; 
     perspective: 1000px;
-    position: relative; 
+    position: relative;  
 }
 
 .get-involved-section .svg-container svg {
@@ -199,7 +205,244 @@
 }
 
 /* Responsive Adjustments */
+/* @media (max-width: 768px) {
+    .get-involved-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .get-involved-section .content {
+        max-width: 100%;
+    }
+
+    .get-involved-section .svg-container {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+} */
+
+  /* Icon styling */
+/* Default light mode styles */
+/* Default light mode styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+nav {
+    background-color:rgb(45, 62, 159); /* Dark navigation background for light mode */
+    color: grey; /* Light text in nav */
+    padding: 10px;
+}
+nav a {
+    color: #ffffff; /* Light nav links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Icon Styling */
+.icon img {
+    cursor: pointer;
+   width: 28px;
+    transition: transform 0.3s;
+}
+.icon{
+    margin-bottom: 26px;
+    margin-right: 28px;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Intro Section */
+.intro-section {
+    color: #333333;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: -57px;
+    margin-top: -65px;
+}
+
+.intro-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.intro-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro-section a:hover {
+    text-decoration: underline;
+}
+
+/* Description Section */
+.desp h2 {
+    color: #007bff;
+    text-align: center;
+}
+.desp p{
+    color: #000000;
+    text-align: center;
+}
+
+/* Repository Container */
+.repos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 43px;
+    padding: 20px;
+}
+
+/* Repository Card */
+.repo-card {
+    background-color: #1e15d1;
+    
+    color: #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.repo-card:hover {
+    transform: scale(1.05);
+}
+
+.repo-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.repo-card p {
+    margin: 10px 0;
+    color: #ffffff;
+    color: #000000;
+}
+
+.repo-card a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+/* Get Involved Section */
+.get-involved-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    background-color: #1e15d1;
+    color: #ffffff;
+}
+
+.get-involved-section .content {
+    max-width: 60%;
+}
+
+.get-involved-section .content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff4800;
+}
+
+.get-involved-section .content p {
+    
+    color: #000000;
+}
+
+.get-involved-section .btn {
+    background-color: #ffa500;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.get-involved-section .btn:hover {
+    background-color: #e68a00;
+}
+
+.get-involved-section .svg-container {
+    max-width: 35%;
+    display: inline-block; 
+    perspective: 1000px;
+    position: relative; 
+}
+
+.get-involved-section .svg-container svg {
+    width: 100%;
+    height: auto;
+    transition: transform 0.1s ease;
+}
+
+/* Dark mode styles */
+.dark-mode body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .intro-section,
+.dark-mode .intro-section p,
+.dark-mode .desp h2,
+.dark-mode .desp p {
+    color:white;
+}
+
+.dark-mode .repo-card {
+    background-color: #4084ea;
+    color: #ffffff;
+}
+
+.dark-mode .repo-card p,
+.dark-mode .get-involved-section .content p {
+    color: #ffffff;
+}
+
+.dark-mode .get-involved-section {
+    background-color: #4084ea;
+    color: #ffffff;
+}
+
+.dark-mode .get-involved-section .btn {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.dark-mode .get-involved-section .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .repos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .repos-container {
+        grid-template-columns: 1fr;
+    }
+
     .get-involved-section {
         flex-direction: column;
         text-align: center;
@@ -214,5 +457,3 @@
         margin-top: 20px;
     }
 }
-
-
