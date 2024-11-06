@@ -1,4 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
+const icon = document.getElementById("icon");
+
+icon.onclick = function() {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+        icon.querySelector("img").src = "./css/sun1img.png";
+    } else {
+        icon.querySelector("img").src = "./css/moon1img.png";
+    }
+}
+
+
+
+
+
+// var icon=document.getElementById("icon");
+// icon.onclick=function(){
+//     document.body.classList.toggle("dark-theme");
+//     if(document.body.classList.contains("dark-theme")){
+//         icon.src="./css/sun1img.png" ;
+//     }
+//     else{
+//         icon.src="./css/moon1img.png";
+//     }
+// }
+document.addEventListener('DOMContentLoaded', function () {
     // Function to fetch and display directories
     async function fetchDirectories() {
         const directoriesList = document.getElementById('directories');
