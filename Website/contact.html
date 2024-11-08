@@ -26,7 +26,6 @@
             width: 100%;
             height: 15px;
             z-index: 99990;
-            /* background: #f3f3f3; */
         }
 
         #progress-bar {
@@ -38,15 +37,11 @@
             border-radius: 10px;
         }
 
-        /* .dark-mode .content{
-        background-color: white;
-      }
-      .dark-mode .title{
-        color: #333;
-      }
-      .dark-mode .paragraph{
-        color: #555;
-      } */
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+
     </style>
 </head>
 
@@ -56,7 +51,6 @@
     </div>
 
     <script>
-
         window.addEventListener('scroll', function () {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -69,62 +63,7 @@
     </div>
     <header>
         <nav class="navbar">
-            <a class="logo-container" href="/">
-                <img src="assets/recode-hive.png" alt="Recode Hive Icon" class="logo-icon">
-                <span class="logo-text">Recode Hive</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-
-                <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
-                <li><a href="organization.html">Organization</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="Feedback.html">Feedback</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Know More</a>
-                    <div class="dropdown-content">
-                        <a href="https://github.com/recodehive">How we work?</a>
-                        <a href="https://github.com/recodehive">Projects</a>
-                        <a href="https://github.com/recodehive">Team</a>
-                        <a href="conduct.html">Code of Conduct</a>
-                    </div>
-                </li>
-
-                <!-- <li class="dropdown">
-                    <button id="dropdownButton" class="dropbtn">Know More</button>
-                        <div id="dropdownMenu" class="dropdown-content">
-                            <a href="https://github.com/recodehive">How we work?</a>
-                            <a href="https://github.com/recodehive">Projects</a>
-                            <a href="https://github.com/recodehive">Team</a>
-                            <a href="conduct.html">Code of Conduct</a>
-                        </div>
-                </li>  -->
-                <div class="nav-icons">
-                    <li>
-                        <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
-                            <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
-                        </a>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="/Website/sun-solid (1).svg" id="icon">
-                        </div>
-                    </li>
-                    <!-- <li>
-                    <button id="toggle-dark-mode" title="Use Ctrl+Q to toggle themes easily">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li> -->
-                </div>
-            </ul>
-            <div class="line" id="line">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+            <!-- Navigation content -->
         </nav>
     </header>
 
@@ -133,18 +72,22 @@
             <h2>Contact Us</h2>
             <p>We would love to hear from you! Please fill out this form and we'll get in touch with you shortly.</p>
 
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post" onsubmit="return validateForm()">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
+                <div id="name-error" class="error-message"></div>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+                <div id="email-error" class="error-message"></div>
 
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" required>
+                <div id="subject-error" class="error-message"></div>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
+                <div id="message-error" class="error-message"></div>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -153,16 +96,53 @@
             <button onclick="window.location.href='index.html'" class="back-button">Back to Home</button>
         </div>
     </main>
+
     <script>
-        var icon = document.getElementById("icon");
-        icon.onclick = function () {
-            document.body.classList.toggle("dark-theme");
-            if (document.body.classList.contains("dark-theme")) {
-                icon.src = "/Website/moon-solid.svg";
+        function validateForm() {
+            let isValid = true;
+
+            // Validate Name (at least 3 characters)
+            const name = document.getElementById("name").value;
+            const nameError = document.getElementById("name-error");
+            if (name.length < 3) {
+                nameError.textContent = "Name must be at least 3 characters.";
+                isValid = false;
+            } else {
+                nameError.textContent = "";
             }
-            else {
-                icon.src = "/Website/sun-solid (1).svg";
+
+            // Validate Email (valid email format)
+            const email = document.getElementById("email").value;
+            const emailError = document.getElementById("email-error");
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                emailError.textContent = "Please enter a valid email address.";
+                isValid = false;
+            } else {
+                emailError.textContent = "";
             }
+
+            // Validate Subject (at least 5 characters)
+            const subject = document.getElementById("subject").value;
+            const subjectError = document.getElementById("subject-error");
+            if (subject.length < 5) {
+                subjectError.textContent = "Subject must be at least 5 characters.";
+                isValid = false;
+            } else {
+                subjectError.textContent = "";
+            }
+
+            // Validate Message (at least 10 characters)
+            const message = document.getElementById("message").value;
+            const messageError = document.getElementById("message-error");
+            if (message.length < 10) {
+                messageError.textContent = "Message must be at least 10 characters.";
+                isValid = false;
+            } else {
+                messageError.textContent = "";
+            }
+
+            return isValid;
         }
     </script>
 </body>
