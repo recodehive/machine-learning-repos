@@ -64,6 +64,7 @@
           Frequently Asked Questions<span class="text-black">(FAQs)</span>
         </h1>
         <div class="space-y-4">
+          <!-- FAQ 1 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq1', this)"
@@ -82,6 +83,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 2 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq2', this)"
@@ -100,6 +102,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 3 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq3', this)"
@@ -118,6 +121,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 4 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq4', this)"
@@ -136,6 +140,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 5 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq5', this)"
@@ -153,6 +158,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 6 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq6', this)"
@@ -171,6 +177,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 7 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq7', this)"
@@ -189,6 +196,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 8 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq8', this)"
@@ -207,6 +215,7 @@
             </h3>
           </div>
 
+          <!-- FAQ 9 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq9', this)"
@@ -219,48 +228,49 @@
           </div>
           <div id="faq9" class="faq-content bg-white rounded-lg shadow-md">
             <h3 class="text-black">
-              Yes, we offer community support through forums and documentation.
-              Users can also reach out for direct assistance via our contact
-              page.
+              Yes, we have an active community on forums, as well as email and
+              chat-based support for users.
             </h3>
           </div>
 
+          <!-- FAQ 10 -->
           <div
             class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
             onclick="toggleFaqContent('faq10', this)"
           >
             <div class="flex items-center">
               <i class="fas fa-question-circle mr-2"></i>
-              <span>How can I contribute to the project?</span>
+              <span>Can I contribute to your project?</span>
             </div>
             <i class="fas fa-chevron-down rotate"></i>
           </div>
           <div id="faq10" class="faq-content bg-white rounded-lg shadow-md">
             <h3 class="text-black">
-              We welcome contributions! You can participate by submitting code
-              improvements, reporting issues, or suggesting features through our
-              GitHub repository.
+              Absolutely! We welcome contributions from developers and
+              researchers. You can find our contribution guidelines on the GitHub
+              repository.
             </h3>
           </div>
         </div>
       </div>
     </main>
-
     <script>
-      function toggleFaqContent(id, element) {
-        const content = document.getElementById(id);
-        const icon = element.querySelector(".rotate");
+      function toggleFaqContent(faqId, iconElement) {
+        const faqContent = document.getElementById(faqId);
+        const icon = iconElement.querySelector("i");
 
-        content.classList.toggle("p-4");
+        faqContent.classList.toggle("active");
+        icon.classList.toggle("rotate");
 
-        if (content.classList.contains("active")) {
-          content.style.height = 0;
-        } else {
-          content.style.height = content.scrollHeight + "px";
-        }
-
-        content.classList.toggle("active");
-        icon.classList.toggle("active");
+        // Close other FAQs when one is clicked
+        const allFaqContents = document.querySelectorAll(".faq-content");
+        const allIcons = document.querySelectorAll(".rotate");
+        allFaqContents.forEach((content) => {
+          if (content !== faqContent) content.classList.remove("active");
+        });
+        allIcons.forEach((rotateIcon) => {
+          if (rotateIcon !== icon) rotateIcon.classList.remove("rotate");
+        });
       }
     </script>
   </body>
