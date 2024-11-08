@@ -1,4 +1,4 @@
-# NLP Naturla Language Processing
+# NLP Natural Language Processing
 
 Natural Language Processing (NLP) is a field of machine learning that focuses on the interaction between computers and humans through natural language. It involves teaching machines to understand, interpret, and generate human language in a way that is both meaningful and useful. NLP combines computational linguistics with statistical, machine learning, and deep learning models to process and analyze large amounts of natural language data.
 
