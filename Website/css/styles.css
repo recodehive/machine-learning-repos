@@ -475,7 +475,7 @@ div {
     background-color: #121245;
     padding: 10px 20px;
     border-radius: 15px;
-    height: 340px;
+    height: 450px;
     color: white;
     animation: slideInRight 0.3s ease-in-out;
     transition: background-color 0.3s ease;
@@ -553,7 +553,7 @@ div {
     background-color: #121245;
     padding: 10px 20px;
     border-radius: 15px;
-    height: 340px;
+    height: 450px;
     color: white;
     animation: slideInRight 1s ease-in-out;
     transition: background-color 0.3s ease;
