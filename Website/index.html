@@ -21,6 +21,7 @@
     content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community" />
   <title>Machine Learning Repositories</title>
   <!-- <link rel="canonical" href="url-here" /> define base(root) link of deployment here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -117,6 +118,35 @@
 
     .dark-mode .paragraph {
       color: #555;
+
+    body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 2000px; /* Add some height to enable scrolling */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Scroll to Top Button Styles */
+        .top-btn {
+            display: none;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 23px;
+            right: 44px;
+            background-color: #ab45e7;
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top-btn:hover {
+            background-color: #0056b3;
+        }
     }
   </style>
 </head>
@@ -742,7 +772,24 @@
   </div>
 
 
+<button class="top-btn" id="goToTopBtn" onclick="goToTop()"> 
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
+    <script>
+         const goToTopBtn = document.getElementById("goToTopBtn");
+
+         window.onscroll = function () {
+            if (window.scrollY > 100) {
+                goToTopBtn.style.display = "flex"; // Use "flex" to center the icon
+            } else {
+                goToTopBtn.style.display = "none";
+            }
+        };
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
   <script>
     const year = new Date().getFullYear();
     document.getElementById("year").textContent = year;
