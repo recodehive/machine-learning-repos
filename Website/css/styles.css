@@ -475,11 +475,9 @@ div {
     background-color: #121245;
     padding: 10px 20px;
     border-radius: 15px;
-    height: 450px;
+    /* height: 340px; */
     color: white;
     animation: slideInRight 0.3s ease-in-out;
-    transition: background-color 0.3s ease;
-    overflow-y: scroll;
 }
 
 #languages::-webkit-scrollbar {
@@ -553,11 +551,9 @@ div {
     background-color: #121245;
     padding: 10px 20px;
     border-radius: 15px;
-    height: 450px;
+    /* height: 340px; */
     color: white;
     animation: slideInRight 1s ease-in-out;
-    transition: background-color 0.3s ease;
-    overflow-y: scroll;
 }
 
 #milestone::-webkit-scrollbar {
