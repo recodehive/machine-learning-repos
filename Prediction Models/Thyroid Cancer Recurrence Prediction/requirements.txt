@@ -6,7 +6,7 @@ autogluon.multimodal==1.1.0
 autogluon.tabular==1.1.0
 autogluon.timeseries==1.1.0
 gluonts==0.14.3
-keras==3.3.3
+keras==3.9.0
 matplotlib==3.8.4
 numpy==1.26.4
 pandas==2.2.2
