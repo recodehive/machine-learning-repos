@@ -13,5 +13,5 @@ pandas==2.2.2
 pytorch_tabnet==4.1.0
 scikit_learn==1.4.0
 torch==2.3.0
-torch==2.4.0
+torch==2.6.0
 wasabi==1.1.3
