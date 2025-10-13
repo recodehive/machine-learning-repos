@@ -19,6 +19,31 @@
 
 </div>
 
+## 📂 Repository Organization
+
+This repository is organized into several key sections to help you find and contribute to projects easily:
+
+```
+machine-learning-repos/
+├── docs/                    # Documentation and guidelines
+├── projects/               # ML projects by category
+│   ├── classification/     # Classification projects
+│   ├── detection/         # Detection models
+│   ├── generative-ai/     # LLMs and generative AI
+│   ├── nlp/              # Natural Language Processing
+│   ├── computer-vision/  # Computer Vision & OpenCV
+│   └── prediction/       # Prediction models
+└── tutorials/            # Educational content
+```
+
+See [Organization Guide](docs/ORGANIZATION.md) for detailed structure.
+
+## 🤝 How to Contribute
+
+1. Check our [Contributing Guidelines](docs/CONTRIBUTING.md)
+2. Pick a project category or create a new one
+3. Follow our [Project Template](docs/project_template/README.md)
+4. Submit your pull request
 
 This is complete beginner-friendly repo for gssoc beginners and new contributors will be given priority unlike FCFS issue on other repos.  
 Repeated issue creation for more scores will be considered has flag.
