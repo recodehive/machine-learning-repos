@@ -37,10 +37,12 @@ body:
       label: What browsers are you seeing the problem on?
       multiple: true
       options:
+        - All (its generally a browser agnostic issue)
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
+        - Other
   - type: checkboxes
     id: terms
     attributes:
@@ -48,7 +50,9 @@ body:
       options:
         - label: "I have read the Contributing Guidelines"
           required: true
-        - label: "I'm a GSSOC'24 contributor"
+        - label: "I'm a GSSOC'25 contributor"
+          required: false
+        - label: "I'm a Hacktoberfest contributor"
           required: false
         - label: "I want to work on this issue"
           required: false
