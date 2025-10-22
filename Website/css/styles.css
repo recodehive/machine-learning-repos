@@ -1285,7 +1285,7 @@ button#toggle-languages:hover {
 }
 
 .icon-content a[data-social="twitter"] .filled {
-    background-color: #1da1f2;
+    background-color: #000000; /* New X Black */
 }
 
 .icon-content a[data-social="youtube"] .filled {
@@ -1322,7 +1322,7 @@ body.dark-mode .side-icons .icon-content a[data-social="linkedin"] .filled {
 }
 
 body.dark-mode .side-icons .icon-content a[data-social="twitter"] .filled {
-    background-color: #1da1f2;
+    background-color: #000000; /* New X Black */
 }
 
 body.dark-mode .side-icons .icon-content a[data-social="youtube"] .filled {
