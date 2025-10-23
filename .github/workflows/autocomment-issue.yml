@@ -17,7 +17,7 @@ jobs:
         run: |
           COMMENT=$(cat <<EOF
           {
-            "body": "Thank you for creating this issue! 🎉 We'll look into it as soon as possible. In the meantime, please make sure to provide all the necessary details and context. If you have any questions reach out to [LinkedIn](https://www.linkedin.com/in/sanjay-k-v/). Your contributions are highly appreciated! 😊\n\n  Note: I Maintain the repo issue twice a day, or ideally 1 day, If your issue goes stale for more than one day you can tag and comment on this same issue.  \n\n You can also check our [CONTRIBUTING.md](https://github.com/Recode-Hive/machine-learning-repos/blob/main/CONTRIBUTING.md) for guidelines on contributing to this project. <br> We are here to help you on this journey of opensource, any help feel free to tag me or [book an appointment](https://topmate.io/sanjaykv)."
+            "body": "Thank you for creating this issue! 🎉 We'll look into it as soon as possible. In the meantime, please make sure to provide all the necessary details and context. If you have any questions reach out to [LinkedIn](https://www.linkedin.com/in/sanjay-k-v/). Your contributions are highly appreciated! 😊\n\n  Note: I Maintain the repo issue twice a day, or ideally 1 day, If your issue goes stale for more than one day you can tag and comment on this same issue.  \n\n You can also check our [CONTRIBUTING.md](https://github.com/Recode-Hive/machine-learning-repos/blob/main/docs/CONTRIBUTING.md) for guidelines on contributing to this project. <br> We are here to help you on this journey of opensource, any help feel free to tag me or [book an appointment](https://topmate.io/sanjaykv)."
           }
           EOF
           )
