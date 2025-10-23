@@ -683,6 +683,11 @@ Through these stages, the machine learning workflow provides a systematic approa
         <td>The UCI Machine Learning Repository, hosted at the URL you provided, is a collection of datasets for Machine Learning research and experimentation. It's maintained by the Center for Machine Learning and Intelligent Systems at the University of California, Irvine (UCI). </td>
       </tr>
       <tr>
+        <td><a href="https://data.nasdaq.com/">Nasdaq Data Link</a></td>
+        <td>Nasdaq Data Link (via Nasdaq, Inc.) is a cloud-based data platform offering a rich library of financial, economic and alternative datasets for researchers, analysts and developers.
+      </td>
+      </tr>
+      <tr>
         <td><a href="https://data.gov/">Data.gov</a></td>
         <td>Data.gov, a US government website, is invaluable for Machine Learning enthusiasts with its vast collection of nearly 300,000 datasets. It provides high-quality, reliable training data from various sectors, enabling innovative applications in public health, economics, and environmental science. The open data is freely available, eliminating licensing costs and allowing unrestricted use. Its authoritative sources ensure improved accuracy and reliability in Machine Learning models.</td>
       </tr>
