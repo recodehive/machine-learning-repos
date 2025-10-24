@@ -10,7 +10,7 @@
 <a href="https://github.com/recodehive/machine-learning-repos/network/members"><img src="https://img.shields.io/github/forks/recodehive/machine-learning-repos" alt="Forks Badge"/></a>
 <a href="https://github.com/recodehive/machine-learning-repos/pulls"><img src="https://img.shields.io/github/issues-pr/recodehive/machine-learning-repos" alt="Pull Requests Badge"/></a>
 <a href="https://github.com/recodehive/machine-learning-repos/issues"><img src="https://img.shields.io/github/issues/recodehive/machine-learning-repos" alt="Issues Badge"/></a>
-<a href="https://github.com/recodehive/machine-learning-repos/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/recodehive/machine-learning-repos?color=2b9348"></a>
+<a href="https://github.com/recodehive/machine-learning-repos/graphs/contributors?from=10%2F19%2F2024"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/recodehive/machine-learning-repos?color=2b9348"></a>
 <a href="https://github.com/recodehive/machine-learning-repos/blob/master/LICENSE"><img src="https://img.shields.io/github/license/recodehive/machine-learning-repos?color=2b9348" alt="License Badge"/></a>
 [![](https://visitcount.itsvg.in/api?id=gssoc-postman&label=Profile%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -25,15 +25,22 @@ This repository is organized into several key sections to help you find and cont
 
 ```
 machine-learning-repos/
-├── docs/                    # Documentation and guidelines
-├── projects/               # ML projects by category
-│   ├── classification/     # Classification projects
-│   ├── detection/         # Detection models
-│   ├── generative-ai/     # LLMs and generative AI
-│   ├── nlp/              # Natural Language Processing
-│   ├── computer-vision/  # Computer Vision & OpenCV
-│   └── prediction/       # Prediction models
-└── tutorials/            # Educational content
+├── .github/
+├── docs/
+├── implementations/
+├── projects/
+│   ├── algorithms/
+│   ├── classification/
+│   ├── computer-vision/
+│   ├── data-analysis/
+│   ├── detection/
+│   ├── generative-ai/
+│   ├── nlp/
+│   ├── prediction/
+│   ├── recommendation/
+│   └── time-series/
+├── website/
+└── README.md
 ```
 
 See [Organization Guide](docs/ORGANIZATION.md) for detailed structure.
@@ -1146,7 +1153,7 @@ To truly excel in Machine Learning, consistent practice is essential—engage in
 <h2 align="center">Our Contributors ❤️</h2>
 <div align="center">
   <h3>Thank you for contributing to our repository</h3>
-  <a href="https://github.com/recodehive/machine-learning-repos/graphs/contributors">
+  <a href="https://github.com/recodehive/machine-learning-repos/graphs/contributors?from=10%2F19%2F2024">
     <img src="https://contrib.rocks/image?repo=recodehive/machine-learning-repos" />
   </a>
 </div>
@@ -1165,7 +1172,7 @@ To truly excel in Machine Learning, consistent practice is essential—engage in
 
 Happy reading and here’s to your career success! 🎉
 <br>
-### recode-hive 2024
+### recode-hive 2025
 
 [Website](https://recodehive.com/) | [Instagram](https://www.instagram.com/sanjay.viswa_/) | [LinkedIn](https://www.linkedin.com/in/sanjay-k-v/) | [Twitter](https://x.com/sanjay_kv_) | [YouTube](https://www.youtube.com/@RecodeHive)<br>
 **🔔 Don’t miss a beat!** <br>
