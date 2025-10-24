@@ -35,10 +35,7 @@ venv/
 ENV/
 
 # Dataset files (optional, depending on size)
-*.csv
-*.xlsx
 *.h5
-*.pkl
 
 # Model files (optional, depending on size)
 *.model
