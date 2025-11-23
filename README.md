@@ -879,7 +879,7 @@ Through these stages, the machine learning workflow provides a systematic approa
 <details>
  <summary><h2 id="projects">🔰Projects</h2>  
 
-> These Projects help you gain real time exprience for building Machine Learning models.
+> These Projects help you gain real time experience for building Machine Learning models.
 </summary>
 
   <table width="100%">
