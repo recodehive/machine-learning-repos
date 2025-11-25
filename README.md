@@ -745,7 +745,7 @@ Through these stages, the machine learning workflow provides a systematic approa
 <details>
  <summary><h2 id="youtube-channels"> ▶️ Youtube Channels</h2>
 
-> Explore amazing YouTubers specializing in web development.
+> Explore amazing YouTubers specializing in Machine Learning.
 
 </summary>
 
@@ -756,7 +756,7 @@ Through these stages, the machine learning workflow provides a systematic approa
       </tr>
       <tr>
         <td> <a href="https://www.youtube.com/@Deeplearningai">Deep Learning AI</a></td>
-        <td>Deep Learning AI Simplified is all about teaching web development skills and techniques in an efficient and practical manner. If you are just getting started in web development Web Dev Simplified has all the tools you need to learn the newest and most popular technologies to convert you from a no stack to full stack developer. Web Dev Simplified also deep dives into advanced topics using the latest best practices for you seasoned web developers.</td>
+        <td>Deep Learning AI Simplified is all about teaching Machine Learning skills and techniques in an efficient and practical manner. If you are just getting started in Machine Learning Web Dev Simplified has all the tools you need to learn the newest and most popular technologies to convert you from a no stack to full stack developer. Web Dev Simplified also deep dives into advanced topics using the latest best practices for you seasoned web developers.</td>
       </tr>
       <tr>
         <td> <a href="https://www.youtube.com/c/MachineLearningwithPhil">Machine Learning with Phil</a></td>
@@ -801,7 +801,7 @@ Through these stages, the machine learning workflow provides a systematic approa
  <summary><h2 id="machine-learning-forums"> :clipboard: Machine Learning Forums</h2>  
 
 
-> Here are valuable resources to help you excel in your web development interview. You'll find videos, articles, and more to aid your preparation.
+> Here are valuable resources to help you excel in your Machine Learning interview. You'll find videos, articles, and more to aid your preparation.
 </summary>
 <table width="100%">
       <tr>
