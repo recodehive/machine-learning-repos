@@ -108,3 +108,4 @@ Thank you to all the contributors who have helped make this project better!
 - [thevijayshankersharma](https://github.com/thevijayshankersharma)
 - [Harshita297](https://github.com/Harshita297)
 - [ughrima](https://github.com/ughrima)
+- - [Savithru7142](https://github.com/Savithru7142)
