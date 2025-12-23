@@ -43,8 +43,8 @@
     #progress-bar {
       height: 53%;
       width: 0;
-      background: linear-gradient(90deg, rgb(0, 72, 255) 0%, rgb(58, 114, 227) 50%, rgb(22, 121, 250) 100%);
-      box-shadow: 0 0 4px rgba(0, 166, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+      background: linear-gradient(90deg, rgb(120, 120, 120) 0%, rgb(150, 150, 150) 50%, rgb(180, 180, 180) 100%);
+      box-shadow: 0 0 4px rgba(120, 120, 120, 0.7), 0 0 10px rgba(150, 150, 150, 0.7);
       transition: width 0.09s ease-in-out;
       border-radius: 10px;
     }
@@ -65,17 +65,21 @@
       text-decoration: none;
     }
 
+    .repo a:hover {
+      text-decoration: none;
+    }
+
     .repo:hover {
       transform: translateY(-10px);
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     }
 
-    .repo img {
+    .repo img { 
       max-width: 100%;
       border-radius: 8px;
       transition: transform 0.3s ease;
     }
-
+    
     .repo:hover img {
       transform: scale(1.05);
     }
@@ -134,7 +138,7 @@
             position: fixed;
             bottom: 23px;
             right: 44px;
-            background-color: #ab45e7;
+            background-color: #666;
             color: #ffffff;
             border: none;
             border-radius: 50%;
@@ -145,8 +149,7 @@
         }
 
         .top-btn:hover {
-            background-color: #0056b3;
-        }
+            background-color: #888;}
     }
   </style>
 </head>
@@ -792,7 +795,10 @@
     </script>
   <script>
     const year = new Date().getFullYear();
-    document.getElementById("year").textContent = year;
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+      yearElement.textContent = year;
+    }
   </script>
 
   <script src="js/script.js"></script>

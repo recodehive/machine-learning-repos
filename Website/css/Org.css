@@ -40,7 +40,7 @@
 }
 
 .intro-section a {
-    color: #ffa500;
+    color: #b3b3b3;
     text-decoration: none;
     font-weight: bold;
 }
@@ -114,12 +114,12 @@
 
 .dark-mode .repo-card p {
     margin: 10px 0;
-    color: rgb(3, 0, 0);
+    color: #eeeeee;
 
 }
 
 .repo-card a {
-    color: #ffa500;
+    color: #b3b3b3;
     text-decoration: none;
 }
 
@@ -158,12 +158,12 @@
 .dark-mode .get-involved-section .content p {
     font-size: 1em;
     margin-bottom: 20px;
-    color: #333;
+    color: #eeeeee;
 }
 
 .dark-mode .get-involved-section .btn {
-    background-color: #007bff;
-    color: white;
+    background-color: #666666;
+    color: #f5f5f5;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -171,7 +171,7 @@
 }
 
 .dark-mode .get-involved-section .btn:hover {
-    background-color: #0056b3;
+    background-color: #777777;
 }
 
 .get-involved-section .svg-container {
@@ -188,12 +188,12 @@
 }
 
  .get-involved-section .content p {
-    color: white;
+    color: #dddddd;
 }
 
 .get-involved-section .btn {
-    background-color: #ffa500;
-    color: white;
+    background-color: #666666;
+    color: #f5f5f5;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -201,7 +201,7 @@
 }
 
 .get-involved-section .btn:hover {
-    background-color: #e68a00;
+    background-color: #777777;
 }
 
 /* Responsive Adjustments */
@@ -229,8 +229,8 @@ body {
     color: #000000;
 }
 nav {
-    background-color:rgb(45, 62, 159); /* Dark navigation background for light mode */
-    color: grey; /* Light text in nav */
+    background-color: #444444;
+    color: #dddddd;
     padding: 10px;
 }
 nav a {
@@ -281,7 +281,7 @@ nav a:hover {
 }
 
 .intro-section a {
-    color: #007bff;
+    color: #b3b3b3;
     text-decoration: none;
     font-weight: bold;
 }
@@ -292,7 +292,7 @@ nav a:hover {
 
 /* Description Section */
 .desp h2 {
-    color: #007bff;
+    color: #dddddd;
     text-align: center;
 }
 .desp p{
@@ -310,9 +310,8 @@ nav a:hover {
 
 /* Repository Card */
 .repo-card {
-    background-color: #1e15d1;
-    
-    color: #007bff;
+    background-color: #444444;
+    color: #dddddd;
     padding: 20px;
     border-radius: 8px;
     font-size: 14px;
@@ -332,12 +331,11 @@ nav a:hover {
 
 .repo-card p {
     margin: 10px 0;
-    color: #ffffff;
-    color: #000000;
+    color: #dddddd;
 }
 
 .repo-card a {
-    color: #ffa500;
+    color: #b3b3b3;
     text-decoration: none;
 }
 
@@ -349,8 +347,8 @@ nav a:hover {
     padding: 40px 20px;
     border-radius: 8px;
     margin-top: 40px;
-    background-color: #1e15d1;
-    color: #ffffff;
+    background-color: #444444;
+    color: #dddddd;
 }
 
 .get-involved-section .content {
@@ -360,17 +358,16 @@ nav a:hover {
 .get-involved-section .content h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #ff4800;
+    color: #eeeeee;
 }
 
 .get-involved-section .content p {
-    
-    color: #000000;
+    color: #dddddd;
 }
 
 .get-involved-section .btn {
-    background-color: #ffa500;
-    color: #ffffff;
+    background-color: #666666;
+    color: #f5f5f5;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -378,7 +375,7 @@ nav a:hover {
 }
 
 .get-involved-section .btn:hover {
-    background-color: #e68a00;
+    background-color: #777777;
 }
 
 .get-involved-section .svg-container {
@@ -408,8 +405,8 @@ nav a:hover {
 }
 
 .dark-mode .repo-card {
-    background-color: #4084ea;
-    color: #ffffff;
+    background-color: #333333;
+    color: #eeeeee;
 }
 
 .dark-mode .repo-card p,
@@ -418,17 +415,17 @@ nav a:hover {
 }
 
 .dark-mode .get-involved-section {
-    background-color: #4084ea;
-    color: #ffffff;
+    background-color: #333333;
+    color: #eeeeee;
 }
 
 .dark-mode .get-involved-section .btn {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #666666;
+    color: #f5f5f5;
 }
 
 .dark-mode .get-involved-section .btn:hover {
-    background-color: #0056b3;
+    background-color: #777777;
 }
 
 /* Responsive Adjustments */

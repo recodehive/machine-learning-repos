@@ -9,21 +9,20 @@
   }
   
   ::-webkit-scrollbar-track {
-    background: #c5d8eb8d;
+    background: #e6d8f58d;
     border-radius: 4px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, rgb(0, 87, 208), #002a95);
+    background: linear-gradient(45deg, #8b2fc9, #ff6f00);
     border-radius: 10px;
-    text-shadow: 2px 2px 5px #004cff;
+    text-shadow: 2px 2px 5px #8b2fc9;
     border: 1.5px solid rgba(0, 34, 255, 0.479);
     transition: background 0.9s ease-in-out;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, rgb(0, 54, 171), #0268a8);
-  }
+    background: linear-gradient(45deg, #a142d4, #ff8c1a);
   
   @keyframes fadeIn {
     from {
@@ -59,7 +58,7 @@
   }
   
   body {
-    background-color: #0a0a2e;
+    background-color: #f5f5f0;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
@@ -162,7 +161,7 @@
       right: 0;
       gap: 10px;
       width: 100%;
-      background-color: #13034f;
+      background-color: #3d1e5c;
       opacity: 0;
       visibility: hidden;
       transform: translateY(-20px);
@@ -236,8 +235,7 @@
   }
   
   .dark-mode .dropdown-content {
-    background-color: #170179;
-  }
+    background-color: #4a2573;
   
   .dropdown-content a {
     color: black;
@@ -249,8 +247,7 @@
   
   /* Hover Effect for Dropdown Items */
   .dropdown-content a:hover {
-    color: #0066cc; 
-  }
+    color: #ff6f00; 
   
   .dropdown:hover .dropdown-content {
     display: block;
@@ -287,8 +284,8 @@
       margin: 0 auto 20px auto;
       padding: 10px 20px;
       font-size: 1.1em;
-      background-color: #1a1a5e;
-      /* Dark blue button */
+      background-color: #ff6f00;
+      /* Orange button */
       color: #f1f1f1;
       border: none;
       cursor: pointer;
@@ -297,7 +294,7 @@
   }
   
   button#toggle-stats:hover {
-      background-color: #2a2a7e;
+      background-color: #ff8c1a;
   }
   
   #statistics-cards {

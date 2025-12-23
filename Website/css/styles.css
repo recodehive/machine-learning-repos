@@ -9,20 +9,20 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #c5d8eb8d;
+    background: #f0f0f0;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, rgb(0, 87, 208), #002a95);
+    background: linear-gradient(45deg, #888, #666);
     border-radius: 10px;
-    text-shadow: 2px 2px 5px #004cff;
-    border: 1.5px solid rgba(0, 34, 255, 0.479);
+    text-shadow: 2px 2px 5px #888;
+    border: 1.5px solid rgba(136, 136, 136, 0.479);
     transition: background 0.9s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, rgb(0, 54, 171), #0268a8);
+    background: linear-gradient(45deg, #999, #777);
 }
 
 @keyframes fadeIn {
@@ -61,7 +61,7 @@ body {
 }
 
 body {
-    background-color: #0a0a2e;
+    background-color: #ffffff;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@ body {
     width: 100%;
     z-index: 1000;
     /* Ensure the navbar is above other content */
-    background-color: #121245;
+    background-color: #444;
     /* Add a background color to the navbar */
     padding: 10px 20px;
     /* Add padding to the navbar */
@@ -216,7 +216,7 @@ a.logo-container {
         right: 0;
         gap: 10px;
         width: 100%;
-        background-color: #13034f;
+        background-color: #555;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-20px);
@@ -249,10 +249,10 @@ a.logo-container {
 }
 
 .nav-links a:hover {
-    color: yellow;
-    /* Yellow color on hover */
+    color: #aaa;
+    /* Grey color on hover */
     transform: scale(1.1);
-    text-shadow: 0 0 10px yellow, 0 0 20px yellow;
+    text-shadow: 0 0 10px #999, 0 0 20px #aaa;
 }
 
 .nav-links a img {
@@ -291,7 +291,7 @@ a.logo-container {
 }
 
 .dark-mode .dropdown-content {
-    background-color: #170179;
+    background-color: #555;
 }
 
 .dropdown-content a {
@@ -304,7 +304,7 @@ a.logo-container {
 
 /* Hover Effect for Dropdown Items */
 .dropdown-content a:hover {
-    color: #0066cc;
+    color: #888;
 }
 
 .dropdown:hover .dropdown-content {
@@ -353,8 +353,8 @@ button#toggle-stats {
     margin: 0 auto 20px auto;
     padding: 10px 20px;
     font-size: 1.1em;
-    background-color: #1a1a5e;
-    /* Dark blue button */
+    background-color: #888;
+    /* Grey button */
     color: #f1f1f1;
     border: none;
     cursor: pointer;
@@ -363,7 +363,7 @@ button#toggle-stats {
 }
 
 button#toggle-stats:hover {
-    background-color: #2a2a7e;
+    background-color: #777;
 }
 
 #statistics-cards {
@@ -380,7 +380,7 @@ button#toggle-stats:hover {
 }
 
 .stat-card {
-    background-color: #121245;
+    background-color: #555;
     /* background: linear-gradient(130deg, #473eed, #04004c); */
     padding: 20px;
     border-radius: 8px;
@@ -388,17 +388,17 @@ button#toggle-stats:hover {
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
-    text-shadow: 0.5px 0.5px 1px rgb(0, 10, 150), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    text-shadow: 0.5px 0.5px 1px rgb(100, 100, 100), 0 0 1em rgb(150, 150, 150), 0 0 0.5em rgb(170, 170, 170);
     transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
     animation: slideInRight 0.3s ease-in-out;
 }
 
 .stat-card:hover {
     /* background-color: #1a1d29; */
-    background: linear-gradient(135deg, #090293, #040054);
+    background: linear-gradient(135deg, #777, #999);
     /* background: linear-gradient(135deg, #473eed, #04004c); */
     transform: scale(1.05);
-    text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
+    text-shadow: 1px 1px 2px rgb(120, 120, 120), 0 0 1em rgb(100, 100, 100), 0 0 0.5em rgb(140, 140, 140);
     cursor: pointer;
 }
 
@@ -429,15 +429,15 @@ button#toggle-stats:hover {
 }
 
 .stat-card:hover p {
-    color: yellow;
+    color: #cccccc;
     font-weight: 500;
 
 }
 
 .stat-card:hover .stat-icon {
     color: white;
-    text-shadow: 1px 1px 2px rgb(233, 0, 202), 0 0 1em rgb(34, 174, 255), 0 0 0.5em rgb(0, 221, 255);
-    color: rgb(255, 213, 98);
+    text-shadow: 1px 1px 2px rgb(120, 120, 120), 0 0 1em rgb(100, 100, 100), 0 0 0.5em rgb(140, 140, 140);
+    color: rgb(150, 150, 150);
 
 }
 
@@ -472,7 +472,7 @@ div {
     text-align: center;
     margin-bottom: 30px;
     width: 500px;
-    background-color: #121245;
+    background-color: #333;
     padding: 10px 20px;
     border-radius: 15px;
     height: 450px;
@@ -487,12 +487,8 @@ div {
 }
 
 #languages::-webkit-scrollbar-track {
-    background: #121245;
+    background: #333;
     border-radius: 15px;
-}
-
-#languages:hover {
-    background-color: #0D6EFD;
 }
 
 #language-list {
@@ -515,7 +511,7 @@ div {
 }
 
 #language-list li:hover {
-    color: #0D6EFD;
+    color: #cccccc;
 }
 
 .progress-bar-container {
@@ -529,7 +525,7 @@ div {
 
 .progress-bar {
     height: 20px;
-    background-color: #0D6EFD;
+    background-color: #666;
     width: 300px;
     text-align: left;
     display: flex;
@@ -550,7 +546,7 @@ div {
     text-align: center;
     margin-bottom: 30px;
     width: 500px;
-    background-color: #121245;
+    background-color: #333;
     padding: 10px 20px;
     border-radius: 15px;
     height: 450px;
@@ -565,12 +561,8 @@ div {
 }
 
 #milestone::-webkit-scrollbar-track {
-    background: #121245;
+    background: #333;
     border-radius: 15px;
-}
-
-#milestone:hover {
-    background-color: #0D6EFD;
 }
 
 .chart-container {
@@ -638,8 +630,8 @@ button#toggle-languages {
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 1.1em;
-    background-color: #1a1a5e;
-    /* Dark blue button */
+    background-color: #666;
+    /* Dark grey button */
     color: #f0f0f0;
     border: none;
     cursor: pointer;
@@ -648,8 +640,8 @@ button#toggle-languages {
 }
 
 button#toggle-languages:hover {
-    background-color: #2a2a7e;
-    /* Lighter blue on hover */
+    background-color: #777;
+    /* Lighter grey on hover */
 }
 
 #repo-list {
@@ -691,7 +683,7 @@ button#toggle-languages:hover {
 }
 
 .card {
-    background: #121245;
+    background: #333;
     /* border: 1px solid #ddd; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -726,11 +718,6 @@ button#toggle-languages:hover {
     animation: fadeIn 1s ease-in-out;
 }
 
-.card-languages:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -740,14 +727,14 @@ button#toggle-languages:hover {
     display: inline-block;
     padding: 0.5rem 1rem;
     color: white;
-    background-color: #1a1a5e;
+    background-color: #888;
     text-decoration: none;
     border-radius: 0.25rem;
     font-size: 0.875rem;
 }
 
 .card .btn-view-repo:hover {
-    background-color: #2a2a7e;
+    background-color: #999;
 }
 
 @media (max-width: 768px) {
@@ -766,7 +753,7 @@ button#toggle-languages:hover {
 
 #contributors {
     padding: 40px;
-    background-color: #0a0a2e;
+    background-color: #2a2a2a;
     text-align: center;
     animation: slideInRight 1s ease-in-out;
 }
@@ -786,7 +773,7 @@ button#toggle-languages:hover {
     justify-content: center;
     padding: 20px;
     /* Padding around the grid */
-    background: linear-gradient(135deg, #121245, #121245);
+    background: linear-gradient(135deg, #333, #444);
     /* Subtle gradient background */
     height: 600px;
     /* Fixed height for the grid */
@@ -818,8 +805,8 @@ button#toggle-languages:hover {
     border-radius: 15px;
     /* More rounded corners */
     padding: 15px;
-    background: #0b0b38;
-    /* Darker background for the card */
+    background: #555;
+    /* Dark grey background for the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Enhanced shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -869,7 +856,7 @@ button#toggle-languages:hover {
     /* Slightly smaller font size */
     font-weight: bold;
     /* Bold font */
-    background: #add3ff;
+    background: #d4b3f5;
     padding: 8px 12px;
     /* Adjusted padding around the link */
     border-radius: 20px;
@@ -958,7 +945,7 @@ button#toggle-languages:hover {
 
 .tooltip {
     visibility: hidden;
-    background-color: #0D6EFD;
+    background-color: #666;
     color: white;
     text-align: center;
     border-radius: 10px;
@@ -995,7 +982,7 @@ button#toggle-languages:hover {
 }
 
 .chatbot-header {
-    background-color: #1a1a5e;
+    background-color: #555;
     color: rgb(255, 250, 250);
     padding: 15px;
     border-radius: 8px 8px 0 0;
@@ -1043,7 +1030,7 @@ button#toggle-languages:hover {
 }
 
 .message.user .message-text {
-    background-color: #1a1a5e;
+    background-color: #666;
     color: rgb(254, 252, 252);
     word-wrap: break-word;
 }
@@ -1084,7 +1071,7 @@ button#toggle-languages:hover {
 }
 
 .chatbot-questions li:hover {
-    background-color: #2f3a57;
+    background-color: #666;
     color: rgb(255, 255, 255);
 }
 
@@ -1106,14 +1093,14 @@ button#toggle-languages:hover {
     padding: 8px 15px;
     margin-left: 10px;
     border: none;
-    background-color: #2f3a57;
+    background-color: #555;
     color: rgb(252, 251, 251);
     border-radius: 8px;
     cursor: pointer;
 }
 
 .chatbot-input-container button:hover {
-    background-color: #40486b;
+    background-color: #777;
 }
 
 /* Styles for the go to top button */
@@ -1139,7 +1126,7 @@ button#toggle-languages:hover {
     pointer-events: none;
     height: 45px;
     width: 45px;
-    fill: rgb(0, 12, 150);
+    fill: #cccccc;
 
 }
 
@@ -1147,7 +1134,7 @@ button#toggle-languages:hover {
     pointer-events: none;
     height: 45px;
     width: 45px;
-    fill: rgb(255, 255, 255);
+    fill: #888888;
 
 }
 
@@ -1173,11 +1160,11 @@ button#toggle-languages:hover {
 }
 
 .milestone-card {
-    background-color: #121245;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #054ffd;
+    border-left: 5px solid #888;
     transition: transform 0.3s ease;
     animation: slideInRight 1s ease-in-out;
 }
@@ -1200,7 +1187,7 @@ button#toggle-languages:hover {
 }
 
 .milestone-progress-bar {
-    background-color: rgb(116, 243, 209);
+    background-color: #444444;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -1210,7 +1197,7 @@ button#toggle-languages:hover {
 
 .progress {
     height: 100%;
-    background-color: #0366d6;
+    background-color: #888888;
     transition: width 0.4s ease;
 }
 
@@ -1293,7 +1280,7 @@ button#toggle-languages:hover {
 }
 
 .icon-content a[data-social="github"] .filled {
-    background-color: #24292e;
+    background-color: #333;
 }
 
 .icon-content a:hover {
@@ -1301,7 +1288,7 @@ button#toggle-languages:hover {
 }
 
 body.dark-mode .side-icons .icon-content a {
-    background-color: #121245;
+    background-color: #333;
     color: #ddd;
 }
 
@@ -1314,11 +1301,11 @@ body.dark-mode .side-icons .icon-content a:hover i {
 }
 
 body.dark-mode .side-icons .icon-content a[data-social="facebook"] .filled {
-    background-color: #3b5998;
+    background-color: #1877f2;
 }
 
 body.dark-mode .side-icons .icon-content a[data-social="linkedin"] .filled {
-    background-color: #0077b5;
+    background-color: #0a66c2;
 }
 
 body.dark-mode .side-icons .icon-content a[data-social="twitter"] .filled {
@@ -1330,11 +1317,7 @@ body.dark-mode .side-icons .icon-content a[data-social="youtube"] .filled {
 }
 
 body.dark-mode .side-icons .icon-content a[data-social="github"] .filled {
-    background-color: #444c56;
-}
-
-body.dark-mode .side-icons .icon-content a:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #333;
 }
 
 
@@ -1368,7 +1351,7 @@ body.dark-mode {
 }
 
 .dark-mode .stat-card {
-    background-color: #050066;
+    background-color: #444;
 }
 
 .dark-mode .contri-heading {
@@ -1442,7 +1425,7 @@ body.dark-mode {
 }
 
 .testimonial-section {
-    background-color: #111151;
+    background-color: #444;
     padding: 60px 20px;
     text-align: center;
     color: #fff;
@@ -1462,7 +1445,7 @@ body.dark-mode {
 .testimonial {
     max-width: 350px;
     margin: 20px;
-    background-color: #111151;
+    background-color: #555;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -1486,23 +1469,19 @@ body.dark-mode {
 .testimonial h3 {
     font-size: 1.2em;
     font-weight: bold;
-    color: #ffd700;
+    color: #dddddd;
 }
 
 /* Hover effect */
 .testimonial:hover {
-    background-color: #ffd700;
-    /* Change to a contrasting color */
-    color: #111151;
-    /* Change text color */
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-    /* Brighter shadow */
+    background-color: #666;
+    color: #f5f5f5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 
 .testimonial:hover p,
 .testimonial:hover h3 {
-    color: #111151;
-    /* Ensure text is visible against new background */
+    color: #f5f5f5;
 }
 
 /* Light Mode for Testimonial Section */
@@ -1534,43 +1513,41 @@ body.dark-mode {
 
 /* Hover effect for dark mode */
 .dark-mode .testimonial:hover {
-    background-color: #555;
-    /* A darker color for light mode */
-    color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: #444;
+    color: #f5f5f5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 
 .dark-mode .testimonial:hover p,
 .dark-mode .testimonial:hover h3 {
-    color: #fff;
-    /* Ensure text remains visible */
+    color: #f5f5f5;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0a0266;
+    background-color: #444;
     color: #333;
 }
 
 .code-of-conduct {
     margin: 20px;
     padding: 40px;
-    background-color: #01043b;
-    border: 2px solid #6ae6fc;
+    background-color: #555;
+    border: 2px solid #888;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #4866ee;
+    color: #888;
     text-transform: uppercase;
 }
 
 .rule {
     margin: 10px 0;
     padding: 30px;
-    background-color: #0915c3;
+    background-color: #555;
     border-radius: 8px;
     border-left: 8px solid #fa6508;
     position: relative;
@@ -1579,11 +1556,11 @@ h1 {
 .rule-number {
     font-size: 24px;
     font-weight: bold;
-    color: #03f4fd;
+    color: #ddd;
     position: absolute;
     top: 10px;
     left: -30px;
-    background-color: #0366d6;
+    background-color: #666;
     border-radius: 50%;
     padding: 5px 10px;
 }
@@ -1596,7 +1573,7 @@ h1 {
 .back-button a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0b07f3;
+    background-color: #666;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -1604,7 +1581,7 @@ h1 {
 }
 
 .back-button a:hover {
-    background-color: #05c6fc;
+    background-color: #777;
 }
 
 .code-of-conduct-button {
@@ -1615,7 +1592,7 @@ h1 {
 .code-of-conduct-button a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2505f5;
+    background-color: #888;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -1623,12 +1600,12 @@ h1 {
 }
 
 .code-of-conduct-button a:hover {
-    background-color: #0acbf7;
+    background-color: #999;
 }
 
 /* Section Styles */
 .github-section {
-    background-color: #050066;
+    background-color: #444;
     padding: 50px;
     color: white;
     text-align: center;
@@ -1661,8 +1638,8 @@ h1 {
     width: 80%;
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #48d4f0;
-    color: white;
+    background-color: #666666;
+    color: #f5f5f5;
     border: none;
     cursor: pointer;
     font-size: 1rem;
@@ -1673,9 +1650,9 @@ h1 {
 
 /* Button hover effect */
 .github-buttons button:hover {
-    background-color: #ffeb3b;
-    color: #03404a;
-    box-shadow: 0 0 15px #ffeb3b;
+    background-color: #777777;
+    color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
     font-weight: bold;
 }
 
@@ -1730,7 +1707,7 @@ body.light-mode {
 }
 
 .light-mode #scroll-top-btn svg {
-    fill: rgb(0, 0, 150);
+    fill: #888888;
     /* Adjust SVG color */
 }
 
@@ -1772,7 +1749,7 @@ body.dark-mode {
 }
 
 .dark-mode #scroll-top-btn svg {
-    fill: rgb(255, 255, 255);
+    fill: #cccccc;
     /* Adjust SVG color */
 }
 
@@ -1793,17 +1770,17 @@ body.dark-mode {
     /* Highlight color */
 }
 
-/* Blue Mode Styles */
+/* Grey Mode Styles */
 body.blue-mode {
-    background-color: #170179;
-    /* Dark blue background */
+    background-color: #555;
+    /* Dark grey background */
     color: #f1f1f1;
     /* Light text */
 }
 
 .blue-mode .dropdown-content {
-    background-color: #121245;
-    /* Blue dropdown background */
+    background-color: #555;
+    /* Grey dropdown background */
 }
 
 .blue-mode p,
@@ -1814,13 +1791,13 @@ body.blue-mode {
 }
 
 .blue-mode #scroll-top-btn svg {
-    fill: rgb(0, 12, 150);
+    fill: #cccccc;
     /* SVG color for blue mode */
 }
 
 .blue-mode .side-icons .icon-content a {
-    background-color: #121245;
-    /* Dark blue background for icons */
+    background-color: #333;
+    /* Dark grey background for icons */
     color: #ddd;
     /* Light text color */
 }
@@ -1849,8 +1826,8 @@ body.blue-mode {
 }
 
 .blue-mode .card {
-    background-color: #121245;
-    /* Blue card background */
+    background-color: #333;
+    /* Grey card background */
 }
 
 /* Testimonial Section Styles */
@@ -1895,8 +1872,8 @@ body.blue-mode {
 }
 
 .blue-mode .testimonial {
-    background-color: #170179;
-    /* Blue testimonial background */
+    background-color: #555;
+    /* Grey testimonial background */
 }
 
 /* Button Styles */
@@ -1913,7 +1890,7 @@ body.blue-mode {
 }
 
 .blue-mode #toggle-dark-mode {
-    /* background-color: #170179; Dark blue button background */
+    /* background-color: #4a2573; Dark purple button background */
     color: #f1f1f1;
     /* Light text */
 }
@@ -1934,10 +1911,10 @@ body.blue-mode {
 }
 
 .blue-mode .card {
-    background-color: #121245;
-    /* Blue card background */
-    border: 1px solid #0f0f2e;
-    /* Darker blue border */
+    background-color: #333;
+    /* Grey card background */
+    border: 1px solid #444;
+    /* Darker grey border */
 }
 
 /* Section Headers */
@@ -1983,23 +1960,23 @@ body.blue-mode {
 
 /* Hover Effects for Links */
 .light-mode a:hover {
-    text-decoration: underline;
-    /* Underline on hover */
+    text-decoration: none;
+    /* No underline on hover */
 }
 
 .dark-mode a:hover {
-    color: #00aaff;
-    /* Change link color on hover */
+    color: #aaa;
+    /* Change link color on hover to grey */
 }
 
 .blue-mode a:hover {
-    color: #ddd;
-    /* Change link color on hover */
+    color: #999;
+    /* Change link color on hover to grey */
 }
 
 /* Footer Styles */
 .light-mode .footer {
-    background-color: #0a0266;
+    background-color: #444;
     z-index: -1;
 }
 
@@ -2007,7 +1984,7 @@ body.blue-mode {
     z-index: -1;
     width: 100%;
     text-align: center;
-    background-color: #0a0266;
+    background-color: #444;
 }
 
 .dark-mode .footer-bar a {
@@ -2143,12 +2120,12 @@ body.blue-mode {
 .blue-mode input,
 .blue-mode textarea,
 .blue-mode select {
-    background-color: #121245;
-    /* Dark blue background for input fields */
+    background-color: #333;
+    /* Dark grey background for input fields */
     color: #fff;
     /* Light text */
-    border: 1px solid #444;
-    /* Darker blue border */
+    border: 1px solid #555;
+    /* Darker grey border */
 }
 
 /* Button Styles */
@@ -2177,7 +2154,7 @@ body.blue-mode {
 
 .blue-mode button,
 .blue-mode .btn {
-    /* background-color: #170179; Dark blue button color */
+    /* background-color: #4a2573; Dark purple button color */
     color: #f1f1f1;
     /* Light text */
 }
@@ -2185,20 +2162,20 @@ body.blue-mode {
 /* Hover Effects for Buttons */
 .light-mode button:hover,
 .light-mode .btn:hover {
-    background-color: #0056b3;
-    /* Darker blue on hover */
+    background-color: #888;
+    /* Grey on hover */
 }
 
 .dark-mode button:hover,
 .dark-mode .btn:hover {
-    background-color: #555;
-    /* Lighter dark on hover */
+    background-color: #999;
+    /* Grey on hover */
 }
 
 .blue-mode button:hover,
 .blue-mode .btn:hover {
-    background-color: #0f0f2e;
-    /* Lighter blue on hover */
+    background-color: #888;
+    /* Grey on hover */
 }
 
 /* Alert Styles */
@@ -2314,8 +2291,8 @@ body.blue-mode {
 }
 
 .blue-mode .tooltip {
-    background-color: #170179;
-    /* Dark blue background for tooltips */
+    background-color: #555;
+    /* Dark grey background for tooltips */
     color: #f1f1f1;
     /* Light text */
 }
