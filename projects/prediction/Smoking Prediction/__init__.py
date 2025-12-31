@@ -1,0 +1,3 @@
+"""
+Components module initialization
+"""
