@@ -1,3 +1,4 @@
+/*
 const icon = document.getElementById("toggle-dark-mode");
 
 if (icon) {
@@ -13,6 +14,7 @@ if (icon) {
         }
     }
 }
+*/
 
 
 
@@ -376,6 +378,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     
+    /*
     const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
     const body = document.body;
     
@@ -432,6 +435,7 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleTheme(); // Call the function to toggle the theme
         }
     });
+    */
     
     
     function hamburger() {

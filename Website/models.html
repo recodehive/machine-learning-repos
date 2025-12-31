@@ -21,21 +21,21 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
                 <li><a href="organization.html">Organization</a></li>
                 <li><a href="faq.html">FAQ</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <div class="nav-icons">
-                <li>
-                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
-                        <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
-                    </a>
+                <!-- Dropdown on navbar -->
+                <li class="dropdown">
+                    <button id="dropdownButton" class="dropbtn">Know More</button>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="https://github.com/recodehive">How we work?</a>
+                        <a href="https://github.com/recodehive">Projects</a>
+                        <a href="https://github.com/recodehive">Team</a>
+                        <a href="https://github.com/recodehive">Code of Conduct</a>
+                    </div>
                 </li>
-                <li>
-                    <button id="toggle-dark-mode">
-                        <i class="fas fa-moon"></i> 
-                    </button>
-                </li>
-            </div>
             </ul>
             <div class="line" id="line">
                 <div class="bar1"></div>
@@ -48,9 +48,7 @@
         <h2>Explore Our Models</h2>
         <ul id="subdirectories"></ul>
     </section>
-    <footer class="footer">
-        <div>&copy; <span id="year"></span> Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</div>
-    </footer>
+
     
     <script>
         const year = new Date().getFullYear();

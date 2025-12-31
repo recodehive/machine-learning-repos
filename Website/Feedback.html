@@ -4,127 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="title" content="Machine Learning Repositories">
-    <meta name="description"
-        content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community">
-    <meta name="keywords"
-        content="machine learning, machine learning repositories, machine learning repos, machine learning recode hive, recode hive, recode hive ml repos, recode give ml, ml, ml repositories, github repositories ml, machine learning github repositories">
+    <meta name="title" content="Feedback - Machine Learning Repositories">
+    <meta name="description" content="Share your feedback and help us improve our machine learning repositories collection">
+    <meta name="keywords" content="feedback, machine learning, recode hive, ml repositories">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="1 days">
     <meta name="author" content="Recode Hive">
-    <meta property="og:type" content="website" />
-    <!-- <meta property="og:url" content="url" /> define URL when deployed -->
-    <meta property="og:description"
-        content="A curated collection of diverse machine learning repositories available on GitHub, presented by the RecodeHive community" />
-    <title>Feedback</title>
-    <!-- <link rel="canonical" href="url-here" /> define base(root) link of deployment here -->
-    <link rel="stylesheet" href="css/Feedback.css" />
-    <link rel="icon" href="/assets/recode-hive.png" type="image/png"> <!-- Added favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Feedback - Recode Hive</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
     
     <style>
-    #progress-container {
-    position: fixed ;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 15px;
-    z-index: 99990;
-    /* background: #f3f3f3; */
-}
+        .feedback-container {
+            max-width: 700px;
+            margin: 120px auto 60px;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 2px solid #c8d6f2;
+        }
 
-#progress-bar {
-    height: 53%;
-    width: 0;
-    background: linear-gradient(90deg, rgb(139, 47, 201) 0%, rgb(181, 88, 230) 50%, rgb(255, 111, 0) 100%);
-    box-shadow: 0 0 4px rgba(139, 47, 201, 0.7), 0 0 10px rgba(255, 111, 0, 0.7);
-    transition: width 0.09s ease-in-out;
-    border-radius: 10px;
-}
-.repo {
-        background-color: #f9f9f9;
-        padding: 20px;
-        margin: 15px;
-        border-radius: 12px;
-        width: 250px; 
-        text-align: center;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        animation: fadeInUp 1.2s ease-in-out;
-      }
-      .repo a {
-        text-decoration: none;
-      }
-      .repo:hover {
-        transform: translateY(-10px);
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-      }
-      .repo img {
-        max-width: 100%;
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-      }
-      .repo:hover img {
-        transform: scale(1.05);
-      }
-      .repo-title {
-        font-size: 1.4em;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        color: #333;
-      }
-      .repo-description {
-        font-size: 1em;
-        color: #777;
-      }
-      .paragraph {
-        font-size: 1.2em;
-        line-height: 1.8em;
-        margin-bottom: 30px;
-        color: #ffffff;
-        text-align: center;
-        animation: fadeInUp 1.2s ease-in-out;
-      }
-      .repo-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 30px;
-      }
-      .dark-mode .content{
-        background-color: white;
-      }
-      .dark-mode .title{
-        color: #333;
-      }
-      .dark-mode .paragraph{
-        color: #555;
-      }
+        .feedback-title {
+            font-size: 2.5em;
+            color: #3c6ab8;
+            margin-bottom: 15px;
+            text-align: center;
+        }
 
+        .feedback-subtitle {
+            font-size: 1.1em;
+            color: #666;
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 1em;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 12px 15px;
+            border: 2px solid #c8d6f2;
+            border-radius: 8px;
+            font-size: 1em;
+            background: #f7faff;
+            color: #000000;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3c6ab8;
+            background: #ffffff;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+            font-family: inherit;
+        }
+
+        .rating-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .star-rating {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+
+        .star-rating label {
+            cursor: pointer;
+            color: #c8d6f2;
+            transition: all 0.2s ease;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover ~ label,
+        .star-rating input[type="radio"]:checked ~ label {
+            color: #ffc107;
+        }
+
+        .star-rating input[type="radio"]:checked + label,
+        .star-rating input[type="radio"]:checked + label ~ label {
+            color: #ffc107;
+        }
+
+        .submit-btn {
+            padding: 15px 40px;
+            background: #3c6ab8;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: #2f4f7f;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .feedback-container {
+                margin: 100px 20px 40px;
+                padding: 30px 20px;
+            }
+
+            .feedback-title {
+                font-size: 2em;
+            }
+
+            .feedback-subtitle {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
-<body class="dark-mode">
-    <div id="progress-container">
-        <div id="progress-bar"></div>
-      </div>
-
-      <script>
-            
-        window.addEventListener('scroll', function() {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById('progress-bar').style.width = scrolled + '%';
-        });
-        </script>
+<body>
     <div class="loading-container" id="loading-animation">
         <div class="loader"></div>
     </div>
+
     <header>
         <nav class="navbar">
             <a class="logo-container" href="/">
@@ -134,34 +166,20 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-
                 <li><a href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html">Learn</a></li>
                 <li><a href="organization.html">Organization</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="Feedback.html">Feedback</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <!-- Dropdown on navbar -->
                 <li class="dropdown">
                     <button id="dropdownButton" class="dropbtn">Know More</button>
-                        <div id="dropdownMenu" class="dropdown-content">
-                            <a href="https://github.com/recodehive">How we work?</a>
-                            <a href="https://github.com/recodehive">Projects</a>
-                            <a href="https://github.com/recodehive">Team</a>
-                            <a href="https://github.com/recodehive">Code of Conduct</a>
-                        </div>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="https://github.com/recodehive">How we work?</a>
+                        <a href="https://github.com/recodehive">Projects</a>
+                        <a href="https://github.com/recodehive">Team</a>
+                        <a href="https://github.com/recodehive">Code of Conduct</a>
+                    </div>
                 </li>
-                <div class="nav-icons">
-                <li>
-                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
-                        <img src="assets/images.png" alt="GitHub"> <!-- GitHub Icon -->
-                    </a>
-                </li>
-                <li>
-                    <button id="toggle-dark-mode" title="Use Ctrl+Q to toggle themes easily">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li>
-            </div>
             </ul>
             <div class="line" id="line">
                 <div class="bar1"></div>
@@ -172,39 +190,61 @@
     </header>
 
     <main>
-        <div class="contact-container">
-            <h2>Feedback form</h2>
-            <p>We appreciate your feedback! Please rate us and leave a comment.</p>
-    
-            <form action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <label class="rate-label">Rate Us</label>
-                <div class="star-rating">
-                    <input type="radio" id="star1" name="rating" value="1" />
-                    <label for="star1" title="1 star">★</label>
-                    <input type="radio" id="star2" name="rating" value="2" />
-                    <label for="star2" title="2 stars">★</label>
-                    <input type="radio" id="star3" name="rating" value="3" />
-                    <label for="star3" title="3 stars">★</label>
-                    <input type="radio" id="star4" name="rating" value="4" />
-                    <label for="star4" title="4 stars">★</label>
-                    <input type="radio" id="star5" name="rating" value="5" />
-                    <label for="star5" title="5 stars">★</label>
+        <div class="feedback-container">
+            <h1 class="feedback-title">We Value Your Feedback</h1>
+            <p class="feedback-subtitle">
+                Your input helps us improve and serve the machine learning community better. 
+                Share your thoughts, suggestions, or experiences with us.
+            </p>
+
+            <form class="feedback-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
-                <button type="submit">Send Feedback</button>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Feedback Category</label>
+                    <select id="category" name="category">
+                        <option value="general">General Feedback</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="content">Content Suggestion</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" placeholder="Share your thoughts, suggestions, or concerns..." required></textarea>
+                </div>
+
+                <div class="rating-group">
+                    <label>Rate Your Experience</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 stars">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 stars">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 stars">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 stars">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="1 star">★</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
             </form>
-            
-            <!-- Back to Home Button -->
-            <button onclick="window.location.href='index.html'" class="back-button">Back to Home</button>
         </div>
     </main>
+
     <!-- Chatbot Button -->
     <div class="chatbot-button" id="chatbot-button">
         <img src="assets/chatbot.png" height="50px" width="50px" id="chatbot-img" class="floating" alt="chatbot">
@@ -220,9 +260,7 @@
         <div class="chatbot-messages" id="chatbot-messages"></div>
         <div class="chatbot-questions">
             <p>Choose a question:</p>
-            <ul id="question-list">
-                <!-- Questions will be populated here -->
-            </ul>
+            <ul id="question-list"></ul>
         </div>
         <div class="chatbot-input-container">
             <input type="text" id="chatbot-input" placeholder="Type your message...">
@@ -237,64 +275,59 @@
         </svg>
     </button>
 
-    
     <!-- Side Icons -->
-    
     <div class="side-icons">
         <div class="icon-content">
-          <a href="https://www.facebook.com/recodehive" target="_blank" aria-label="Facebook" data-social="facebook">
-            <i class="fab fa-facebook-f"></i>
-            <div class="filled"></div>
-          </a>
+            <a href="https://www.facebook.com/recodehive" target="_blank" aria-label="Facebook" data-social="facebook">
+                <i class="fab fa-facebook-f"></i>
+                <div class="filled"></div>
+            </a>
         </div>
         <div class="icon-content">
-          <a href="https://www.linkedin.com/in/sanjay-k-v/" target="_blank" aria-label="LinkedIn" data-social="linkedin">
-            <i class="fab fa-linkedin-in"></i>
-            <div class="filled"></div>
-          </a>
+            <a href="https://www.linkedin.com/in/sanjay-k-v/" target="_blank" aria-label="LinkedIn" data-social="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                <div class="filled"></div>
+            </a>
         </div>
         <div class="icon-content">
-          <a href="https://twitter.com/sanjay_kv" target="_blank" aria-label="Twitter" data-social="twitter">
-           <i class="fa fa-twitter"></i>
-            <div class="filled"></div>
-          </a>
+            <a href="https://twitter.com/sanjay_kv" target="_blank" aria-label="Twitter" data-social="twitter">
+                <i class="fab fa-x-twitter"></i>
+                <div class="filled"></div>
+            </a>
         </div>
         <div class="icon-content">
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube" data-social="youtube">
-            <i class="fab fa-youtube"></i>
-            <div class="filled"></div>
-          </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube" data-social="youtube">
+                <i class="fab fa-youtube"></i>
+                <div class="filled"></div>
+            </a>
         </div>
         <div class="icon-content">
-          <a href="https://github.com/recodehive" target="_blank" aria-label="GitHub" data-social="github">
-            <i class="fab fa-github"></i>
-            <div class="filled"></div>
-          </a>
+            <a href="https://github.com/recodehive" target="_blank" aria-label="GitHub" data-social="github">
+                <i class="fab fa-github"></i>
+                <div class="filled"></div>
+            </a>
         </div>
-      </div>
-   
+    </div>
 
-    <!-- new footer changes -->
+    <!-- Footer -->
     <div class="footer">
         <div class="footer-col">
-            <img src="./assets/recode-hive.png" alt="">
+            <img src="./assets/recode-hive.png" alt="Recode Hive Logo">
             <p class="footer-p">
-
                 Machine Learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and discovery.
-
             </p>
             <div class="footer-social">
-              <a href="https://www.facebook.com/recodehive"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://twitter.com/sanjay_kv"><i class="fa-brands fa-square-x-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/sanjay-k-v/"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://github.com/recodehive"><i class="fa-brands fa-github"></i></a>
-              <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-          </div>
+                <a href="https://www.facebook.com/recodehive"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/sanjay_kv"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sanjay-k-v/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/recodehive"><i class="fa-brands fa-github"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
         <div class="footer-col-main">
             <h4 class="h46">Company</h4>
-            <a href="#">Organisation</a>
+            <a href="organization.html">Organisation</a>
             <a href="#">Franchise</a>
             <a href="#">Contribute</a>
             <a href="#">Network</a>
@@ -304,34 +337,23 @@
             <a href="#">Blogs</a>
             <a href="#">Security</a>
             <a href="#">Careers</a>
-            <a href="#">FAQS</a>
+            <a href="faq.html">FAQS</a>
         </div>
         <div class="footer-col-main">
             <h4 class="h46">Contact</h4>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
             <a href="#">Privacy Policy</a>
-            <a href="#">Feedback</a>
+            <a href="Feedback.html">Feedback</a>
         </div>
     </div>
     <div class="footer-bar"> 
-        Copyright &copy; 2024 <a href="https://github.com/recodehive">Recodehive</a>. All rights reserved.
-      
+        Copyright &copy; <span id="year">2024</span> <a href="https://github.com/recodehive">Recodehive</a>. All rights reserved.
     </div>
 
-
-
     <script>
-        const year = new Date().getFullYear();
-        document.getElementById("year").textContent = year;
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-
     <script src="js/script.js"></script>
-
-    <script>
-        function changeImage(image) {
-          document.getElementById('repoImage').src = image;
-        }
-      </script>
 </body>
 </html>

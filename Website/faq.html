@@ -1,28 +1,71 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="title" content="FAQ | Machine Learning Repositories">
+    <meta name="description"
+      content="Frequently Asked Questions about Machine Learning Repositories - A curated collection presented by the RecodeHive community">
+    <meta name="keywords"
+      content="machine learning, machine learning repositories, FAQ, machine learning recode hive, recode hive, ml, ml repositories">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Recode Hive">
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+      content="Frequently Asked Questions about Machine Learning Repositories presented by the RecodeHive community" />
+    <title>FAQ | Machine Learning Repositories</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="/assets/recode-hive.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="/assets/recode-hive.png" type="image/png" />
-    <!-- Added favicon -->
     <style>
+      #progress-container {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 15px;
+        z-index: 99990;
+      }
+
+      #progress-bar {
+        height: 53%;
+        width: 0;
+        background: linear-gradient(90deg, rgb(120, 120, 120) 0%, rgb(150, 150, 150) 50%, rgb(180, 180, 180) 100%);
+        box-shadow: 0 0 4px rgba(120, 120, 120, 0.7), 0 0 10px rgba(150, 150, 150, 0.7);
+        transition: width 0.09s ease-in-out;
+        border-radius: 10px;
+      }
+
       body {
         font-family: "Roboto", sans-serif;
+        background-color: #f7faff;
+      }
+      main {
+        padding: 40px 20px;
       }
       .faq-content {
         overflow: hidden;
         height: 0;
         transition: height 0.4s ease;
+        padding: 0 20px;
       }
       .faq-content.active {
         height: auto;
+        padding: 20px;
       }
       .rotate {
         transition: transform 0.4s ease;
@@ -30,9 +73,27 @@
       .rotate.active {
         transform: rotate(180deg);
       }
+      .dark-mode body {
+        background-color: #1a1a2e;
+      }
     </style>
   </head>
   <body class="dark-mode">
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('progress-bar').style.width = scrolled + '%';
+      });
+    </script>
+    <div class="loading-container" id="loading-animation">
+      <div class="loader"></div>
+    </div>
     <header>
       <nav class="navbar">
         <a class="logo-container" href="/">
@@ -45,38 +106,60 @@
         </a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li>
             <a
               href="https://recodehive.github.io/awesome-github-profiles/pages/blog.html"
               >Learn</a
             >
           </li>
-          <li><a href="./organization.html">Organization</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="organization.html">Organization</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- Dropdown on navbar -->
+          <li class="dropdown">
+            <button id="dropdownButton" class="dropbtn">Know More</button>
+            <div id="dropdownMenu" class="dropdown-content">
+              <a href="https://github.com/recodehive">How we work?</a>
+              <a href="https://github.com/recodehive">Projects</a>
+              <a href="https://github.com/recodehive">Team</a>
+              <a href="https://github.com/recodehive">Code of Conduct</a>
+            </div>
+          </li>
+        </ul>
+        <div class="line" id="line">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
         </ul>
       </nav>
     </header>
     <main class="flex justify-center items-center">
       <div class="w-full max-w-2xl p-4">
-        <h1 class="text-4xl font-bold text-blue-700 mb-8">
-          Frequently Asked Questions<span class="text-black">(FAQs)</span>
+        <h1 class="text-4xl font-bold mb-8" style="color: #1f2a44;">
+          Frequently Asked Questions <span style="color: #3c6ab8;">(FAQs)</span>
         </h1>
         <div class="space-y-4">
           <!-- FAQ 1 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq1', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>What is machine learning?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">What is machine learning?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq1" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq1" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               Machine learning is a subset of artificial intelligence that
               enables computers to learn from data and improve their performance
               over time without explicit programming.
@@ -85,17 +168,20 @@
 
           <!-- FAQ 2 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq2', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>How does your machine learning model work?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">How does your machine learning model work?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq2" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq2" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               Our model uses algorithms to analyze and learn patterns from data,
               which allows it to make predictions or decisions based on new,
               unseen data.
@@ -104,17 +190,20 @@
 
           <!-- FAQ 3 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq3', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>What kind of data do you use?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">What kind of data do you use?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq3" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq3" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               We use diverse datasets, including structured and unstructured
               data, to train our models, ensuring they can generalize well
               across different scenarios.
@@ -123,17 +212,20 @@
 
           <!-- FAQ 4 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq4', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>How accurate is your model?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">How accurate is your model?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq4" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq4" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               The accuracy of our model varies by application and is evaluated
               using metrics like precision, recall, and F1 score. Detailed
               performance statistics are provided on our results page.
@@ -142,17 +234,20 @@
 
           <!-- FAQ 5 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq5', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>Can I use your model for my own project?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">Can I use your model for my own project?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq5" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq5" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               Yes, our model is available for use through API access or by
               downloading the code, depending on the licensing agreement.
             </h3>
@@ -160,17 +255,20 @@
 
           <!-- FAQ 6 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq6', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>What programming languages and tools do you use?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">What programming languages and tools do you use?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq6" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq6" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               We primarily use Python with libraries like TensorFlow, Keras, and
               scikit-learn for model development, along with tools like Jupyter
               Notebooks for experimentation.
@@ -179,17 +277,20 @@
 
           <!-- FAQ 7 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq7', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>How do you handle data privacy?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">How do you handle data privacy?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq7" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq7" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               We prioritize data privacy and comply with relevant regulations.
               All data is anonymized, and sensitive information is securely
               managed.
@@ -198,17 +299,20 @@
 
           <!-- FAQ 8 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq8', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>What types of problems can your model solve?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">What types of problems can your model solve?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq8" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq8" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               Our models are designed to tackle various problems, including
               classification, regression, clustering, and anomaly detection
               across multiple domains.
@@ -217,17 +321,20 @@
 
           <!-- FAQ 9 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq9', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>Is there a community or support available?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">Is there a community or support available?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq9" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq9" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               Yes, we have an active community on forums, as well as email and
               chat-based support for users.
             </h3>
@@ -235,17 +342,20 @@
 
           <!-- FAQ 10 -->
           <div
-            class="bg-blue-500 text-white rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            class="rounded-lg shadow-md p-4 flex justify-between items-center cursor-pointer"
+            style="background-color: #eaf1fb; color: #1f2a44; border: 1px solid #c8d6f2; transition: all 0.3s ease;"
+            onmouseover="this.style.boxShadow='0 6px 16px rgba(60, 106, 184, 0.2)'"
+            onmouseout="this.style.boxShadow='0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'"
             onclick="toggleFaqContent('faq10', this)"
           >
             <div class="flex items-center">
-              <i class="fas fa-question-circle mr-2"></i>
-              <span>Can I contribute to your project?</span>
+              <i class="fas fa-question-circle mr-2" style="color: #3c6ab8;"></i>
+              <span style="font-weight: 500;">Can I contribute to your project?</span>
             </div>
-            <i class="fas fa-chevron-down rotate"></i>
+            <i class="fas fa-chevron-down rotate" style="color: #3c6ab8;"></i>
           </div>
-          <div id="faq10" class="faq-content bg-white rounded-lg shadow-md">
-            <h3 class="text-black">
+          <div id="faq10" class="faq-content rounded-lg shadow-md" style="background-color: #ffffff; border: 1px solid #c8d6f2;">
+            <h3 style="color: #2d3e5f; font-size: 1rem; line-height: 1.6;">
               Absolutely! We welcome contributions from developers and
               researchers. You can find our contribution guidelines on the GitHub
               repository.
@@ -273,5 +383,6 @@
         });
       }
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

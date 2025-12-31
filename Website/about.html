@@ -40,35 +40,28 @@
         padding: 40px;
         max-width: 1200px;
         margin: auto;
-        background-color: #555;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        border: 2px solid #c8d6f2;
+        box-shadow: 0 8px 24px rgba(20, 45, 85, 0.08);
         animation: fadeIn 1s ease-in-out;
-      }
-      .dark-mode .content{
-        background-color: white;
-      }
-      .dark-mode .title{
-        color: #333;
-      }
-      .dark-mode .paragraph{
-        color: #555;
       }
       .title {
         text-align: center;
         font-size: 2.5em;
         margin-bottom: 20px;
-        color: #ffffff;
+        color: #000000;
         animation: slideDown 1s ease-in-out;
       }
       .paragraph {
         font-size: 1.2em;
         line-height: 1.8em;
         margin-bottom: 30px;
-        color: #ffffff;
+        color: #000000;
         text-align: center;
         animation: fadeInUp 1.2s ease-in-out;
-      }
-      .repo-section {
+      }      .paragraph h3 {
+        color: #000000;
+      }      .repo-section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -142,7 +135,7 @@
       }
     </style>
   </head>
-  <body class="dark-mode">
+  <body>
     <header>
       <nav class="navbar">
         <a class="logo-container" href="/">
@@ -164,6 +157,7 @@
           </li>
           <li><a href="organization.html">Organization</a></li>
           <li><a href="faq.html">FAQ</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
           <li><a href="contact.html">Contact</a></li>
           <!-- Dropdown on navbar -->
           <li class="dropdown">
@@ -172,24 +166,9 @@
               <a href="https://github.com/recodehive">How we work?</a>
               <a href="https://github.com/recodehive">Projects</a>
               <a href="https://github.com/recodehive">Team</a>
-              <a href="conduct.html">Code of Conduct</a>
+              <a href="https://github.com/recodehive">Code of Conduct</a>
             </div>
           </li>
-          <div class="nav-icons">
-            <li>
-              <a
-                href="https://github.com/recodehive/machine-learning-repos"
-                target="_blank"
-              >
-                <img src="assets/images.png" alt="GitHub" />
-              </a>
-            </li>
-            <li>
-              <button id="toggle-dark-mode">
-                <i class="fas fa-moon"></i>
-              </button>
-            </li>
-          </div>
         </ul>
         <div class="line" id="line">
           <div class="bar1"></div>
@@ -366,50 +345,7 @@
       
     </div>
 
-    <!-- new footer updated -->
-    <div class="footer">
-      <div class="footer-col">
-          <img src="./assets/recode-hive.png" alt="">
-          <p class="footer-p">
 
-              Machine Learning is an exciting and rapidly evolving field that offers endless opportunities for innovation and discovery.
-
-          </p>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/recodehive"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/sanjay_kv"><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/sanjay-k-v/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/recodehive"><i class="fa-brands fa-github"></i></a>
-            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-col-main">
-          <h4 class="h46">Company</h4>
-          <a href="#">Organisation</a>
-          <a href="#">Franchise</a>
-          <a href="#">Contribute</a>
-          <a href="#">Network</a>
-      </div>
-      <div class="footer-col-main">
-          <h4 class="h46">About Us</h4>
-          <a href="#">Blogs</a>
-          <a href="#">Security</a>
-          <a href="#">Careers</a>
-          <a href="#">FAQS</a>
-      </div>
-      <div class="footer-col-main">
-          <h4 class="h46">Contact</h4>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Feedback</a>
-      </div>
-  </div>
-  <div class="footer-bar"> 
-      Copyright &copy; 2024 <a href="https://github.com/recodehive">Recodehive</a>. All rights reserved.
-    
-  </div>
     <script src="js/script.js"></script>
   </body>
 </html>
