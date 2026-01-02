@@ -1,13 +1,20 @@
-const icon = document.getElementById("icon");
+/*
+const icon = document.getElementById("toggle-dark-mode");
 
-icon.onclick = function() {
-    document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-        icon.querySelector("img").src = "./css/sun1img.png";
-    } else {
-        icon.querySelector("img").src = "./css/moon1img.png";
+if (icon) {
+    icon.onclick = function() {
+        document.body.classList.toggle("dark-mode");
+        const iconElement = icon.querySelector("i");
+        if (iconElement) {
+            if (document.body.classList.contains("dark-mode")) {
+                iconElement.className = "fas fa-sun";
+            } else {
+                iconElement.className = "fas fa-moon";
+            }
+        }
     }
 }
+*/
 
 
 
@@ -371,6 +378,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     
+    /*
     const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
     const body = document.body;
     
@@ -427,6 +435,7 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleTheme(); // Call the function to toggle the theme
         }
     });
+    */
     
     
     function hamburger() {
