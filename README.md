@@ -735,10 +735,15 @@ Through these stages, the machine learning workflow provides a systematic approa
       <tr>
         <td> <a href="https://github.com/dair-ai/ML-YouTube-Courses">ML YouTube Courses</a></td>
         <td>This GitHub repository is a collection of resources related to Machine Learning (ML) courses available on YouTube, and  provides links to the YouTube videos or playlists for each course, making it easy for learners to access the course content directly from YouTube. </td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md">WFGY</a></td>
+        <td>Open source framework for debugging LLM agents and RAG pipelines with a 16-mode ProblemMap and practical triage checklists.</td>
       </tr>  
 </table>
 
 </details>
+
 
 <hr>
 
