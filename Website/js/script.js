@@ -35,25 +35,39 @@ document.addEventListener('DOMContentLoaded', function () {
     async function fetchDirectories() {
         const directoriesList = document.getElementById('directories');
         try {
-            const response = await fetch('/api/github/repos');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+            let data;
+            try {
+                const response = await fetch('/api/github/repos');
+                if (response.ok) {
+                    data = await response.json();
+                }
+            } catch (proxyError) {
+                // Ignore and fall through to direct GitHub API
             }
-            const data = await response.json();
+
+            if (!data || !Array.isArray(data)) {
+                const response = await fetch('https://api.github.com/repos/recodehive/machine-learning-repos/contents');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                data = await response.json();
+            }
+
             const directories = data.filter(item => item.type === 'dir' && item.name !== 'Website' && item.name !== '.github');
-    
+
+            directoriesList.innerHTML = '';
             directories.forEach(directory => {
                 const li = document.createElement('li');
                 li.classList.add('card');
-    
+
                 const h3 = document.createElement('h3');
                 h3.textContent = directory.name;
-    
+
                 const a = document.createElement('a');
                 a.href = `models.html?directory=${encodeURIComponent(directory.name)}`;
                 a.textContent = 'View Models';
                 a.classList.add('btn-view-repo');
-    
+
                 li.appendChild(h3);
                 li.appendChild(a);
                 directoriesList.appendChild(li);
@@ -67,27 +81,62 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to fetch and count subdirectories for each directory
     async function fetchSubdirectoryCounts() {
         try {
-            const directoriesResponse = await fetch('/api/github/repos');
-            if (!directoriesResponse.ok) {
-                throw new Error(`HTTP error! status: ${directoriesResponse.status}`);
-            }
-            const directoriesData = await directoriesResponse.json();
-            const directories = directoriesData.filter(item => item.type === 'dir' && item.name !== 'Website');
-            const directoryCounts = [];
-    
-            for (const directory of directories) {
-                const subResponse = await fetch(`https://api.github.com/repos/recodehive/machine-learning-repos/contents/${directory.name}`);
-                if (!subResponse.ok) {
-                    throw new Error(`HTTP error! status: ${subResponse.status} for ${directory.name}`);
+            let directoriesData;
+            try {
+                const directoriesResponse = await fetch('/api/github/repos');
+                if (directoriesResponse.ok) {
+                    directoriesData = await directoriesResponse.json();
                 }
-                const subData = await subResponse.json();
-                const subDirectoriesCount = subData.filter(item => item.type === 'dir').length;
-                directoryCounts.push({ name: directory.name, count: subDirectoriesCount });
+            } catch (proxyError) {
+                // Ignore and fall through to direct GitHub API
             }
-    
+
+            if (!directoriesData || !Array.isArray(directoriesData)) {
+                const directResponse = await fetch('https://api.github.com/repos/recodehive/machine-learning-repos/contents');
+                if (directResponse.ok) {
+                    directoriesData = await directResponse.json();
+                }
+            }
+
+            if (!Array.isArray(directoriesData)) {
+                return [];
+            }
+
+            const directories = directoriesData.filter(item => item.type === 'dir' && item.name !== 'Website' && item.name !== '.github');
+            const directoryCounts = [];
+
+            for (const directory of directories) {
+                try {
+                    let subData;
+                    try {
+                        const subProxyResponse = await fetch(`/api/github/repos/subdir?dir=${encodeURIComponent(directory.name)}`);
+                        if (subProxyResponse.ok) {
+                            subData = await subProxyResponse.json();
+                        }
+                    } catch (e) {
+                        // ignore and fall through
+                    }
+
+                    if (!subData || !Array.isArray(subData)) {
+                        const subResponse = await fetch(`https://api.github.com/repos/recodehive/machine-learning-repos/contents/${directory.name}`);
+                        if (subResponse.ok) {
+                            subData = await subResponse.json();
+                        }
+                    }
+
+                    if (Array.isArray(subData)) {
+                        const subDirectoriesCount = subData.filter(item => item.type === 'dir').length;
+                        directoryCounts.push({ name: directory.name, count: subDirectoriesCount });
+                    }
+                } catch (subError) {
+                    console.warn(`Error fetching subdirectories for ${directory.name}:`, subError);
+                }
+            }
+
             return directoryCounts;
         } catch (error) {
             console.error('Error fetching subdirectory counts:', error);
+            return [];
         }
     }
     
@@ -132,13 +181,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 const totalBytes = Object.values(languagesData).reduce((acc, val) => acc + val, 0);
                 let mostUsedLanguage = { name: '', bytes: 0 };
     
+                languageList.innerHTML = '';
                 for (const [language, bytes] of Object.entries(languagesData)) {
-                    const percentage = ((bytes / totalBytes) * 100).toFixed(2);
+                    const percentage = totalBytes > 0 ? ((bytes / totalBytes) * 100).toFixed(2) : '0.00';
+                    const displayWidth = Math.max(parseFloat(percentage), bytes > 0 ? 1.5 : 0);
                     const listItem = document.createElement('li');
+                    listItem.classList.add('language-item');
                     listItem.innerHTML = `
-                        <span>${language}</span>
-                        <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: ${percentage}%;">${percentage}%</div>
+                        <span class="language-name">${language}</span>
+                        <div class="language-progress-wrapper">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: ${displayWidth}%;"></div>
+                            </div>
+                            <span class="language-percentage">${percentage}%</span>
                         </div>
                     `;
                     languageList.appendChild(listItem);
@@ -155,44 +210,88 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         async function createPieChart() {
-            const directoryCounts = await fetchSubdirectoryCounts();
-            const ctx = document.getElementById('milestoneChart').getContext('2d');
-            const labels = directoryCounts.map(dir => dir.name);
-            const data = directoryCounts.map(dir => dir.count);
-            
-            const chart = new Chart(ctx, {
-                type: 'pie',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        data: data,
-                        backgroundColor: [
-                            '#FF6384',
-                            '#36A2EB',
-                            '#FFCE56',
-                            '#4BC0C0',
-                            '#9966FF',
-                            '#FF9F40',
-                            '#01A02A',
-                            '#FA5F20'
-                        ],
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            display: false // Disable Chart.js default legend
+            const chartContainer = document.querySelector('.chart-container');
+            const canvas = document.getElementById('milestoneChart');
+            const legendContainer = document.querySelector('.legend');
+
+            function showFallback(message = 'Milestone progress data is currently unavailable.') {
+                if (canvas) canvas.style.display = 'none';
+                if (legendContainer) legendContainer.style.display = 'none';
+                if (chartContainer) {
+                    chartContainer.style.width = '100%';
+                    chartContainer.style.margin = '20px 0';
+                    chartContainer.style.justifyContent = 'center';
+                    let fallbackEl = chartContainer.querySelector('.milestone-fallback');
+                    if (!fallbackEl) {
+                        fallbackEl = document.createElement('div');
+                        fallbackEl.className = 'milestone-fallback';
+                        chartContainer.appendChild(fallbackEl);
+                    }
+                    fallbackEl.innerHTML = `
+                        <i class="fas fa-chart-pie" style="font-size: 2.5rem; margin-bottom: 12px; color: #3c6ab8; opacity: 0.85;"></i>
+                        <p style="font-size: 15px; font-weight: 600; margin: 6px 0;">${message}</p>
+                        <span style="font-size: 12px; opacity: 0.75;">GitHub API rate limit may be reached or server is unavailable.</span>
+                    `;
+                }
+            }
+
+            try {
+                const directoryCounts = await fetchSubdirectoryCounts();
+
+                if (!directoryCounts || !Array.isArray(directoryCounts) || directoryCounts.length === 0) {
+                    showFallback();
+                    return;
+                }
+
+                const totalCount = directoryCounts.reduce((acc, dir) => acc + (dir.count || 0), 0);
+                if (totalCount === 0) {
+                    showFallback('No milestone subdirectories found.');
+                    return;
+                }
+
+                if (!canvas) return;
+                const ctx = canvas.getContext('2d');
+                const labels = directoryCounts.map(dir => dir.name);
+                const data = directoryCounts.map(dir => dir.count);
+                
+                const chart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: data,
+                            backgroundColor: [
+                                '#FF6384',
+                                '#36A2EB',
+                                '#FFCE56',
+                                '#4BC0C0',
+                                '#9966FF',
+                                '#FF9F40',
+                                '#01A02A',
+                                '#FA5F20'
+                            ],
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false // Disable Chart.js default legend
+                            }
                         }
                     }
+                });
+            
+                // Inject custom legend
+                if (legendContainer) {
+                    legendContainer.innerHTML = labels.map((label, index) => `
+                        <span style="color: ${chart.data.datasets[0].backgroundColor[index % chart.data.datasets[0].backgroundColor.length]}">${label}</span>
+                    `).join('');
                 }
-            });
-        
-            // Inject custom legend
-            const legendContainer = document.querySelector('.legend');
-            legendContainer.innerHTML = labels.map((label, index) => `
-                <span style="color: ${chart.data.datasets[0].backgroundColor[index]}">${label}</span>
-            `).join('');
+            } catch (err) {
+                console.error('Error rendering milestone chart:', err);
+                showFallback();
+            }
         }
         
         // Function to toggle statistics section
