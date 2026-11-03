@@ -1,11 +1,14 @@
+import os
 from flask import Flask, render_template, request, jsonify
 import joblib
 import pandas as pd
 
 app = Flask(__name__)
 
-# Load the pre-trained Gradient Boosting Regressor model
-gb_model_loaded = joblib.load('gb_model_income.pkl')
+# Safely resolve path to the model file
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'gb_model_income.pkl')
+gb_model_loaded = joblib.load(MODEL_PATH)
+
 
 # Define all possible columns based on the training data features
 all_columns = ['Age', 'Number_of_Dependents', 'Work_Experience', 'Household_Size',
