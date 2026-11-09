@@ -1,23 +1,41 @@
-import streamlit as st
-import pandas as pd
-from Validation import validate_email, validate_password
-from Dashboard import render_dashboard
+import os
 import random
 import string
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import streamlit as st
+import pandas as pd
+from Validation import validate_email, validate_password
+from Dashboard import render_dashboard
 
-# Load user data from the CSV file
-user_data = pd.read_csv("user_credentials.csv")
+CREDENTIALS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "user_credentials.csv")
+
+# Load user data from the CSV file safely
+if os.path.exists(CREDENTIALS_FILE):
+    user_data = pd.read_csv(CREDENTIALS_FILE)
+else:
+    user_data = pd.DataFrame(columns=["username", "password"])
+    user_data.to_csv(CREDENTIALS_FILE, index=False)
+
+
+def safe_rerun():
+    if hasattr(st, "rerun"):
+        st.rerun()
+    elif hasattr(st, "experimental_rerun"):
+        st.experimental_rerun()
+
 
 # Function to create a new user
 def insert_user(username, password):
     global user_data
+    if not user_data[user_data["username"] == username].empty:
+        return False
     new_user = pd.DataFrame({"username": [username], "password": [password]})
     user_data = pd.concat([user_data, new_user], ignore_index=True)
-    user_data.to_csv("user_credentials.csv", index=False)  # Save the updated data to a CSV file
+    user_data.to_csv(CREDENTIALS_FILE, index=False)  # Save the updated data to CSV
     return True
+
 
 # Function to verify user credentials
 def verify_credentials(username, password):
@@ -25,41 +43,45 @@ def verify_credentials(username, password):
     user = user_data[(user_data["username"] == username) & (user_data["password"] == password)]
     return not user.empty
 
+
 # Function to send a password reset email
 def send_password_reset_email(to_email, new_password):
-    # Setup SMTP server
-    smtp_server = 'smtp.gmail.com'  # Use the SMTP server of your email provider
-    smtp_port = 587  # Port for TLS
+    smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
+    smtp_port = int(os.environ.get('SMTP_PORT', 587))
+    sender_email = os.environ.get('SMTP_SENDER_EMAIL', '')
+    sender_password = os.environ.get('SMTP_SENDER_PASSWORD', '')
 
-    # Sender's email credentials
-    sender_email = 'danerystargaryen99@gmail.com'
-    sender_password = 'usft jnbt wnfe ndtg'
+    if not sender_email or not sender_password:
+        st.info(f"Temporary password generated: {new_password} (SMTP credentials not configured in environment).")
+        return True
 
-    # Create a message
-    msg = MIMEMultipart()
-    msg['From'] = sender_email
-    msg['To'] = to_email
-    msg['Subject'] = 'Password Reset'
+    try:
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = to_email
+        msg['Subject'] = 'Password Reset'
+        body = f'Your new password is: {new_password}'
+        msg.attach(MIMEText(body, 'plain'))
 
-    # Email body
-    body = f'Your new password is: {new_password}'
-    msg.attach(MIMEText(body, 'plain'))
+        server = smtplib.SMTP(smtp_server, smtp_port, timeout=10)
+        server.starttls()
+        server.login(sender_email, sender_password)
+        server.sendmail(sender_email, to_email, msg.as_string())
+        server.quit()
+        st.success("Password reset instructions sent to your email.")
+        return True
+    except Exception as e:
+        st.warning(f"Unable to dispatch email ({e}). Your temporary password is: {new_password}")
+        return False
 
-    # Connect to SMTP server and send email
-    server = smtplib.SMTP(smtp_server, smtp_port)
-    server.starttls()
-    server.login(sender_email, sender_password)
-    server.sendmail(sender_email, to_email, msg.as_string())
-    server.quit()
 
 # Function to reset a user's password
 def reset_password(email, new_password):
     if verify_email_exists(email):
-        # Update the user's password in the database
         update_password_in_database(email, new_password)
         return True
-    else:
-        return False
+    return False
+
 
 # Function to check if email exists in the database
 def verify_email_exists(email):
@@ -67,26 +89,30 @@ def verify_email_exists(email):
     user = user_data[(user_data["username"] == email)]
     return not user.empty
 
+
 # Function to update the password in the database
 def update_password_in_database(email, new_password):
     global user_data
     user_data.loc[user_data["username"] == email, "password"] = new_password
-    user_data.to_csv("user_credentials.csv", index=False)  # Save the updated data to a CSV file
+    user_data.to_csv(CREDENTIALS_FILE, index=False)
+
 
 def update_password(username, current_password, new_password):
     global user_data
     user_index = user_data[(user_data["username"] == username) & (user_data["password"] == current_password)].index
     if not user_index.empty:
-        # Update the user's password
         user_data.at[user_index[0], "password"] = new_password
-        user_data.to_csv("user_credentials.csv", index=False)  # Save the updated data to the CSV file
+        user_data.to_csv(CREDENTIALS_FILE, index=False)
         return True
     return False
+
+
 class SessionState:
     def __init__(self):
         self.is_authenticated = False
         self.successful_login = False
         self.successful_signup = False
+
 
 def main():
     session_state = get_session_state()
@@ -96,28 +122,24 @@ def main():
     else:
         render_login_page(session_state)
 
+
 def get_session_state():
     if 'session_state' not in st.session_state:
         st.session_state['session_state'] = SessionState()
     return st.session_state['session_state']
 
+
 def generate_random_password():
-    # Define character sets for each category
     uppercase_letters = string.ascii_uppercase
     special_characters = string.punctuation
     digits = string.digits
-    
-    # Ensure at least one character from each category
+
     password = random.choice(uppercase_letters) + random.choice(special_characters) + random.choice(digits)
-    
-    # Generate the remaining characters randomly
     remaining_length = 8 - len(password)
     remaining_characters = random.choices(string.ascii_letters + string.digits + string.punctuation, k=remaining_length)
-    
-    # Shuffle the characters to make it random
     password += ''.join(random.sample(remaining_characters, len(remaining_characters)))
-    
     return password
+
 
 def render_login_page(session_state):
     st.title("Signature Verification Portal")
@@ -135,17 +157,17 @@ def render_login_page(session_state):
             if verify_credentials(username, password):
                 session_state.is_authenticated = True
                 session_state.successful_login = True
-                st.experimental_rerun()
+                safe_rerun()
             else:
                 st.error("Invalid username or password. Please check your credentials.")
 
         if signup_button:
             session_state.signup_mode = True
-            st.experimental_rerun()
+            safe_rerun()
 
         if forgot_password_button:
             session_state.forgot_password_mode = True
-            st.experimental_rerun()
+            safe_rerun()
 
         if hasattr(session_state, 'signup_mode') and session_state.signup_mode:
             st.title("Sign Up")
@@ -159,7 +181,7 @@ def render_login_page(session_state):
                     if insert_user(new_username, new_password):
                         session_state.successful_signup = True
                         st.success("Successfully signed up! Please log in.")
-                        st.experimental_rerun()
+                        safe_rerun()
                     else:
                         st.error("Username already exists. Please choose a different username.")
                 else:
@@ -180,12 +202,12 @@ def render_login_page(session_state):
                 if validate_email(email):
                     new_password = generate_random_password()
                     if reset_password(email, new_password):
-                        send_password_reset_email(email, new_password)  # Send the new password by email
-                        st.success("Password reset instructions sent to your email.")
+                        send_password_reset_email(email, new_password)
                     else:
                         st.error("Email not found in the database. Please check your email.")
                 else:
                     st.error("Invalid email format. Please enter a valid email address.")
+
             if hasattr(session_state, 'update_password_mode') and session_state.update_password_mode:
                 st.title("Update Password")
                 username = st.text_input("Username")
@@ -199,14 +221,15 @@ def render_login_page(session_state):
                         if validate_password(new_password):
                             if update_password(username, current_password, new_password):
                                 st.success("Password updated successfully. Please log in with your new password.")
-                                session_state.update_password_mode = False  # Reset the update password mode
-                                st.experimental_rerun()
+                                session_state.update_password_mode = False
+                                safe_rerun()
                             else:
                                 st.error("Current password is incorrect. Please check your credentials.")
                         else:
                             st.error("Invalid password format. Please make sure the new password meets the requirements.")
                     else:
                         st.error("Passwords do not match. Please make sure the passwords match.")
-if __name__ == '__main__':
-            main()
 
+
+if __name__ == '__main__':
+    main()
