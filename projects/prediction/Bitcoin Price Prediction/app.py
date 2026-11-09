@@ -1,77 +1,48 @@
+import os
 import streamlit as st
-import sklearn
-from sklearn import datasets
-from sklearn import metrics
 import numpy as np
 import pandas as pd
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
+import joblib
 
+# Safely resolve model and image paths
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, 'bitcoin_model.pkl')
+IMAGE_PATH = os.path.join(BASE_DIR, 'price.png')
 
+# Load pre-trained Lasso regression model
+model = joblib.load(MODEL_PATH)
 
-r = st.sidebar.radio("Navigation Menu",["Home","Bitcoin Price"])
+r = st.sidebar.radio("Navigation Menu", ["Home", "Bitcoin Price"])
 
-if r=="Home":
-    
+if r == "Home":
     st.write("""
     # Bitcoin Price Predictive 
-    #    
     """)
-    st.image("price.png")
-    st.subheader(" Bitcoin Price ")
-    st.write(" Bitcoin is widely used cryptocurrency for digital market. It is decentralised that means it is not own by government or any other company.Transactions are simple and easy as it doesn’t belong to any country.Records data are stored in Blockchain.Bitcoin price is variable and it is widely used so it is important to predict the price of it for making any investment")
-    
-    
+    if os.path.exists(IMAGE_PATH):
+        st.image(IMAGE_PATH)
+    st.subheader("Bitcoin Price & Marketcap Prediction")
+    st.write(
+        "Bitcoin is a widely used decentralized cryptocurrency for the digital market. "
+        "Transactions are simple, secure, and recorded on the blockchain. "
+        "Bitcoin price is variable and it is widely used, making it essential to analyze and predict "
+        "its valuation for informed investment decisions."
+    )
 
-        
+if r == "Bitcoin Price":
+    st.header("Know the Valuation of Bitcoin")
+    high = st.number_input("Highest Price of Bitcoin ($)", min_value=0.0, value=50000.0, step=100.0)
+    low = st.number_input("Lowest Price of Bitcoin ($)", min_value=0.0, value=48000.0, step=100.0)
+    open_price = st.number_input("Opening Price of Bitcoin ($)", min_value=0.0, value=49000.0, step=100.0)
+    close_price = st.number_input("Closing Price of Bitcoin ($)", min_value=0.0, value=49500.0, step=100.0)
+    volume = st.number_input("Trading Volume of Bitcoin", min_value=0.0, value=30000000000.0, step=1000000.0)
 
-# Biocoin Price Prediction
-bitcoin=pd.read_csv('coin_Bitcoin.csv')
-bitcoin.drop(["Name"],axis=1, inplace=True)
-bitcoin.drop(["SNo"],axis=1, inplace=True)
-bitcoin.drop(["Symbol"],axis=1, inplace=True)
-
-# import datetime as dt
-# bitcoin["Date"]=pd.to_datetime(bitcoin["Date"])
-# bitcoin['Date_year'] = bitcoin["Date"].dt.year
-# bitcoin['Date_month'] = bitcoin["Date"].dt.month
-# bitcoin['Date_day'] = bitcoin["Date"].dt.day
-# bitcoin['Date_hour'] = bitcoin["Date"].dt.hour
-# bitcoin['Date_minute'] = bitcoin["Date"].dt.minute
-# bitcoin['Date_seconde'] = bitcoin["Date"].dt.second
-bitcoin.drop(["Date"], axis=1, inplace=True)
-
-
-X=bitcoin.drop(["Marketcap"], axis=1)
-Y=bitcoin["Marketcap"]
-
-from sklearn.linear_model import Lasso
-Ls=Lasso()
-xtrain,xtest,ytrain,ytest=train_test_split(X,Y,test_size=0.2)
-Ls.fit(xtrain,ytrain)
-
-if r=='Bitcoin Price':
-    st.header("Know the Price of Bitcoin")
-    High=st.number_input("Highest Price of bitcoin")
-    Low=st.number_input("Lowest Price of")
-    Open=st.number_input("Opening Price of bitcoin")
-    Close=st.number_input("Closing Price of Bitcoin")
-    volume=st.number_input("Volume of the bitcoin")
-    
-    ypred=Ls.predict([[High,Low,Open,Close,volume]])
-    if(st.button("Predict")):
-        st.success(f"Your Predicted Salary Is {abs(ypred)}")
-        
-
-    
-    
-
-        
-        
-
-   
-    
-
-    
-    
-    
+    if st.button("Predict"):
+        input_data = pd.DataFrame([{
+            'High': high,
+            'Low': low,
+            'Open': open_price,
+            'Close': close_price,
+            'Volume': volume
+        }])
+        ypred = model.predict(input_data)[0]
+        st.success(f"Predicted Bitcoin Market Capitalization: ${abs(float(ypred)):,.2f}")
