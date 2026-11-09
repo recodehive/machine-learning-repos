@@ -1,32 +1,41 @@
+import os
 import streamlit as st
 import pandas as pd
 import joblib
-from sklearn.preprocessing import LabelEncoder
 import numpy as np
 
-# Load the pre-trained model
-model_xgb = joblib.load('model_xgb.pkl')
+# Safely resolve model and encoder paths
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, 'model_xgb.pkl')
+ENCODERS_PATH = os.path.join(BASE_DIR, 'label_encoders.pkl')
 
-# Load label encoders for categorical variables
-label_encoder = LabelEncoder()
+# Load the pre-trained model and label encoders
+model_xgb = joblib.load(MODEL_PATH)
+label_encoders = joblib.load(ENCODERS_PATH)
+
 
 # Function to preprocess user input
 def preprocess_input(data):
-    # Apply label encoding to categorical columns
+    # Apply fitted label encoding to categorical columns
     cat_cols = ['Gender', 'Occupation', 'BMI Category']
     for col in cat_cols:
-        data[col] = label_encoder.fit_transform(data[col])
+        if col in label_encoders:
+            data[col] = label_encoders[col].transform(data[col])
 
-    # Split the 'Blood Pressure' column into two columns
-    data[['Systolic BP', 'Diastolic BP']] = data['Blood Pressure'].str.split('/', expand=True)
-
-    # Convert the new columns to numeric type
-    data[['Systolic BP', 'Diastolic BP']] = data[['Systolic BP', 'Diastolic BP']].apply(pd.to_numeric)
+    # Split the 'Blood Pressure' column safely into two numeric columns
+    bp_parts = str(data['Blood Pressure'].iloc[0]).split('/')
+    if len(bp_parts) == 2:
+        data['Systolic BP'] = [pd.to_numeric(bp_parts[0].strip(), errors='coerce')]
+        data['Diastolic BP'] = [pd.to_numeric(bp_parts[1].strip(), errors='coerce')]
+    else:
+        data['Systolic BP'] = [120]
+        data['Diastolic BP'] = [80]
 
     # Drop the original 'Blood Pressure' column
     data = data.drop('Blood Pressure', axis=1)
 
     return data
+
 
 # UI elements and CSS styling
 st.set_page_config(page_title="Sleep Disorder Prediction", layout="centered")
@@ -91,7 +100,7 @@ with st.form("user_input_form"):
     bmi_category = st.selectbox("BMI Category:", ['Underweight', 'Normal Weight', 'Overweight', 'Obese'])
     blood_pressure = st.text_input("Blood Pressure (Systolic/Diastolic) (ex: 120/80) :", "120/80")
     heart_rate = st.slider("Heart Rate (bpm):", 20, 120, 70)
-    daily_steps = st.slider("Daily Steps:", 100 ,20000, 5000)
+    daily_steps = st.slider("Daily Steps:", 100, 20000, 5000)
 
     submit_button = st.form_submit_button(label="Predict")
 
@@ -116,11 +125,14 @@ if submit_button:
     user_df = preprocess_input(user_df)
 
     # Predict sleep disorder class
-    predicted_class = model_xgb.predict(user_df)
+    predicted_class = model_xgb.predict(user_df)[0]
 
-    # Map numerical prediction back to original classes
-    sleep_disorder_map = {0: 'No Disorder', 1: 'Sleep Apnea', 2: 'Insomnia'}
-    predicted_class_label = sleep_disorder_map[predicted_class[0]]
+    # Map numerical prediction back to original classes using fitted target encoder
+    if 'Sleep Disorder' in label_encoders:
+        predicted_class_label = label_encoders['Sleep Disorder'].inverse_transform([predicted_class])[0]
+    else:
+        sleep_disorder_map = {0: 'Insomnia', 1: 'No Disorder', 2: 'Sleep Apnea'}
+        predicted_class_label = sleep_disorder_map.get(predicted_class, 'No Disorder')
 
     # Display the result in different colored containers
     container_style = """
