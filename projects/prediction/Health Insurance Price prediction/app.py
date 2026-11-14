@@ -1,10 +1,16 @@
+import os
 import streamlit as st
 import pandas as pd
 import joblib
 
+# Safely resolve model and encoder paths
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, 'linear_regression_model.pkl')
+ENCODERS_PATH = os.path.join(BASE_DIR, 'label_encoders.pkl')
+
 # Load the trained model and label encoders
-model_lr = joblib.load('linear_regression_model.pkl')
-label_encoders = joblib.load('label_encoders.pkl')
+model_lr = joblib.load(MODEL_PATH)
+label_encoders = joblib.load(ENCODERS_PATH)
 
 
 # Function to predict insurance charges
@@ -27,7 +33,7 @@ def predict_insurance_charges(age, sex, bmi, children, smoker, region):
     # Make prediction using the trained Linear Regression model
     predicted_charge = model_lr.predict(input_data)[0]
 
-    return predicted_charge
+    return max(0.0, float(predicted_charge))
 
 
 # Streamlit app
@@ -35,11 +41,11 @@ def main():
     st.title('Health Insurance Price Prediction')
     st.markdown('Enter the following details to predict insurance charges:')
 
-    # Input fields
-    age = st.number_input('Age', min_value=0, max_value=100, step=1)
+    # Input fields with realistic defaults
+    age = st.number_input('Age', min_value=0, max_value=100, value=25, step=1)
     sex = st.selectbox('Sex', ['male', 'female'])
-    bmi = st.number_input('BMI', min_value=10.0, max_value=50.0, step=0.1)
-    children = st.number_input('Number of Children', min_value=0, max_value=10, step=1)
+    bmi = st.number_input('BMI', min_value=10.0, max_value=50.0, value=25.0, step=0.1)
+    children = st.number_input('Number of Children', min_value=0, max_value=10, value=0, step=1)
     smoker = st.selectbox('Smoker', ['yes', 'no'])
     region = st.selectbox('Region of India', ['northeast', 'northwest', 'southeast', 'southwest'])
 
